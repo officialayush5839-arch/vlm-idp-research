@@ -1,0 +1,161 @@
+# =============================================================================
+# VLM-IDP Research Repository — .gitignore
+# =============================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+env/
+venv/
+.venv/
+ENV/
+.env.bak
+lib/
+lib64/
+
+# Distribution / Packaging
+.installed.cfg
+pip-wheel-metadata/
+share/python-wheels/
+*.whl
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+test-results/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoint
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets and credentials (NEVER COMMIT THESE)
+.env
+*.env
+.env.local
+.env.*.local
+secrets.yaml
+secrets.json
+api_keys.txt
+credentials.json
+
+# Data files — raw data is NOT versioned (too large, potentially proprietary)
+data/raw/*
+data/degraded/*
+data/splits/*
+!data/raw/.gitkeep
+!data/degraded/.gitkeep
+!data/splits/.gitkeep
+data/**/*.parquet
+data/**/*.csv
+data/**/*.h5
+data/**/*.hdf5
+data/**/*.pkl
+data/**/*.pickle
+
+# Experiment run outputs
+experiments/baselines/**/*.npy
+experiments/baselines/**/*.parquet
+experiments/robustness/**/*.npy
+experiments/robustness/**/*.parquet
+experiments/long_document/**/*.npy
+experiments/long_document/**/*.parquet
+experiments/ablations/**/*.npy
+experiments/ablations/**/*.parquet
+experiments/final/**/*.npy
+experiments/final/**/*.parquet
+
+# Trained model binaries (large, generated)
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.keras
+*.pkl
+*.joblib
+*.model
+*.bin
+*.onnx
+*.safetensors
+*.gguf
+
+# FAISS indices
+*.faiss
+*.index
+
+# Embedding caches
+embeddings_cache/
+*.npy
+
+# HuggingFace cache
+.cache/
+huggingface/
+
+# Logs
+*.log
+logs/
+
+# MLflow / W&B
+mlruns/
+mlflow.db
+wandb/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+
+# Paper outputs (generated — commit selectively)
+# Uncomment to track paper artifacts:
+# !paper/figures/*.pdf
+# !paper/figures/*.png
+
+# Large media files
+*.pdf
+*.png
+*.svg
+*.jpg
+*.jpeg
+*.tiff
+*.bmp
+
+# Keep .gitkeep files
+!**/.gitkeep
