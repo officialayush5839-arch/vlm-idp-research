@@ -1,0 +1,56 @@
+{
+  "experiment_id": "E2_5-MULTIPAGE-B0_U",
+  "total_samples": 2,
+  "successful_runs": 2,
+  "failed_runs": 0,
+  "results": [
+    {
+      "run_id": "run_u_multi_p0",
+      "baseline": "B0-U",
+      "document_id": "doc_u_multi",
+      "page_id": "page_0",
+      "question_id": "q_u_multi_p0",
+      "model": "Unlimited-OCR",
+      "model_revision": "4f9b8c2e1d7a6053b8921e4c70d45f3a9e218c9b",
+      "prompt_version": "grounding-v1",
+      "prompt_hash": "8c2e1d7a6053b892",
+      "seed": 42,
+      "device": "cpu",
+      "dtype": "float32",
+      "quantization": "none",
+      "answer": "INVOICE #INV-2024-001",
+      "ground_truth_answers": [
+        "INVOICE #INV-2024-001 (Page 1)"
+      ],
+      "latency_ms": 11.21,
+      "gpu_peak_memory_mb": null,
+      "status": "SUCCESS",
+      "error_type": null,
+      "error_message": null
+    },
+    {
+      "run_id": "run_u_multi_p1",
+      "baseline": "B0-U",
+      "document_id": "doc_u_multi",
+      "page_id": "page_1",
+      "question_id": "q_u_multi_p1",
+      "model": "Unlimited-OCR",
+      "model_revision": "4f9b8c2e1d7a6053b8921e4c70d45f3a9e218c9b",
+      "prompt_version": "grounding-v1",
+      "prompt_hash": "8c2e1d7a6053b892",
+      "seed": 42,
+      "device": "cpu",
+      "dtype": "float32",
+      "quantization": "none",
+      "answer": "INVOICE #INV-2024-001",
+      "ground_truth_answers": [
+        "INVOICE #INV-2024-001 (Page 1)"
+      ],
+      "latency_ms": 11.48,
+      "gpu_peak_memory_mb": null,
+      "status": "SUCCESS",
+      "error_type": null,
+      "error_message": null
+    }
+  ]
+}

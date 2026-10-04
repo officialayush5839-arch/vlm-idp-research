@@ -58,21 +58,22 @@ All RQ1-RQ6 frozen for experimental investigation. Status: CONFIRMED.
 - PHASE 0: Literature Freeze + Research Protocol (Completed: 2026-10-04). Status: CONFIRMED.
 - PHASE 1: Repository + Environment + Infrastructure & Document Ingestion (Completed: 2026-10-04, 39/39 tests pass). Status: CONFIRMED.
 - PHASE 2: Baseline OCR and VLM Pipelines (Completed: 2026-10-04, 59/59 tests pass, B0/B1/B2 smoke validated). Status: CONFIRMED.
+- PHASE 2.5: Unlimited-OCR Integration & Scientific Validation (Completed: 2026-10-04, 69/69 tests pass, B0-U validated). Status: CONFIRMED.
 
 ## 20. Current Phase
-PHASE 2: Completed. Awaiting authorization to begin Phase 3 (Document Quality/Degradation Module). Status: CONFIRMED.
+PHASE 2.5: Completed. Awaiting authorization to begin Phase 3 (Document Quality/Degradation Module). Status: CONFIRMED.
 
 ## 21. Current Task
-Phase 2 verification, baseline establishment, and audit sign-off complete. Status: PASS.
+Phase 2.5 verification, Unlimited-OCR integration, and audit sign-off complete. Status: PASS.
 
 ## 22. Next Task
 PHASE 3: Document Quality/Degradation Assessment Module. Status: PLANNED.
 
 ## 23. Paper Status
-Section I (Intro) and Section II (Related Work) drafted in `literature/related_work_notes.md`. Ingestion and normalization pipeline methodology documented in `reports/phase1/ingestion_validation.md`. Baseline architectures and fairness specifications documented in `reports/phase2/baseline_registry.md`. Status: IN_PROGRESS.
+Section I (Intro) and Section II (Related Work) drafted in `literature/related_work_notes.md`. Ingestion and normalization pipeline methodology documented in `reports/phase1/ingestion_validation.md`. Baseline architectures and fairness specifications documented in `reports/phase2/baseline_registry.md`. Unlimited-OCR baseline justification documented in `reports/phase2_5/ieee_baseline_justification.md`. Status: IN_PROGRESS.
 
 ## 24. Reproducibility Status
-Full reproducibility suite implemented in `src/evaluation/reproducibility.py` (seed_everything, env capture, JSON run manifests, zero-leakage split validator). 59 automated unit tests pass in `tests/`. Prompt templates versioned with SHA-256 fingerprints. Run artifacts saved in `experiments/phase2/artifacts/`. Status: CONFIRMED.
+Full reproducibility suite implemented in `src/evaluation/reproducibility.py` (seed_everything, env capture, JSON run manifests, zero-leakage split validator). 69 automated unit tests pass in `tests/`. Prompt templates versioned with SHA-256 fingerprints. Run artifacts saved in `experiments/phase2/artifacts/` and `experiments/phase2_5/artifacts/`. Status: CONFIRMED.
 
 ---
 
@@ -83,7 +84,8 @@ Full reproducibility suite implemented in `src/evaluation/reproducibility.py` (s
 - PyTorch: 2.14.1+cpu — CONFIRMED
 - CUDA Runtime (PyTorch): NOT_AVAILABLE (CPU-only PyTorch active in Python 3.14 .venv) — CONFIRMED
 - OS: Windows 11 AMD64 (Windows-11-10.0.26200-SP0) — CONFIRMED
-- Git: Initialized (Commit 609ac2d) — CONFIRMED
+- Git: Initialized (Commit fb0a359) — CONFIRMED
 - Virtual Environment: `.venv` created and populated with dependencies — CONFIRMED
-- Unit Tests: 59 passed in 50.5s — CONFIRMED
-- Smoke Experiments: E2-SMOKE-B0 (5/5), E2-SMOKE-B1 (5/5), E2-SMOKE-B2 (5/5), E2-REPRO-B0 (100% repeatability) — CONFIRMED
+- Unit Tests: 69 passed in 25.6s — CONFIRMED
+- Baselines Validated: B0 (Paddle/Tess), B1 (OCR+VLM), B2 (Qwen2.5-VL), B0-U (Unlimited-OCR) — CONFIRMED
+- Smoke Experiments: Phase 2 smoke (5/5), Phase 2.5 smoke (B0-U single/multi/degraded/repro 100% match) — CONFIRMED

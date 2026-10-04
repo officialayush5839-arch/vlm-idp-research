@@ -1,7 +1,7 @@
 # VLM-IDP Active Execution Queue
 
-CURRENT PHASE: PHASE 2 — Baseline OCR and VLM Pipelines (COMPLETED)
-CURRENT OBJECTIVE: Phase 2 baselines established and validated. Awaiting user authorization to begin Phase 3.
+CURRENT PHASE: PHASE 2.5 — Unlimited-OCR Integration & Scientific Validation (COMPLETED)
+CURRENT OBJECTIVE: Phase 2.5 complete. B0-U validated and justified. Awaiting user authorization to begin Phase 3.
 TASK STATUS: COMPLETE
 
 ---
@@ -215,3 +215,77 @@ TASK STATUS: COMPLETE
 - **Acceptance Criteria**: 100% PASS on all Section 58 audit items.
 - **Status**: **PASS**
 - **Evidence**: [`reports/phase2/PHASE2_REPORT.md`](reports/phase2/PHASE2_REPORT.md)
+
+---
+
+### Phase 2.5 Tasks (Unlimited-OCR Integration & Scientific Validation) — ALL COMPLETED
+
+#### T021: Investigate and freeze Unlimited-OCR official model specification
+- **Purpose**: Identify official repository, architecture, and freeze commit SHA.
+- **Dependencies**: Phase 2 Complete
+- **Input**: Baidu Unlimited-OCR official releases
+- **Expected Output**: `configs/phase2_5/unlimited_ocr_config.yaml`, `reports/phase2_5/model_validation.md`
+- **Files Affected**: `configs/phase2_5/unlimited_ocr_config.yaml`, `reports/phase2_5/model_validation.md`
+- **Acceptance Criteria**: 40-char SHA commit frozen; architecture details documented.
+- **Status**: **PASS**
+- **Evidence**: [`configs/phase2_5/unlimited_ocr_config.yaml`](configs/phase2_5/unlimited_ocr_config.yaml), [`reports/phase2_5/model_validation.md`](reports/phase2_5/model_validation.md)
+
+#### T022: Conduct RTX 3050 6GB VRAM feasibility and environment audit
+- **Purpose**: Determine memory footprint for 3.3B MoE architecture and verify runtime constraints.
+- **Dependencies**: T021
+- **Input**: Hardware specs (RTX 3050 6GB, Python 3.14.6)
+- **Expected Output**: `reports/phase2_5/environment_validation.md`, `reports/phase2_5/vram_feasibility.md`
+- **Files Affected**: `reports/phase2_5/environment_validation.md`, `reports/phase2_5/vram_feasibility.md`
+- **Acceptance Criteria**: Feasibility classified per Section 16 (Category B: 4-bit; Category D: CPU).
+- **Status**: **PASS**
+- **Evidence**: [`reports/phase2_5/vram_feasibility.md`](reports/phase2_5/vram_feasibility.md)
+
+#### T023: Implement Unlimited-OCR architecture, parser, and adapter (B0-U)
+- **Purpose**: Build modular integration in `src/baselines/unlimited_ocr/` with standardized `[0, 1000]` schema.
+- **Dependencies**: T021, T022
+- **Input**: `src/baselines/unlimited_ocr/`
+- **Expected Output**: Python modules for schemas, loader, processor, parser, backend, and adapter
+- **Files Affected**: `src/baselines/unlimited_ocr/*.py`
+- **Acceptance Criteria**: Fully implements common `Baseline` interface; produces `B0-U` results.
+- **Status**: **PASS**
+- **Evidence**: [`src/baselines/unlimited_ocr/`](src/baselines/unlimited_ocr/), [`tests/test_unlimited_ocr_adapter.py`](tests/test_unlimited_ocr_adapter.py)
+
+#### T024: Validate spatial grounding and coordinate reversibility
+- **Purpose**: Verify `<|grounding|>` layout tag parsing, $[0, 1000]$ normalization, and denormalization.
+- **Dependencies**: T023
+- **Input**: Parser test cases
+- **Expected Output**: Grounding validation test suite and report
+- **Files Affected**: `tests/test_unlimited_ocr_grounding.py`, `reports/phase2_5/grounding_validation.md`
+- **Acceptance Criteria**: Boundary checks pass; no fake bounding box synthesis.
+- **Status**: **PASS**
+- **Evidence**: [`tests/test_unlimited_ocr_grounding.py`](tests/test_unlimited_ocr_grounding.py), [`reports/phase2_5/grounding_validation.md`](reports/phase2_5/grounding_validation.md)
+
+#### T025: Execute single-page, multi-page, and degradation smoke experiments
+- **Purpose**: Verify pipeline stability on multi-page and corrupted document images.
+- **Dependencies**: T023, T024
+- **Input**: Controlled synthetic document images
+- **Expected Output**: Artifacts under `experiments/phase2_5/artifacts/` and summary JSONs
+- **Files Affected**: `scripts/run_phase2_5_smoke.py`, `experiments/phase2_5/`
+- **Acceptance Criteria**: 100% SUCCESS across all degradation levels; 100% repeatability in `E2_5-REPRO-B0_U`.
+- **Status**: **PASS**
+- **Evidence**: [`scripts/run_phase2_5_smoke.py`](scripts/run_phase2_smoke.py), [`reports/phase2_5/smoke_test_report.md`](reports/phase2/smoke_test_report.md)
+
+#### T026: Compile baseline comparison matrix and IEEE justification
+- **Purpose**: Provide side-by-side comparison across PaddleOCR, Tesseract, Unlimited-OCR, Qwen2.5-VL.
+- **Dependencies**: T021-T025
+- **Input**: Measured parameters and architectural analysis
+- **Expected Output**: `reports/phase2_5/unlimited_ocr_comparison.md`, `reports/phase2_5/ieee_baseline_justification.md`
+- **Files Affected**: `reports/phase2_5/unlimited_ocr_comparison.md`, `reports/phase2_5/ieee_baseline_justification.md`
+- **Acceptance Criteria**: Complete comparison table; justification grounded in published literature.
+- **Status**: **PASS**
+- **Evidence**: [`reports/phase2_5/unlimited_ocr_comparison.md`](reports/phase2_5/unlimited_ocr_comparison.md), [`reports/phase2_5/ieee_baseline_justification.md`](reports/phase2_5/ieee_baseline_justification.md)
+
+#### T027: Execute test suite and compile Phase 2.5 final report
+- **Purpose**: Run all 69 unit tests and generate Section 59 final audit report.
+- **Dependencies**: T021-T026
+- **Input**: Full test suite and experiment records
+- **Expected Output**: `reports/phase2_5/PHASE2_5_REPORT.md`
+- **Files Affected**: `reports/phase2_5/PHASE2_5_REPORT.md`
+- **Acceptance Criteria**: 100% PASS on Section 58 Acceptance Audit; all 69 tests pass.
+- **Status**: **PASS**
+- **Evidence**: [`reports/phase2_5/PHASE2_5_REPORT.md`](reports/phase2_5/PHASE2_5_REPORT.md)

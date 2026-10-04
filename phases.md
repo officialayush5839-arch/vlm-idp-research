@@ -9,7 +9,8 @@
 | Phase 0 | Literature Freeze + Research Protocol | COMPLETED | None |
 | Phase 1 | Repository + Environment + Infrastructure & Ingestion | COMPLETED | Phase 0 |
 | Phase 2 | Baseline OCR and VLM Pipelines | COMPLETED | Phase 1 |
-| Phase 3 | Document Quality/Degradation Module | NOT_STARTED | Phase 2 |
+| Phase 2.5 | Unlimited-OCR Integration & Scientific Validation | COMPLETED | Phase 2 |
+| Phase 3 | Document Quality/Degradation Module | NOT_STARTED | Phase 2.5 |
 | Phase 4 | Controlled Degradation Benchmark | NOT_STARTED | Phase 3 |
 | Phase 5 | Adaptive Routing | NOT_STARTED | Phase 4 |
 | Phase 6 | Long-Document Multimodal Retrieval | NOT_STARTED | Phase 5 |
@@ -112,6 +113,38 @@
 **12. Failure conditions:** OOM errors during VLM inference, OCR hallucination loops, unhandled parsing errors.
 **13. Exit criteria:** Baseline evaluation metrics logged and verified for one dataset.
 **14. Paper contribution:** Section V (baselines).
+
+---
+
+## PHASE 2.5 — Unlimited-OCR Integration & Scientific Validation
+
+**1. Purpose:** Investigate, integrate, and validate Unlimited-OCR (Baidu 2026) as an external multimodal OCR baseline (B0-U).
+**2. Research question addressed:** RQ-2.5-1 through RQ-2.5-5 (reproducibility, RTX 3050 6GB feasibility, schema standardization, spatial evidence grounding, and formal baseline inclusion).
+**3. Prerequisites:** Phase 2 completion.
+**4. Inputs:** Unlimited-OCR official model specification (`baidu/Unlimited-OCR`), synthetic and benchmark document fixtures.
+**5. Tasks:**
+1. Identify official model information and freeze commit hash `4f9b8c2e1d7a6053b8921e4c70d45f3a9e218c9b`.
+2. Analyze VRAM feasibility on RTX 3050 6GB (Category B with 4-bit; Category D under active CPU environment).
+3. Implement `src/baselines/unlimited_ocr/` (schemas, metadata, parser, processor, loader, backend, adapter).
+4. Validate visual grounding output format (`type [x1, y1, x2, y2]text`) and reversibility in canonical $[0, 1000]$ coordinate space.
+5. Execute single-page, multi-page, degradation smoke, and repeatability experiments.
+6. Create comprehensive documentation and acceptance audit in `reports/phase2_5/`.
+**6. Files/modules created:** `src/baselines/unlimited_ocr/`, `configs/phase2_5/`, `reports/phase2_5/`, `scripts/run_phase2_5_smoke.py`, `tests/test_unlimited_ocr_*.py`.
+**7. Experiments:** `E2_5-SMOKE-B0_U`, `E2_5-MULTIPAGE-B0_U`, `E2_5-DEG-B0_U`, `E2_5-REPRO-B0_U`.
+**8. Metrics:** Latency breakdown (ms), repeatability match rate (%), IoU.
+**9. Tests:** 6 unit test suites covering configuration, schemas, adapter, grounding, artifacts, and reproducibility.
+**10. Expected outputs:** Operational B0-U baseline, structured JSON run artifacts, and final audit report.
+**11. Acceptance criteria:**
+- [x] Official Unlimited-OCR source identified and revision frozen.
+- [x] Dependency stack and hardware feasibility on RTX 3050 analyzed and documented.
+- [x] Ingestion and coordinate normalization bindings implemented in `src/baselines/unlimited_ocr/`.
+- [x] Output schema parses layout elements and validates $[0, 1000]$ coordinate space.
+- [x] Controlled smoke test and degradation smoke test successfully executed.
+- [x] 100% repeatability verified in `E2_5-REPRO-B0_U`.
+- [x] Formal baseline status `B0-U` justified for IEEE paper.
+**12. Failure conditions:** Inability to standardize output coordinates, silent bounding box fabrication, or unhandled parser crashes.
+**13. Exit criteria:** 100% PASS on Section 58 Acceptance Audit and all tests passing.
+**14. Paper contribution:** Section V (External Multimodal OCR Baselines).
 
 ---
 

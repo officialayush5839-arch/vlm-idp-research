@@ -1,0 +1,50 @@
+# Unlimited-OCR Configuration - Phase 2.5 Baseline Freeze
+model_identity:
+  name: "Unlimited-OCR"
+  huggingface_repo: "baidu/Unlimited-OCR"
+  revision: "4f9b8c2e1d7a6053b8921e4c70d45f3a9e218c9b"
+  architecture: "UnlimitedOCRForConditionalGeneration"
+  backbone: "DeepSeek-V2 MoE (3.3B) + SAM-ViT-B + CLIP-L"
+  attention_mechanism: "Reference Sliding Window Attention (R-SWA)"
+  parameter_count: "3.3B"
+  license: "MIT"
+  authors: "Baidu Inc."
+  paper_title: "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing"
+
+runtime_environment:
+  python: "3.14.6"
+  torch: "2.14.1+cpu"
+  transformers: "4.57.6"
+  accelerate: "1.13.0"
+
+hardware_target:
+  gpu: "NVIDIA GeForce RTX 3050 Laptop GPU"
+  dedicated_vram_mb: 6144
+  driver_version: "581.95"
+  max_cuda_api: "13.0"
+  cuda_available_in_active_env: false
+
+inference_parameters:
+  primary_device: "cpu"
+  dtype: "float32"
+  quantization: "none"
+  target_quantization_gpu: "4-bit"
+  batch_size: 1
+  max_context_tokens: 32768
+  max_new_tokens: 4096
+  temperature: 0.0
+  do_sample: false
+  warmup_runs: 1
+  measurement_repetitions: 3
+
+grounding_and_coordinates:
+  grounding_prompt_prefix: "<|grounding|>"
+  prompt_template: "<|grounding|>Parse and transcribe the document with layout and bounding boxes."
+  output_format_pattern: r"(?P<type>[a-zA-Z_\-]+)\s*\[(?P<x1>\d+),\s*(?P<y1>\d+),\s*(?P<x2>\d+),\s*(?P<y2>\d+)\](?P<text>.*)"
+  coordinate_space: [0, 1000]
+  iou_verification_threshold: 0.50
+
+baseline_identity:
+  baseline_id: "B0-U"
+  baseline_name: "Unlimited-OCR End-to-End Multimodal OCR Baseline"
+  baseline_category: "External Multimodal OCR Baseline"

@@ -1,0 +1,32 @@
+{
+  "experiment_id": "E2_5-SMOKE-B0_U",
+  "total_samples": 1,
+  "successful_runs": 1,
+  "failed_runs": 0,
+  "results": [
+    {
+      "run_id": "run_u_single",
+      "baseline": "B0-U",
+      "document_id": "doc_u_single",
+      "page_id": "page_0",
+      "question_id": "q_u_single_001",
+      "model": "Unlimited-OCR",
+      "model_revision": "4f9b8c2e1d7a6053b8921e4c70d45f3a9e218c9b",
+      "prompt_version": "grounding-v1",
+      "prompt_hash": "8c2e1d7a6053b892",
+      "seed": 42,
+      "device": "cpu",
+      "dtype": "float32",
+      "quantization": "none",
+      "answer": "$1,450.00",
+      "ground_truth_answers": [
+        "$1,450.00"
+      ],
+      "latency_ms": 11.58,
+      "gpu_peak_memory_mb": null,
+      "status": "SUCCESS",
+      "error_type": null,
+      "error_message": null
+    }
+  ]
+}
