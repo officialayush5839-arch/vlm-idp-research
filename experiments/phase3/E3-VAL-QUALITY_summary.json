@@ -1,0 +1,1001 @@
+{
+  "experiment_id": "E3-VAL-QUALITY",
+  "algorithm_version": "1.0.0",
+  "config_hash": "c22038b25a7db146",
+  "clean_control_fpr": 0.0,
+  "mean_latency_ms": 70.11,
+  "p95_latency_ms": 94.61,
+  "repeatability_rate": 1.0,
+  "monotonicity_summary": {
+    "gaussian_blur": false,
+    "jpeg_compression": false,
+    "gaussian_noise": true,
+    "skew_rotation": true,
+    "illumination": true,
+    "occlusion": true,
+    "resolution_reduction": true,
+    "perspective_distortion": true,
+    "mixed_degradation": true
+  },
+  "matrix_results": {
+    "gaussian_blur": {
+      "s0": {
+        "ground_truth_severity": 0,
+        "predicted_severity": 0,
+        "detected": true,
+        "features": {
+          "blur": 39663.3519,
+          "noise": 1.7535,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.8941,
+          "resolution": 0.91,
+          "compression": 0.09,
+          "illumination": 246.986,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 51.72
+      },
+      "s1": {
+        "ground_truth_severity": 1,
+        "predicted_severity": 1,
+        "detected": true,
+        "features": {
+          "blur": 839.3948,
+          "noise": 0.0994,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.3961,
+          "resolution": 0.5543,
+          "compression": 0.0347,
+          "illumination": 246.987,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 73.17
+      },
+      "s2": {
+        "ground_truth_severity": 2,
+        "predicted_severity": 3,
+        "detected": true,
+        "features": {
+          "blur": 36.2487,
+          "noise": 0.0283,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.3098,
+          "resolution": 0.0176,
+          "compression": 0.0155,
+          "illumination": 246.989,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 66.71
+      },
+      "s3": {
+        "ground_truth_severity": 3,
+        "predicted_severity": 4,
+        "detected": true,
+        "features": {
+          "blur": 5.2275,
+          "noise": 0.0358,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.2078,
+          "resolution": 0.0,
+          "compression": 0.0124,
+          "illumination": 246.988,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 51.69
+      },
+      "s4": {
+        "ground_truth_severity": 4,
+        "predicted_severity": 4,
+        "detected": true,
+        "features": {
+          "blur": 6.2035,
+          "noise": 0.0468,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.149,
+          "resolution": 0.0,
+          "compression": 0.0135,
+          "illumination": 246.989,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 40.67
+      }
+    },
+    "jpeg_compression": {
+      "s0": {
+        "ground_truth_severity": 0,
+        "predicted_severity": 0,
+        "detected": true,
+        "features": {
+          "blur": 39663.3519,
+          "noise": 1.7535,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.8941,
+          "resolution": 0.91,
+          "compression": 0.09,
+          "illumination": 246.986,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 57.05
+      },
+      "s1": {
+        "ground_truth_severity": 1,
+        "predicted_severity": 0,
+        "detected": false,
+        "features": {
+          "blur": 39597.9372,
+          "noise": 2.1032,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.902,
+          "resolution": 0.8272,
+          "compression": 0.0745,
+          "illumination": 246.924,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 78.51
+      },
+      "s2": {
+        "ground_truth_severity": 2,
+        "predicted_severity": 0,
+        "detected": false,
+        "features": {
+          "blur": 38125.7955,
+          "noise": 2.067,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.8706,
+          "resolution": 0.598,
+          "compression": 0.0851,
+          "illumination": 246.764,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 74.83
+      },
+      "s3": {
+        "ground_truth_severity": 3,
+        "predicted_severity": 2,
+        "detected": true,
+        "features": {
+          "blur": 36348.8114,
+          "noise": 1.7136,
+          "skew": 0.0,
+          "glare": 0.9259,
+          "contrast": 0.8432,
+          "resolution": 0.5347,
+          "compression": 0.1264,
+          "illumination": 248.478,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 76.55
+      },
+      "s4": {
+        "ground_truth_severity": 4,
+        "predicted_severity": 4,
+        "detected": true,
+        "features": {
+          "blur": 30419.1427,
+          "noise": 1.4195,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.7922,
+          "resolution": 0.5776,
+          "compression": 0.2119,
+          "illumination": 244.667,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 54.75
+      }
+    },
+    "gaussian_noise": {
+      "s0": {
+        "ground_truth_severity": 0,
+        "predicted_severity": 0,
+        "detected": true,
+        "features": {
+          "blur": 39663.3519,
+          "noise": 1.7535,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.8941,
+          "resolution": 0.91,
+          "compression": 0.09,
+          "illumination": 246.986,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 47.47
+      },
+      "s1": {
+        "ground_truth_severity": 1,
+        "predicted_severity": 1,
+        "detected": true,
+        "features": {
+          "blur": 40209.7339,
+          "noise": 4.6434,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.9137,
+          "resolution": 0.6946,
+          "compression": 0.0468,
+          "illumination": 246.151,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 47.55
+      },
+      "s2": {
+        "ground_truth_severity": 2,
+        "predicted_severity": 2,
+        "detected": true,
+        "features": {
+          "blur": 42084.7614,
+          "noise": 8.4977,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.898,
+          "resolution": 0.0808,
+          "compression": 0.0273,
+          "illumination": 242.938,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 72.02
+      },
+      "s3": {
+        "ground_truth_severity": 3,
+        "predicted_severity": 3,
+        "detected": true,
+        "features": {
+          "blur": 48786.7314,
+          "noise": 14.0665,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.8784,
+          "resolution": 0.0565,
+          "compression": 0.0156,
+          "illumination": 237.279,
+          "occlusion": 0.0,
+          "perspective": 16.8394
+        },
+        "latency_ms": 223.95
+      },
+      "s4": {
+        "ground_truth_severity": 4,
+        "predicted_severity": 4,
+        "detected": true,
+        "features": {
+          "blur": 65917.1929,
+          "noise": 21.5453,
+          "skew": 2.9357,
+          "glare": 0.0,
+          "contrast": 0.8627,
+          "resolution": 0.1662,
+          "compression": 0.0067,
+          "illumination": 229.582,
+          "occlusion": 0.0,
+          "perspective": 5.5513
+        },
+        "latency_ms": 209.03
+      }
+    },
+    "skew_rotation": {
+      "s0": {
+        "ground_truth_severity": 0,
+        "predicted_severity": 0,
+        "detected": true,
+        "features": {
+          "blur": 39663.3519,
+          "noise": 1.7535,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.8941,
+          "resolution": 0.91,
+          "compression": 0.09,
+          "illumination": 246.986,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 53.8
+      },
+      "s1": {
+        "ground_truth_severity": 1,
+        "predicted_severity": 1,
+        "detected": true,
+        "features": {
+          "blur": 17520.4193,
+          "noise": 0.8661,
+          "skew": 1.0809,
+          "glare": 0.0,
+          "contrast": 0.6431,
+          "resolution": 0.839,
+          "compression": 0.0246,
+          "illumination": 246.986,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 67.87
+      },
+      "s2": {
+        "ground_truth_severity": 2,
+        "predicted_severity": 2,
+        "detected": true,
+        "features": {
+          "blur": 19596.7309,
+          "noise": 0.929,
+          "skew": 2.971,
+          "glare": 0.0,
+          "contrast": 0.6706,
+          "resolution": 0.8236,
+          "compression": 0.0311,
+          "illumination": 246.986,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 62.89
+      },
+      "s3": {
+        "ground_truth_severity": 3,
+        "predicted_severity": 3,
+        "detected": true,
+        "features": {
+          "blur": 16660.9663,
+          "noise": 0.9018,
+          "skew": 5.0032,
+          "glare": 0.0,
+          "contrast": 0.6392,
+          "resolution": 0.8217,
+          "compression": 0.0271,
+          "illumination": 246.987,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 47.4
+      },
+      "s4": {
+        "ground_truth_severity": 4,
+        "predicted_severity": 4,
+        "detected": true,
+        "features": {
+          "blur": 16348.9509,
+          "noise": 1.0333,
+          "skew": 10.008,
+          "glare": 0.0,
+          "contrast": 0.6392,
+          "resolution": 0.8215,
+          "compression": 0.0285,
+          "illumination": 246.986,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 65.99
+      }
+    },
+    "illumination": {
+      "s0": {
+        "ground_truth_severity": 0,
+        "predicted_severity": 0,
+        "detected": true,
+        "features": {
+          "blur": 39663.3519,
+          "noise": 1.7535,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.8941,
+          "resolution": 0.91,
+          "compression": 0.09,
+          "illumination": 246.986,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 80.97
+      },
+      "s1": {
+        "ground_truth_severity": 1,
+        "predicted_severity": 1,
+        "detected": true,
+        "features": {
+          "blur": 22279.3134,
+          "noise": 1.3151,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.6706,
+          "resolution": 0.8792,
+          "compression": 0.09,
+          "illumination": 184.743,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 43.51
+      },
+      "s2": {
+        "ground_truth_severity": 2,
+        "predicted_severity": 2,
+        "detected": true,
+        "features": {
+          "blur": 9977.3415,
+          "noise": 0.8774,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.4471,
+          "resolution": 0.7883,
+          "compression": 0.0901,
+          "illumination": 123.487,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 47.94
+      },
+      "s3": {
+        "ground_truth_severity": 3,
+        "predicted_severity": 3,
+        "detected": true,
+        "features": {
+          "blur": 3618.1698,
+          "noise": 0.5273,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.2706,
+          "resolution": 0.5234,
+          "compression": 0.0899,
+          "illumination": 74.086,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 66.5
+      },
+      "s4": {
+        "ground_truth_severity": 4,
+        "predicted_severity": 4,
+        "detected": true,
+        "features": {
+          "blur": 886.0648,
+          "noise": 0.2634,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.1333,
+          "resolution": 0.001,
+          "compression": 0.0894,
+          "illumination": 36.55,
+          "occlusion": 1.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 64.99
+      }
+    },
+    "occlusion": {
+      "s0": {
+        "ground_truth_severity": 0,
+        "predicted_severity": 0,
+        "detected": true,
+        "features": {
+          "blur": 39663.3519,
+          "noise": 1.7535,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.8941,
+          "resolution": 0.91,
+          "compression": 0.09,
+          "illumination": 246.986,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 66.53
+      },
+      "s1": {
+        "ground_truth_severity": 1,
+        "predicted_severity": 1,
+        "detected": true,
+        "features": {
+          "blur": 42264.8372,
+          "noise": 1.7531,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.902,
+          "resolution": 0.9168,
+          "compression": 0.0583,
+          "illumination": 235.5,
+          "occlusion": 0.05,
+          "perspective": 0.0
+        },
+        "latency_ms": 52.27
+      },
+      "s2": {
+        "ground_truth_severity": 2,
+        "predicted_severity": 2,
+        "detected": true,
+        "features": {
+          "blur": 38526.0176,
+          "noise": 1.5835,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.902,
+          "resolution": 0.919,
+          "compression": 0.0254,
+          "illumination": 224.477,
+          "occlusion": 0.0995,
+          "perspective": 0.0
+        },
+        "latency_ms": 55.65
+      },
+      "s3": {
+        "ground_truth_severity": 3,
+        "predicted_severity": 3,
+        "detected": true,
+        "features": {
+          "blur": 34123.0385,
+          "noise": 1.2619,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.902,
+          "resolution": 0.9231,
+          "compression": 0.0,
+          "illumination": 201.902,
+          "occlusion": 0.1998,
+          "perspective": 0.0
+        },
+        "latency_ms": 58.35
+      },
+      "s4": {
+        "ground_truth_severity": 4,
+        "predicted_severity": 4,
+        "detected": true,
+        "features": {
+          "blur": 32336.7083,
+          "noise": 1.113,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.902,
+          "resolution": 0.9283,
+          "compression": 0.0,
+          "illumination": 179.299,
+          "occlusion": 0.2993,
+          "perspective": 0.0
+        },
+        "latency_ms": 79.61
+      }
+    },
+    "resolution_reduction": {
+      "s0": {
+        "ground_truth_severity": 0,
+        "predicted_severity": 0,
+        "detected": true,
+        "features": {
+          "blur": 39663.3519,
+          "noise": 1.7535,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.8941,
+          "resolution": 0.91,
+          "compression": 0.09,
+          "illumination": 246.986,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 66.82
+      },
+      "s1": {
+        "ground_truth_severity": 1,
+        "predicted_severity": 1,
+        "detected": true,
+        "features": {
+          "blur": 4963.0672,
+          "noise": 0.3156,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.4941,
+          "resolution": 0.718,
+          "compression": 0.251,
+          "illumination": 246.975,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 43.89
+      },
+      "s2": {
+        "ground_truth_severity": 2,
+        "predicted_severity": 2,
+        "detected": true,
+        "features": {
+          "blur": 1172.1693,
+          "noise": 0.1237,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.4275,
+          "resolution": 0.6127,
+          "compression": 0.1648,
+          "illumination": 246.99,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 59.51
+      },
+      "s3": {
+        "ground_truth_severity": 3,
+        "predicted_severity": 3,
+        "detected": true,
+        "features": {
+          "blur": 78.5351,
+          "noise": 0.0246,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.3294,
+          "resolution": 0.1078,
+          "compression": 0.0659,
+          "illumination": 246.983,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 47.97
+      },
+      "s4": {
+        "ground_truth_severity": 4,
+        "predicted_severity": 4,
+        "detected": true,
+        "features": {
+          "blur": 30.2467,
+          "noise": 0.0315,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.2627,
+          "resolution": 0.0,
+          "compression": 0.0,
+          "illumination": 246.973,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 74.18
+      }
+    },
+    "perspective_distortion": {
+      "s0": {
+        "ground_truth_severity": 0,
+        "predicted_severity": 0,
+        "detected": true,
+        "features": {
+          "blur": 39663.3519,
+          "noise": 1.7535,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.8941,
+          "resolution": 0.91,
+          "compression": 0.09,
+          "illumination": 246.986,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 74.27
+      },
+      "s1": {
+        "ground_truth_severity": 1,
+        "predicted_severity": 1,
+        "detected": true,
+        "features": {
+          "blur": 27027.8727,
+          "noise": 0.8885,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.8627,
+          "resolution": 0.8272,
+          "compression": 0.0137,
+          "illumination": 233.48,
+          "occlusion": 0.0586,
+          "perspective": 5.9153
+        },
+        "latency_ms": 69.78
+      },
+      "s2": {
+        "ground_truth_severity": 2,
+        "predicted_severity": 2,
+        "detected": true,
+        "features": {
+          "blur": 23922.7622,
+          "noise": 0.9656,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.8627,
+          "resolution": 0.8352,
+          "compression": 0.0,
+          "illumination": 205.163,
+          "occlusion": 0.1913,
+          "perspective": 19.6507
+        },
+        "latency_ms": 76.13
+      },
+      "s3": {
+        "ground_truth_severity": 3,
+        "predicted_severity": 3,
+        "detected": true,
+        "features": {
+          "blur": 18734.4982,
+          "noise": 1.0821,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.8627,
+          "resolution": 0.872,
+          "compression": 0.0,
+          "illumination": 180.766,
+          "occlusion": 0.3045,
+          "perspective": 33.814
+        },
+        "latency_ms": 70.23
+      },
+      "s4": {
+        "ground_truth_severity": 4,
+        "predicted_severity": 4,
+        "detected": true,
+        "features": {
+          "blur": 14515.5704,
+          "noise": 1.1556,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.8627,
+          "resolution": 0.854,
+          "compression": 0.0,
+          "illumination": 159.916,
+          "occlusion": 0.4014,
+          "perspective": 47.8671
+        },
+        "latency_ms": 61.66
+      }
+    },
+    "mixed_degradation": {
+      "s0": {
+        "ground_truth_severity": 0,
+        "predicted_severity": 0,
+        "detected": true,
+        "features": {
+          "blur": 39663.3519,
+          "noise": 1.7535,
+          "skew": 0.0,
+          "glare": 0.0,
+          "contrast": 0.8941,
+          "resolution": 0.91,
+          "compression": 0.09,
+          "illumination": 246.986,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 71.61
+      },
+      "s1": {
+        "ground_truth_severity": 1,
+        "predicted_severity": 2,
+        "detected": true,
+        "features": {
+          "blur": 729.672,
+          "noise": 0.4836,
+          "skew": 0.8273,
+          "glare": 0.0,
+          "contrast": 0.3961,
+          "resolution": 0.4873,
+          "compression": 0.0097,
+          "illumination": 246.178,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 58.8
+      },
+      "s2": {
+        "ground_truth_severity": 2,
+        "predicted_severity": 2,
+        "detected": true,
+        "features": {
+          "blur": 665.0186,
+          "noise": 0.6579,
+          "skew": 2.9673,
+          "glare": 0.0,
+          "contrast": 0.3294,
+          "resolution": 0.0155,
+          "compression": 0.0076,
+          "illumination": 243.201,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 56.09
+      },
+      "s3": {
+        "ground_truth_severity": 3,
+        "predicted_severity": 3,
+        "detected": true,
+        "features": {
+          "blur": 1855.1851,
+          "noise": 0.9908,
+          "skew": 6.0316,
+          "glare": 0.0,
+          "contrast": 0.2471,
+          "resolution": 0.0027,
+          "compression": 0.0108,
+          "illumination": 238.111,
+          "occlusion": 0.0,
+          "perspective": 0.0
+        },
+        "latency_ms": 87.56
+      },
+      "s4": {
+        "ground_truth_severity": 4,
+        "predicted_severity": 3,
+        "detected": true,
+        "features": {
+          "blur": 2308.9385,
+          "noise": 0.9362,
+          "skew": 6.7098,
+          "glare": 0.0,
+          "contrast": 0.2431,
+          "resolution": 0.015,
+          "compression": 0.0132,
+          "illumination": 231.435,
+          "occlusion": 0.0,
+          "perspective": 66.2121
+        },
+        "latency_ms": 96.37
+      }
+    }
+  },
+  "confusion_records": {
+    "gaussian_blur": {
+      "target_family": "gaussian_blur",
+      "target_detected": true,
+      "cross_talk_families": [
+        "contrast",
+        "resolution_reduction",
+        "mixed_degradation"
+      ]
+    },
+    "jpeg_compression": {
+      "target_family": "jpeg_compression",
+      "target_detected": true,
+      "cross_talk_families": [
+        "glare",
+        "resolution_reduction",
+        "mixed_degradation"
+      ]
+    },
+    "gaussian_noise": {
+      "target_family": "gaussian_noise",
+      "target_detected": true,
+      "cross_talk_families": [
+        "resolution_reduction",
+        "perspective_distortion",
+        "mixed_degradation"
+      ]
+    },
+    "skew_rotation": {
+      "target_family": "skew_rotation",
+      "target_detected": true,
+      "cross_talk_families": [
+        "contrast"
+      ]
+    },
+    "illumination": {
+      "target_family": "illumination",
+      "target_detected": true,
+      "cross_talk_families": [
+        "contrast",
+        "resolution_reduction",
+        "mixed_degradation"
+      ]
+    },
+    "occlusion": {
+      "target_family": "occlusion",
+      "target_detected": true,
+      "cross_talk_families": []
+    },
+    "resolution_reduction": {
+      "target_family": "resolution_reduction",
+      "target_detected": true,
+      "cross_talk_families": [
+        "gaussian_blur",
+        "contrast",
+        "mixed_degradation"
+      ]
+    },
+    "perspective_distortion": {
+      "target_family": "perspective_distortion",
+      "target_detected": true,
+      "cross_talk_families": [
+        "illumination",
+        "occlusion",
+        "mixed_degradation"
+      ]
+    }
+  },
+  "correlation_matrix": {
+    "blur": {
+      "blur": 1.0,
+      "compression": 0.095,
+      "noise": 0.602,
+      "skew": -0.207,
+      "illumination": 0.238,
+      "occlusion": -0.146,
+      "resolution": 0.474,
+      "perspective": -0.121
+    },
+    "compression": {
+      "blur": 0.095,
+      "compression": 1.0,
+      "noise": -0.162,
+      "skew": -0.275,
+      "illumination": 0.024,
+      "occlusion": -0.126,
+      "resolution": 0.261,
+      "perspective": -0.303
+    },
+    "noise": {
+      "blur": 0.602,
+      "compression": -0.162,
+      "noise": 1.0,
+      "skew": 0.049,
+      "illumination": 0.09,
+      "occlusion": -0.113,
+      "resolution": -0.216,
+      "perspective": 0.061
+    },
+    "skew": {
+      "blur": -0.207,
+      "compression": -0.275,
+      "noise": 0.049,
+      "skew": 1.0,
+      "illumination": 0.144,
+      "occlusion": -0.139,
+      "resolution": -0.183,
+      "perspective": 0.235
+    },
+    "illumination": {
+      "blur": 0.238,
+      "compression": 0.024,
+      "noise": 0.09,
+      "skew": 0.144,
+      "illumination": 1.0,
+      "occlusion": -0.719,
+      "resolution": 0.035,
+      "perspective": -0.16
+    },
+    "occlusion": {
+      "blur": -0.146,
+      "compression": -0.126,
+      "noise": -0.113,
+      "skew": -0.139,
+      "illumination": -0.719,
+      "occlusion": 1.0,
+      "resolution": -0.05,
+      "perspective": 0.224
+    },
+    "resolution": {
+      "blur": 0.474,
+      "compression": 0.261,
+      "noise": -0.216,
+      "skew": -0.183,
+      "illumination": 0.035,
+      "occlusion": -0.05,
+      "resolution": 1.0,
+      "perspective": -0.106
+    },
+    "perspective": {
+      "blur": -0.121,
+      "compression": -0.303,
+      "noise": 0.061,
+      "skew": 0.235,
+      "illumination": -0.16,
+      "occlusion": 0.224,
+      "resolution": -0.106,
+      "perspective": 1.0
+    }
+  },
+  "status": "PASS"
+}

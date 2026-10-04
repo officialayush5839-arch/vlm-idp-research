@@ -1,0 +1,168 @@
+{
+  "document_id": "doc_occlusion_s2",
+  "page_id": "page_occlusion_s2",
+  "page_number": 1,
+  "width": 600,
+  "height": 400,
+  "features": {
+    "blur": {
+      "raw_value": 38526.0176,
+      "normalized_value": 1.0,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "lower_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "laplacian_variance",
+        "tenengrad_energy": 16462.97
+      }
+    },
+    "noise": {
+      "raw_value": 1.5835,
+      "normalized_value": 0.0633,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "immerkaer_noise_sigma",
+        "image_dims": [
+          600,
+          400
+        ]
+      }
+    },
+    "skew": {
+      "raw_value": 0.0,
+      "normalized_value": 0.0,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "skew_angle_deg",
+        "detected_lines_count": 43,
+        "signed_angle_deg": 0.0
+      }
+    },
+    "glare": {
+      "raw_value": 0.0,
+      "normalized_value": 0.0,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "glare_fraction",
+        "largest_hotspot_pixels": 0,
+        "total_saturated_pixels": 0
+      }
+    },
+    "contrast": {
+      "raw_value": 0.902,
+      "normalized_value": 0.902,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "lower_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "effective_dynamic_range",
+        "raw_dynamic_range": 230.0,
+        "p_low": 20.0,
+        "p_high": 250.0
+      }
+    },
+    "resolution": {
+      "raw_value": 0.919,
+      "normalized_value": 0.919,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "lower_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "high_freq_sharpness_ratio",
+        "sharp_edges": 9457,
+        "soft_edges": 10291,
+        "width": 600,
+        "height": 400
+      }
+    },
+    "compression": {
+      "raw_value": 0.0254,
+      "normalized_value": 0.0727,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "blockiness_discontinuity",
+        "mean_boundary_diff": 3.25,
+        "mean_interior_diff": 3.089
+      }
+    },
+    "illumination": {
+      "raw_value": 224.477,
+      "normalized_value": 0.9353,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "lower_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "mean_intensity",
+        "spatial_grid_variance": 1576.717,
+        "min_block_intensity": 153.46,
+        "max_block_intensity": 250.0
+      }
+    },
+    "occlusion": {
+      "raw_value": 0.0995,
+      "normalized_value": 0.4973,
+      "severity": 2,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "occluded_area_ratio",
+        "detected_patches": 1,
+        "total_occluded_pixels": 23870
+      }
+    },
+    "perspective": {
+      "raw_value": 0.0,
+      "normalized_value": 0.0,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "perspective_convergence_deg",
+        "left_lines": 0,
+        "right_lines": 0
+      }
+    }
+  },
+  "detected_degradations": [
+    {
+      "family": "occlusion",
+      "severity": 2,
+      "severity_label": "S2_MODERATE",
+      "evidence_feature": "occlusion",
+      "measured_value": 0.0995,
+      "threshold_exceeded": 0.075
+    }
+  ],
+  "overall_quality_score": null,
+  "overall_quality_status": "NOT_DEFINED",
+  "runtime": {
+    "preprocessing_ms": 1.89,
+    "feature_extraction_ms": 53.68,
+    "detection_ms": 0.03,
+    "aggregation_ms": 0.0,
+    "total_latency_ms": 55.65,
+    "memory_mb": null
+  },
+  "algorithm_version": "1.0.0",
+  "config_hash": "c22038b25a7db146",
+  "timestamp_utc": "2026-10-04T18:41:17.802762+00:00",
+  "status": "SUCCESS"
+}

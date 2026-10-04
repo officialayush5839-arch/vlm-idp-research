@@ -1,0 +1,65 @@
+# Severity Mapping Configuration for Phase 3
+# Maps measured feature values into formal severity levels:
+# S0 (Clean), S1 (Mild), S2 (Moderate), S3 (Severe), S4 (Extreme)
+# Threshold boundaries are derived from Phase 0 Degradation Protocol
+
+severity_mapping:
+  levels:
+    0: "S0_CLEAN"
+    1: "S1_MILD"
+    2: "S2_MODERATE"
+    3: "S3_SEVERE"
+    4: "S4_EXTREME"
+
+  # Cutoff thresholds for assigning severity based on raw/normalized feature values
+  # Each entry defines monotonic boundary thresholds: [T_0_1, T_1_2, T_2_3, T_3_4]
+  thresholds:
+    gaussian_blur:
+      metric: "laplacian_variance"
+      direction: "lower_is_worse"
+      cutoffs: [2500.0, 500.0, 100.0, 25.0]
+
+    gaussian_noise:
+      metric: "estimated_sigma"
+      direction: "higher_is_worse"
+      cutoffs: [3.0, 6.0, 11.0, 18.0]
+
+    jpeg_compression:
+      metric: "blockiness_score"
+      direction: "higher_is_worse"
+      cutoffs: [0.095, 0.110, 0.150, 0.200]
+
+    skew_rotation:
+      metric: "skew_angle_deg"
+      direction: "higher_is_worse"
+      cutoffs: [0.5, 2.0, 4.0, 7.5]
+
+    illumination:
+      metric: "mean_intensity_attenuation"
+      direction: "lower_is_worse"
+      cutoffs: [195.0, 145.0, 95.0, 50.0]
+
+    occlusion:
+      metric: "occluded_area_ratio"
+      direction: "higher_is_worse"
+      cutoffs: [0.02, 0.075, 0.15, 0.25]
+
+    resolution_reduction:
+      metric: "high_freq_sharpness_ratio"
+      direction: "lower_is_worse"
+      cutoffs: [0.80, 0.65, 0.35, 0.05]
+
+    perspective_distortion:
+      metric: "perspective_tilt_deg"
+      direction: "higher_is_worse"
+      cutoffs: [2.5, 10.0, 25.0, 40.0]
+
+    glare:
+      metric: "glare_fraction"
+      direction: "higher_is_worse"
+      cutoffs: [0.02, 0.06, 0.12, 0.22]
+
+    contrast:
+      metric: "percentile_michelson_contrast"
+      direction: "lower_is_worse"
+      cutoffs: [0.70, 0.50, 0.30, 0.15]

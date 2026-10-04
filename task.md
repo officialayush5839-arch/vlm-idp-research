@@ -1,7 +1,7 @@
 # VLM-IDP Active Execution Queue
 
-CURRENT PHASE: PHASE 2.5 — Unlimited-OCR Integration & Scientific Validation (COMPLETED)
-CURRENT OBJECTIVE: Phase 2.5 complete. B0-U validated and justified. Awaiting user authorization to begin Phase 3.
+CURRENT PHASE: PHASE 3 — Document Quality / Degradation Assessment Module (COMPLETED)
+CURRENT OBJECTIVE: Phase 3 complete. Independent quality & degradation layer validated. 106 tests passing. Awaiting user authorization to begin Phase 4.
 TASK STATUS: COMPLETE
 
 ---
@@ -289,3 +289,97 @@ TASK STATUS: COMPLETE
 - **Acceptance Criteria**: 100% PASS on Section 58 Acceptance Audit; all 69 tests pass.
 - **Status**: **PASS**
 - **Evidence**: [`reports/phase2_5/PHASE2_5_REPORT.md`](reports/phase2_5/PHASE2_5_REPORT.md)
+
+---
+
+### Phase 3 Tasks (Document Quality / Degradation Assessment Module) — ALL COMPLETED
+
+#### T030: Quality Architecture & Pydantic Schemas
+- **Purpose**: Define formal data structures and typed schemas for quality features, degradations, and multi-page reports.
+- **Dependencies**: Phase 2.5 Complete
+- **Input**: Requirements from PRD and Architecture Modules 8 & 9
+- **Expected Output**: `src/quality/schema.py`, `src/quality/config.py`
+- **Files Affected**: `src/quality/schema.py`, `src/quality/config.py`
+- **Acceptance Criteria**: Typed Pydantic models for `FeatureResult`, `DegradationDetection`, `PageQualityAssessment`, `DocumentQualityAssessment`; failure status isolation.
+- **Status**: **PASS**
+- **Evidence**: [`src/quality/schema.py`](src/quality/schema.py), [`tests/test_quality_schema.py`](tests/test_quality_schema.py)
+
+#### T031: Image Preprocessing & Multi-Color Space Pipeline
+- **Purpose**: Build non-destructive image loading, dimension validation, and alpha channel compositing.
+- **Dependencies**: T030
+- **Input**: `src/quality/preprocessing.py`
+- **Expected Output**: Preprocessing pipeline producing RGB and Grayscale representations.
+- **Files Affected**: `src/quality/preprocessing.py`
+- **Acceptance Criteria**: Alpha channel composited onto white; source images immutable.
+- **Status**: **PASS**
+- **Evidence**: [`src/quality/preprocessing.py`](src/quality/preprocessing.py), [`tests/test_quality_preprocessing.py`](tests/test_quality_preprocessing.py)
+
+#### T032: Visual Feature Extraction Engine (10 Extractors)
+- **Purpose**: Implement pure extractor functions for blur, noise, skew, glare, contrast, resolution, compression, illumination, occlusion, perspective.
+- **Dependencies**: T031
+- **Input**: `src/quality/*.py`
+- **Expected Output**: 10 modular feature extractors with failure isolation
+- **Files Affected**: `src/quality/blur.py`, `src/quality/noise.py`, `src/quality/skew.py`, `src/quality/glare.py`, `src/quality/contrast.py`, `src/quality/resolution.py`, `src/quality/compression.py`, `src/quality/illumination.py`, `src/quality/occlusion.py`, `src/quality/perspective.py`, `src/quality/features.py`
+- **Acceptance Criteria**: All 10 extractors produce typed `FeatureResult`; errors do not halt independent features.
+- **Status**: **PASS**
+- **Evidence**: [`src/quality/features.py`](src/quality/features.py), [`tests/test_quality_features.py`](tests/test_quality_features.py)
+
+#### T033: Degradation Classifier & Discrete Severity Mapping
+- **Purpose**: Map continuous feature metrics to discrete S0–S4 severity tiers based on frozen thresholds.
+- **Dependencies**: T032
+- **Input**: `configs/phase3/severity_config.yaml`
+- **Expected Output**: `src/quality/detector.py`
+- **Files Affected**: `src/quality/detector.py`, `configs/phase3/severity_config.yaml`
+- **Acceptance Criteria**: Severity levels match Phase 0 protocol; composite mixed degradation handled.
+- **Status**: **PASS**
+- **Evidence**: [`src/quality/detector.py`](src/quality/detector.py), [`tests/test_quality_detector.py`](tests/test_quality_detector.py)
+
+#### T034: Multi-Page Document Quality Aggregator
+- **Purpose**: Compute descriptive summary statistics across document pages without losing page-level fidelity.
+- **Dependencies**: T030, T033
+- **Input**: `src/quality/aggregator.py`
+- **Expected Output**: Aggregation function identifying worst page and distribution parameters
+- **Files Affected**: `src/quality/aggregator.py`, `src/quality/pipeline.py`
+- **Acceptance Criteria**: Preserves every page assessment; overall score marked `NOT_DEFINED` per protocol.
+- **Status**: **PASS**
+- **Evidence**: [`src/quality/aggregator.py`](src/quality/aggregator.py), [`tests/test_quality_pipeline.py`](tests/test_quality_pipeline.py)
+
+#### T035: Synthetic Degradation Validation Framework
+- **Purpose**: Implement deterministic synthetic corruptor matching 9 protocol families and validate detector.
+- **Dependencies**: T032, T033
+- **Input**: `protocol/degradation_protocol.md`
+- **Expected Output**: `src/quality/synthetic.py`, `scripts/run_phase3_validation.py`
+- **Files Affected**: `src/quality/synthetic.py`, `scripts/run_phase3_validation.py`, `experiments/phase3/`
+- **Acceptance Criteria**: 9 families x 5 severities evaluated; monotonic curves analyzed; artifacts saved.
+- **Status**: **PASS**
+- **Evidence**: [`scripts/run_phase3_validation.py`](scripts/run_phase3_validation.py), [`experiments/phase3/E3-VAL-QUALITY_summary.json`](experiments/phase3/E3-VAL-QUALITY_summary.json)
+
+#### T036: Zero-Leakage & Anti-Fabrication Audit
+- **Purpose**: Verify that quality assessment is completely blind to downstream models, ground-truth labels, and metadata.
+- **Dependencies**: T035
+- **Input**: Interface audit and spoof tests
+- **Expected Output**: Dedicated test suite in `tests/test_quality_no_leakage.py`
+- **Files Affected**: `tests/test_quality_no_leakage.py`
+- **Acceptance Criteria**: 0 forbidden parameters; identical feature outputs under metadata spoofing.
+- **Status**: **PASS**
+- **Evidence**: [`tests/test_quality_no_leakage.py`](tests/test_quality_no_leakage.py)
+
+#### T037: Determinism & Runtime Benchmarking
+- **Purpose**: Benchmark sub-millisecond execution times and verify 100% repeatability.
+- **Dependencies**: T035
+- **Input**: Repeated run logs and timing records
+- **Expected Output**: `reports/phase3/runtime_validation.md`, `reports/phase3/reproducibility_validation.md`
+- **Files Affected**: `reports/phase3/runtime_validation.md`, `reports/phase3/reproducibility_validation.md`, `tests/test_quality_determinism.py`
+- **Acceptance Criteria**: 100% exact match; mean latency 70.11 ms (< 500 ms limit).
+- **Status**: **PASS**
+- **Evidence**: [`reports/phase3/runtime_validation.md`](reports/phase3/runtime_validation.md), [`tests/test_quality_determinism.py`](tests/test_quality_determinism.py)
+
+#### T038: Phase 3 Verification & Final Report Generation
+- **Purpose**: Run complete pytest suite and generate authoritative 27-section report.
+- **Dependencies**: T030-T037
+- **Input**: All experimental artifacts and validation logs
+- **Expected Output**: `reports/phase3/PHASE3_REPORT.md` and 8 companion reports
+- **Files Affected**: `reports/phase3/*.md`
+- **Acceptance Criteria**: 106 passed tests (100% pass rate); all 27 report sections complete.
+- **Status**: **PASS**
+- **Evidence**: [`reports/phase3/PHASE3_REPORT.md`](reports/phase3/PHASE3_REPORT.md)

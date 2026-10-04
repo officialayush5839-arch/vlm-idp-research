@@ -1,0 +1,83 @@
+# Detailed Feature Extractor Parameters and Algorithmic Settings
+
+features:
+  blur:
+    method: "laplacian_variance"
+    kernel_size: 3
+    tenengrad_threshold: 100.0
+    # Expected normal clean range: variance of laplacian > 300.0
+    clean_threshold: 300.0
+    severe_threshold: 40.0
+    direction: "lower_is_worse"  # Lower variance means more blur
+
+  noise:
+    method: "immerkaer_fast_noise"
+    # Immerkaer's Laplacian mask: [1, -2, 1; -2, 4, -2; 1, -2, 1] * sqrt(pi/2) / (6*(W-2)*(H-2))
+    clean_threshold: 3.0
+    severe_threshold: 25.0
+    direction: "higher_is_worse" # Higher standard deviation means more noise
+
+  skew:
+    method: "hough_lines"
+    hough_threshold: 50
+    min_line_length: 50
+    max_line_gap: 10
+    max_angle_deg: 45.0
+    clean_threshold: 0.5   # <= 0.5 degrees is essentially unskewed
+    severe_threshold: 5.0
+    direction: "higher_is_worse" # Larger absolute angle means more skew
+
+  glare:
+    method: "saturated_pixel_ratio"
+    luminance_threshold: 250  # 0-255 scale in grayscale / V-channel
+    min_region_area: 100      # Pixels to filter out individual noise specks
+    clean_threshold: 0.01     # < 1% saturated is clean paper
+    severe_threshold: 0.15    # > 15% saturated is severe glare/washout
+    direction: "higher_is_worse"
+
+  contrast:
+    method: "rms_contrast"
+    # Root-mean-square contrast: standard deviation of normalized pixel intensities
+    clean_threshold: 0.25     # High contrast documents (black text on white paper)
+    severe_threshold: 0.08    # Low contrast washed out
+    direction: "lower_is_worse"
+
+  resolution:
+    method: "edge_density"
+    min_width: 800
+    min_height: 1000
+    sobel_threshold: 50.0
+    clean_threshold: 0.04     # Fraction of strong edge pixels
+    severe_threshold: 0.008
+    direction: "lower_is_worse"
+
+  compression:
+    method: "blockiness_discontinuity"
+    block_size: 8             # Standard JPEG 8x8 DCT grid
+    clean_threshold: 0.05
+    severe_threshold: 0.35
+    direction: "higher_is_worse"
+
+  illumination:
+    method: "spatial_grid_variance"
+    grid_rows: 4
+    grid_cols: 4
+    clean_threshold: 15.0     # Mean intensity variance across 4x4 spatial blocks
+    severe_threshold: 60.0
+    direction: "higher_is_worse"
+
+  occlusion:
+    method: "uniform_patch_coverage"
+    patch_size: 32
+    variance_threshold: 10.0  # Patches with variance < threshold are considered flat/occluding
+    intensity_bounds: [0, 40] # Very dark / black patches or uniform masks
+    clean_threshold: 0.01     # < 1% occluded
+    severe_threshold: 0.20    # > 20% occluded
+    direction: "higher_is_worse"
+
+  perspective:
+    method: "trapezoidal_convergence"
+    edge_margin_ratio: 0.10
+    clean_threshold: 1.0      # Degrees convergence between opposing margins
+    severe_threshold: 15.0
+    direction: "higher_is_worse"

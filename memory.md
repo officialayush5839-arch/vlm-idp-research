@@ -59,21 +59,22 @@ All RQ1-RQ6 frozen for experimental investigation. Status: CONFIRMED.
 - PHASE 1: Repository + Environment + Infrastructure & Document Ingestion (Completed: 2026-10-04, 39/39 tests pass). Status: CONFIRMED.
 - PHASE 2: Baseline OCR and VLM Pipelines (Completed: 2026-10-04, 59/59 tests pass, B0/B1/B2 smoke validated). Status: CONFIRMED.
 - PHASE 2.5: Unlimited-OCR Integration & Scientific Validation (Completed: 2026-10-04, 69/69 tests pass, B0-U validated). Status: CONFIRMED.
+- PHASE 3: Document Quality / Degradation Assessment Module (Completed: 2026-10-05, 106/106 tests pass, E3-VAL-QUALITY validated). Status: CONFIRMED.
 
 ## 20. Current Phase
-PHASE 2.5: Completed. Awaiting authorization to begin Phase 3 (Document Quality/Degradation Module). Status: CONFIRMED.
+PHASE 3: Completed. Awaiting authorization to begin Phase 4 (Controlled Degradation Benchmark). Status: CONFIRMED.
 
 ## 21. Current Task
-Phase 2.5 verification, Unlimited-OCR integration, and audit sign-off complete. Status: PASS.
+Phase 3 verification, quality feature extraction, degradation classification, and audit sign-off complete. Status: PASS.
 
 ## 22. Next Task
-PHASE 3: Document Quality/Degradation Assessment Module. Status: PLANNED.
+PHASE 4: Controlled Degradation Benchmark. Status: PLANNED.
 
 ## 23. Paper Status
-Section I (Intro) and Section II (Related Work) drafted in `literature/related_work_notes.md`. Ingestion and normalization pipeline methodology documented in `reports/phase1/ingestion_validation.md`. Baseline architectures and fairness specifications documented in `reports/phase2/baseline_registry.md`. Unlimited-OCR baseline justification documented in `reports/phase2_5/ieee_baseline_justification.md`. Status: IN_PROGRESS.
+Section I (Intro) and Section II (Related Work) drafted in `literature/related_work_notes.md`. Ingestion and normalization pipeline methodology documented in `reports/phase1/ingestion_validation.md`. Baseline architectures and fairness specifications documented in `reports/phase2/baseline_registry.md`. Unlimited-OCR baseline justification documented in `reports/phase2_5/ieee_baseline_justification.md`. Document quality and degradation assessment methodology documented in `reports/phase3/PHASE3_REPORT.md`. Status: IN_PROGRESS.
 
 ## 24. Reproducibility Status
-Full reproducibility suite implemented in `src/evaluation/reproducibility.py` (seed_everything, env capture, JSON run manifests, zero-leakage split validator). 69 automated unit tests pass in `tests/`. Prompt templates versioned with SHA-256 fingerprints. Run artifacts saved in `experiments/phase2/artifacts/` and `experiments/phase2_5/artifacts/`. Status: CONFIRMED.
+Full reproducibility suite implemented in `src/evaluation/reproducibility.py` (seed_everything, env capture, JSON run manifests, zero-leakage split validator). 106 automated unit and integration tests pass in `tests/`. Prompt templates versioned with SHA-256 fingerprints. Run artifacts saved in `experiments/phase2/artifacts/`, `experiments/phase2_5/artifacts/`, and `experiments/phase3/artifacts/`. Status: CONFIRMED.
 
 ---
 
@@ -84,8 +85,9 @@ Full reproducibility suite implemented in `src/evaluation/reproducibility.py` (s
 - PyTorch: 2.14.1+cpu — CONFIRMED
 - CUDA Runtime (PyTorch): NOT_AVAILABLE (CPU-only PyTorch active in Python 3.14 .venv) — CONFIRMED
 - OS: Windows 11 AMD64 (Windows-11-10.0.26200-SP0) — CONFIRMED
-- Git: Initialized (Commit fb0a359) — CONFIRMED
+- Git: Initialized (Commit d7cb76f) — CONFIRMED
 - Virtual Environment: `.venv` created and populated with dependencies — CONFIRMED
-- Unit Tests: 69 passed in 25.6s — CONFIRMED
+- Unit & Integration Tests: 106 passed in 11.0s — CONFIRMED
 - Baselines Validated: B0 (Paddle/Tess), B1 (OCR+VLM), B2 (Qwen2.5-VL), B0-U (Unlimited-OCR) — CONFIRMED
-- Smoke Experiments: Phase 2 smoke (5/5), Phase 2.5 smoke (B0-U single/multi/degraded/repro 100% match) — CONFIRMED
+- Quality Features Validated: 10 extractors (blur, noise, skew, glare, contrast, resolution, compression, illumination, occlusion, perspective) — CONFIRMED
+- Experiments Validated: Phase 2 smoke (5/5), Phase 2.5 smoke (B0-U 100% match), Phase 3 validation (E3-VAL-QUALITY 9x5 grid, 100% repeatability) — CONFIRMED

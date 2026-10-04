@@ -1,0 +1,61 @@
+# Master Quality Configuration for Phase 3
+# Controls pipeline parameters, enabled feature extractors, and runtime settings
+
+quality_pipeline:
+  algorithm_version: "1.0.0"
+  enabled: true
+  fail_fast: false  # Continue independent feature extraction if one fails
+  
+  preprocessing:
+    max_dimension: 2048  # Downsample for feature extraction if larger than this
+    target_dpi: 150
+    default_color_space: "RGB"
+    normalize_orientation: false  # Non-destructive: do NOT rotate original
+  
+  features:
+    blur:
+      enabled: true
+      weight: 1.0
+    noise:
+      enabled: true
+      weight: 1.0
+    skew:
+      enabled: true
+      weight: 1.0
+    glare:
+      enabled: true
+      weight: 1.0
+    contrast:
+      enabled: true
+      weight: 1.0
+    resolution:
+      enabled: true
+      weight: 1.0
+    compression:
+      enabled: true
+      weight: 1.0
+    illumination:
+      enabled: true
+      weight: 1.0
+    occlusion:
+      enabled: true
+      weight: 1.0
+    perspective:
+      enabled: true
+      weight: 1.0
+
+  aggregation:
+    # Phase 0 protocol does not authorize a scientific overall quality formula yet
+    # overall_quality_score is marked NOT_DEFINED until authorized
+    calculate_overall_score: false
+    descriptive_statistics:
+      - "mean"
+      - "median"
+      - "min"
+      - "max"
+      - "std"
+      - "worst_page"
+
+  provenance:
+    record_hash: true
+    hash_algorithm: "sha256"

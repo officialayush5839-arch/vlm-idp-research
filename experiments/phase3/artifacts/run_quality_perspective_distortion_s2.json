@@ -1,0 +1,176 @@
+{
+  "document_id": "doc_perspective_distortion_s2",
+  "page_id": "page_perspective_distortion_s2",
+  "page_number": 1,
+  "width": 600,
+  "height": 400,
+  "features": {
+    "blur": {
+      "raw_value": 23922.7622,
+      "normalized_value": 1.0,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "lower_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "laplacian_variance",
+        "tenengrad_energy": 17018.65
+      }
+    },
+    "noise": {
+      "raw_value": 0.9656,
+      "normalized_value": 0.0386,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "immerkaer_noise_sigma",
+        "image_dims": [
+          600,
+          400
+        ]
+      }
+    },
+    "skew": {
+      "raw_value": 0.0,
+      "normalized_value": 0.0,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "skew_angle_deg",
+        "detected_lines_count": 39,
+        "signed_angle_deg": 0.0
+      }
+    },
+    "glare": {
+      "raw_value": 0.0,
+      "normalized_value": 0.0,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "glare_fraction",
+        "largest_hotspot_pixels": 0,
+        "total_saturated_pixels": 0
+      }
+    },
+    "contrast": {
+      "raw_value": 0.8627,
+      "normalized_value": 0.8627,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "lower_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "effective_dynamic_range",
+        "raw_dynamic_range": 220.0,
+        "p_low": 30.0,
+        "p_high": 250.0
+      }
+    },
+    "resolution": {
+      "raw_value": 0.8352,
+      "normalized_value": 0.8352,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "lower_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "high_freq_sharpness_ratio",
+        "sharp_edges": 12091,
+        "soft_edges": 14476,
+        "width": 600,
+        "height": 400
+      }
+    },
+    "compression": {
+      "raw_value": 0.0,
+      "normalized_value": 0.0,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "blockiness_discontinuity",
+        "mean_boundary_diff": 2.351,
+        "mean_interior_diff": 2.932
+      }
+    },
+    "illumination": {
+      "raw_value": 205.163,
+      "normalized_value": 0.8548,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "lower_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "mean_intensity",
+        "spatial_grid_variance": 1018.32,
+        "min_block_intensity": 137.41,
+        "max_block_intensity": 249.63
+      }
+    },
+    "occlusion": {
+      "raw_value": 0.1913,
+      "normalized_value": 0.9566,
+      "severity": 3,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "occluded_area_ratio",
+        "detected_patches": 2,
+        "total_occluded_pixels": 45916
+      }
+    },
+    "perspective": {
+      "raw_value": 19.6507,
+      "normalized_value": 1.0,
+      "severity": 2,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "perspective_convergence_deg",
+        "left_lines": 2,
+        "right_lines": 2
+      }
+    }
+  },
+  "detected_degradations": [
+    {
+      "family": "occlusion",
+      "severity": 3,
+      "severity_label": "S3_SEVERE",
+      "evidence_feature": "occlusion",
+      "measured_value": 0.1913,
+      "threshold_exceeded": 0.15
+    },
+    {
+      "family": "perspective_distortion",
+      "severity": 2,
+      "severity_label": "S2_MODERATE",
+      "evidence_feature": "perspective",
+      "measured_value": 19.6507,
+      "threshold_exceeded": 10.0
+    }
+  ],
+  "overall_quality_score": null,
+  "overall_quality_status": "NOT_DEFINED",
+  "runtime": {
+    "preprocessing_ms": 1.41,
+    "feature_extraction_ms": 74.61,
+    "detection_ms": 0.07,
+    "aggregation_ms": 0.0,
+    "total_latency_ms": 76.13,
+    "memory_mb": null
+  },
+  "algorithm_version": "1.0.0",
+  "config_hash": "c22038b25a7db146",
+  "timestamp_utc": "2026-10-04T18:41:18.494340+00:00",
+  "status": "SUCCESS"
+}

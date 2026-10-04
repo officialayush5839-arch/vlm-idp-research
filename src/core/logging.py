@@ -25,7 +25,12 @@ class SecurityRedactionFilter(logging.Filter):
         if isinstance(record.msg, str):
             msg = record.msg
             for pattern in SENSITIVE_PATTERNS:
-                msg = pattern.sub(r"\1=[REDACTED]", msg)
+                if pattern.groups >= 2:
+                    msg = pattern.sub(r"\1=[REDACTED]", msg)
+                elif pattern.groups == 1:
+                    msg = pattern.sub(r"[REDACTED]", msg)
+                else:
+                    msg = pattern.sub(r"[REDACTED]", msg)
             record.msg = msg
         return True
 

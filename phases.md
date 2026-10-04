@@ -10,7 +10,7 @@
 | Phase 1 | Repository + Environment + Infrastructure & Ingestion | COMPLETED | Phase 0 |
 | Phase 2 | Baseline OCR and VLM Pipelines | COMPLETED | Phase 1 |
 | Phase 2.5 | Unlimited-OCR Integration & Scientific Validation | COMPLETED | Phase 2 |
-| Phase 3 | Document Quality/Degradation Module | NOT_STARTED | Phase 2.5 |
+| Phase 3 | Document Quality/Degradation Module | COMPLETED | Phase 2.5 |
 | Phase 4 | Controlled Degradation Benchmark | NOT_STARTED | Phase 3 |
 | Phase 5 | Adaptive Routing | NOT_STARTED | Phase 4 |
 | Phase 6 | Long-Document Multimodal Retrieval | NOT_STARTED | Phase 5 |
@@ -150,27 +150,33 @@
 
 ## PHASE 3 — Document Quality/Degradation Module
 
-**1. Purpose:** Build quality assessment and degradation detection.
+**1. Purpose:** Build quality assessment and degradation detection as an independent measurement layer.
 **2. Research question addressed:** RQ1 (degradation factors).
-**3. Prerequisites:** Phase 2 completion.
-**4. Inputs:** Diverse sets of images (clean and naturally degraded).
+**3. Prerequisites:** Phase 0, 1, 2, 2.5 completion (**ALL VERIFIED**).
+**4. Inputs:** Document page images and synthetic corruption suites.
 **5. Tasks:**
-1. Implement quality scoring algorithms (blur detection, noise estimation, skew detection).
-2. Generate quality vector output for each document.
-3. Train or implement degradation classifier.
-**6. Files/modules created:** `src/quality/assessment.py`, `src/quality/classifier.py`.
-**7. Experiments:** Assess quality distributions on natural datasets.
-**8. Metrics:** Quality score correlation with downstream OCR/VLM accuracy.
-**9. Tests:** Tests for edge case images, extreme aspect ratios, blank images.
-**10. Expected outputs:** A robust module that outputs a quality/degradation vector for any input document.
+1. Implement non-destructive image preprocessing and color-space representations (`src/quality/preprocessing.py`).
+2. Implement 10 protocol-defined visual quality feature extractors (`src/quality/blur.py`, `noise.py`, `skew.py`, `glare.py`, `contrast.py`, `resolution.py`, `compression.py`, `illumination.py`, `occlusion.py`, `perspective.py`).
+3. Build degradation detector with discrete S0–S4 severity classification (`src/quality/detector.py`).
+4. Implement multi-page document quality aggregator (`src/quality/aggregator.py`).
+5. Build end-to-end `DocumentQualityPipeline` with configuration hashing and timing breakdowns (`src/quality/pipeline.py`).
+6. Validate against clean control group, 9x5 synthetic degradation matrix, monotonicity, and confusion analysis.
+**6. Files/modules created:** `src/quality/`, `configs/phase3/`, `reports/phase3/`, `scripts/run_phase3_validation.py`, `tests/test_quality_*.py`.
+**7. Experiments:** `E3-VAL-QUALITY` (clean control group, 9x5 synthetic matrix, monotonicity, confusion, determinism, runtime).
+**8. Metrics:** False Positive Rate (0.0%), Mean Absolute Severity Error (0.225), Exact Match Repeatability (100.0%), Mean Latency (70.11 ms).
+**9. Tests:** 37 new tests across schema, preprocessing, features, detector, pipeline, determinism, anti-leakage, and synthetic validation (106 total passed).
+**10. Expected outputs:** A robust, independent quality assessment module producing typed feature vectors and reports.
 **11. Acceptance criteria:**
-- [ ] Blur, noise, and skew scoring implemented.
-- [ ] Module outputs a consistent quality vector.
-- [ ] Degradation classifier functions correctly.
-- [ ] Quality scores show correlation with baseline accuracy.
-**12. Failure conditions:** Inconsistent scoring across same images, catastrophic slow-down in pipeline.
-**13. Exit criteria:** Module integrated and validated on sample data.
-**14. Paper contribution:** Section IV (quality assessment).
+- [x] All 10 protocol-defined visual features implemented with failure status isolation.
+- [x] Module outputs consistent, typed `PageQualityAssessment` and `DocumentQualityAssessment` schemas.
+- [x] Degradation classifier and S0–S4 discrete severity mapping function correctly.
+- [x] Clean control group achieves 0.00% False Positive Rate.
+- [x] 100% deterministic repeatability verified across repeated runs.
+- [x] Zero label leakage and no downstream OCR/VLM dependencies verified.
+- [x] Mean latency of 70.11 ms satisfies the sub-500 ms constraint.
+**12. Failure conditions:** Inconsistent scoring across same images, silent exceptions converted to zeros, label leakage, or model routing logic.
+**13. Exit criteria:** 100% PASS on Section 71 Acceptance Audit and 106 tests passing.
+**14. Paper contribution:** Section IV (Document Quality & Degradation Assessment Subsystem).
 
 ---
 

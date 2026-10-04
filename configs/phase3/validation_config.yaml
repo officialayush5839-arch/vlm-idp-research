@@ -1,0 +1,32 @@
+# Validation Matrix & Experiment Configuration for Phase 3
+
+validation:
+  experiment_id: "E3-VAL-QUALITY"
+  deterministic_seeds: [42, 123, 456, 789, 101112]
+  primary_seed: 42
+  artifact_directory: "experiments/phase3/artifacts"
+  report_directory: "reports/phase3"
+
+  synthetic_grid:
+    dimensions: [600, 400]
+    background_color: [250, 250, 250]
+    font_color: [0, 0, 0]
+    test_document_count: 5
+    severities: [0, 1, 2, 3, 4]
+    
+    degradation_families:
+      - "gaussian_blur"
+      - "jpeg_compression"
+      - "gaussian_noise"
+      - "skew_rotation"
+      - "illumination"
+      - "occlusion"
+      - "resolution_reduction"
+      - "perspective_distortion"
+      - "mixed_degradation"
+
+  acceptance_thresholds:
+    clean_false_positive_rate_max: 0.05
+    monotonicity_rate_min: 0.85
+    repeatability_match_rate: 1.00
+    max_runtime_per_page_ms: 500.0

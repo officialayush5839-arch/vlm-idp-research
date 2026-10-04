@@ -1,0 +1,192 @@
+{
+  "document_id": "doc_perspective_distortion_s3",
+  "page_id": "page_perspective_distortion_s3",
+  "page_number": 1,
+  "width": 600,
+  "height": 400,
+  "features": {
+    "blur": {
+      "raw_value": 18734.4982,
+      "normalized_value": 1.0,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "lower_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "laplacian_variance",
+        "tenengrad_energy": 14356.58
+      }
+    },
+    "noise": {
+      "raw_value": 1.0821,
+      "normalized_value": 0.0433,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "immerkaer_noise_sigma",
+        "image_dims": [
+          600,
+          400
+        ]
+      }
+    },
+    "skew": {
+      "raw_value": 0.0,
+      "normalized_value": 0.0,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "skew_angle_deg",
+        "detected_lines_count": 31,
+        "signed_angle_deg": 0.0
+      }
+    },
+    "glare": {
+      "raw_value": 0.0,
+      "normalized_value": 0.0,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "glare_fraction",
+        "largest_hotspot_pixels": 0,
+        "total_saturated_pixels": 0
+      }
+    },
+    "contrast": {
+      "raw_value": 0.8627,
+      "normalized_value": 0.8627,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "lower_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "effective_dynamic_range",
+        "raw_dynamic_range": 220.0,
+        "p_low": 30.0,
+        "p_high": 250.0
+      }
+    },
+    "resolution": {
+      "raw_value": 0.872,
+      "normalized_value": 0.872,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "lower_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "high_freq_sharpness_ratio",
+        "sharp_edges": 11170,
+        "soft_edges": 12809,
+        "width": 600,
+        "height": 400
+      }
+    },
+    "compression": {
+      "raw_value": 0.0,
+      "normalized_value": 0.0,
+      "severity": 0,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "blockiness_discontinuity",
+        "mean_boundary_diff": 2.122,
+        "mean_interior_diff": 2.622
+      }
+    },
+    "illumination": {
+      "raw_value": 180.766,
+      "normalized_value": 0.7532,
+      "severity": 1,
+      "status": "MEASURED",
+      "direction": "lower_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "mean_intensity",
+        "spatial_grid_variance": 2350.02,
+        "min_block_intensity": 86.18,
+        "max_block_intensity": 249.66
+      }
+    },
+    "occlusion": {
+      "raw_value": 0.3045,
+      "normalized_value": 1.0,
+      "severity": 4,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "occluded_area_ratio",
+        "detected_patches": 2,
+        "total_occluded_pixels": 73090
+      }
+    },
+    "perspective": {
+      "raw_value": 33.814,
+      "normalized_value": 1.0,
+      "severity": 3,
+      "status": "MEASURED",
+      "direction": "higher_is_worse",
+      "message": null,
+      "metadata": {
+        "metric": "perspective_convergence_deg",
+        "left_lines": 2,
+        "right_lines": 2
+      }
+    }
+  },
+  "detected_degradations": [
+    {
+      "family": "illumination",
+      "severity": 1,
+      "severity_label": "S1_MILD",
+      "evidence_feature": "illumination",
+      "measured_value": 180.766,
+      "threshold_exceeded": 195.0
+    },
+    {
+      "family": "occlusion",
+      "severity": 4,
+      "severity_label": "S4_EXTREME",
+      "evidence_feature": "occlusion",
+      "measured_value": 0.3045,
+      "threshold_exceeded": 0.25
+    },
+    {
+      "family": "perspective_distortion",
+      "severity": 3,
+      "severity_label": "S3_SEVERE",
+      "evidence_feature": "perspective",
+      "measured_value": 33.814,
+      "threshold_exceeded": 25.0
+    },
+    {
+      "family": "mixed_degradation",
+      "severity": 3,
+      "severity_label": "S3_SEVERE",
+      "evidence_feature": "composite_multi_family",
+      "measured_value": 3.0,
+      "threshold_exceeded": 3.0
+    }
+  ],
+  "overall_quality_score": null,
+  "overall_quality_status": "NOT_DEFINED",
+  "runtime": {
+    "preprocessing_ms": 2.2,
+    "feature_extraction_ms": 67.94,
+    "detection_ms": 0.06,
+    "aggregation_ms": 0.0,
+    "total_latency_ms": 70.23,
+    "memory_mb": null
+  },
+  "algorithm_version": "1.0.0",
+  "config_hash": "c22038b25a7db146",
+  "timestamp_utc": "2026-10-04T18:41:18.580912+00:00",
+  "status": "SUCCESS"
+}
