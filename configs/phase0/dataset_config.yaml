@@ -1,0 +1,77 @@
+# Phase 0 Dataset Configuration
+# Specifications, partitions, and storage paths for all 7 benchmark datasets
+
+datasets:
+  docvqa:
+    name: "DocVQA"
+    type: "single_page_vqa"
+    domain: "industry_documents"
+    raw_path: "data/raw/docvqa"
+    manifest_path: "data/manifests/docvqa_manifest.json"
+    splits:
+      train_ratio: 0.70
+      val_ratio: 0.15
+      test_ratio: 0.15
+    annotations:
+      has_bounding_boxes: true
+      has_answer_strings: true
+    zero_leakage_group_key: "document_id"
+
+  funsd:
+    name: "FUNSD"
+    type: "noisy_scanned_forms"
+    domain: "scanned_business_forms"
+    raw_path: "data/raw/funsd"
+    manifest_path: "data/manifests/funsd_manifest.json"
+    splits:
+      train_ratio: 0.75
+      val_ratio: 0.10
+      test_ratio: 0.15
+    annotations:
+      has_bounding_boxes: true
+      has_semantic_entities: true
+      has_entity_links: true
+    zero_leakage_group_key: "document_id"
+
+  sroie:
+    name: "SROIE"
+    type: "receipt_extraction"
+    domain: "point_of_sale_receipts"
+    raw_path: "data/raw/sroie"
+    manifest_path: "data/manifests/sroie_manifest.json"
+    zero_leakage_group_key: "document_id"
+
+  cord:
+    name: "CORD"
+    type: "consolidated_receipts"
+    domain: "retail_receipts"
+    raw_path: "data/raw/cord"
+    manifest_path: "data/manifests/cord_manifest.json"
+    zero_leakage_group_key: "document_id"
+
+  mmlongbench_doc:
+    name: "MMLongBench-Doc"
+    type: "multi_page_long_document"
+    domain: "academic_corporate_financial"
+    raw_path: "data/raw/mmlongbench_doc"
+    manifest_path: "data/manifests/mmlongbench_doc_manifest.json"
+    avg_pages_per_doc: 47.5
+    has_unanswerable_questions: true
+    unanswerable_ratio: 0.21
+    zero_leakage_group_key: "document_id"
+
+  longdocurl:
+    name: "LongDocURL"
+    type: "long_document_locating_reasoning"
+    domain: "government_technical"
+    raw_path: "data/raw/longdocurl"
+    manifest_path: "data/manifests/longdocurl_manifest.json"
+    zero_leakage_group_key: "document_id"
+
+  xl_docbench:
+    name: "XL-DocBench"
+    type: "extra_long_document_grounding"
+    domain: "legal_financial_prospectuses"
+    raw_path: "data/raw/xl_docbench"
+    manifest_path: "data/manifests/xl_docbench_manifest.json"
+    zero_leakage_group_key: "document_id"

@@ -108,3 +108,24 @@ For each relevant paper, record:
 
 **Required Topics to Track**:
 VLMs, Document Understanding, DocVQA, Long-document reasoning, Evidence grounding, Document hallucination, Uncertainty estimation, Selective prediction, Abstention, Robust document AI, OCR robustness, Multimodal RAG, Spatial grounding, Document degradation.
+
+---
+
+## 10. Operational Sub-Protocols & Artifacts
+The frozen methodology is operationalized across detailed sub-protocol documents:
+- **Dataset Curation**: [`protocol/dataset_protocol.md`](protocol/dataset_protocol.md)
+- **Zero-Leakage Partitioning**: [`protocol/split_protocol.md`](protocol/split_protocol.md)
+- **Controlled Degradation Grid**: [`protocol/degradation_protocol.md`](protocol/degradation_protocol.md)
+- **Comparative Baselines**: [`protocol/baseline_protocol.md`](protocol/baseline_protocol.md)
+- **Mathematical Metrics**: [`protocol/evaluation_protocol.md`](protocol/evaluation_protocol.md)
+- **Multi-Signal Uncertainty**: [`protocol/uncertainty_protocol.md`](protocol/uncertainty_protocol.md)
+- **Spatial Grounding**: [`protocol/grounding_protocol.md`](protocol/grounding_protocol.md)
+- **Statistical Significance**: [`protocol/statistical_protocol.md`](protocol/statistical_protocol.md)
+- **Reproducibility Standards**: [`protocol/reproducibility_protocol.md`](protocol/reproducibility_protocol.md)
+- **Literature Registry**: [`literature/literature_registry.csv`](literature/literature_registry.csv)
+- **Gap Analysis**: [`literature/gap_analysis.md`](literature/gap_analysis.md)
+- **Novelty Matrix**: [`literature/novelty_matrix.md`](literature/novelty_matrix.md)
+- **Claim Traceability**: [`reports/phase0/claim_traceability.md`](reports/phase0/claim_traceability.md)
+- **Risk Register**: [`reports/phase0/risk_register.md`](reports/phase0/risk_register.md)
+- **Feasibility Budget**: [`reports/phase0/feasibility_analysis.md`](reports/phase0/feasibility_analysis.md)
+- **Phase 0 Final Report**: [`reports/phase0/PHASE0_REPORT.md`](reports/phase0/PHASE0_REPORT.md)

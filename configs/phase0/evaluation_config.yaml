@@ -1,0 +1,47 @@
+# Phase 0 Evaluation Configuration
+# Quantitative metric definitions, statistical parameters, and calibration targets
+
+evaluation:
+  random_seeds:
+    primary_suite: [42, 123, 456]
+    extended_publication_suite: [42, 123, 456, 789, 101112]
+
+  extraction_metrics:
+    exact_match:
+      case_sensitive: false
+      strip_punctuation: true
+    f1_score:
+      token_level: "whitespace_word"
+    anls:
+      threshold: 0.50
+
+  ocr_metrics:
+    cer:
+      normalize: true
+    wer:
+      normalize: true
+
+  retrieval_metrics:
+    recall_k: [1, 3, 5, 10]
+    mrr: true
+
+  grounding_metrics:
+    iou_thresholds: [0.50, 0.75]
+    region_recall_k: [1, 3, 5]
+    unsupported_answer_rate:
+      max_tolerable: 0.05
+
+  uncertainty_calibration:
+    bins: 10
+    strategy: "equal_width"
+    metrics: ["ece", "brier_score", "aurc"]
+    target_ece: 0.08
+    decision_thresholds:
+      accept_tau: 0.85
+      review_tau: 0.60
+
+  statistical_tests:
+    method: "paired_bootstrap"
+    bootstrap_iterations: 10000
+    confidence_level: 0.95
+    effect_size_metric: "cliffs_delta"

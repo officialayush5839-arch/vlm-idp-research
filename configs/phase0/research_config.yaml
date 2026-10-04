@@ -1,0 +1,61 @@
+# Phase 0 Research Configuration
+# Master configuration freezing research identities, hypotheses, and pipeline modules
+
+project:
+  name: "vlm-idp-research"
+  title: "Adaptive, Uncertainty-Aware and Evidence-Grounded Vision-Language Document Intelligence under Real-World Visual Degradation"
+  version: "0.1.0"
+  stage: "Phase 0"
+  target_venue: "IEEE"
+  type: "software-only-research"
+
+hardware_target:
+  os: "Windows"
+  python_version: "3.14.6"
+  gpu: "NVIDIA GeForce RTX 3050 Laptop GPU"
+  vram_mb: 6144
+  quantization_default: "4bit"
+
+primary_research_question: >
+  How can a Vision-Language Model-based intelligent document processing system
+  adapt its processing strategy to real-world visual degradation while maintaining
+  reliable long-document reasoning, verifiable evidence grounding, and calibrated uncertainty?
+
+secondary_research_questions:
+  RQ1: "Which visual degradation factors cause the largest failures in VLM-based document understanding?"
+  RQ2: "Can quality-aware routing outperform a fixed VLM pipeline across multiple degradation levels?"
+  RQ3: "Does explicit evidence grounding reduce unsupported answers in long documents?"
+  RQ4: "Can multimodal retrieval recover cross-page evidence more reliably than text-only retrieval?"
+  RQ5: "Can calibrated uncertainty identify incorrect answers early enough to support safe abstention?"
+  RQ6: "What accuracy-reliability-latency trade-off is achieved by the integrated framework?"
+
+hypotheses:
+  H1: "Increasing visual degradation significantly reduces VLM document extraction/reasoning performance."
+  H2: "Adaptive degradation-aware routing reduces performance degradation compared with a fixed VLM pipeline."
+  H3: "Evidence grounding reduces unsupported/hallucinated answers compared with answer-only VLM inference."
+  H4: "Calibrated uncertainty and abstention reduce harmful false answers while preserving adequate valid-answer coverage."
+  H5: "The integrated framework provides a better accuracy-reliability-latency trade-off than individual components alone."
+  H6: "The proposed method generalizes across document types rather than improving only one benchmark."
+
+models:
+  primary_vlm:
+    id: "Qwen/Qwen2.5-VL-7B-Instruct"
+    family: "Qwen2.5-VL"
+    parameters: "7B"
+    quantization: "4bit"
+    framework: "transformers"
+    role: "primary_reasoning_and_grounding"
+  secondary_vlm:
+    id: "OpenGVLab/InternVL2-8B"
+    family: "InternVL"
+    parameters: "8B"
+    quantization: "4bit"
+    framework: "transformers"
+    role: "generalization_ablation_A9"
+  ocr:
+    primary: "PaddleOCR"
+    baseline: "Tesseract"
+  retrieval:
+    dense_text_embeddings: "BAAI/bge-large-en-v1.5"
+    alternative_embeddings: "intfloat/e5-large-v2"
+    vector_index: "FAISS-IndexFlatIP"

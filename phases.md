@@ -6,8 +6,8 @@
 
 | Phase | Name | Status | Depends On |
 |---|---|---|---|
-| Phase 0 | Literature Freeze + Research Protocol | IN_PROGRESS | None |
-| Phase 1 | Repository + Environment + Infrastructure | NOT_STARTED | Phase 0 |
+| Phase 0 | Literature Freeze + Research Protocol | COMPLETED | None |
+| Phase 1 | Repository + Environment + Infrastructure & Ingestion | IN_PROGRESS | Phase 0 |
 | Phase 2 | Baseline OCR and VLM Pipelines | NOT_STARTED | Phase 1 |
 | Phase 3 | Document Quality/Degradation Module | NOT_STARTED | Phase 2 |
 | Phase 4 | Controlled Degradation Benchmark | NOT_STARTED | Phase 3 |
@@ -30,26 +30,26 @@
 **3. Prerequisites:** Initial project idea and literature scan.
 **4. Inputs:** Foundational papers on VLMs, document intelligence, uncertainty, and grounding.
 **5. Tasks:**
-1. Conduct comprehensive literature survey.
-2. Freeze RQs and hypotheses.
-3. Define baselines B0-B6.
-4. Define ablations A1-A12.
-5. Define evaluation protocol.
-6. Create `research_protocol.md`.
-**6. Files/modules created:** `research_protocol.md`
-**7. Experiments:** None.
-**8. Metrics:** N/A.
-**9. Tests:** Peer review of the protocol document.
-**10. Expected outputs:** A formalized research protocol document.
+1. Conduct comprehensive literature survey across 20 primary academic papers.
+2. Freeze RQs (Primary + RQ1–RQ6) and hypotheses (H1–H6).
+3. Define baselines B0–B6 and PROPOSED system.
+4. Define ablations A1–A12.
+5. Define evaluation protocol across 7 performance dimensions.
+6. Create `research_protocol.md`, 9 operational sub-protocols, and Phase 0 reports.
+**6. Files/modules created:** `research_protocol.md`, `protocol/*.md`, `literature/*`, `configs/phase0/*`, `reports/phase0/*`.
+**7. Experiments:** None (protocol freeze stage).
+**8. Metrics:** Methodological completeness and statistical rigor.
+**9. Tests:** Cross-file consistency and protocol audit reports (100% PASS).
+**10. Expected outputs:** A formalized research protocol suite and literature foundation.
 **11. Acceptance criteria:**
-- [ ] Literature survey complete.
-- [ ] RQs and hypotheses are clearly defined and frozen.
-- [ ] Baselines B0-B6 are explicitly defined.
-- [ ] Ablations A1-A12 are explicitly defined.
-- [ ] Evaluation protocol is fully specified.
-- [ ] `research_protocol.md` exists and is finalized.
+- [x] Literature survey complete.
+- [x] RQs and hypotheses are clearly defined and frozen.
+- [x] Baselines B0-B6 are explicitly defined.
+- [x] Ablations A1-A12 are explicitly defined.
+- [x] Evaluation protocol is fully specified.
+- [x] `research_protocol.md` exists and is finalized.
 **12. Failure conditions:** Ambiguous RQs, missing baseline definitions, or unmeasurable evaluation protocol.
-**13. Exit criteria:** Formal approval/completion of `research_protocol.md`.
+**13. Exit criteria:** Formal approval/completion of `research_protocol.md` and audit report.
 **14. Paper contribution:** Sections I (Introduction), II (Related Work), III (Methodology formulation).
 
 ---

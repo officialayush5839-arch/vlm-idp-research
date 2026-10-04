@@ -1,0 +1,106 @@
+# Phase 0 Degradation Configuration
+# Exact mathematical parameter grid for all 9 controlled corruption families
+
+degradation_benchmark:
+  output_directory: "data/degraded"
+  manifest_directory: "data/manifests"
+  deterministic_seed: 42
+
+  families:
+    gaussian_blur:
+      name: "Gaussian Blur"
+      type: "optical_defocus"
+      parameter_name: "sigma"
+      severities:
+        0: { sigma: 0.0 }
+        1: { sigma: 1.0 }
+        2: { sigma: 2.0 }
+        3: { sigma: 4.0 }
+        4: { sigma: 6.0 }
+
+    jpeg_compression:
+      name: "JPEG Compression"
+      type: "codec_artifacts"
+      parameter_name: "quality"
+      severities:
+        0: { quality: 100 }
+        1: { quality: 80 }
+        2: { quality: 50 }
+        3: { quality: 25 }
+        4: { quality: 10 }
+
+    gaussian_noise:
+      name: "Gaussian Noise"
+      type: "sensor_noise"
+      parameter_name: "sigma"
+      severities:
+        0: { sigma: 0.0 }
+        1: { sigma: 5.0 }
+        2: { sigma: 15.0 }
+        3: { sigma: 30.0 }
+        4: { sigma: 50.0 }
+
+    skew_rotation:
+      name: "Skew / Rotation"
+      type: "geometric_alignment"
+      parameter_name: "angle_deg"
+      severities:
+        0: { angle_deg: 0.0 }
+        1: { angle_deg: 1.0 }
+        2: { angle_deg: 3.0 }
+        3: { angle_deg: 5.0 }
+        4: { angle_deg: 10.0 }
+
+    illumination:
+      name: "Illumination / Brightness"
+      type: "photometric_attenuation"
+      parameter_name: "alpha"
+      severities:
+        0: { alpha: 1.00 }
+        1: { alpha: 0.75 }
+        2: { alpha: 0.50 }
+        3: { alpha: 0.30 }
+        4: { alpha: 0.15 }
+
+    occlusion:
+      name: "Occlusion / Masking"
+      type: "physical_obstruction"
+      parameter_name: "area_ratio"
+      severities:
+        0: { area_ratio: 0.00 }
+        1: { area_ratio: 0.05 }
+        2: { area_ratio: 0.10 }
+        3: { area_ratio: 0.20 }
+        4: { area_ratio: 0.30 }
+
+    resolution_reduction:
+      name: "Resolution Reduction"
+      type: "sampling_degradation"
+      parameter_name: "scale_factor"
+      severities:
+        0: { scale_factor: 1.00 }
+        1: { scale_factor: 0.75 }
+        2: { scale_factor: 0.50 }
+        3: { scale_factor: 0.25 }
+        4: { scale_factor: 0.15 }
+
+    perspective_distortion:
+      name: "Perspective Distortion"
+      type: "projective_geometry"
+      parameter_name: "tilt_angle_deg"
+      severities:
+        0: { tilt_angle_deg: 0.0 }
+        1: { tilt_angle_deg: 5.0 }
+        2: { tilt_angle_deg: 15.0 }
+        3: { tilt_angle_deg: 25.0 }
+        4: { tilt_angle_deg: 35.0 }
+
+    mixed_degradation:
+      name: "Mixed Composite Degradation"
+      type: "composite_environmental"
+      severities:
+        0: { mode: "clean" }
+        1: { blur_sigma: 1.0, jpeg_quality: 80, noise_sigma: 5.0, skew_deg: 1.0 }
+        2: { blur_sigma: 2.0, jpeg_quality: 50, noise_sigma: 15.0, skew_deg: 3.0 }
+        3: { blur_sigma: 4.0, jpeg_quality: 25, noise_sigma: 30.0, skew_deg: 5.0 }
+        4: { blur_sigma: 6.0, jpeg_quality: 10, noise_sigma: 50.0, skew_deg: 10.0 }

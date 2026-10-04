@@ -1,0 +1,78 @@
+# Phase 0 Experiment Matrix Configuration
+# Complete grid of baseline runs, degradation robustness tests, and ablations
+
+experiment_matrix:
+  baselines:
+    - id: "B0"
+      name: "OCR-Only"
+      engine: "PaddleOCR"
+      datasets: ["DocVQA", "FUNSD", "SROIE"]
+    - id: "B1"
+      name: "OCR + VLM"
+      engine: "PaddleOCR + Qwen2.5-VL-7B"
+      datasets: ["DocVQA", "FUNSD", "SROIE"]
+    - id: "B2"
+      name: "VLM-Only"
+      engine: "Qwen2.5-VL-7B"
+      datasets: ["DocVQA", "FUNSD", "SROIE", "MMLongBench-Doc"]
+    - id: "B3"
+      name: "VLM + Text RAG"
+      engine: "PaddleOCR + BGE + FAISS + Qwen2.5-VL-7B"
+      datasets: ["MMLongBench-Doc", "LongDocURL"]
+    - id: "B4"
+      name: "VLM + Multimodal Retrieval"
+      engine: "ColPali/BGE-Visual + FAISS + Qwen2.5-VL-7B"
+      datasets: ["MMLongBench-Doc", "LongDocURL"]
+    - id: "B5"
+      name: "VLM + Spatial Grounding"
+      engine: "Qwen2.5-VL-7B (BBox Prompting)"
+      datasets: ["DocVQA", "LongDocURL"]
+    - id: "B6"
+      name: "Fixed Preprocessing + VLM"
+      engine: "OpenCV Enhancement + Qwen2.5-VL-7B"
+      datasets: ["DocVQA", "FUNSD"]
+    - id: "PROPOSED"
+      name: "Quality-Aware Adaptive Grounded System"
+      engine: "Adaptive Router + Multimodal Index + Evidence Grounding + Calibrated Uncertainty"
+      datasets: ["DocVQA", "FUNSD", "SROIE", "CORD", "MMLongBench-Doc", "LongDocURL", "XL-DocBench"]
+
+  degradation_robustness_runs:
+    dataset: "DocVQA"
+    severities: [0, 1, 2, 3, 4]
+    families:
+      - "gaussian_blur"
+      - "jpeg_compression"
+      - "gaussian_noise"
+      - "skew_rotation"
+      - "illumination"
+      - "occlusion"
+      - "resolution_reduction"
+      - "perspective_distortion"
+      - "mixed_degradation"
+    compared_models: ["B1", "B2", "B6", "PROPOSED"]
+
+  ablations:
+    - id: "A1"
+      description: "Remove quality and degradation assessment module"
+    - id: "A2"
+      description: "Remove adaptive routing (force single pathway)"
+    - id: "A3"
+      description: "Remove OCR fallback pathway"
+    - id: "A4"
+      description: "Remove multimodal retrieval (text-only retrieval)"
+    - id: "A5"
+      description: "Remove evidence grounding verification"
+    - id: "A6"
+      description: "Remove uncertainty calibration (raw token probability)"
+    - id: "A7"
+      description: "Remove abstention mechanism (forced prediction)"
+    - id: "A8"
+      description: "Fixed preprocessing vs adaptive preprocessing"
+    - id: "A9"
+      description: "VLM size and family comparison (Qwen2.5-VL 7B vs InternVL2 8B)"
+    - id: "A10"
+      description: "Retrieval depth comparison (k in [1, 3, 5, 10])"
+    - id: "A11"
+      description: "Single degradation vs mixed composite degradation"
+    - id: "A12"
+      description: "Clean vs synthetic degraded vs real degraded (FUNSD)"
