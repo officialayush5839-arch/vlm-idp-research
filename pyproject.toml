@@ -1,0 +1,104 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vlm-idp"
+version = "0.1.0"
+description = "Adaptive, Uncertainty-Aware and Evidence-Grounded Vision-Language Document Intelligence under Real-World Visual Degradation"
+authors = [
+    { name = "VLM-IDP Research Team" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+    "vision-language-models",
+    "intelligent-document-processing",
+    "document-ai",
+    "uncertainty-estimation",
+    "selective-prediction",
+    "evidence-grounding",
+    "degradation-robustness",
+    "adaptive-routing"
+]
+
+dependencies = [
+    # Core Data & Mathematics
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.11",
+    "pydantic>=2.5.0",
+    "PyYAML>=6.0",
+    "python-dotenv>=1.0.0",
+
+    # Image Processing & Document Normalization
+    "Pillow>=10.0.0",
+    "opencv-python-headless>=4.8.0",
+    "scikit-image>=0.21.0",
+    "pypdf>=4.0.0",
+    "pymupdf>=1.24.0",
+
+    # Progress & CLI Utilities
+    "tqdm>=4.66.0",
+    "rich>=13.7.0"
+]
+
+[project.optional-dependencies]
+ml = [
+    "torch>=2.1.0",
+    "torchvision>=0.16.0",
+    "transformers>=4.45.0",
+    "accelerate>=0.30.0",
+    "sentence-transformers>=3.0.0",
+    "scikit-learn>=1.3.0"
+]
+
+retrieval = [
+    "faiss-cpu>=1.7.4"
+]
+
+ocr = [
+    "pytesseract>=0.3.10"
+]
+
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.9.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "-v",
+    "--tb=short"
+]
+markers = [
+    "unit: fast unit tests with no external dependencies",
+    "ingestion: document normalization and PDF parsing tests",
+    "splits: data leakage and partition integrity tests",
+    "reproducibility: deterministic seed and environment capture tests",
+    "gpu: smoke tests requiring CUDA acceleration"
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312", "py314"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP"]
+ignore = ["E501"]

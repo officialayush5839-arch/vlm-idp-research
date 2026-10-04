@@ -1,8 +1,8 @@
 # VLM-IDP Active Execution Queue
 
-CURRENT PHASE: PHASE 1 — Repository + Environment + Infrastructure & Ingestion
-CURRENT OBJECTIVE: Implement environment specification, dependency lock, test suite, and document ingestion pipeline.
-TASK STATUS: IN_PROGRESS
+CURRENT PHASE: PHASE 1 — Repository + Environment + Infrastructure & Ingestion (COMPLETED)
+CURRENT OBJECTIVE: Phase 1 complete. Awaiting user authorization to begin Phase 2.
+TASK STATUS: COMPLETE
 
 ---
 
@@ -90,27 +90,27 @@ TASK STATUS: IN_PROGRESS
 
 ---
 
-### Phase 1 Tasks (Repository + Environment + Infrastructure & Ingestion)
+### Phase 1 Tasks (Repository + Environment + Infrastructure & Ingestion) — ALL COMPLETED
 
 #### T002: Create environment specification
 - **Purpose**: Define Python environment, build backend (`pyproject.toml`), and `.env.example`.
 - **Dependencies**: Phase 0 Complete
 - **Input**: Environment facts (Python 3.14.6, Windows, RTX 3050 6GB, hatchling conventions)
-- **Expected Output**: `pyproject.toml` and `.venv` setup scripts
-- **Files Affected**: `pyproject.toml`, `.env.example`
+- **Expected Output**: `pyproject.toml`, `.venv`, `.env.example`
+- **Files Affected**: `pyproject.toml`, `.env.example`, `.venv/`
 - **Acceptance Criteria**: Valid `pyproject.toml` using hatchling build backend.
-- **Status**: **IN_PROGRESS**
-- **Evidence**: Initiating in Phase 1
+- **Status**: **PASS**
+- **Evidence**: [`pyproject.toml`](pyproject.toml), [`reports/phase1/environment_report.md`](reports/phase1/environment_report.md)
 
 #### T003: Create requirements/dependency files
 - **Purpose**: Lock precise versions for reproducibility.
 - **Dependencies**: T002
 - **Input**: PyTorch, Transformers, PaddleOCR, FAISS, Scikit-learn
-- **Expected Output**: `requirements.lock`
-- **Files Affected**: `requirements.lock`
-- **Acceptance Criteria**: Pinned dependency lockfile for Windows x86_64.
-- **Status**: **NOT_STARTED**
-- **Evidence**: None
+- **Expected Output**: Installed packages in `.venv` matching frozen specifications
+- **Files Affected**: `pyproject.toml`, `.venv/`
+- **Acceptance Criteria**: Pinned dependency environment for Windows x86_64.
+- **Status**: **PASS**
+- **Evidence**: [`reports/phase1/environment_report.md`](reports/phase1/environment_report.md)
 
 #### T007: Create reproducibility utilities
 - **Purpose**: Seed locking and runtime environment metadata capture.
@@ -119,25 +119,25 @@ TASK STATUS: IN_PROGRESS
 - **Expected Output**: `src/evaluation/reproducibility.py`
 - **Files Affected**: `src/evaluation/reproducibility.py`
 - **Acceptance Criteria**: `seed_everything()` and environment logging implemented.
-- **Status**: **NOT_STARTED**
-- **Evidence**: None
+- **Status**: **PASS**
+- **Evidence**: [`src/evaluation/reproducibility.py`](src/evaluation/reproducibility.py), [`tests/test_reproducibility.py`](tests/test_reproducibility.py) (6/6 tests pass)
 
 #### T008: Create test framework
-- **Purpose**: Setup unit testing foundation and markers.
+- **Purpose**: Setup unit testing foundation, pytest markers, and test suites.
 - **Dependencies**: T002
 - **Input**: pytest conventions
-- **Expected Output**: `pytest.ini` and initial unit tests under `tests/`
-- **Files Affected**: `pytest.ini`, `tests/test_splits.py`, `tests/test_ingestion.py`
-- **Acceptance Criteria**: `pytest` executes successfully.
-- **Status**: **NOT_STARTED**
-- **Evidence**: None
+- **Expected Output**: `pytest` configuration in `pyproject.toml` and 6 test suites under `tests/`
+- **Files Affected**: `pyproject.toml`, `tests/`
+- **Acceptance Criteria**: `pytest` executes successfully across all test suites.
+- **Status**: **PASS**
+- **Evidence**: 39/39 passing tests in `tests/`, [`reports/phase1/PHASE1_REPORT.md`](reports/phase1/PHASE1_REPORT.md)
 
 #### T013: Implement Document Ingestion module
 - **Purpose**: Implement standardized PDF rendering, page extraction, image normalization, and metadata tracking.
 - **Dependencies**: T002, T008
 - **Input**: `src/ingestion/`
 - **Expected Output**: Ingestion pipeline code under `src/ingestion/`
-- **Files Affected**: `src/ingestion/`
+- **Files Affected**: `src/ingestion/coordinates.py`, `src/ingestion/schema.py`, `src/ingestion/metadata.py`, `src/ingestion/pdf.py`, `src/ingestion/adapter.py`
 - **Acceptance Criteria**: Successfully parses multi-page PDFs to normalized images with coordinate metadata.
-- **Status**: **NOT_STARTED**
-- **Evidence**: None
+- **Status**: **PASS**
+- **Evidence**: [`src/ingestion/`](src/ingestion/), [`reports/phase1/ingestion_validation.md`](reports/phase1/ingestion_validation.md) (19/19 ingestion & coordinate tests pass)

@@ -7,7 +7,7 @@
 | Phase | Name | Status | Depends On |
 |---|---|---|---|
 | Phase 0 | Literature Freeze + Research Protocol | COMPLETED | None |
-| Phase 1 | Repository + Environment + Infrastructure & Ingestion | IN_PROGRESS | Phase 0 |
+| Phase 1 | Repository + Environment + Infrastructure & Ingestion | COMPLETED | Phase 0 |
 | Phase 2 | Baseline OCR and VLM Pipelines | NOT_STARTED | Phase 1 |
 | Phase 3 | Document Quality/Degradation Module | NOT_STARTED | Phase 2 |
 | Phase 4 | Controlled Degradation Benchmark | NOT_STARTED | Phase 3 |
@@ -74,12 +74,12 @@
 **9. Tests:** Unit tests for configuration loading, reproducibility utilities, PDF rendering, and coordinate normalization.
 **10. Expected outputs:** A fully configured, reproducible project repository and operational document ingestion module.
 **11. Acceptance criteria:**
-- [ ] `pyproject.toml` is configured correctly.
-- [ ] `.venv` can be instantiated without errors.
-- [ ] `pytest` runs successfully.
-- [ ] Reproducibility utilities are implemented.
-- [ ] Configuration schema validates correctly.
-- [ ] Document Ingestion module (`src/ingestion/`) successfully renders PDFs and normalizes page images.
+- [x] `pyproject.toml` is configured correctly.
+- [x] `.venv` can be instantiated without errors.
+- [x] `pytest` runs successfully.
+- [x] Reproducibility utilities are implemented.
+- [x] Configuration schema validates correctly.
+- [x] Document Ingestion module (`src/ingestion/`) successfully renders PDFs and normalizes page images.
 **12. Failure conditions:** Dependency conflicts, inability to lock seeds, failing basic tests, PDF rendering coordinate drift.
 **13. Exit criteria:** Passing test suite, fully defined environment, and validated ingestion pipeline.
 **14. Paper contribution:** Reproducibility appendix and Section IV (Data Preprocessing / Ingestion).

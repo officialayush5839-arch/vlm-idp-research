@@ -55,29 +55,33 @@ None. Status: NOT_AVAILABLE.
 All RQ1-RQ6 frozen for experimental investigation. Status: CONFIRMED.
 
 ## 19. Completed Phases
-PHASE 0: Literature Freeze + Research Protocol (Completed: 2026-10-04). Status: CONFIRMED.
+- PHASE 0: Literature Freeze + Research Protocol (Completed: 2026-10-04). Status: CONFIRMED.
+- PHASE 1: Repository + Environment + Infrastructure & Document Ingestion (Completed: 2026-10-04, 39/39 tests pass). Status: CONFIRMED.
 
 ## 20. Current Phase
-PHASE 1: Repository + Environment + Infrastructure & Ingestion. Status: IN_PROGRESS.
+PHASE 1: Completed. Awaiting authorization to begin Phase 2. Status: CONFIRMED.
 
 ## 21. Current Task
-T002: Create environment specification (`pyproject.toml`, `.venv`). Status: IN_PROGRESS.
+Phase 1 verification and audit sign-off complete. Status: PASS.
 
 ## 22. Next Task
-T003: Create requirements/dependency lock files. Status: PLANNED.
+PHASE 2: Baseline OCR and VLM Pipelines (B0, B1, B2). Status: PLANNED.
 
 ## 23. Paper Status
-Section I (Intro) and Section II (Related Work) drafted in `literature/related_work_notes.md`. Status: IN_PROGRESS.
+Section I (Intro) and Section II (Related Work) drafted in `literature/related_work_notes.md`. Ingestion and normalization pipeline methodology documented in `reports/phase1/ingestion_validation.md`. Status: IN_PROGRESS.
 
 ## 24. Reproducibility Status
-Reproducibility protocol locked in `protocol/reproducibility_protocol.md` (seed policy, JSON run schema, Git commit tracking). Status: CONFIRMED.
+Full reproducibility suite implemented in `src/evaluation/reproducibility.py` (seed_everything, env capture, JSON run manifests, zero-leakage split validator). 39 automated unit tests pass in `tests/`. Status: CONFIRMED.
 
 ---
 
 ### Environment Facts
 - Python: 3.14.6 — CONFIRMED
 - GPU: NVIDIA RTX 3050 6GB Laptop GPU — CONFIRMED
-- CUDA: NOT_AVAILABLE (CPU-only PyTorch installed)
-- OS: Windows — CONFIRMED
-- Git: Initialized — CONFIRMED
-- Virtual Environment: Not created — PLANNED
+- Driver: NVIDIA 581.95 (Supports CUDA 13.0 API) — CONFIRMED
+- PyTorch: 2.14.1+cpu — CONFIRMED
+- CUDA Runtime (PyTorch): NOT_AVAILABLE (CPU-only PyTorch active in Python 3.14 .venv) — CONFIRMED
+- OS: Windows 11 AMD64 (Windows-11-10.0.26200-SP0) — CONFIRMED
+- Git: Initialized (Commit bde2b53) — CONFIRMED
+- Virtual Environment: `.venv` created and populated with dependencies — CONFIRMED
+- Unit Tests: 39 passed in 3.5s — CONFIRMED
