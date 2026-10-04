@@ -1,0 +1,24 @@
+{
+  "run_id": "run_smoke_b2",
+  "baseline": "B2",
+  "document_id": "doc_smoke_004",
+  "page_id": "page_0",
+  "question_id": "smoke_q_004",
+  "model": "Qwen2.5-VL-7B-Instruct",
+  "model_revision": "b450c26581decfcb4c555513ab4deeb85ab1a39d",
+  "prompt_version": "v1.0-b2",
+  "prompt_hash": "a77f7f25b1fb18a8",
+  "seed": 42,
+  "device": "cpu",
+  "dtype": "float32",
+  "quantization": "none",
+  "answer": "You are performing document understandin...",
+  "ground_truth_answers": [
+    "Apex Consulting"
+  ],
+  "latency_ms": 20.7,
+  "gpu_peak_memory_mb": null,
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

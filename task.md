@@ -1,7 +1,7 @@
 # VLM-IDP Active Execution Queue
 
-CURRENT PHASE: PHASE 1 — Repository + Environment + Infrastructure & Ingestion (COMPLETED)
-CURRENT OBJECTIVE: Phase 1 complete. Awaiting user authorization to begin Phase 2.
+CURRENT PHASE: PHASE 2 — Baseline OCR and VLM Pipelines (COMPLETED)
+CURRENT OBJECTIVE: Phase 2 baselines established and validated. Awaiting user authorization to begin Phase 3.
 TASK STATUS: COMPLETE
 
 ---
@@ -141,3 +141,77 @@ TASK STATUS: COMPLETE
 - **Acceptance Criteria**: Successfully parses multi-page PDFs to normalized images with coordinate metadata.
 - **Status**: **PASS**
 - **Evidence**: [`src/ingestion/`](src/ingestion/), [`reports/phase1/ingestion_validation.md`](reports/phase1/ingestion_validation.md) (19/19 ingestion & coordinate tests pass)
+
+---
+
+### Phase 2 Tasks (Baseline OCR and VLM Pipelines) — ALL COMPLETED
+
+#### T014: Configure Phase 2 baseline models and inference parameters
+- **Purpose**: Freeze configuration schemas for models, OCR engines, baselines, and prompts.
+- **Dependencies**: Phase 1 Complete
+- **Input**: Protocol baseline definitions
+- **Expected Output**: `configs/phase2/model_config.yaml`, `ocr_config.yaml`, `baseline_config.yaml`, `inference_config.yaml`
+- **Files Affected**: `configs/phase2/*.yaml`, `configs/phase2/prompts/*.txt`
+- **Acceptance Criteria**: All models and prompt templates frozen with commit SHAs and hashes.
+- **Status**: **PASS**
+- **Evidence**: [`configs/phase2/`](configs/phase2/), [`reports/phase2/model_validation.md`](reports/phase2/model_validation.md)
+
+#### T015: Implement OCR module and coordinate normalization bindings
+- **Purpose**: Integrate PaddleOCR and Tesseract backends with normalized $[0, 1000]$ coordinate output.
+- **Dependencies**: T014
+- **Input**: `src/ocr/`
+- **Expected Output**: `src/ocr/schema.py`, `base.py`, `paddle.py`, `tesseract.py`
+- **Files Affected**: `src/ocr/`
+- **Acceptance Criteria**: Normalized bounding boxes and word/line level tokens extracted.
+- **Status**: **PASS**
+- **Evidence**: [`src/ocr/`](src/ocr/), [`tests/test_ocr.py`](tests/test_ocr.py) (3/3 tests pass)
+
+#### T016: Implement VLM pipeline with prompt hash versioning and image processor
+- **Purpose**: Provide traceable VLM inference engine, image transformation recorder, and model loader.
+- **Dependencies**: T014
+- **Input**: `src/vlm/`
+- **Expected Output**: `src/vlm/schema.py`, `loader.py`, `processor.py`, `prompts.py`, `inference.py`
+- **Files Affected**: `src/vlm/`
+- **Acceptance Criteria**: Traceable image transformations, deterministic prompt hash tracking, timing breakdown.
+- **Status**: **PASS**
+- **Evidence**: [`src/vlm/`](src/vlm/), [`tests/test_vlm_pipeline.py`](tests/test_vlm_pipeline.py), [`tests/test_latency.py`](tests/test_latency.py)
+
+#### T017: Implement B0, B1, and B2 baseline pipelines
+- **Purpose**: Build B0 (OCR-only), B1 (OCR + VLM), and B2 (VLM-only) standard execution pipelines.
+- **Dependencies**: T015, T016
+- **Input**: `src/baselines/`
+- **Expected Output**: `src/baselines/base.py`, `b0_ocr.py`, `b1_ocr_vlm.py`, `b2_vlm.py`
+- **Files Affected**: `src/baselines/`
+- **Acceptance Criteria**: Common baseline interface produces Section 29 run artifacts.
+- **Status**: **PASS**
+- **Evidence**: [`src/baselines/`](src/baselines/), [`tests/test_baselines.py`](tests/test_baselines.py) (3/3 tests pass)
+
+#### T018: Implement evaluation metrics and run artifact serializers
+- **Purpose**: Exact Match, Token F1, ANLS, CER, WER, and JSON artifact serialization.
+- **Dependencies**: T017
+- **Input**: `protocol/evaluation_protocol.md`
+- **Expected Output**: `src/evaluation/metrics.py`, `src/evaluation/artifacts.py`
+- **Files Affected**: `src/evaluation/metrics.py`, `src/evaluation/artifacts.py`
+- **Acceptance Criteria**: Metric algorithms and JSON artifact schema match Phase 0 specifications.
+- **Status**: **PASS**
+- **Evidence**: [`src/evaluation/metrics.py`](src/evaluation/metrics.py), [`tests/test_metrics.py`](tests/test_metrics.py), [`tests/test_inference_artifacts.py`](tests/test_inference_artifacts.py)
+
+#### T019: Execute controlled baseline smoke test and repeatability verification
+- **Purpose**: Verify pipeline plumbing, timing, error handling, and 100% repeatability.
+- **Dependencies**: T017, T018
+- **Input**: Controlled synthetic validation samples
+- **Expected Output**: Artifacts under `experiments/phase2/artifacts/` and summary JSONs
+- **Files Affected**: `experiments/phase2/`
+- **Acceptance Criteria**: E2-SMOKE-B0/B1/B2 pass; E2-REPRO-B0 achieves 100% exact match repeatability.
+- **Status**: **PASS**
+- **Evidence**: [`scripts/run_phase2_smoke.py`](scripts/run_phase2_smoke.py), [`reports/phase2/smoke_test_report.md`](reports/phase2/smoke_test_report.md)
+
+#### T020: Compile Phase 2 validation and final audit reports
+- **Purpose**: Complete documentation suite and Section 58 final audit table.
+- **Dependencies**: T014-T019
+- **Input**: Test suite execution and smoke experiment results
+- **Expected Output**: 6 Phase 2 reports in `reports/phase2/`
+- **Files Affected**: `reports/phase2/*.md`
+- **Acceptance Criteria**: 100% PASS on all Section 58 audit items.
+- **Status**: **PASS**
+- **Evidence**: [`reports/phase2/PHASE2_REPORT.md`](reports/phase2/PHASE2_REPORT.md)

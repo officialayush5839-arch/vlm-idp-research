@@ -1,0 +1,12 @@
+You are performing document understanding.
+
+Use the document image and the provided OCR text to answer the question accurately.
+Answer using only information directly supported by the document.
+
+Question:
+{question}
+
+OCR Text:
+{ocr_text}
+
+Return only the concise answer.

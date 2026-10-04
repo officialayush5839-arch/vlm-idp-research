@@ -1,0 +1,36 @@
+# Baseline Configuration - Phase 2 Baseline Freeze
+baselines:
+  B0:
+    id: "B0"
+    name: "OCR-only"
+    description: "Pure optical character recognition with rule-based text extraction."
+    requires_ocr: true
+    requires_vlm: false
+    ocr_engine: "paddleocr"
+    ocr_fallback: "tesseract"
+
+  B1:
+    id: "B1"
+    name: "OCR + VLM"
+    description: "VLM inference conditioning on both document page image and extracted OCR text."
+    requires_ocr: true
+    requires_vlm: true
+    ocr_engine: "paddleocr"
+    vlm_model: "Qwen2.5-VL-7B-Instruct"
+    prompt_file: "configs/phase2/prompts/b1_prompt.txt"
+
+  B2:
+    id: "B2"
+    name: "VLM-only"
+    description: "Pure Vision-Language Model inference conditioned solely on document page image."
+    requires_ocr: false
+    requires_vlm: true
+    vlm_model: "Qwen2.5-VL-7B-Instruct"
+    prompt_file: "configs/phase2/prompts/b2_prompt.txt"
+
+fairness_safeguards:
+  identical_document_identity: true
+  identical_question_identity: true
+  identical_image_preprocessing: true
+  identical_answer_normalization: true
+  identical_seed_policy: true

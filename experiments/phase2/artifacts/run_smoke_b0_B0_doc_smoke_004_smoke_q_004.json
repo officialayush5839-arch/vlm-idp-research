@@ -1,0 +1,24 @@
+{
+  "run_id": "run_smoke_b0",
+  "baseline": "B0",
+  "document_id": "doc_smoke_004",
+  "page_id": "page_0",
+  "question_id": "smoke_q_004",
+  "model": "OCR_paddleocr",
+  "model_revision": "2.8.1",
+  "prompt_version": "None",
+  "prompt_hash": "None",
+  "seed": 42,
+  "device": "cpu",
+  "dtype": "string",
+  "quantization": "none",
+  "answer": "",
+  "ground_truth_answers": [
+    "Apex Consulting"
+  ],
+  "latency_ms": 0.12,
+  "gpu_peak_memory_mb": null,
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

@@ -1,0 +1,128 @@
+{
+  "experiment_id": "E2-REPRO-B0",
+  "total_samples": 5,
+  "successful_runs": 5,
+  "failed_runs": 0,
+  "results": [
+    {
+      "run_id": "run_repro_b0",
+      "baseline": "B0",
+      "document_id": "doc_smoke_000",
+      "page_id": "page_0",
+      "question_id": "smoke_q_000",
+      "model": "OCR_paddleocr",
+      "model_revision": "2.8.1",
+      "prompt_version": "None",
+      "prompt_hash": "None",
+      "seed": 42,
+      "device": "cpu",
+      "dtype": "string",
+      "quantization": "none",
+      "answer": "",
+      "ground_truth_answers": [
+        "$1,450.00"
+      ],
+      "latency_ms": 0.14,
+      "gpu_peak_memory_mb": null,
+      "status": "SUCCESS",
+      "error_type": null,
+      "error_message": null
+    },
+    {
+      "run_id": "run_repro_b0",
+      "baseline": "B0",
+      "document_id": "doc_smoke_001",
+      "page_id": "page_0",
+      "question_id": "smoke_q_001",
+      "model": "OCR_paddleocr",
+      "model_revision": "2.8.1",
+      "prompt_version": "None",
+      "prompt_hash": "None",
+      "seed": 42,
+      "device": "cpu",
+      "dtype": "string",
+      "quantization": "none",
+      "answer": "",
+      "ground_truth_answers": [
+        "Metro Logistics"
+      ],
+      "latency_ms": 0.05,
+      "gpu_peak_memory_mb": null,
+      "status": "SUCCESS",
+      "error_type": null,
+      "error_message": null
+    },
+    {
+      "run_id": "run_repro_b0",
+      "baseline": "B0",
+      "document_id": "doc_smoke_002",
+      "page_id": "page_0",
+      "question_id": "smoke_q_002",
+      "model": "OCR_paddleocr",
+      "model_revision": "2.8.1",
+      "prompt_version": "None",
+      "prompt_hash": "None",
+      "seed": 42,
+      "device": "cpu",
+      "dtype": "string",
+      "quantization": "none",
+      "answer": "",
+      "ground_truth_answers": [
+        "2024-06-15"
+      ],
+      "latency_ms": 0.04,
+      "gpu_peak_memory_mb": null,
+      "status": "SUCCESS",
+      "error_type": null,
+      "error_message": null
+    },
+    {
+      "run_id": "run_repro_b0",
+      "baseline": "B0",
+      "document_id": "doc_smoke_003",
+      "page_id": "page_0",
+      "question_id": "smoke_q_003",
+      "model": "OCR_paddleocr",
+      "model_revision": "2.8.1",
+      "prompt_version": "None",
+      "prompt_hash": "None",
+      "seed": 42,
+      "device": "cpu",
+      "dtype": "string",
+      "quantization": "none",
+      "answer": "",
+      "ground_truth_answers": [
+        "$5,200.00"
+      ],
+      "latency_ms": 0.04,
+      "gpu_peak_memory_mb": null,
+      "status": "SUCCESS",
+      "error_type": null,
+      "error_message": null
+    },
+    {
+      "run_id": "run_repro_b0",
+      "baseline": "B0",
+      "document_id": "doc_smoke_004",
+      "page_id": "page_0",
+      "question_id": "smoke_q_004",
+      "model": "OCR_paddleocr",
+      "model_revision": "2.8.1",
+      "prompt_version": "None",
+      "prompt_hash": "None",
+      "seed": 42,
+      "device": "cpu",
+      "dtype": "string",
+      "quantization": "none",
+      "answer": "",
+      "ground_truth_answers": [
+        "Apex Consulting"
+      ],
+      "latency_ms": 0.04,
+      "gpu_peak_memory_mb": null,
+      "status": "SUCCESS",
+      "error_type": null,
+      "error_message": null
+    }
+  ]
+}

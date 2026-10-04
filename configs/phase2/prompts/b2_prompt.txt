@@ -1,0 +1,9 @@
+You are performing document understanding.
+
+Answer the question using only the information visible in the provided document image.
+Do not assume or extrapolate information that cannot be visually verified.
+
+Question:
+{question}
+
+Return only the concise answer.

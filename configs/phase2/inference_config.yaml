@@ -1,0 +1,18 @@
+# Inference Execution Configuration - Phase 2
+execution:
+  batch_size: 1
+  num_workers: 0
+  pin_memory: false
+  synchronize_cuda_timing: true
+  warmup_runs: 1
+  measurement_repetitions: 3
+
+logging:
+  log_level: "INFO"
+  redact_secrets: true
+  save_raw_outputs: true
+
+resource_tracking:
+  measure_latency: true
+  measure_ram_usage: true
+  measure_gpu_vram: true

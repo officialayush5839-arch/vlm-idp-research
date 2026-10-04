@@ -8,7 +8,7 @@
 |---|---|---|---|
 | Phase 0 | Literature Freeze + Research Protocol | COMPLETED | None |
 | Phase 1 | Repository + Environment + Infrastructure & Ingestion | COMPLETED | Phase 0 |
-| Phase 2 | Baseline OCR and VLM Pipelines | NOT_STARTED | Phase 1 |
+| Phase 2 | Baseline OCR and VLM Pipelines | COMPLETED | Phase 1 |
 | Phase 3 | Document Quality/Degradation Module | NOT_STARTED | Phase 2 |
 | Phase 4 | Controlled Degradation Benchmark | NOT_STARTED | Phase 3 |
 | Phase 5 | Adaptive Routing | NOT_STARTED | Phase 4 |
@@ -104,11 +104,11 @@
 **9. Tests:** Unit tests for OCR extraction, VLM inference, and metric calculation.
 **10. Expected outputs:** Baseline predictions and initial metric reports.
 **11. Acceptance criteria:**
-- [ ] PaddleOCR and Tesseract pipelines working.
-- [ ] Qwen2.5-VL inference working.
-- [ ] Unified interfaces for all baselines completed.
-- [ ] Baselines successfully run on one full dataset.
-- [ ] Evaluation scripts compute CER, WER, EM, and F1 accurately.
+- [x] PaddleOCR and Tesseract pipelines working.
+- [x] Qwen2.5-VL inference working.
+- [x] Unified interfaces for all baselines completed.
+- [x] Baselines successfully run on one full dataset.
+- [x] Evaluation scripts compute CER, WER, EM, and F1 accurately.
 **12. Failure conditions:** OOM errors during VLM inference, OCR hallucination loops, unhandled parsing errors.
 **13. Exit criteria:** Baseline evaluation metrics logged and verified for one dataset.
 **14. Paper contribution:** Section V (baselines).

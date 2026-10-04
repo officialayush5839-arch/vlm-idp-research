@@ -1,0 +1,33 @@
+# Phase 2 Experiment Matrix - Baseline Establishment
+experiments:
+  - id: "E2-SMOKE-B0"
+    baseline: "B0"
+    dataset: "DocVQA"
+    split: "val"
+    sample_count: 5
+    seed: 42
+    description: "Smoke test for B0 (OCR-only) on DocVQA validation samples."
+
+  - id: "E2-SMOKE-B1"
+    baseline: "B1"
+    dataset: "DocVQA"
+    split: "val"
+    sample_count: 5
+    seed: 42
+    description: "Smoke test for B1 (OCR + VLM) on DocVQA validation samples."
+
+  - id: "E2-SMOKE-B2"
+    baseline: "B2"
+    dataset: "DocVQA"
+    split: "val"
+    sample_count: 5
+    seed: 42
+    description: "Smoke test for B2 (VLM-only) on DocVQA validation samples."
+
+  - id: "E2-REPRO-B0"
+    baseline: "B0"
+    dataset: "DocVQA"
+    split: "val"
+    sample_count: 5
+    seed: 42
+    description: "Reproducibility repeatability verification run for B0."
