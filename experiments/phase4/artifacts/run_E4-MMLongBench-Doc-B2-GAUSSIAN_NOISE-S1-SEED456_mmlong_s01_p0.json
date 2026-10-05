@@ -1,0 +1,137 @@
+{
+  "experiment_id": "E4-MMLongBench-Doc-B2-GAUSSIAN_NOISE-S1-SEED456",
+  "benchmark_version": "1.0.0",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0_deg_gaussian_noise_s1",
+  "document_id": "mmlong_doc_101",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B2",
+  "degradation_family": "gaussian_noise",
+  "severity": 1,
+  "seed": 456,
+  "input": {
+    "source_sha256": "f0420098663a27cd69cc2a6cb8e63110f3ec2bb3e2cb3a11db13909d5b52f4e1",
+    "derived_sha256": "459ed96417898de6947c27df9e3a6bf630a258de1bcd51f98389a2914fa74a5c"
+  },
+  "degradation_params": {
+    "family": "gaussian_noise",
+    "severity": 1,
+    "parameter_name": "sigma",
+    "parameter_value": 5.0
+  },
+  "model_metadata": {
+    "model_name": "Qwen2.5-VL-7B-Instruct",
+    "revision": "b450c26581decfcb4c555513ab4deeb85ab1a39d",
+    "prompt_version": "v1.0-b2",
+    "prompt_hash": "a77f7f25b1fb18a8",
+    "device": "cpu"
+  },
+  "prediction": "You are performing document understandin...",
+  "ground_truth": [
+    "Prof. Jonathan Hayes",
+    "Jonathan Hayes"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.8,
+    "wer": 1.6667,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 37358.9197,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 4.5345,
+        "normalized_value": 0.1814,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.9059,
+        "normalized_value": 0.9059,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.6741,
+        "normalized_value": 0.6741,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 246.413,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "gaussian_noise",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "noise",
+        "measured_value": 4.5345
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "resolution",
+        "measured_value": 0.6741
+      }
+    ],
+    "runtime_ms": 32.26
+  },
+  "runtime": {
+    "latency_ms": 10.88,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

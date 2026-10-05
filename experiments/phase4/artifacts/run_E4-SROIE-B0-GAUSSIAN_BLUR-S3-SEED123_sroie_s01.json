@@ -1,0 +1,158 @@
+{
+  "experiment_id": "E4-SROIE-B0-GAUSSIAN_BLUR-S3-SEED123",
+  "benchmark_version": "1.0.0",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01_deg_gaussian_blur_s3",
+  "document_id": "sroie_receipt_882",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0",
+  "degradation_family": "gaussian_blur",
+  "severity": 3,
+  "seed": 123,
+  "input": {
+    "source_sha256": "909a7e8cc51cc51cb03a9823b553d490fc7563f3141c0cd415eb3439bce799e5",
+    "derived_sha256": "3d0f8c60206f50f21ace3f4b93a627927c53cf5a2e65420a470ba2f9c6c22714"
+  },
+  "degradation_params": {
+    "family": "gaussian_blur",
+    "severity": 3,
+    "parameter_name": "sigma",
+    "parameter_value": 4.0
+  },
+  "model_metadata": {
+    "model_name": "OCR_paddleocr",
+    "revision": "2.8.1",
+    "prompt_version": null,
+    "prompt_hash": null,
+    "device": "cpu"
+  },
+  "prediction": "",
+  "ground_truth": [
+    "$34.56",
+    "34.56"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.0,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 3.9913,
+        "normalized_value": 0.0133,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 0.0303,
+        "normalized_value": 0.0012,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.8999,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.2039,
+        "normalized_value": 0.2039,
+        "severity": 3,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0288,
+        "normalized_value": 0.0824,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 249.791,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "gaussian_blur",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "blur",
+        "measured_value": 3.9913
+      },
+      {
+        "family": "glare",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "glare",
+        "measured_value": 0.8999
+      },
+      {
+        "family": "contrast",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "contrast",
+        "measured_value": 0.2039
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "resolution",
+        "measured_value": 0.0
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 4.0
+      }
+    ],
+    "runtime_ms": 226.3
+  },
+  "runtime": {
+    "latency_ms": 0.04,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

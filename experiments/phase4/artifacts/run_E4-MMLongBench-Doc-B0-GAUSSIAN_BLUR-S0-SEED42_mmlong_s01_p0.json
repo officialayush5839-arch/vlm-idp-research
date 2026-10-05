@@ -1,0 +1,122 @@
+{
+  "experiment_id": "E4-MMLongBench-Doc-B0-GAUSSIAN_BLUR-S0-SEED42",
+  "benchmark_version": "1.0.0",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "document_id": "mmlong_doc_101",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0",
+  "degradation_family": "gaussian_blur",
+  "severity": 0,
+  "seed": 42,
+  "input": {
+    "source_sha256": "f0420098663a27cd69cc2a6cb8e63110f3ec2bb3e2cb3a11db13909d5b52f4e1",
+    "derived_sha256": "f0420098663a27cd69cc2a6cb8e63110f3ec2bb3e2cb3a11db13909d5b52f4e1"
+  },
+  "degradation_params": {
+    "family": "gaussian_blur",
+    "severity": 0,
+    "parameter_name": "sigma",
+    "parameter_value": 0.0
+  },
+  "model_metadata": {
+    "model_name": "OCR_paddleocr",
+    "revision": "2.8.1",
+    "prompt_version": null,
+    "prompt_hash": null,
+    "device": "cpu"
+  },
+  "prediction": "",
+  "ground_truth": [
+    "Prof. Jonathan Hayes",
+    "Jonathan Hayes"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.0,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 36771.2758,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 1.6496,
+        "normalized_value": 0.066,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.8824,
+        "normalized_value": 0.8824,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.9127,
+        "normalized_value": 0.9127,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 247.256,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [],
+    "runtime_ms": 43.76
+  },
+  "runtime": {
+    "latency_ms": 0.03,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

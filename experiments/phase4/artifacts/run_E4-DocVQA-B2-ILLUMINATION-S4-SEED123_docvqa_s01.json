@@ -1,0 +1,166 @@
+{
+  "experiment_id": "E4-DocVQA-B2-ILLUMINATION-S4-SEED123",
+  "benchmark_version": "1.0.0",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01_deg_illumination_s4",
+  "document_id": "docvqa_inv_901",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B2",
+  "degradation_family": "illumination",
+  "severity": 4,
+  "seed": 123,
+  "input": {
+    "source_sha256": "be46d610448a942391faa4318337840c4711870930c69434eeae703e36263445",
+    "derived_sha256": "fc648243d1325c487f2f8f59ed485c3fe6c26001a10bdf212abe43ed5dc94726"
+  },
+  "degradation_params": {
+    "family": "illumination",
+    "severity": 4,
+    "parameter_name": "alpha",
+    "parameter_value": 0.15
+  },
+  "model_metadata": {
+    "model_name": "Qwen2.5-VL-7B-Instruct",
+    "revision": "b450c26581decfcb4c555513ab4deeb85ab1a39d",
+    "prompt_version": "v1.0-b2",
+    "prompt_hash": "a77f7f25b1fb18a8",
+    "device": "cpu"
+  },
+  "prediction": "You are performing document understandin...",
+  "ground_truth": [
+    "$11,340.00",
+    "11,340.00",
+    "11340"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 4.2,
+    "wer": 5.0,
+    "grounding_iou": null,
+    "primary_metric": "ANLS",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 460.787,
+        "normalized_value": 1.0,
+        "severity": 2,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 0.157,
+        "normalized_value": 0.0063,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.4275,
+        "normalized_value": 0.0855,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.1098,
+        "normalized_value": 0.1098,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.0005,
+        "normalized_value": 0.0005,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0073,
+        "normalized_value": 0.0209,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 36.753,
+        "normalized_value": 0.1531,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 1.0,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "gaussian_blur",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "blur",
+        "measured_value": 460.787
+      },
+      {
+        "family": "contrast",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "contrast",
+        "measured_value": 0.1098
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "resolution",
+        "measured_value": 0.0005
+      },
+      {
+        "family": "illumination",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "illumination",
+        "measured_value": 36.753
+      },
+      {
+        "family": "occlusion",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "occlusion",
+        "measured_value": 1.0
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 5.0
+      }
+    ],
+    "runtime_ms": 25.04
+  },
+  "runtime": {
+    "latency_ms": 11.03,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

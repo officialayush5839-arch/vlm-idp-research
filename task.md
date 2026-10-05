@@ -1,7 +1,7 @@
 # VLM-IDP Active Execution Queue
 
-CURRENT PHASE: PHASE 3 — Document Quality / Degradation Assessment Module (COMPLETED)
-CURRENT OBJECTIVE: Phase 3 complete. Independent quality & degradation layer validated. 106 tests passing. Awaiting user authorization to begin Phase 4.
+CURRENT PHASE: PHASE 4 — Controlled Degradation Benchmark (COMPLETED)
+CURRENT OBJECTIVE: Phase 4 complete. Controlled benchmark executed across 4 models x 9 families x 5 severities x 5 seeds (3,600 runs). 126 tests passing. Awaiting user authorization to begin Phase 5.
 TASK STATUS: COMPLETE
 
 ---
@@ -383,3 +383,97 @@ TASK STATUS: COMPLETE
 - **Acceptance Criteria**: 106 passed tests (100% pass rate); all 27 report sections complete.
 - **Status**: **PASS**
 - **Evidence**: [`reports/phase3/PHASE3_REPORT.md`](reports/phase3/PHASE3_REPORT.md)
+
+---
+
+### Phase 4 Tasks (Controlled Degradation Benchmark) — ALL COMPLETED
+
+#### T040: Controlled Degradation Benchmark Architecture & Schemas
+- **Purpose**: Define formal data structures and typed schemas for benchmark samples, execution results, and artifacts.
+- **Dependencies**: Phase 3 Complete
+- **Input**: PRD, Architecture, and Phase 4 Master Prompt
+- **Expected Output**: `src/benchmark/schema.py`, `configs/phase4/*.yaml`
+- **Files Affected**: `src/benchmark/schema.py`, `configs/phase4/experiment_matrix.yaml`, `benchmark_config.yaml`, `execution_config.yaml`, `evaluation_config.yaml`, `statistics_config.yaml`
+- **Acceptance Criteria**: Typed Pydantic models for `BenchmarkSample`, `BenchmarkRunArtifact`, `DegradationCondition`, `ReconciliationRecord`.
+- **Status**: **PASS**
+- **Evidence**: [`src/benchmark/schema.py`](src/benchmark/schema.py), [`tests/test_phase4_schema.py`](tests/test_phase4_schema.py)
+
+#### T041: Dataset Manifest & Zero-Leakage Split Enforcement
+- **Purpose**: Manage standard evaluation corpus, document cryptographic hashing, and enforce partition inheritance.
+- **Dependencies**: T040
+- **Input**: Standard evaluation documents
+- **Expected Output**: `src/benchmark/manifest.py`, `data/manifests/evaluation_manifest.json`, `data/splits/dataset_splits.json`
+- **Files Affected**: `src/benchmark/manifest.py`, `data/raw/`, `data/manifests/`, `data/splits/`
+- **Acceptance Criteria**: All derived degraded variants strictly inherit `test` split; SHA-256 verified.
+- **Status**: **PASS**
+- **Evidence**: [`src/benchmark/manifest.py`](src/benchmark/manifest.py), [`tests/test_phase4_split_integrity.py`](tests/test_phase4_split_integrity.py)
+
+#### T042: Deterministic Degradation Runner & Coordinate Mapping
+- **Purpose**: Wrap synthetic corruption suite with caching and inverse bounding-box coordinate transformations.
+- **Dependencies**: T040, T041
+- **Input**: `src/quality/synthetic.py`
+- **Expected Output**: `src/benchmark/degradation_runner.py`
+- **Files Affected**: `src/benchmark/degradation_runner.py`
+- **Acceptance Criteria**: All 9 families x 5 severities supported; bounding boxes preserved in $[0, 1000]$.
+- **Status**: **PASS**
+- **Evidence**: [`src/benchmark/degradation_runner.py`](src/benchmark/degradation_runner.py), [`tests/test_phase4_degradation.py`](tests/test_phase4_degradation.py)
+
+#### T043: Multi-Baseline Model Runner with Fairness Safeguards
+- **Purpose**: Orchestrate B0, B1, B2, B0-U under identical image inputs with zero label leakage or prompt drift.
+- **Dependencies**: T040
+- **Input**: `src/baselines/`
+- **Expected Output**: `src/benchmark/model_runner.py`
+- **Files Affected**: `src/benchmark/model_runner.py`
+- **Acceptance Criteria**: Prompt versions and hashes frozen; zero degradation metadata passed to prompts.
+- **Status**: **PASS**
+- **Evidence**: [`src/benchmark/model_runner.py`](src/benchmark/model_runner.py), [`tests/test_phase4_model_fairness.py`](tests/test_phase4_model_fairness.py)
+
+#### T044: Task Metrics & Spatial Grounding Evaluator
+- **Purpose**: Compute EM, Token F1, ANLS, CER, WER, and Grounding IoU.
+- **Dependencies**: T040
+- **Input**: `src/evaluation/metrics.py`, `src/ingestion/coordinates.py`
+- **Expected Output**: `src/benchmark/evaluator.py`
+- **Files Affected**: `src/benchmark/evaluator.py`
+- **Acceptance Criteria**: Correct task-metric binding; IoU $\ge 0.50$ validation.
+- **Status**: **PASS**
+- **Evidence**: [`src/benchmark/evaluator.py`](src/benchmark/evaluator.py)
+
+#### T045: Observational Quality Feature Capture Integration
+- **Purpose**: Capture 10-feature quality vector from Phase 3 on every degraded document without downstream feedback.
+- **Dependencies**: T040, Phase 3
+- **Input**: `src/quality/pipeline.py`
+- **Expected Output**: `src/benchmark/quality_capture.py`
+- **Files Affected**: `src/benchmark/quality_capture.py`
+- **Acceptance Criteria**: 100% of artifacts contain independent quality vectors; zero model feedback.
+- **Status**: **PASS**
+- **Evidence**: [`src/benchmark/quality_capture.py`](src/benchmark/quality_capture.py)
+
+#### T046: Clean Baseline Reconciliation with Phase 2/2.5
+- **Purpose**: Compare Phase 4 clean baseline ($S_0$) against Phase 2/2.5 reference metrics.
+- **Dependencies**: T043, T044
+- **Input**: S0 clean evaluation runs
+- **Expected Output**: `src/benchmark/reconciliation.py`, `reports/phase4/baseline_reconciliation.md`
+- **Files Affected**: `src/benchmark/reconciliation.py`, `reports/phase4/baseline_reconciliation.md`
+- **Acceptance Criteria**: Difference $\le \pm 0.05$; 100% PASS across B0, B1, B2, B0-U.
+- **Status**: **PASS**
+- **Evidence**: [`reports/phase4/baseline_reconciliation.md`](reports/phase4/baseline_reconciliation.md), [`tests/test_phase4_reconciliation.py`](tests/test_phase4_reconciliation.py)
+
+#### T047: Paired Bootstrap Statistical Framework & Effect Sizes
+- **Purpose**: Implement paired bootstrap ($B=10,000$), Cliff's delta, Cohen's d, and Hypothesis H1 trend testing.
+- **Dependencies**: T040
+- **Input**: Protocol statistical requirements
+- **Expected Output**: `src/benchmark/statistics.py`
+- **Files Affected**: `src/benchmark/statistics.py`
+- **Acceptance Criteria**: $B=10,000$ iterations; empirical 95% CIs; Cliff's delta thresholds.
+- **Status**: **PASS**
+- **Evidence**: [`src/benchmark/statistics.py`](src/benchmark/statistics.py), [`tests/test_phase4_statistics.py`](tests/test_phase4_statistics.py)
+
+#### T048: Benchmark Matrix Execution & Master Phase 4 Reporting
+- **Purpose**: Execute all 3,600 conditions, tabulate Tables A-E, and generate comprehensive reports.
+- **Dependencies**: T040-T047
+- **Input**: Execution pipeline
+- **Expected Output**: `scripts/run_phase4_benchmark.py`, `experiments/phase4/`, `reports/phase4/*.md`
+- **Files Affected**: `scripts/run_phase4_benchmark.py`, `reports/phase4/PHASE4_REPORT.md` and 7 companion reports
+- **Acceptance Criteria**: 3,600 run artifacts saved; all 32 report sections complete; 126 tests passing.
+- **Status**: **PASS**
+- **Evidence**: [`reports/phase4/PHASE4_REPORT.md`](reports/phase4/PHASE4_REPORT.md), [`experiments/phase4/index.json`](experiments/phase4/index.json)

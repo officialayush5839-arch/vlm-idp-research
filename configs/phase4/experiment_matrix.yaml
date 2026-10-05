@@ -1,0 +1,107 @@
+# Phase 4 Experiment Matrix Configuration
+# Complete grid of baseline runs, degradation robustness tests, and seeds
+
+matrix_id: "E4-CONTROLLED-DEGRADATION-V1"
+version: "1.0.0"
+
+models:
+  - id: "B0"
+    name: "OCR-Only"
+    engine: "PaddleOCR"
+    supports_grounding: true
+  - id: "B1"
+    name: "OCR + VLM"
+    engine: "PaddleOCR + Qwen2.5-VL-7B-Instruct"
+    supports_grounding: false
+  - id: "B2"
+    name: "VLM-Only"
+    engine: "Qwen2.5-VL-7B-Instruct"
+    supports_grounding: false
+  - id: "B0-U"
+    name: "Unlimited-OCR"
+    engine: "Baidu Unlimited-OCR MoE 3.3B"
+    supports_grounding: true
+
+datasets:
+  - id: "DocVQA"
+    type: "vqa"
+    task_type: "visual_question_answering"
+    split: "test"
+    primary_metric: "ANLS"
+  - id: "FUNSD"
+    type: "form"
+    task_type: "form_understanding"
+    split: "test"
+    primary_metric: "F1"
+  - id: "SROIE"
+    type: "receipt"
+    task_type: "receipt_extraction"
+    split: "test"
+    primary_metric: "F1"
+  - id: "MMLongBench-Doc"
+    type: "multipage"
+    task_type: "multipage_vqa"
+    split: "test"
+    primary_metric: "F1"
+
+severity_levels:
+  - id: 0
+    name: "S0_CLEAN"
+    label: "Clean Baseline"
+  - id: 1
+    name: "S1_MILD"
+    label: "Mild Degradation"
+  - id: 2
+    name: "S2_MODERATE"
+    label: "Moderate Degradation"
+  - id: 3
+    name: "S3_SEVERE"
+    label: "Severe Degradation"
+  - id: 4
+    name: "S4_EXTREME"
+    label: "Extreme Degradation"
+
+degradation_families:
+  - id: "gaussian_blur"
+    name: "Gaussian Blur"
+    parameter_name: "sigma"
+    parameter_values: [0.0, 1.0, 2.0, 4.0, 6.0]
+  - id: "jpeg_compression"
+    name: "JPEG Compression"
+    parameter_name: "quality"
+    parameter_values: [100, 80, 50, 25, 10]
+  - id: "gaussian_noise"
+    name: "Gaussian Noise"
+    parameter_name: "sigma"
+    parameter_values: [0.0, 5.0, 15.0, 30.0, 50.0]
+  - id: "skew_rotation"
+    name: "Skew / Rotation"
+    parameter_name: "angle_deg"
+    parameter_values: [0.0, 1.0, 3.0, 5.0, 10.0]
+  - id: "illumination"
+    name: "Illumination Drop"
+    parameter_name: "alpha"
+    parameter_values: [1.00, 0.75, 0.50, 0.30, 0.15]
+  - id: "occlusion"
+    name: "Patch Occlusion"
+    parameter_name: "area_ratio"
+    parameter_values: [0.00, 0.05, 0.10, 0.20, 0.30]
+  - id: "resolution_reduction"
+    name: "Resolution Reduction"
+    parameter_name: "scale_factor"
+    parameter_values: [1.00, 0.75, 0.50, 0.25, 0.15]
+  - id: "perspective_distortion"
+    name: "Perspective Distortion"
+    parameter_name: "tilt_deg"
+    parameter_values: [0.0, 5.0, 15.0, 25.0, 35.0]
+  - id: "mixed_degradation"
+    name: "Mixed Composite Degradation"
+    parameter_name: "composite_tier"
+    parameter_values: [0, 1, 2, 3, 4]
+
+seeds:
+  - 42
+  - 123
+  - 456
+  - 789
+  - 101112

@@ -1,0 +1,165 @@
+{
+  "experiment_id": "E4-FUNSD-B1-ILLUMINATION-S4-SEED789",
+  "benchmark_version": "1.0.0",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01_deg_illumination_s4",
+  "document_id": "funsd_form_042",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B1",
+  "degradation_family": "illumination",
+  "severity": 4,
+  "seed": 789,
+  "input": {
+    "source_sha256": "1eaad0ae892802793f8db51a8b0f9e85b7c585061f40be897d3aa64e560f466e",
+    "derived_sha256": "9ab840316775e99bd7b6f4ad74d3b05d8765378418c88ea3264e6e505cf0420d"
+  },
+  "degradation_params": {
+    "family": "illumination",
+    "severity": 4,
+    "parameter_name": "alpha",
+    "parameter_value": 0.15
+  },
+  "model_metadata": {
+    "model_name": "Qwen2.5-VL-7B-Instruct",
+    "revision": "b450c26581decfcb4c555513ab4deeb85ab1a39d",
+    "prompt_version": "v1.0-b1",
+    "prompt_hash": "351cd27f32df29e9",
+    "device": "cpu"
+  },
+  "prediction": "You are performing document understandin...",
+  "ground_truth": [
+    "Dr. Elena Rostova",
+    "Elena Rostova"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 2.1176,
+    "wer": 1.6667,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 613.7265,
+        "normalized_value": 1.0,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 0.1997,
+        "normalized_value": 0.008,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.1137,
+        "normalized_value": 0.1137,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.001,
+        "normalized_value": 0.001,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 36.675,
+        "normalized_value": 0.1528,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 1.0,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "gaussian_blur",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "blur",
+        "measured_value": 613.7265
+      },
+      {
+        "family": "contrast",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "contrast",
+        "measured_value": 0.1137
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "resolution",
+        "measured_value": 0.001
+      },
+      {
+        "family": "illumination",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "illumination",
+        "measured_value": 36.675
+      },
+      {
+        "family": "occlusion",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "occlusion",
+        "measured_value": 1.0
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 5.0
+      }
+    ],
+    "runtime_ms": 164.54
+  },
+  "runtime": {
+    "latency_ms": 11.06,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

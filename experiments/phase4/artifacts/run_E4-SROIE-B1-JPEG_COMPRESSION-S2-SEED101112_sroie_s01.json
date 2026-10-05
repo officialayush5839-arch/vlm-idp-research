@@ -1,0 +1,137 @@
+{
+  "experiment_id": "E4-SROIE-B1-JPEG_COMPRESSION-S2-SEED101112",
+  "benchmark_version": "1.0.0",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01_deg_jpeg_compression_s2",
+  "document_id": "sroie_receipt_882",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B1",
+  "degradation_family": "jpeg_compression",
+  "severity": 2,
+  "seed": 101112,
+  "input": {
+    "source_sha256": "909a7e8cc51cc51cb03a9823b553d490fc7563f3141c0cd415eb3439bce799e5",
+    "derived_sha256": "539cdaf68f57e3b3bb4509ededb8407a81f4d5d487713650bf820a4b7d9e96c7"
+  },
+  "degradation_params": {
+    "family": "jpeg_compression",
+    "severity": 2,
+    "parameter_name": "quality",
+    "parameter_value": 50
+  },
+  "model_metadata": {
+    "model_name": "Qwen2.5-VL-7B-Instruct",
+    "revision": "b450c26581decfcb4c555513ab4deeb85ab1a39d",
+    "prompt_version": "v1.0-b1",
+    "prompt_hash": "351cd27f32df29e9",
+    "device": "cpu"
+  },
+  "prediction": "You are performing document understandin...",
+  "ground_truth": [
+    "$34.56",
+    "34.56"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 7.0,
+    "wer": 5.0,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 25685.9032,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 1.6489,
+        "normalized_value": 0.066,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.9497,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.7922,
+        "normalized_value": 0.7922,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.6319,
+        "normalized_value": 0.6319,
+        "severity": 2,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0739,
+        "normalized_value": 0.2112,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 249.604,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "glare",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "glare",
+        "measured_value": 0.9497
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "resolution",
+        "measured_value": 0.6319
+      }
+    ],
+    "runtime_ms": 212.68
+  },
+  "runtime": {
+    "latency_ms": 18.59,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

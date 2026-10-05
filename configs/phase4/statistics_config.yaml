@@ -1,0 +1,24 @@
+# Phase 4 Statistical Analysis Configuration
+bootstrap:
+  iterations: 10000
+  confidence_level: 0.95
+  seed: 42
+  method: "paired_bootstrap_resampling"
+
+effect_sizes:
+  methods:
+    - "cliffs_delta"
+    - "cohens_d"
+  cliffs_delta_thresholds:
+    negligible: 0.147
+    small: 0.330
+    medium: 0.474
+
+hypothesis_testing:
+  H1:
+    description: "Increasing visual degradation significantly reduces VLM/OCR document extraction/reasoning performance."
+    independent_variable: "severity"
+    dependent_variable: "F1"
+    null_hypothesis: "beta_slope >= 0 (performance does not decrease with severity)"
+    test_type: "paired_linear_trend_test"
+    alpha: 0.001

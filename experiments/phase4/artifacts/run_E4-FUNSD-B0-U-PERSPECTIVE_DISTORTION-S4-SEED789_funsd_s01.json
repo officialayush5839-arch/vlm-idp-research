@@ -1,0 +1,151 @@
+{
+  "experiment_id": "E4-FUNSD-B0-U-PERSPECTIVE_DISTORTION-S4-SEED789",
+  "benchmark_version": "1.0.0",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01_deg_perspective_distortion_s4",
+  "document_id": "funsd_form_042",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0-U",
+  "degradation_family": "perspective_distortion",
+  "severity": 4,
+  "seed": 789,
+  "input": {
+    "source_sha256": "1eaad0ae892802793f8db51a8b0f9e85b7c585061f40be897d3aa64e560f466e",
+    "derived_sha256": "3ec2e8b75eed8ef3b73843c7d4be537e15e0f22055e4fafa6983b2958666d3a8"
+  },
+  "degradation_params": {
+    "family": "perspective_distortion",
+    "severity": 4,
+    "parameter_name": "tilt_deg",
+    "parameter_value": 35.0
+  },
+  "model_metadata": {
+    "model_name": "Unlimited-OCR",
+    "revision": "4f9b8c2e1d7a6053b8921e4c70d45f3a9e218c9b",
+    "prompt_version": "grounding-v1",
+    "prompt_hash": "8c2e1d7a6053b892",
+    "device": "cpu"
+  },
+  "prediction": "INVOICE #INV-2024-001",
+  "ground_truth": [
+    "Dr. Elena Rostova",
+    "Elena Rostova"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.1765,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 10949.1148,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 0.8729,
+        "normalized_value": 0.0349,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.8549,
+        "normalized_value": 0.8549,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.8723,
+        "normalized_value": 0.8723,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 158.856,
+        "normalized_value": 0.6619,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.4026,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 42.989,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "illumination",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "illumination",
+        "measured_value": 158.856
+      },
+      {
+        "family": "occlusion",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "occlusion",
+        "measured_value": 0.4026
+      },
+      {
+        "family": "perspective_distortion",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "perspective",
+        "measured_value": 42.989
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 3.0
+      }
+    ],
+    "runtime_ms": 39.86
+  },
+  "runtime": {
+    "latency_ms": 11.19,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

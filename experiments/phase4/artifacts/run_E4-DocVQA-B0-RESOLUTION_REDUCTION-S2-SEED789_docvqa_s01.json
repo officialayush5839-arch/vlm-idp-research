@@ -1,0 +1,159 @@
+{
+  "experiment_id": "E4-DocVQA-B0-RESOLUTION_REDUCTION-S2-SEED789",
+  "benchmark_version": "1.0.0",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01_deg_resolution_reduction_s2",
+  "document_id": "docvqa_inv_901",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0",
+  "degradation_family": "resolution_reduction",
+  "severity": 2,
+  "seed": 789,
+  "input": {
+    "source_sha256": "be46d610448a942391faa4318337840c4711870930c69434eeae703e36263445",
+    "derived_sha256": "244a533a0b760d03834ca7f4fe0cfa21bf6c024c609a50bc5cafc2811afadb39"
+  },
+  "degradation_params": {
+    "family": "resolution_reduction",
+    "severity": 2,
+    "parameter_name": "scale_factor",
+    "parameter_value": 0.5
+  },
+  "model_metadata": {
+    "model_name": "OCR_paddleocr",
+    "revision": "2.8.1",
+    "prompt_version": null,
+    "prompt_hash": null,
+    "device": "cpu"
+  },
+  "prediction": "",
+  "ground_truth": [
+    "$11,340.00",
+    "11,340.00",
+    "11340"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.0,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "ANLS",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 653.0882,
+        "normalized_value": 1.0,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 0.0697,
+        "normalized_value": 0.0028,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.3843,
+        "normalized_value": 0.3843,
+        "severity": 2,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.6126,
+        "normalized_value": 0.6126,
+        "severity": 2,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.1371,
+        "normalized_value": 0.3916,
+        "severity": 2,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 248.346,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "gaussian_blur",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "blur",
+        "measured_value": 653.0882
+      },
+      {
+        "family": "contrast",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "contrast",
+        "measured_value": 0.3843
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "resolution",
+        "measured_value": 0.6126
+      },
+      {
+        "family": "jpeg_compression",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "compression",
+        "measured_value": 0.1371
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 4.0
+      }
+    ],
+    "runtime_ms": 41.77
+  },
+  "runtime": {
+    "latency_ms": 0.02,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

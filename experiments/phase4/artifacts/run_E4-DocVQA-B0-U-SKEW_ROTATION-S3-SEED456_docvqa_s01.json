@@ -1,0 +1,138 @@
+{
+  "experiment_id": "E4-DocVQA-B0-U-SKEW_ROTATION-S3-SEED456",
+  "benchmark_version": "1.0.0",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01_deg_skew_rotation_s3",
+  "document_id": "docvqa_inv_901",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0-U",
+  "degradation_family": "skew_rotation",
+  "severity": 3,
+  "seed": 456,
+  "input": {
+    "source_sha256": "be46d610448a942391faa4318337840c4711870930c69434eeae703e36263445",
+    "derived_sha256": "5b95fa2388b09e1d9c09d4a55de34b1ac0df983d0179c23b309636655e53bd8d"
+  },
+  "degradation_params": {
+    "family": "skew_rotation",
+    "severity": 3,
+    "parameter_name": "angle_deg",
+    "parameter_value": 5.0
+  },
+  "model_metadata": {
+    "model_name": "Unlimited-OCR",
+    "revision": "4f9b8c2e1d7a6053b8921e4c70d45f3a9e218c9b",
+    "prompt_version": "grounding-v1",
+    "prompt_hash": "8c2e1d7a6053b892",
+    "device": "cpu"
+  },
+  "prediction": "$1,450.00",
+  "ground_truth": [
+    "$11,340.00",
+    "11,340.00",
+    "11340"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.5714,
+    "cer": 0.3,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "ANLS",
+    "primary_value": 0.5714
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 8970.5765,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 0.5402,
+        "normalized_value": 0.0216,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 4.9408,
+        "normalized_value": 0.9882,
+        "severity": 3,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.5137,
+        "normalized_value": 0.5137,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.8181,
+        "normalized_value": 0.8181,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0104,
+        "normalized_value": 0.0296,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 248.344,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "skew_rotation",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "skew",
+        "measured_value": 4.9408
+      },
+      {
+        "family": "contrast",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "contrast",
+        "measured_value": 0.5137
+      }
+    ],
+    "runtime_ms": 24.45
+  },
+  "runtime": {
+    "latency_ms": 11.0,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

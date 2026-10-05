@@ -1,0 +1,42 @@
+# Phase 4 Execution Configuration
+execution:
+  mode: "sequential"
+  batch_size: 1
+  fail_fast: false
+  resume_enabled: true
+  pilot_mode: false
+  pilot_samples_per_dataset: 2
+
+baselines:
+  B0:
+    enabled: true
+    backend: "PaddleOCR"
+    confidence_threshold: 0.50
+    mock_mode: true
+  B1:
+    enabled: true
+    model_name: "Qwen/Qwen2.5-VL-7B-Instruct"
+    prompt_version: "v1.0-b1"
+    max_new_tokens: 128
+    temperature: 0.0
+    mock_mode: true
+  B2:
+    enabled: true
+    model_name: "Qwen/Qwen2.5-VL-7B-Instruct"
+    prompt_version: "v1.0-b2"
+    max_new_tokens: 128
+    temperature: 0.0
+    mock_mode: true
+  B0-U:
+    enabled: true
+    model_name: "baidu/unlimited-ocr"
+    architecture: "Multi-Granularity MoE Multimodal OCR"
+    parameters: "3.3B"
+    quantization: "none"
+    mock_mode: true
+
+quality_capture:
+  enabled: true
+  config_path: "configs/phase3/quality_config.yaml"
+  feature_config_path: "configs/phase3/feature_config.yaml"
+  severity_config_path: "configs/phase3/severity_config.yaml"

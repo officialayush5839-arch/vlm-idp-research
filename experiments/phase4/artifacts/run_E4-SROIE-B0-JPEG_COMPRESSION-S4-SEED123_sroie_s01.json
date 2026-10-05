@@ -1,0 +1,151 @@
+{
+  "experiment_id": "E4-SROIE-B0-JPEG_COMPRESSION-S4-SEED123",
+  "benchmark_version": "1.0.0",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01_deg_jpeg_compression_s4",
+  "document_id": "sroie_receipt_882",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0",
+  "degradation_family": "jpeg_compression",
+  "severity": 4,
+  "seed": 123,
+  "input": {
+    "source_sha256": "909a7e8cc51cc51cb03a9823b553d490fc7563f3141c0cd415eb3439bce799e5",
+    "derived_sha256": "14d65800c67e7e08157b89c4a0ef5742d4a96228b2d62b1828d963410c912bf9"
+  },
+  "degradation_params": {
+    "family": "jpeg_compression",
+    "severity": 4,
+    "parameter_name": "quality",
+    "parameter_value": 10
+  },
+  "model_metadata": {
+    "model_name": "OCR_paddleocr",
+    "revision": "2.8.1",
+    "prompt_version": null,
+    "prompt_hash": null,
+    "device": "cpu"
+  },
+  "prediction": "",
+  "ground_truth": [
+    "$34.56",
+    "34.56"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.0,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 20501.7797,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 1.0611,
+        "normalized_value": 0.0424,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.6784,
+        "normalized_value": 0.6784,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.6214,
+        "normalized_value": 0.6214,
+        "severity": 2,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.1958,
+        "normalized_value": 0.5595,
+        "severity": 3,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 245.672,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "contrast",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "contrast",
+        "measured_value": 0.6784
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "resolution",
+        "measured_value": 0.6214
+      },
+      {
+        "family": "jpeg_compression",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "compression",
+        "measured_value": 0.1958
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 3.0
+      }
+    ],
+    "runtime_ms": 172.14
+  },
+  "runtime": {
+    "latency_ms": 0.04,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

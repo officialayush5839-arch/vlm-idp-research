@@ -1,0 +1,158 @@
+{
+  "experiment_id": "E4-FUNSD-B0-GAUSSIAN_BLUR-S2-SEED789",
+  "benchmark_version": "1.0.0",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01_deg_gaussian_blur_s2",
+  "document_id": "funsd_form_042",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0",
+  "degradation_family": "gaussian_blur",
+  "severity": 2,
+  "seed": 789,
+  "input": {
+    "source_sha256": "1eaad0ae892802793f8db51a8b0f9e85b7c585061f40be897d3aa64e560f466e",
+    "derived_sha256": "4d8a6c6bc66975c48da8c69b45cafa597495fb3a9e960707fe414a51a0200ecf"
+  },
+  "degradation_params": {
+    "family": "gaussian_blur",
+    "severity": 2,
+    "parameter_name": "sigma",
+    "parameter_value": 2.0
+  },
+  "model_metadata": {
+    "model_name": "OCR_paddleocr",
+    "revision": "2.8.1",
+    "prompt_version": null,
+    "prompt_hash": null,
+    "device": "cpu"
+  },
+  "prediction": "",
+  "ground_truth": [
+    "Dr. Elena Rostova",
+    "Elena Rostova"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.0,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 26.8519,
+        "normalized_value": 0.0895,
+        "severity": 3,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 0.0211,
+        "normalized_value": 0.0008,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.2941,
+        "normalized_value": 0.2941,
+        "severity": 3,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.0184,
+        "normalized_value": 0.0184,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.1064,
+        "normalized_value": 0.304,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 245.86,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "gaussian_blur",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "blur",
+        "measured_value": 26.8519
+      },
+      {
+        "family": "contrast",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "contrast",
+        "measured_value": 0.2941
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "resolution",
+        "measured_value": 0.0184
+      },
+      {
+        "family": "jpeg_compression",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "compression",
+        "measured_value": 0.1064
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 4.0
+      }
+    ],
+    "runtime_ms": 51.24
+  },
+  "runtime": {
+    "latency_ms": 0.04,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

@@ -1,0 +1,137 @@
+{
+  "experiment_id": "E4-MMLongBench-Doc-B0-U-OCCLUSION-S4-SEED101112",
+  "benchmark_version": "1.0.0",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0_deg_occlusion_s4",
+  "document_id": "mmlong_doc_101",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0-U",
+  "degradation_family": "occlusion",
+  "severity": 4,
+  "seed": 101112,
+  "input": {
+    "source_sha256": "f0420098663a27cd69cc2a6cb8e63110f3ec2bb3e2cb3a11db13909d5b52f4e1",
+    "derived_sha256": "d695f0bb26e8ace3ae2baab01b7e7cc9fe5087e62fc3176e6a62d77a74f94cd5"
+  },
+  "degradation_params": {
+    "family": "occlusion",
+    "severity": 4,
+    "parameter_name": "area_ratio",
+    "parameter_value": 0.3
+  },
+  "model_metadata": {
+    "model_name": "Unlimited-OCR",
+    "revision": "4f9b8c2e1d7a6053b8921e4c70d45f3a9e218c9b",
+    "prompt_version": "grounding-v1",
+    "prompt_hash": "8c2e1d7a6053b892",
+    "device": "cpu"
+  },
+  "prediction": "INVOICE #INV-2024-001",
+  "ground_truth": [
+    "Prof. Jonathan Hayes",
+    "Jonathan Hayes"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.05,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 30369.4871,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 1.0098,
+        "normalized_value": 0.0404,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.902,
+        "normalized_value": 0.902,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.9308,
+        "normalized_value": 0.9308,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 179.341,
+        "normalized_value": 0.7473,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.2998,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "illumination",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "illumination",
+        "measured_value": 179.341
+      },
+      {
+        "family": "occlusion",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "occlusion",
+        "measured_value": 0.2998
+      }
+    ],
+    "runtime_ms": 44.81
+  },
+  "runtime": {
+    "latency_ms": 10.98,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

@@ -1,0 +1,165 @@
+{
+  "experiment_id": "E4-SROIE-B0-MIXED_DEGRADATION-S4-SEED789",
+  "benchmark_version": "1.0.0",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01_deg_mixed_degradation_s4",
+  "document_id": "sroie_receipt_882",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0",
+  "degradation_family": "mixed_degradation",
+  "severity": 4,
+  "seed": 789,
+  "input": {
+    "source_sha256": "909a7e8cc51cc51cb03a9823b553d490fc7563f3141c0cd415eb3439bce799e5",
+    "derived_sha256": "c85f21e4f1798214de36162fbeae931cd15e35e62ca07ec36db84d38220428c0"
+  },
+  "degradation_params": {
+    "family": "mixed_degradation",
+    "severity": 4,
+    "parameter_name": "composite_tier",
+    "parameter_value": 4
+  },
+  "model_metadata": {
+    "model_name": "OCR_paddleocr",
+    "revision": "2.8.1",
+    "prompt_version": null,
+    "prompt_hash": null,
+    "device": "cpu"
+  },
+  "prediction": "",
+  "ground_truth": [
+    "$34.56",
+    "34.56"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.0,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 2098.3476,
+        "normalized_value": 1.0,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 0.8904,
+        "normalized_value": 0.0356,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 1.0732,
+        "normalized_value": 0.2146,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.2314,
+        "normalized_value": 0.2314,
+        "severity": 3,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.0116,
+        "normalized_value": 0.0116,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0009,
+        "normalized_value": 0.0026,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 233.241,
+        "normalized_value": 0.9718,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 46.3786,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "gaussian_blur",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "blur",
+        "measured_value": 2098.3476
+      },
+      {
+        "family": "skew_rotation",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "skew",
+        "measured_value": 1.0732
+      },
+      {
+        "family": "contrast",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "contrast",
+        "measured_value": 0.2314
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "resolution",
+        "measured_value": 0.0116
+      },
+      {
+        "family": "perspective_distortion",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "perspective",
+        "measured_value": 46.3786
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 5.0
+      }
+    ],
+    "runtime_ms": 561.48
+  },
+  "runtime": {
+    "latency_ms": 0.04,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

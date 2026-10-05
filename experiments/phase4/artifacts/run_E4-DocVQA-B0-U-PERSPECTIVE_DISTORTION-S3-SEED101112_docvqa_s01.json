@@ -1,0 +1,152 @@
+{
+  "experiment_id": "E4-DocVQA-B0-U-PERSPECTIVE_DISTORTION-S3-SEED101112",
+  "benchmark_version": "1.0.0",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01_deg_perspective_distortion_s3",
+  "document_id": "docvqa_inv_901",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0-U",
+  "degradation_family": "perspective_distortion",
+  "severity": 3,
+  "seed": 101112,
+  "input": {
+    "source_sha256": "be46d610448a942391faa4318337840c4711870930c69434eeae703e36263445",
+    "derived_sha256": "e10a324c1c8568b514251cec5da1df59118af0901937b678e8444d748516cb07"
+  },
+  "degradation_params": {
+    "family": "perspective_distortion",
+    "severity": 3,
+    "parameter_name": "tilt_deg",
+    "parameter_value": 25.0
+  },
+  "model_metadata": {
+    "model_name": "Unlimited-OCR",
+    "revision": "4f9b8c2e1d7a6053b8921e4c70d45f3a9e218c9b",
+    "prompt_version": "grounding-v1",
+    "prompt_hash": "8c2e1d7a6053b892",
+    "device": "cpu"
+  },
+  "prediction": "$1,450.00",
+  "ground_truth": [
+    "$11,340.00",
+    "11,340.00",
+    "11340"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.5714,
+    "cer": 0.3,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "ANLS",
+    "primary_value": 0.5714
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 12713.7454,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 0.635,
+        "normalized_value": 0.0254,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.8627,
+        "normalized_value": 0.8627,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.8666,
+        "normalized_value": 0.8666,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 180.833,
+        "normalized_value": 0.7535,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.3077,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 30.039,
+        "normalized_value": 1.0,
+        "severity": 3,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "illumination",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "illumination",
+        "measured_value": 180.833
+      },
+      {
+        "family": "occlusion",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "occlusion",
+        "measured_value": 0.3077
+      },
+      {
+        "family": "perspective_distortion",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "perspective",
+        "measured_value": 30.039
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 3.0
+      }
+    ],
+    "runtime_ms": 26.53
+  },
+  "runtime": {
+    "latency_ms": 11.12,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

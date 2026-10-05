@@ -1,0 +1,32 @@
+# Phase 4 Benchmark Orchestration Configuration
+benchmark_version: "1.0.0"
+benchmark_id: "E4-CONTROLLED-DEGRADATION"
+
+paths:
+  raw_data_dir: "data/raw"
+  degraded_data_dir: "experiments/phase4/degraded"
+  manifest_dir: "data/manifests"
+  splits_dir: "data/splits"
+  artifacts_dir: "experiments/phase4/artifacts"
+  summaries_dir: "experiments/phase4/summaries"
+  reports_dir: "reports/phase4"
+  index_file: "experiments/phase4/index.json"
+
+storage:
+  cache_degraded_images: true
+  compression: "PNG"
+  immutable_source: true
+
+reproducibility:
+  deterministic: true
+  record_sha256: true
+  record_config_hash: true
+  record_prompt_hash: true
+  min_seeds: 3
+  preferred_seeds: 5
+
+runtime_safety:
+  max_memory_mb: 4096
+  timeout_seconds_per_sample: 60
+  device: "cpu"
+  allow_gpu_if_available: false

@@ -1,0 +1,159 @@
+{
+  "experiment_id": "E4-DocVQA-B0-GAUSSIAN_NOISE-S3-SEED123",
+  "benchmark_version": "1.0.0",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01_deg_gaussian_noise_s3",
+  "document_id": "docvqa_inv_901",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0",
+  "degradation_family": "gaussian_noise",
+  "severity": 3,
+  "seed": 123,
+  "input": {
+    "source_sha256": "be46d610448a942391faa4318337840c4711870930c69434eeae703e36263445",
+    "derived_sha256": "2bbdbedbbe6c9d1a7068775557ef8c09ed668c54412b256ab3312e100ef93e4e"
+  },
+  "degradation_params": {
+    "family": "gaussian_noise",
+    "severity": 3,
+    "parameter_name": "sigma",
+    "parameter_value": 30.0
+  },
+  "model_metadata": {
+    "model_name": "OCR_paddleocr",
+    "revision": "2.8.1",
+    "prompt_version": null,
+    "prompt_hash": null,
+    "device": "cpu"
+  },
+  "prediction": "",
+  "ground_truth": [
+    "$11,340.00",
+    "11,340.00",
+    "11340"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.0,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "ANLS",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 31747.1854,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 13.4857,
+        "normalized_value": 0.5394,
+        "severity": 3,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.7441,
+        "normalized_value": 0.1488,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.7294,
+        "normalized_value": 0.7294,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.0348,
+        "normalized_value": 0.0348,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 238.533,
+        "normalized_value": 0.9939,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 22.6993,
+        "normalized_value": 1.0,
+        "severity": 2,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "gaussian_noise",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "noise",
+        "measured_value": 13.4857
+      },
+      {
+        "family": "skew_rotation",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "skew",
+        "measured_value": 0.7441
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "resolution",
+        "measured_value": 0.0348
+      },
+      {
+        "family": "perspective_distortion",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "perspective",
+        "measured_value": 22.6993
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 4.0
+      }
+    ],
+    "runtime_ms": 67.48
+  },
+  "runtime": {
+    "latency_ms": 0.02,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

@@ -1,0 +1,137 @@
+{
+  "experiment_id": "E4-FUNSD-B0-GAUSSIAN_NOISE-S1-SEED789",
+  "benchmark_version": "1.0.0",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01_deg_gaussian_noise_s1",
+  "document_id": "funsd_form_042",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0",
+  "degradation_family": "gaussian_noise",
+  "severity": 1,
+  "seed": 789,
+  "input": {
+    "source_sha256": "1eaad0ae892802793f8db51a8b0f9e85b7c585061f40be897d3aa64e560f466e",
+    "derived_sha256": "61e23d20037cb0df6aecde21d37e925d335632303c64c08634f9b34515aaacb4"
+  },
+  "degradation_params": {
+    "family": "gaussian_noise",
+    "severity": 1,
+    "parameter_name": "sigma",
+    "parameter_value": 5.0
+  },
+  "model_metadata": {
+    "model_name": "OCR_paddleocr",
+    "revision": "2.8.1",
+    "prompt_version": null,
+    "prompt_hash": null,
+    "device": "cpu"
+  },
+  "prediction": "",
+  "ground_truth": [
+    "Dr. Elena Rostova",
+    "Elena Rostova"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.0,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 27807.6744,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 4.4124,
+        "normalized_value": 0.1765,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.7804,
+        "normalized_value": 0.7804,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.5354,
+        "normalized_value": 0.5354,
+        "severity": 2,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 245.219,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "gaussian_noise",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "noise",
+        "measured_value": 4.4124
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "resolution",
+        "measured_value": 0.5354
+      }
+    ],
+    "runtime_ms": 154.85
+  },
+  "runtime": {
+    "latency_ms": 0.04,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

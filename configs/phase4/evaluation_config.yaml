@@ -1,0 +1,23 @@
+# Phase 4 Evaluation Metrics Configuration
+metrics:
+  exact_match:
+    enabled: true
+    case_sensitive: false
+    ignore_punctuation: true
+  token_f1:
+    enabled: true
+  anls:
+    enabled: true
+    tau: 0.50
+  cer:
+    enabled: true
+  wer:
+    enabled: true
+  grounding_iou:
+    enabled: true
+    threshold: 0.50
+    normalization_scale: 1000
+
+reconciliation:
+  tolerance: 0.05
+  metrics_to_check: ["EM", "F1", "ANLS"]

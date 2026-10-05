@@ -1,0 +1,151 @@
+{
+  "experiment_id": "E4-FUNSD-B0-JPEG_COMPRESSION-S4-SEED456",
+  "benchmark_version": "1.0.0",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01_deg_jpeg_compression_s4",
+  "document_id": "funsd_form_042",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0",
+  "degradation_family": "jpeg_compression",
+  "severity": 4,
+  "seed": 456,
+  "input": {
+    "source_sha256": "1eaad0ae892802793f8db51a8b0f9e85b7c585061f40be897d3aa64e560f466e",
+    "derived_sha256": "53905d8c67c86575cc7b1076c49e0e900dcfe42943ee740d8e04c9cf4e7e7d72"
+  },
+  "degradation_params": {
+    "family": "jpeg_compression",
+    "severity": 4,
+    "parameter_name": "quality",
+    "parameter_value": 10
+  },
+  "model_metadata": {
+    "model_name": "OCR_paddleocr",
+    "revision": "2.8.1",
+    "prompt_version": null,
+    "prompt_hash": null,
+    "device": "cpu"
+  },
+  "prediction": "",
+  "ground_truth": [
+    "Dr. Elena Rostova",
+    "Elena Rostova"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.0,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 21007.9909,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 1.1428,
+        "normalized_value": 0.0457,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.6941,
+        "normalized_value": 0.6941,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.5804,
+        "normalized_value": 0.5804,
+        "severity": 2,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.1373,
+        "normalized_value": 0.3924,
+        "severity": 2,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 245.568,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "contrast",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "contrast",
+        "measured_value": 0.6941
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "resolution",
+        "measured_value": 0.5804
+      },
+      {
+        "family": "jpeg_compression",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "compression",
+        "measured_value": 0.1373
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 3.0
+      }
+    ],
+    "runtime_ms": 29.53
+  },
+  "runtime": {
+    "latency_ms": 0.03,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

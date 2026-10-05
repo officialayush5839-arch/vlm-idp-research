@@ -1,0 +1,159 @@
+{
+  "experiment_id": "E4-DocVQA-B0-U-GAUSSIAN_NOISE-S4-SEED456",
+  "benchmark_version": "1.0.0",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01_deg_gaussian_noise_s4",
+  "document_id": "docvqa_inv_901",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0-U",
+  "degradation_family": "gaussian_noise",
+  "severity": 4,
+  "seed": 456,
+  "input": {
+    "source_sha256": "be46d610448a942391faa4318337840c4711870930c69434eeae703e36263445",
+    "derived_sha256": "28a9eb0f556712670c836cd12b7d9781db7dcae31fc64ab38208f4b2a0bc96e6"
+  },
+  "degradation_params": {
+    "family": "gaussian_noise",
+    "severity": 4,
+    "parameter_name": "sigma",
+    "parameter_value": 50.0
+  },
+  "model_metadata": {
+    "model_name": "Unlimited-OCR",
+    "revision": "4f9b8c2e1d7a6053b8921e4c70d45f3a9e218c9b",
+    "prompt_version": "grounding-v1",
+    "prompt_hash": "8c2e1d7a6053b892",
+    "device": "cpu"
+  },
+  "prediction": "$1,450.00",
+  "ground_truth": [
+    "$11,340.00",
+    "11,340.00",
+    "11340"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.5714,
+    "cer": 0.3,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "ANLS",
+    "primary_value": 0.5714
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 50765.2623,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 21.1464,
+        "normalized_value": 0.8459,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 45.0,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.7059,
+        "normalized_value": 0.7059,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.1501,
+        "normalized_value": 0.1501,
+        "severity": 3,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0012,
+        "normalized_value": 0.0036,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 230.789,
+        "normalized_value": 0.9616,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 49.8292,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "gaussian_noise",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "noise",
+        "measured_value": 21.1464
+      },
+      {
+        "family": "skew_rotation",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "skew",
+        "measured_value": 45.0
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "resolution",
+        "measured_value": 0.1501
+      },
+      {
+        "family": "perspective_distortion",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "perspective",
+        "measured_value": 49.8292
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 4.0
+      }
+    ],
+    "runtime_ms": 95.31
+  },
+  "runtime": {
+    "latency_ms": 10.97,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

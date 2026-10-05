@@ -1,0 +1,158 @@
+{
+  "experiment_id": "E4-SROIE-B0-U-GAUSSIAN_NOISE-S4-SEED42",
+  "benchmark_version": "1.0.0",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01_deg_gaussian_noise_s4",
+  "document_id": "sroie_receipt_882",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0-U",
+  "degradation_family": "gaussian_noise",
+  "severity": 4,
+  "seed": 42,
+  "input": {
+    "source_sha256": "909a7e8cc51cc51cb03a9823b553d490fc7563f3141c0cd415eb3439bce799e5",
+    "derived_sha256": "7f041a4d7c8b6b7008deb4b286b9114483678441594b1e81efdc335c4d23477d"
+  },
+  "degradation_params": {
+    "family": "gaussian_noise",
+    "severity": 4,
+    "parameter_name": "sigma",
+    "parameter_value": 50.0
+  },
+  "model_metadata": {
+    "model_name": "Unlimited-OCR",
+    "revision": "4f9b8c2e1d7a6053b8921e4c70d45f3a9e218c9b",
+    "prompt_version": "grounding-v1",
+    "prompt_hash": "8c2e1d7a6053b892",
+    "device": "cpu"
+  },
+  "prediction": "$1,450.00",
+  "ground_truth": [
+    "$34.56",
+    "34.56"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.0,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 54195.4131,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 20.9693,
+        "normalized_value": 0.8388,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 45.0,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.7843,
+        "normalized_value": 0.7843,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.1465,
+        "normalized_value": 0.1465,
+        "severity": 3,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0067,
+        "normalized_value": 0.0192,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 231.375,
+        "normalized_value": 0.9641,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 54.5791,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "gaussian_noise",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "noise",
+        "measured_value": 20.9693
+      },
+      {
+        "family": "skew_rotation",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "skew",
+        "measured_value": 45.0
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "resolution",
+        "measured_value": 0.1465
+      },
+      {
+        "family": "perspective_distortion",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "perspective",
+        "measured_value": 54.5791
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 4.0
+      }
+    ],
+    "runtime_ms": 203.82
+  },
+  "runtime": {
+    "latency_ms": 11.06,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

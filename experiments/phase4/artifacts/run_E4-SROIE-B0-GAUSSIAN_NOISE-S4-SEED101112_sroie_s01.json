@@ -1,0 +1,158 @@
+{
+  "experiment_id": "E4-SROIE-B0-GAUSSIAN_NOISE-S4-SEED101112",
+  "benchmark_version": "1.0.0",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01_deg_gaussian_noise_s4",
+  "document_id": "sroie_receipt_882",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0",
+  "degradation_family": "gaussian_noise",
+  "severity": 4,
+  "seed": 101112,
+  "input": {
+    "source_sha256": "909a7e8cc51cc51cb03a9823b553d490fc7563f3141c0cd415eb3439bce799e5",
+    "derived_sha256": "52ec607f44b967ea29a5114e7023a93bbec5a1ab33620f1d17f0fa547a81b731"
+  },
+  "degradation_params": {
+    "family": "gaussian_noise",
+    "severity": 4,
+    "parameter_name": "sigma",
+    "parameter_value": 50.0
+  },
+  "model_metadata": {
+    "model_name": "OCR_paddleocr",
+    "revision": "2.8.1",
+    "prompt_version": null,
+    "prompt_hash": null,
+    "device": "cpu"
+  },
+  "prediction": "",
+  "ground_truth": [
+    "$34.56",
+    "34.56"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.0,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 54559.2339,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 20.7635,
+        "normalized_value": 0.8305,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 45.0,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.8,
+        "normalized_value": 0.8,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.1495,
+        "normalized_value": 0.1495,
+        "severity": 3,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.007,
+        "normalized_value": 0.0199,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 231.299,
+        "normalized_value": 0.9637,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 74.9182,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "gaussian_noise",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "noise",
+        "measured_value": 20.7635
+      },
+      {
+        "family": "skew_rotation",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "skew",
+        "measured_value": 45.0
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "resolution",
+        "measured_value": 0.1495
+      },
+      {
+        "family": "perspective_distortion",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "perspective",
+        "measured_value": 74.9182
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 4.0
+      }
+    ],
+    "runtime_ms": 82.9
+  },
+  "runtime": {
+    "latency_ms": 0.03,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

@@ -1,0 +1,70 @@
+{
+  "version": "1.0.0",
+  "samples": [
+    {
+      "sample_id": "docvqa_s01",
+      "document_id": "docvqa_inv_901",
+      "dataset": "DocVQA",
+      "split": "test",
+      "page_idx": 0,
+      "total_pages": 1,
+      "image_path": "data\\raw\\docvqa_inv_901.png",
+      "source_sha256": "be46d610448a942391faa4318337840c4711870930c69434eeae703e36263445",
+      "task_type": "visual_question_answering",
+      "question": "What is the total balance due?",
+      "ground_truth_answers": [
+        "$11,340.00",
+        "11,340.00",
+        "11340"
+      ]
+    },
+    {
+      "sample_id": "funsd_s01",
+      "document_id": "funsd_form_042",
+      "dataset": "FUNSD",
+      "split": "test",
+      "page_idx": 0,
+      "total_pages": 1,
+      "image_path": "data\\raw\\funsd_form_042.png",
+      "source_sha256": "1eaad0ae892802793f8db51a8b0f9e85b7c585061f40be897d3aa64e560f466e",
+      "task_type": "form_understanding",
+      "question": "What is the applicant name?",
+      "ground_truth_answers": [
+        "Dr. Elena Rostova",
+        "Elena Rostova"
+      ]
+    },
+    {
+      "sample_id": "sroie_s01",
+      "document_id": "sroie_receipt_882",
+      "dataset": "SROIE",
+      "split": "test",
+      "page_idx": 0,
+      "total_pages": 1,
+      "image_path": "data\\raw\\sroie_receipt_882.png",
+      "source_sha256": "909a7e8cc51cc51cb03a9823b553d490fc7563f3141c0cd415eb3439bce799e5",
+      "task_type": "receipt_extraction",
+      "question": "What is the total amount?",
+      "ground_truth_answers": [
+        "$34.56",
+        "34.56"
+      ]
+    },
+    {
+      "sample_id": "mmlong_s01_p0",
+      "document_id": "mmlong_doc_101",
+      "dataset": "MMLongBench-Doc",
+      "split": "test",
+      "page_idx": 0,
+      "total_pages": 2,
+      "image_path": "data\\raw\\mmlongbench_p0.png",
+      "source_sha256": "f0420098663a27cd69cc2a6cb8e63110f3ec2bb3e2cb3a11db13909d5b52f4e1",
+      "task_type": "multipage_vqa",
+      "question": "Who is the Principal Investigator?",
+      "ground_truth_answers": [
+        "Prof. Jonathan Hayes",
+        "Jonathan Hayes"
+      ]
+    }
+  ]
+}

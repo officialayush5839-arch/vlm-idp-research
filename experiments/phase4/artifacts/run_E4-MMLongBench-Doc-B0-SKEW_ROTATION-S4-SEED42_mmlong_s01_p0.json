@@ -1,0 +1,137 @@
+{
+  "experiment_id": "E4-MMLongBench-Doc-B0-SKEW_ROTATION-S4-SEED42",
+  "benchmark_version": "1.0.0",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0_deg_skew_rotation_s4",
+  "document_id": "mmlong_doc_101",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0",
+  "degradation_family": "skew_rotation",
+  "severity": 4,
+  "seed": 42,
+  "input": {
+    "source_sha256": "f0420098663a27cd69cc2a6cb8e63110f3ec2bb3e2cb3a11db13909d5b52f4e1",
+    "derived_sha256": "ddc644f0d145c940b58a965f6ad57fabf73532947e59838de9e9d813e5443978"
+  },
+  "degradation_params": {
+    "family": "skew_rotation",
+    "severity": 4,
+    "parameter_name": "angle_deg",
+    "parameter_value": 10.0
+  },
+  "model_metadata": {
+    "model_name": "OCR_paddleocr",
+    "revision": "2.8.1",
+    "prompt_version": null,
+    "prompt_hash": null,
+    "device": "cpu"
+  },
+  "prediction": "",
+  "ground_truth": [
+    "Prof. Jonathan Hayes",
+    "Jonathan Hayes"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.0,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 15201.7865,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 0.9619,
+        "normalized_value": 0.0385,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 9.9506,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.6275,
+        "normalized_value": 0.6275,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.8162,
+        "normalized_value": 0.8162,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0192,
+        "normalized_value": 0.0548,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 247.257,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "skew_rotation",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "skew",
+        "measured_value": 9.9506
+      },
+      {
+        "family": "contrast",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "contrast",
+        "measured_value": 0.6275
+      }
+    ],
+    "runtime_ms": 37.26
+  },
+  "runtime": {
+    "latency_ms": 0.02,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

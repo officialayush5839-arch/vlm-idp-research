@@ -1,0 +1,1140 @@
+{
+  "benchmark_id": "E4-CONTROLLED-DEGRADATION",
+  "total_artifacts": 3600,
+  "reconciliation": [
+    {
+      "model": "B0",
+      "metric_name": "success_rate",
+      "historical_value": 1.0,
+      "phase4_s0_value": 1.0,
+      "difference": 0.0,
+      "tolerance": 0.05,
+      "status": "PASS",
+      "notes": "Clean S0 performance matches Phase 2/2.5 reference"
+    },
+    {
+      "model": "B1",
+      "metric_name": "success_rate",
+      "historical_value": 1.0,
+      "phase4_s0_value": 1.0,
+      "difference": 0.0,
+      "tolerance": 0.05,
+      "status": "PASS",
+      "notes": "Clean S0 performance matches Phase 2/2.5 reference"
+    },
+    {
+      "model": "B2",
+      "metric_name": "success_rate",
+      "historical_value": 1.0,
+      "phase4_s0_value": 1.0,
+      "difference": 0.0,
+      "tolerance": 0.05,
+      "status": "PASS",
+      "notes": "Clean S0 performance matches Phase 2/2.5 reference"
+    },
+    {
+      "model": "B0-U",
+      "metric_name": "success_rate",
+      "historical_value": 1.0,
+      "phase4_s0_value": 1.0,
+      "difference": 0.0,
+      "tolerance": 0.05,
+      "status": "PASS",
+      "notes": "Clean S0 performance matches Phase 2/2.5 reference"
+    }
+  ],
+  "table_a_clean": [
+    {
+      "model": "B0",
+      "dataset": "DocVQA",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.0,
+      "mean_em": 0.0,
+      "sample_count": 45
+    },
+    {
+      "model": "B0",
+      "dataset": "FUNSD",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.0,
+      "mean_em": 0.0,
+      "sample_count": 45
+    },
+    {
+      "model": "B0",
+      "dataset": "MMLongBench-Doc",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.0,
+      "mean_em": 0.0,
+      "sample_count": 45
+    },
+    {
+      "model": "B0",
+      "dataset": "SROIE",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.0,
+      "mean_em": 0.0,
+      "sample_count": 45
+    },
+    {
+      "model": "B0-U",
+      "dataset": "DocVQA",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.5714000000000001,
+      "mean_em": 0.0,
+      "sample_count": 45
+    },
+    {
+      "model": "B0-U",
+      "dataset": "FUNSD",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.0,
+      "mean_em": 0.0,
+      "sample_count": 45
+    },
+    {
+      "model": "B0-U",
+      "dataset": "MMLongBench-Doc",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.0,
+      "mean_em": 0.0,
+      "sample_count": 45
+    },
+    {
+      "model": "B0-U",
+      "dataset": "SROIE",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.0,
+      "mean_em": 0.0,
+      "sample_count": 45
+    },
+    {
+      "model": "B1",
+      "dataset": "DocVQA",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.0,
+      "mean_em": 0.0,
+      "sample_count": 45
+    },
+    {
+      "model": "B1",
+      "dataset": "FUNSD",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.0,
+      "mean_em": 0.0,
+      "sample_count": 45
+    },
+    {
+      "model": "B1",
+      "dataset": "MMLongBench-Doc",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.0,
+      "mean_em": 0.0,
+      "sample_count": 45
+    },
+    {
+      "model": "B1",
+      "dataset": "SROIE",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.0,
+      "mean_em": 0.0,
+      "sample_count": 45
+    },
+    {
+      "model": "B2",
+      "dataset": "DocVQA",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.0,
+      "mean_em": 0.0,
+      "sample_count": 45
+    },
+    {
+      "model": "B2",
+      "dataset": "FUNSD",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.0,
+      "mean_em": 0.0,
+      "sample_count": 45
+    },
+    {
+      "model": "B2",
+      "dataset": "MMLongBench-Doc",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.0,
+      "mean_em": 0.0,
+      "sample_count": 45
+    },
+    {
+      "model": "B2",
+      "dataset": "SROIE",
+      "mean_f1": 0.0,
+      "std_f1": 0.0,
+      "mean_anls": 0.0,
+      "mean_em": 0.0,
+      "sample_count": 45
+    }
+  ],
+  "table_b_robustness": [
+    {
+      "model": "B0",
+      "degradation_family": "gaussian_blur",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "gaussian_noise",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "illumination",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "jpeg_compression",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "mixed_degradation",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "occlusion",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "perspective_distortion",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "resolution_reduction",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "skew_rotation",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "gaussian_blur",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "gaussian_noise",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "illumination",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "jpeg_compression",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "mixed_degradation",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "occlusion",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "perspective_distortion",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "resolution_reduction",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "skew_rotation",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "gaussian_blur",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "gaussian_noise",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "illumination",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "jpeg_compression",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "mixed_degradation",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "occlusion",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "perspective_distortion",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "resolution_reduction",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "skew_rotation",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "gaussian_blur",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "gaussian_noise",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "illumination",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "jpeg_compression",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "mixed_degradation",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "occlusion",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "perspective_distortion",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "resolution_reduction",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "skew_rotation",
+      "S0": 0.0,
+      "S1": 0.0,
+      "S2": 0.0,
+      "S3": 0.0,
+      "S4": 0.0
+    }
+  ],
+  "table_c_relative_degradation": [
+    {
+      "model": "B0",
+      "degradation_family": "gaussian_blur",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "gaussian_noise",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "illumination",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "jpeg_compression",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "mixed_degradation",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "occlusion",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "perspective_distortion",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "resolution_reduction",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0",
+      "degradation_family": "skew_rotation",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "gaussian_blur",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "gaussian_noise",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "illumination",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "jpeg_compression",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "mixed_degradation",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "occlusion",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "perspective_distortion",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "resolution_reduction",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B0-U",
+      "degradation_family": "skew_rotation",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "gaussian_blur",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "gaussian_noise",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "illumination",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "jpeg_compression",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "mixed_degradation",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "occlusion",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "perspective_distortion",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "resolution_reduction",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B1",
+      "degradation_family": "skew_rotation",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "gaussian_blur",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "gaussian_noise",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "illumination",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "jpeg_compression",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "mixed_degradation",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "occlusion",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "perspective_distortion",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "resolution_reduction",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    },
+    {
+      "model": "B2",
+      "degradation_family": "skew_rotation",
+      "delta_S1": 0.0,
+      "delta_S2": 0.0,
+      "delta_S3": 0.0,
+      "delta_S4": 0.0
+    }
+  ],
+  "table_d_quality_correlation": [
+    {
+      "quality_feature": "blur",
+      "model": "B0",
+      "degradation_family": "gaussian_blur",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "blur",
+      "model": "B0-U",
+      "degradation_family": "gaussian_blur",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "blur",
+      "model": "B1",
+      "degradation_family": "gaussian_blur",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "blur",
+      "model": "B2",
+      "degradation_family": "gaussian_blur",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "noise",
+      "model": "B0",
+      "degradation_family": "gaussian_noise",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "noise",
+      "model": "B0-U",
+      "degradation_family": "gaussian_noise",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "noise",
+      "model": "B1",
+      "degradation_family": "gaussian_noise",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "noise",
+      "model": "B2",
+      "degradation_family": "gaussian_noise",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "skew",
+      "model": "B0",
+      "degradation_family": "skew_rotation",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "skew",
+      "model": "B0-U",
+      "degradation_family": "skew_rotation",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "skew",
+      "model": "B1",
+      "degradation_family": "skew_rotation",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "skew",
+      "model": "B2",
+      "degradation_family": "skew_rotation",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "jpeg",
+      "model": "B0",
+      "degradation_family": "jpeg_compression",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "jpeg",
+      "model": "B0-U",
+      "degradation_family": "jpeg_compression",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "jpeg",
+      "model": "B1",
+      "degradation_family": "jpeg_compression",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "jpeg",
+      "model": "B2",
+      "degradation_family": "jpeg_compression",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "illumination",
+      "model": "B0",
+      "degradation_family": "illumination",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "illumination",
+      "model": "B0-U",
+      "degradation_family": "illumination",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "illumination",
+      "model": "B1",
+      "degradation_family": "illumination",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "illumination",
+      "model": "B2",
+      "degradation_family": "illumination",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "occlusion",
+      "model": "B0",
+      "degradation_family": "occlusion",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "occlusion",
+      "model": "B0-U",
+      "degradation_family": "occlusion",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "occlusion",
+      "model": "B1",
+      "degradation_family": "occlusion",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "occlusion",
+      "model": "B2",
+      "degradation_family": "occlusion",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "resolution",
+      "model": "B0",
+      "degradation_family": "resolution_reduction",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "resolution",
+      "model": "B0-U",
+      "degradation_family": "resolution_reduction",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "resolution",
+      "model": "B1",
+      "degradation_family": "resolution_reduction",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "resolution",
+      "model": "B2",
+      "degradation_family": "resolution_reduction",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "perspective",
+      "model": "B0",
+      "degradation_family": "perspective_distortion",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "perspective",
+      "model": "B0-U",
+      "degradation_family": "perspective_distortion",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "perspective",
+      "model": "B1",
+      "degradation_family": "perspective_distortion",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    },
+    {
+      "quality_feature": "perspective",
+      "model": "B2",
+      "degradation_family": "perspective_distortion",
+      "correlation_with_f1": 0.0,
+      "sample_count": 100
+    }
+  ],
+  "table_e_statistical_tests": [
+    {
+      "model": "B0",
+      "comparison": "S3 vs S0 (Overall)",
+      "observed_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "p_value": 1.0,
+      "cliffs_delta": 0.0,
+      "effect_size": "negligible",
+      "status": "NOT_SIGNIFICANT"
+    },
+    {
+      "model": "B0",
+      "comparison": "S4 vs S0 (Overall)",
+      "observed_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "p_value": 1.0,
+      "cliffs_delta": 0.0,
+      "effect_size": "negligible",
+      "status": "NOT_SIGNIFICANT"
+    },
+    {
+      "model": "B0-U",
+      "comparison": "S3 vs S0 (Overall)",
+      "observed_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "p_value": 1.0,
+      "cliffs_delta": 0.0,
+      "effect_size": "negligible",
+      "status": "NOT_SIGNIFICANT"
+    },
+    {
+      "model": "B0-U",
+      "comparison": "S4 vs S0 (Overall)",
+      "observed_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "p_value": 1.0,
+      "cliffs_delta": 0.0,
+      "effect_size": "negligible",
+      "status": "NOT_SIGNIFICANT"
+    },
+    {
+      "model": "B1",
+      "comparison": "S3 vs S0 (Overall)",
+      "observed_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "p_value": 1.0,
+      "cliffs_delta": 0.0,
+      "effect_size": "negligible",
+      "status": "NOT_SIGNIFICANT"
+    },
+    {
+      "model": "B1",
+      "comparison": "S4 vs S0 (Overall)",
+      "observed_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "p_value": 1.0,
+      "cliffs_delta": 0.0,
+      "effect_size": "negligible",
+      "status": "NOT_SIGNIFICANT"
+    },
+    {
+      "model": "B2",
+      "comparison": "S3 vs S0 (Overall)",
+      "observed_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "p_value": 1.0,
+      "cliffs_delta": 0.0,
+      "effect_size": "negligible",
+      "status": "NOT_SIGNIFICANT"
+    },
+    {
+      "model": "B2",
+      "comparison": "S4 vs S0 (Overall)",
+      "observed_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "p_value": 1.0,
+      "cliffs_delta": 0.0,
+      "effect_size": "negligible",
+      "status": "NOT_SIGNIFICANT"
+    }
+  ]
+}

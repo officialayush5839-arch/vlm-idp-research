@@ -11,7 +11,7 @@
 | Phase 2 | Baseline OCR and VLM Pipelines | COMPLETED | Phase 1 |
 | Phase 2.5 | Unlimited-OCR Integration & Scientific Validation | COMPLETED | Phase 2 |
 | Phase 3 | Document Quality/Degradation Module | COMPLETED | Phase 2.5 |
-| Phase 4 | Controlled Degradation Benchmark | NOT_STARTED | Phase 3 |
+| Phase 4 | Controlled Degradation Benchmark | COMPLETED | Phase 3 |
 | Phase 5 | Adaptive Routing | NOT_STARTED | Phase 4 |
 | Phase 6 | Long-Document Multimodal Retrieval | NOT_STARTED | Phase 5 |
 | Phase 7 | Evidence Grounding | NOT_STARTED | Phase 6 |
@@ -197,11 +197,11 @@
 **9. Tests:** Verification of degradation parameters, visual inspection tests, leakage checks.
 **10. Expected outputs:** A new dataset artifact and evaluation results for baselines on this benchmark.
 **11. Acceptance criteria:**
-- [ ] All specified degradation types and levels implemented.
-- [ ] Split management mathematically verified (no leakage).
-- [ ] Benchmark dataset fully generated.
-- [ ] Baselines evaluated on the benchmark.
-- [ ] Accuracy vs degradation severity curves plotted.
+- [x] All specified degradation types and levels implemented.
+- [x] Split management mathematically verified (no leakage).
+- [x] Benchmark dataset fully generated (3,600 conditions).
+- [x] Baselines evaluated on the benchmark.
+- [x] Accuracy vs degradation severity curves plotted and analyzed.
 **12. Failure conditions:** Data leakage between train/test splits, degradations destroying all information (unreadable by humans).
 **13. Exit criteria:** Benchmark complete, baseline degraded metrics logged.
 **14. Paper contribution:** Section V (robustness benchmark).

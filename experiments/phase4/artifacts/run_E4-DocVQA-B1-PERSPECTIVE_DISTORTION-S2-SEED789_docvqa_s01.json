@@ -1,0 +1,138 @@
+{
+  "experiment_id": "E4-DocVQA-B1-PERSPECTIVE_DISTORTION-S2-SEED789",
+  "benchmark_version": "1.0.0",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01_deg_perspective_distortion_s2",
+  "document_id": "docvqa_inv_901",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B1",
+  "degradation_family": "perspective_distortion",
+  "severity": 2,
+  "seed": 789,
+  "input": {
+    "source_sha256": "be46d610448a942391faa4318337840c4711870930c69434eeae703e36263445",
+    "derived_sha256": "7df2dbc2ac2feba25b3106c74f83230dfa529d41a71243ef37c38e0e37bb6e40"
+  },
+  "degradation_params": {
+    "family": "perspective_distortion",
+    "severity": 2,
+    "parameter_name": "tilt_deg",
+    "parameter_value": 15.0
+  },
+  "model_metadata": {
+    "model_name": "Qwen2.5-VL-7B-Instruct",
+    "revision": "b450c26581decfcb4c555513ab4deeb85ab1a39d",
+    "prompt_version": "v1.0-b1",
+    "prompt_hash": "351cd27f32df29e9",
+    "device": "cpu"
+  },
+  "prediction": "You are performing document understandin...",
+  "ground_truth": [
+    "$11,340.00",
+    "11,340.00",
+    "11340"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 4.2,
+    "wer": 5.0,
+    "grounding_iou": null,
+    "primary_metric": "ANLS",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 15683.6987,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 0.6158,
+        "normalized_value": 0.0246,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.8627,
+        "normalized_value": 0.8627,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.8247,
+        "normalized_value": 0.8247,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 205.714,
+        "normalized_value": 0.8571,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.1933,
+        "normalized_value": 0.9665,
+        "severity": 3,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 17.7576,
+        "normalized_value": 1.0,
+        "severity": 2,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "occlusion",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "occlusion",
+        "measured_value": 0.1933
+      },
+      {
+        "family": "perspective_distortion",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "perspective",
+        "measured_value": 17.7576
+      }
+    ],
+    "runtime_ms": 24.72
+  },
+  "runtime": {
+    "latency_ms": 10.88,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

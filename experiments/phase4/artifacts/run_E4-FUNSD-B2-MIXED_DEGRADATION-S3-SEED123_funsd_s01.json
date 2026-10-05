@@ -1,0 +1,165 @@
+{
+  "experiment_id": "E4-FUNSD-B2-MIXED_DEGRADATION-S3-SEED123",
+  "benchmark_version": "1.0.0",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01_deg_mixed_degradation_s3",
+  "document_id": "funsd_form_042",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B2",
+  "degradation_family": "mixed_degradation",
+  "severity": 3,
+  "seed": 123,
+  "input": {
+    "source_sha256": "1eaad0ae892802793f8db51a8b0f9e85b7c585061f40be897d3aa64e560f466e",
+    "derived_sha256": "38cf071dbb4abb53f860f5894909f2e840cf6a9fd19bd28671cd94176f3e2c5d"
+  },
+  "degradation_params": {
+    "family": "mixed_degradation",
+    "severity": 3,
+    "parameter_name": "composite_tier",
+    "parameter_value": 3
+  },
+  "model_metadata": {
+    "model_name": "Qwen2.5-VL-7B-Instruct",
+    "revision": "b450c26581decfcb4c555513ab4deeb85ab1a39d",
+    "prompt_version": "v1.0-b2",
+    "prompt_hash": "a77f7f25b1fb18a8",
+    "device": "cpu"
+  },
+  "prediction": "You are performing document understandin...",
+  "ground_truth": [
+    "Dr. Elena Rostova",
+    "Elena Rostova"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 2.1176,
+    "wer": 1.6667,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 2015.9227,
+        "normalized_value": 1.0,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 1.0486,
+        "normalized_value": 0.0419,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 4.844,
+        "normalized_value": 0.9688,
+        "severity": 3,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.2431,
+        "normalized_value": 0.2431,
+        "severity": 3,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.0021,
+        "normalized_value": 0.0021,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0069,
+        "normalized_value": 0.0196,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 237.672,
+        "normalized_value": 0.9903,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 30.1397,
+        "normalized_value": 1.0,
+        "severity": 3,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "gaussian_blur",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "blur",
+        "measured_value": 2015.9227
+      },
+      {
+        "family": "skew_rotation",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "skew",
+        "measured_value": 4.844
+      },
+      {
+        "family": "contrast",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "contrast",
+        "measured_value": 0.2431
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "resolution",
+        "measured_value": 0.0021
+      },
+      {
+        "family": "perspective_distortion",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "perspective",
+        "measured_value": 30.1397
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 5.0
+      }
+    ],
+    "runtime_ms": 33.62
+  },
+  "runtime": {
+    "latency_ms": 10.66,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

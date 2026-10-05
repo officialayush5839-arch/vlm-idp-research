@@ -1,0 +1,158 @@
+{
+  "experiment_id": "E4-SROIE-B2-OCCLUSION-S4-SEED456",
+  "benchmark_version": "1.0.0",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01_deg_occlusion_s4",
+  "document_id": "sroie_receipt_882",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B2",
+  "degradation_family": "occlusion",
+  "severity": 4,
+  "seed": 456,
+  "input": {
+    "source_sha256": "909a7e8cc51cc51cb03a9823b553d490fc7563f3141c0cd415eb3439bce799e5",
+    "derived_sha256": "1b0901c1bdca9eb6264670e99456a6e1c2b1493d02addab98f435621a9a96b74"
+  },
+  "degradation_params": {
+    "family": "occlusion",
+    "severity": 4,
+    "parameter_name": "area_ratio",
+    "parameter_value": 0.3
+  },
+  "model_metadata": {
+    "model_name": "Qwen2.5-VL-7B-Instruct",
+    "revision": "b450c26581decfcb4c555513ab4deeb85ab1a39d",
+    "prompt_version": "v1.0-b2",
+    "prompt_hash": "a77f7f25b1fb18a8",
+    "device": "cpu"
+  },
+  "prediction": "You are performing document understandin...",
+  "ground_truth": [
+    "$34.56",
+    "34.56"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 7.0,
+    "wer": 5.0,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 27765.6177,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 1.0332,
+        "normalized_value": 0.0413,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.5456,
+        "normalized_value": 0.1091,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.6841,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.9098,
+        "normalized_value": 0.9098,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.9338,
+        "normalized_value": 0.9338,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 180.94,
+        "normalized_value": 0.7539,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.2992,
+        "normalized_value": 1.0,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "skew_rotation",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "skew",
+        "measured_value": 0.5456
+      },
+      {
+        "family": "glare",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "glare",
+        "measured_value": 0.6841
+      },
+      {
+        "family": "illumination",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "illumination",
+        "measured_value": 180.94
+      },
+      {
+        "family": "occlusion",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "occlusion",
+        "measured_value": 0.2992
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 4.0
+      }
+    ],
+    "runtime_ms": 263.83
+  },
+  "runtime": {
+    "latency_ms": 27.05,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

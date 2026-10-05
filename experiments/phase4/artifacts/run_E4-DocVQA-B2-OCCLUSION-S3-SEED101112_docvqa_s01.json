@@ -1,0 +1,138 @@
+{
+  "experiment_id": "E4-DocVQA-B2-OCCLUSION-S3-SEED101112",
+  "benchmark_version": "1.0.0",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01_deg_occlusion_s3",
+  "document_id": "docvqa_inv_901",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B2",
+  "degradation_family": "occlusion",
+  "severity": 3,
+  "seed": 101112,
+  "input": {
+    "source_sha256": "be46d610448a942391faa4318337840c4711870930c69434eeae703e36263445",
+    "derived_sha256": "83bbc1485adc64657ee325b52c89f7fe402948f99a0f9e26ddb5727f30693295"
+  },
+  "degradation_params": {
+    "family": "occlusion",
+    "severity": 3,
+    "parameter_name": "area_ratio",
+    "parameter_value": 0.2
+  },
+  "model_metadata": {
+    "model_name": "Qwen2.5-VL-7B-Instruct",
+    "revision": "b450c26581decfcb4c555513ab4deeb85ab1a39d",
+    "prompt_version": "v1.0-b2",
+    "prompt_hash": "a77f7f25b1fb18a8",
+    "device": "cpu"
+  },
+  "prediction": "You are performing document understandin...",
+  "ground_truth": [
+    "$11,340.00",
+    "11,340.00",
+    "11340"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 4.2,
+    "wer": 5.0,
+    "grounding_iou": null,
+    "primary_metric": "ANLS",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 26440.1903,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 1.0492,
+        "normalized_value": 0.042,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.902,
+        "normalized_value": 0.902,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.9288,
+        "normalized_value": 0.9288,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.2587,
+        "normalized_value": 0.7391,
+        "severity": 4,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 202.494,
+        "normalized_value": 0.8437,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.1993,
+        "normalized_value": 0.9967,
+        "severity": 3,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "jpeg_compression",
+        "severity": 4,
+        "severity_label": "S4_EXTREME",
+        "evidence_feature": "compression",
+        "measured_value": 0.2587
+      },
+      {
+        "family": "occlusion",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "occlusion",
+        "measured_value": 0.1993
+      }
+    ],
+    "runtime_ms": 35.65
+  },
+  "runtime": {
+    "latency_ms": 10.81,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}

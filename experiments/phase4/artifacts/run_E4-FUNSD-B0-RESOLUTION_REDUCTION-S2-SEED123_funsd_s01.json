@@ -1,0 +1,158 @@
+{
+  "experiment_id": "E4-FUNSD-B0-RESOLUTION_REDUCTION-S2-SEED123",
+  "benchmark_version": "1.0.0",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01_deg_resolution_reduction_s2",
+  "document_id": "funsd_form_042",
+  "page_idx": 0,
+  "split": "test",
+  "model": "B0",
+  "degradation_family": "resolution_reduction",
+  "severity": 2,
+  "seed": 123,
+  "input": {
+    "source_sha256": "1eaad0ae892802793f8db51a8b0f9e85b7c585061f40be897d3aa64e560f466e",
+    "derived_sha256": "c2c93e817e834686a4004ce063989108c68cf471cfea4b710791ca834aacd1ce"
+  },
+  "degradation_params": {
+    "family": "resolution_reduction",
+    "severity": 2,
+    "parameter_name": "scale_factor",
+    "parameter_value": 0.5
+  },
+  "model_metadata": {
+    "model_name": "OCR_paddleocr",
+    "revision": "2.8.1",
+    "prompt_version": null,
+    "prompt_hash": null,
+    "device": "cpu"
+  },
+  "prediction": "",
+  "ground_truth": [
+    "Dr. Elena Rostova",
+    "Elena Rostova"
+  ],
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0,
+    "cer": 1.0,
+    "wer": 1.0,
+    "grounding_iou": null,
+    "primary_metric": "F1",
+    "primary_value": 0.0
+  },
+  "quality_assessment": {
+    "algorithm_version": "1.0.0",
+    "config_hash": "c22038b25a7db146",
+    "overall_quality_status": "NOT_DEFINED",
+    "overall_quality_score": null,
+    "features": {
+      "blur": {
+        "raw_value": 743.4079,
+        "normalized_value": 1.0,
+        "severity": 1,
+        "status": "MEASURED"
+      },
+      "noise": {
+        "raw_value": 0.0914,
+        "normalized_value": 0.0037,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "skew": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "glare": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "contrast": {
+        "raw_value": 0.3882,
+        "normalized_value": 0.3882,
+        "severity": 2,
+        "status": "MEASURED"
+      },
+      "resolution": {
+        "raw_value": 0.5885,
+        "normalized_value": 0.5885,
+        "severity": 2,
+        "status": "MEASURED"
+      },
+      "compression": {
+        "raw_value": 0.1678,
+        "normalized_value": 0.4794,
+        "severity": 3,
+        "status": "MEASURED"
+      },
+      "illumination": {
+        "raw_value": 245.863,
+        "normalized_value": 1.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "occlusion": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      },
+      "perspective": {
+        "raw_value": 0.0,
+        "normalized_value": 0.0,
+        "severity": 0,
+        "status": "MEASURED"
+      }
+    },
+    "detected_degradations": [
+      {
+        "family": "gaussian_blur",
+        "severity": 1,
+        "severity_label": "S1_MILD",
+        "evidence_feature": "blur",
+        "measured_value": 743.4079
+      },
+      {
+        "family": "contrast",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "contrast",
+        "measured_value": 0.3882
+      },
+      {
+        "family": "resolution_reduction",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "resolution",
+        "measured_value": 0.5885
+      },
+      {
+        "family": "jpeg_compression",
+        "severity": 3,
+        "severity_label": "S3_SEVERE",
+        "evidence_feature": "compression",
+        "measured_value": 0.1678
+      },
+      {
+        "family": "mixed_degradation",
+        "severity": 2,
+        "severity_label": "S2_MODERATE",
+        "evidence_feature": "composite_multi_family",
+        "measured_value": 4.0
+      }
+    ],
+    "runtime_ms": 22.53
+  },
+  "runtime": {
+    "latency_ms": 0.02,
+    "device": "cpu"
+  },
+  "status": "SUCCESS",
+  "error_type": null,
+  "error_message": null
+}
