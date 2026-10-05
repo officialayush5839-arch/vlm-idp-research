@@ -1,0 +1,17 @@
+{
+  "trace_id": "trace_bba921052750",
+  "run_id": "run_P5_SROIE_R5_COMPOSITE_sroie_s01_s123",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Composite policy adopted rule proposal: Geometric distortion detected (skew=0.33, perspective=1.00); routing to B2 native VLM.",
+  "policy_version": "1.0.0",
+  "router_confidence": 0.61,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:14:43.702308+00:00"
+}

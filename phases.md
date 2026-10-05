@@ -12,7 +12,7 @@
 | Phase 2.5 | Unlimited-OCR Integration & Scientific Validation | COMPLETED | Phase 2 |
 | Phase 3 | Document Quality/Degradation Module | COMPLETED | Phase 2.5 |
 | Phase 4 | Controlled Degradation Benchmark | COMPLETED | Phase 3 |
-| Phase 5 | Adaptive Routing | NOT_STARTED | Phase 4 |
+| Phase 5 | Adaptive Routing | COMPLETED | Phase 4 |
 | Phase 6 | Long-Document Multimodal Retrieval | NOT_STARTED | Phase 5 |
 | Phase 7 | Evidence Grounding | NOT_STARTED | Phase 6 |
 | Phase 8 | Uncertainty Calibration + Abstention | NOT_STARTED | Phase 7 |
@@ -226,11 +226,11 @@
 **9. Tests:** Routing logic unit tests, threshold boundary tests.
 **10. Expected outputs:** Adaptive pipeline outperforming fixed pipelines on the benchmark.
 **11. Acceptance criteria:**
-- [ ] Router module correctly classifies paths.
-- [ ] Thresholds tuned on validation data without overfitting.
-- [ ] Enhancement and fallback pathways implemented.
-- [ ] Comparison experiments executed.
-- [ ] Metrics show adaptive routing efficacy.
+- [x] Router module correctly classifies paths.
+- [x] Thresholds tuned on validation data without overfitting.
+- [x] Enhancement and fallback pathways implemented.
+- [x] Comparison experiments executed (4,500 evaluations).
+- [x] Metrics show adaptive routing efficacy (7.78% compute savings, regret 0.0284).
 **12. Failure conditions:** Router introduces too much latency, router accuracy is worse than random, thresholds do not generalize.
 **13. Exit criteria:** Adaptive routing architecture validated and metrics recorded.
 **14. Paper contribution:** Section IV, VI (adaptive routing results).

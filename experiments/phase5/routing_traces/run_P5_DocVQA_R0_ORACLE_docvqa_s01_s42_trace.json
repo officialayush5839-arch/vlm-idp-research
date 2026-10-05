@@ -1,0 +1,17 @@
+{
+  "trace_id": "trace_b5b29e097fea",
+  "run_id": "run_P5_DocVQA_R0_ORACLE_docvqa_s01_s42",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Oracle retrospective selection based on actual performance (max_score=0.9800).",
+  "policy_version": "1.0.0",
+  "router_confidence": 1.0,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:10:05.018838+00:00"
+}

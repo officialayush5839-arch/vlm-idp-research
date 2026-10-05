@@ -1,0 +1,17 @@
+{
+  "trace_id": "trace_21149b470a4d",
+  "run_id": "run_P5_SROIE_R4_LEARNED_sroie_s01_s456",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Learned router uninitialized; defaulting to robust fixed baseline B2.",
+  "policy_version": "1.0.0",
+  "router_confidence": 0.5,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:14:43.985076+00:00"
+}

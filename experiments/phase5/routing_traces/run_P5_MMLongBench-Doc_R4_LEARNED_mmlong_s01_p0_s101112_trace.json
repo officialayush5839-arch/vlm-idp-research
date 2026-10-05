@@ -1,0 +1,17 @@
+{
+  "trace_id": "trace_ed3750b8fd7b",
+  "run_id": "run_P5_MMLongBench-Doc_R4_LEARNED_mmlong_s01_p0_s101112",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Learned router uninitialized; defaulting to robust fixed baseline B2.",
+  "policy_version": "1.0.0",
+  "router_confidence": 0.5,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:15:41.980905+00:00"
+}

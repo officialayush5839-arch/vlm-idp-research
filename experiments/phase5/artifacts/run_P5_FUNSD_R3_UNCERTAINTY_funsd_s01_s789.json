@@ -1,0 +1,26 @@
+{
+  "run_id": "run_P5_FUNSD_R3_UNCERTAINTY_funsd_s01_s789",
+  "document_id": "funsd_form_042",
+  "dataset": "FUNSD",
+  "partition": "test",
+  "seed": 789,
+  "policy": "R3_UNCERTAINTY",
+  "selected_model": "B2",
+  "final_answer": "You are performing document understandin...",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.0,
+  "oracle_best_model": "B2",
+  "cost": {
+    "latency_ms": 10.810100007802248,
+    "compute_cost": 1.0,
+    "model_invocations": 1,
+    "fallback_invocations": 0
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T05:13:52.101396+00:00"
+}

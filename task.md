@@ -1,7 +1,7 @@
 # VLM-IDP Active Execution Queue
 
-CURRENT PHASE: PHASE 4 — Controlled Degradation Benchmark (COMPLETED)
-CURRENT OBJECTIVE: Phase 4 complete. Controlled benchmark executed across 4 models x 9 families x 5 severities x 5 seeds (3,600 runs). 126 tests passing. Awaiting user authorization to begin Phase 5.
+CURRENT PHASE: PHASE 5 — Adaptive Routing (COMPLETED)
+CURRENT OBJECTIVE: Phase 5 complete. Adaptive quality-aware and uncertainty-aware model routing implemented and benchmarked (4,500 evaluations). 163 tests passing. Awaiting user authorization to begin Phase 6.
 TASK STATUS: COMPLETE
 
 ---
@@ -477,3 +477,97 @@ TASK STATUS: COMPLETE
 - **Acceptance Criteria**: 3,600 run artifacts saved; all 32 report sections complete; 126 tests passing.
 - **Status**: **PASS**
 - **Evidence**: [`reports/phase4/PHASE4_REPORT.md`](reports/phase4/PHASE4_REPORT.md), [`experiments/phase4/index.json`](experiments/phase4/index.json)
+
+---
+
+### Phase 5 Tasks (Adaptive Routing & Uncertainty-Aware Model Selection) — ALL COMPLETED
+
+#### T050: Adaptive Routing Schemas, Pydantic Models & YAML Configurations
+- **Purpose**: Define formal data structures and typed schemas for routing decisions, traces, costs, and configs.
+- **Dependencies**: Phase 4 Complete
+- **Input**: `protocol/uncertainty_protocol.md`, Phase 5 prompt
+- **Expected Output**: `src/routing/schema.py`, `configs/phase5/*.yaml`
+- **Files Affected**: `src/routing/schema.py`, `configs/phase5/` (7 YAML config files)
+- **Acceptance Criteria**: Typed Pydantic models with strict validation; 6 passed schema tests.
+- **Status**: **PASS**
+- **Evidence**: [`src/routing/schema.py`](src/routing/schema.py), [`tests/test_phase5_schema.py`](tests/test_phase5_schema.py)
+
+#### T051: Quality Feature Adapter & Deterministic Rule Engine
+- **Purpose**: Map Phase 3 visual quality features to model selections via configuration-driven rules.
+- **Dependencies**: T050
+- **Input**: `src/quality/schema.py`, `configs/phase5/router_rules.yaml`
+- **Expected Output**: `src/routing/feature_adapter.py`, `src/routing/rule_engine.py`
+- **Files Affected**: `src/routing/feature_adapter.py`, `src/routing/rule_engine.py`
+- **Acceptance Criteria**: 10-feature extraction normalized in $[0, 1]$; zero label leakage; 7 passed rule tests.
+- **Status**: **PASS**
+- **Evidence**: [`src/routing/rule_engine.py`](src/routing/rule_engine.py), [`tests/test_phase5_rules.py`](tests/test_phase5_rules.py)
+
+#### T052: Multi-Signal Uncertainty Adapter & Post-Hoc Calibrator
+- **Purpose**: Assemble 6-signal uncertainty vector and fit calibrators strictly on validation partition.
+- **Dependencies**: T050
+- **Input**: `protocol/uncertainty_protocol.md`
+- **Expected Output**: `src/routing/uncertainty.py`, `src/routing/calibration.py`
+- **Files Affected**: `src/routing/uncertainty.py`, `src/routing/calibration.py`
+- **Acceptance Criteria**: Platt/logistic calibration; ECE and Brier score evaluation; validation split enforcement.
+- **Status**: **PASS**
+- **Evidence**: [`src/routing/calibration.py`](src/routing/calibration.py), [`tests/test_phase5_calibration.py`](tests/test_phase5_calibration.py)
+
+#### T053: Lightweight Learned Router & Policy Manager (R0–R5)
+- **Purpose**: Implement policy dispatcher for Oracle (R0), Fixed (R1), Rule-based (R2), Uncertainty (R3), Learned (R4), and Composite (R5).
+- **Dependencies**: T051, T052
+- **Input**: Model execution outcomes
+- **Expected Output**: `src/routing/learned_router.py`, `src/routing/policy.py`
+- **Files Affected**: `src/routing/learned_router.py`, `src/routing/policy.py`
+- **Acceptance Criteria**: Dispatch across all policies; oracle strictly marked non-deployable; 7 passed router tests.
+- **Status**: **PASS**
+- **Evidence**: [`src/routing/policy.py`](src/routing/policy.py), [`tests/test_phase5_router.py`](tests/test_phase5_router.py)
+
+#### T054: Structural Fallback & Engineering Cost Model
+- **Purpose**: Inspect model output structure and account for latency and relative compute expenditures.
+- **Dependencies**: T050
+- **Input**: `configs/phase5/cost_config.yaml`
+- **Expected Output**: `src/routing/fallback.py`, `src/routing/cost.py`
+- **Files Affected**: `src/routing/fallback.py`, `src/routing/cost.py`
+- **Acceptance Criteria**: Fallback on malformed/empty outputs; cost function $J$ evaluation; 7 passed fallback/cost tests.
+- **Status**: **PASS**
+- **Evidence**: [`src/routing/fallback.py`](src/routing/fallback.py), [`tests/test_phase5_fallback.py`](tests/test_phase5_fallback.py)
+
+#### T055: Decision Tracing & Zero-Leakage Static Code Audit
+- **Purpose**: Log immutable decision traces and audit routing source files for forbidden ground-truth identifiers.
+- **Dependencies**: T050
+- **Input**: Routing codebase
+- **Expected Output**: `src/routing/decision_trace.py`, `src/routing/audit.py`
+- **Files Affected**: `src/routing/decision_trace.py`, `src/routing/audit.py`
+- **Acceptance Criteria**: Static AST audit passes with 0 violations across 12 routing modules.
+- **Status**: **PASS**
+- **Evidence**: [`reports/phase5/zero_leakage_audit.md`](reports/phase5/zero_leakage_audit.md), [`tests/test_phase5_no_leakage.py`](tests/test_phase5_no_leakage.py)
+
+#### T056: End-to-End Routing Pipeline & CLI Runners
+- **Purpose**: Orchestrate feature extraction, policy selection, model invocation, and artifact serialization.
+- **Dependencies**: T050-T055
+- **Input**: Complete routing package
+- **Expected Output**: `src/routing/router.py`, `src/routing/pipeline.py`, `scripts/run_phase5_*.py`
+- **Files Affected**: `src/routing/router.py`, `src/routing/pipeline.py`, `scripts/run_phase5_smoke.py`, `scripts/run_phase5_validation.py`, `scripts/run_phase5_benchmark.py`
+- **Acceptance Criteria**: 163 pytest tests pass; smoke test and validation test pass.
+- **Status**: **PASS**
+- **Evidence**: [`scripts/run_phase5_smoke.py`](scripts/run_phase5_smoke.py), [`scripts/run_phase5_validation.py`](scripts/run_phase5_validation.py)
+
+#### T057: Controlled Routing Benchmark Execution & Statistical Hypotheses
+- **Purpose**: Execute 4,500 evaluations across 900 benchmark conditions and test Hypothesis H2 via paired bootstrap.
+- **Dependencies**: T056
+- **Input**: Evaluation corpus and degradation runner
+- **Expected Output**: `experiments/phase5/summaries/E5_ROUTING_summary.json`, `experiments/phase5/index.json`
+- **Files Affected**: `experiments/phase5/`
+- **Acceptance Criteria**: $B=10,000$ paired bootstrap computed; empirical 95% CIs; Cliff's $\delta$ computed; honest H2 evaluation.
+- **Status**: **PASS**
+- **Evidence**: [`experiments/phase5/summaries/E5_ROUTING_summary.json`](experiments/phase5/summaries/E5_ROUTING_summary.json), [`reports/phase5/statistical_analysis.md`](reports/phase5/statistical_analysis.md)
+
+#### T058: Master Phase 5 Research Documentation
+- **Purpose**: Author all 12 comprehensive Phase 5 research reports.
+- **Dependencies**: T050-T057
+- **Input**: Experimental results and audit evidence
+- **Expected Output**: `reports/phase5/PHASE5_REPORT.md` (30 complete sections) and 11 companion reports
+- **Files Affected**: `reports/phase5/*.md`
+- **Acceptance Criteria**: All 12 reports written; anti-fabrication verified; governance synchronized.
+- **Status**: **PASS**
+- **Evidence**: [`reports/phase5/PHASE5_REPORT.md`](reports/phase5/PHASE5_REPORT.md)

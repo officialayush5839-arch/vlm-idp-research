@@ -1,0 +1,17 @@
+{
+  "trace_id": "trace_371196c3351e",
+  "run_id": "run_P5_FUNSD_R5_COMPOSITE_funsd_s01_s101112",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Composite policy adopted rule proposal: Geometric distortion detected (skew=0.76, perspective=1.00); routing to B2 native VLM.",
+  "policy_version": "1.0.0",
+  "router_confidence": 0.61,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:13:52.585818+00:00"
+}

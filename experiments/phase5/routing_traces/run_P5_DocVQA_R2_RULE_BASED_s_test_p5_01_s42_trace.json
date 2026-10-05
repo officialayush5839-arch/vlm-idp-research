@@ -1,0 +1,17 @@
+{
+  "trace_id": "trace_61199a61c37c",
+  "run_id": "run_P5_DocVQA_R2_RULE_BASED_s_test_p5_01_s42",
+  "document_id": "doc_p5_01",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0-U",
+  "decision_reason": "Compression or illumination distortion detected (compression=0.00, illum=1.00, glare=1.00); routing to B0-U multimodal OCR.",
+  "policy_version": "1.0.0",
+  "router_confidence": 0.85,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:19:16.299745+00:00"
+}

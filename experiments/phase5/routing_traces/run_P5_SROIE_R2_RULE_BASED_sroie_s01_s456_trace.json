@@ -1,0 +1,17 @@
+{
+  "trace_id": "trace_9c9c4bb912a7",
+  "run_id": "run_P5_SROIE_R2_RULE_BASED_sroie_s01_s456",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Geometric distortion detected (skew=1.00, perspective=1.00); routing to B2 native VLM.",
+  "policy_version": "1.0.0",
+  "router_confidence": 0.9,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:14:43.853757+00:00"
+}

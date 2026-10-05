@@ -159,3 +159,6 @@ temp/
 
 # Keep .gitkeep files
 !**/.gitkeep
+
+# Harness internal
+.superpowers/

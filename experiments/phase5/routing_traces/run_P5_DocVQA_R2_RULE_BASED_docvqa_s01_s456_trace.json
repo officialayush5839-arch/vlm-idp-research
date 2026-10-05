@@ -1,0 +1,17 @@
+{
+  "trace_id": "trace_2050d7e76059",
+  "run_id": "run_P5_DocVQA_R2_RULE_BASED_docvqa_s01_s456",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Geometric distortion detected (skew=0.90, perspective=1.00); routing to B2 native VLM.",
+  "policy_version": "1.0.0",
+  "router_confidence": 0.9,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:12:54.591861+00:00"
+}

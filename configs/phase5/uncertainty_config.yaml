@@ -1,0 +1,40 @@
+# Uncertainty Signal & Routing Configuration — Phase 5
+version: "1.0.0"
+config_id: "phase5_uncertainty_config"
+description: "Frozen multi-signal uncertainty vector configuration per protocol/uncertainty_protocol.md"
+
+signals:
+  u_vlm:
+    description: "Normalized sequence token log-likelihood / consistency"
+    default_weight: 0.25
+    direction: "higher_is_confident"
+  u_ocr:
+    description: "Mean OCR word/character confidence in localized region"
+    default_weight: 0.15
+    direction: "higher_is_confident"
+  u_ret:
+    description: "Top-1 retrieval cosine similarity score"
+    default_weight: 0.15
+    direction: "higher_is_confident"
+  u_gnd:
+    description: "Fuzzy normalized alignment score within predicted bounding box"
+    default_weight: 0.15
+    direction: "higher_is_confident"
+  u_qual:
+    description: "Inverted composite visual degradation measure"
+    default_weight: 0.15
+    direction: "higher_is_confident"
+  u_agr:
+    description: "Cosine similarity between OCR text and VLM answer embedding"
+    default_weight: 0.15
+    direction: "higher_is_confident"
+
+decision_thresholds:
+  tau_accept: 0.75
+  tau_review: 0.40
+
+routing_rules:
+  high_confidence_target: "B0"
+  moderate_uncertainty_target: "B1"
+  high_uncertainty_target: "B2"
+  unreliable_evidence_target: "B0-U"

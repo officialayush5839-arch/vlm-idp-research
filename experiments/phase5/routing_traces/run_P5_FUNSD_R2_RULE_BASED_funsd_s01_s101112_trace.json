@@ -1,0 +1,17 @@
+{
+  "trace_id": "trace_e2cf3af2058c",
+  "run_id": "run_P5_FUNSD_R2_RULE_BASED_funsd_s01_s101112",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Geometric distortion detected (skew=0.76, perspective=1.00); routing to B2 native VLM.",
+  "policy_version": "1.0.0",
+  "router_confidence": 0.9,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:13:52.390994+00:00"
+}

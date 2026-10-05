@@ -1,0 +1,54 @@
+# Phase 5 Experiment Matrix Specification
+version: "1.0.0"
+config_id: "phase5_experiment_matrix"
+description: "Adaptive routing evaluation matrix spanning datasets, degradations, severities, and seeds"
+
+datasets:
+  - name: "DocVQA"
+    task_type: "visual_question_answering"
+    split: "test"
+  - name: "FUNSD"
+    task_type: "form_understanding"
+    split: "test"
+  - name: "SROIE"
+    task_type: "receipt_extraction"
+    split: "test"
+  - name: "MMLongBench-Doc"
+    task_type: "multipage_vqa"
+    split: "test"
+
+degradation_families:
+  - "gaussian_blur"
+  - "gaussian_noise"
+  - "skew_rotation"
+  - "jpeg_compression"
+  - "illumination"
+  - "occlusion"
+  - "resolution_reduction"
+  - "perspective_distortion"
+  - "mixed_degradation"
+
+severities: [0, 1, 2, 3, 4]
+seeds: [42, 123, 456, 789, 101112]
+
+routing_systems:
+  - id: "B0"
+    policy: "FIXED_SINGLE_MODEL"
+  - id: "B1"
+    policy: "FIXED_SINGLE_MODEL"
+  - id: "B2"
+    policy: "FIXED_SINGLE_MODEL"
+  - id: "B0-U"
+    policy: "FIXED_SINGLE_MODEL"
+  - id: "R0_ORACLE"
+    policy: "NON_DEPLOYABLE_UPPER_BOUND"
+  - id: "R1_FIXED_BEST"
+    policy: "FIXED_BEST_BASELINE"
+  - id: "R2_RULE_BASED"
+    policy: "QUALITY_AWARE_DETERMINISTIC"
+  - id: "R3_UNCERTAINTY"
+    policy: "UNCERTAINTY_AWARE"
+  - id: "R4_LEARNED"
+    policy: "LEARNED_LIGHTWEIGHT"
+  - id: "R5_COMPOSITE"
+    policy: "QUALITY_PLUS_UNCERTAINTY"

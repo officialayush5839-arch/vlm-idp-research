@@ -1,0 +1,17 @@
+{
+  "trace_id": "trace_7df03dc4a07d",
+  "run_id": "run_P5_SROIE_R3_UNCERTAINTY_sroie_s01_s789",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "High pipeline uncertainty (c=0.32 < tau_review); routing to native robust VLM B2.",
+  "policy_version": "1.0.0",
+  "router_confidence": 0.31999999999999995,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:14:44.249103+00:00"
+}

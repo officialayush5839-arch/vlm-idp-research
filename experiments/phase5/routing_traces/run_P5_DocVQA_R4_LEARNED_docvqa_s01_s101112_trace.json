@@ -1,0 +1,17 @@
+{
+  "trace_id": "trace_4314d84b8c32",
+  "run_id": "run_P5_DocVQA_R4_LEARNED_docvqa_s01_s101112",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Learned router uninitialized; defaulting to robust fixed baseline B2.",
+  "policy_version": "1.0.0",
+  "router_confidence": 0.5,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:12:55.399274+00:00"
+}

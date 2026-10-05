@@ -1,0 +1,17 @@
+{
+  "trace_id": "trace_e7cd1db351e7",
+  "run_id": "run_P5_DocVQA_R3_UNCERTAINTY_docvqa_s01_s456",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "High pipeline uncertainty (c=0.32 < tau_review); routing to native robust VLM B2.",
+  "policy_version": "1.0.0",
+  "router_confidence": 0.31999999999999995,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:12:54.657830+00:00"
+}

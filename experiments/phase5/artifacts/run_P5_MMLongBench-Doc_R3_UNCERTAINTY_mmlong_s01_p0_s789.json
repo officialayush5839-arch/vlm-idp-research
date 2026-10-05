@@ -1,0 +1,26 @@
+{
+  "run_id": "run_P5_MMLongBench-Doc_R3_UNCERTAINTY_mmlong_s01_p0_s789",
+  "document_id": "mmlong_doc_101",
+  "dataset": "MMLongBench-Doc",
+  "partition": "test",
+  "seed": 789,
+  "policy": "R3_UNCERTAINTY",
+  "selected_model": "B2",
+  "final_answer": "You are performing document understandin...",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.0,
+  "oracle_best_model": "B2",
+  "cost": {
+    "latency_ms": 10.732900002039969,
+    "compute_cost": 1.0,
+    "model_invocations": 1,
+    "fallback_invocations": 0
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T05:15:41.592961+00:00"
+}

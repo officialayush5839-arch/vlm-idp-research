@@ -1,0 +1,17 @@
+{
+  "trace_id": "trace_af73e96cc455",
+  "run_id": "run_P5_DocVQA_R1_FIXED_BEST_docvqa_s01_s789",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Fixed single-best baseline policy always routing to B2.",
+  "policy_version": "1.0.0",
+  "router_confidence": 1.0,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:12:54.875977+00:00"
+}
