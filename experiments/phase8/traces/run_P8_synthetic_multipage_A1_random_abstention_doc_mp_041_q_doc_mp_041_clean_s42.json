@@ -1,0 +1,63 @@
+{
+  "all_coverage_decisions": {
+    "0.5": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.480523,
+      "threshold": 0.5
+    },
+    "0.6": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.275844,
+      "threshold": 0.4
+    },
+    "0.7": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.699428,
+      "threshold": 0.3
+    },
+    "0.8": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.269646,
+      "threshold": 0.2
+    },
+    "0.9": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.121374,
+      "threshold": 0.1
+    },
+    "0.95": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.410621,
+      "threshold": 0.05
+    },
+    "1.0": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.237489,
+      "threshold": 0.0
+    }
+  },
+  "baseline_id": "A1_random_abstention",
+  "calibrated_confidence": 0.94,
+  "condition": "clean",
+  "decision": {
+    "abstention_reason": "RANDOM_ABSTENTION",
+    "calibrated_confidence": 0.94,
+    "decision": "ABSTAIN",
+    "margin": -0.129099,
+    "target_coverage": 0.8,
+    "threshold": 0.2
+  },
+  "document_id": "doc_mp_041",
+  "is_correct": 1,
+  "query_id": "q_doc_mp_041",
+  "raw_confidence": 0.94,
+  "seed": 42,
+  "trace_id": "run_P8_synthetic_multipage_A1_random_abstention_doc_mp_041_q_doc_mp_041_clean_s42"
+}

@@ -1,0 +1,10 @@
+category,experiment,ece,brier_score,aurc,excess_aurc,auroc
+signals,A1_model_only,0.152004,0.145312,0.15779,0.126362,0.7807
+signals,A2_no_grounding,0.225408,0.19697,0.15779,0.126362,0.7807
+signals,A3_no_retrieval,0.219092,0.135149,0.147645,0.116217,0.8596
+signals,A4_no_quality,0.286744,0.15575,0.147645,0.116217,0.8596
+signals,Proposed_full_multisignal,0.288132,0.160642,0.147645,0.116217,0.8596
+calibrators,Uncalibrated_Raw,0.152004,0.145312,0.15779,0.126362,0.7807
+calibrators,Temperature_Scaling,0.11922,0.137547,0.15779,0.126362,0.7807
+calibrators,Isotonic_Regression,0.159968,0.15,0.15779,0.126362,0.7281
+calibrators,Evidence_Aware_Isotonic,0.135948,0.101584,0.092346,0.060918,0.8158

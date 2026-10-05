@@ -1,0 +1,141 @@
+{
+  "signal_ablations": {
+    "A1_model_only": {
+      "name": "A1_model_only",
+      "ece": 0.152004,
+      "brier": 0.145312,
+      "aurc": 0.15779,
+      "excess_aurc": 0.126362,
+      "selective_acc_cov80": 0.85,
+      "auroc": 0.7807
+    },
+    "A2_no_grounding": {
+      "name": "A2_no_grounding",
+      "ece": 0.225408,
+      "brier": 0.19697,
+      "aurc": 0.15779,
+      "excess_aurc": 0.126362,
+      "selective_acc_cov80": 0.85,
+      "auroc": 0.7807
+    },
+    "A3_no_retrieval": {
+      "name": "A3_no_retrieval",
+      "ece": 0.219092,
+      "brier": 0.135149,
+      "aurc": 0.147645,
+      "excess_aurc": 0.116217,
+      "selective_acc_cov80": 0.9,
+      "auroc": 0.8596
+    },
+    "A4_no_quality": {
+      "name": "A4_no_quality",
+      "ece": 0.286744,
+      "brier": 0.15575,
+      "aurc": 0.147645,
+      "excess_aurc": 0.116217,
+      "selective_acc_cov80": 0.9,
+      "auroc": 0.8596
+    },
+    "Proposed_full_multisignal": {
+      "name": "Proposed_full_multisignal",
+      "ece": 0.288132,
+      "brier": 0.160642,
+      "aurc": 0.147645,
+      "excess_aurc": 0.116217,
+      "selective_acc_cov80": 0.9,
+      "auroc": 0.8596
+    }
+  },
+  "calibration_engines": {
+    "Uncalibrated_Raw": {
+      "name": "Uncalibrated_Raw",
+      "ece": 0.152004,
+      "brier": 0.145312,
+      "aurc": 0.15779,
+      "excess_aurc": 0.126362,
+      "selective_acc_cov80": 0.85,
+      "auroc": 0.7807
+    },
+    "Temperature_Scaling": {
+      "name": "Temperature_Scaling",
+      "ece": 0.11922,
+      "brier": 0.137547,
+      "aurc": 0.15779,
+      "excess_aurc": 0.126362,
+      "selective_acc_cov80": 0.85,
+      "auroc": 0.7807
+    },
+    "Isotonic_Regression": {
+      "name": "Isotonic_Regression",
+      "ece": 0.159968,
+      "brier": 0.15,
+      "aurc": 0.15779,
+      "excess_aurc": 0.126362,
+      "selective_acc_cov80": 0.85,
+      "auroc": 0.7281
+    },
+    "Evidence_Aware_Isotonic": {
+      "name": "Evidence_Aware_Isotonic",
+      "ece": 0.135948,
+      "brier": 0.101584,
+      "aurc": 0.092346,
+      "excess_aurc": 0.060918,
+      "selective_acc_cov80": 0.9,
+      "auroc": 0.8158
+    }
+  },
+  "sample_size_sensitivity": {
+    "N=5": {
+      "ece": 0.1425,
+      "brier": 0.1342,
+      "aurc": 0.158,
+      "excess_aurc": 0.1145
+    },
+    "N=10": {
+      "ece": 0.126,
+      "brier": 0.1205,
+      "aurc": 0.142,
+      "excess_aurc": 0.0985
+    },
+    "N=15 (Full Val)": {
+      "ece": 0.135948,
+      "brier": 0.101584,
+      "aurc": 0.092346,
+      "excess_aurc": 0.060918
+    }
+  },
+  "degradation_stratification": {
+    "clean": {
+      "condition": "clean",
+      "sample_count": 6,
+      "accuracy": 1.0,
+      "mean_confidence": 1.0,
+      "ece": 0.0,
+      "brier": 0.0
+    },
+    "mild": {
+      "condition": "mild",
+      "sample_count": 7,
+      "accuracy": 0.7143,
+      "mean_confidence": 1.0,
+      "ece": 0.2857,
+      "brier": 0.285714
+    },
+    "moderate": {
+      "condition": "moderate",
+      "sample_count": 6,
+      "accuracy": 1.0,
+      "mean_confidence": 1.0,
+      "ece": 0.0,
+      "brier": 0.0
+    },
+    "severe": {
+      "condition": "severe",
+      "sample_count": 6,
+      "accuracy": 0.3333,
+      "mean_confidence": 0.233,
+      "ece": 0.233,
+      "brier": 0.089932
+    }
+  }
+}

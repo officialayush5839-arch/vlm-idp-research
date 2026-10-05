@@ -1,0 +1,63 @@
+{
+  "all_coverage_decisions": {
+    "0.5": {
+      "abstention_reason": "INSUFFICIENT_EVIDENCE",
+      "decision": "ABSTAIN",
+      "margin": -0.683741,
+      "threshold": 0.8267
+    },
+    "0.6": {
+      "abstention_reason": "INSUFFICIENT_EVIDENCE",
+      "decision": "ABSTAIN",
+      "margin": -0.683741,
+      "threshold": 0.8267
+    },
+    "0.7": {
+      "abstention_reason": "INSUFFICIENT_EVIDENCE",
+      "decision": "ABSTAIN",
+      "margin": -0.683741,
+      "threshold": 0.8267
+    },
+    "0.8": {
+      "abstention_reason": "INSUFFICIENT_EVIDENCE",
+      "decision": "ABSTAIN",
+      "margin": -0.175641,
+      "threshold": 0.3186
+    },
+    "0.9": {
+      "abstention_reason": "INSUFFICIENT_EVIDENCE",
+      "decision": "ABSTAIN",
+      "margin": -0.175641,
+      "threshold": 0.3186
+    },
+    "0.95": {
+      "abstention_reason": "INSUFFICIENT_EVIDENCE",
+      "decision": "ABSTAIN",
+      "margin": -0.175641,
+      "threshold": 0.3186
+    },
+    "1.0": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.142959,
+      "threshold": 0.0
+    }
+  },
+  "baseline_id": "A3_temperature_scaling",
+  "calibrated_confidence": 0.31858,
+  "condition": "severe",
+  "decision": {
+    "abstention_reason": "INSUFFICIENT_EVIDENCE",
+    "calibrated_confidence": 0.142959,
+    "decision": "ABSTAIN",
+    "margin": -0.175641,
+    "target_coverage": 0.8,
+    "threshold": 0.3186
+  },
+  "document_id": "doc_mp_040",
+  "is_correct": 0,
+  "query_id": "q_doc_mp_040",
+  "raw_confidence": 0.42,
+  "seed": 101112,
+  "trace_id": "run_P8_synthetic_multipage_A3_temperature_scaling_doc_mp_040_q_doc_mp_040_severe_s101112"
+}

@@ -1,0 +1,22 @@
+{
+  "method": "isotonic_regression",
+  "training_partition": "val",
+  "temperature": null,
+  "isotonic_x": [
+    0.226063,
+    0.236863,
+    0.508983,
+    0.562983,
+    0.792095
+  ],
+  "isotonic_y": [
+    0.0,
+    0.5,
+    0.5,
+    1.0,
+    1.0
+  ],
+  "config_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "artifact_hash": "9d4c992979bd31f9d3ffcc5822b1b1f4263aa95cac8b069e5e875a725734489b",
+  "created_at_utc": "2026-10-05T16:14:39.925409+00:00"
+}

@@ -1,0 +1,7 @@
+baseline_id,baseline_name,total_runs,expected_calibration_error,maximum_calibration_error,brier_score,negative_log_likelihood,overall_accuracy_full_coverage,selective_accuracy_cov80,selective_risk_cov80,empirical_coverage_cov80,aurc,excess_aurc,auroc_correctness
+A0_no_abstention,A0: No Abstention (Full Coverage),125,0.111996,0.1733,0.158112,0.479139,0.72,0.82,0.18,0.8,0.173578,0.130101,0.7817
+A1_random_abstention,A1: Random Abstention,125,0.111996,0.1733,0.158112,0.479139,0.72,0.82,0.18,0.8,0.173578,0.130101,0.7817
+A2_uncalibrated_heuristic,A2: Uncalibrated Heuristic,125,0.111996,0.1733,0.158112,0.479139,0.72,0.82,0.18,0.8,0.173578,0.130101,0.7817
+A3_temperature_scaling,A3: Temperature Scaling,125,0.079212,0.1425,0.163683,0.57948,0.72,0.82,0.18,0.8,0.173578,0.130101,0.7817
+A4_isotonic_regression,A4: Isotonic Regression,125,0.11996,0.1538,0.17,2.480404,0.72,0.82,0.18,0.8,0.173578,0.130101,0.7341
+A5_evidence_aware,A5: Evidence-Aware Calibrated (Proposed),125,0.115916,0.1667,0.111584,2.310428,0.72,0.87,0.13,0.8,0.131583,0.088106,0.8333

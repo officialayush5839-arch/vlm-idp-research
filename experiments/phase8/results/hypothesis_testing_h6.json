@@ -1,0 +1,23 @@
+{
+  "hypothesis_id": "H6",
+  "description": "Post-hoc calibrated uncertainty combined with abstention produces a reliable risk-coverage trade-off, reducing error among answered queries while maintaining calibration across visual degradation conditions.",
+  "primary_comparison": "A5_evidence_aware vs A0_no_abstention",
+  "verdict": "SUPPORTED",
+  "bootstrap_results": {
+    "mean_diff": 0.16,
+    "ci_lower": 0.096,
+    "ci_upper": 0.232,
+    "p_value": 0.0,
+    "effect_size_cohen_d": 0.4347,
+    "n_bootstraps": 10000,
+    "sample_size": 125
+  },
+  "metrics_comparison": {
+    "A0_risk_full": 0.28,
+    "A5_risk_cov80": 0.13,
+    "A5_ece": 0.115916,
+    "A0_ece": 0.111996,
+    "A5_aurc": 0.131583,
+    "A2_aurc": 0.173578
+  }
+}

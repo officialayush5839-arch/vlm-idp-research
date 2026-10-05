@@ -1,0 +1,45 @@
+{
+  "phase": "phase8",
+  "training_partition": "val",
+  "validation_sample_count": 15,
+  "target_coverages": [
+    1.0,
+    0.95,
+    0.9,
+    0.8,
+    0.7,
+    0.6,
+    0.5
+  ],
+  "models": {
+    "temperature_scaling_calibrator.json": {
+      "method": "temperature_scaling",
+      "sha256": "54ad8d01c1cbc1dd2ff515f83d0134fb890f1d17e0f5790a964a37351441a22f",
+      "artifact_hash": "da4f1b410751488c50e4910f57cea1268c0d8a63fe72b00cdbdfd4eeb75dd2b3",
+      "temperature": 0.4245324058663976
+    },
+    "isotonic_calibrator.json": {
+      "method": "isotonic_regression",
+      "sha256": "82e56eb515b3a4d68ab2e1838ba3fdec480c7c437136022f132daaba8e491e64",
+      "artifact_hash": "bae554de2d9376ea6a022ca146962c7bb39508d243235cdf1fbe2013f9f64e7a",
+      "n_thresholds": 4
+    },
+    "evidence_aware_calibrator.json": {
+      "method": "isotonic_regression",
+      "sha256": "dfefca7fe32e352d449c699ec14e846d070fc17ae165b2690b8ec5f2e15887c2",
+      "artifact_hash": "9d4c992979bd31f9d3ffcc5822b1b1f4263aa95cac8b069e5e875a725734489b",
+      "n_thresholds": 5
+    },
+    "abstention_thresholds.json": {
+      "sha256": "2c2c0d470c96b6108c15c43191e3a5aad17a071067f40c23c5bcabe6bb0753aa",
+      "baselines_covered": [
+        "A0_no_abstention",
+        "A1_random_abstention",
+        "A2_uncalibrated_heuristic",
+        "A3_temperature_scaling",
+        "A4_isotonic_regression",
+        "A5_evidence_aware"
+      ]
+    }
+  }
+}

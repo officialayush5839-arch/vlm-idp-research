@@ -1,0 +1,25 @@
+# Phase 8 Calibration Configuration
+# Post-hoc calibration methods and optimization hyperparameters.
+
+version: "1.0.0"
+phase: "PHASE_8"
+
+methods:
+  uncalibrated:
+    enabled: true
+  temperature_scaling:
+    enabled: true
+    initial_temperature: 1.5
+    max_iter: 200
+    lr: 0.01
+    tolerance: 1e-6
+    temperature_bounds: [0.01, 10.0]
+  isotonic_regression:
+    enabled: true
+    out_of_bounds: "clip"
+    y_min: 0.0
+    y_max: 1.0
+
+calibration_partition: "val"
+evaluation_bins: 10
+bin_strategy: "uniform" # uniform or quantile

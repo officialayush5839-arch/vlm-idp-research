@@ -1,0 +1,51 @@
+# Phase 8 Experiment Matrix Configuration
+
+version: "1.0.0"
+phase: "PHASE_8"
+
+baselines:
+  A0:
+    name: "No Abstention"
+    calibrator: "uncalibrated"
+    abstention_enabled: false
+  A1:
+    name: "Random Abstention"
+    calibrator: "uncalibrated"
+    abstention_enabled: true
+    random_abstention: true
+  A2:
+    name: "Uncalibrated Confidence Threshold"
+    calibrator: "uncalibrated"
+    abstention_enabled: true
+  A3:
+    name: "Temperature-Scaled Confidence"
+    calibrator: "temperature_scaling"
+    abstention_enabled: true
+  A4:
+    name: "Isotonic-Calibrated Confidence"
+    calibrator: "isotonic_regression"
+    abstention_enabled: true
+  A5:
+    name: "Evidence-Aware Calibrated Abstention (Proposed)"
+    calibrator: "isotonic_regression"
+    abstention_enabled: true
+    uses_grounding: true
+    uses_retrieval: true
+    uses_quality: true
+
+seeds:
+  - 42
+  - 123
+  - 456
+  - 789
+  - 101112
+
+partitions:
+  calibration: "val"
+  evaluation: "test"
+
+degradation_tiers:
+  - "clean"
+  - "mild"
+  - "moderate"
+  - "severe"

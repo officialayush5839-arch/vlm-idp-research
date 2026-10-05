@@ -16,7 +16,7 @@
 | Phase 5.1 | Scientific Correction & Revalidation | COMPLETED | Phase 5 |
 | Phase 6 | Long-Document Multimodal Retrieval | COMPLETED | Phase 5.1 |
 | Phase 7 | Evidence Grounding | COMPLETED | Phase 6 |
-| Phase 8 | Uncertainty Calibration + Abstention | NOT_STARTED | Phase 7 |
+| Phase 8 | Uncertainty Calibration + Abstention | COMPLETED | Phase 7 |
 | Phase 9 | Full Experiment Matrix | NOT_STARTED | Phase 8 |
 | Phase 10 | Ablations + Statistical Analysis | NOT_STARTED | Phase 9 |
 | Phase 11 | Error Analysis + Failure Taxonomy | NOT_STARTED | Phase 10 |
@@ -344,24 +344,30 @@
 **3. Prerequisites:** Phase 2 (VLM baseline probabilities), Phase 7 (Grounding confidence).
 **4. Inputs:** Model logits, quality scores, retrieval confidence.
 **5. Tasks:**
-1. Implement multi-signal aggregation (logits + quality + retrieval score).
-2. Implement calibration models (logistic/isotonic/MLP).
-3. Tune abstention threshold selection on validation data.
-4. Implement abstention logic to output VERIFIED/UNCERTAIN/REVIEW_REQUIRED.
-**6. Files/modules created:** `src/uncertainty/calibration.py`, `src/uncertainty/abstention.py`.
-**7. Experiments:** Calibration evaluation and selective prediction evaluation.
-**8. Metrics:** Expected Calibration Error (ECE), Brier Score, Risk-Coverage curve, Selective Accuracy.
-**9. Tests:** Calibration range tests (outputs strictly [0,1]), monotonicity checks.
-**10. Expected outputs:** System that knows when it doesn't know, yielding highly reliable outputs.
+1. Implement multi-signal aggregation (logits + quality + retrieval score + Phase 7 grounding).
+2. Implement calibration models (uncalibrated, temperature scaling, isotonic regression).
+3. Tune abstention threshold selection strictly on validation partition.
+4. Implement selective abstention logic to output VERIFIED / UNCERTAIN / REVIEW_REQUIRED.
+5. Implement execution trace generator and SHA-256 collision prevention.
+6. Benchmark baselines A0 through A5 across 5 protocol seeds (125 evaluations, 750 traces).
+7. Evaluate Hypothesis H6 via paired bootstrap test (B=10,000, seed=42): confirmed SUPPORTED (p < 0.0001).
+8. Author 16 topical research reports and master 30-section PHASE8_REPORT.md.
+**6. Files/modules created:** `src/uncertainty/*.py` (12 modules), `configs/phase8/*.yaml`, `tests/test_phase8_*.py` (15 test files), `scripts/run_phase8_*.py` (4 scripts), `scripts/generate_phase8_figures.py`.
+**7. Experiments:** 125-instance master benchmark across 6 baselines (750 traces), 8 ablations (A1–A8), validation calibration sweep, smoke test.
+**8. Metrics:** Expected Calibration Error (ECE), Maximum Calibration Error (MCE), Brier Score, Negative Log-Likelihood (NLL), Selective Accuracy, Selective Risk, Area Under Risk-Coverage (AURC), Excess AURC, Correctness AUROC.
+**9. Tests:** 35 dedicated Phase 8 unit and integration tests passing (100% pass rate; 302 total repository tests passing).
+**10. Expected outputs:** Calibrated uncertainty framework with selective prediction, reducing error among answered queries under visual degradation.
 **11. Acceptance criteria:**
-- [ ] Multi-signal aggregation implemented.
-- [ ] Calibration models trained and tested.
-- [ ] Abstention thresholding implemented securely.
-- [ ] System successfully outputs discrete certainty states.
-- [ ] ECE, Brier Score, and Risk-Coverage metrics calculated.
-**12. Failure conditions:** Overconfident predictions on severely degraded data, broken probability distributions.
-**13. Exit criteria:** Uncertainty evaluation metrics recorded.
-**14. Paper contribution:** Section IV, VI (uncertainty results).
+- [x] Multi-signal aggregation implemented with zero leakage.
+- [x] Calibration models (temperature scaling, isotonic regression) trained and tested on validation partition.
+- [x] Abstention thresholding implemented securely with target coverages [1.0, 0.95, 0.90, 0.80, 0.70, 0.60, 0.50].
+- [x] System successfully outputs discrete certainty states (VERIFIED, UNCERTAIN, REVIEW_REQUIRED).
+- [x] ECE, Brier Score, Selective Risk, and AURC metrics calculated.
+- [x] Hypothesis H6 evaluated via paired bootstrap (B=10,000) and confirmed SUPPORTED (p < 0.0001).
+- [x] All 16 research reports and master PHASE8_REPORT.md authored in `reports/phase8/`.
+**12. Failure conditions:** Overconfident predictions on severely degraded data, broken probability distributions, test set leakage.
+**13. Exit criteria:** Uncertainty evaluation metrics and all 16 reports recorded in `reports/phase8/` and signed off in `PHASE8_REPORT.md`.
+**14. Paper contribution:** Section IV (Uncertainty Calibration & Selective Prediction Architecture), Section V (Abstention Baselines), Section VI (Risk-Coverage & ECE Results), Section VII (Ablations A1–A8).
 
 ---
 

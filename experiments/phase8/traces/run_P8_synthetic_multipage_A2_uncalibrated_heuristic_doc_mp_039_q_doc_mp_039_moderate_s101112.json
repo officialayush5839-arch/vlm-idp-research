@@ -1,0 +1,63 @@
+{
+  "all_coverage_decisions": {
+    "0.5": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.0,
+      "threshold": 0.66
+    },
+    "0.6": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.0,
+      "threshold": 0.66
+    },
+    "0.7": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.0,
+      "threshold": 0.66
+    },
+    "0.8": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.24,
+      "threshold": 0.42
+    },
+    "0.9": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.24,
+      "threshold": 0.42
+    },
+    "0.95": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.24,
+      "threshold": 0.42
+    },
+    "1.0": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.66,
+      "threshold": 0.0
+    }
+  },
+  "baseline_id": "A2_uncalibrated_heuristic",
+  "calibrated_confidence": 0.66,
+  "condition": "moderate",
+  "decision": {
+    "abstention_reason": "",
+    "calibrated_confidence": 0.66,
+    "decision": "ANSWER",
+    "margin": 0.24,
+    "target_coverage": 0.8,
+    "threshold": 0.42
+  },
+  "document_id": "doc_mp_039",
+  "is_correct": 1,
+  "query_id": "q_doc_mp_039",
+  "raw_confidence": 0.66,
+  "seed": 101112,
+  "trace_id": "run_P8_synthetic_multipage_A2_uncalibrated_heuristic_doc_mp_039_q_doc_mp_039_moderate_s101112"
+}

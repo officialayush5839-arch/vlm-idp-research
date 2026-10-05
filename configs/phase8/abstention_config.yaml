@@ -1,0 +1,23 @@
+# Phase 8 Abstention and Selective Prediction Configuration
+# Defines coverage targets and threshold optimization protocols.
+
+version: "1.0.0"
+phase: "PHASE_8"
+
+target_coverages:
+  - 1.00 # 100% full coverage (no abstention)
+  - 0.95
+  - 0.90
+  - 0.80
+  - 0.70
+  - 0.60
+  - 0.50
+
+decision_states:
+  answer: "ANSWER"
+  abstain: "ABSTAIN"
+
+selection_criterion: "calibrated_confidence" # calibrated_confidence, entropy, raw_confidence
+threshold_partition: "val"
+cost_of_error: 1.0
+cost_of_abstention: 0.20

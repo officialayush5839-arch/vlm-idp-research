@@ -1,0 +1,10 @@
+{
+  "method": "temperature_scaling",
+  "training_partition": "val",
+  "temperature": 0.4245324058663976,
+  "isotonic_x": null,
+  "isotonic_y": null,
+  "config_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "artifact_hash": "da4f1b410751488c50e4910f57cea1268c0d8a63fe72b00cdbdfd4eeb75dd2b3",
+  "created_at_utc": "2026-10-05T16:14:39.905122+00:00"
+}

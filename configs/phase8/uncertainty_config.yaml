@@ -1,0 +1,41 @@
+# Phase 8 Uncertainty Signal Configuration
+# Defines weights, signal bounds, and aggregation parameters for multi-signal uncertainty estimation.
+
+version: "1.0.0"
+phase: "PHASE_8"
+
+signal_classes:
+  model_confidence:
+    enabled: true
+    default_weight: 0.25
+    min_val: 0.0
+    max_val: 1.0
+  retrieval_uncertainty:
+    enabled: true
+    default_weight: 0.20
+    margin_weight: 0.60
+    entropy_weight: 0.40
+  grounding_uncertainty:
+    enabled: true
+    default_weight: 0.30
+    semantic_weight: 0.40
+    coverage_weight: 0.30
+    spatial_weight: 0.30
+  document_quality:
+    enabled: true
+    default_weight: 0.25
+    features:
+      - blur
+      - noise
+      - skew
+      - glare
+      - contrast
+      - resolution
+      - compression
+      - illumination
+      - occlusion
+      - perspective
+
+aggregation:
+  method: "linear_fusion" # options: linear_fusion, harmonic_mean, min_signal
+  clip_range: [0.0, 1.0]

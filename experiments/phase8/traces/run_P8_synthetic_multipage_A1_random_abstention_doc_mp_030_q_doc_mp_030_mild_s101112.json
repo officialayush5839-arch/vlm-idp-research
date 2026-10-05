@@ -1,0 +1,63 @@
+{
+  "all_coverage_decisions": {
+    "0.5": {
+      "abstention_reason": "RANDOM_ABSTENTION",
+      "decision": "ABSTAIN",
+      "margin": -0.484791,
+      "threshold": 0.5
+    },
+    "0.6": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.466117,
+      "threshold": 0.4
+    },
+    "0.7": {
+      "abstention_reason": "RANDOM_ABSTENTION",
+      "decision": "ABSTAIN",
+      "margin": -0.120503,
+      "threshold": 0.3
+    },
+    "0.8": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.441765,
+      "threshold": 0.2
+    },
+    "0.9": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.157593,
+      "threshold": 0.1
+    },
+    "0.95": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.628495,
+      "threshold": 0.05
+    },
+    "1.0": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.000549,
+      "threshold": 0.0
+    }
+  },
+  "baseline_id": "A1_random_abstention",
+  "calibrated_confidence": 0.84,
+  "condition": "mild",
+  "decision": {
+    "abstention_reason": "",
+    "calibrated_confidence": 0.84,
+    "decision": "ANSWER",
+    "margin": 0.116281,
+    "target_coverage": 0.8,
+    "threshold": 0.2
+  },
+  "document_id": "doc_mp_030",
+  "is_correct": 1,
+  "query_id": "q_doc_mp_030",
+  "raw_confidence": 0.84,
+  "seed": 101112,
+  "trace_id": "run_P8_synthetic_multipage_A1_random_abstention_doc_mp_030_q_doc_mp_030_mild_s101112"
+}

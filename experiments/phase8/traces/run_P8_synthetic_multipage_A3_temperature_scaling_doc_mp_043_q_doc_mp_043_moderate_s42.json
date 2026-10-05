@@ -1,0 +1,63 @@
+{
+  "all_coverage_decisions": {
+    "0.5": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.148705,
+      "threshold": 0.8267
+    },
+    "0.6": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.148705,
+      "threshold": 0.8267
+    },
+    "0.7": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.148705,
+      "threshold": 0.8267
+    },
+    "0.8": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.656805,
+      "threshold": 0.3186
+    },
+    "0.9": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.656805,
+      "threshold": 0.3186
+    },
+    "0.95": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.656805,
+      "threshold": 0.3186
+    },
+    "1.0": {
+      "abstention_reason": "",
+      "decision": "ANSWER",
+      "margin": 0.975405,
+      "threshold": 0.0
+    }
+  },
+  "baseline_id": "A3_temperature_scaling",
+  "calibrated_confidence": 0.826699,
+  "condition": "moderate",
+  "decision": {
+    "abstention_reason": "",
+    "calibrated_confidence": 0.975405,
+    "decision": "ANSWER",
+    "margin": 0.656805,
+    "target_coverage": 0.8,
+    "threshold": 0.3186
+  },
+  "document_id": "doc_mp_043",
+  "is_correct": 0,
+  "query_id": "q_doc_mp_043",
+  "raw_confidence": 0.66,
+  "seed": 42,
+  "trace_id": "run_P8_synthetic_multipage_A3_temperature_scaling_doc_mp_043_q_doc_mp_043_moderate_s42"
+}
