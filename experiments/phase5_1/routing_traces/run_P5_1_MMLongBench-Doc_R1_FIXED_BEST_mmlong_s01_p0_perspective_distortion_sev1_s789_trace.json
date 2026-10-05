@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_e548bc23b51e",
+  "run_id": "run_P5_1_MMLongBench-Doc_R1_FIXED_BEST_mmlong_s01_p0_perspective_distortion_sev1_s789",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Fixed single-best baseline policy always routing to B2.",
+  "policy_version": "1.1.0",
+  "router_confidence": 1.0,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:03:06.574875+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "perspective_distortion",
+  "severity": 1,
+  "seed": 789,
+  "policy": "R1_FIXED_BEST",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.48961999999999994,
+    "u_ocr": 0.354873062,
+    "u_ret": 1.0,
+    "u_gnd": 0.7017,
+    "u_qual": 0.56338,
+    "u_agr": 0.354873062
+  },
+  "fallback_status": null,
+  "latency_ms": 0.09270000737160444,
+  "compute_cost": null,
+  "artifact_hash": "b0f0d2d5d784eb90ca22f6341735f5568f2b6d40200fdf32cb20d743069de980"
+}

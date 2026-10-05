@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_20fadfa08ca3",
+  "run_id": "run_P5_1_FUNSD_R4_LEARNED_funsd_s01_resolution_reduction_sev3_s456",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0-U",
+  "decision_reason": "Learned classifier (logistic) predicted B0-U with probability 0.42.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.42145797251799155,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:58:50.088767+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "resolution_reduction",
+  "severity": 3,
+  "seed": 456,
+  "policy": "R4_LEARNED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.96788,
+    "u_ocr": 0.81787,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.81787,
+    "u_agr": 0.81787
+  },
+  "fallback_status": null,
+  "latency_ms": 0.880400009918958,
+  "compute_cost": null,
+  "artifact_hash": "1a047be9cb6e00611239d2e9ffa007cc8de563b540f719ec045437d19d7c6d7c"
+}

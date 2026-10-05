@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_790c92f9dddd",
+  "run_id": "run_P5_1_FUNSD_R1_FIXED_BEST_funsd_s01_mixed_degradation_sev2_s456",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Fixed single-best baseline policy always routing to B2.",
+  "policy_version": "1.1.0",
+  "router_confidence": 1.0,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:59:12.531144+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "mixed_degradation",
+  "severity": 2,
+  "seed": 456,
+  "policy": "R1_FIXED_BEST",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.99556,
+    "u_ocr": 0.284189378,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.7046600000000001,
+    "u_agr": 0.284189378
+  },
+  "fallback_status": null,
+  "latency_ms": 0.09089999366551638,
+  "compute_cost": null,
+  "artifact_hash": "b1da5d60db2f15d9a72e11b27b5e3a0949fcd54614562999e2ee3badcdc168e3"
+}

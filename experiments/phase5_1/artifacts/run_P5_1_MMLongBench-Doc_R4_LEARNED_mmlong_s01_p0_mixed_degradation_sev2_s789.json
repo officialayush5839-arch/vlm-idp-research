@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_MMLongBench-Doc_R4_LEARNED_mmlong_s01_p0_mixed_degradation_sev2_s789",
+  "document_id": "mmlong_doc_101",
+  "dataset": "MMLongBench-Doc",
+  "partition": "test",
+  "seed": 789,
+  "policy": "R4_LEARNED",
+  "selected_model": "B2",
+  "final_answer": "You are performing document understandin...",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.0,
+  "oracle_best_model": "B2",
+  "cost": {
+    "latency_ms": 12.273500033188611,
+    "compute_cost": 1.0,
+    "model_invocations": 1,
+    "fallback_invocations": 0
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T06:03:24.435066+00:00",
+  "phase": "phase5_1",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "mixed_degradation",
+  "severity": 2
+}

@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_975c50c4d9e8",
+  "run_id": "run_P5_1_DocVQA_R1_FIXED_BEST_docvqa_s01_gaussian_blur_sev0_s101112",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Fixed single-best baseline policy always routing to B2.",
+  "policy_version": "1.1.0",
+  "router_confidence": 1.0,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:55:08.677946+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "gaussian_blur",
+  "severity": 0,
+  "seed": 101112,
+  "policy": "R1_FIXED_BEST",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.63656,
+    "u_ocr": 0.63001,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.63001,
+    "u_agr": 0.63001
+  },
+  "fallback_status": null,
+  "latency_ms": 0.05530001362785697,
+  "compute_cost": null,
+  "artifact_hash": "a9568367a91294d6c6f4bd55d504fbc368cd079aa465a420fbfb595b940a7e01"
+}

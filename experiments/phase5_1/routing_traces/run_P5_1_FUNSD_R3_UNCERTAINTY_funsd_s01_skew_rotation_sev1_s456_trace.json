@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_d2ab39b65df6",
+  "run_id": "run_P5_1_FUNSD_R3_UNCERTAINTY_funsd_s01_skew_rotation_sev1_s456",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B1",
+  "decision_reason": "Moderate pipeline confidence (c=0.72); routing to hybrid OCR+VLM B1.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7223381872,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:57:59.972527+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "skew_rotation",
+  "severity": 1,
+  "seed": 456,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.6748000000000001,
+    "u_ocr": 0.5267556240000001,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.63741,
+    "u_agr": 0.5267556240000001
+  },
+  "fallback_status": null,
+  "latency_ms": 0.056800025049597025,
+  "compute_cost": null,
+  "artifact_hash": "c9f01ab28214ec732afbbbaad2a5645241ebfae551c355f61f4bc3e44e0a399d"
+}

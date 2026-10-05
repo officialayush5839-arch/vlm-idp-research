@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_52ede527a774",
+  "run_id": "run_P5_1_SROIE_R2_RULE_BASED_sroie_s01_gaussian_noise_sev4_s789",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Geometric distortion detected (skew=1.00, perspective=1.00); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.9,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:59:50.914677+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "gaussian_noise",
+  "severity": 4,
+  "seed": 789,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.93976,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.42508999999999997,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 0.047600013203918934,
+  "compute_cost": null,
+  "artifact_hash": "32c13ee280524a8910bb7ab1994881c3999ff1fc7441225b30d505f54bd398ba"
+}

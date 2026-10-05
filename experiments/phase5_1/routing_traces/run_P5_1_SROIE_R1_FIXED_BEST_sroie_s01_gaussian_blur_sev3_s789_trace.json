@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_f5f7db3611fd",
+  "run_id": "run_P5_1_SROIE_R1_FIXED_BEST_sroie_s01_gaussian_blur_sev3_s789",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Fixed single-best baseline policy always routing to B2.",
+  "policy_version": "1.1.0",
+  "router_confidence": 1.0,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:59:30.260237+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "gaussian_blur",
+  "severity": 3,
+  "seed": 789,
+  "policy": "R1_FIXED_BEST",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 1.0,
+    "u_ocr": 0.7699199999999999,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.7699199999999999,
+    "u_agr": 0.7699199999999999
+  },
+  "fallback_status": null,
+  "latency_ms": 0.04469999112188816,
+  "compute_cost": null,
+  "artifact_hash": "95c4f446b2ee9bf0863f9471bd817d6b7baa2a5ea1979043e1a8bb64a66dea9e"
+}

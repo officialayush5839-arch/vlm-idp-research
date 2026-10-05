@@ -18,12 +18,21 @@ class UncertaintyAdapter:
     Assembles normalized multi-signal uncertainty vectors from pipeline context.
     """
 
-    def __init__(self, config: Dict[str, Any]):
-        self.config = config
-        self.signals = config.get("signals", {})
+    def __init__(self, config: Optional[Dict[str, Any]] = None):
+        self.config = config or {}
+        self.signals = self.config.get("signals", {})
         self.weights = {k: v.get("default_weight", 1.0 / 6.0) for k, v in self.signals.items()}
-        self.tau_accept = config.get("decision_thresholds", {}).get("tau_accept", 0.75)
-        self.tau_review = config.get("decision_thresholds", {}).get("tau_review", 0.40)
+        if not self.weights:
+            self.weights = {
+                "u_vlm": 0.25,
+                "u_ocr": 0.20,
+                "u_ret": 0.15,
+                "u_gnd": 0.15,
+                "u_qual": 0.15,
+                "u_agr": 0.10,
+            }
+        self.tau_accept = self.config.get("decision_thresholds", {}).get("tau_accept", 0.75)
+        self.tau_review = self.config.get("decision_thresholds", {}).get("tau_review", 0.40)
 
     @classmethod
     def from_config(cls, config_path: Optional[str] = None) -> UncertaintyAdapter:
@@ -32,6 +41,52 @@ class UncertaintyAdapter:
         with open(config_path, "r", encoding="utf-8") as f:
             cfg = yaml.safe_load(f)
         return cls(cfg)
+
+    def assemble_from_quality_features(
+        self,
+        quality_features: Dict[str, float],
+        overall_quality: float = 1.0,
+    ) -> UncertaintyVector:
+        """
+        Assembles uncertainty vector strictly from inference-time observable visual quality features.
+        Zero benchmark metadata (no condition.severity or condition.family) and zero ground-truth leakage.
+        """
+        def _clamp(val: float) -> float:
+            return float(max(0.0, min(1.0, val)))
+
+        q_score = _clamp(overall_quality)
+        skew = quality_features.get("skew", 0.0)
+        perspective = quality_features.get("perspective", 0.0)
+        occlusion = quality_features.get("occlusion", 0.0)
+        resolution = quality_features.get("resolution", 0.0)
+
+        # OCR vulnerability to geometric distortion and heavy noise
+        geom_penalty = max(skew, perspective)
+        u_ocr = _clamp(q_score * (1.0 - geom_penalty))
+
+        # VLM vulnerability to occlusion and severe resolution collapse
+        u_vlm = _clamp(1.0 - (0.60 * occlusion) - (0.40 * resolution))
+
+        # Single-page/document-level retrieval neutral prior
+        u_ret = 1.0
+
+        # Grounding spatial coverage proxy
+        u_gnd = _clamp(1.0 - occlusion)
+
+        # Visual quality score
+        u_qual = q_score
+
+        # Expected agreement proxy
+        u_agr = _clamp(min(u_vlm, u_ocr))
+
+        return UncertaintyVector(
+            u_vlm=u_vlm,
+            u_ocr=u_ocr,
+            u_ret=u_ret,
+            u_gnd=u_gnd,
+            u_qual=u_qual,
+            u_agr=u_agr,
+        )
 
     def assemble_vector(
         self,

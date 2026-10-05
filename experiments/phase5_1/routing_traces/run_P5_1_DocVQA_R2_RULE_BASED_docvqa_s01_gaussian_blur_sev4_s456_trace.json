@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_e663cbd1b566",
+  "run_id": "run_P5_1_DocVQA_R2_RULE_BASED_docvqa_s01_gaussian_blur_sev4_s456",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0-U",
+  "decision_reason": "Compression or illumination distortion detected (compression=0.00, illum=1.00, glare=0.00); routing to B0-U multimodal OCR.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.85,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:55:16.674320+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "gaussian_blur",
+  "severity": 4,
+  "seed": 456,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 1.0,
+    "u_ocr": 0.88481,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.88481,
+    "u_agr": 0.88481
+  },
+  "fallback_status": null,
+  "latency_ms": 0.05990004865452647,
+  "compute_cost": null,
+  "artifact_hash": "82d946a0fc5aba047c9cd791caae55017e90690c96c95ad41210809f88aaaa99"
+}

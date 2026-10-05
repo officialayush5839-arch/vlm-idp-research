@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_DocVQA_R5_COMPOSITE_docvqa_s01_gaussian_noise_sev1_s101112",
+  "document_id": "docvqa_inv_901",
+  "dataset": "DocVQA",
+  "partition": "test",
+  "seed": 101112,
+  "policy": "R5_COMPOSITE",
+  "selected_model": "B2",
+  "final_answer": "You are performing document understandin...",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.0,
+  "oracle_best_model": "B2",
+  "cost": {
+    "latency_ms": 11.046499945223331,
+    "compute_cost": 1.0,
+    "model_invocations": 1,
+    "fallback_invocations": 0
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T05:55:22.977663+00:00",
+  "phase": "phase5_1",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "gaussian_noise",
+  "severity": 1
+}

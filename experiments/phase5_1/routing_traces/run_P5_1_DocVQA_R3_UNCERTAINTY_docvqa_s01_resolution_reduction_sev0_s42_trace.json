@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_e54813861f08",
+  "run_id": "run_P5_1_DocVQA_R3_UNCERTAINTY_docvqa_s01_resolution_reduction_sev0_s42",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "High pipeline uncertainty (c=0.32 < tau_review); routing to native robust VLM B2.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.321979,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:56:34.599770+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "resolution_reduction",
+  "severity": 0,
+  "seed": 42,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.02667999999999998,
+    "u_ocr": 0.53769,
+    "u_ret": 1.0,
+    "u_gnd": 0.0,
+    "u_qual": 0.53769,
+    "u_agr": 0.02667999999999998
+  },
+  "fallback_status": null,
+  "latency_ms": 0.0591999851167202,
+  "compute_cost": null,
+  "artifact_hash": "55afe5a6e2f8dea1dcd688db99e82b01c637ea5a160383f2b724971f10d1525f"
+}

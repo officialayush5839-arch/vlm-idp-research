@@ -1,0 +1,39 @@
+# Phase 5.1 Evaluation and Statistical Configuration
+version: "1.1.0"
+config_id: "phase5_1_evaluation_config"
+description: "Frozen statistical and comparative evaluation protocol for Phase 5.1"
+
+primary_comparison:
+  baseline: "R1_FIXED_BEST"  # B2
+  target: "R2_RULE_BASED"    # Deployable Adaptive Router
+
+statistical_testing:
+  method: "paired_bootstrap"
+  resamples: 10000
+  alpha: 0.05
+  confidence_interval: 0.95
+  effect_size_metric: "cliffs_delta"
+  parametric_effect_size: "cohens_d"
+
+effect_size_thresholds:
+  negligible: 0.147
+  small: 0.330
+  medium: 0.474
+
+metrics:
+  task_metrics:
+    - "normalized_extraction_score"  # Primary Normalized Task Score S in [0, 1]
+    - "exact_match"
+    - "token_f1"
+    - "anls"
+  routing_metrics:
+    - "routing_accuracy"
+    - "routing_regret"
+    - "model_selection_distribution"
+    - "fallback_rate"
+    - "relative_cost_saving"
+
+zero_leakage_checks:
+  enforce_strict_pre_evaluation_decision: true
+  block_test_label_injection: true
+  block_condition_metadata_in_features: true

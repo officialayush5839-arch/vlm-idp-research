@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_9d1aa88e0d17",
+  "run_id": "run_P5_1_SROIE_R4_LEARNED_sroie_s01_resolution_reduction_sev2_s456",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0-U",
+  "decision_reason": "Learned classifier (logistic) predicted B0-U with probability 0.44.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.43607489290809304,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:00:47.591073+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "resolution_reduction",
+  "severity": 2,
+  "seed": 456,
+  "policy": "R4_LEARNED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.75244,
+    "u_ocr": 0.5421,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.5421,
+    "u_agr": 0.5421
+  },
+  "fallback_status": null,
+  "latency_ms": 1.218399964272976,
+  "compute_cost": null,
+  "artifact_hash": "3306f76c4dc867f527bcc853eca1e53a392723dd579e2cb17ec54f7cd9b7248e"
+}

@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_SROIE_R1_FIXED_BEST_sroie_s01_occlusion_sev0_s101112",
+  "document_id": "sroie_receipt_882",
+  "dataset": "SROIE",
+  "partition": "test",
+  "seed": 101112,
+  "policy": "R1_FIXED_BEST",
+  "selected_model": "B2",
+  "final_answer": "You are performing document understandin...",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.0,
+  "oracle_best_model": "B0",
+  "cost": {
+    "latency_ms": 11.08389999717474,
+    "compute_cost": 1.0,
+    "model_invocations": 1,
+    "fallback_invocations": 0
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T06:00:32.687329+00:00",
+  "phase": "phase5_1",
+  "sample_id": "sroie_s01",
+  "degradation_family": "occlusion",
+  "severity": 0
+}

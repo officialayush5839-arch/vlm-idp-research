@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_29374f062a4d",
+  "run_id": "run_P5_1_FUNSD_R1_FIXED_BEST_funsd_s01_skew_rotation_sev3_s101112",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Fixed single-best baseline policy always routing to B2.",
+  "policy_version": "1.1.0",
+  "router_confidence": 1.0,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:58:05.288885+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "skew_rotation",
+  "severity": 3,
+  "seed": 101112,
+  "policy": "R1_FIXED_BEST",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.67232,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.55672,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 0.04780001472681761,
+  "compute_cost": null,
+  "artifact_hash": "4a78441136de9dc6ced469b1077dbd2dfcf4f72b542915ba2ff29c331e24e88a"
+}

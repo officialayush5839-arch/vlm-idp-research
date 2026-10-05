@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_b350a79fb3ea",
+  "run_id": "run_P5_1_DocVQA_R3_UNCERTAINTY_docvqa_s01_perspective_distortion_sev2_s42",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "High pipeline uncertainty (c=0.24 < tau_review); routing to native robust VLM B2.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.244546,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:56:51.707888+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "perspective_distortion",
+  "severity": 2,
+  "seed": 42,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.09022000000000002,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 0.033499999999999974,
+    "u_qual": 0.44644000000000006,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 0.12089998926967382,
+  "compute_cost": null,
+  "artifact_hash": "f40abdcfb821dc44852dc8653f22fcf36b9d11a54716f854ae902c4ea5a630e8"
+}

@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_MMLongBench-Doc_R3_UNCERTAINTY_mmlong_s01_p0_jpeg_compression_sev2_s789",
+  "document_id": "mmlong_doc_101",
+  "dataset": "MMLongBench-Doc",
+  "partition": "test",
+  "seed": 789,
+  "policy": "R3_UNCERTAINTY",
+  "selected_model": "B0",
+  "final_answer": "You are performing document understandin...",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.19999999999999996,
+  "oracle_best_model": "B0-U",
+  "cost": {
+    "latency_ms": 11.439100024290383,
+    "compute_cost": 1.1,
+    "model_invocations": 2,
+    "fallback_invocations": 1
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T06:02:17.485467+00:00",
+  "phase": "phase5_1",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "jpeg_compression",
+  "severity": 2
+}

@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_SROIE_R5_COMPOSITE_sroie_s01_jpeg_compression_sev3_s789",
+  "document_id": "sroie_receipt_882",
+  "dataset": "SROIE",
+  "partition": "test",
+  "seed": 789,
+  "policy": "R5_COMPOSITE",
+  "selected_model": "B2",
+  "final_answer": "You are performing document understandin...",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.12,
+  "oracle_best_model": "B0-U",
+  "cost": {
+    "latency_ms": 11.07370003592223,
+    "compute_cost": 1.0,
+    "model_invocations": 1,
+    "fallback_invocations": 0
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T06:00:17.311096+00:00",
+  "phase": "phase5_1",
+  "sample_id": "sroie_s01",
+  "degradation_family": "jpeg_compression",
+  "severity": 3
+}

@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_6e27be7913fa",
+  "run_id": "run_P5_1_DocVQA_R2_RULE_BASED_docvqa_s01_resolution_reduction_sev1_s123",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Severe blur or noise detected (blur=1.00, noise=0.01); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.88,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:56:37.590070+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "resolution_reduction",
+  "severity": 1,
+  "seed": 123,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.7212000000000001,
+    "u_ocr": 0.65657,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.65657,
+    "u_agr": 0.65657
+  },
+  "fallback_status": null,
+  "latency_ms": 0.096399977337569,
+  "compute_cost": null,
+  "artifact_hash": "fc242348482eb85a4583599f5f19f2e97e3e1d1818a8f9091cf47f9976dfbcc6"
+}

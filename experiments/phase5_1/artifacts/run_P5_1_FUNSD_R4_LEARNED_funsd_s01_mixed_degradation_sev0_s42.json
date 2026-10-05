@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_FUNSD_R4_LEARNED_funsd_s01_mixed_degradation_sev0_s42",
+  "document_id": "funsd_form_042",
+  "dataset": "FUNSD",
+  "partition": "test",
+  "seed": 42,
+  "policy": "R4_LEARNED",
+  "selected_model": "B2",
+  "final_answer": "You are performing document understandin...",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.0,
+  "oracle_best_model": "B0",
+  "cost": {
+    "latency_ms": 11.21720002265647,
+    "compute_cost": 1.0,
+    "model_invocations": 1,
+    "fallback_invocations": 0
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T05:59:06.370769+00:00",
+  "phase": "phase5_1",
+  "sample_id": "funsd_s01",
+  "degradation_family": "mixed_degradation",
+  "severity": 0
+}

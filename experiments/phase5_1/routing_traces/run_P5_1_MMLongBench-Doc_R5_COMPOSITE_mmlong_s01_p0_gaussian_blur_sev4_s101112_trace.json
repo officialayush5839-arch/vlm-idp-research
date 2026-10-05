@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_4b2ff1797369",
+  "run_id": "run_P5_1_MMLongBench-Doc_R5_COMPOSITE_mmlong_s01_p0_gaussian_blur_sev4_s101112",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0-U",
+  "decision_reason": "Composite policy adopted rule proposal: Compression or illumination distortion detected (compression=0.02, illum=1.00, glare=0.00); routing to B0-U multimodal OCR.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.89818,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:01:31.106043+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "gaussian_blur",
+  "severity": 4,
+  "seed": 101112,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 1.0,
+    "u_ocr": 0.8808,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.8808,
+    "u_agr": 0.8808
+  },
+  "fallback_status": null,
+  "latency_ms": 0.08710002293810248,
+  "compute_cost": null,
+  "artifact_hash": "53cfc97837297459e01ab1c26e5474ba2d7ba0a9927f743bd6a37a93627d51aa"
+}

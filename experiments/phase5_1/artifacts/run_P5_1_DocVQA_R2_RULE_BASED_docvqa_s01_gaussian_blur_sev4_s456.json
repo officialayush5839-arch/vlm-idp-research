@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_DocVQA_R2_RULE_BASED_docvqa_s01_gaussian_blur_sev4_s456",
+  "document_id": "docvqa_inv_901",
+  "dataset": "DocVQA",
+  "partition": "test",
+  "seed": 456,
+  "policy": "R2_RULE_BASED",
+  "selected_model": "B0-U",
+  "final_answer": "$1,450.00",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.5714
+  },
+  "regret": 0.1200000000000001,
+  "oracle_best_model": "B2",
+  "cost": {
+    "latency_ms": 12.154800002463162,
+    "compute_cost": 0.5,
+    "model_invocations": 1,
+    "fallback_invocations": 0
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T05:55:16.688509+00:00",
+  "phase": "phase5_1",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "gaussian_blur",
+  "severity": 4
+}

@@ -12,8 +12,9 @@
 | Phase 2.5 | Unlimited-OCR Integration & Scientific Validation | COMPLETED | Phase 2 |
 | Phase 3 | Document Quality/Degradation Module | COMPLETED | Phase 2.5 |
 | Phase 4 | Controlled Degradation Benchmark | COMPLETED | Phase 3 |
-| Phase 5 | Adaptive Routing | COMPLETED | Phase 4 |
-| Phase 6 | Long-Document Multimodal Retrieval | NOT_STARTED | Phase 5 |
+| Phase 5 | Adaptive Routing | COMPLETED (AUDITED) | Phase 4 |
+| Phase 5.1 | Scientific Correction & Revalidation | COMPLETED | Phase 5 |
+| Phase 6 | Long-Document Multimodal Retrieval | NOT_STARTED | Phase 5.1 |
 | Phase 7 | Evidence Grounding | NOT_STARTED | Phase 6 |
 | Phase 8 | Uncertainty Calibration + Abstention | NOT_STARTED | Phase 7 |
 | Phase 9 | Full Experiment Matrix | NOT_STARTED | Phase 8 |
@@ -234,6 +235,40 @@
 **12. Failure conditions:** Router introduces too much latency, router accuracy is worse than random, thresholds do not generalize.
 **13. Exit criteria:** Adaptive routing architecture validated and metrics recorded.
 **14. Paper contribution:** Section IV, VI (adaptive routing results).
+
+---
+
+## PHASE 5.1 — Scientific Correction & Revalidation
+
+**1. Purpose:** Resolve formal audit findings P1-01 (trace persistence), P1-02 (uncertainty label contamination), and P1-03 (learned router deployment disconnect) while preserving Phase 0–5 immutability.
+**2. Research question addressed:** RQ2, H2.
+**3. Prerequisites:** Phase 5 Scientific Audit completion.
+**4. Inputs:** Phase 5 audit findings, evaluation corpus, frozen validation partition.
+**5. Tasks:**
+1. Expand trace schema and implement cryptographic collision detection in `RoutingDecisionTracer`.
+2. Formulate pure observable uncertainty vector assembly in `UncertaintyAdapter`.
+3. Implement `save()` and `load()` methods in `LearnedQualityRouter` using joblib.
+4. Fit and serialize learned router to `experiments/phase5_1/models/learned_router.joblib`.
+5. Update `RoutingPolicyManager` to load serialized learned router at benchmark runtime.
+6. Create 10 comprehensive test suites under `tests/test_phase5_1_*.py`.
+7. Re-execute full benchmark (4,500 runs) and write all 4,500 distinct traces to disk.
+8. Re-execute ablation studies (A1–A8).
+9. Author master research report `PHASE5_1_REPORT.md` (34 sections) and companion reports.
+**6. Files/modules created:** `configs/phase5_1/*`, `experiments/phase5_1/*`, `reports/phase5_1/*`, `scripts/run_phase5_1_*.py`, `tests/test_phase5_1_*.py`.
+**7. Experiments:** Full 900-condition benchmark across 5 policies (4,500 runs), paired bootstrap ($B=10,000$), A1–A8 ablations.
+**8. Metrics:** Normalized Task Extraction Score ($S$), Relative Architectural Compute Cost, Routing Regret, ECE, Brier Score, Cliff's $\delta$.
+**9. Tests:** 178 pytest tests passing (100% pass rate across entire repository).
+**10. Expected outputs:** 4,500 on-disk condition traces, calibrated learned router, verified zero-leakage code, comprehensive reports.
+**11. Acceptance criteria:**
+- [x] P1-01 resolved: exactly 4,500 distinct condition traces saved to disk with zero collision.
+- [x] P1-02 resolved: uncertainty vector derived strictly from observable visual features; static AST audit passes with 0 violations.
+- [x] P1-03 resolved: learned router serialized, loaded, and producing dynamic non-degenerate predictions.
+- [x] Baseline immutability preserved: Phase 5 historical directory and commit frozen.
+- [x] Hypothesis H2 rigorously tested with B=10,000 paired bootstrap (NOT_SUPPORTED confirmed with zero manipulation).
+- [x] 178 tests passing.
+**12. Failure conditions:** Trace count < 4,500, AST leakage violations, unfitted learned router, fabricated results.
+**13. Exit criteria:** All 3 audit defects resolved and signed off in `PHASE5_1_REPORT.md`.
+**14. Paper contribution:** Section IV (Observable Uncertainty), Section V (Cost Model), Section VI (Adaptive Routing Evaluation & Compute Dividend).
 
 ---
 

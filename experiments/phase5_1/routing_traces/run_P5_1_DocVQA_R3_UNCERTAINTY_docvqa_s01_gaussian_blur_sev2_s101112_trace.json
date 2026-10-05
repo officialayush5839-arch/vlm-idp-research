@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_aaa4253c2118",
+  "run_id": "run_P5_1_DocVQA_R3_UNCERTAINTY_docvqa_s01_gaussian_blur_sev2_s101112",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0",
+  "decision_reason": "High pipeline confidence (c=0.93 >= tau_accept); routing to efficient OCR B0.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.9317775,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:55:13.009477+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "gaussian_blur",
+  "severity": 2,
+  "seed": 101112,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.98784,
+    "u_ocr": 0.8551500000000001,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.8551500000000001,
+    "u_agr": 0.8551500000000001
+  },
+  "fallback_status": null,
+  "latency_ms": 0.11190003715455532,
+  "compute_cost": null,
+  "artifact_hash": "a4c7e1972cda13e7fec01ed9660183ac569173848245ddf260cf1419c3315de0"
+}

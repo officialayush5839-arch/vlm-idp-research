@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_b597e83cebbb",
+  "run_id": "run_P5_1_FUNSD_R4_LEARNED_funsd_s01_skew_rotation_sev2_s101112",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Learned classifier (logistic) predicted B2 with probability 0.73.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7297333472339788,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:58:03.659514+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "skew_rotation",
+  "severity": 2,
+  "seed": 101112,
+  "policy": "R4_LEARNED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.66824,
+    "u_ocr": 0.24722387500000004,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.59875,
+    "u_agr": 0.24722387500000004
+  },
+  "fallback_status": null,
+  "latency_ms": 1.1473000049591064,
+  "compute_cost": null,
+  "artifact_hash": "ba49bcbbc206e6179e4137af2a9f37b0a8b8189f02c3f507b63f1bef9625bd97"
+}

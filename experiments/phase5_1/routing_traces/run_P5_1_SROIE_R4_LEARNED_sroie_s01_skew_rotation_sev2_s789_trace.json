@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_1e168708bf0d",
+  "run_id": "run_P5_1_SROIE_R4_LEARNED_sroie_s01_skew_rotation_sev2_s789",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Learned classifier (logistic) predicted B2 with probability 0.72.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7190106315114808,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:00:03.076945+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "skew_rotation",
+  "severity": 2,
+  "seed": 789,
+  "policy": "R4_LEARNED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.6716,
+    "u_ocr": 0.196841663,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.49051,
+    "u_agr": 0.196841663
+  },
+  "fallback_status": null,
+  "latency_ms": 1.379899971652776,
+  "compute_cost": null,
+  "artifact_hash": "962e2abf258f7d9cdf2918000ec7ff59af3b12986782b8f26ace26c301d57e3c"
+}

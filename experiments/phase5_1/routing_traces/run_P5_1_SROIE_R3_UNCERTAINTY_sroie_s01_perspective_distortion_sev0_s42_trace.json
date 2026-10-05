@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_c3e965f35521",
+  "run_id": "run_P5_1_SROIE_R3_UNCERTAINTY_sroie_s01_perspective_distortion_sev0_s42",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0",
+  "decision_reason": "High pipeline confidence (c=0.89 >= tau_accept); routing to efficient OCR B0.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.8946459999999999,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:00:53.056102+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "perspective_distortion",
+  "severity": 0,
+  "seed": 42,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 1.0,
+    "u_ocr": 0.76588,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.76588,
+    "u_agr": 0.76588
+  },
+  "fallback_status": null,
+  "latency_ms": 0.12509996304288507,
+  "compute_cost": null,
+  "artifact_hash": "db5c3db596347a386e5540e2a3e20e5aa663ee57c11a41c6122b56aefdbcd2f1"
+}

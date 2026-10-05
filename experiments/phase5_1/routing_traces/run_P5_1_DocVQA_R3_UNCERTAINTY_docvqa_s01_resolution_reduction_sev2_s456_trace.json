@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_4fa09eb8714d",
+  "run_id": "run_P5_1_DocVQA_R3_UNCERTAINTY_docvqa_s01_resolution_reduction_sev2_s456",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0",
+  "decision_reason": "High pipeline confidence (c=0.79 >= tau_accept); routing to efficient OCR B0.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7861315,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:56:40.649245+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "resolution_reduction",
+  "severity": 2,
+  "seed": 456,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.75496,
+    "u_ocr": 0.66087,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.66087,
+    "u_agr": 0.66087
+  },
+  "fallback_status": null,
+  "latency_ms": 0.06749999010935426,
+  "compute_cost": null,
+  "artifact_hash": "3501dc5e0a7c002d19de8b385aba06f7e31f5fb8426fe4c2b9154ccac2b90d41"
+}

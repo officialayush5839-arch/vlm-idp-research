@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_bfaeab7c3e2c",
+  "run_id": "run_P5_1_MMLongBench-Doc_R2_RULE_BASED_mmlong_s01_p0_illumination_sev0_s456",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Severe blur or noise detected (blur=1.00, noise=0.05); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.88,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:02:24.932530+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "illumination",
+  "severity": 0,
+  "seed": 456,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.76852,
+    "u_ocr": 0.6150800000000001,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.6150800000000001,
+    "u_agr": 0.6150800000000001
+  },
+  "fallback_status": null,
+  "latency_ms": 0.08570001227781177,
+  "compute_cost": null,
+  "artifact_hash": "3b18832f9c873be5baa5033f41b738c804d4cf333c23bc0186ee7e4665095c06"
+}

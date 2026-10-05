@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_41bb82619437",
+  "run_id": "run_P5_1_SROIE_R1_FIXED_BEST_sroie_s01_skew_rotation_sev4_s42",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Fixed single-best baseline policy always routing to B2.",
+  "policy_version": "1.1.0",
+  "router_confidence": 1.0,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:00:06.021537+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "skew_rotation",
+  "severity": 4,
+  "seed": 42,
+  "policy": "R1_FIXED_BEST",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.6704,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.45345,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 0.0906999921426177,
+  "compute_cost": null,
+  "artifact_hash": "9c9487e3ddba743abe6e4d8a4cad3e09a4f8ab6af8d1e572f3783424291bddc5"
+}

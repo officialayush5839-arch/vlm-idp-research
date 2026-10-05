@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_a560fec74193",
+  "run_id": "run_P5_1_DocVQA_R4_LEARNED_docvqa_s01_gaussian_noise_sev1_s101112",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B1",
+  "decision_reason": "Learned classifier (logistic) predicted B1 with probability 0.57.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.5705135183308645,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:55:22.888643+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "gaussian_noise",
+  "severity": 1,
+  "seed": 101112,
+  "policy": "R4_LEARNED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.7699199999999999,
+    "u_ocr": 0.65127,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.65127,
+    "u_agr": 0.65127
+  },
+  "fallback_status": null,
+  "latency_ms": 0.7360000163316727,
+  "compute_cost": null,
+  "artifact_hash": "999d849ae3ffed1f5b755c82402c9f9be91cbb039e468d0dac05f3ce4c908bad"
+}

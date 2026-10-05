@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_FUNSD_R5_COMPOSITE_funsd_s01_perspective_distortion_sev0_s42",
+  "document_id": "funsd_form_042",
+  "dataset": "FUNSD",
+  "partition": "test",
+  "seed": 42,
+  "policy": "R5_COMPOSITE",
+  "selected_model": "B0-U",
+  "final_answer": "INVOICE #INV-2024-001",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.0,
+  "oracle_best_model": "B0",
+  "cost": {
+    "latency_ms": 11.677399976179004,
+    "compute_cost": 0.5,
+    "model_invocations": 1,
+    "fallback_invocations": 0
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T05:58:53.298281+00:00",
+  "phase": "phase5_1",
+  "sample_id": "funsd_s01",
+  "degradation_family": "perspective_distortion",
+  "severity": 0
+}

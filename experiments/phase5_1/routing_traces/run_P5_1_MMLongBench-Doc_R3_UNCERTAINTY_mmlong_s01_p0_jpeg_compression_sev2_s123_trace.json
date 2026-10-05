@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_a1d5378f675a",
+  "run_id": "run_P5_1_MMLongBench-Doc_R3_UNCERTAINTY_mmlong_s01_p0_jpeg_compression_sev2_s123",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0",
+  "decision_reason": "High pipeline confidence (c=0.78 >= tau_accept); routing to efficient OCR B0.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7808495,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:02:16.356431+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "jpeg_compression",
+  "severity": 2,
+  "seed": 123,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.7622,
+    "u_ocr": 0.64511,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.64511,
+    "u_agr": 0.64511
+  },
+  "fallback_status": null,
+  "latency_ms": 0.07190002361312509,
+  "compute_cost": null,
+  "artifact_hash": "5f06fb3f5573aba8b50913bc2c0d69e68ecab14fdf606040da406ad2e0603543"
+}

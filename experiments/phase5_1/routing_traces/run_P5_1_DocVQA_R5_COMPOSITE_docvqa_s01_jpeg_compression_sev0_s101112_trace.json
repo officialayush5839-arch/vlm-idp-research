@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_59c0f4a51673",
+  "run_id": "run_P5_1_DocVQA_R5_COMPOSITE_docvqa_s01_jpeg_compression_sev0_s101112",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Composite policy adopted rule proposal: Geometric distortion detected (skew=1.00, perspective=0.00); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.72682475,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:56:00.295938+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "jpeg_compression",
+  "severity": 0,
+  "seed": 101112,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.6755199999999999,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.56513,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 0.10489998385310173,
+  "compute_cost": null,
+  "artifact_hash": "fd8a7c9c40cf2c298a1f94e8065f450a3aa1954f9f014f00fdde4c823ac9b0e1"
+}

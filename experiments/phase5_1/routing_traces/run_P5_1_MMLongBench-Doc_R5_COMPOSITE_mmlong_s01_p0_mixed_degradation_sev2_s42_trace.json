@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_a50b522d8e0c",
+  "run_id": "run_P5_1_MMLongBench-Doc_R5_COMPOSITE_mmlong_s01_p0_mixed_degradation_sev2_s42",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Composite policy adopted rule proposal: Geometric distortion detected (skew=0.64, perspective=0.00); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.8142461364,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:03:22.685863+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "mixed_degradation",
+  "severity": 2,
+  "seed": 42,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.99336,
+    "u_ocr": 0.25153757600000004,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.69794,
+    "u_agr": 0.25153757600000004
+  },
+  "fallback_status": null,
+  "latency_ms": 0.09490002412348986,
+  "compute_cost": null,
+  "artifact_hash": "4a400ca0006b4e4c4942b1a5161a2ab3a020a51809e016be24d3bf07aede7d48"
+}

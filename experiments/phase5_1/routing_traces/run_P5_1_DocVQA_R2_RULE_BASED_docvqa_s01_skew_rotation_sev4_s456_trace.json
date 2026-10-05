@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_10c48128f110",
+  "run_id": "run_P5_1_DocVQA_R2_RULE_BASED_docvqa_s01_skew_rotation_sev4_s456",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Geometric distortion detected (skew=1.00, perspective=0.00); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.9,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:55:56.754546+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "skew_rotation",
+  "severity": 4,
+  "seed": 456,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.6755199999999999,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.56513,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 0.11080002877861261,
+  "compute_cost": null,
+  "artifact_hash": "3dde591f7e4f2c300776d92ddcca8274abe81b315ca54238b196ea38b7243cd4"
+}

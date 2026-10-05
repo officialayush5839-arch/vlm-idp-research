@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_773bab3cb1e0",
+  "run_id": "run_P5_1_FUNSD_R1_FIXED_BEST_funsd_s01_gaussian_blur_sev0_s123",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Fixed single-best baseline policy always routing to B2.",
+  "policy_version": "1.1.0",
+  "router_confidence": 1.0,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:57:16.842397+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "gaussian_blur",
+  "severity": 0,
+  "seed": 123,
+  "policy": "R1_FIXED_BEST",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.63532,
+    "u_ocr": 0.62862,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.62862,
+    "u_agr": 0.62862
+  },
+  "fallback_status": null,
+  "latency_ms": 0.04320003790780902,
+  "compute_cost": null,
+  "artifact_hash": "0f2a1e44ce965cf311f2342f0d0f19e5190ccf43b1a55c1c605f94e6420ab7ab"
+}

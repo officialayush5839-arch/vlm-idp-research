@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_fbf109303a9b",
+  "run_id": "run_P5_1_SROIE_R4_LEARNED_sroie_s01_occlusion_sev4_s789",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B1",
+  "decision_reason": "Learned classifier (logistic) predicted B1 with probability 0.64.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.6358936394949062,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:00:41.427753+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "occlusion",
+  "severity": 4,
+  "seed": 789,
+  "policy": "R4_LEARNED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.026480000000000004,
+    "u_ocr": 0.378819589,
+    "u_ret": 1.0,
+    "u_gnd": 0.0,
+    "u_qual": 0.42521,
+    "u_agr": 0.026480000000000004
+  },
+  "fallback_status": null,
+  "latency_ms": 1.2800000258721411,
+  "compute_cost": null,
+  "artifact_hash": "290d59a0367652c328112c2414e9bda78d7c97c820e6c82ae5c6652d565288b9"
+}

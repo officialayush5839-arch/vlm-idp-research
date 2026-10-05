@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_aa5381b09230",
+  "run_id": "run_P5_1_MMLongBench-Doc_R3_UNCERTAINTY_mmlong_s01_p0_gaussian_noise_sev4_s42",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B1",
+  "decision_reason": "Moderate pipeline confidence (c=0.60); routing to hybrid OCR+VLM B1.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.596361,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:01:46.816508+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "gaussian_noise",
+  "severity": 4,
+  "seed": 42,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.93504,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.41734000000000004,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 0.11729996185749769,
+  "compute_cost": null,
+  "artifact_hash": "6030beac9e96445bdbdd9f4e275ccbb47c3fd7d7e8066dec566d6f39c2c79ebb"
+}

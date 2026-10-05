@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_3071d066f7ca",
+  "run_id": "run_P5_1_FUNSD_R3_UNCERTAINTY_funsd_s01_gaussian_noise_sev2_s123",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0",
+  "decision_reason": "High pipeline confidence (c=0.85 >= tau_accept); routing to efficient OCR B0.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.850729,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:57:35.296282+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "gaussian_noise",
+  "severity": 2,
+  "seed": 123,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.97816,
+    "u_ocr": 0.68042,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.68042,
+    "u_agr": 0.68042
+  },
+  "fallback_status": null,
+  "latency_ms": 0.11629995424300432,
+  "compute_cost": null,
+  "artifact_hash": "3882de014f8b41acd4b8867a6c0205efea95ad8a0584a37d88f71d09bd204858"
+}

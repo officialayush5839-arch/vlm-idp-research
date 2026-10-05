@@ -38,21 +38,47 @@ class AdaptiveRoutingPipeline:
         model_runner: ModelRunner,
         evaluator: BenchmarkEvaluator,
         output_dir: Optional[str] = None,
+        phase: str = "phase5_1",
     ):
         self.router = router
         self.quality_pipeline = quality_pipeline
         self.model_runner = model_runner
         self.evaluator = evaluator
-        self.output_dir = Path(output_dir or (Path(__file__).parents[2] / "experiments" / "phase5" / "artifacts"))
+        self.phase = phase
+        default_dir = Path(__file__).parents[2] / "experiments" / phase / "artifacts"
+        self.output_dir = Path(output_dir or default_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
     @classmethod
-    def create_default(cls) -> AdaptiveRoutingPipeline:
-        router = AdaptiveRouter.create_default()
+    def create_default(
+        cls,
+        phase: str = "phase5_1",
+        output_dir: Optional[str] = None,
+        trace_dir: Optional[str] = None,
+    ) -> AdaptiveRoutingPipeline:
+        base_configs = Path(__file__).parents[2] / "configs" / phase
+        if not base_configs.exists():
+            base_configs = Path(__file__).parents[2] / "configs" / "phase5"
+
+        routing_cfg_path = str(base_configs / "routing_config.yaml")
+        rules_cfg_path = str(base_configs / "router_rules.yaml")
+        uncertainty_cfg_path = str(base_configs / "uncertainty_config.yaml")
+        cost_cfg_path = str(base_configs / "cost_config.yaml")
+
+        if trace_dir is None:
+            trace_dir = str(Path(__file__).parents[2] / "experiments" / phase / "routing_traces")
+
+        router = AdaptiveRouter.create_default(
+            routing_cfg_path=routing_cfg_path,
+            rules_cfg_path=rules_cfg_path,
+            uncertainty_cfg_path=uncertainty_cfg_path,
+            cost_cfg_path=cost_cfg_path,
+            trace_dir=trace_dir,
+        )
         quality_pipeline = DocumentQualityPipeline()
         model_runner = ModelRunner()
         evaluator = BenchmarkEvaluator()
-        return cls(router, quality_pipeline, model_runner, evaluator)
+        return cls(router, quality_pipeline, model_runner, evaluator, output_dir=output_dir, phase=phase)
 
     def process_sample(
         self,
@@ -65,9 +91,16 @@ class AdaptiveRoutingPipeline:
     ) -> RoutingRunArtifact:
         """
         Executes complete routing and evaluation lifecycle for a sample.
+        Enforces Phase 5.1 unique run identity and zero-leakage inference.
         """
         seed = condition.seed if condition else 42
-        run_id = f"run_P5_{sample.dataset}_{policy.value}_{sample.sample_id}_s{seed}"
+        deg_family = condition.family if condition else "clean"
+        sev = condition.severity if condition else 0
+
+        if self.phase == "phase5_1":
+            run_id = f"run_P5_1_{sample.dataset}_{policy.value}_{sample.sample_id}_{deg_family}_sev{sev}_s{seed}"
+        else:
+            run_id = f"run_P5_{sample.dataset}_{policy.value}_{sample.sample_id}_s{seed}"
 
         # 1. Independent Visual Quality Assessment (Phase 3)
         quality_assessment = self.quality_pipeline.assess_page(
@@ -78,18 +111,16 @@ class AdaptiveRoutingPipeline:
         )
 
         # 2. Assemble Inference-Time Uncertainty Vector
-        # Use observable quality score Q and baseline execution priors
-        q_score = 1.0 - (condition.severity * 0.20 if condition else 0.0)
-        uncertainty_vector = self.router.policy_manager.uncertainty_adapter.assemble_vector(
-            vlm_confidence=q_score,
-            ocr_confidence=q_score if (condition and condition.family not in ["skew_rotation", "perspective_distortion"]) else 0.20,
-            retrieval_score=1.0,
-            grounding_score=q_score,
-            visual_quality_score=q_score,
-            ocr_vlm_agreement=q_score,
+        # Zero benchmark metadata leakage: derive purely from observable visual quality features
+        quality_features = self.router.feature_adapter.extract_features(quality_assessment)
+        mean_deg = sum(quality_features.values()) / max(1, len(quality_features))
+        q_score = float(max(0.0, min(1.0, 1.0 - mean_deg)))
+        uncertainty_vector = self.router.policy_manager.uncertainty_adapter.assemble_from_quality_features(
+            quality_features=quality_features,
+            overall_quality=q_score,
         )
 
-        # 3. Route Decision (Zero Leakage: no target answers or evaluation metrics passed)
+        # 3. Route Decision (Zero Leakage: no target answers, severity labels, or evaluation metrics passed)
         decision, trace = self.router.route(
             run_id=run_id,
             document_id=sample.document_id,
@@ -101,6 +132,10 @@ class AdaptiveRoutingPipeline:
             seed=seed,
             uncertainty_vector=uncertainty_vector,
             oracle_candidate_scores=oracle_candidate_scores,
+            phase=self.phase,
+            sample_id=sample.sample_id,
+            degradation_family=deg_family,
+            severity=sev,
         )
         self.router.decision_tracer.save_trace(trace)
 
@@ -176,6 +211,10 @@ class AdaptiveRoutingPipeline:
             cost=cost,
             status=exec_result.status,
             error_message=exec_result.error_message,
+            phase=self.phase,
+            sample_id=sample.sample_id,
+            degradation_family=deg_family,
+            severity=sev,
         )
 
         # 10. Serialization

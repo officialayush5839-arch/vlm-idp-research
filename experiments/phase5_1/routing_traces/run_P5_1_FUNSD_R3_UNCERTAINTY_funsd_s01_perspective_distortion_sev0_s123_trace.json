@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_f806ce4624db",
+  "run_id": "run_P5_1_FUNSD_R3_UNCERTAINTY_funsd_s01_perspective_distortion_sev0_s123",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0",
+  "decision_reason": "High pipeline confidence (c=0.94 >= tau_accept); routing to efficient OCR B0.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.9418735,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:58:53.574412+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "perspective_distortion",
+  "severity": 0,
+  "seed": 123,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 1.0,
+    "u_ocr": 0.87083,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.87083,
+    "u_agr": 0.87083
+  },
+  "fallback_status": null,
+  "latency_ms": 0.08849997539073229,
+  "compute_cost": null,
+  "artifact_hash": "311b2595040788bc16f4d287f48da7dae4b56cbbabde0b34a6f733b7b0207f3b"
+}

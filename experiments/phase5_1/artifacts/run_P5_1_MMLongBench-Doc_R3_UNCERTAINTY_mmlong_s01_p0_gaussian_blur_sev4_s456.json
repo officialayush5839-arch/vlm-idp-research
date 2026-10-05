@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_MMLongBench-Doc_R3_UNCERTAINTY_mmlong_s01_p0_gaussian_blur_sev4_s456",
+  "document_id": "mmlong_doc_101",
+  "dataset": "MMLongBench-Doc",
+  "partition": "test",
+  "seed": 456,
+  "policy": "R3_UNCERTAINTY",
+  "selected_model": "B0",
+  "final_answer": "You are performing document understandin...",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.44000000000000006,
+  "oracle_best_model": "B2",
+  "cost": {
+    "latency_ms": 12.27629993809387,
+    "compute_cost": 1.1,
+    "model_invocations": 2,
+    "fallback_invocations": 1
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T06:01:30.016998+00:00",
+  "phase": "phase5_1",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "gaussian_blur",
+  "severity": 4
+}

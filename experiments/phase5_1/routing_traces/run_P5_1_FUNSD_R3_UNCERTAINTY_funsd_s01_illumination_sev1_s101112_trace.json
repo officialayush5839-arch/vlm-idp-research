@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_b5c093afb0f2",
+  "run_id": "run_P5_1_FUNSD_R3_UNCERTAINTY_funsd_s01_illumination_sev1_s101112",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0",
+  "decision_reason": "High pipeline confidence (c=0.76 >= tau_accept); routing to efficient OCR B0.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7628889999999999,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:58:26.646286+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "illumination",
+  "severity": 1,
+  "seed": 101112,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.6506799999999999,
+    "u_ocr": 0.67539,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.67539,
+    "u_agr": 0.6506799999999999
+  },
+  "fallback_status": null,
+  "latency_ms": 0.07260002894327044,
+  "compute_cost": null,
+  "artifact_hash": "e94a5abe87beec519f1926e12752c2d8e45c5831e9c635a99fd82ce438ca155a"
+}

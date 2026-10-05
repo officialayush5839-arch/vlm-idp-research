@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_3fca1c0a07f6",
+  "run_id": "run_P5_1_FUNSD_R2_RULE_BASED_funsd_s01_gaussian_blur_sev3_s101112",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0-U",
+  "decision_reason": "Compression or illumination distortion detected (compression=0.13, illum=1.00, glare=0.00); routing to B0-U multimodal OCR.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.85,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:57:25.947095+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "gaussian_blur",
+  "severity": 3,
+  "seed": 101112,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 1.0,
+    "u_ocr": 0.86639,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.86639,
+    "u_agr": 0.86639
+  },
+  "fallback_status": null,
+  "latency_ms": 0.056299963034689426,
+  "compute_cost": null,
+  "artifact_hash": "3f57bc1cef64e5130736fd1ac9f1118662bcd0afa98b2d4cd39606afc5b783bd"
+}

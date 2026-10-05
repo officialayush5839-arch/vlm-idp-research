@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_3eab4e0a38d7",
+  "run_id": "run_P5_1_SROIE_R5_COMPOSITE_sroie_s01_occlusion_sev4_s101112",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Composite policy adopted rule proposal: Severe blur or noise detected (blur=1.00, noise=0.04); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.580598219175,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:00:41.953578+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "occlusion",
+  "severity": 4,
+  "seed": 101112,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.026480000000000004,
+    "u_ocr": 0.378819589,
+    "u_ret": 1.0,
+    "u_gnd": 0.0,
+    "u_qual": 0.42521,
+    "u_agr": 0.026480000000000004
+  },
+  "fallback_status": null,
+  "latency_ms": 0.06600003689527512,
+  "compute_cost": null,
+  "artifact_hash": "87cfbcfdaf6d40296bc77268e8e8b9abdd3ac22b3020728705c983cffe9e52f1"
+}

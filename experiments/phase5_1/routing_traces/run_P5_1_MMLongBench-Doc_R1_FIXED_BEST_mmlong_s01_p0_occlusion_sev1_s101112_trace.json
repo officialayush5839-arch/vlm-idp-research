@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_f421c80b45c2",
+  "run_id": "run_P5_1_MMLongBench-Doc_R1_FIXED_BEST_mmlong_s01_p0_occlusion_sev1_s101112",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Fixed single-best baseline policy always routing to B2.",
+  "policy_version": "1.1.0",
+  "router_confidence": 1.0,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:02:41.459151+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "occlusion",
+  "severity": 1,
+  "seed": 101112,
+  "policy": "R1_FIXED_BEST",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.48244,
+    "u_ocr": 0.58838,
+    "u_ret": 1.0,
+    "u_gnd": 0.7508,
+    "u_qual": 0.58838,
+    "u_agr": 0.48244
+  },
+  "fallback_status": null,
+  "latency_ms": 0.08969998452812433,
+  "compute_cost": null,
+  "artifact_hash": "5541c46588c4888615e9a7d90ee97b88666f7a573653682cb0f7926c93e8f711"
+}

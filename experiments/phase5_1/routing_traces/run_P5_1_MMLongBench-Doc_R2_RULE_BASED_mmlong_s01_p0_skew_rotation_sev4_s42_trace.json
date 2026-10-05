@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_3e9ff63539b3",
+  "run_id": "run_P5_1_MMLongBench-Doc_R2_RULE_BASED_mmlong_s01_p0_skew_rotation_sev4_s42",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Geometric distortion detected (skew=1.00, perspective=0.00); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.9,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:02:07.782222+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "skew_rotation",
+  "severity": 4,
+  "seed": 42,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.6735199999999999,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.5463,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 0.05370000144466758,
+  "compute_cost": null,
+  "artifact_hash": "e0e778a3f6a6150260b094598e2b70ac7929dcfc0d8488b459a7104e0b05d6fa"
+}

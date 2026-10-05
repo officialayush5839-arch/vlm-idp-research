@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_FUNSD_R3_UNCERTAINTY_funsd_s01_jpeg_compression_sev1_s456",
+  "document_id": "funsd_form_042",
+  "dataset": "FUNSD",
+  "partition": "test",
+  "seed": 456,
+  "policy": "R3_UNCERTAINTY",
+  "selected_model": "B0",
+  "final_answer": "You are performing document understandin...",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.09999999999999998,
+  "oracle_best_model": "B0-U",
+  "cost": {
+    "latency_ms": 12.04830000642687,
+    "compute_cost": 1.1,
+    "model_invocations": 2,
+    "fallback_invocations": 1
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T05:58:11.857473+00:00",
+  "phase": "phase5_1",
+  "sample_id": "funsd_s01",
+  "degradation_family": "jpeg_compression",
+  "severity": 1
+}

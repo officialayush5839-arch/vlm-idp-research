@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_50c5a8d80cb4",
+  "run_id": "run_P5_1_DocVQA_R5_COMPOSITE_docvqa_s01_jpeg_compression_sev1_s101112",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Composite policy adopted rule proposal: Severe blur or noise detected (blur=1.00, noise=0.05); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.8174235000000001,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:56:02.618573+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "jpeg_compression",
+  "severity": 1,
+  "seed": 101112,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.67052,
+    "u_ocr": 0.63826,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.63826,
+    "u_agr": 0.63826
+  },
+  "fallback_status": null,
+  "latency_ms": 0.0743999844416976,
+  "compute_cost": null,
+  "artifact_hash": "9d02c9666f633d4cbdd59304750d98d077206218596edd96ac24e6153ca764e7"
+}

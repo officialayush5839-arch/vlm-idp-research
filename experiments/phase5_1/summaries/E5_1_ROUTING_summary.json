@@ -1,0 +1,171 @@
+{
+  "benchmark_id": "E5_1_ROUTING_BENCHMARK",
+  "phase": "phase5_1",
+  "timestamp_utc": "2026-10-05T06:03:33Z",
+  "total_conditions": 900,
+  "n_samples": 4,
+  "n_seeds": 5,
+  "total_traces_emitted": 4500,
+  "unique_traces_emitted": 4500,
+  "mean_scores": {
+    "R1_FIXED_BEST": 0.7777777777777778,
+    "R2_RULE_BASED": 0.7671111111111112,
+    "R3_UNCERTAINTY": 0.635488888888889,
+    "R4_LEARNED": 0.7088333333333334,
+    "R5_COMPOSITE": 0.7671111111111112,
+    "R0_ORACLE": 0.7955555555555556
+  },
+  "std_scores": {
+    "R1_FIXED_BEST": 0.15816853021577107,
+    "R2_RULE_BASED": 0.1707710907387394,
+    "R3_UNCERTAINTY": 0.2632626168526378,
+    "R4_LEARNED": 0.21842434489874163,
+    "R5_COMPOSITE": 0.1707710907387394,
+    "R0_ORACLE": 0.1481074018040145
+  },
+  "severity_progression": {
+    "R1_FIXED_BEST": {
+      "0": 1.0,
+      "1": 0.8888888888888888,
+      "2": 0.7777777777777778,
+      "3": 0.6666666666666666,
+      "4": 0.5555555555555557
+    },
+    "R2_RULE_BASED": {
+      "0": 1.0,
+      "1": 0.8888888888888888,
+      "2": 0.771111111111111,
+      "3": 0.6466666666666667,
+      "4": 0.5288888888888889
+    },
+    "R3_UNCERTAINTY": {
+      "0": 1.0,
+      "1": 0.7922222222222224,
+      "2": 0.6157777777777778,
+      "3": 0.4716666666666666,
+      "4": 0.2977777777777778
+    },
+    "R4_LEARNED": {
+      "0": 1.0,
+      "1": 0.8174999999999999,
+      "2": 0.7044444444444443,
+      "3": 0.5866666666666667,
+      "4": 0.43555555555555564
+    },
+    "R5_COMPOSITE": {
+      "0": 1.0,
+      "1": 0.8888888888888888,
+      "2": 0.771111111111111,
+      "3": 0.6466666666666667,
+      "4": 0.5288888888888889
+    },
+    "R0_ORACLE": {
+      "0": 1.0,
+      "1": 0.8977777777777779,
+      "2": 0.7955555555555555,
+      "3": 0.6933333333333334,
+      "4": 0.5911111111111111
+    }
+  },
+  "routing_regret": {
+    "R1_FIXED_BEST": {
+      "mean": 0.017777777777777774,
+      "median": 0.0,
+      "p95": 0.12
+    },
+    "R2_RULE_BASED": {
+      "mean": 0.028444444444444446,
+      "median": 0.0,
+      "p95": 0.1200000000000001
+    },
+    "R3_UNCERTAINTY": {
+      "mean": 0.16006666666666666,
+      "median": 0.12,
+      "p95": 0.44000000000000006
+    },
+    "R4_LEARNED": {
+      "mean": 0.08672222222222223,
+      "median": 0.06000000000000005,
+      "p95": 0.31999999999999995
+    },
+    "R5_COMPOSITE": {
+      "mean": 0.028444444444444446,
+      "median": 0.0,
+      "p95": 0.1200000000000001
+    }
+  },
+  "model_selection_distributions": {
+    "R1_FIXED_BEST": {
+      "B0": 0,
+      "B1": 0,
+      "B2": 900,
+      "B0-U": 0
+    },
+    "R2_RULE_BASED": {
+      "B0": 0,
+      "B1": 0,
+      "B2": 760,
+      "B0-U": 140
+    },
+    "R3_UNCERTAINTY": {
+      "B0": 377,
+      "B1": 383,
+      "B2": 140,
+      "B0-U": 0
+    },
+    "R4_LEARNED": {
+      "B0": 0,
+      "B1": 520,
+      "B2": 290,
+      "B0-U": 90
+    },
+    "R5_COMPOSITE": {
+      "B0": 0,
+      "B1": 0,
+      "B2": 760,
+      "B0-U": 140
+    },
+    "R0_ORACLE": {
+      "B0": 180,
+      "B1": 0,
+      "B2": 560,
+      "B0-U": 160
+    }
+  },
+  "fallback_rates": {
+    "R1_FIXED_BEST": 0.0,
+    "R2_RULE_BASED": 0.0,
+    "R3_UNCERTAINTY": 0.41888888888888887,
+    "R4_LEARNED": 0.0,
+    "R5_COMPOSITE": 0.0
+  },
+  "average_compute_cost": {
+    "R1_FIXED_BEST": 1.0,
+    "R2_RULE_BASED": 0.9222222222222223,
+    "R3_UNCERTAINTY": 0.9567777777777777,
+    "R4_LEARNED": 0.8344444444444444,
+    "R5_COMPOSITE": 0.9222222222222223
+  },
+  "average_latency_ms": {
+    "R1_FIXED_BEST": 11.700814999963363,
+    "R2_RULE_BASED": 11.75096377710967,
+    "R3_UNCERTAINTY": 11.787949000653397,
+    "R4_LEARNED": 11.775729555390878,
+    "R5_COMPOSITE": 11.719811223641349
+  },
+  "hypothesis_h2_evaluation": {
+    "hypothesis": "H2: Quality-aware adaptive routing significantly outperforms best fixed baseline",
+    "treatment": "R2_RULE_BASED",
+    "control": "R1_FIXED_BEST",
+    "observed_delta": -0.01066666666666667,
+    "ci_95": [
+      -0.012666666666666673,
+      -0.008633333333333338
+    ],
+    "p_value": 0.0,
+    "cliffs_delta": -0.028641975308641977,
+    "cliffs_interpretation": "negligible",
+    "cohens_d": -0.06477130009105703,
+    "status": "NOT_SUPPORTED"
+  }
+}

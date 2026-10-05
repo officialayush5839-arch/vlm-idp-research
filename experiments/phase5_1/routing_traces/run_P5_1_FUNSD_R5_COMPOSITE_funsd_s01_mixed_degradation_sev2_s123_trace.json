@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_11b095f34da6",
+  "run_id": "run_P5_1_FUNSD_R5_COMPOSITE_funsd_s01_mixed_degradation_sev2_s123",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Composite policy adopted rule proposal: Geometric distortion detected (skew=0.58, perspective=0.00); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.8215507632000001,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:59:12.326608+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "mixed_degradation",
+  "severity": 2,
+  "seed": 123,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.99516,
+    "u_ocr": 0.295385088,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.70464,
+    "u_agr": 0.295385088
+  },
+  "fallback_status": null,
+  "latency_ms": 0.06389996269717813,
+  "compute_cost": null,
+  "artifact_hash": "fb1fa355201c5afbb57864a7d02f2561bc8a674a2e3e2b3dc34cb71bd6827615"
+}

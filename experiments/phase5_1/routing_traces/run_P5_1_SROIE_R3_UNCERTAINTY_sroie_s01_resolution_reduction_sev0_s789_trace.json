@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_125f893b63c4",
+  "run_id": "run_P5_1_SROIE_R3_UNCERTAINTY_sroie_s01_resolution_reduction_sev0_s789",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "High pipeline uncertainty (c=0.28 < tau_review); routing to native robust VLM B2.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.28119643834999997,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:00:43.569036+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "resolution_reduction",
+  "severity": 0,
+  "seed": 789,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.026480000000000004,
+    "u_ocr": 0.378819589,
+    "u_ret": 1.0,
+    "u_gnd": 0.0,
+    "u_qual": 0.42521,
+    "u_agr": 0.026480000000000004
+  },
+  "fallback_status": null,
+  "latency_ms": 0.05870003951713443,
+  "compute_cost": null,
+  "artifact_hash": "25d5096b7bd17121ec81dea1587aa828845f30ade0a26978493db1764afbcbef"
+}

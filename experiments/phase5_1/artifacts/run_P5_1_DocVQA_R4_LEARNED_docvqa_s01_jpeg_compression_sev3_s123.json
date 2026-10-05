@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_DocVQA_R4_LEARNED_docvqa_s01_jpeg_compression_sev3_s123",
+  "document_id": "docvqa_inv_901",
+  "dataset": "DocVQA",
+  "partition": "test",
+  "seed": 123,
+  "policy": "R4_LEARNED",
+  "selected_model": "B1",
+  "final_answer": "You are performing document understandin...",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.24,
+  "oracle_best_model": "B0-U",
+  "cost": {
+    "latency_ms": 11.995700013358146,
+    "compute_cost": 0.8,
+    "model_invocations": 1,
+    "fallback_invocations": 0
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T05:56:05.711579+00:00",
+  "phase": "phase5_1",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "jpeg_compression",
+  "severity": 3
+}

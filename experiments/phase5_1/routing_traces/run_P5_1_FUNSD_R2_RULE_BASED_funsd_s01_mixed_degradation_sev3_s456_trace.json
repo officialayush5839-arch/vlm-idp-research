@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_4f1993e361c4",
+  "run_id": "run_P5_1_FUNSD_R2_RULE_BASED_funsd_s01_mixed_degradation_sev3_s456",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Geometric distortion detected (skew=0.84, perspective=0.00); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.9,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:59:15.752538+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "mixed_degradation",
+  "severity": 3,
+  "seed": 456,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.99916,
+    "u_ocr": 0.10913887600000002,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.68684,
+    "u_agr": 0.10913887600000002
+  },
+  "fallback_status": null,
+  "latency_ms": 0.12849998893216252,
+  "compute_cost": null,
+  "artifact_hash": "e05ffde032e8652281ce916567ee9430ad7e265731913ccbf5bc5269c21b967d"
+}

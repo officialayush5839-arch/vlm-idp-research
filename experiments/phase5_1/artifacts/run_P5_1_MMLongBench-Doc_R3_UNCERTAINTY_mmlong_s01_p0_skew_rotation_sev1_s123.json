@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_MMLongBench-Doc_R3_UNCERTAINTY_mmlong_s01_p0_skew_rotation_sev1_s123",
+  "document_id": "mmlong_doc_101",
+  "dataset": "MMLongBench-Doc",
+  "partition": "test",
+  "seed": 123,
+  "policy": "R3_UNCERTAINTY",
+  "selected_model": "B1",
+  "final_answer": "You are performing document understandin...",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.12,
+  "oracle_best_model": "B2",
+  "cost": {
+    "latency_ms": 11.914200033061206,
+    "compute_cost": 0.8,
+    "model_invocations": 1,
+    "fallback_invocations": 0
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T06:02:00.884767+00:00",
+  "phase": "phase5_1",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "skew_rotation",
+  "severity": 1
+}

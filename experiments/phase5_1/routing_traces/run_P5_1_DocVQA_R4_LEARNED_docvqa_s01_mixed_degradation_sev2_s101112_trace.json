@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_b6b2b84998aa",
+  "run_id": "run_P5_1_DocVQA_R4_LEARNED_docvqa_s01_mixed_degradation_sev2_s101112",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Learned classifier (logistic) predicted B2 with probability 0.70.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7030667595496791,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:57:07.789550+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "mixed_degradation",
+  "severity": 2,
+  "seed": 101112,
+  "policy": "R4_LEARNED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.99556,
+    "u_ocr": 0.338441508,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.71356,
+    "u_agr": 0.338441508
+  },
+  "fallback_status": null,
+  "latency_ms": 1.6489000408910215,
+  "compute_cost": null,
+  "artifact_hash": "c274b56c5346703ca38b6165975d281fbac5a920d72f728e13554b8fa64f4065"
+}

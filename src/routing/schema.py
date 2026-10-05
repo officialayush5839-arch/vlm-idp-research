@@ -68,6 +68,7 @@ class RoutingDecision(BaseModel):
 class RoutingTrace(BaseModel):
     """
     Immutable audit trace capturing the internal state and reasoning for a routing decision.
+    Enriched in Phase 5.1 with condition provenance, cryptographic hashes, and execution accounting.
     """
     trace_id: str
     run_id: str
@@ -79,6 +80,24 @@ class RoutingTrace(BaseModel):
     router_confidence: float
     fallback_triggered: bool = False
     timestamp_utc: str = Field(default_factory=lambda: datetime.datetime.now(datetime.timezone.utc).isoformat())
+
+    # Phase 5.1 provenance fields
+    phase: str = "phase5_1"
+    dataset: Optional[str] = None
+    sample_id: Optional[str] = None
+    degradation_family: Optional[str] = None
+    severity: Optional[int] = None
+    seed: Optional[int] = None
+    policy: Optional[str] = None
+    configuration_hash: Optional[str] = None
+    model_revision: Optional[str] = None
+    input_hash: Optional[str] = None
+    quality_feature_hash: Optional[str] = None
+    uncertainty_vector: Optional[Dict[str, float]] = None
+    fallback_status: Optional[str] = None
+    latency_ms: Optional[float] = None
+    compute_cost: Optional[float] = None
+    artifact_hash: Optional[str] = None
 
 
 class RoutingCost(BaseModel):
@@ -116,3 +135,9 @@ class RoutingRunArtifact(BaseModel):
     status: str = "SUCCESS"
     error_message: Optional[str] = None
     timestamp_utc: str = Field(default_factory=lambda: datetime.datetime.now(datetime.timezone.utc).isoformat())
+
+    # Phase 5.1 provenance fields
+    phase: str = "phase5_1"
+    sample_id: Optional[str] = None
+    degradation_family: Optional[str] = None
+    severity: Optional[int] = None

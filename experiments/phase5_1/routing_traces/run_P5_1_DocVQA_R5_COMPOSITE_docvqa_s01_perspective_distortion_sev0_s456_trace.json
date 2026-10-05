@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_edb5a1d32800",
+  "run_id": "run_P5_1_DocVQA_R5_COMPOSITE_docvqa_s01_perspective_distortion_sev0_s456",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0-U",
+  "decision_reason": "Composite policy adopted rule proposal: Compression or illumination distortion detected (compression=0.12, illum=1.00, glare=0.00); routing to B0-U multimodal OCR.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.89415025,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:56:47.894136+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "perspective_distortion",
+  "severity": 0,
+  "seed": 456,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 1.0,
+    "u_ocr": 0.8628899999999999,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.8628899999999999,
+    "u_agr": 0.8628899999999999
+  },
+  "fallback_status": null,
+  "latency_ms": 0.14100002590566874,
+  "compute_cost": null,
+  "artifact_hash": "282eeb4c929e072a256ed843956d00848fdbdd3fbd55c0d81b5bf4d0ec1808a1"
+}

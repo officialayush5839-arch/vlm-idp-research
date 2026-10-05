@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_2f8ac9e6fa26",
+  "run_id": "run_P5_1_SROIE_R5_COMPOSITE_sroie_s01_perspective_distortion_sev1_s789",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Composite policy adopted rule proposal: Geometric distortion detected (skew=0.00, perspective=0.26); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7113752976000001,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:00:56.853749+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "perspective_distortion",
+  "severity": 1,
+  "seed": 789,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.48654,
+    "u_ocr": 0.29016198400000004,
+    "u_ret": 1.0,
+    "u_gnd": 0.7005,
+    "u_qual": 0.3932800000000001,
+    "u_agr": 0.29016198400000004
+  },
+  "fallback_status": null,
+  "latency_ms": 0.145800004247576,
+  "compute_cost": null,
+  "artifact_hash": "67f0dc4da02367fcae8fdbfc38f384afa4b1dfb6947dbac8b3004e6ba81485d1"
+}

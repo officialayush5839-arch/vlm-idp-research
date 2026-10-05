@@ -61,22 +61,23 @@ All RQ1-RQ6 frozen for experimental investigation. Status: CONFIRMED.
 - PHASE 2.5: Unlimited-OCR Integration & Scientific Validation (Completed: 2026-10-04, 69/69 tests pass, B0-U validated). Status: CONFIRMED.
 - PHASE 3: Document Quality / Degradation Assessment Module (Completed: 2026-10-05, 106/106 tests pass, E3-VAL-QUALITY validated). Status: CONFIRMED.
 - PHASE 4: Controlled Degradation Benchmark (Completed: 2026-10-05, 126/126 tests pass, 3,600 artifacts generated across 9 families, 5 severities, 5 seeds, E4_BENCHMARK validated). Status: CONFIRMED.
-- PHASE 5: Adaptive Routing (Completed: 2026-10-05, 163/163 tests pass, E5_ROUTING benchmark complete with 4,500 evaluations across 900 conditions, Hypothesis H2 evaluated as NOT_SUPPORTED). Status: CONFIRMED.
+- PHASE 5: Adaptive Routing (Completed: 2026-10-05, 163/163 tests pass, Audited: 2026-10-05). Status: CONFIRMED.
+- PHASE 5.1: Scientific Correction & Revalidation (Completed: 2026-10-05, 178/178 tests pass, 4,500 distinct traces persisted, zero-leakage verified, learned router deployed, Hypothesis H2 evaluated as NOT_SUPPORTED). Status: CONFIRMED.
 
 ## 20. Current Phase
-PHASE 5: Completed. Awaiting authorization to begin Phase 6 (Long-Document Multimodal Retrieval). Status: CONFIRMED.
+PHASE 5.1: Completed. Awaiting authorization to begin Phase 6 (Long-Document Multimodal Retrieval). Status: CONFIRMED.
 
 ## 21. Current Task
-Phase 5 execution, routing policies (R0-R5), post-hoc calibration, zero-leakage code audit, and research reporting complete. Status: PASS.
+Phase 5.1 scientific correction, trace cardinality verification (4,500 traces), static zero-leakage AST audit, learned router deployment, and master research reporting complete. Status: PASS.
 
 ## 22. Next Task
 PHASE 6: Long-Document Multimodal Retrieval. Status: PLANNED.
 
 ## 23. Paper Status
-Section I (Intro) and Section II (Related Work) drafted in `literature/related_work_notes.md`. Ingestion and normalization pipeline methodology documented in `reports/phase1/ingestion_validation.md`. Baseline architectures and fairness specifications documented in `reports/phase2/baseline_registry.md`. Unlimited-OCR baseline justification documented in `reports/phase2_5/ieee_baseline_justification.md`. Document quality and degradation assessment methodology documented in `reports/phase3/PHASE3_REPORT.md`. Controlled degradation benchmark results documented in `reports/phase4/PHASE4_REPORT.md`. Adaptive routing architecture, calibration, and negative empirical results documented in `reports/phase5/PHASE5_REPORT.md` and subsidiary reports. Status: IN_PROGRESS.
+Section I (Intro) and Section II (Related Work) drafted in `literature/related_work_notes.md`. Ingestion and normalization pipeline methodology documented in `reports/phase1/ingestion_validation.md`. Baseline architectures and fairness specifications documented in `reports/phase2/baseline_registry.md`. Unlimited-OCR baseline justification documented in `reports/phase2_5/ieee_baseline_justification.md`. Document quality and degradation assessment methodology documented in `reports/phase3/PHASE3_REPORT.md`. Controlled degradation benchmark results documented in `reports/phase4/PHASE4_REPORT.md`. Phase 5 audit findings documented in `reports/phase5_audit/PHASE5_SCIENTIFIC_AUDIT.md`. Phase 5.1 corrected adaptive routing architecture, calibration, and empirical results documented in `reports/phase5_1/PHASE5_1_REPORT.md` and subsidiary reports. Status: IN_PROGRESS.
 
 ## 24. Reproducibility Status
-Full reproducibility suite implemented in `src/evaluation/reproducibility.py` (seed_everything, env capture, JSON run manifests, zero-leakage split validator). 163 automated unit and integration tests pass in `tests/`. Prompt templates versioned with SHA-256 fingerprints. Run artifacts saved in `experiments/phase2/`, `experiments/phase2_5/`, `experiments/phase3/`, `experiments/phase4/artifacts/`, and `experiments/phase5/artifacts/` (4,500 run artifacts). Status: CONFIRMED.
+Full reproducibility suite implemented in `src/evaluation/reproducibility.py` (seed_everything, env capture, JSON run manifests, zero-leakage split validator). 178 automated unit and integration tests pass in `tests/`. Prompt templates versioned with SHA-256 fingerprints. Run artifacts saved in `experiments/phase2/`, `experiments/phase2_5/`, `experiments/phase3/`, `experiments/phase4/artifacts/`, and `experiments/phase5_1/` (4,500 run artifacts, 4,500 distinct condition traces). Status: CONFIRMED.
 
 ---
 
@@ -87,9 +88,9 @@ Full reproducibility suite implemented in `src/evaluation/reproducibility.py` (s
 - PyTorch: 2.14.1+cpu — CONFIRMED
 - CUDA Runtime (PyTorch): NOT_AVAILABLE (CPU-only PyTorch active in Python 3.14 .venv) — CONFIRMED
 - OS: Windows 11 AMD64 (Windows-11-10.0.26200-SP0) — CONFIRMED
-- Git: Initialized (Commit deacf9a) — CONFIRMED
+- Git: Initialized (Commit a01bed0) — CONFIRMED
 - Virtual Environment: `.venv` created and populated with dependencies — CONFIRMED
-- Unit & Integration Tests: 163 passed in 7.94s — CONFIRMED
+- Unit & Integration Tests: 178 passed in 19.71s — CONFIRMED
 - Baselines Validated: B0 (Paddle/Tess), B1 (OCR+VLM), B2 (Qwen2.5-VL), B0-U (Unlimited-OCR) — CONFIRMED
 - Quality Features Validated: 10 extractors (blur, noise, skew, glare, contrast, resolution, compression, illumination, occlusion, perspective) — CONFIRMED
-- Experiments Validated: Phase 2 smoke (5/5), Phase 2.5 smoke (B0-U 100% match), Phase 3 validation (E3-VAL-QUALITY 9x5 grid, 100% repeatability), Phase 4 benchmark (E4-BENCHMARK 3,600 conditions), Phase 5 benchmark (E5-ROUTING 4,500 evaluations, 100% determinism) — CONFIRMED
+- Experiments Validated: Phase 2 smoke (5/5), Phase 2.5 smoke (B0-U 100% match), Phase 3 validation (E3-VAL-QUALITY 9x5 grid, 100% repeatability), Phase 4 benchmark (E4-BENCHMARK 3,600 conditions), Phase 5 benchmark (E5-ROUTING 4,500 evaluations), Phase 5.1 benchmark (E5_1-ROUTING 4,500 evaluations, 4,500 traces) — CONFIRMED

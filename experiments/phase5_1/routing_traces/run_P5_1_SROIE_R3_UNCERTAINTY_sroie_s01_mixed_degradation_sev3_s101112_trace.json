@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_5703c88d7c77",
+  "run_id": "run_P5_1_SROIE_R3_UNCERTAINTY_sroie_s01_mixed_degradation_sev3_s101112",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B1",
+  "decision_reason": "Moderate pipeline confidence (c=0.65); routing to hybrid OCR+VLM B1.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.6507105,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:01:14.678505+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "mixed_degradation",
+  "severity": 3,
+  "seed": 101112,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.99924,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.67267,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 0.05059997783973813,
+  "compute_cost": null,
+  "artifact_hash": "7b8906dbcb25efab57be3397eb29d7b863cdbe2e8f59c1e8126ed5b59b71842e"
+}

@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_6a54ad227cad",
+  "run_id": "run_P5_1_MMLongBench-Doc_R3_UNCERTAINTY_mmlong_s01_p0_perspective_distortion_sev0_s101112",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0",
+  "decision_reason": "High pipeline confidence (c=0.94 >= tau_accept); routing to efficient OCR B0.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.9366625000000001,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:03:04.544697+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "perspective_distortion",
+  "severity": 0,
+  "seed": 101112,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 1.0,
+    "u_ocr": 0.8592500000000001,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.8592500000000001,
+    "u_agr": 0.8592500000000001
+  },
+  "fallback_status": null,
+  "latency_ms": 0.09510002564638853,
+  "compute_cost": null,
+  "artifact_hash": "f3bff365b9aea4f1aa57d286ae6ec7ecdfced6b56c3c157319ea3a57daafb7b4"
+}

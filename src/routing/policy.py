@@ -46,6 +46,7 @@ class RoutingPolicyManager:
         routing_cfg_path: Optional[str] = None,
         rules_cfg_path: Optional[str] = None,
         uncertainty_cfg_path: Optional[str] = None,
+        learned_router_model_path: Optional[str] = None,
     ) -> RoutingPolicyManager:
         base_dir = Path(__file__).parents[2] / "configs" / "phase5"
         routing_cfg_path = routing_cfg_path or str(base_dir / "routing_config.yaml")
@@ -57,7 +58,17 @@ class RoutingPolicyManager:
 
         rule_router = RuleBasedQualityRouter.from_config(rules_cfg_path)
         uncertainty_adapter = UncertaintyAdapter.from_config(uncertainty_cfg_path)
-        return cls(r_cfg, rule_router, uncertainty_adapter)
+
+        model_path = learned_router_model_path or r_cfg.get("learned_router_model_path")
+        learned_router = None
+        if model_path:
+            p = Path(model_path)
+            if not p.is_absolute():
+                p = Path(__file__).parents[2] / p
+            if p.exists():
+                learned_router = LearnedQualityRouter.from_file(p)
+
+        return cls(r_cfg, rule_router, uncertainty_adapter, learned_router=learned_router)
 
     def dispatch(
         self,

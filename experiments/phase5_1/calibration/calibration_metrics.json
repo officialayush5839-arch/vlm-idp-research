@@ -1,0 +1,20 @@
+{
+  "partition": "val",
+  "n_samples": 100,
+  "calibrator_method": "logistic",
+  "expected_calibration_error": 0.10843827519020896,
+  "brier_score": 0.22054467763288074,
+  "tau_accept": 0.75,
+  "tau_review": 0.4,
+  "weights": [
+    1.5377507346971824,
+    0.9014234201574582,
+    0.45969033129753195,
+    0.7417385781557223,
+    0.24511096447860248,
+    -0.13657093468394735
+  ],
+  "intercept": -2.023473422622867,
+  "status": "VALIDATED",
+  "phase": "phase5_1"
+}

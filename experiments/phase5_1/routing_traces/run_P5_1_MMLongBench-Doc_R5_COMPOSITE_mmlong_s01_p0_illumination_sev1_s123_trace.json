@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_2644defb16e7",
+  "run_id": "run_P5_1_MMLongBench-Doc_R5_COMPOSITE_mmlong_s01_p0_illumination_sev1_s123",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Composite policy adopted rule proposal: Severe blur or noise detected (blur=1.00, noise=0.05); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.819709,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:02:27.435359+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "illumination",
+  "severity": 1,
+  "seed": 123,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.65032,
+    "u_ocr": 0.6643,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.6643,
+    "u_agr": 0.65032
+  },
+  "fallback_status": null,
+  "latency_ms": 0.13070000568404794,
+  "compute_cost": null,
+  "artifact_hash": "86b750f742b213ca092d3fc5ac5db1871178390bc4e7039f9a8e01072700f70d"
+}

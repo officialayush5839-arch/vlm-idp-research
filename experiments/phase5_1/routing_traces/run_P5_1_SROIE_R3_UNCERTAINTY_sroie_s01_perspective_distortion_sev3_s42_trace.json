@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_d8f2b689ba36",
+  "run_id": "run_P5_1_SROIE_R3_UNCERTAINTY_sroie_s01_perspective_distortion_sev3_s42",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "High pipeline uncertainty (c=0.21 < tau_review); routing to native robust VLM B2.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.21441500000000002,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:01:00.042970+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "perspective_distortion",
+  "severity": 3,
+  "seed": 42,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.049880000000000035,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 0.0,
+    "u_qual": 0.34630000000000005,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 0.11789996642619371,
+  "compute_cost": null,
+  "artifact_hash": "bcd8147eb12ec8c8b41dd81c864b55f70fb0b5de651edba25b6e23ac4a6812e3"
+}

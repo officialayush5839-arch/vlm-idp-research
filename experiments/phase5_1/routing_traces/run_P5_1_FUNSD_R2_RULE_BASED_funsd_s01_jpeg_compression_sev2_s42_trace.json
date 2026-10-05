@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_89903d1df35b",
+  "run_id": "run_P5_1_FUNSD_R2_RULE_BASED_funsd_s01_jpeg_compression_sev2_s42",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Severe blur or noise detected (blur=1.00, noise=0.06); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.88,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:58:13.341691+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "jpeg_compression",
+  "severity": 2,
+  "seed": 42,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.75868,
+    "u_ocr": 0.65419,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.65419,
+    "u_agr": 0.65419
+  },
+  "fallback_status": null,
+  "latency_ms": 0.08680002065375447,
+  "compute_cost": null,
+  "artifact_hash": "8ca2becc1a35de841ddc8bc9b6f8e448ef6ba84a24e0eebef4c6d3a3778187d1"
+}

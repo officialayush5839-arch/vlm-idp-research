@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_FUNSD_R4_LEARNED_funsd_s01_resolution_reduction_sev2_s456",
+  "document_id": "funsd_form_042",
+  "dataset": "FUNSD",
+  "partition": "test",
+  "seed": 456,
+  "policy": "R4_LEARNED",
+  "selected_model": "B0-U",
+  "final_answer": "INVOICE #INV-2024-001",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.06000000000000005,
+  "oracle_best_model": "B2",
+  "cost": {
+    "latency_ms": 11.533500044606626,
+    "compute_cost": 0.5,
+    "model_invocations": 1,
+    "fallback_invocations": 0
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T05:58:48.143625+00:00",
+  "phase": "phase5_1",
+  "sample_id": "funsd_s01",
+  "degradation_family": "resolution_reduction",
+  "severity": 2
+}

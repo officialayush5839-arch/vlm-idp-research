@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_fe1c0febca67",
+  "run_id": "run_P5_1_SROIE_R4_LEARNED_sroie_s01_mixed_degradation_sev2_s123",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Learned classifier (logistic) predicted B2 with probability 0.78.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7837647925612062,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:01:10.495602+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "mixed_degradation",
+  "severity": 2,
+  "seed": 123,
+  "policy": "R4_LEARNED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.99328,
+    "u_ocr": 0.24639509699999995,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.69939,
+    "u_agr": 0.24639509699999995
+  },
+  "fallback_status": null,
+  "latency_ms": 0.8127999608404934,
+  "compute_cost": null,
+  "artifact_hash": "979bfd852b8211e400b5612e59afa0a4fd3e9dad5ea953db7d94a4268e908fcc"
+}

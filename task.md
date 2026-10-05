@@ -1,7 +1,7 @@
 # VLM-IDP Active Execution Queue
 
-CURRENT PHASE: PHASE 5 — Adaptive Routing (COMPLETED)
-CURRENT OBJECTIVE: Phase 5 complete. Adaptive quality-aware and uncertainty-aware model routing implemented and benchmarked (4,500 evaluations). 163 tests passing. Awaiting user authorization to begin Phase 6.
+CURRENT PHASE: PHASE 5.1 — Scientific Correction & Revalidation (COMPLETED)
+CURRENT OBJECTIVE: Phase 5.1 complete. All audit defects (P1-01, P1-02, P1-03) resolved. 4,500 distinct condition traces persisted, zero-leakage verified, learned router serialized and deployed. 178 tests passing (100%). Ready for Phase 6 authorization.
 TASK STATUS: COMPLETE
 
 ---
@@ -571,3 +571,88 @@ TASK STATUS: COMPLETE
 - **Acceptance Criteria**: All 12 reports written; anti-fabrication verified; governance synchronized.
 - **Status**: **PASS**
 - **Evidence**: [`reports/phase5/PHASE5_REPORT.md`](reports/phase5/PHASE5_REPORT.md)
+
+---
+
+### Phase 5.1 Tasks (Scientific Correction & Revalidation) — ALL COMPLETED
+
+#### T059: Trace Schema Expansion & Cryptographic Collision Protection
+- **Purpose**: Resolve Audit Defect P1-01 by supporting condition provenance fields and preventing silent trace overwrites.
+- **Dependencies**: Phase 5 Scientific Audit
+- **Input**: Audit findings on trace loss
+- **Expected Output**: Updated `src/routing/schema.py` and `src/routing/decision_trace.py` with hash comparison.
+- **Files Affected**: `src/routing/schema.py`, `src/routing/decision_trace.py`
+- **Acceptance Criteria**: Unique run ID generation; FileExistsError on conflicting overwrite; 100% collision tests pass.
+- **Status**: **PASS**
+- **Evidence**: [`tests/test_phase5_1_trace_collision.py`](tests/test_phase5_1_trace_collision.py), [`reports/phase5_1/trace_cardinality.md`](reports/phase5_1/trace_cardinality.md)
+
+#### T060: Zero-Leakage Observable Uncertainty Assembly
+- **Purpose**: Resolve Audit Defect P1-02 by eliminating condition metadata from inference-time uncertainty vectors.
+- **Dependencies**: T059
+- **Input**: Observable visual quality features from Phase 3
+- **Expected Output**: `assemble_from_quality_features()` in `src/routing/uncertainty.py`
+- **Files Affected**: `src/routing/uncertainty.py`, `src/routing/pipeline.py`
+- **Acceptance Criteria**: Derives purely from visual features; zero access to condition metadata; static AST audit passes.
+- **Status**: **PASS**
+- **Evidence**: [`tests/test_phase5_1_uncertainty_clean.py`](tests/test_phase5_1_uncertainty_clean.py), [`reports/phase5_1/uncertainty_information_boundary.md`](reports/phase5_1/uncertainty_information_boundary.md)
+
+#### T061: Learned Router Model Serialization & Runtime Deployment
+- **Purpose**: Resolve Audit Defect P1-03 by serializing fitted scikit-learn models and deploying them at benchmark runtime.
+- **Dependencies**: T059
+- **Input**: Training on validation partition
+- **Expected Output**: `save()` / `load()` methods in `src/routing/learned_router.py`, `learned_router.joblib` artifact.
+- **Files Affected**: `src/routing/learned_router.py`, `src/routing/policy.py`, `scripts/run_phase5_1_validation.py`
+- **Acceptance Criteria**: Model serialized to disk; loaded during policy dispatch; dynamic non-degenerate prediction distribution.
+- **Status**: **PASS**
+- **Evidence**: [`experiments/phase5_1/models/learned_router.joblib`](experiments/phase5_1/models/learned_router.joblib), [`reports/phase5_1/learned_router_serialization.md`](reports/phase5_1/learned_router_serialization.md)
+
+#### T062: Phase 5.1 Configuration Master & Preservation
+- **Purpose**: Create isolated Phase 5.1 configurations preserving Phase 5 baseline immutability.
+- **Dependencies**: T059-T061
+- **Input**: Phase 5 configurations
+- **Expected Output**: 7 configuration files under `configs/phase5_1/`
+- **Files Affected**: `configs/phase5_1/*.yaml`
+- **Acceptance Criteria**: Candidate models match B0, B1, B2, B0-U; relative cost weights calibrated; tests pass.
+- **Status**: **PASS**
+- **Evidence**: [`tests/test_phase5_1_config_preservation.py`](tests/test_phase5_1_config_preservation.py)
+
+#### T063: Phase 5.1 Test Suite Implementation & Verification
+- **Purpose**: Develop 10 new rigorous test suites verifying trace identity, collision detection, clean uncertainty, serialization, and regression.
+- **Dependencies**: T059-T062
+- **Input**: Test specifications
+- **Expected Output**: 10 new test files under `tests/test_phase5_1_*.py`
+- **Files Affected**: `tests/test_phase5_1_*.py`
+- **Acceptance Criteria**: All 178 tests pass (100% pass rate, 0 failures, 0 regressions).
+- **Status**: **PASS**
+- **Evidence**: Pytest test run output (178 passed in 19.71s)
+
+#### T064: Phase 5.1 Controlled Routing Benchmark Execution
+- **Purpose**: Execute full 900-condition benchmark across 5 policies, generating 4,500 distinct traces and evaluating H2.
+- **Dependencies**: T063
+- **Input**: Benchmark runner and evaluation corpus
+- **Expected Output**: 4,500 trace artifacts, `experiments/phase5_1/summaries/E5_1_ROUTING_summary.json`
+- **Files Affected**: `experiments/phase5_1/`
+- **Acceptance Criteria**: 4,500 unique on-disk traces; B=10,000 paired bootstrap; honest evaluation of H2 (NOT_SUPPORTED).
+- **Status**: **PASS**
+- **Evidence**: [`experiments/phase5_1/summaries/E5_1_ROUTING_summary.json`](experiments/phase5_1/summaries/E5_1_ROUTING_summary.json)
+
+#### T065: Phase 5.1 Ablation Study Execution
+- **Purpose**: Generate comprehensive ablation analysis covering feature groups, fallbacks, and learned routing.
+- **Dependencies**: T064
+- **Input**: Master benchmark summary
+- **Expected Output**: `experiments/phase5_1/ablations/ablation_summary.json`
+- **Files Affected**: `experiments/phase5_1/ablations/ablation_summary.json`
+- **Acceptance Criteria**: Covers A1 through A8; documents 16.6% compute reduction under R4.
+- **Status**: **PASS**
+- **Evidence**: [`experiments/phase5_1/ablations/ablation_summary.json`](experiments/phase5_1/ablations/ablation_summary.json)
+
+#### T066: Master Phase 5.1 Research Documentation
+- **Purpose**: Author all comprehensive Phase 5.1 scientific reports.
+- **Dependencies**: T059-T065
+- **Input**: Benchmark data, ablation outputs, audit logs
+- **Expected Output**: `reports/phase5_1/PHASE5_1_REPORT.md` (34 sections) and 7 companion reports
+- **Files Affected**: `reports/phase5_1/*.md`
+- **Acceptance Criteria**: Complete 34-section report; before/after comparisons; zero result fabrication.
+- **Status**: **PASS**
+- **Evidence**: [`reports/phase5_1/PHASE5_1_REPORT.md`](reports/phase5_1/PHASE5_1_REPORT.md)
+

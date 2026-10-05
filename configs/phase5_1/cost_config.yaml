@@ -1,0 +1,21 @@
+# Routing Engineering Cost Configuration — Phase 5.1
+version: "1.1.0"
+config_id: "phase5_1_cost_config"
+description: "Engineering computational cost model for adaptive routing evaluation"
+
+objective_function:
+  description: "J = performance_loss + lambda_latency * latency_ms + lambda_compute * compute_cost"
+  lambda_latency: 0.001
+  lambda_compute: 1.000
+
+relative_model_compute_weights:
+  B0: 0.10     # Conventional OCR is very lightweight
+  B0-U: 0.50   # Unlimited-OCR intermediate multimodal network
+  B1: 0.80     # OCR + VLM two-stage pipeline
+  B2: 1.00     # Full 7B parameter Vision-Language Model
+
+tracking:
+  measure_latency: true
+  measure_cpu_time: true
+  measure_gpu_time: false    # CUDA NOT_AVAILABLE in active environment
+  measure_gpu_vram: false    # GPU VRAM NOT_AVAILABLE

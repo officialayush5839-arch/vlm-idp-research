@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_71242c66b7fd",
+  "run_id": "run_P5_1_SROIE_R5_COMPOSITE_sroie_s01_resolution_reduction_sev4_s101112",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0-U",
+  "decision_reason": "Composite policy adopted rule proposal: Compression or illumination distortion detected (compression=0.04, illum=1.00, glare=1.00); routing to B0-U multimodal OCR.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.872323,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:00:52.794876+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "resolution_reduction",
+  "severity": 4,
+  "seed": 101112,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 1.0,
+    "u_ocr": 0.76588,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.76588,
+    "u_agr": 0.76588
+  },
+  "fallback_status": null,
+  "latency_ms": 0.08759996853768826,
+  "compute_cost": null,
+  "artifact_hash": "1b386ad658ef63fc9362d785fe9f9acc89932a775494861e5762ff7024113eb3"
+}

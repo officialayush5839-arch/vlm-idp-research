@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_47e9ba4cdb18",
+  "run_id": "run_P5_1_MMLongBench-Doc_R4_LEARNED_mmlong_s01_p0_perspective_distortion_sev4_s789",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Learned classifier (logistic) predicted B2 with probability 0.75.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7541350368097057,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:03:15.394717+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "perspective_distortion",
+  "severity": 4,
+  "seed": 789,
+  "policy": "R4_LEARNED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.05756,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 0.0,
+    "u_qual": 0.45735000000000003,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 1.4549000188708305,
+  "compute_cost": null,
+  "artifact_hash": "e05062a715be72a6ca0231740e7e4338a1e20fa3d751b50d5d681293fd2dd43e"
+}

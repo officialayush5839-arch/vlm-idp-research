@@ -1,0 +1,43 @@
+# Rule Engine Configuration — Phase 5.1 Deterministic Quality Router
+version: "1.1.0"
+config_id: "phase5_1_router_rules"
+description: "Explicit decision thresholds for R2 Rule-Based Quality Router"
+
+thresholds:
+  clean_boundary:
+    max_blur: 0.20
+    max_noise: 0.20
+    max_skew: 0.15
+    max_perspective: 0.15
+    max_occlusion: 0.10
+    max_compression: 0.25
+    target_model: "B0"
+    fallback_clean: "B1"
+
+  geometric_distortion:
+    min_skew: 0.25
+    min_perspective: 0.25
+    target_model: "B2"
+    rationale: "B0 conventional OCR collapses under rotation/perspective; B2 native VLM maintains topological reasoning"
+
+  severe_blur_or_noise:
+    min_blur: 0.40
+    min_noise: 0.40
+    target_model: "B2"
+    rationale: "Heavy token corruption breaks OCR character segmentation"
+
+  compression_and_illumination:
+    min_compression: 0.50
+    min_illumination_attenuation: 0.50
+    min_glare: 0.45
+    target_model: "B0-U"
+    rationale: "Unlimited-OCR end-to-end vision backbone demonstrates superior invariance to DCT blocking and lighting"
+
+  severe_occlusion:
+    min_occlusion: 0.30
+    target_model: "B2"
+    rationale: "Contextual filling in native VLM overcomes localized physical cutoffs"
+
+  default_fallback:
+    target_model: "B2"
+    rationale: "Empirical most robust overall baseline from Phase 4 benchmark"

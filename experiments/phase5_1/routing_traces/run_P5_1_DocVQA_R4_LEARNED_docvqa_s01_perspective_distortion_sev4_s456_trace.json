@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_770a89a21137",
+  "run_id": "run_P5_1_DocVQA_R4_LEARNED_docvqa_s01_perspective_distortion_sev4_s456",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Learned classifier (logistic) predicted B2 with probability 0.75.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7543022112594188,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:56:58.080585+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "perspective_distortion",
+  "severity": 4,
+  "seed": 456,
+  "policy": "R4_LEARNED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.05131999999999998,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 0.0,
+    "u_qual": 0.4568,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 1.478999969549477,
+  "compute_cost": null,
+  "artifact_hash": "964c1a6c473ec1e7218a5f65d481401577649cd8b0b514b3e14fdba0e02313fd"
+}

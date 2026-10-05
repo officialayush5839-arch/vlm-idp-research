@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_9b4b92e38740",
+  "run_id": "run_P5_1_SROIE_R2_RULE_BASED_sroie_s01_gaussian_blur_sev4_s789",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0-U",
+  "decision_reason": "Compression or illumination distortion detected (compression=0.04, illum=1.00, glare=1.00); routing to B0-U multimodal OCR.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.85,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:59:32.532939+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "gaussian_blur",
+  "severity": 4,
+  "seed": 789,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 1.0,
+    "u_ocr": 0.77963,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.77963,
+    "u_agr": 0.77963
+  },
+  "fallback_status": null,
+  "latency_ms": 0.08480000542476773,
+  "compute_cost": null,
+  "artifact_hash": "defa0572c8a5db37cbdee616be2a67309bbd458ecddd12cc0a494ae61db16956"
+}

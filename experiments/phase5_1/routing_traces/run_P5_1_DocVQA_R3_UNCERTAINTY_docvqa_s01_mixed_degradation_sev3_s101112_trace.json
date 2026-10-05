@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_c02d8b8558b7",
+  "run_id": "run_P5_1_DocVQA_R3_UNCERTAINTY_docvqa_s01_mixed_degradation_sev3_s101112",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B1",
+  "decision_reason": "Moderate pipeline confidence (c=0.71); routing to hybrid OCR+VLM B1.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7145457736999999,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:57:11.102857+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "mixed_degradation",
+  "severity": 3,
+  "seed": 101112,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.99944,
+    "u_ocr": 0.19916757899999998,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.69957,
+    "u_agr": 0.19916757899999998
+  },
+  "fallback_status": null,
+  "latency_ms": 0.12169999536126852,
+  "compute_cost": null,
+  "artifact_hash": "be030b79ec6a959f7d195354e17878f216d87635932cf5d2a4cbc609fc599f53"
+}

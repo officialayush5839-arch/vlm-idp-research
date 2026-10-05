@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_c9827668f96e",
+  "run_id": "run_P5_1_DocVQA_R2_RULE_BASED_docvqa_s01_gaussian_noise_sev4_s456",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Geometric distortion detected (skew=1.00, perspective=1.00); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.9,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:55:35.042282+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "gaussian_noise",
+  "severity": 4,
+  "seed": 456,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.93996,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.43329000000000006,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 0.06319995736703277,
+  "compute_cost": null,
+  "artifact_hash": "4713eb19ae0566087eb34acba404d3bbfb1ce03e8e0c83e4556b9d68c9e223f1"
+}

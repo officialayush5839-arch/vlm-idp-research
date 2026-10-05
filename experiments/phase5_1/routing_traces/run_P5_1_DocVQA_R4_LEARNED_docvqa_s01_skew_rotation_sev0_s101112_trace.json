@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_06df9135fb5a",
+  "run_id": "run_P5_1_DocVQA_R4_LEARNED_docvqa_s01_skew_rotation_sev0_s101112",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Learned classifier (logistic) predicted B2 with probability 0.99.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.9918772899141923,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:55:45.706007+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "skew_rotation",
+  "severity": 0,
+  "seed": 101112,
+  "policy": "R4_LEARNED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.93916,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.43343999999999994,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 1.4191000373102725,
+  "compute_cost": null,
+  "artifact_hash": "800829a050476cffe64c07ba7fa5cdf5ba14176629bbe2cb325d435df396a327"
+}

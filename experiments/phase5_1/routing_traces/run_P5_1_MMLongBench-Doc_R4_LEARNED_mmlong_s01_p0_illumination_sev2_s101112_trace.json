@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_4db0b8a3a465",
+  "run_id": "run_P5_1_MMLongBench-Doc_R4_LEARNED_mmlong_s01_p0_illumination_sev2_s101112",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B1",
+  "decision_reason": "Learned classifier (logistic) predicted B1 with probability 0.42.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.4219654275765859,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:02:31.328087+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "illumination",
+  "severity": 2,
+  "seed": 101112,
+  "policy": "R4_LEARNED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.68672,
+    "u_ocr": 0.72256,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.72256,
+    "u_agr": 0.68672
+  },
+  "fallback_status": null,
+  "latency_ms": 0.9556000004522502,
+  "compute_cost": null,
+  "artifact_hash": "633a5f7d310303447ae9ab638674f36cb2b9fd292c87585565a0253a6801b79a"
+}

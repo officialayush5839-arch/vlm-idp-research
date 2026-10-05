@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_efa0fad670bf",
+  "run_id": "run_P5_1_DocVQA_R5_COMPOSITE_docvqa_s01_gaussian_noise_sev2_s42",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Composite policy adopted rule proposal: Severe blur or noise detected (blur=1.00, noise=0.32); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.86788975,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:55:23.457887+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "gaussian_noise",
+  "severity": 2,
+  "seed": 42,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.98164,
+    "u_ocr": 0.68971,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.68971,
+    "u_agr": 0.68971
+  },
+  "fallback_status": null,
+  "latency_ms": 0.1002000062726438,
+  "compute_cost": null,
+  "artifact_hash": "830fb6d92e5efb6bf2b3e6ea9aea31ffc7cbd0b7b34e89d2dea6e7c7040a88b3"
+}

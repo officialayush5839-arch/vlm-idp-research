@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_3d484f0aceb9",
+  "run_id": "run_P5_1_DocVQA_R5_COMPOSITE_docvqa_s01_perspective_distortion_sev2_s456",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Composite policy adopted rule proposal: Geometric distortion detected (skew=0.00, perspective=1.00); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.572273,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:56:53.037738+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "perspective_distortion",
+  "severity": 2,
+  "seed": 456,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.09022000000000002,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 0.033499999999999974,
+    "u_qual": 0.44644000000000006,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 0.13450003461912274,
+  "compute_cost": null,
+  "artifact_hash": "856ee369e9084965ebacbc2dff02c90d209860c66eec80e465279f66ae05e010"
+}

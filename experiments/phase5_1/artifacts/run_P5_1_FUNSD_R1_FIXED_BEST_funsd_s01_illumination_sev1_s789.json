@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_FUNSD_R1_FIXED_BEST_funsd_s01_illumination_sev1_s789",
+  "document_id": "funsd_form_042",
+  "dataset": "FUNSD",
+  "partition": "test",
+  "seed": 789,
+  "policy": "R1_FIXED_BEST",
+  "selected_model": "B2",
+  "final_answer": "You are performing document understandin...",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.040000000000000036,
+  "oracle_best_model": "B0-U",
+  "cost": {
+    "latency_ms": 11.235699988901615,
+    "compute_cost": 1.0,
+    "model_invocations": 1,
+    "fallback_invocations": 0
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T05:58:26.009575+00:00",
+  "phase": "phase5_1",
+  "sample_id": "funsd_s01",
+  "degradation_family": "illumination",
+  "severity": 1
+}

@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_7f3e9905ebc7",
+  "run_id": "run_P5_1_SROIE_R4_LEARNED_sroie_s01_perspective_distortion_sev4_s456",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Learned classifier (logistic) predicted B2 with probability 0.74.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7377193247232876,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:01:03.474465+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "perspective_distortion",
+  "severity": 4,
+  "seed": 456,
+  "policy": "R4_LEARNED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.05068,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 0.0,
+    "u_qual": 0.3551599999999999,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 1.3911999994888902,
+  "compute_cost": null,
+  "artifact_hash": "2e9023f68a455463c4c8a2e885964ee5684a569f6ed1a4ce38870aabc771eba6"
+}

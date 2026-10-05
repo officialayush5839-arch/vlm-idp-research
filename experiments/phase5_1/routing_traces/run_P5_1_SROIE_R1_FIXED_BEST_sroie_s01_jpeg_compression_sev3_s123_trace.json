@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_f335544e22d5",
+  "run_id": "run_P5_1_SROIE_R1_FIXED_BEST_sroie_s01_jpeg_compression_sev3_s123",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Fixed single-best baseline policy always routing to B2.",
+  "policy_version": "1.1.0",
+  "router_confidence": 1.0,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:00:15.951998+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "jpeg_compression",
+  "severity": 3,
+  "seed": 123,
+  "policy": "R1_FIXED_BEST",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.7668,
+    "u_ocr": 0.52545,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.52545,
+    "u_agr": 0.52545
+  },
+  "fallback_status": null,
+  "latency_ms": 0.04910002462565899,
+  "compute_cost": null,
+  "artifact_hash": "46048ca7d66331daf69237c0253c95281421363e95f6b8a954ac2489a3e76784"
+}

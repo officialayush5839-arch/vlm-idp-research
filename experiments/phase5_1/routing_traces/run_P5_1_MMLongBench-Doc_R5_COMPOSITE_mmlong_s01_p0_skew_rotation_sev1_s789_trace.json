@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_c613e8840810",
+  "run_id": "run_P5_1_MMLongBench-Doc_R5_COMPOSITE_mmlong_s01_p0_skew_rotation_sev1_s789",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Composite policy adopted rule proposal: Severe blur or noise detected (blur=1.00, noise=0.04); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.795072835,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:02:02.129776+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "skew_rotation",
+  "severity": 1,
+  "seed": 789,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.6726399999999999,
+    "u_ocr": 0.49711890000000003,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.619,
+    "u_agr": 0.49711890000000003
+  },
+  "fallback_status": null,
+  "latency_ms": 0.06420002318918705,
+  "compute_cost": null,
+  "artifact_hash": "3674546b7086af137ac188569cffb191c97b1d9ce179660d14d9e490dea9f95c"
+}

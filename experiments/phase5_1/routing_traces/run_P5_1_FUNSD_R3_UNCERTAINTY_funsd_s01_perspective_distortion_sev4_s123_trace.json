@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_909fb62cda71",
+  "run_id": "run_P5_1_FUNSD_R3_UNCERTAINTY_funsd_s01_perspective_distortion_sev4_s123",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "High pipeline uncertainty (c=0.23 < tau_review); routing to native robust VLM B2.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.23141,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:59:04.177043+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "perspective_distortion",
+  "severity": 4,
+  "seed": 123,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.051080000000000014,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 0.0,
+    "u_qual": 0.4576,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 0.09560002945363522,
+  "compute_cost": null,
+  "artifact_hash": "7755dccc0f8ebd8b8187511118eb0675f6a91179022ce7fe8225cc291f5cd607"
+}

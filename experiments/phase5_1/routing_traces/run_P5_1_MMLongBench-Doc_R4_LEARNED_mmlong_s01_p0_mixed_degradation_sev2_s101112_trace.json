@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_c1b3f432ddac",
+  "run_id": "run_P5_1_MMLongBench-Doc_R4_LEARNED_mmlong_s01_p0_mixed_degradation_sev2_s101112",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Learned classifier (logistic) predicted B2 with probability 0.75.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7527227291022701,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:03:25.084573+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "mixed_degradation",
+  "severity": 2,
+  "seed": 101112,
+  "policy": "R4_LEARNED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.99352,
+    "u_ocr": 0.28157372799999997,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.70288,
+    "u_agr": 0.28157372799999997
+  },
+  "fallback_status": null,
+  "latency_ms": 0.9136999724432826,
+  "compute_cost": null,
+  "artifact_hash": "5c7d431b9409b3ccf5df78c06973145392ebdf9d32bfccf14740aa16a10a360a"
+}

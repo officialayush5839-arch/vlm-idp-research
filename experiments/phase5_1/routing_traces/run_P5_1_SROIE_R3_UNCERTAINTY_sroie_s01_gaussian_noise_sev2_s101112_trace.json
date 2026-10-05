@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_73907e7808a0",
+  "run_id": "run_P5_1_SROIE_R3_UNCERTAINTY_sroie_s01_gaussian_noise_sev2_s101112",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0",
+  "decision_reason": "High pipeline confidence (c=0.81 >= tau_accept); routing to efficient OCR B0.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.8061421808,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:59:40.677937+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "gaussian_noise",
+  "severity": 2,
+  "seed": 101112,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.97328,
+    "u_ocr": 0.545828936,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.66049,
+    "u_agr": 0.545828936
+  },
+  "fallback_status": null,
+  "latency_ms": 0.12529996456578374,
+  "compute_cost": null,
+  "artifact_hash": "94b2a862ea839bb40de20a5e83c1c21c5d3bf763c489dc75a9c04fbdda3d7e79"
+}

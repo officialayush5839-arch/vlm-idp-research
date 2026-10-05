@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_SROIE_R4_LEARNED_sroie_s01_resolution_reduction_sev2_s101112",
+  "document_id": "sroie_receipt_882",
+  "dataset": "SROIE",
+  "partition": "test",
+  "seed": 101112,
+  "policy": "R4_LEARNED",
+  "selected_model": "B0-U",
+  "final_answer": "$1,450.00",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.06000000000000005,
+  "oracle_best_model": "B2",
+  "cost": {
+    "latency_ms": 11.83080003829673,
+    "compute_cost": 0.5,
+    "model_invocations": 1,
+    "fallback_invocations": 0
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T06:00:48.515384+00:00",
+  "phase": "phase5_1",
+  "sample_id": "sroie_s01",
+  "degradation_family": "resolution_reduction",
+  "severity": 2
+}

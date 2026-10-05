@@ -1,0 +1,51 @@
+# Routing Orchestration Configuration — Phase 5.1
+version: "1.1.0"
+config_id: "phase5_1_routing_master"
+description: "Corrected adaptive quality-aware and uncertainty-aware model routing configuration"
+
+candidate_models:
+  - id: "B0"
+    name: "PaddleOCR + Tesseract Fallback"
+    type: "conventional_ocr"
+    strengths: ["clean_documents", "structured_forms", "low_latency"]
+    vulnerabilities: ["skew", "blur", "perspective_distortion"]
+  - id: "B1"
+    name: "OCR + Qwen2.5-VL-7B"
+    type: "hybrid_ocr_vlm"
+    strengths: ["mild_degradation", "rich_text", "tabular_layout"]
+    vulnerabilities: ["error_propagation_from_ocr", "severe_noise"]
+  - id: "B2"
+    name: "Qwen2.5-VL-7B Vision-Only"
+    type: "native_vlm"
+    strengths: ["geometric_distortion", "blur", "natural_scene_text"]
+    vulnerabilities: ["dense_small_text_downsampling", "high_occlusion"]
+  - id: "B0-U"
+    name: "Unlimited-OCR Multimodal Baseline"
+    type: "multimodal_ocr"
+    strengths: ["multimodal_layout", "compression_artifacts", "lighting_shifts"]
+    vulnerabilities: ["complex_multipage_reasoning"]
+
+active_policies:
+  - "R0_ORACLE"
+  - "R1_FIXED_BEST"
+  - "R2_RULE_BASED"
+  - "R3_UNCERTAINTY"
+  - "R4_LEARNED"
+  - "R5_COMPOSITE"
+
+default_fixed_baseline: "B2"
+
+learned_router_model_path: "experiments/phase5_1/models/learned_router.joblib"
+calibrator_model_path: "experiments/phase5_1/calibration/calibration_metrics.json"
+
+runtime:
+  seed: 42
+  deterministic: true
+  enable_structural_fallback: true
+  max_fallback_attempts: 1
+  fallback_target: "B2"
+  device: "cpu"
+  phase: "phase5_1"
+  artifacts_dir: "experiments/phase5_1/artifacts"
+  traces_dir: "experiments/phase5_1/routing_traces"
+  summaries_dir: "experiments/phase5_1/summaries"

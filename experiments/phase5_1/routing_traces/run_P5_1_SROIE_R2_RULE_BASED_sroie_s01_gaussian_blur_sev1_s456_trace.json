@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_5692a68af0ad",
+  "run_id": "run_P5_1_SROIE_R2_RULE_BASED_sroie_s01_gaussian_blur_sev1_s456",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Severe blur or noise detected (blur=1.00, noise=0.00); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.88,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:59:25.650084+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "gaussian_blur",
+  "severity": 1,
+  "seed": 456,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.77664,
+    "u_ocr": 0.5791999999999999,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.5791999999999999,
+    "u_agr": 0.5791999999999999
+  },
+  "fallback_status": null,
+  "latency_ms": 0.1066999975591898,
+  "compute_cost": null,
+  "artifact_hash": "a7218b0809b0e1881ae2eda1b2c997dfbc54f5f3dbf09bdaa04d21269ba64533"
+}

@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_9b7523a052bf",
+  "run_id": "run_P5_1_FUNSD_R2_RULE_BASED_funsd_s01_skew_rotation_sev2_s123",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Geometric distortion detected (skew=0.59, perspective=0.00); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.9,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:58:01.825419+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "skew_rotation",
+  "severity": 2,
+  "seed": 123,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.66824,
+    "u_ocr": 0.24722387500000004,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.59875,
+    "u_agr": 0.24722387500000004
+  },
+  "fallback_status": null,
+  "latency_ms": 0.09469996439293027,
+  "compute_cost": null,
+  "artifact_hash": "3b0042329bd5cfd267f140215eee4b8f93785d2b4976f8f9d91c462a2e188f23"
+}

@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_7bd4563ae3c7",
+  "run_id": "run_P5_1_MMLongBench-Doc_R2_RULE_BASED_mmlong_s01_p0_gaussian_noise_sev0_s123",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0-U",
+  "decision_reason": "Compression or illumination distortion detected (compression=0.02, illum=1.00, glare=0.00); routing to B0-U multimodal OCR.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.85,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:01:31.764753+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "gaussian_noise",
+  "severity": 0,
+  "seed": 123,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 1.0,
+    "u_ocr": 0.8808,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.8808,
+    "u_agr": 0.8808
+  },
+  "fallback_status": null,
+  "latency_ms": 0.07730000652372837,
+  "compute_cost": null,
+  "artifact_hash": "f9a68b5d7f3af519f636b1a888c9872896de8c5c813c716b318a87efcfe8318a"
+}

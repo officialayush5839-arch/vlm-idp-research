@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_69f95200f6e6",
+  "run_id": "run_P5_1_DocVQA_R3_UNCERTAINTY_docvqa_s01_skew_rotation_sev2_s101112",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B1",
+  "decision_reason": "Moderate pipeline confidence (c=0.63); routing to hybrid OCR+VLM B1.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.6337343134,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:55:53.105528+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "skew_rotation",
+  "severity": 2,
+  "seed": 101112,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.67456,
+    "u_ocr": 0.24890437800000004,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.60282,
+    "u_agr": 0.24890437800000004
+  },
+  "fallback_status": null,
+  "latency_ms": 0.10830000974237919,
+  "compute_cost": null,
+  "artifact_hash": "88c458b65367d3f1cf126568ef2f371dc0bb7fa9ed8d4f4aaced5c50c4fc4372"
+}

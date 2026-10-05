@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_4a5d603c28ac",
+  "run_id": "run_P5_1_MMLongBench-Doc_R3_UNCERTAINTY_mmlong_s01_p0_skew_rotation_sev3_s789",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B1",
+  "decision_reason": "Moderate pipeline confidence (c=0.55); routing to hybrid OCR+VLM B1.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.5505055278000001,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:02:06.852427+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "skew_rotation",
+  "severity": 3,
+  "seed": 789,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.67056,
+    "u_ocr": 0.002083426000000014,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.54827,
+    "u_agr": 0.002083426000000014
+  },
+  "fallback_status": null,
+  "latency_ms": 0.1210999907925725,
+  "compute_cost": null,
+  "artifact_hash": "490a8565f940f4994e1390945a46ef8f0a960dfca8938165b9cc992a17bb7404"
+}

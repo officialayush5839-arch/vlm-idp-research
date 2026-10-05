@@ -18,12 +18,15 @@ FORBIDDEN_IDENTIFIERS: List[str] = [
     "evaluator_score",
     "condition_severity",
     "synthetic_severity",
+    "true_severity",
+    "true_family",
 ]
 
 
 class ZeroLeakageRouterAuditor:
     """
     Performs static AST code verification on routing modules.
+    Guarantees no access to ground truth, evaluation scores, or synthetic degradation labels.
     """
 
     def __init__(self, forbidden_terms: Optional[List[str]] = None):
@@ -58,6 +61,14 @@ class ZeroLeakageRouterAuditor:
                 if node.id in self.forbidden_terms:
                     violations.append(
                         f"File {path.name}:{node.lineno} - Code references forbidden identifier '{node.id}'"
+                    )
+            # Check attribute access
+            elif isinstance(node, ast.Attribute):
+                attr_name = node.attr
+                full_attr = f"{node.value.id}.{attr_name}" if isinstance(node.value, ast.Name) else attr_name
+                if attr_name in self.forbidden_terms or full_attr in self.forbidden_terms:
+                    violations.append(
+                        f"File {path.name}:{node.lineno} - Code references forbidden attribute '{full_attr}'"
                     )
 
         status = "FAIL" if violations else "PASS"

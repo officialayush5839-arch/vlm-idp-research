@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_153d4665591d",
+  "run_id": "run_P5_1_SROIE_R3_UNCERTAINTY_sroie_s01_illumination_sev0_s456",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0",
+  "decision_reason": "High pipeline confidence (c=0.76 >= tau_accept); routing to efficient OCR B0.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7622835,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:00:21.258006+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "illumination",
+  "severity": 0,
+  "seed": 456,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.75144,
+    "u_ocr": 0.60983,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.60983,
+    "u_agr": 0.60983
+  },
+  "fallback_status": null,
+  "latency_ms": 0.057800032664090395,
+  "compute_cost": null,
+  "artifact_hash": "9077f584d80ff66d51929c855de81f6dd9e860441e5cc348f395b829fb80b0ca"
+}

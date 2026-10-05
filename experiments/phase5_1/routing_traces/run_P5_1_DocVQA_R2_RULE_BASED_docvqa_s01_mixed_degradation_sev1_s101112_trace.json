@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_8dc729deeec2",
+  "run_id": "run_P5_1_DocVQA_R2_RULE_BASED_docvqa_s01_mixed_degradation_sev1_s101112",
+  "document_id": "docvqa_inv_901",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Severe blur or noise detected (blur=1.00, noise=0.02); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.88,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:57:04.436025+00:00",
+  "phase": "phase5_1",
+  "dataset": "DocVQA",
+  "sample_id": "docvqa_s01",
+  "degradation_family": "mixed_degradation",
+  "severity": 1,
+  "seed": 101112,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.8134399999999999,
+    "u_ocr": 0.543944875,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.69425,
+    "u_agr": 0.543944875
+  },
+  "fallback_status": null,
+  "latency_ms": 0.05070003680884838,
+  "compute_cost": null,
+  "artifact_hash": "baea6007e740364617e68af149b2c96f783d155a1e6cf78cc6d6a658dedeadae"
+}

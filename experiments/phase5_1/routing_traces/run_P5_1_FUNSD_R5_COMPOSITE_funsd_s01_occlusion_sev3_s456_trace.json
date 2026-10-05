@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_29359af8a944",
+  "run_id": "run_P5_1_FUNSD_R5_COMPOSITE_funsd_s01_occlusion_sev3_s456",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Composite policy adopted rule proposal: Severe blur or noise detected (blur=1.00, noise=0.05); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.591888,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:58:40.526023+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "occlusion",
+  "severity": 3,
+  "seed": 456,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.03001999999999999,
+    "u_ocr": 0.47091000000000005,
+    "u_ret": 1.0,
+    "u_gnd": 0.0032999999999999696,
+    "u_qual": 0.47091000000000005,
+    "u_agr": 0.03001999999999999
+  },
+  "fallback_status": null,
+  "latency_ms": 0.07870001718401909,
+  "compute_cost": null,
+  "artifact_hash": "db93ef8323ce066864501d2b575d09918535d0fcc73fd56b4a7e8e5d39a4b46c"
+}

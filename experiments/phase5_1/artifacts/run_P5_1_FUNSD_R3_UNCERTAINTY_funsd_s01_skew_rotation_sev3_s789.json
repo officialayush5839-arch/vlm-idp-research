@@ -1,0 +1,30 @@
+{
+  "run_id": "run_P5_1_FUNSD_R3_UNCERTAINTY_funsd_s01_skew_rotation_sev3_s789",
+  "document_id": "funsd_form_042",
+  "dataset": "FUNSD",
+  "partition": "test",
+  "seed": 789,
+  "policy": "R3_UNCERTAINTY",
+  "selected_model": "B1",
+  "final_answer": "You are performing document understandin...",
+  "metrics": {
+    "exact_match": 0.0,
+    "token_f1": 0.0,
+    "anls": 0.0
+  },
+  "regret": 0.36,
+  "oracle_best_model": "B2",
+  "cost": {
+    "latency_ms": 11.216600018087775,
+    "compute_cost": 0.8,
+    "model_invocations": 1,
+    "fallback_invocations": 0
+  },
+  "status": "SUCCESS",
+  "error_message": null,
+  "timestamp_utc": "2026-10-05T05:58:05.092081+00:00",
+  "phase": "phase5_1",
+  "sample_id": "funsd_s01",
+  "degradation_family": "skew_rotation",
+  "severity": 3
+}

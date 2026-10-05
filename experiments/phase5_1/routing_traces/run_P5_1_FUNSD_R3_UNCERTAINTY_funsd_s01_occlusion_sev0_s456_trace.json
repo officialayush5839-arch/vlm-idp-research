@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_e0bac2b1abb4",
+  "run_id": "run_P5_1_FUNSD_R3_UNCERTAINTY_funsd_s01_occlusion_sev0_s456",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B1",
+  "decision_reason": "Moderate pipeline confidence (c=0.54); routing to hybrid OCR+VLM B1.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.5415749999999999,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:58:34.488257+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "occlusion",
+  "severity": 0,
+  "seed": 456,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.3996,
+    "u_ocr": 0.77245,
+    "u_ret": 1.0,
+    "u_gnd": 0.0,
+    "u_qual": 0.77245,
+    "u_agr": 0.3996
+  },
+  "fallback_status": null,
+  "latency_ms": 0.0724999699741602,
+  "compute_cost": null,
+  "artifact_hash": "f5bd3db7bb840f5bff13331d3681a6e75d3316aa3110954f6dd686ae5f6a6025"
+}

@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_34bb4c65fd2e",
+  "run_id": "run_P5_1_FUNSD_R5_COMPOSITE_funsd_s01_perspective_distortion_sev1_s123",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Composite policy adopted rule proposal: Geometric distortion detected (skew=0.00, perspective=0.37); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7355519589999999,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:58:56.386341+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "perspective_distortion",
+  "severity": 1,
+  "seed": 123,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.49237999999999993,
+    "u_ocr": 0.35921805999999995,
+    "u_ret": 1.0,
+    "u_gnd": 0.7017,
+    "u_qual": 0.5665899999999999,
+    "u_agr": 0.35921805999999995
+  },
+  "fallback_status": null,
+  "latency_ms": 0.06310001481324434,
+  "compute_cost": null,
+  "artifact_hash": "6261435579ae0f47d39a2386d5f3565ede95e17b6a24346b53422c260c9ad6dd"
+}

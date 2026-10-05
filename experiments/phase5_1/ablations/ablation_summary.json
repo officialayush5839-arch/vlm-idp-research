@@ -1,0 +1,93 @@
+{
+  "benchmark_id": "E5_1_ABLATIONS",
+  "phase": "phase5_1",
+  "A1_no_quality_features": {
+    "name": "No Quality Features (Fixed Baseline B2)",
+    "mean_score": 0.7777777777777778,
+    "relative_compute_cost": 1.0,
+    "regret": 0.017777777777777774,
+    "description": "Ablates quality module entirely; executes monolithic 7B VLM unconditionally"
+  },
+  "A2_quality_only": {
+    "name": "Quality Features Only (R2 Rule-Based)",
+    "mean_score": 0.7671111111111112,
+    "relative_compute_cost": 0.9222222222222223,
+    "regret": 0.028444444444444446,
+    "description": "Routes using only 10-dimensional visual quality feature vector"
+  },
+  "A3_uncertainty_only": {
+    "name": "Uncertainty Only (R3 Uncertainty-Directed)",
+    "mean_score": 0.635488888888889,
+    "relative_compute_cost": 0.9567777777777777,
+    "regret": 0.16006666666666666,
+    "description": "Routes using pipeline confidence without visual degradation features"
+  },
+  "A4_learned_router": {
+    "name": "Learned Quality Router (R4 Learned)",
+    "mean_score": 0.7088333333333334,
+    "relative_compute_cost": 0.8344444444444444,
+    "regret": 0.08672222222222223,
+    "description": "Supervised logistic router trained strictly on validation split quality vectors"
+  },
+  "A5_quality_plus_uncertainty": {
+    "name": "Quality + Uncertainty Joint (R5 Composite)",
+    "mean_score": 0.7671111111111112,
+    "relative_compute_cost": 0.9222222222222223,
+    "regret": 0.028444444444444446,
+    "description": "Joint routing combining visual quality rules with low-confidence escalation"
+  },
+  "A6_without_fallback": {
+    "name": "Without Structural Fallback",
+    "mean_score": 0.7671111111111112,
+    "fallback_rate": 0.0,
+    "description": "Disables secondary fallback invocation upon structural malformation"
+  },
+  "A7_with_fallback": {
+    "name": "With Structural Fallback",
+    "mean_score": 0.7671111111111112,
+    "fallback_rate": 0.0,
+    "description": "Enables automatic invocation of B2 upon candidate output malformation"
+  },
+  "A8_feature_groups": {
+    "group_visual_sharpness": {
+      "features": [
+        "blur",
+        "resolution"
+      ],
+      "associated_degradation_drop": -0.65,
+      "importance": "High for character edge resolution"
+    },
+    "group_geometric": {
+      "features": [
+        "skew",
+        "perspective"
+      ],
+      "associated_degradation_drop": -0.74,
+      "importance": "Critical for OCR character bounding alignment"
+    },
+    "group_photometric": {
+      "features": [
+        "illumination",
+        "contrast",
+        "glare"
+      ],
+      "associated_degradation_drop": -0.52,
+      "importance": "Moderate; addressed by multi-scale multimodal backbone"
+    },
+    "group_signal_compression": {
+      "features": [
+        "noise",
+        "compression"
+      ],
+      "associated_degradation_drop": -0.64,
+      "importance": "High; degrades token log-likelihood"
+    },
+    "group_occlusion": {
+      "features": [
+        "occlusion"
+      ],
+      "associated_degradation_drop": -0.68,
+      "importance": "High; destroys physical key-value token presence"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_fde3dd271267",
+  "run_id": "run_P5_1_FUNSD_R5_COMPOSITE_funsd_s01_jpeg_compression_sev1_s101112",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Composite policy adopted rule proposal: Severe blur or noise detected (blur=1.00, noise=0.06); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.8158745000000001,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:58:13.111645+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "jpeg_compression",
+  "severity": 1,
+  "seed": 101112,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.66972,
+    "u_ocr": 0.63182,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.63182,
+    "u_agr": 0.63182
+  },
+  "fallback_status": null,
+  "latency_ms": 0.10170001769438386,
+  "compute_cost": null,
+  "artifact_hash": "b71e88192d9a7ef72f7a525008fd437dfe0fee18f30dd2ae9e72dbd9bb5c2dee"
+}

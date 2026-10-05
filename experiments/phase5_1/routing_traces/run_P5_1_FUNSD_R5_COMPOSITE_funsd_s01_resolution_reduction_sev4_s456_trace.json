@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_c0c2b4ea409d",
+  "run_id": "run_P5_1_FUNSD_R5_COMPOSITE_funsd_s01_resolution_reduction_sev4_s456",
+  "document_id": "funsd_form_042",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0-U",
+  "decision_reason": "Composite policy adopted rule proposal: Compression or illumination distortion detected (compression=0.00, illum=1.00, glare=0.00); routing to B0-U multimodal OCR.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.89593675,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:58:51.972199+00:00",
+  "phase": "phase5_1",
+  "dataset": "FUNSD",
+  "sample_id": "funsd_s01",
+  "degradation_family": "resolution_reduction",
+  "severity": 4,
+  "seed": 456,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 1.0,
+    "u_ocr": 0.87083,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.87083,
+    "u_agr": 0.87083
+  },
+  "fallback_status": null,
+  "latency_ms": 0.08129997877404094,
+  "compute_cost": null,
+  "artifact_hash": "204e0fae3461b28b3e8f74e82d5307cc340823fea6269f70c589ac7ca843a310"
+}

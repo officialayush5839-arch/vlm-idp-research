@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_c15ebb21100e",
+  "run_id": "run_P5_1_SROIE_R5_COMPOSITE_sroie_s01_gaussian_noise_sev0_s789",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0-U",
+  "decision_reason": "Composite policy adopted rule proposal: Compression or illumination distortion detected (compression=0.04, illum=1.00, glare=1.00); routing to B0-U multimodal OCR.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.8754167500000001,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T05:59:34.796478+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "gaussian_noise",
+  "severity": 0,
+  "seed": 789,
+  "policy": "R5_COMPOSITE",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 1.0,
+    "u_ocr": 0.77963,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.77963,
+    "u_agr": 0.77963
+  },
+  "fallback_status": null,
+  "latency_ms": 0.06420002318918705,
+  "compute_cost": null,
+  "artifact_hash": "570a72a08cf38302e4cc689b1271b50b1ff389671614a7f7913f7d32d7c473eb"
+}

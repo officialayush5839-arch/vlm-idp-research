@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_97f648a8614a",
+  "run_id": "run_P5_1_MMLongBench-Doc_R3_UNCERTAINTY_mmlong_s01_p0_mixed_degradation_sev1_s123",
+  "document_id": "mmlong_doc_101",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B0",
+  "decision_reason": "High pipeline confidence (c=0.77 >= tau_accept); routing to efficient OCR B0.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.7745184578000001,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:03:19.817628+00:00",
+  "phase": "phase5_1",
+  "dataset": "MMLongBench-Doc",
+  "sample_id": "mmlong_s01_p0",
+  "degradation_family": "mixed_degradation",
+  "severity": 1,
+  "seed": 123,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.8042,
+    "u_ocr": 0.566351526,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.69042,
+    "u_agr": 0.566351526
+  },
+  "fallback_status": null,
+  "latency_ms": 0.06410002242773771,
+  "compute_cost": null,
+  "artifact_hash": "8e1d9b536718a616e95df9cf35b4d1bd56b087a626745c0ad3276d59833da5a3"
+}

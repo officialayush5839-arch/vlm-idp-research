@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_8cce2235512a",
+  "run_id": "run_P5_1_SROIE_R2_RULE_BASED_sroie_s01_jpeg_compression_sev4_s42",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B2",
+  "decision_reason": "Severe blur or noise detected (blur=1.00, noise=0.04); routing to B2 native VLM.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.88,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:00:18.005159+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "jpeg_compression",
+  "severity": 4,
+  "seed": 42,
+  "policy": "R2_RULE_BASED",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.75144,
+    "u_ocr": 0.60983,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.60983,
+    "u_agr": 0.60983
+  },
+  "fallback_status": null,
+  "latency_ms": 0.1094000181183219,
+  "compute_cost": null,
+  "artifact_hash": "fd16ed05f366d94c64df9b08fa2f651e243473fc3d6845aaa0a4d3512e1d2447"
+}

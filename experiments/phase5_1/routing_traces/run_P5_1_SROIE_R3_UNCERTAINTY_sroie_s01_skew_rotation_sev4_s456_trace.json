@@ -1,0 +1,40 @@
+{
+  "trace_id": "trace_f02aa6235c99",
+  "run_id": "run_P5_1_SROIE_R3_UNCERTAINTY_sroie_s01_skew_rotation_sev4_s456",
+  "document_id": "sroie_receipt_882",
+  "candidate_models": [
+    "B0",
+    "B1",
+    "B2",
+    "B0-U"
+  ],
+  "selected_model": "B1",
+  "decision_reason": "Moderate pipeline confidence (c=0.54); routing to hybrid OCR+VLM B1.",
+  "policy_version": "1.1.0",
+  "router_confidence": 0.5356175,
+  "fallback_triggered": false,
+  "timestamp_utc": "2026-10-05T06:00:07.162786+00:00",
+  "phase": "phase5_1",
+  "dataset": "SROIE",
+  "sample_id": "sroie_s01",
+  "degradation_family": "skew_rotation",
+  "severity": 4,
+  "seed": 456,
+  "policy": "R3_UNCERTAINTY",
+  "configuration_hash": null,
+  "model_revision": null,
+  "input_hash": null,
+  "quality_feature_hash": null,
+  "uncertainty_vector": {
+    "u_vlm": 0.6704,
+    "u_ocr": 0.0,
+    "u_ret": 1.0,
+    "u_gnd": 1.0,
+    "u_qual": 0.45345,
+    "u_agr": 0.0
+  },
+  "fallback_status": null,
+  "latency_ms": 0.11909997556358576,
+  "compute_cost": null,
+  "artifact_hash": "bb27d48df0e872ea861bf2fd4855e5b62369cc137295738efab76d7e91255924"
+}
