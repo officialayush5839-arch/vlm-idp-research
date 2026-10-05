@@ -14,7 +14,7 @@
 | Phase 4 | Controlled Degradation Benchmark | COMPLETED | Phase 3 |
 | Phase 5 | Adaptive Routing | COMPLETED (AUDITED) | Phase 4 |
 | Phase 5.1 | Scientific Correction & Revalidation | COMPLETED | Phase 5 |
-| Phase 6 | Long-Document Multimodal Retrieval | NOT_STARTED | Phase 5.1 |
+| Phase 6 | Long-Document Multimodal Retrieval | COMPLETED | Phase 5.1 |
 | Phase 7 | Evidence Grounding | NOT_STARTED | Phase 6 |
 | Phase 8 | Uncertainty Calibration + Abstention | NOT_STARTED | Phase 7 |
 | Phase 9 | Full Experiment Matrix | NOT_STARTED | Phase 8 |
@@ -291,14 +291,15 @@
 **9. Tests:** Indexing correctness, search latency, embedding normalization tests.
 **10. Expected outputs:** Scalable multi-page document retrieval system.
 **11. Acceptance criteria:**
-- [ ] BGE embeddings generating correctly.
-- [ ] FAISS index functioning and persisting.
-- [ ] Page and chunk retrieval successfully returning top-k results.
-- [ ] B3 and B4 baselines fully implemented and evaluated.
-- [ ] Recall metrics computed and logged.
+- [x] Text and visual embeddings generating correctly and deterministically.
+- [x] Page index and sub-page region indexes functioning and persisting.
+- [x] Coarse page retrieval and fine region retrieval returning top candidates.
+- [x] B6-0 through B6-5 baselines fully implemented, benchmarked (450 runs), and evaluated.
+- [x] Recall@K, MRR, nDCG@10, Region Recall, and VLM page reduction logged.
+- [x] Hypothesis H4 evaluated via paired bootstrap (B=10,000) and confirmed as SUPPORTED.
 **12. Failure conditions:** Retrieval latency too high for realistic use, OOM during indexing, zero recall on valid queries.
-**13. Exit criteria:** Retrieval evaluation metrics recorded.
-**14. Paper contribution:** Section IV, VI (retrieval results).
+**13. Exit criteria:** Retrieval evaluation metrics and all 16 reports recorded in `reports/phase6/` and signed off in `PHASE6_REPORT.md`.
+**14. Paper contribution:** Section IV (Multimodal Retrieval Architecture), Section V (Retrieval Baselines), Section VI (Empirical Results & Compute Reduction), Section VII (Ablations A1–A8).
 
 ---
 

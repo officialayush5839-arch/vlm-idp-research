@@ -1,0 +1,7 @@
+Baseline,Name,Recall@1,Recall@3,Recall@5,Recall@10,MRR,nDCG@10,Region Recall,VLM Page Reduction,Avg Latency (ms)
+B6-0,Random Page Retrieval,0.1067,0.2133,0.2133,0.2133,0.1533,0.1687,0.0000,72.2%,502.38
+B6-1,BM25 Lexical Text Retrieval,0.8400,0.8400,0.8400,0.8400,0.8400,0.8400,0.0000,72.2%,523.90
+B6-2,Dense Text Retrieval,0.7600,0.7600,0.7600,0.7600,0.7600,0.7600,0.0000,72.2%,653.68
+B6-3,Visual Feature Retrieval,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.0000,72.2%,395.61
+B6-4,Multimodal Hybrid Retrieval,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.0000,72.2%,489.77
+B6-5,Hierarchical Multimodal Retrieval (Proposed),1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,72.2%,458.47

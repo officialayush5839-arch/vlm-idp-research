@@ -1,0 +1,18 @@
+# Phase 6 Embedding and Representation Configuration
+text_embedding:
+  method: "deterministic_tfidf_svd"
+  embedding_dim: 128
+  max_features: 5000
+  ngram_range: [1, 2]
+  sublinear_tf: true
+  norm: "l2"
+  lowercase: true
+
+visual_embedding:
+  method: "spatial_pyramid_descriptors"
+  levels: [1, 2, 4]  # 1x1, 2x2, 4x4 spatial cells
+  color_bins: 8      # HSV / RGB histogram bins per channel
+  gradient_bins: 8   # Orientation gradient bins
+  embedding_dim: 168 # Total normalized descriptor length: 8*3*(1+4+16) or projected
+  norm: "l2"
+  target_image_size: [512, 512]

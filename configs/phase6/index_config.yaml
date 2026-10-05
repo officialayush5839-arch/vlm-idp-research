@@ -1,0 +1,24 @@
+# Phase 6 Index Storage and Management Configuration
+index_storage:
+  base_dir: "experiments/phase6/indexes"
+  manifest_file: "experiments/phase6/indexes/index_manifest.json"
+  auto_persist: true
+  compression: false
+
+page_index:
+  storage_format: "jsonl_and_npz"
+  bm25_params:
+    k1: 1.5
+    b: 0.75
+    epsilon: 0.25
+
+region_index:
+  coordinate_space: "normalized_1000"
+  supported_region_types:
+    - "text"
+    - "table"
+    - "figure"
+    - "form"
+    - "header"
+    - "footer"
+  default_max_regions_per_page: 20

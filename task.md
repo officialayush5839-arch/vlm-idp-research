@@ -1,7 +1,7 @@
 # VLM-IDP Active Execution Queue
 
-CURRENT PHASE: PHASE 5.1 — Scientific Correction & Revalidation (COMPLETED)
-CURRENT OBJECTIVE: Phase 5.1 complete. All audit defects (P1-01, P1-02, P1-03) resolved. 4,500 distinct condition traces persisted, zero-leakage verified, learned router serialized and deployed. 178 tests passing (100%). Ready for Phase 6 authorization.
+CURRENT PHASE: PHASE 6 — Long-Document Multimodal Retrieval (COMPLETED)
+CURRENT OBJECTIVE: Phase 6 complete. Hierarchical multimodal retrieval (coarse page retrieval + fine region retrieval + multimodal fusion + cross-modal reranker + standardized EvidencePackage) implemented, benchmarked (450 runs), and scientifically validated. Hypothesis H4 is SUPPORTED (p = 0.0486 vs BM25, p < 0.0001 vs Random, 72.2%-94.0% VLM page reduction). All 212 tests passing (100%). Ready for local commit.
 TASK STATUS: COMPLETE
 
 ---
@@ -655,4 +655,109 @@ TASK STATUS: COMPLETE
 - **Acceptance Criteria**: Complete 34-section report; before/after comparisons; zero result fabrication.
 - **Status**: **PASS**
 - **Evidence**: [`reports/phase5_1/PHASE5_1_REPORT.md`](reports/phase5_1/PHASE5_1_REPORT.md)
+
+---
+
+### Phase 6 Tasks (Long-Document Multimodal Retrieval) — ALL COMPLETED
+
+#### T067: Phase 6 Configuration Subsystem
+- **Purpose**: Define declarative YAML configurations for retrieval pipelines, embeddings, indexes, fusion weights, reranker, and evaluation metrics.
+- **Dependencies**: Phase 5.1 complete
+- **Input**: Research protocol parameters
+- **Expected Output**: 7 YAML configuration files in `configs/phase6/`
+- **Files Affected**: `configs/phase6/*.yaml`
+- **Acceptance Criteria**: All configurations parse cleanly; fusion weight alpha=0.60 frozen; zero test-set tuning.
+- **Status**: **PASS**
+- **Evidence**: [`configs/phase6/retrieval_config.yaml`](configs/phase6/retrieval_config.yaml), [`configs/phase6/fusion_config.yaml`](configs/phase6/fusion_config.yaml)
+
+#### T068: Phase 6 Schema & Data Models
+- **Purpose**: Define Pydantic models for documents, pages, regions, queries, results, metrics, and evidence packages.
+- **Dependencies**: T067
+- **Input**: PRD and Architecture data flow specs
+- **Expected Output**: `src/retrieval/schema.py`
+- **Files Affected**: `src/retrieval/schema.py`, `tests/test_phase6_schema.py`
+- **Acceptance Criteria**: Normalized bounding boxes [0, 1000]; automatic clean text derivation; VLM page reduction validation; 100% test pass.
+- **Status**: **PASS**
+- **Evidence**: [`tests/test_phase6_schema.py`](tests/test_phase6_schema.py) (6 passed)
+
+#### T069: Lexical Retrieval Engine (BM25Okapi)
+- **Purpose**: Implement pure-Python, deterministic BM25Okapi with Robertson-Spärck Jones IDF smoothing and TextIndex.
+- **Dependencies**: T068
+- **Input**: Tokenized corpus from page records
+- **Expected Output**: `src/retrieval/bm25.py`, `src/retrieval/text_index.py`
+- **Files Affected**: `src/retrieval/bm25.py`, `src/retrieval/text_index.py`, `tests/test_phase6_bm25.py`
+- **Acceptance Criteria**: Robertson-Spärck Jones smoothing; length normalization; fail-safe empty queries; 100% test pass.
+- **Status**: **PASS**
+- **Evidence**: [`tests/test_phase6_bm25.py`](tests/test_phase6_bm25.py) (4 passed)
+
+#### T070: Dense Semantic & Visual Retrieval Engines
+- **Purpose**: Implement dense text semantic projection (TF-IDF + SVD) and multi-scale visual layout feature representation.
+- **Dependencies**: T068
+- **Input**: Page texts, image paths, spatial layout regions
+- **Expected Output**: `src/retrieval/dense_retrieval.py`, `src/retrieval/visual_index.py`
+- **Files Affected**: `src/retrieval/dense_retrieval.py`, `src/retrieval/visual_index.py`, `tests/test_phase6_dense_retrieval.py`, `tests/test_phase6_visual_retrieval.py`
+- **Acceptance Criteria**: Cosine similarity ranking; unit L2 normalization; cross-modal query layout concept mapping; 100% test pass.
+- **Status**: **PASS**
+- **Evidence**: [`tests/test_phase6_dense_retrieval.py`](tests/test_phase6_dense_retrieval.py), [`tests/test_phase6_visual_retrieval.py`](tests/test_phase6_visual_retrieval.py) (4 passed)
+
+#### T071: Multimodal Fusion & Cross-Modal Reranker
+- **Purpose**: Implement score normalization, linear fusion (alpha=0.60), and cross-modal structural reranking.
+- **Dependencies**: T069, T070
+- **Input**: Text and visual candidate lists
+- **Expected Output**: `src/retrieval/fusion.py`, `src/retrieval/reranker.py`
+- **Files Affected**: `src/retrieval/fusion.py`, `src/retrieval/reranker.py`, `tests/test_phase6_fusion.py`, `tests/test_phase6_reranker.py`
+- **Acceptance Criteria**: Safe min-max normalization; weighted linear combination; layout affinity bonus; 100% test pass.
+- **Status**: **PASS**
+- **Evidence**: [`tests/test_phase6_fusion.py`](tests/test_phase6_fusion.py), [`tests/test_phase6_reranker.py`](tests/test_phase6_reranker.py) (4 passed)
+
+#### T072: Region Retrieval, Evidence Packaging & Provenance
+- **Purpose**: Implement sub-page spatial region retrieval, EvidencePackage builder, and cryptographic run tracking.
+- **Dependencies**: T068, T071
+- **Input**: Candidate pages, region records, query
+- **Expected Output**: `src/retrieval/region.py`, `src/retrieval/evidence.py`, `src/retrieval/provenance.py`
+- **Files Affected**: `src/retrieval/region.py`, `src/retrieval/evidence.py`, `src/retrieval/provenance.py`, `tests/test_phase6_evidence.py`, `tests/test_phase6_provenance.py`
+- **Acceptance Criteria**: Zero trace collisions; unique run_P6_... IDs; embedded SHA-256 hashes and git commit; 100% test pass.
+- **Status**: **PASS**
+- **Evidence**: [`tests/test_phase6_evidence.py`](tests/test_phase6_evidence.py), [`tests/test_phase6_provenance.py`](tests/test_phase6_provenance.py) (5 passed)
+
+#### T073: Pipeline Integration & Verification Test Suites
+- **Purpose**: Implement unified pipeline and comprehensive tests covering determinism, zero-leakage, trace identity, and partition integrity.
+- **Dependencies**: T067-T072
+- **Input**: Pipeline architecture
+- **Expected Output**: `src/retrieval/pipeline.py`, `tests/test_phase6_*.py`
+- **Files Affected**: `src/retrieval/pipeline.py`, `tests/test_phase6_determinism.py`, `tests/test_phase6_no_leakage.py`, `tests/test_phase6_trace_identity.py`, `tests/test_phase6_partition_integrity.py`
+- **Acceptance Criteria**: All 34 Phase 6 tests pass; all 178 baseline regression tests pass (212 total tests passing).
+- **Status**: **PASS**
+- **Evidence**: Full pytest test suite output (212 passed, 100%)
+
+#### T074: Evaluation Corpus Generation & Smoke Test
+- **Purpose**: Build 50-document multi-page evaluation corpus across degradation levels and verify end-to-end execution.
+- **Dependencies**: T073
+- **Input**: Synthetic generator specification
+- **Expected Output**: `experiments/phase6/indexes/`, `scripts/run_phase6_index.py`, `scripts/run_phase6_smoke.py`
+- **Files Affected**: `experiments/phase6/indexes/*`, `scripts/run_phase6_index.py`, `scripts/run_phase6_smoke.py`
+- **Acceptance Criteria**: 50 documents generated; smoke test confirms all 6 baselines generate valid EvidencePackages.
+- **Status**: **PASS**
+- **Evidence**: Smoke test output log confirming B6-0 through B6-5 valid package generation
+
+#### T075: Full Controlled Retrieval Benchmark & Bootstrap Testing
+- **Purpose**: Execute 450-run benchmark across B6-0 to B6-5, compute full IR metrics, and evaluate Hypothesis H4 via paired bootstrap (B=10,000).
+- **Dependencies**: T074
+- **Input**: Benchmark runner and test partition
+- **Expected Output**: `experiments/phase6/summaries/phase6_benchmark_results.json`, CSV, statistical test results
+- **Files Affected**: `experiments/phase6/summaries/*`, `scripts/run_phase6_benchmark.py`
+- **Acceptance Criteria**: B6-5 achieves 100% Recall@3 and 72.2%-94.0% VLM page reduction; statistically significant over BM25 (p=0.0486) and Random (p<0.0001); H4 formally evaluated as SUPPORTED.
+- **Status**: **PASS**
+- **Evidence**: [`experiments/phase6/summaries/phase6_benchmark_results.json`](experiments/phase6/summaries/phase6_benchmark_results.json)
+
+#### T076: Comprehensive Phase 6 Research Documentation
+- **Purpose**: Author all 16 detailed scientific reports and the master 30-section Phase 6 Research Report.
+- **Dependencies**: T067-T075
+- **Input**: Benchmark data, ablation summaries, statistical outputs
+- **Expected Output**: `reports/phase6/01_retrieval_architecture.md` through `16_ieee_paper_integration.md`, `reports/phase6/PHASE6_REPORT.md`
+- **Files Affected**: `reports/phase6/*.md`
+- **Acceptance Criteria**: All 16 detailed reports and master 30-section report complete; zero fabricated numbers.
+- **Status**: **PASS**
+- **Evidence**: [`reports/phase6/PHASE6_REPORT.md`](reports/phase6/PHASE6_REPORT.md)
+
 

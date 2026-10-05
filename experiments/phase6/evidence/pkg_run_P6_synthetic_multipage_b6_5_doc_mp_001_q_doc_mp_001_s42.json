@@ -1,0 +1,117 @@
+{
+  "package_id": "pkg_run_P6_synthetic_multipage_b6_5_doc_mp_001_q_doc_mp_001_s42",
+  "document_id": "doc_mp_001",
+  "query_id": "q_doc_mp_001",
+  "retrieval_method": "B6-5",
+  "top_k_pages_requested": 3,
+  "top_m_regions_requested": 3,
+  "total_document_pages": 5,
+  "selected_pages": [
+    {
+      "page_number": 2,
+      "score": 1.0665,
+      "text_score": 1.0,
+      "visual_score": 1.0,
+      "rank": 1,
+      "metadata": {
+        "document_id": "doc_mp_001",
+        "quality_score": 0.95,
+        "degradation_level": "clean",
+        "alpha_text": 0.6,
+        "fusion_method": "weighted_linear",
+        "initial_rank": 1,
+        "reranked": true
+      }
+    },
+    {
+      "page_number": 5,
+      "score": 0.204075,
+      "text_score": 0.328458,
+      "visual_score": 0.0,
+      "rank": 2,
+      "metadata": {
+        "document_id": "doc_mp_001",
+        "quality_score": 0.95,
+        "degradation_level": "clean",
+        "alpha_text": 0.6,
+        "fusion_method": "weighted_linear",
+        "initial_rank": 2,
+        "reranked": true
+      }
+    },
+    {
+      "page_number": 1,
+      "score": 0.133388,
+      "text_score": 0.210647,
+      "visual_score": 0.0,
+      "rank": 3,
+      "metadata": {
+        "document_id": "doc_mp_001",
+        "quality_score": 0.95,
+        "degradation_level": "clean",
+        "alpha_text": 0.6,
+        "fusion_method": "weighted_linear",
+        "initial_rank": 3,
+        "reranked": true
+      }
+    }
+  ],
+  "selected_regions": [
+    {
+      "region_id": "doc_mp_001_p2_tbl1",
+      "page_number": 2,
+      "bbox": [
+        80,
+        120,
+        920,
+        580
+      ],
+      "region_type": "table",
+      "score": 0.74228,
+      "rank": 1,
+      "snippet": "Consolidated Table for revenue: Total = $48.7M"
+    },
+    {
+      "region_id": "doc_mp_001_p5_reg1",
+      "page_number": 5,
+      "bbox": [
+        50,
+        80,
+        950,
+        400
+      ],
+      "region_type": "text",
+      "score": 0.2016,
+      "rank": 2,
+      "snippet": "Narrative on revenue."
+    },
+    {
+      "region_id": "doc_mp_001_p2_txt1",
+      "page_number": 2,
+      "bbox": [
+        80,
+        600,
+        920,
+        850
+      ],
+      "region_type": "text",
+      "score": 0.189,
+      "rank": 3,
+      "snippet": "Audited notes on operating profit and statutory disclosures."
+    }
+  ],
+  "vlm_page_reduction_ratio": 0.4,
+  "provenance": {
+    "run_id": "run_P6_synthetic_multipage_b6_5_doc_mp_001_q_doc_mp_001_s42",
+    "phase": "6",
+    "git_commit": "3dfa2a2be5e812ef94a6a1a28e4f67b7b901f2ec",
+    "dataset": "synthetic_multipage",
+    "method": "B6-5",
+    "seed": 42,
+    "document_hash": "bb0d5c1005e930f5",
+    "query_hash": "c2f7c56bb6ae8a48",
+    "config_hash": "fe8a9f708f5e3bf9",
+    "timestamp_utc": "2026-10-05T06:31:40.014986+00:00",
+    "latency_ms": 1.32
+  }
+}

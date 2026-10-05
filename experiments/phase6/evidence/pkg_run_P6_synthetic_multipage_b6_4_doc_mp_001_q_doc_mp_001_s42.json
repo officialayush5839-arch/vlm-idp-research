@@ -1,0 +1,68 @@
+{
+  "package_id": "pkg_run_P6_synthetic_multipage_b6_4_doc_mp_001_q_doc_mp_001_s42",
+  "document_id": "doc_mp_001",
+  "query_id": "q_doc_mp_001",
+  "retrieval_method": "B6-4",
+  "top_k_pages_requested": 3,
+  "top_m_regions_requested": 3,
+  "total_document_pages": 5,
+  "selected_pages": [
+    {
+      "page_number": 2,
+      "score": 1.0,
+      "text_score": 1.0,
+      "visual_score": 1.0,
+      "rank": 1,
+      "metadata": {
+        "document_id": "doc_mp_001",
+        "quality_score": 0.95,
+        "degradation_level": "clean",
+        "alpha_text": 0.6,
+        "fusion_method": "weighted_linear"
+      }
+    },
+    {
+      "page_number": 5,
+      "score": 0.197075,
+      "text_score": 0.328458,
+      "visual_score": 0.0,
+      "rank": 2,
+      "metadata": {
+        "document_id": "doc_mp_001",
+        "quality_score": 0.95,
+        "degradation_level": "clean",
+        "alpha_text": 0.6,
+        "fusion_method": "weighted_linear"
+      }
+    },
+    {
+      "page_number": 1,
+      "score": 0.126388,
+      "text_score": 0.210647,
+      "visual_score": 0.0,
+      "rank": 3,
+      "metadata": {
+        "document_id": "doc_mp_001",
+        "quality_score": 0.95,
+        "degradation_level": "clean",
+        "alpha_text": 0.6,
+        "fusion_method": "weighted_linear"
+      }
+    }
+  ],
+  "selected_regions": [],
+  "vlm_page_reduction_ratio": 0.4,
+  "provenance": {
+    "run_id": "run_P6_synthetic_multipage_b6_4_doc_mp_001_q_doc_mp_001_s42",
+    "phase": "6",
+    "git_commit": "3dfa2a2be5e812ef94a6a1a28e4f67b7b901f2ec",
+    "dataset": "synthetic_multipage",
+    "method": "B6-4",
+    "seed": 42,
+    "document_hash": "bb0d5c1005e930f5",
+    "query_hash": "c2f7c56bb6ae8a48",
+    "config_hash": "fe8a9f708f5e3bf9",
+    "timestamp_utc": "2026-10-05T06:31:39.565689+00:00",
+    "latency_ms": 1.212
+  }
+}

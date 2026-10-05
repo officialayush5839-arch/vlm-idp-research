@@ -1,0 +1,8 @@
+# Phase 6 Multimodal Fusion Configuration
+fusion:
+  method: "linear_interpolation"
+  alpha_text: 0.60  # Weight for text similarity (0.60 text, 0.40 visual)
+  normalization: "min_max"  # Options: min_max, z_score, rank_reciprocal
+  handle_missing: "impute_zero"
+  tie_breaker: "lexical_first"
+  calibrate_weights_on_val: false  # FROZEN: Set strictly from config, zero test tuning

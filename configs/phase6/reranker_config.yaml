@@ -1,0 +1,8 @@
+# Phase 6 Cross-Modal Reranker Configuration
+reranker:
+  enabled: true
+  top_k_candidates: 5   # Fetch top K pages before reranking
+  top_m_selected: 3     # Select top M pages after reranking
+  alignment_weight: 0.35 # Weight given to cross-modal lexical-layout alignment
+  region_density_bonus: 0.15 # Bonus for pages containing target evidence regions
+  diversity_penalty: 0.05    # Penalty for redundant consecutive pages

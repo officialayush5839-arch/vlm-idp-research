@@ -1,0 +1,143 @@
+{
+  "document_id": "doc_mp_041",
+  "pages": [
+    {
+      "document_id": "doc_mp_041",
+      "page_number": 1,
+      "split": "test",
+      "raw_text": "Annual Comprehensive Report: Document doc_mp_041. Table of Contents, Executive Overview, Directory.",
+      "clean_text": "Annual Comprehensive Report: Document doc_mp_041. Table of Contents, Executive Overview, Directory.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_041_p1_hdr",
+          "page_number": 1,
+          "bbox": [
+            50,
+            50,
+            950,
+            150
+          ],
+          "region_type": "header",
+          "text_content": "ANNUAL CORPORATE REPORT",
+          "confidence": 0.98
+        }
+      ],
+      "quality_score": 0.95,
+      "degradation_level": "clean"
+    },
+    {
+      "document_id": "doc_mp_041",
+      "page_number": 2,
+      "split": "test",
+      "raw_text": "General Overview of Operations Section 2: supply chain logistics procurement inventory turnover manufacturing facilities distribution network. Standard administrative notes and boilerplate documentation for page 2.",
+      "clean_text": "General Overview of Operations Section 2: supply chain logistics procurement inventory turnover manufacturing facilities distribution network. Standard administrative notes and boilerplate documentation for page 2.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_041_p2_reg1",
+          "page_number": 2,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on supply chain.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.95,
+      "degradation_level": "clean"
+    },
+    {
+      "document_id": "doc_mp_041",
+      "page_number": 3,
+      "split": "test",
+      "raw_text": "General Overview of Technology Section 3: infrastructure cloud migration cybersecurity neural network vlm processing data privacy encryption. Standard administrative notes and boilerplate documentation for page 3.",
+      "clean_text": "General Overview of Technology Section 3: infrastructure cloud migration cybersecurity neural network vlm processing data privacy encryption. Standard administrative notes and boilerplate documentation for page 3.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_041_p3_reg1",
+          "page_number": 3,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on infrastructure.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.95,
+      "degradation_level": "clean"
+    },
+    {
+      "document_id": "doc_mp_041",
+      "page_number": 4,
+      "split": "test",
+      "raw_text": "Detailed Analysis of Finance: revenue operating profit ebitda balance sheet liabilities cash flow audit fiscal 2024 dividend. Specific metric: The total confirmed revenue for period was 48.7 million dollars with high margin.",
+      "clean_text": "Detailed Analysis of Finance: revenue operating profit ebitda balance sheet liabilities cash flow audit fiscal 2024 dividend. Specific metric: The total confirmed revenue for period was 48.7 million dollars with high margin.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_041_p4_tbl1",
+          "page_number": 4,
+          "bbox": [
+            80,
+            120,
+            920,
+            580
+          ],
+          "region_type": "table",
+          "text_content": "Consolidated Table for revenue: Total = $48.7M",
+          "confidence": 0.95
+        },
+        {
+          "region_id": "doc_mp_041_p4_txt1",
+          "page_number": 4,
+          "bbox": [
+            80,
+            600,
+            920,
+            850
+          ],
+          "region_type": "text",
+          "text_content": "Audited notes on operating profit and statutory disclosures.",
+          "confidence": 0.92
+        }
+      ],
+      "quality_score": 0.95,
+      "degradation_level": "clean"
+    },
+    {
+      "document_id": "doc_mp_041",
+      "page_number": 5,
+      "split": "test",
+      "raw_text": "General Overview of Finance Section 5: revenue operating profit ebitda balance sheet liabilities cash flow audit fiscal 2024 dividend. Standard administrative notes and boilerplate documentation for page 5.",
+      "clean_text": "General Overview of Finance Section 5: revenue operating profit ebitda balance sheet liabilities cash flow audit fiscal 2024 dividend. Standard administrative notes and boilerplate documentation for page 5.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_041_p5_reg1",
+          "page_number": 5,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on revenue.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.95,
+      "degradation_level": "clean"
+    }
+  ]
+}

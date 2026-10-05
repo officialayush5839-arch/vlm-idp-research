@@ -1,0 +1,18 @@
+# Phase 6 Retrieval Master Configuration
+pipeline:
+  name: "HierarchicalMultimodalRetrievalPipeline"
+  version: "1.0.0"
+  random_seed: 42
+  top_k_pages: 3
+  top_m_regions: 3
+  supported_baselines:
+    - "B6-0"  # Random Page Retrieval
+    - "B6-1"  # BM25 Lexical Text Retrieval
+    - "B6-2"  # Dense Text Retrieval
+    - "B6-3"  # Visual Feature Retrieval
+    - "B6-4"  # Multimodal Hybrid Retrieval (Text + Visual fusion)
+    - "B6-5"  # Hierarchical Multimodal Retrieval + Region Selection + Reranker (Proposed)
+  default_baseline: "B6-5"
+  fallback_strategy: "lexical_first"
+  allow_abstention: true
+  min_confidence_threshold: 0.15

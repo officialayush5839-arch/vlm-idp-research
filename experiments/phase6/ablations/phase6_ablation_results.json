@@ -1,0 +1,149 @@
+{
+  "A1_Modality": {
+    "Text_Only_BM25": {
+      "mean_recall_at_3": 0.84,
+      "mean_mrr": 0.84,
+      "mean_page_reduction": 0.7216
+    },
+    "Visual_Only": {
+      "mean_recall_at_3": 1.0,
+      "mean_mrr": 1.0,
+      "mean_page_reduction": 0.7216
+    },
+    "Multimodal_Fusion": {
+      "mean_recall_at_3": 1.0,
+      "mean_mrr": 1.0,
+      "mean_page_reduction": 0.7216
+    },
+    "Full_Hierarchical": {
+      "mean_recall_at_3": 1.0,
+      "mean_mrr": 1.0,
+      "mean_page_reduction": 0.7216
+    }
+  },
+  "A2_TopK": {
+    "K_1": {
+      "mean_recall_at_k": 1.0,
+      "mean_mrr": 1.0,
+      "mean_page_reduction": 0.9072
+    },
+    "K_3": {
+      "mean_recall_at_k": 1.0,
+      "mean_mrr": 1.0,
+      "mean_page_reduction": 0.7216
+    },
+    "K_5": {
+      "mean_recall_at_k": 1.0,
+      "mean_mrr": 1.0,
+      "mean_page_reduction": 0.536
+    },
+    "K_10": {
+      "mean_recall_at_k": 1.0,
+      "mean_mrr": 1.0,
+      "mean_page_reduction": 0.312
+    },
+    "K_20": {
+      "mean_recall_at_k": 1.0,
+      "mean_mrr": 1.0,
+      "mean_page_reduction": 0.144
+    }
+  },
+  "A3_Alpha": {
+    "alpha_0.00": {
+      "mean_recall_at_3": 1.0,
+      "mean_mrr": 1.0
+    },
+    "alpha_0.20": {
+      "mean_recall_at_3": 1.0,
+      "mean_mrr": 1.0
+    },
+    "alpha_0.40": {
+      "mean_recall_at_3": 1.0,
+      "mean_mrr": 1.0
+    },
+    "alpha_0.60": {
+      "mean_recall_at_3": 1.0,
+      "mean_mrr": 1.0
+    },
+    "alpha_0.80": {
+      "mean_recall_at_3": 1.0,
+      "mean_mrr": 1.0
+    },
+    "alpha_1.00": {
+      "mean_recall_at_3": 0.84,
+      "mean_mrr": 0.84
+    }
+  },
+  "A4_Reranker": {
+    "without_reranker": {
+      "mean_recall_at_3": 1.0,
+      "mean_mrr": 1.0,
+      "mean_page_reduction": 0.7216
+    },
+    "with_reranker": {
+      "mean_recall_at_3": 1.0,
+      "mean_mrr": 1.0,
+      "mean_page_reduction": 0.7216
+    },
+    "delta_recall_at_3": 0.0,
+    "delta_mrr": 0.0
+  },
+  "A5_DocLength": {
+    "length_5p": {
+      "query_count": 6,
+      "mean_recall_at_3": 1.0,
+      "mean_page_reduction": 0.4
+    },
+    "length_10p": {
+      "query_count": 7,
+      "mean_recall_at_3": 1.0,
+      "mean_page_reduction": 0.7
+    },
+    "length_20p": {
+      "query_count": 6,
+      "mean_recall_at_3": 1.0,
+      "mean_page_reduction": 0.85
+    },
+    "length_50p": {
+      "query_count": 6,
+      "mean_recall_at_3": 1.0,
+      "mean_page_reduction": 0.94
+    }
+  },
+  "A6_Degradation": {
+    "clean": {
+      "bm25_recall_at_3": 1.0,
+      "b6_5_recall_at_3": 1.0,
+      "delta_advantage": 0.0
+    },
+    "mild": {
+      "bm25_recall_at_3": 1.0,
+      "b6_5_recall_at_3": 1.0,
+      "delta_advantage": 0.0
+    },
+    "moderate": {
+      "bm25_recall_at_3": 1.0,
+      "b6_5_recall_at_3": 1.0,
+      "delta_advantage": 0.0
+    },
+    "severe": {
+      "bm25_recall_at_3": 0.3333,
+      "b6_5_recall_at_3": 1.0,
+      "delta_advantage": 0.6667
+    }
+  },
+  "A7_RegionGranularity": {
+    "page_recall_at_3": 1.0,
+    "region_evidence_recall": 1.0
+  },
+  "A8_QueryTypes": {
+    "table": {
+      "query_count": 12,
+      "mean_recall_at_3": 1.0
+    },
+    "factoid": {
+      "query_count": 13,
+      "mean_recall_at_3": 1.0
+    }
+  }
+}

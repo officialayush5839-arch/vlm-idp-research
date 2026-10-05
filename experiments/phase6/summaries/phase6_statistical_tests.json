@@ -1,0 +1,57 @@
+{
+  "B6-5_vs_B6-0": {
+    "comparison": "B6-5 vs B6-0 (Random Page Retrieval)",
+    "observed_mean_diff": 0.8,
+    "ci_95": [
+      0.64,
+      0.96
+    ],
+    "p_value": 0.0,
+    "cohens_d": 1.9596,
+    "statistically_significant": true
+  },
+  "B6-5_vs_B6-1": {
+    "comparison": "B6-5 vs B6-1 (BM25 Lexical Text Retrieval)",
+    "observed_mean_diff": 0.16,
+    "ci_95": [
+      0.04,
+      0.32
+    ],
+    "p_value": 0.0486,
+    "cohens_d": 0.4276,
+    "statistically_significant": true
+  },
+  "B6-5_vs_B6-2": {
+    "comparison": "B6-5 vs B6-2 (Dense Text Retrieval)",
+    "observed_mean_diff": 0.24,
+    "ci_95": [
+      0.08,
+      0.4
+    ],
+    "p_value": 0.0082,
+    "cohens_d": 0.5506,
+    "statistically_significant": true
+  },
+  "B6-5_vs_B6-3": {
+    "comparison": "B6-5 vs B6-3 (Visual Feature Retrieval)",
+    "observed_mean_diff": 0.0,
+    "ci_95": [
+      0.0,
+      0.0
+    ],
+    "p_value": 1.0,
+    "cohens_d": 0.0,
+    "statistically_significant": false
+  },
+  "B6-5_vs_B6-4": {
+    "comparison": "B6-5 vs B6-4 (Multimodal Hybrid Retrieval)",
+    "observed_mean_diff": 0.0,
+    "ci_95": [
+      0.0,
+      0.0
+    ],
+    "p_value": 1.0,
+    "cohens_d": 0.0,
+    "statistically_significant": false
+  }
+}

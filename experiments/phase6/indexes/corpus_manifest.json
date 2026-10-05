@@ -1,0 +1,956 @@
+{
+  "documents": [
+    {
+      "document_id": "doc_mp_001",
+      "page_count": 5,
+      "split": "train",
+      "degradation_level": "clean",
+      "index_path": "experiments/phase6/indexes\\doc_mp_001.json"
+    },
+    {
+      "document_id": "doc_mp_002",
+      "page_count": 10,
+      "split": "train",
+      "degradation_level": "mild",
+      "index_path": "experiments/phase6/indexes\\doc_mp_002.json"
+    },
+    {
+      "document_id": "doc_mp_003",
+      "page_count": 20,
+      "split": "train",
+      "degradation_level": "moderate",
+      "index_path": "experiments/phase6/indexes\\doc_mp_003.json"
+    },
+    {
+      "document_id": "doc_mp_004",
+      "page_count": 50,
+      "split": "train",
+      "degradation_level": "severe",
+      "index_path": "experiments/phase6/indexes\\doc_mp_004.json"
+    },
+    {
+      "document_id": "doc_mp_005",
+      "page_count": 5,
+      "split": "train",
+      "degradation_level": "clean",
+      "index_path": "experiments/phase6/indexes\\doc_mp_005.json"
+    },
+    {
+      "document_id": "doc_mp_006",
+      "page_count": 10,
+      "split": "train",
+      "degradation_level": "mild",
+      "index_path": "experiments/phase6/indexes\\doc_mp_006.json"
+    },
+    {
+      "document_id": "doc_mp_007",
+      "page_count": 20,
+      "split": "train",
+      "degradation_level": "moderate",
+      "index_path": "experiments/phase6/indexes\\doc_mp_007.json"
+    },
+    {
+      "document_id": "doc_mp_008",
+      "page_count": 50,
+      "split": "train",
+      "degradation_level": "severe",
+      "index_path": "experiments/phase6/indexes\\doc_mp_008.json"
+    },
+    {
+      "document_id": "doc_mp_009",
+      "page_count": 5,
+      "split": "train",
+      "degradation_level": "clean",
+      "index_path": "experiments/phase6/indexes\\doc_mp_009.json"
+    },
+    {
+      "document_id": "doc_mp_010",
+      "page_count": 10,
+      "split": "train",
+      "degradation_level": "mild",
+      "index_path": "experiments/phase6/indexes\\doc_mp_010.json"
+    },
+    {
+      "document_id": "doc_mp_011",
+      "page_count": 20,
+      "split": "val",
+      "degradation_level": "moderate",
+      "index_path": "experiments/phase6/indexes\\doc_mp_011.json"
+    },
+    {
+      "document_id": "doc_mp_012",
+      "page_count": 50,
+      "split": "val",
+      "degradation_level": "severe",
+      "index_path": "experiments/phase6/indexes\\doc_mp_012.json"
+    },
+    {
+      "document_id": "doc_mp_013",
+      "page_count": 5,
+      "split": "val",
+      "degradation_level": "clean",
+      "index_path": "experiments/phase6/indexes\\doc_mp_013.json"
+    },
+    {
+      "document_id": "doc_mp_014",
+      "page_count": 10,
+      "split": "val",
+      "degradation_level": "mild",
+      "index_path": "experiments/phase6/indexes\\doc_mp_014.json"
+    },
+    {
+      "document_id": "doc_mp_015",
+      "page_count": 20,
+      "split": "val",
+      "degradation_level": "moderate",
+      "index_path": "experiments/phase6/indexes\\doc_mp_015.json"
+    },
+    {
+      "document_id": "doc_mp_016",
+      "page_count": 50,
+      "split": "val",
+      "degradation_level": "severe",
+      "index_path": "experiments/phase6/indexes\\doc_mp_016.json"
+    },
+    {
+      "document_id": "doc_mp_017",
+      "page_count": 5,
+      "split": "val",
+      "degradation_level": "clean",
+      "index_path": "experiments/phase6/indexes\\doc_mp_017.json"
+    },
+    {
+      "document_id": "doc_mp_018",
+      "page_count": 10,
+      "split": "val",
+      "degradation_level": "mild",
+      "index_path": "experiments/phase6/indexes\\doc_mp_018.json"
+    },
+    {
+      "document_id": "doc_mp_019",
+      "page_count": 20,
+      "split": "val",
+      "degradation_level": "moderate",
+      "index_path": "experiments/phase6/indexes\\doc_mp_019.json"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_count": 50,
+      "split": "val",
+      "degradation_level": "severe",
+      "index_path": "experiments/phase6/indexes\\doc_mp_020.json"
+    },
+    {
+      "document_id": "doc_mp_021",
+      "page_count": 5,
+      "split": "val",
+      "degradation_level": "clean",
+      "index_path": "experiments/phase6/indexes\\doc_mp_021.json"
+    },
+    {
+      "document_id": "doc_mp_022",
+      "page_count": 10,
+      "split": "val",
+      "degradation_level": "mild",
+      "index_path": "experiments/phase6/indexes\\doc_mp_022.json"
+    },
+    {
+      "document_id": "doc_mp_023",
+      "page_count": 20,
+      "split": "val",
+      "degradation_level": "moderate",
+      "index_path": "experiments/phase6/indexes\\doc_mp_023.json"
+    },
+    {
+      "document_id": "doc_mp_024",
+      "page_count": 50,
+      "split": "val",
+      "degradation_level": "severe",
+      "index_path": "experiments/phase6/indexes\\doc_mp_024.json"
+    },
+    {
+      "document_id": "doc_mp_025",
+      "page_count": 5,
+      "split": "val",
+      "degradation_level": "clean",
+      "index_path": "experiments/phase6/indexes\\doc_mp_025.json"
+    },
+    {
+      "document_id": "doc_mp_026",
+      "page_count": 10,
+      "split": "test",
+      "degradation_level": "mild",
+      "index_path": "experiments/phase6/indexes\\doc_mp_026.json"
+    },
+    {
+      "document_id": "doc_mp_027",
+      "page_count": 20,
+      "split": "test",
+      "degradation_level": "moderate",
+      "index_path": "experiments/phase6/indexes\\doc_mp_027.json"
+    },
+    {
+      "document_id": "doc_mp_028",
+      "page_count": 50,
+      "split": "test",
+      "degradation_level": "severe",
+      "index_path": "experiments/phase6/indexes\\doc_mp_028.json"
+    },
+    {
+      "document_id": "doc_mp_029",
+      "page_count": 5,
+      "split": "test",
+      "degradation_level": "clean",
+      "index_path": "experiments/phase6/indexes\\doc_mp_029.json"
+    },
+    {
+      "document_id": "doc_mp_030",
+      "page_count": 10,
+      "split": "test",
+      "degradation_level": "mild",
+      "index_path": "experiments/phase6/indexes\\doc_mp_030.json"
+    },
+    {
+      "document_id": "doc_mp_031",
+      "page_count": 20,
+      "split": "test",
+      "degradation_level": "moderate",
+      "index_path": "experiments/phase6/indexes\\doc_mp_031.json"
+    },
+    {
+      "document_id": "doc_mp_032",
+      "page_count": 50,
+      "split": "test",
+      "degradation_level": "severe",
+      "index_path": "experiments/phase6/indexes\\doc_mp_032.json"
+    },
+    {
+      "document_id": "doc_mp_033",
+      "page_count": 5,
+      "split": "test",
+      "degradation_level": "clean",
+      "index_path": "experiments/phase6/indexes\\doc_mp_033.json"
+    },
+    {
+      "document_id": "doc_mp_034",
+      "page_count": 10,
+      "split": "test",
+      "degradation_level": "mild",
+      "index_path": "experiments/phase6/indexes\\doc_mp_034.json"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_count": 20,
+      "split": "test",
+      "degradation_level": "moderate",
+      "index_path": "experiments/phase6/indexes\\doc_mp_035.json"
+    },
+    {
+      "document_id": "doc_mp_036",
+      "page_count": 50,
+      "split": "test",
+      "degradation_level": "severe",
+      "index_path": "experiments/phase6/indexes\\doc_mp_036.json"
+    },
+    {
+      "document_id": "doc_mp_037",
+      "page_count": 5,
+      "split": "test",
+      "degradation_level": "clean",
+      "index_path": "experiments/phase6/indexes\\doc_mp_037.json"
+    },
+    {
+      "document_id": "doc_mp_038",
+      "page_count": 10,
+      "split": "test",
+      "degradation_level": "mild",
+      "index_path": "experiments/phase6/indexes\\doc_mp_038.json"
+    },
+    {
+      "document_id": "doc_mp_039",
+      "page_count": 20,
+      "split": "test",
+      "degradation_level": "moderate",
+      "index_path": "experiments/phase6/indexes\\doc_mp_039.json"
+    },
+    {
+      "document_id": "doc_mp_040",
+      "page_count": 50,
+      "split": "test",
+      "degradation_level": "severe",
+      "index_path": "experiments/phase6/indexes\\doc_mp_040.json"
+    },
+    {
+      "document_id": "doc_mp_041",
+      "page_count": 5,
+      "split": "test",
+      "degradation_level": "clean",
+      "index_path": "experiments/phase6/indexes\\doc_mp_041.json"
+    },
+    {
+      "document_id": "doc_mp_042",
+      "page_count": 10,
+      "split": "test",
+      "degradation_level": "mild",
+      "index_path": "experiments/phase6/indexes\\doc_mp_042.json"
+    },
+    {
+      "document_id": "doc_mp_043",
+      "page_count": 20,
+      "split": "test",
+      "degradation_level": "moderate",
+      "index_path": "experiments/phase6/indexes\\doc_mp_043.json"
+    },
+    {
+      "document_id": "doc_mp_044",
+      "page_count": 50,
+      "split": "test",
+      "degradation_level": "severe",
+      "index_path": "experiments/phase6/indexes\\doc_mp_044.json"
+    },
+    {
+      "document_id": "doc_mp_045",
+      "page_count": 5,
+      "split": "test",
+      "degradation_level": "clean",
+      "index_path": "experiments/phase6/indexes\\doc_mp_045.json"
+    },
+    {
+      "document_id": "doc_mp_046",
+      "page_count": 10,
+      "split": "test",
+      "degradation_level": "mild",
+      "index_path": "experiments/phase6/indexes\\doc_mp_046.json"
+    },
+    {
+      "document_id": "doc_mp_047",
+      "page_count": 20,
+      "split": "test",
+      "degradation_level": "moderate",
+      "index_path": "experiments/phase6/indexes\\doc_mp_047.json"
+    },
+    {
+      "document_id": "doc_mp_048",
+      "page_count": 50,
+      "split": "test",
+      "degradation_level": "severe",
+      "index_path": "experiments/phase6/indexes\\doc_mp_048.json"
+    },
+    {
+      "document_id": "doc_mp_049",
+      "page_count": 5,
+      "split": "test",
+      "degradation_level": "clean",
+      "index_path": "experiments/phase6/indexes\\doc_mp_049.json"
+    },
+    {
+      "document_id": "doc_mp_050",
+      "page_count": 10,
+      "split": "test",
+      "degradation_level": "mild",
+      "index_path": "experiments/phase6/indexes\\doc_mp_050.json"
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "q_doc_mp_001",
+      "document_id": "doc_mp_001",
+      "query_text": "What was the total revenue and financial table for finance?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        2
+      ],
+      "ground_truth_regions": [
+        "doc_mp_001_p2_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_002",
+      "document_id": "doc_mp_002",
+      "query_text": "What was the total board of directors and financial table for governance?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        2
+      ],
+      "ground_truth_regions": [
+        "doc_mp_002_p2_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_003",
+      "document_id": "doc_mp_003",
+      "query_text": "What was the total supply chain and financial table for operations?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        10
+      ],
+      "ground_truth_regions": [
+        "doc_mp_003_p10_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_004",
+      "document_id": "doc_mp_004",
+      "query_text": "What was the total infrastructure and financial table for technology?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        17
+      ],
+      "ground_truth_regions": [
+        "doc_mp_004_p17_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_005",
+      "document_id": "doc_mp_005",
+      "query_text": "What was the total compliance and financial table for legal?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        3
+      ],
+      "ground_truth_regions": [
+        "doc_mp_005_p3_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_006",
+      "document_id": "doc_mp_006",
+      "query_text": "What was the total revenue and financial table for finance?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        4
+      ],
+      "ground_truth_regions": [
+        "doc_mp_006_p4_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_007",
+      "document_id": "doc_mp_007",
+      "query_text": "What was the total board of directors and financial table for governance?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        5
+      ],
+      "ground_truth_regions": [
+        "doc_mp_007_p5_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_008",
+      "document_id": "doc_mp_008",
+      "query_text": "What was the total supply chain and financial table for operations?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        45
+      ],
+      "ground_truth_regions": [
+        "doc_mp_008_p45_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_009",
+      "document_id": "doc_mp_009",
+      "query_text": "What was the total infrastructure and financial table for technology?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        2
+      ],
+      "ground_truth_regions": [
+        "doc_mp_009_p2_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_010",
+      "document_id": "doc_mp_010",
+      "query_text": "What was the total compliance and financial table for legal?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        8
+      ],
+      "ground_truth_regions": [
+        "doc_mp_010_p8_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_011",
+      "document_id": "doc_mp_011",
+      "query_text": "What was the total revenue and financial table for finance?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        3
+      ],
+      "ground_truth_regions": [
+        "doc_mp_011_p3_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_012",
+      "document_id": "doc_mp_012",
+      "query_text": "What was the total board of directors and financial table for governance?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        3
+      ],
+      "ground_truth_regions": [
+        "doc_mp_012_p3_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_013",
+      "document_id": "doc_mp_013",
+      "query_text": "What was the total supply chain and financial table for operations?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        2
+      ],
+      "ground_truth_regions": [
+        "doc_mp_013_p2_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_014",
+      "document_id": "doc_mp_014",
+      "query_text": "What was the total infrastructure and financial table for technology?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        5
+      ],
+      "ground_truth_regions": [
+        "doc_mp_014_p5_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_015",
+      "document_id": "doc_mp_015",
+      "query_text": "What was the total compliance and financial table for legal?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        9
+      ],
+      "ground_truth_regions": [
+        "doc_mp_015_p9_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_016",
+      "document_id": "doc_mp_016",
+      "query_text": "What was the total revenue and financial table for finance?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        34
+      ],
+      "ground_truth_regions": [
+        "doc_mp_016_p34_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_017",
+      "document_id": "doc_mp_017",
+      "query_text": "What was the total board of directors and financial table for governance?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        2
+      ],
+      "ground_truth_regions": [
+        "doc_mp_017_p2_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_018",
+      "document_id": "doc_mp_018",
+      "query_text": "What was the total supply chain and financial table for operations?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        10
+      ],
+      "ground_truth_regions": [
+        "doc_mp_018_p10_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_019",
+      "document_id": "doc_mp_019",
+      "query_text": "What was the total infrastructure and financial table for technology?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        8
+      ],
+      "ground_truth_regions": [
+        "doc_mp_019_p8_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_020",
+      "document_id": "doc_mp_020",
+      "query_text": "What was the total compliance and financial table for legal?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        47
+      ],
+      "ground_truth_regions": [
+        "doc_mp_020_p47_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_021",
+      "document_id": "doc_mp_021",
+      "query_text": "What was the total revenue and financial table for finance?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        5
+      ],
+      "ground_truth_regions": [
+        "doc_mp_021_p5_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_022",
+      "document_id": "doc_mp_022",
+      "query_text": "What was the total board of directors and financial table for governance?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        5
+      ],
+      "ground_truth_regions": [
+        "doc_mp_022_p5_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_023",
+      "document_id": "doc_mp_023",
+      "query_text": "What was the total supply chain and financial table for operations?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        16
+      ],
+      "ground_truth_regions": [
+        "doc_mp_023_p16_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_024",
+      "document_id": "doc_mp_024",
+      "query_text": "What was the total infrastructure and financial table for technology?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        39
+      ],
+      "ground_truth_regions": [
+        "doc_mp_024_p39_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_025",
+      "document_id": "doc_mp_025",
+      "query_text": "What was the total compliance and financial table for legal?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        4
+      ],
+      "ground_truth_regions": [
+        "doc_mp_025_p4_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_026",
+      "document_id": "doc_mp_026",
+      "query_text": "What was the total revenue and financial table for finance?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        2
+      ],
+      "ground_truth_regions": [
+        "doc_mp_026_p2_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_027",
+      "document_id": "doc_mp_027",
+      "query_text": "What was the total board of directors and financial table for governance?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        7
+      ],
+      "ground_truth_regions": [
+        "doc_mp_027_p7_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_028",
+      "document_id": "doc_mp_028",
+      "query_text": "What was the total supply chain and financial table for operations?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        46
+      ],
+      "ground_truth_regions": [
+        "doc_mp_028_p46_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_029",
+      "document_id": "doc_mp_029",
+      "query_text": "What was the total infrastructure and financial table for technology?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        5
+      ],
+      "ground_truth_regions": [
+        "doc_mp_029_p5_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_030",
+      "document_id": "doc_mp_030",
+      "query_text": "What was the total compliance and financial table for legal?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        7
+      ],
+      "ground_truth_regions": [
+        "doc_mp_030_p7_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_031",
+      "document_id": "doc_mp_031",
+      "query_text": "What was the total revenue and financial table for finance?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        10
+      ],
+      "ground_truth_regions": [
+        "doc_mp_031_p10_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_032",
+      "document_id": "doc_mp_032",
+      "query_text": "What was the total board of directors and financial table for governance?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        11
+      ],
+      "ground_truth_regions": [
+        "doc_mp_032_p11_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_033",
+      "document_id": "doc_mp_033",
+      "query_text": "What was the total supply chain and financial table for operations?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        3
+      ],
+      "ground_truth_regions": [
+        "doc_mp_033_p3_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_034",
+      "document_id": "doc_mp_034",
+      "query_text": "What was the total infrastructure and financial table for technology?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        7
+      ],
+      "ground_truth_regions": [
+        "doc_mp_034_p7_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_035",
+      "document_id": "doc_mp_035",
+      "query_text": "What was the total compliance and financial table for legal?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        5
+      ],
+      "ground_truth_regions": [
+        "doc_mp_035_p5_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_036",
+      "document_id": "doc_mp_036",
+      "query_text": "What was the total revenue and financial table for finance?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        7
+      ],
+      "ground_truth_regions": [
+        "doc_mp_036_p7_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_037",
+      "document_id": "doc_mp_037",
+      "query_text": "What was the total board of directors and financial table for governance?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        5
+      ],
+      "ground_truth_regions": [
+        "doc_mp_037_p5_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_038",
+      "document_id": "doc_mp_038",
+      "query_text": "What was the total supply chain and financial table for operations?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        3
+      ],
+      "ground_truth_regions": [
+        "doc_mp_038_p3_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_039",
+      "document_id": "doc_mp_039",
+      "query_text": "What was the total infrastructure and financial table for technology?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        13
+      ],
+      "ground_truth_regions": [
+        "doc_mp_039_p13_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_040",
+      "document_id": "doc_mp_040",
+      "query_text": "What was the total compliance and financial table for legal?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        24
+      ],
+      "ground_truth_regions": [
+        "doc_mp_040_p24_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_041",
+      "document_id": "doc_mp_041",
+      "query_text": "What was the total revenue and financial table for finance?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        4
+      ],
+      "ground_truth_regions": [
+        "doc_mp_041_p4_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_042",
+      "document_id": "doc_mp_042",
+      "query_text": "What was the total board of directors and financial table for governance?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        2
+      ],
+      "ground_truth_regions": [
+        "doc_mp_042_p2_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_043",
+      "document_id": "doc_mp_043",
+      "query_text": "What was the total supply chain and financial table for operations?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        16
+      ],
+      "ground_truth_regions": [
+        "doc_mp_043_p16_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_044",
+      "document_id": "doc_mp_044",
+      "query_text": "What was the total infrastructure and financial table for technology?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        36
+      ],
+      "ground_truth_regions": [
+        "doc_mp_044_p36_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_045",
+      "document_id": "doc_mp_045",
+      "query_text": "What was the total compliance and financial table for legal?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        2
+      ],
+      "ground_truth_regions": [
+        "doc_mp_045_p2_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_046",
+      "document_id": "doc_mp_046",
+      "query_text": "What was the total revenue and financial table for finance?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        8
+      ],
+      "ground_truth_regions": [
+        "doc_mp_046_p8_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_047",
+      "document_id": "doc_mp_047",
+      "query_text": "What was the total board of directors and financial table for governance?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        4
+      ],
+      "ground_truth_regions": [
+        "doc_mp_047_p4_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_048",
+      "document_id": "doc_mp_048",
+      "query_text": "What was the total supply chain and financial table for operations?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        37
+      ],
+      "ground_truth_regions": [
+        "doc_mp_048_p37_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_049",
+      "document_id": "doc_mp_049",
+      "query_text": "What was the total infrastructure and financial table for technology?",
+      "query_type": "table",
+      "ground_truth_pages": [
+        4
+      ],
+      "ground_truth_regions": [
+        "doc_mp_049_p4_tbl1"
+      ]
+    },
+    {
+      "query_id": "q_doc_mp_050",
+      "document_id": "doc_mp_050",
+      "query_text": "What was the total compliance and financial table for legal?",
+      "query_type": "factoid",
+      "ground_truth_pages": [
+        7
+      ],
+      "ground_truth_regions": [
+        "doc_mp_050_p7_tbl1"
+      ]
+    }
+  ]
+}

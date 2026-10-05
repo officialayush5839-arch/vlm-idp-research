@@ -1,0 +1,1268 @@
+{
+  "document_id": "doc_mp_020",
+  "pages": [
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 1,
+      "split": "val",
+      "raw_text": "Annu@l Compr3h3nsiv3 R3por+: Docum3n+ doc_mp_020. T@bl3 of Con+3n+s, Ex3cu+iv3 Ov3rvi3w, Dir3c+ory.",
+      "clean_text": "Annu@l Compr3h3nsiv3 R3por+: Docum3n+ doc_mp_020. T@bl3 of Con+3n+s, Ex3cu+iv3 Ov3rvi3w, Dir3c+ory.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p1_hdr",
+          "page_number": 1,
+          "bbox": [
+            50,
+            50,
+            950,
+            150
+          ],
+          "region_type": "header",
+          "text_content": "ANNUAL CORPORATE REPORT",
+          "confidence": 0.98
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 2,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 2: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 2.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 2: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 2.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p2_reg1",
+          "page_number": 2,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on board of directors.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 3,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 3: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 3.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 3: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 3.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p3_reg1",
+          "page_number": 3,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on supply chain.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 4,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 4: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 4.",
+      "clean_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 4: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 4.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p4_reg1",
+          "page_number": 4,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on infrastructure.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 5,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 5: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 5.",
+      "clean_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 5: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 5.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p5_reg1",
+          "page_number": 5,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on compliance.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 6,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 6: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 6.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 6: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 6.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p6_reg1",
+          "page_number": 6,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on revenue.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 7,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 7: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 7.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 7: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 7.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p7_reg1",
+          "page_number": 7,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on board of directors.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 8,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 8: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 8.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 8: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 8.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p8_reg1",
+          "page_number": 8,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on supply chain.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 9,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 9: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 9.",
+      "clean_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 9: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 9.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p9_reg1",
+          "page_number": 9,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on infrastructure.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 10,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 10: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 10.",
+      "clean_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 10: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 10.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p10_reg1",
+          "page_number": 10,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on compliance.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 11,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 11: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 11.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 11: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 11.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p11_reg1",
+          "page_number": 11,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on revenue.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 12,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 12: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 12.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 12: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 12.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p12_reg1",
+          "page_number": 12,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on board of directors.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 13,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 13: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 13.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 13: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 13.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p13_reg1",
+          "page_number": 13,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on supply chain.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 14,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 14: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 14.",
+      "clean_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 14: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 14.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p14_reg1",
+          "page_number": 14,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on infrastructure.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 15,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 15: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 15.",
+      "clean_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 15: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 15.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p15_reg1",
+          "page_number": 15,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on compliance.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 16,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 16: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 16.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 16: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 16.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p16_reg1",
+          "page_number": 16,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on revenue.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 17,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 17: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 17.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 17: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 17.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p17_reg1",
+          "page_number": 17,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on board of directors.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 18,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 18: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 18.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 18: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 18.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p18_reg1",
+          "page_number": 18,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on supply chain.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 19,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 19: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 19.",
+      "clean_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 19: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 19.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p19_reg1",
+          "page_number": 19,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on infrastructure.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 20,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 20: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 20.",
+      "clean_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 20: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 20.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p20_reg1",
+          "page_number": 20,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on compliance.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 21,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 21: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 21.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 21: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 21.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p21_reg1",
+          "page_number": 21,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on revenue.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 22,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 22: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 22.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 22: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 22.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p22_reg1",
+          "page_number": 22,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on board of directors.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 23,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 23: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 23.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 23: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 23.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p23_reg1",
+          "page_number": 23,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on supply chain.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 24,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 24: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 24.",
+      "clean_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 24: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 24.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p24_reg1",
+          "page_number": 24,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on infrastructure.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 25,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 25: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 25.",
+      "clean_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 25: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 25.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p25_reg1",
+          "page_number": 25,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on compliance.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 26,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 26: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 26.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 26: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 26.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p26_reg1",
+          "page_number": 26,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on revenue.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 27,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 27: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 27.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 27: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 27.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p27_reg1",
+          "page_number": 27,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on board of directors.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 28,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 28: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 28.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 28: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 28.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p28_reg1",
+          "page_number": 28,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on supply chain.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 29,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 29: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 29.",
+      "clean_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 29: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 29.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p29_reg1",
+          "page_number": 29,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on infrastructure.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 30,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 30: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 30.",
+      "clean_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 30: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 30.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p30_reg1",
+          "page_number": 30,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on compliance.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 31,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 31: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 31.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 31: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 31.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p31_reg1",
+          "page_number": 31,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on revenue.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 32,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 32: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 32.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 32: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 32.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p32_reg1",
+          "page_number": 32,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on board of directors.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 33,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 33: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 33.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 33: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 33.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p33_reg1",
+          "page_number": 33,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on supply chain.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 34,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 34: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 34.",
+      "clean_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 34: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 34.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p34_reg1",
+          "page_number": 34,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on infrastructure.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 35,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 35: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 35.",
+      "clean_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 35: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 35.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p35_reg1",
+          "page_number": 35,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on compliance.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 36,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 36: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 36.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 36: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 36.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p36_reg1",
+          "page_number": 36,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on revenue.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 37,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 37: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 37.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 37: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 37.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p37_reg1",
+          "page_number": 37,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on board of directors.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 38,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 38: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 38.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 38: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 38.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p38_reg1",
+          "page_number": 38,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on supply chain.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 39,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 39: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 39.",
+      "clean_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 39: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 39.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p39_reg1",
+          "page_number": 39,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on infrastructure.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 40,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 40: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 40.",
+      "clean_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 40: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 40.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p40_reg1",
+          "page_number": 40,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on compliance.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 41,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 41: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 41.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 41: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 41.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p41_reg1",
+          "page_number": 41,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on revenue.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 42,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 42: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 42.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Gov3rn@nc3 S3c+ion 42: bo@rd of dir3c+ors commi++33 3+hics policy sh@r3hold3rs 3x3cu+iv3 comp3ns@+ion vo+ing righ+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 42.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p42_reg1",
+          "page_number": 42,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on board of directors.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 43,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 43: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 43.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 43: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 43.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p43_reg1",
+          "page_number": 43,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on supply chain.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 44,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 44: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 44.",
+      "clean_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 44: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 44.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p44_reg1",
+          "page_number": 44,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on infrastructure.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 45,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 45: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 45.",
+      "clean_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 45: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 45.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p45_reg1",
+          "page_number": 45,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on compliance.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 46,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 46: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 46.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Fin@nc3 S3c+ion 46: r3v3nu3 op3r@+ing profi+ 3bi+d@ b@l@nc3 sh33+ li@bili+i3s c@sh flow @udi+ fisc@l 2024 divid3nd. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 46.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p46_reg1",
+          "page_number": 46,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on revenue.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 47,
+      "split": "val",
+      "raw_text": "D3+@il3d An@lysis of L3g@l: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. Sp3cific m3+ric: Th3 +o+@l confirm3d compli@nc3 for p3riod w@s 48.7 million doll@rs wi+h high m@rgin.",
+      "clean_text": "D3+@il3d An@lysis of L3g@l: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. Sp3cific m3+ric: Th3 +o+@l confirm3d compli@nc3 for p3riod w@s 48.7 million doll@rs wi+h high m@rgin.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p47_tbl1",
+          "page_number": 47,
+          "bbox": [
+            80,
+            120,
+            920,
+            580
+          ],
+          "region_type": "table",
+          "text_content": "Consolidated Table for compliance: Total = $48.7M",
+          "confidence": 0.95
+        },
+        {
+          "region_id": "doc_mp_020_p47_txt1",
+          "page_number": 47,
+          "bbox": [
+            80,
+            600,
+            920,
+            850
+          ],
+          "region_type": "text",
+          "text_content": "Audited notes on regulatory filings and statutory disclosures.",
+          "confidence": 0.92
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 48,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 48: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 48.",
+      "clean_text": "G3n3r@l Ov3rvi3w of Op3r@+ions S3c+ion 48: supply ch@in logis+ics procur3m3n+ inv3n+ory +urnov3r m@nuf@c+uring f@cili+i3s dis+ribu+ion n3+work. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 48.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p48_reg1",
+          "page_number": 48,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on supply chain.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 49,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 49: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 49.",
+      "clean_text": "G3n3r@l Ov3rvi3w of T3chnology S3c+ion 49: infr@s+ruc+ur3 cloud migr@+ion cyb3rs3curi+y n3ur@l n3+work vlm proc3ssing d@+@ priv@cy 3ncryp+ion. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 49.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p49_reg1",
+          "page_number": 49,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on infrastructure.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    },
+    {
+      "document_id": "doc_mp_020",
+      "page_number": 50,
+      "split": "val",
+      "raw_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 50: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 50.",
+      "clean_text": "G3n3r@l Ov3rvi3w of L3g@l S3c+ion 50: compli@nc3 r3gul@+ory filings in+3ll3c+u@l prop3r+y p@+3n+s li+ig@+ion risks s+@+u+ory r3quir3m3n+s. S+@nd@rd @dminis+r@+iv3 no+3s @nd boil3rpl@+3 docum3n+@+ion for p@g3 50.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_020_p50_reg1",
+          "page_number": 50,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on compliance.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.4,
+      "degradation_level": "severe"
+    }
+  ]
+}

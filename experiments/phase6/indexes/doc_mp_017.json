@@ -1,0 +1,143 @@
+{
+  "document_id": "doc_mp_017",
+  "pages": [
+    {
+      "document_id": "doc_mp_017",
+      "page_number": 1,
+      "split": "val",
+      "raw_text": "Annual Comprehensive Report: Document doc_mp_017. Table of Contents, Executive Overview, Directory.",
+      "clean_text": "Annual Comprehensive Report: Document doc_mp_017. Table of Contents, Executive Overview, Directory.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_017_p1_hdr",
+          "page_number": 1,
+          "bbox": [
+            50,
+            50,
+            950,
+            150
+          ],
+          "region_type": "header",
+          "text_content": "ANNUAL CORPORATE REPORT",
+          "confidence": 0.98
+        }
+      ],
+      "quality_score": 0.95,
+      "degradation_level": "clean"
+    },
+    {
+      "document_id": "doc_mp_017",
+      "page_number": 2,
+      "split": "val",
+      "raw_text": "Detailed Analysis of Governance: board of directors committee ethics policy shareholders executive compensation voting rights. Specific metric: The total confirmed board of directors for period was 48.7 million dollars with high margin.",
+      "clean_text": "Detailed Analysis of Governance: board of directors committee ethics policy shareholders executive compensation voting rights. Specific metric: The total confirmed board of directors for period was 48.7 million dollars with high margin.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_017_p2_tbl1",
+          "page_number": 2,
+          "bbox": [
+            80,
+            120,
+            920,
+            580
+          ],
+          "region_type": "table",
+          "text_content": "Consolidated Table for board of directors: Total = $48.7M",
+          "confidence": 0.95
+        },
+        {
+          "region_id": "doc_mp_017_p2_txt1",
+          "page_number": 2,
+          "bbox": [
+            80,
+            600,
+            920,
+            850
+          ],
+          "region_type": "text",
+          "text_content": "Audited notes on committee and statutory disclosures.",
+          "confidence": 0.92
+        }
+      ],
+      "quality_score": 0.95,
+      "degradation_level": "clean"
+    },
+    {
+      "document_id": "doc_mp_017",
+      "page_number": 3,
+      "split": "val",
+      "raw_text": "General Overview of Legal Section 3: compliance regulatory filings intellectual property patents litigation risks statutory requirements. Standard administrative notes and boilerplate documentation for page 3.",
+      "clean_text": "General Overview of Legal Section 3: compliance regulatory filings intellectual property patents litigation risks statutory requirements. Standard administrative notes and boilerplate documentation for page 3.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_017_p3_reg1",
+          "page_number": 3,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on compliance.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.95,
+      "degradation_level": "clean"
+    },
+    {
+      "document_id": "doc_mp_017",
+      "page_number": 4,
+      "split": "val",
+      "raw_text": "General Overview of Finance Section 4: revenue operating profit ebitda balance sheet liabilities cash flow audit fiscal 2024 dividend. Standard administrative notes and boilerplate documentation for page 4.",
+      "clean_text": "General Overview of Finance Section 4: revenue operating profit ebitda balance sheet liabilities cash flow audit fiscal 2024 dividend. Standard administrative notes and boilerplate documentation for page 4.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_017_p4_reg1",
+          "page_number": 4,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on revenue.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.95,
+      "degradation_level": "clean"
+    },
+    {
+      "document_id": "doc_mp_017",
+      "page_number": 5,
+      "split": "val",
+      "raw_text": "General Overview of Governance Section 5: board of directors committee ethics policy shareholders executive compensation voting rights. Standard administrative notes and boilerplate documentation for page 5.",
+      "clean_text": "General Overview of Governance Section 5: board of directors committee ethics policy shareholders executive compensation voting rights. Standard administrative notes and boilerplate documentation for page 5.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_017_p5_reg1",
+          "page_number": 5,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on board of directors.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.95,
+      "degradation_level": "clean"
+    }
+  ]
+}

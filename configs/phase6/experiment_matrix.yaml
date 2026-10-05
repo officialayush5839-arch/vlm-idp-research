@@ -1,0 +1,55 @@
+# Phase 6 Experiment Matrix Configuration
+experiment:
+  phase: "6"
+  name: "long_document_multimodal_retrieval_benchmark"
+  random_seeds: [42, 123, 999]
+  baselines:
+    - id: "B6-0"
+      name: "Random Page Retrieval"
+      description: "Uniform random selection of K pages without content inspection"
+    - id: "B6-1"
+      name: "BM25 Lexical Text Retrieval"
+      description: "Deterministic BM25 inverted index over page-level extracted OCR text"
+    - id: "B6-2"
+      name: "Dense Text Retrieval"
+      description: "TF-IDF / SVD dense semantic projection cosine retrieval"
+    - id: "B6-3"
+      name: "Visual Feature Retrieval"
+      description: "Spatial pyramid color/layout visual descriptor retrieval"
+    - id: "B6-4"
+      name: "Multimodal Hybrid Retrieval"
+      description: "Score fusion of BM25 text and visual retrieval with alpha=0.60"
+    - id: "B6-5"
+      name: "Hierarchical Multimodal Retrieval (Proposed)"
+      description: "Hybrid page retrieval + region retrieval + cross-modal reranker + evidence packaging"
+
+  datasets:
+    - name: "synthetic_multipage"
+      document_lengths: [5, 10, 20, 50]
+      sample_count: 50
+    - name: "docvqa_multipage_sample"
+      sample_count: 50
+
+  degradation_levels:
+    - "clean"
+    - "mild"
+    - "moderate"
+    - "severe"
+
+  ablations:
+    - id: "A1"
+      name: "Text vs Visual Modality"
+    - id: "A2"
+      name: "K Selection Sensitivity"
+    - id: "A3"
+      name: "Fusion Weight Alpha Sensitivity"
+    - id: "A4"
+      name: "Cross-Modal Reranker Impact"
+    - id: "A5"
+      name: "Document Length Scaling (5 to 50 pages)"
+    - id: "A6"
+      name: "Visual Degradation Robustness"
+    - id: "A7"
+      name: "Region-Level vs Page-Level Only"
+    - id: "A8"
+      name: "Query Specificity (Keyword vs Natural Language QA)"

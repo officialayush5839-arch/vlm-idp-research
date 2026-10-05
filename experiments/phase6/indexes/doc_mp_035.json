@@ -1,0 +1,518 @@
+{
+  "document_id": "doc_mp_035",
+  "pages": [
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 1,
+      "split": "test",
+      "raw_text": "Annual C0mprehens1ve Rep0rt: D0cument d0c_mp_035. Table 0f C0ntents, Execut1ve Overv1ew, D1rect0ry.",
+      "clean_text": "Annual C0mprehens1ve Rep0rt: D0cument d0c_mp_035. Table 0f C0ntents, Execut1ve Overv1ew, D1rect0ry.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p1_hdr",
+          "page_number": 1,
+          "bbox": [
+            50,
+            50,
+            950,
+            150
+          ],
+          "region_type": "header",
+          "text_content": "ANNUAL CORPORATE REPORT",
+          "confidence": 0.98
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 2,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f G0vernance Sect10n 2: b0ard 0f d1rect0rs c0mm1ttee eth1cs p0l1cy shareh0lders execut1ve c0mpensat10n v0t1ng r1ghts. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 2.",
+      "clean_text": "General Overv1ew 0f G0vernance Sect10n 2: b0ard 0f d1rect0rs c0mm1ttee eth1cs p0l1cy shareh0lders execut1ve c0mpensat10n v0t1ng r1ghts. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 2.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p2_reg1",
+          "page_number": 2,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on board of directors.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 3,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f Operat10ns Sect10n 3: supply cha1n l0g1st1cs pr0curement 1nvent0ry turn0ver manufactur1ng fac1l1t1es d1str1but10n netw0rk. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 3.",
+      "clean_text": "General Overv1ew 0f Operat10ns Sect10n 3: supply cha1n l0g1st1cs pr0curement 1nvent0ry turn0ver manufactur1ng fac1l1t1es d1str1but10n netw0rk. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 3.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p3_reg1",
+          "page_number": 3,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on supply chain.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 4,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f Techn0l0gy Sect10n 4: 1nfrastructure cl0ud m1grat10n cybersecur1ty neural netw0rk vlm pr0cess1ng data pr1vacy encrypt10n. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 4.",
+      "clean_text": "General Overv1ew 0f Techn0l0gy Sect10n 4: 1nfrastructure cl0ud m1grat10n cybersecur1ty neural netw0rk vlm pr0cess1ng data pr1vacy encrypt10n. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 4.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p4_reg1",
+          "page_number": 4,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on infrastructure.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 5,
+      "split": "test",
+      "raw_text": "Deta1led Analys1s 0f Legal: c0mpl1ance regulat0ry f1l1ngs 1ntellectual pr0perty patents l1t1gat10n r1sks statut0ry requ1rements. Spec1f1c metr1c: The t0tal c0nf1rmed c0mpl1ance f0r per10d was 48.7 m1ll10n d0llars w1th h1gh marg1n.",
+      "clean_text": "Deta1led Analys1s 0f Legal: c0mpl1ance regulat0ry f1l1ngs 1ntellectual pr0perty patents l1t1gat10n r1sks statut0ry requ1rements. Spec1f1c metr1c: The t0tal c0nf1rmed c0mpl1ance f0r per10d was 48.7 m1ll10n d0llars w1th h1gh marg1n.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p5_tbl1",
+          "page_number": 5,
+          "bbox": [
+            80,
+            120,
+            920,
+            580
+          ],
+          "region_type": "table",
+          "text_content": "Consolidated Table for compliance: Total = $48.7M",
+          "confidence": 0.95
+        },
+        {
+          "region_id": "doc_mp_035_p5_txt1",
+          "page_number": 5,
+          "bbox": [
+            80,
+            600,
+            920,
+            850
+          ],
+          "region_type": "text",
+          "text_content": "Audited notes on regulatory filings and statutory disclosures.",
+          "confidence": 0.92
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 6,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f F1nance Sect10n 6: revenue 0perat1ng pr0f1t eb1tda balance sheet l1ab1l1t1es cash fl0w aud1t f1scal 2024 d1v1dend. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 6.",
+      "clean_text": "General Overv1ew 0f F1nance Sect10n 6: revenue 0perat1ng pr0f1t eb1tda balance sheet l1ab1l1t1es cash fl0w aud1t f1scal 2024 d1v1dend. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 6.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p6_reg1",
+          "page_number": 6,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on revenue.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 7,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f G0vernance Sect10n 7: b0ard 0f d1rect0rs c0mm1ttee eth1cs p0l1cy shareh0lders execut1ve c0mpensat10n v0t1ng r1ghts. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 7.",
+      "clean_text": "General Overv1ew 0f G0vernance Sect10n 7: b0ard 0f d1rect0rs c0mm1ttee eth1cs p0l1cy shareh0lders execut1ve c0mpensat10n v0t1ng r1ghts. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 7.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p7_reg1",
+          "page_number": 7,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on board of directors.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 8,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f Operat10ns Sect10n 8: supply cha1n l0g1st1cs pr0curement 1nvent0ry turn0ver manufactur1ng fac1l1t1es d1str1but10n netw0rk. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 8.",
+      "clean_text": "General Overv1ew 0f Operat10ns Sect10n 8: supply cha1n l0g1st1cs pr0curement 1nvent0ry turn0ver manufactur1ng fac1l1t1es d1str1but10n netw0rk. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 8.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p8_reg1",
+          "page_number": 8,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on supply chain.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 9,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f Techn0l0gy Sect10n 9: 1nfrastructure cl0ud m1grat10n cybersecur1ty neural netw0rk vlm pr0cess1ng data pr1vacy encrypt10n. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 9.",
+      "clean_text": "General Overv1ew 0f Techn0l0gy Sect10n 9: 1nfrastructure cl0ud m1grat10n cybersecur1ty neural netw0rk vlm pr0cess1ng data pr1vacy encrypt10n. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 9.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p9_reg1",
+          "page_number": 9,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on infrastructure.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 10,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f Legal Sect10n 10: c0mpl1ance regulat0ry f1l1ngs 1ntellectual pr0perty patents l1t1gat10n r1sks statut0ry requ1rements. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 10.",
+      "clean_text": "General Overv1ew 0f Legal Sect10n 10: c0mpl1ance regulat0ry f1l1ngs 1ntellectual pr0perty patents l1t1gat10n r1sks statut0ry requ1rements. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 10.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p10_reg1",
+          "page_number": 10,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on compliance.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 11,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f F1nance Sect10n 11: revenue 0perat1ng pr0f1t eb1tda balance sheet l1ab1l1t1es cash fl0w aud1t f1scal 2024 d1v1dend. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 11.",
+      "clean_text": "General Overv1ew 0f F1nance Sect10n 11: revenue 0perat1ng pr0f1t eb1tda balance sheet l1ab1l1t1es cash fl0w aud1t f1scal 2024 d1v1dend. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 11.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p11_reg1",
+          "page_number": 11,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on revenue.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 12,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f G0vernance Sect10n 12: b0ard 0f d1rect0rs c0mm1ttee eth1cs p0l1cy shareh0lders execut1ve c0mpensat10n v0t1ng r1ghts. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 12.",
+      "clean_text": "General Overv1ew 0f G0vernance Sect10n 12: b0ard 0f d1rect0rs c0mm1ttee eth1cs p0l1cy shareh0lders execut1ve c0mpensat10n v0t1ng r1ghts. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 12.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p12_reg1",
+          "page_number": 12,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on board of directors.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 13,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f Operat10ns Sect10n 13: supply cha1n l0g1st1cs pr0curement 1nvent0ry turn0ver manufactur1ng fac1l1t1es d1str1but10n netw0rk. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 13.",
+      "clean_text": "General Overv1ew 0f Operat10ns Sect10n 13: supply cha1n l0g1st1cs pr0curement 1nvent0ry turn0ver manufactur1ng fac1l1t1es d1str1but10n netw0rk. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 13.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p13_reg1",
+          "page_number": 13,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on supply chain.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 14,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f Techn0l0gy Sect10n 14: 1nfrastructure cl0ud m1grat10n cybersecur1ty neural netw0rk vlm pr0cess1ng data pr1vacy encrypt10n. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 14.",
+      "clean_text": "General Overv1ew 0f Techn0l0gy Sect10n 14: 1nfrastructure cl0ud m1grat10n cybersecur1ty neural netw0rk vlm pr0cess1ng data pr1vacy encrypt10n. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 14.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p14_reg1",
+          "page_number": 14,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on infrastructure.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 15,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f Legal Sect10n 15: c0mpl1ance regulat0ry f1l1ngs 1ntellectual pr0perty patents l1t1gat10n r1sks statut0ry requ1rements. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 15.",
+      "clean_text": "General Overv1ew 0f Legal Sect10n 15: c0mpl1ance regulat0ry f1l1ngs 1ntellectual pr0perty patents l1t1gat10n r1sks statut0ry requ1rements. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 15.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p15_reg1",
+          "page_number": 15,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on compliance.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 16,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f F1nance Sect10n 16: revenue 0perat1ng pr0f1t eb1tda balance sheet l1ab1l1t1es cash fl0w aud1t f1scal 2024 d1v1dend. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 16.",
+      "clean_text": "General Overv1ew 0f F1nance Sect10n 16: revenue 0perat1ng pr0f1t eb1tda balance sheet l1ab1l1t1es cash fl0w aud1t f1scal 2024 d1v1dend. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 16.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p16_reg1",
+          "page_number": 16,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on revenue.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 17,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f G0vernance Sect10n 17: b0ard 0f d1rect0rs c0mm1ttee eth1cs p0l1cy shareh0lders execut1ve c0mpensat10n v0t1ng r1ghts. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 17.",
+      "clean_text": "General Overv1ew 0f G0vernance Sect10n 17: b0ard 0f d1rect0rs c0mm1ttee eth1cs p0l1cy shareh0lders execut1ve c0mpensat10n v0t1ng r1ghts. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 17.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p17_reg1",
+          "page_number": 17,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on board of directors.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 18,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f Operat10ns Sect10n 18: supply cha1n l0g1st1cs pr0curement 1nvent0ry turn0ver manufactur1ng fac1l1t1es d1str1but10n netw0rk. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 18.",
+      "clean_text": "General Overv1ew 0f Operat10ns Sect10n 18: supply cha1n l0g1st1cs pr0curement 1nvent0ry turn0ver manufactur1ng fac1l1t1es d1str1but10n netw0rk. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 18.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p18_reg1",
+          "page_number": 18,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on supply chain.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 19,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f Techn0l0gy Sect10n 19: 1nfrastructure cl0ud m1grat10n cybersecur1ty neural netw0rk vlm pr0cess1ng data pr1vacy encrypt10n. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 19.",
+      "clean_text": "General Overv1ew 0f Techn0l0gy Sect10n 19: 1nfrastructure cl0ud m1grat10n cybersecur1ty neural netw0rk vlm pr0cess1ng data pr1vacy encrypt10n. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 19.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p19_reg1",
+          "page_number": 19,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on infrastructure.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    },
+    {
+      "document_id": "doc_mp_035",
+      "page_number": 20,
+      "split": "test",
+      "raw_text": "General Overv1ew 0f Legal Sect10n 20: c0mpl1ance regulat0ry f1l1ngs 1ntellectual pr0perty patents l1t1gat10n r1sks statut0ry requ1rements. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 20.",
+      "clean_text": "General Overv1ew 0f Legal Sect10n 20: c0mpl1ance regulat0ry f1l1ngs 1ntellectual pr0perty patents l1t1gat10n r1sks statut0ry requ1rements. Standard adm1n1strat1ve n0tes and b01lerplate d0cumentat10n f0r page 20.",
+      "image_path": null,
+      "regions": [
+        {
+          "region_id": "doc_mp_035_p20_reg1",
+          "page_number": 20,
+          "bbox": [
+            50,
+            80,
+            950,
+            400
+          ],
+          "region_type": "text",
+          "text_content": "Narrative on compliance.",
+          "confidence": 0.89
+        }
+      ],
+      "quality_score": 0.65,
+      "degradation_level": "moderate"
+    }
+  ]
+}
