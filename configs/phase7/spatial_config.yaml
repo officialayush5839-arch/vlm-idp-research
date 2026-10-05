@@ -1,0 +1,9 @@
+# Phase 7 Spatial Grounding Configuration
+spatial:
+  coordinate_space: "normalized_1000"
+  iou_threshold_relaxed: 0.50
+  iou_threshold_strict: 0.75
+  min_box_area_ratio: 0.0001
+  max_box_area_ratio: 1.0000
+  reject_out_of_bounds: true
+  reject_inverted_coords: true

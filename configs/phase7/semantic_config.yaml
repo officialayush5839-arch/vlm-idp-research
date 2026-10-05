@@ -1,0 +1,9 @@
+# Phase 7 Semantic Support Configuration
+semantic:
+  scoring_type: "heuristic_support_score"
+  min_lexical_overlap: 0.20
+  entity_match_bonus: 0.25
+  numeric_exact_match_bonus: 0.30
+  table_context_match_bonus: 0.20
+  stopword_filtering: true
+  stemming: false

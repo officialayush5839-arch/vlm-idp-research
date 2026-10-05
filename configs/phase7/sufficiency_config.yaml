@@ -1,0 +1,10 @@
+# Phase 7 Evidence Sufficiency Configuration
+sufficiency:
+  min_required_entities: 1
+  min_coverage_ratio: 0.50
+  strict_numerical_queries: true
+  allow_partial_fallback: true
+  categories:
+    - "SUFFICIENT"
+    - "PARTIALLY_SUFFICIENT"
+    - "INSUFFICIENT"

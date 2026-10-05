@@ -1,0 +1,15 @@
+# Phase 7 Evidence Configuration
+evidence:
+  max_units_per_page: 5
+  max_total_units: 15
+  coordinate_space: "normalized_1000"
+  supported_entity_types:
+    - "text"
+    - "table"
+    - "figure"
+    - "form"
+    - "header"
+    - "footer"
+    - "numeric"
+    - "key_value"
+  allow_partial_evidence: true

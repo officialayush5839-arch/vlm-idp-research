@@ -1,0 +1,93 @@
+{
+  "package_id": "pkg_B7-5_doc_mp_026_q_doc_mp_026_s42",
+  "document_id": "doc_mp_026",
+  "query_id": "q_doc_mp_026",
+  "query_text": "What was the total revenue and financial table for finance?",
+  "retrieval_method": "B6-5",
+  "selected_pages": [
+    2
+  ],
+  "selected_regions": [
+    "doc_mp_026_p2_tbl1"
+  ],
+  "evidence_units": [
+    {
+      "evidence_id": "ev_pkg_B7-5_doc_mp_026_q_doc_mp_026_s42_p2_doc_mp_026_p2_tbl1",
+      "document_id": "doc_mp_026",
+      "page_id": 2,
+      "region_id": "doc_mp_026_p2_tbl1",
+      "bbox_1000": [
+        80,
+        120,
+        920,
+        580
+      ],
+      "bbox_pixel": null,
+      "text": "Consolidated Table for revenue: Total = $48.7M",
+      "entity_type": "text",
+      "source_type": "table",
+      "retrieval_score": 0.98,
+      "retrieval_rank": 1,
+      "page_rank": 1,
+      "region_rank": 1,
+      "provenance_hash": "b15af3dffbacfa6abf19f7483f11b6f664d1ad9a7ac718f8e1401b699af25154"
+    }
+  ],
+  "support_result": {
+    "support_status": "PARTIALLY_SUPPORTED",
+    "semantic_score": 1.0,
+    "spatial_score": 1.0,
+    "coverage_score": 0.5,
+    "sufficiency_score": 0.5,
+    "reason": "Answer is partially supported by available evidence",
+    "evidence_ids": [
+      "ev_pkg_B7-5_doc_mp_026_q_doc_mp_026_s42_p2_doc_mp_026_p2_tbl1"
+    ]
+  },
+  "grounding_result": {
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "spatial_grounding_status": "PASS",
+    "evidence_sufficiency_status": "PARTIALLY_SUFFICIENT",
+    "grounding_score": 0.85,
+    "evidence_ids": [
+      "ev_pkg_B7-5_doc_mp_026_q_doc_mp_026_s42_p2_doc_mp_026_p2_tbl1"
+    ]
+  },
+  "citations": [
+    {
+      "citation_id": "cit_doc_mp_026_p2_doc_mp_026_p2_tbl1_b15af3df",
+      "document_id": "doc_mp_026",
+      "page_number": 2,
+      "region_id": "doc_mp_026_p2_tbl1",
+      "bbox": [
+        80,
+        120,
+        920,
+        580
+      ],
+      "evidence_id": "ev_pkg_B7-5_doc_mp_026_q_doc_mp_026_s42_p2_doc_mp_026_p2_tbl1",
+      "provenance_hash": "b15af3dffbacfa6abf19f7483f11b6f664d1ad9a7ac718f8e1401b699af25154",
+      "text_snippet": "Consolidated Table for revenue: Total = $48.7M"
+    }
+  ],
+  "provenance": {
+    "run_id": "run_P7_synthetic_multipage_b7_5_doc_mp_026_q_doc_mp_026_mild_s42",
+    "phase": "PHASE_7",
+    "dataset": "synthetic_multipage",
+    "baseline": "B7-5",
+    "document_id": "doc_mp_026",
+    "query_id": "q_doc_mp_026",
+    "condition": "mild",
+    "seed": 42,
+    "git_commit": "afdd59949f4eab29ec292dac499c3714f571709f",
+    "timestamp_utc": "2026-10-05T14:50:55.182066+00:00",
+    "upstream_retrieval": "B6-5",
+    "evidence_count": 1,
+    "citation_count": 1,
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "record_hash": "f2cd9f6f6dc4c460e91a361b15be6cf068d5284b06bac398597f5ba3cefdc94a"
+  },
+  "package_hash": "afbb95ed402d097f5afca0a2af7a79588f62732c04277dd63f3ecd917ce5d249"
+}

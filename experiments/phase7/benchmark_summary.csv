@@ -1,0 +1,7 @@
+baseline_id,name,total_runs,precision_mean,recall_mean,f1_mean,region_recall_at_050,region_recall_at_075,mean_iou,semantic_support_accuracy,answer_support_accuracy,evidence_sufficiency_rate,grounded_answer_rate,partially_grounded_rate,unsupported_answer_rate,avg_latency_ms
+B7-0,Random Evidence Baseline,125,0.0,0.0,0.0,0.0,0.0,0.3864000000000001,0.0,0.0,0.128,0.0,0.0,1.0,1.854340800549835
+B7-1,BM25 / Lexical Only,125,0.0,0.0,0.0,0.0,0.0,0.3864000000000001,0.0,0.0,0.44,0.0,0.0,1.0,2.350733601488173
+B7-2,Dense Embedding Only,125,0.0,0.0,0.0,0.0,0.0,0.3864000000000001,0.0,0.0,0.32,0.0,0.0,1.0,2.3129527987912297
+B7-3,Visual Only,125,0.0,0.0,0.0,0.0,0.0,0.3864000000000001,0.0,0.0,0.52,0.0,0.0,1.0,2.3525207987986505
+B7-4,Hybrid Retrieval,125,0.0,0.0,0.0,0.0,0.0,0.3864000000000001,0.0,0.0,0.44,0.0,0.0,1.0,2.0018512019887567
+B7-5,Proposed Hierarchical Multimodal Grounding,125,0.7733335600000002,1.0,0.8640000000000001,1.0,1.0,1.0,1.0,0.2,0.2,0.2,0.8,0.0,2.1897279983386397

@@ -1,0 +1,107 @@
+[
+  {
+    "query_id": "q_doc_mp_011",
+    "document_id": "doc_mp_011",
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "grounding_score": 0.85
+  },
+  {
+    "query_id": "q_doc_mp_012",
+    "document_id": "doc_mp_012",
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "grounding_score": 0.871429
+  },
+  {
+    "query_id": "q_doc_mp_013",
+    "document_id": "doc_mp_013",
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "grounding_score": 0.871429
+  },
+  {
+    "query_id": "q_doc_mp_014",
+    "document_id": "doc_mp_014",
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "grounding_score": 0.85
+  },
+  {
+    "query_id": "q_doc_mp_015",
+    "document_id": "doc_mp_015",
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "grounding_score": 0.85
+  },
+  {
+    "query_id": "q_doc_mp_016",
+    "document_id": "doc_mp_016",
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "grounding_score": 0.85
+  },
+  {
+    "query_id": "q_doc_mp_017",
+    "document_id": "doc_mp_017",
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "grounding_score": 0.871429
+  },
+  {
+    "query_id": "q_doc_mp_018",
+    "document_id": "doc_mp_018",
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "grounding_score": 0.871429
+  },
+  {
+    "query_id": "q_doc_mp_019",
+    "document_id": "doc_mp_019",
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "grounding_score": 0.85
+  },
+  {
+    "query_id": "q_doc_mp_020",
+    "document_id": "doc_mp_020",
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "grounding_score": 0.85
+  },
+  {
+    "query_id": "q_doc_mp_021",
+    "document_id": "doc_mp_021",
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "grounding_score": 0.85
+  },
+  {
+    "query_id": "q_doc_mp_022",
+    "document_id": "doc_mp_022",
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "grounding_score": 0.871429
+  },
+  {
+    "query_id": "q_doc_mp_023",
+    "document_id": "doc_mp_023",
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "grounding_score": 0.871429
+  },
+  {
+    "query_id": "q_doc_mp_024",
+    "document_id": "doc_mp_024",
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "grounding_score": 0.85
+  },
+  {
+    "query_id": "q_doc_mp_025",
+    "document_id": "doc_mp_025",
+    "grounding_status": "PARTIALLY_GROUNDED",
+    "answer_support_status": "PARTIALLY_SUPPORTED",
+    "grounding_score": 0.85
+  }
+]

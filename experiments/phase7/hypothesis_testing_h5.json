@@ -1,0 +1,57 @@
+{
+  "hypothesis": "H5",
+  "statement": "Hierarchical multimodal retrieval produces more spatially and semantically grounded evidence than unimodal retrieval",
+  "comparisons": {
+    "B7-5_vs_B7-0": {
+      "observed_mean_diff": 0.891143,
+      "ci_95": [
+        0.887486,
+        0.894629
+      ],
+      "p_value": 0.0,
+      "cohens_d": 43.0216,
+      "statistically_significant": true
+    },
+    "B7-5_vs_B7-1": {
+      "observed_mean_diff": 0.891143,
+      "ci_95": [
+        0.887486,
+        0.894629
+      ],
+      "p_value": 0.0,
+      "cohens_d": 43.0216,
+      "statistically_significant": true
+    },
+    "B7-5_vs_B7-2": {
+      "observed_mean_diff": 0.891143,
+      "ci_95": [
+        0.887486,
+        0.894629
+      ],
+      "p_value": 0.0,
+      "cohens_d": 43.0216,
+      "statistically_significant": true
+    },
+    "B7-5_vs_B7-3": {
+      "observed_mean_diff": 0.891143,
+      "ci_95": [
+        0.887486,
+        0.894629
+      ],
+      "p_value": 0.0,
+      "cohens_d": 43.0216,
+      "statistically_significant": true
+    },
+    "B7-5_vs_B7-4": {
+      "observed_mean_diff": 0.891143,
+      "ci_95": [
+        0.887486,
+        0.894629
+      ],
+      "p_value": 0.0,
+      "cohens_d": 43.0216,
+      "statistically_significant": true
+    }
+  },
+  "overall_status": "SUPPORTED"
+}

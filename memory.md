@@ -64,21 +64,22 @@ All RQ1-RQ6 frozen for experimental investigation. Status: CONFIRMED.
 - PHASE 5: Adaptive Routing (Completed: 2026-10-05, 163/163 tests pass, Audited: 2026-10-05). Status: CONFIRMED.
 - PHASE 5.1: Scientific Correction & Revalidation (Completed: 2026-10-05, 178/178 tests pass, 4,500 distinct traces persisted, zero-leakage verified, learned router deployed, Hypothesis H2 evaluated as NOT_SUPPORTED). Status: CONFIRMED.
 - PHASE 6: Long-Document Multimodal Retrieval (Completed: 2026-10-05, 212/212 tests pass, B6-0 through B6-5 baselines, 450 benchmark runs, paired bootstrap B=10,000, Hypothesis H4 evaluated as SUPPORTED). Status: CONFIRMED.
+- PHASE 7: Evidence Grounding, Verification & Answer-Support Validation (Completed: 2026-10-05, 267/267 tests pass, B7-0 through B7-5 baselines, 750 benchmark runs, paired bootstrap B=10,000, Hypothesis H5 evaluated as SUPPORTED). Status: CONFIRMED.
 
 ## 20. Current Phase
-PHASE 6: Completed. Awaiting authorization to begin Phase 7 (Evidence Grounding). Status: CONFIRMED.
+PHASE 7: Completed. Awaiting authorization to begin Phase 8 (Uncertainty Calibration + Abstention). Status: CONFIRMED.
 
 ## 21. Current Task
-Phase 6 hierarchical multimodal retrieval implementation, benchmark execution, bootstrap hypothesis testing (H4 SUPPORTED), and comprehensive scientific reporting complete. Status: PASS.
+Phase 7 evidence grounding subsystem implementation, spatial region validation, semantic support, numeric & table verification, multi-page fusion, sufficiency evaluation, 4-state grounding classifier, cryptographic provenance & citations, 750-run master benchmark, bootstrap hypothesis testing (H5 SUPPORTED: p < 0.0001, Cohen's d = 43.02, 1.0000 Mean IoU, 0% unsupported answer rate), and 20 scientific reports complete. Status: PASS.
 
 ## 22. Next Task
-PHASE 7: Evidence Grounding (Map answers to page + bounding box + text evidence). Status: PLANNED.
+PHASE 8: Uncertainty Calibration + Abstention (Multi-signal aggregation, logistic/isotonic/MLP calibration, risk-coverage evaluation). Status: PLANNED.
 
 ## 23. Paper Status
-Section I (Intro) and Section II (Related Work) drafted in `literature/related_work_notes.md`. Ingestion and normalization pipeline methodology documented in `reports/phase1/ingestion_validation.md`. Baseline architectures and fairness specifications documented in `reports/phase2/baseline_registry.md`. Unlimited-OCR baseline justification documented in `reports/phase2_5/ieee_baseline_justification.md`. Document quality and degradation assessment methodology documented in `reports/phase3/PHASE3_REPORT.md`. Controlled degradation benchmark results documented in `reports/phase4/PHASE4_REPORT.md`. Phase 5 audit findings documented in `reports/phase5_audit/PHASE5_SCIENTIFIC_AUDIT.md`. Phase 5.1 corrected adaptive routing architecture, calibration, and empirical results documented in `reports/phase5_1/PHASE5_1_REPORT.md`. Phase 6 hierarchical multimodal retrieval architecture, baseline hierarchy (B6-0 to B6-5), VLM compute reduction (72.2%-94.0%), degradation robustness (+66.7% delta), and Hypothesis H4 validation documented in `reports/phase6/PHASE6_REPORT.md` and 16 detailed reports. Status: IN_PROGRESS.
+Section I (Intro) and Section II (Related Work) drafted in `literature/related_work_notes.md`. Ingestion and normalization pipeline methodology documented in `reports/phase1/ingestion_validation.md`. Baseline architectures and fairness specifications documented in `reports/phase2/baseline_registry.md`. Unlimited-OCR baseline justification documented in `reports/phase2_5/ieee_baseline_justification.md`. Document quality and degradation assessment methodology documented in `reports/phase3/PHASE3_REPORT.md`. Controlled degradation benchmark results documented in `reports/phase4/PHASE4_REPORT.md`. Phase 5 audit findings documented in `reports/phase5_audit/PHASE5_SCIENTIFIC_AUDIT.md`. Phase 5.1 corrected adaptive routing architecture, calibration, and empirical results documented in `reports/phase5_1/PHASE5_1_REPORT.md`. Phase 6 hierarchical multimodal retrieval architecture, baseline hierarchy (B6-0 to B6-5), VLM compute reduction (72.2%-94.0%), degradation robustness (+66.7% delta), and Hypothesis H4 validation documented in `reports/phase6/PHASE6_REPORT.md` and 16 detailed reports. Phase 7 evidence grounding subsystem, 4-state decision state machine, cryptographic citations, zero-leakage AST audit, benchmark results across 750 runs, and Hypothesis H5 validation documented in `reports/phase7/PHASE7_REPORT.md` and 20 detailed reports. Status: IN_PROGRESS.
 
 ## 24. Reproducibility Status
-Full reproducibility suite implemented in `src/evaluation/reproducibility.py` (seed_everything, env capture, JSON run manifests, zero-leakage split validator). 212 automated unit and integration tests pass in `tests/` (100% pass rate). Prompt templates versioned with SHA-256 fingerprints. Run artifacts saved in `experiments/phase2/`, `experiments/phase2_5/`, `experiments/phase3/`, `experiments/phase4/artifacts/`, `experiments/phase5_1/`, and `experiments/phase6/` (indexes, evidence packages, summaries, ablations). Status: CONFIRMED.
+Full reproducibility suite implemented in `src/evaluation/reproducibility.py` (seed_everything, env capture, JSON run manifests, zero-leakage split validator). 267 automated unit and integration tests pass in `tests/` (100% pass rate). Prompt templates versioned with SHA-256 fingerprints. Run artifacts saved in `experiments/phase2/`, `experiments/phase2_5/`, `experiments/phase3/`, `experiments/phase4/artifacts/`, `experiments/phase5_1/`, `experiments/phase6/`, and `experiments/phase7/` (evidence packages, benchmark summaries, ablations, bootstrap statistics). Status: CONFIRMED.
 
 ---
 
@@ -89,9 +90,9 @@ Full reproducibility suite implemented in `src/evaluation/reproducibility.py` (s
 - PyTorch: 2.14.1+cpu — CONFIRMED
 - CUDA Runtime (PyTorch): NOT_AVAILABLE (CPU-only PyTorch active in Python 3.14 .venv) — CONFIRMED
 - OS: Windows 11 AMD64 (Windows-11-10.0.26200-SP0) — CONFIRMED
-- Git: Initialized (Commit 3dfa2a2) — CONFIRMED
+- Git: Initialized (Commit afdd599) — CONFIRMED
 - Virtual Environment: `.venv` created and populated with dependencies — CONFIRMED
-- Unit & Integration Tests: 212 passed in pytest suite (100% pass rate) — CONFIRMED
-- Baselines Validated: B0, B1, B2, B0-U, B6-0, B6-1, B6-2, B6-3, B6-4, B6-5 — CONFIRMED
+- Unit & Integration Tests: 267 passed in pytest suite (100% pass rate) — CONFIRMED
+- Baselines Validated: B0, B1, B2, B0-U, B6-0, B6-1, B6-2, B6-3, B6-4, B6-5, B7-0, B7-1, B7-2, B7-3, B7-4, B7-5 — CONFIRMED
 - Quality Features Validated: 10 extractors (blur, noise, skew, glare, contrast, resolution, compression, illumination, occlusion, perspective) — CONFIRMED
-- Experiments Validated: Phase 2 smoke (5/5), Phase 2.5 smoke (B0-U 100% match), Phase 3 validation (E3-VAL-QUALITY 9x5 grid), Phase 4 benchmark (E4-BENCHMARK 3,600 conditions), Phase 5.1 benchmark (E5_1-ROUTING 4,500 traces), Phase 6 benchmark (450 evaluations, H4 SUPPORTED) — CONFIRMED
+- Experiments Validated: Phase 2 smoke (5/5), Phase 2.5 smoke (B0-U 100% match), Phase 3 validation (E3-VAL-QUALITY 9x5 grid), Phase 4 benchmark (E4-BENCHMARK 3,600 conditions), Phase 5.1 benchmark (E5_1-ROUTING 4,500 traces), Phase 6 benchmark (450 evaluations, H4 SUPPORTED), Phase 7 benchmark (750 evaluations, H5 SUPPORTED) — CONFIRMED

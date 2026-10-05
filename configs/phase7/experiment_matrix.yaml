@@ -1,0 +1,57 @@
+# Phase 7 Experiment Matrix Configuration
+experiment:
+  phase: "7"
+  name: "evidence_grounding_and_verification_benchmark"
+  random_seeds: [42, 123, 456, 789, 101112]
+  baselines:
+    - id: "B7-0"
+      name: "Random Evidence Grounding"
+      description: "Random page/region evidence assignment without grounding evaluation"
+    - id: "B7-1"
+      name: "BM25 Lexical Evidence Grounding"
+      description: "Evidence grounded via BM25 retrieval output"
+    - id: "B7-2"
+      name: "Dense Text Evidence Grounding"
+      description: "Evidence grounded via Dense SVD semantic retrieval output"
+    - id: "B7-3"
+      name: "Visual Layout Evidence Grounding"
+      description: "Evidence grounded via visual layout descriptor output"
+    - id: "B7-4"
+      name: "Multimodal Hybrid Evidence Grounding"
+      description: "Evidence grounded via Phase 6 hybrid fusion output"
+    - id: "B7-5"
+      name: "Hierarchical Multimodal Evidence Grounding (Proposed)"
+      description: "Evidence grounded via proposed hierarchical multimodal retrieval with spatial/semantic verification"
+
+  document_lengths: [5, 10, 20, 50]
+  query_types:
+    - "factoid"
+    - "numerical"
+    - "table"
+    - "entity"
+    - "multi-page"
+    - "spatial"
+
+  degradation_levels:
+    - "clean"
+    - "mild"
+    - "moderate"
+    - "severe"
+
+  ablations:
+    - id: "A1"
+      name: "No Spatial Grounding"
+    - id: "A2"
+      name: "No Semantic Support"
+    - id: "A3"
+      name: "No Cryptographic Provenance"
+    - id: "A4"
+      name: "Top-1 Evidence Unit Only"
+    - id: "A5"
+      name: "Top-3 Evidence Units"
+    - id: "A6"
+      name: "Multi-Page Aggregation Disabled"
+    - id: "A7"
+      name: "Degradation Stress Analysis"
+    - id: "A8"
+      name: "Query-Type Breakdown"

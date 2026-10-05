@@ -1,0 +1,21 @@
+# Phase 7 Evaluation & Metrics Configuration
+evaluation:
+  bootstrap_replicates: 10000
+  confidence_interval: 0.95
+  iou_cutoffs: [0.50, 0.75]
+  metrics:
+    - "evidence_precision"
+    - "evidence_recall"
+    - "evidence_f1"
+    - "region_recall_at_050"
+    - "region_recall_at_075"
+    - "mean_iou"
+    - "semantic_support_accuracy"
+    - "answer_support_accuracy"
+    - "evidence_sufficiency_rate"
+    - "grounded_answer_rate"
+    - "partially_grounded_rate"
+    - "unsupported_answer_rate"
+    - "provenance_integrity_rate"
+    - "trace_completeness"
+    - "citation_validity"

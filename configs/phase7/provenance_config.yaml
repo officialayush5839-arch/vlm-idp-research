@@ -1,0 +1,7 @@
+# Phase 7 Provenance & Citation Configuration
+provenance:
+  hash_algorithm: "sha256"
+  trace_prefix: "run_P7"
+  embed_git_commit: true
+  enable_tamper_detection: true
+  citation_format: "standard_hierarchical"

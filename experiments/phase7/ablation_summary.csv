@@ -1,0 +1,10 @@
+ablation_id,name,mean_grounding_score,region_recall_at_050,region_recall_at_075,grounded_rate
+Full_B7_5,Full Proposed System,0.8911430000000001,1.0,1.0,1.0
+A1_NoSpatial,A1: No Spatial Grounding,0.8911430000000001,1.0,1.0,1.0
+A2_NoNumeric,A2: No Numeric Verification,0.8911430000000001,1.0,1.0,1.0
+A3_NoTable,A3: No Table Verification,0.8911430000000001,1.0,1.0,1.0
+A4_NoMultiPage,A4: No Multi-Page Aggregation,0.8911430000000001,1.0,1.0,1.0
+A5_NoSufficiency,A5: No Sufficiency Check,1.0,1.0,1.0,1.0
+A6_RelaxedOnly,A6: Relaxed IoU Only (0.50),0.8911430000000001,1.0,1.0,1.0
+A7_StrictOnly,A7: Strict IoU Only (0.75),0.8911430000000001,1.0,1.0,1.0
+A8_SingleModal,A8: Single-Modal Retrieval Input,0.0,0.0,0.0,0.0

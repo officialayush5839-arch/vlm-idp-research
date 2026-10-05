@@ -1,0 +1,13 @@
+# Phase 7 Grounding Classifier & Decision Logic Configuration
+grounding:
+  weights:
+    spatial: 0.35
+    semantic: 0.45
+    coverage: 0.20
+  thresholds:
+    supported_min_score: 0.70
+    partially_supported_min_score: 0.40
+    insufficient_min_score: 0.15
+  require_spatial_validation: true
+  require_numeric_precision: true
+  allow_abstention: true

@@ -1,0 +1,74 @@
+{
+  "Full_B7_5": {
+    "ablation_id": "Full_B7_5",
+    "name": "Full Proposed System",
+    "mean_grounding_score": 0.8911430000000001,
+    "region_recall_at_050": 1.0,
+    "region_recall_at_075": 1.0,
+    "grounded_rate": 1.0
+  },
+  "A1_NoSpatial": {
+    "ablation_id": "A1_NoSpatial",
+    "name": "A1: No Spatial Grounding",
+    "mean_grounding_score": 0.8911430000000001,
+    "region_recall_at_050": 1.0,
+    "region_recall_at_075": 1.0,
+    "grounded_rate": 1.0
+  },
+  "A2_NoNumeric": {
+    "ablation_id": "A2_NoNumeric",
+    "name": "A2: No Numeric Verification",
+    "mean_grounding_score": 0.8911430000000001,
+    "region_recall_at_050": 1.0,
+    "region_recall_at_075": 1.0,
+    "grounded_rate": 1.0
+  },
+  "A3_NoTable": {
+    "ablation_id": "A3_NoTable",
+    "name": "A3: No Table Verification",
+    "mean_grounding_score": 0.8911430000000001,
+    "region_recall_at_050": 1.0,
+    "region_recall_at_075": 1.0,
+    "grounded_rate": 1.0
+  },
+  "A4_NoMultiPage": {
+    "ablation_id": "A4_NoMultiPage",
+    "name": "A4: No Multi-Page Aggregation",
+    "mean_grounding_score": 0.8911430000000001,
+    "region_recall_at_050": 1.0,
+    "region_recall_at_075": 1.0,
+    "grounded_rate": 1.0
+  },
+  "A5_NoSufficiency": {
+    "ablation_id": "A5_NoSufficiency",
+    "name": "A5: No Sufficiency Check",
+    "mean_grounding_score": 1.0,
+    "region_recall_at_050": 1.0,
+    "region_recall_at_075": 1.0,
+    "grounded_rate": 1.0
+  },
+  "A6_RelaxedOnly": {
+    "ablation_id": "A6_RelaxedOnly",
+    "name": "A6: Relaxed IoU Only (0.50)",
+    "mean_grounding_score": 0.8911430000000001,
+    "region_recall_at_050": 1.0,
+    "region_recall_at_075": 1.0,
+    "grounded_rate": 1.0
+  },
+  "A7_StrictOnly": {
+    "ablation_id": "A7_StrictOnly",
+    "name": "A7: Strict IoU Only (0.75)",
+    "mean_grounding_score": 0.8911430000000001,
+    "region_recall_at_050": 1.0,
+    "region_recall_at_075": 1.0,
+    "grounded_rate": 1.0
+  },
+  "A8_SingleModal": {
+    "ablation_id": "A8_SingleModal",
+    "name": "A8: Single-Modal Retrieval Input",
+    "mean_grounding_score": 0.0,
+    "region_recall_at_050": 0.0,
+    "region_recall_at_075": 0.0,
+    "grounded_rate": 0.0
+  }
+}
