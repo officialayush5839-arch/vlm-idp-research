@@ -1,0 +1,12 @@
+{
+  "document_id": "doc_mp_048",
+  "query_id": "q_doc_mp_048",
+  "seed": 789,
+  "baseline": "B9-3",
+  "condition": "severe",
+  "confidence": 0.42,
+  "action": "ABSTAIN",
+  "is_correct": false,
+  "trace_id": "run_P9_synthetic_multipage_B9_3_doc_mp_048_q_doc_mp_048_severe_s789",
+  "sha256": "4f8e48a7d3e01238da3d9f01a20a65f5025fe826eb2e0c53bad603af942d0d3b"
+}

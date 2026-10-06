@@ -1,0 +1,71 @@
+# configs/phase9/experiment_matrix.yaml
+# Phase 9 Experiment Matrix: Baselines, Ablations and Conditions
+
+baselines:
+  - id: "B9-0"
+    name: "No Abstention"
+    description: "Unconditional prediction, always ACCEPT, zero abstention"
+    signals_used: []
+    policy: "always_accept"
+
+  - id: "B9-1"
+    name: "Grounding-Only Gate"
+    description: "Accepts only if Phase 7 output is VERIFIED"
+    signals_used: ["u_sufficiency", "u_spatial"]
+    policy: "grounding_gate"
+
+  - id: "B9-2"
+    name: "Fixed Confidence Threshold"
+    description: "Fixed threshold on raw VLM output confidence"
+    signals_used: ["raw_confidence"]
+    policy: "fixed_threshold"
+
+  - id: "B9-3"
+    name: "Quality-Only Reliability"
+    description: "Abstains based solely on Phase 3 visual degradation score"
+    signals_used: ["u_quality"]
+    policy: "quality_gate"
+
+  - id: "B9-4"
+    name: "Evidence-Only Reliability"
+    description: "Abstains based solely on Phase 6 retrieval confidence"
+    signals_used: ["u_retrieval", "u_semantic"]
+    policy: "retrieval_gate"
+
+  - id: "B9-5"
+    name: "Proposed Multi-Signal Reliability"
+    description: "Full 8D uncertainty vector + calibrated confidence multi-level decision"
+    signals_used: ["all"]
+    policy: "multi_signal_calibrated"
+
+ablations:
+  - id: "A9-1"
+    name: "Without Visual Quality Signal"
+    omitted: "u_quality"
+  - id: "A9-2"
+    name: "Without Spatial Grounding Signal"
+    omitted: "u_spatial"
+  - id: "A9-3"
+    name: "Without Numeric Verification Signal"
+    omitted: "u_numeric"
+  - id: "A9-4"
+    name: "Without Retrieval Uncertainty"
+    omitted: "u_retrieval"
+  - id: "A9-5"
+    name: "Without Calibration (Raw Scores Only)"
+    omitted: "calibration"
+  - id: "A9-6"
+    name: "Without Escalation State (Binary Accept/Abstain Only)"
+    omitted: "escalation"
+  - id: "A9-7"
+    name: "Uniform Weights vs Learned Weights"
+    omitted: "tuned_weights"
+  - id: "A9-8"
+    name: "L1 vs L2 Uncertainty Norm"
+    omitted: "l2_norm"
+
+evaluation_seeds: [42, 123, 456, 789, 101112]
+bootstrap_replications: 10000
+bootstrap_seed: 42
+hypothesis: "H9"
+alpha: 0.05

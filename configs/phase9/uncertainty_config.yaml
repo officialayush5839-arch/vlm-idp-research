@@ -1,0 +1,56 @@
+# configs/phase9/uncertainty_config.yaml
+# 8-Dimensional Observable Uncertainty Vector Configuration
+
+uncertainty_vector:
+  dimensions: 8
+  features:
+    - name: "u_retrieval"
+      description: "Uncertainty derived from multimodal retrieval rank and score gap"
+      observable_source: "src.retrieval"
+      inverted: true  # 1.0 - retrieval_confidence
+      clip_range: [0.0, 1.0]
+
+    - name: "u_semantic"
+      description: "Semantic dissimilarity between query intent and retrieved context"
+      observable_source: "src.grounding"
+      inverted: true
+      clip_range: [0.0, 1.0]
+
+    - name: "u_spatial"
+      description: "Spatial overlap ambiguity or dispersion across candidate regions"
+      observable_source: "src.grounding"
+      inverted: true
+      clip_range: [0.0, 1.0]
+
+    - name: "u_numeric"
+      description: "Discrepancy in numeric/table value extraction between OCR and VLM"
+      observable_source: "src.grounding"
+      inverted: false
+      clip_range: [0.0, 1.0]
+
+    - name: "u_table"
+      description: "Structural parsing difficulty or row/column misalignment"
+      observable_source: "src.grounding"
+      inverted: true
+      clip_range: [0.0, 1.0]
+
+    - name: "u_sufficiency"
+      description: "Sufficiency of grounding evidence to substantiate the generated answer"
+      observable_source: "src.grounding"
+      inverted: true
+      clip_range: [0.0, 1.0]
+
+    - name: "u_quality"
+      description: "Document visual degradation penalty (blur, noise, low resolution)"
+      observable_source: "src.quality"
+      inverted: true  # 1.0 - quality_score
+      clip_range: [0.0, 1.0]
+
+    - name: "u_agreement"
+      description: "Disagreement between OCR text and visual token predictions"
+      observable_source: "src.uncertainty"
+      inverted: true
+      clip_range: [0.0, 1.0]
+
+aggregation:
+  method: "l2_norm_scaled"  # mean | max | l2_norm_scaled

@@ -1,0 +1,17 @@
+# configs/phase9/abstention_config.yaml
+# Abstention Policies and Risk Control Configurations
+
+abstention:
+  default_action: "ACCEPT"
+  abstain_threshold: 0.50
+  escalate_threshold: 0.65
+  warning_threshold: 0.80
+
+  risk_control:
+    target_coverages: [1.0, 0.95, 0.90, 0.80, 0.70, 0.60, 0.50]
+    metric: "unsupported_answer_rate"
+    cost_matrix:
+      c_correct: 0.0
+      c_abstain: 0.2
+      c_warning: 0.1
+      c_incorrect_accept: 1.0

@@ -1,0 +1,26 @@
+# configs/phase9/calibration_config.yaml
+# Phase 9 Validation Calibration Configuration
+
+calibration:
+  dataset_split: "val"  # STRICT: Test data is forbidden during calibration
+  methods:
+    - name: "temperature_scaling"
+      init_temp: 1.0
+      lr: 0.01
+      max_iter: 100
+      loss: "nll"
+
+    - name: "isotonic_regression"
+      increasing: true
+      out_of_bounds: "clip"
+
+    - name: "logistic_calibration"
+      penalty: "l2"
+      C: 1.0
+
+  evaluation_bins: 10
+  metrics:
+    - "expected_calibration_error"
+    - "maximum_calibration_error"
+    - "brier_score"
+    - "negative_log_likelihood"

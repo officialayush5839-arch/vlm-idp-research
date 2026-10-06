@@ -1,0 +1,9 @@
+Ablation_ID,Description,Coverage,Selective_Accuracy,Unsupported_Rate,AURC,Abstain_F1,ECE,Brier
+A9-1_no_quality,Omit visual quality uncertainty,0.76,0.7368,0.2632,0.2361,0.5333,0.176,0.2332
+A9-2_no_spatial,Omit spatial grounding uncertainty,0.76,0.7368,0.2632,0.2361,0.5333,0.1792,0.234
+A9-3_no_numeric,Omit numeric discrepancy uncertainty,0.52,0.7692,0.2308,0.2361,0.5714,0.1561,0.2274
+A9-4_no_retrieval,Omit multimodal retrieval uncertainty,0.76,0.7368,0.2632,0.2361,0.5333,0.1675,0.2316
+A9-5_uncalibrated,Raw uncalibrated composite scores,0.52,0.7692,0.2308,0.2361,0.5714,0.1025,0.2091
+A9-6_binary_only,Binary decision without escalation/warning,0.24,0.8333,0.1667,0.2361,0.5714,0.1677,0.2313
+A9-7_uniform_weights,Equal weights across all 8 uncertainty dimensions,0.52,0.7692,0.2308,0.2361,0.5714,0.1643,0.2307
+A9-8_l1_norm,L1 mean norm instead of L2 norm,0.76,0.7368,0.2632,0.2361,0.5333,0.1677,0.2313

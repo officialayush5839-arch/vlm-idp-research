@@ -1,0 +1,16 @@
+{
+  "hypothesis": "H9",
+  "description": "Uncertainty-aware selective prediction reduces unsupported answer rate and improves answer reliability compared with unconditional answer generation",
+  "baseline_compared": "B9-0 (No Abstention)",
+  "proposed": "B9-5 (Multi-Signal Reliability)",
+  "b0_aurc": 0.11,
+  "b5_aurc": 0.11,
+  "delta_aurc": 0.0,
+  "bootstrap_replications": 10000,
+  "p_value": 0.5008,
+  "ci_95": [
+    -0.0295,
+    0.0296
+  ],
+  "conclusion": "NOT_SUPPORTED"
+}

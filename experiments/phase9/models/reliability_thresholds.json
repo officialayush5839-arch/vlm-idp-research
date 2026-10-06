@@ -1,0 +1,9 @@
+{
+  "tau_accept": 0.9855,
+  "tau_warning": 0.8534,
+  "tau_escalate": 0.3788,
+  "u_max_accept": 0.25,
+  "u_max_warning": 0.5,
+  "u_max_escalate": 0.7,
+  "validation_samples": 15
+}

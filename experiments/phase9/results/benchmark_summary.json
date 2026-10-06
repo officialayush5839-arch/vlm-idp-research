@@ -1,0 +1,74 @@
+{
+  "B9-0": {
+    "coverage": 1.0,
+    "selective_accuracy": 0.728,
+    "selective_unsupported_rate": 0.272,
+    "aurc": 0.11,
+    "e_aurc": 0.0691,
+    "abstention_precision": 0.0,
+    "abstention_recall": 0.0,
+    "abstention_f1": 0.0,
+    "expected_calibration_error": 0.0368,
+    "brier_score": 0.1543
+  },
+  "B9-1": {
+    "coverage": 0.52,
+    "selective_accuracy": 0.9231,
+    "selective_unsupported_rate": 0.0769,
+    "aurc": 0.11,
+    "e_aurc": 0.0691,
+    "abstention_precision": 0.4833,
+    "abstention_recall": 0.8529,
+    "abstention_f1": 0.617,
+    "expected_calibration_error": 0.0368,
+    "brier_score": 0.1543
+  },
+  "B9-2": {
+    "coverage": 0.52,
+    "selective_accuracy": 0.9231,
+    "selective_unsupported_rate": 0.0769,
+    "aurc": 0.11,
+    "e_aurc": 0.0691,
+    "abstention_precision": 0.4833,
+    "abstention_recall": 0.8529,
+    "abstention_f1": 0.617,
+    "expected_calibration_error": 0.0368,
+    "brier_score": 0.1543
+  },
+  "B9-3": {
+    "coverage": 0.52,
+    "selective_accuracy": 0.9231,
+    "selective_unsupported_rate": 0.0769,
+    "aurc": 0.11,
+    "e_aurc": 0.0691,
+    "abstention_precision": 0.4833,
+    "abstention_recall": 0.8529,
+    "abstention_f1": 0.617,
+    "expected_calibration_error": 0.0368,
+    "brier_score": 0.1543
+  },
+  "B9-4": {
+    "coverage": 0.76,
+    "selective_accuracy": 0.8211,
+    "selective_unsupported_rate": 0.1789,
+    "aurc": 0.11,
+    "e_aurc": 0.0691,
+    "abstention_precision": 0.5667,
+    "abstention_recall": 0.5,
+    "abstention_f1": 0.5312,
+    "expected_calibration_error": 0.0368,
+    "brier_score": 0.1543
+  },
+  "B9-5": {
+    "coverage": 0.76,
+    "selective_accuracy": 0.8211,
+    "selective_unsupported_rate": 0.1789,
+    "aurc": 0.11,
+    "e_aurc": 0.0691,
+    "abstention_precision": 0.5667,
+    "abstention_recall": 0.5,
+    "abstention_f1": 0.5312,
+    "expected_calibration_error": 0.1059,
+    "brier_score": 0.1712
+  }
+}

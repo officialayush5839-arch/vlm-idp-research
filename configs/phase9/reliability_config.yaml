@@ -1,0 +1,52 @@
+# configs/phase9/reliability_config.yaml
+# Phase 9 Reliability Pipeline Master Configuration
+
+pipeline:
+  name: "uncertainty_aware_reliability_pipeline"
+  version: "1.0.0"
+  random_seeds: [42, 123, 456, 789, 101112]
+  primary_seed: 42
+
+confidence_model:
+  type: "calibrated_composite"  # raw | weighted | calibrated_composite
+  calibrator_type: "isotonic"    # temperature | isotonic | logistic
+  temperature_scaling:
+    init_temperature: 1.0
+    max_iter: 100
+  weights:
+    w_retrieval: 0.15
+    w_semantic: 0.15
+    w_spatial: 0.15
+    w_numeric: 0.15
+    w_table: 0.10
+    w_sufficiency: 0.15
+    w_quality: 0.10
+    w_agreement: 0.05
+
+decision_policy:
+  mode: "multi_level"  # binary_abstain | multi_level
+  levels:
+    - action: "ACCEPT"
+      min_confidence: 0.85
+      max_uncertainty: 0.25
+    - action: "ACCEPT_WITH_WARNING"
+      min_confidence: 0.65
+      max_uncertainty: 0.50
+    - action: "ESCALATE"
+      min_confidence: 0.45
+      max_uncertainty: 0.70
+    - action: "ABSTAIN"
+      min_confidence: 0.00
+      max_uncertainty: 1.00
+
+failure_analysis:
+  enabled: true
+  taxonomy_classes:
+    - "F01_RETRIEVAL_FAILURE"
+    - "F02_VISUAL_DEGRADATION"
+    - "F03_INSUFFICIENT_EVIDENCE"
+    - "F04_NUMERIC_CONFLICT"
+    - "F05_TABLE_ALIGNMENT_FAILURE"
+    - "F06_SPATIAL_GROUNDING_FAILURE"
+    - "F07_CROSS_PAGE_CONFLICT"
+    - "F08_MODEL_DISAGREEMENT"

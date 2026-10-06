@@ -1,0 +1,24 @@
+# configs/phase9/threshold_config.yaml
+# Decision Threshold Configurations Tuned on Validation
+
+thresholds:
+  tau_accept: 0.85
+  tau_warning: 0.65
+  tau_escalate: 0.45
+  tau_abstain: 0.40
+  
+  uncertainty_budget:
+    u_max_accept: 0.25
+    u_max_warning: 0.50
+    u_max_escalate: 0.70
+
+  operating_points:
+    high_precision:
+      tau_accept: 0.90
+      coverage_min: 0.60
+    balanced:
+      tau_accept: 0.85
+      coverage_min: 0.80
+    high_recall:
+      tau_accept: 0.70
+      coverage_min: 0.95

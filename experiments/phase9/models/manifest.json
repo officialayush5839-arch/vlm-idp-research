@@ -1,0 +1,23 @@
+{
+  "phase": 9,
+  "split": "val",
+  "description": "Validation-only calibration artifacts for Phase 9 Reliability Pipeline",
+  "models": {
+    "temperature_calibrator.json": {
+      "sha256": "646f728ca4a75e29779f1455b2d83e27af2c32ded956fa00a02d0ddbc3689bfc",
+      "temperature": 0.5
+    },
+    "reliability_thresholds.json": {
+      "sha256": "034608a62632397fdd8d53ac58f0533ac18656e8a758860a34de1a9bf9969b06",
+      "thresholds": {
+        "tau_accept": 0.9855,
+        "tau_warning": 0.8534,
+        "tau_escalate": 0.3788,
+        "u_max_accept": 0.25,
+        "u_max_warning": 0.5,
+        "u_max_escalate": 0.7,
+        "validation_samples": 15
+      }
+    }
+  }
+}
