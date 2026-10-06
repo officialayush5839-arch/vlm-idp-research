@@ -1,0 +1,14 @@
+{
+  "document_id": "doc_auth_49_02",
+  "family_id": "fam_auth_49",
+  "source_type": "authentic_benchmark_archive",
+  "domain": "financial_report",
+  "acquisition_modality": "D12-6",
+  "degradation_type": "compound_real_world",
+  "page_count": 5,
+  "license_status": "open_access_research",
+  "source_reference": "Corpus_Auth_Family_49",
+  "collection_timestamp": "2026-10-06T15:00:00Z",
+  "annotation_status": "verified",
+  "checksum_sha256": "dd54303139fbea1371a8de70291851f426740212e340edff57f63ac58fbbe0d2"
+}

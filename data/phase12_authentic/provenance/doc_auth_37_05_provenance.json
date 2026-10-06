@@ -1,0 +1,14 @@
+{
+  "document_id": "doc_auth_37_05",
+  "family_id": "fam_auth_37",
+  "source_type": "authentic_benchmark_archive",
+  "domain": "technical_manuals",
+  "acquisition_modality": "D12-1",
+  "degradation_type": "mobile_capture",
+  "page_count": 5,
+  "license_status": "open_access_research",
+  "source_reference": "Corpus_Auth_Family_37",
+  "collection_timestamp": "2026-10-06T15:00:00Z",
+  "annotation_status": "verified",
+  "checksum_sha256": "43231b5027ad291235dcb8a38754c31205be34471f65d8dff6578791355bb9f9"
+}

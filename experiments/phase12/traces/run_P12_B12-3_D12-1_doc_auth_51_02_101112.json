@@ -1,0 +1,16 @@
+{
+  "trace_id": "run_P12_B12-3_D12-1_doc_auth_51_02_101112",
+  "baseline_id": "B12-3",
+  "baseline_name": "multimodal_hybrid",
+  "seed": 101112,
+  "family_id": "fam_auth_51",
+  "document_id": "doc_auth_51_02",
+  "modality": "D12-1",
+  "retrieval_hit": true,
+  "grounding_iou": 0.5714477918067679,
+  "confidence": 0.835815502811302,
+  "abstained": false,
+  "is_correct": true,
+  "is_safe_useful": false,
+  "is_unsafe": false
+}

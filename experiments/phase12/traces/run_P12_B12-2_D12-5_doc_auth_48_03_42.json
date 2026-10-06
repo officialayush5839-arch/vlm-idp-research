@@ -1,0 +1,16 @@
+{
+  "trace_id": "run_P12_B12-2_D12-5_doc_auth_48_03_42",
+  "baseline_id": "B12-2",
+  "baseline_name": "visual_retrieval_only",
+  "seed": 42,
+  "family_id": "fam_auth_48",
+  "document_id": "doc_auth_48_03",
+  "modality": "D12-5",
+  "retrieval_hit": true,
+  "grounding_iou": 0.395001353570783,
+  "confidence": 0.7471003635162543,
+  "abstained": false,
+  "is_correct": false,
+  "is_safe_useful": false,
+  "is_unsafe": false
+}

@@ -1,0 +1,14 @@
+{
+  "document_id": "doc_auth_30_04",
+  "family_id": "fam_auth_30",
+  "source_type": "authentic_benchmark_archive",
+  "domain": "academic_papers",
+  "acquisition_modality": "D12-1",
+  "degradation_type": "mobile_capture",
+  "page_count": 5,
+  "license_status": "open_access_research",
+  "source_reference": "Corpus_Auth_Family_30",
+  "collection_timestamp": "2026-10-06T15:00:00Z",
+  "annotation_status": "verified",
+  "checksum_sha256": "6e9d6deef6ea58bd726ae41f7ed3c720a011d3e63594a5888e8fb90803de00bc"
+}

@@ -1,0 +1,264 @@
+{
+  "document_id": "doc_auth_43_03",
+  "family_id": "fam_auth_43",
+  "domain": "legal_contracts",
+  "modality": "D12-0",
+  "page_count": 5,
+  "pages": [
+    {
+      "document_id": "doc_auth_43_03",
+      "page_number": 1,
+      "raw_text": "Authentic Document doc_auth_43_03 | Family: fam_auth_43 | Domain: legal_contracts\nPage 1 of 5: Master Services Agreement\nAcquisition Modality: D12-0 (clean_reference)\nRecorded Metrics: Nominal Value = $4360.00 USD.\nReference Stamp ID: STAMP-AUTH-043-01.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_43_03 | Family: fam_auth_43 | Domain: legal_contracts\nPage 1 of 5: Master Services Agreement\nAcquisition Modality: D12-0 (clean_reference)\nRecorded Metrics: Nominal Value = $4360.00 USD.\nReference Stamp ID: STAMP-AUTH-043-01.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_43_03_p1.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_43_03_p1_hdr",
+          "page_number": 1,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "MASTER SERVICES AGREEMENT - LEGAL_CONTRACTS",
+          "confidence": 0.96
+        },
+        {
+          "region_id": "doc_auth_43_03_p1_val",
+          "page_number": 1,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $4360.00 USD",
+          "confidence": 0.98
+        },
+        {
+          "region_id": "doc_auth_43_03_p1_stamp",
+          "page_number": 1,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-043-01",
+          "confidence": 0.95
+        }
+      ],
+      "quality_score": 0.94,
+      "acquisition_modality": "D12-0",
+      "degradation_type": "clean_reference"
+    },
+    {
+      "document_id": "doc_auth_43_03",
+      "page_number": 2,
+      "raw_text": "Authentic Document doc_auth_43_03 | Family: fam_auth_43 | Domain: legal_contracts\nPage 2 of 5: Liability Clause\nAcquisition Modality: D12-0 (clean_reference)\nRecorded Metrics: Nominal Value = $4370.00 USD.\nReference Stamp ID: STAMP-AUTH-043-02.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_43_03 | Family: fam_auth_43 | Domain: legal_contracts\nPage 2 of 5: Liability Clause\nAcquisition Modality: D12-0 (clean_reference)\nRecorded Metrics: Nominal Value = $4370.00 USD.\nReference Stamp ID: STAMP-AUTH-043-02.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_43_03_p2.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_43_03_p2_hdr",
+          "page_number": 2,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "LIABILITY CLAUSE - LEGAL_CONTRACTS",
+          "confidence": 0.96
+        },
+        {
+          "region_id": "doc_auth_43_03_p2_val",
+          "page_number": 2,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $4370.00 USD",
+          "confidence": 0.98
+        },
+        {
+          "region_id": "doc_auth_43_03_p2_stamp",
+          "page_number": 2,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-043-02",
+          "confidence": 0.95
+        }
+      ],
+      "quality_score": 0.94,
+      "acquisition_modality": "D12-0",
+      "degradation_type": "clean_reference"
+    },
+    {
+      "document_id": "doc_auth_43_03",
+      "page_number": 3,
+      "raw_text": "Authentic Document doc_auth_43_03 | Family: fam_auth_43 | Domain: legal_contracts\nPage 3 of 5: Indemnity\nAcquisition Modality: D12-0 (clean_reference)\nRecorded Metrics: Nominal Value = $4380.00 USD.\nReference Stamp ID: STAMP-AUTH-043-03.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_43_03 | Family: fam_auth_43 | Domain: legal_contracts\nPage 3 of 5: Indemnity\nAcquisition Modality: D12-0 (clean_reference)\nRecorded Metrics: Nominal Value = $4380.00 USD.\nReference Stamp ID: STAMP-AUTH-043-03.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_43_03_p3.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_43_03_p3_hdr",
+          "page_number": 3,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "INDEMNITY - LEGAL_CONTRACTS",
+          "confidence": 0.96
+        },
+        {
+          "region_id": "doc_auth_43_03_p3_val",
+          "page_number": 3,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $4380.00 USD",
+          "confidence": 0.98
+        },
+        {
+          "region_id": "doc_auth_43_03_p3_stamp",
+          "page_number": 3,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-043-03",
+          "confidence": 0.95
+        }
+      ],
+      "quality_score": 0.94,
+      "acquisition_modality": "D12-0",
+      "degradation_type": "clean_reference"
+    },
+    {
+      "document_id": "doc_auth_43_03",
+      "page_number": 4,
+      "raw_text": "Authentic Document doc_auth_43_03 | Family: fam_auth_43 | Domain: legal_contracts\nPage 4 of 5: Signatures\nAcquisition Modality: D12-0 (clean_reference)\nRecorded Metrics: Nominal Value = $4390.00 USD.\nReference Stamp ID: STAMP-AUTH-043-04.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_43_03 | Family: fam_auth_43 | Domain: legal_contracts\nPage 4 of 5: Signatures\nAcquisition Modality: D12-0 (clean_reference)\nRecorded Metrics: Nominal Value = $4390.00 USD.\nReference Stamp ID: STAMP-AUTH-043-04.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_43_03_p4.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_43_03_p4_hdr",
+          "page_number": 4,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "SIGNATURES - LEGAL_CONTRACTS",
+          "confidence": 0.96
+        },
+        {
+          "region_id": "doc_auth_43_03_p4_val",
+          "page_number": 4,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $4390.00 USD",
+          "confidence": 0.98
+        },
+        {
+          "region_id": "doc_auth_43_03_p4_stamp",
+          "page_number": 4,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-043-04",
+          "confidence": 0.95
+        }
+      ],
+      "quality_score": 0.94,
+      "acquisition_modality": "D12-0",
+      "degradation_type": "clean_reference"
+    },
+    {
+      "document_id": "doc_auth_43_03",
+      "page_number": 5,
+      "raw_text": "Authentic Document doc_auth_43_03 | Family: fam_auth_43 | Domain: legal_contracts\nPage 5 of 5: Addendum\nAcquisition Modality: D12-0 (clean_reference)\nRecorded Metrics: Nominal Value = $4400.00 USD.\nReference Stamp ID: STAMP-AUTH-043-05.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_43_03 | Family: fam_auth_43 | Domain: legal_contracts\nPage 5 of 5: Addendum\nAcquisition Modality: D12-0 (clean_reference)\nRecorded Metrics: Nominal Value = $4400.00 USD.\nReference Stamp ID: STAMP-AUTH-043-05.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_43_03_p5.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_43_03_p5_hdr",
+          "page_number": 5,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "ADDENDUM - LEGAL_CONTRACTS",
+          "confidence": 0.96
+        },
+        {
+          "region_id": "doc_auth_43_03_p5_val",
+          "page_number": 5,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $4400.00 USD",
+          "confidence": 0.98
+        },
+        {
+          "region_id": "doc_auth_43_03_p5_stamp",
+          "page_number": 5,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-043-05",
+          "confidence": 0.95
+        }
+      ],
+      "quality_score": 0.94,
+      "acquisition_modality": "D12-0",
+      "degradation_type": "clean_reference"
+    }
+  ]
+}

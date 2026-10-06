@@ -1,0 +1,16 @@
+{
+  "trace_id": "run_P12_B12-0_D12-4_doc_auth_47_05_101112",
+  "baseline_id": "B12-0",
+  "baseline_name": "lexical_bm25_uncalibrated",
+  "seed": 101112,
+  "family_id": "fam_auth_47",
+  "document_id": "doc_auth_47_05",
+  "modality": "D12-4",
+  "retrieval_hit": false,
+  "grounding_iou": 0.20402001993512986,
+  "confidence": 0.6293585149739307,
+  "abstained": false,
+  "is_correct": false,
+  "is_safe_useful": false,
+  "is_unsafe": false
+}

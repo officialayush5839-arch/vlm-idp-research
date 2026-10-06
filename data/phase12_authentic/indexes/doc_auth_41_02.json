@@ -1,0 +1,264 @@
+{
+  "document_id": "doc_auth_41_02",
+  "family_id": "fam_auth_41",
+  "domain": "financial_report",
+  "modality": "D12-5",
+  "page_count": 5,
+  "pages": [
+    {
+      "document_id": "doc_auth_41_02",
+      "page_number": 1,
+      "raw_text": "Authentic Document doc_auth_41_02 | Family: fam_auth_41 | Domain: financial_report\nPage 1 of 5: Balance Sheet\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $4135.00 USD.\nReference Stamp ID: STAMP-AUTH-041-01.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_41_02 | Family: fam_auth_41 | Domain: financial_report\nPage 1 of 5: Balance Sheet\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $4135.00 USD.\nReference Stamp ID: STAMP-AUTH-041-01.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_41_02_p1.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_41_02_p1_hdr",
+          "page_number": 1,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "BALANCE SHEET - FINANCIAL_REPORT",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_41_02_p1_val",
+          "page_number": 1,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $4135.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_41_02_p1_stamp",
+          "page_number": 1,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-041-01",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.52,
+      "acquisition_modality": "D12-5",
+      "degradation_type": "archival_aged"
+    },
+    {
+      "document_id": "doc_auth_41_02",
+      "page_number": 2,
+      "raw_text": "Authentic Document doc_auth_41_02 | Family: fam_auth_41 | Domain: financial_report\nPage 2 of 5: Income Statement\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $4145.00 USD.\nReference Stamp ID: STAMP-AUTH-041-02.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_41_02 | Family: fam_auth_41 | Domain: financial_report\nPage 2 of 5: Income Statement\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $4145.00 USD.\nReference Stamp ID: STAMP-AUTH-041-02.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_41_02_p2.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_41_02_p2_hdr",
+          "page_number": 2,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "INCOME STATEMENT - FINANCIAL_REPORT",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_41_02_p2_val",
+          "page_number": 2,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $4145.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_41_02_p2_stamp",
+          "page_number": 2,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-041-02",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.52,
+      "acquisition_modality": "D12-5",
+      "degradation_type": "archival_aged"
+    },
+    {
+      "document_id": "doc_auth_41_02",
+      "page_number": 3,
+      "raw_text": "Authentic Document doc_auth_41_02 | Family: fam_auth_41 | Domain: financial_report\nPage 3 of 5: Cash Flows\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $4155.00 USD.\nReference Stamp ID: STAMP-AUTH-041-03.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_41_02 | Family: fam_auth_41 | Domain: financial_report\nPage 3 of 5: Cash Flows\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $4155.00 USD.\nReference Stamp ID: STAMP-AUTH-041-03.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_41_02_p3.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_41_02_p3_hdr",
+          "page_number": 3,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "CASH FLOWS - FINANCIAL_REPORT",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_41_02_p3_val",
+          "page_number": 3,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $4155.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_41_02_p3_stamp",
+          "page_number": 3,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-041-03",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.52,
+      "acquisition_modality": "D12-5",
+      "degradation_type": "archival_aged"
+    },
+    {
+      "document_id": "doc_auth_41_02",
+      "page_number": 4,
+      "raw_text": "Authentic Document doc_auth_41_02 | Family: fam_auth_41 | Domain: financial_report\nPage 4 of 5: Audit Notes\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $4165.00 USD.\nReference Stamp ID: STAMP-AUTH-041-04.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_41_02 | Family: fam_auth_41 | Domain: financial_report\nPage 4 of 5: Audit Notes\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $4165.00 USD.\nReference Stamp ID: STAMP-AUTH-041-04.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_41_02_p4.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_41_02_p4_hdr",
+          "page_number": 4,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "AUDIT NOTES - FINANCIAL_REPORT",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_41_02_p4_val",
+          "page_number": 4,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $4165.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_41_02_p4_stamp",
+          "page_number": 4,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-041-04",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.52,
+      "acquisition_modality": "D12-5",
+      "degradation_type": "archival_aged"
+    },
+    {
+      "document_id": "doc_auth_41_02",
+      "page_number": 5,
+      "raw_text": "Authentic Document doc_auth_41_02 | Family: fam_auth_41 | Domain: financial_report\nPage 5 of 5: Disclosures\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $4175.00 USD.\nReference Stamp ID: STAMP-AUTH-041-05.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_41_02 | Family: fam_auth_41 | Domain: financial_report\nPage 5 of 5: Disclosures\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $4175.00 USD.\nReference Stamp ID: STAMP-AUTH-041-05.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_41_02_p5.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_41_02_p5_hdr",
+          "page_number": 5,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "DISCLOSURES - FINANCIAL_REPORT",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_41_02_p5_val",
+          "page_number": 5,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $4175.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_41_02_p5_stamp",
+          "page_number": 5,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-041-05",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.52,
+      "acquisition_modality": "D12-5",
+      "degradation_type": "archival_aged"
+    }
+  ]
+}

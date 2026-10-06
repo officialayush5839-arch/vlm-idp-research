@@ -1,0 +1,264 @@
+{
+  "document_id": "doc_auth_32_04",
+  "family_id": "fam_auth_32",
+  "domain": "shipping_logistics",
+  "modality": "D12-3",
+  "page_count": 5,
+  "pages": [
+    {
+      "document_id": "doc_auth_32_04",
+      "page_number": 1,
+      "raw_text": "Authentic Document doc_auth_32_04 | Family: fam_auth_32 | Domain: shipping_logistics\nPage 1 of 5: Bill of Lading\nAcquisition Modality: D12-3 (fax_transmission)\nRecorded Metrics: Nominal Value = $3285.00 USD.\nReference Stamp ID: STAMP-AUTH-032-01.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_32_04 | Family: fam_auth_32 | Domain: shipping_logistics\nPage 1 of 5: Bill of Lading\nAcquisition Modality: D12-3 (fax_transmission)\nRecorded Metrics: Nominal Value = $3285.00 USD.\nReference Stamp ID: STAMP-AUTH-032-01.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_32_04_p1.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_32_04_p1_hdr",
+          "page_number": 1,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "BILL OF LADING - SHIPPING_LOGISTICS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_32_04_p1_val",
+          "page_number": 1,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $3285.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_32_04_p1_stamp",
+          "page_number": 1,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-032-01",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.45,
+      "acquisition_modality": "D12-3",
+      "degradation_type": "fax_transmission"
+    },
+    {
+      "document_id": "doc_auth_32_04",
+      "page_number": 2,
+      "raw_text": "Authentic Document doc_auth_32_04 | Family: fam_auth_32 | Domain: shipping_logistics\nPage 2 of 5: Customs Declaration\nAcquisition Modality: D12-3 (fax_transmission)\nRecorded Metrics: Nominal Value = $3295.00 USD.\nReference Stamp ID: STAMP-AUTH-032-02.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_32_04 | Family: fam_auth_32 | Domain: shipping_logistics\nPage 2 of 5: Customs Declaration\nAcquisition Modality: D12-3 (fax_transmission)\nRecorded Metrics: Nominal Value = $3295.00 USD.\nReference Stamp ID: STAMP-AUTH-032-02.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_32_04_p2.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_32_04_p2_hdr",
+          "page_number": 2,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "CUSTOMS DECLARATION - SHIPPING_LOGISTICS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_32_04_p2_val",
+          "page_number": 2,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $3295.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_32_04_p2_stamp",
+          "page_number": 2,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-032-02",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.45,
+      "acquisition_modality": "D12-3",
+      "degradation_type": "fax_transmission"
+    },
+    {
+      "document_id": "doc_auth_32_04",
+      "page_number": 3,
+      "raw_text": "Authentic Document doc_auth_32_04 | Family: fam_auth_32 | Domain: shipping_logistics\nPage 3 of 5: Hazardous Material\nAcquisition Modality: D12-3 (fax_transmission)\nRecorded Metrics: Nominal Value = $3305.00 USD.\nReference Stamp ID: STAMP-AUTH-032-03.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_32_04 | Family: fam_auth_32 | Domain: shipping_logistics\nPage 3 of 5: Hazardous Material\nAcquisition Modality: D12-3 (fax_transmission)\nRecorded Metrics: Nominal Value = $3305.00 USD.\nReference Stamp ID: STAMP-AUTH-032-03.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_32_04_p3.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_32_04_p3_hdr",
+          "page_number": 3,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "HAZARDOUS MATERIAL - SHIPPING_LOGISTICS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_32_04_p3_val",
+          "page_number": 3,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $3305.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_32_04_p3_stamp",
+          "page_number": 3,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-032-03",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.45,
+      "acquisition_modality": "D12-3",
+      "degradation_type": "fax_transmission"
+    },
+    {
+      "document_id": "doc_auth_32_04",
+      "page_number": 4,
+      "raw_text": "Authentic Document doc_auth_32_04 | Family: fam_auth_32 | Domain: shipping_logistics\nPage 4 of 5: Container Seal\nAcquisition Modality: D12-3 (fax_transmission)\nRecorded Metrics: Nominal Value = $3315.00 USD.\nReference Stamp ID: STAMP-AUTH-032-04.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_32_04 | Family: fam_auth_32 | Domain: shipping_logistics\nPage 4 of 5: Container Seal\nAcquisition Modality: D12-3 (fax_transmission)\nRecorded Metrics: Nominal Value = $3315.00 USD.\nReference Stamp ID: STAMP-AUTH-032-04.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_32_04_p4.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_32_04_p4_hdr",
+          "page_number": 4,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "CONTAINER SEAL - SHIPPING_LOGISTICS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_32_04_p4_val",
+          "page_number": 4,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $3315.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_32_04_p4_stamp",
+          "page_number": 4,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-032-04",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.45,
+      "acquisition_modality": "D12-3",
+      "degradation_type": "fax_transmission"
+    },
+    {
+      "document_id": "doc_auth_32_04",
+      "page_number": 5,
+      "raw_text": "Authentic Document doc_auth_32_04 | Family: fam_auth_32 | Domain: shipping_logistics\nPage 5 of 5: Receipt\nAcquisition Modality: D12-3 (fax_transmission)\nRecorded Metrics: Nominal Value = $3325.00 USD.\nReference Stamp ID: STAMP-AUTH-032-05.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_32_04 | Family: fam_auth_32 | Domain: shipping_logistics\nPage 5 of 5: Receipt\nAcquisition Modality: D12-3 (fax_transmission)\nRecorded Metrics: Nominal Value = $3325.00 USD.\nReference Stamp ID: STAMP-AUTH-032-05.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_32_04_p5.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_32_04_p5_hdr",
+          "page_number": 5,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "RECEIPT - SHIPPING_LOGISTICS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_32_04_p5_val",
+          "page_number": 5,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $3325.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_32_04_p5_stamp",
+          "page_number": 5,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-032-05",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.45,
+      "acquisition_modality": "D12-3",
+      "degradation_type": "fax_transmission"
+    }
+  ]
+}

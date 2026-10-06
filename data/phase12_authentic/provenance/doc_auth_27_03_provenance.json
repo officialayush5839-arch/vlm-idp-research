@@ -1,0 +1,14 @@
+{
+  "document_id": "doc_auth_27_03",
+  "family_id": "fam_auth_27",
+  "source_type": "authentic_benchmark_archive",
+  "domain": "legal_contracts",
+  "acquisition_modality": "D12-5",
+  "degradation_type": "archival_aged",
+  "page_count": 5,
+  "license_status": "open_access_research",
+  "source_reference": "Corpus_Auth_Family_27",
+  "collection_timestamp": "2026-10-06T15:00:00Z",
+  "annotation_status": "verified",
+  "checksum_sha256": "2df53b9b7ece3cd0edaec2747fcb0c5e112e31c746ad8ef3c351d6b5d696e79a"
+}

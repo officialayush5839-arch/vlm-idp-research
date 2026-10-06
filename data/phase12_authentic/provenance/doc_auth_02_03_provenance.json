@@ -1,0 +1,14 @@
+{
+  "document_id": "doc_auth_02_03",
+  "family_id": "fam_auth_02",
+  "source_type": "authentic_benchmark_archive",
+  "domain": "invoices_receipts",
+  "acquisition_modality": "D12-1",
+  "degradation_type": "mobile_capture",
+  "page_count": 5,
+  "license_status": "open_access_research",
+  "source_reference": "Corpus_Auth_Family_02",
+  "collection_timestamp": "2026-10-06T15:00:00Z",
+  "annotation_status": "verified",
+  "checksum_sha256": "4247cffbdd6a3495a43127e9e8de6ceeb4d772484a3123e311c588bd4b0c65a4"
+}

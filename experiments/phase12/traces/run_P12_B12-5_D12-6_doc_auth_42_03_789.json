@@ -1,0 +1,16 @@
+{
+  "trace_id": "run_P12_B12-5_D12-6_doc_auth_42_03_789",
+  "baseline_id": "B12-5",
+  "baseline_name": "proposed_hierarchical_multimodal_reliable",
+  "seed": 789,
+  "family_id": "fam_auth_42",
+  "document_id": "doc_auth_42_03",
+  "modality": "D12-6",
+  "retrieval_hit": true,
+  "grounding_iou": 0.5917221510255336,
+  "confidence": 0.8002016087114809,
+  "abstained": false,
+  "is_correct": true,
+  "is_safe_useful": true,
+  "is_unsafe": false
+}

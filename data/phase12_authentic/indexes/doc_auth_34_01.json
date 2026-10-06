@@ -1,0 +1,264 @@
+{
+  "document_id": "doc_auth_34_01",
+  "family_id": "fam_auth_34",
+  "domain": "invoices_receipts",
+  "modality": "D12-5",
+  "page_count": 5,
+  "pages": [
+    {
+      "document_id": "doc_auth_34_01",
+      "page_number": 1,
+      "raw_text": "Authentic Document doc_auth_34_01 | Family: fam_auth_34 | Domain: invoices_receipts\nPage 1 of 5: Itemized Bill\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $3410.00 USD.\nReference Stamp ID: STAMP-AUTH-034-01.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_34_01 | Family: fam_auth_34 | Domain: invoices_receipts\nPage 1 of 5: Itemized Bill\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $3410.00 USD.\nReference Stamp ID: STAMP-AUTH-034-01.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_34_01_p1.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_34_01_p1_hdr",
+          "page_number": 1,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "ITEMIZED BILL - INVOICES_RECEIPTS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_34_01_p1_val",
+          "page_number": 1,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $3410.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_34_01_p1_stamp",
+          "page_number": 1,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-034-01",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.52,
+      "acquisition_modality": "D12-5",
+      "degradation_type": "archival_aged"
+    },
+    {
+      "document_id": "doc_auth_34_01",
+      "page_number": 2,
+      "raw_text": "Authentic Document doc_auth_34_01 | Family: fam_auth_34 | Domain: invoices_receipts\nPage 2 of 5: Tax Summary\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $3420.00 USD.\nReference Stamp ID: STAMP-AUTH-034-02.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_34_01 | Family: fam_auth_34 | Domain: invoices_receipts\nPage 2 of 5: Tax Summary\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $3420.00 USD.\nReference Stamp ID: STAMP-AUTH-034-02.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_34_01_p2.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_34_01_p2_hdr",
+          "page_number": 2,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "TAX SUMMARY - INVOICES_RECEIPTS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_34_01_p2_val",
+          "page_number": 2,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $3420.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_34_01_p2_stamp",
+          "page_number": 2,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-034-02",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.52,
+      "acquisition_modality": "D12-5",
+      "degradation_type": "archival_aged"
+    },
+    {
+      "document_id": "doc_auth_34_01",
+      "page_number": 3,
+      "raw_text": "Authentic Document doc_auth_34_01 | Family: fam_auth_34 | Domain: invoices_receipts\nPage 3 of 5: Vendor Remittance\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $3430.00 USD.\nReference Stamp ID: STAMP-AUTH-034-03.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_34_01 | Family: fam_auth_34 | Domain: invoices_receipts\nPage 3 of 5: Vendor Remittance\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $3430.00 USD.\nReference Stamp ID: STAMP-AUTH-034-03.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_34_01_p3.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_34_01_p3_hdr",
+          "page_number": 3,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "VENDOR REMITTANCE - INVOICES_RECEIPTS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_34_01_p3_val",
+          "page_number": 3,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $3430.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_34_01_p3_stamp",
+          "page_number": 3,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-034-03",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.52,
+      "acquisition_modality": "D12-5",
+      "degradation_type": "archival_aged"
+    },
+    {
+      "document_id": "doc_auth_34_01",
+      "page_number": 4,
+      "raw_text": "Authentic Document doc_auth_34_01 | Family: fam_auth_34 | Domain: invoices_receipts\nPage 4 of 5: Shipping Manifest\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $3440.00 USD.\nReference Stamp ID: STAMP-AUTH-034-04.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_34_01 | Family: fam_auth_34 | Domain: invoices_receipts\nPage 4 of 5: Shipping Manifest\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $3440.00 USD.\nReference Stamp ID: STAMP-AUTH-034-04.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_34_01_p4.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_34_01_p4_hdr",
+          "page_number": 4,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "SHIPPING MANIFEST - INVOICES_RECEIPTS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_34_01_p4_val",
+          "page_number": 4,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $3440.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_34_01_p4_stamp",
+          "page_number": 4,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-034-04",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.52,
+      "acquisition_modality": "D12-5",
+      "degradation_type": "archival_aged"
+    },
+    {
+      "document_id": "doc_auth_34_01",
+      "page_number": 5,
+      "raw_text": "Authentic Document doc_auth_34_01 | Family: fam_auth_34 | Domain: invoices_receipts\nPage 5 of 5: Terms\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $3450.00 USD.\nReference Stamp ID: STAMP-AUTH-034-05.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_34_01 | Family: fam_auth_34 | Domain: invoices_receipts\nPage 5 of 5: Terms\nAcquisition Modality: D12-5 (archival_aged)\nRecorded Metrics: Nominal Value = $3450.00 USD.\nReference Stamp ID: STAMP-AUTH-034-05.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_34_01_p5.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_34_01_p5_hdr",
+          "page_number": 5,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "TERMS - INVOICES_RECEIPTS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_34_01_p5_val",
+          "page_number": 5,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $3450.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_34_01_p5_stamp",
+          "page_number": 5,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-034-05",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.52,
+      "acquisition_modality": "D12-5",
+      "degradation_type": "archival_aged"
+    }
+  ]
+}

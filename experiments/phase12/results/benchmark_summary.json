@@ -1,0 +1,428 @@
+{
+  "B12-0": {
+    "baseline_id": "B12-0",
+    "baseline_name": "lexical_bm25_uncalibrated",
+    "total_runs": 275,
+    "retrieval_recall_at_5": 0.5054545454545455,
+    "grounding_mean_iou": 0.3070849063576572,
+    "coverage": 1.0,
+    "selective_accuracy": 0.44,
+    "raw_accuracy": 0.44,
+    "safe_useful_coverage": 0.0,
+    "unsafe_recovery_rate": 0.0,
+    "expected_calibration_error": 0.23343077181252964,
+    "by_modality": {
+      "D12-0": {
+        "total_runs": 50,
+        "recall_at_5": 0.7,
+        "grounding_iou": 0.3947454989715814,
+        "coverage": 1.0,
+        "selective_accuracy": 0.68,
+        "raw_accuracy": 0.68
+      },
+      "D12-1": {
+        "total_runs": 50,
+        "recall_at_5": 0.6,
+        "grounding_iou": 0.31985307573712446,
+        "coverage": 1.0,
+        "selective_accuracy": 0.48,
+        "raw_accuracy": 0.48
+      },
+      "D12-2": {
+        "total_runs": 50,
+        "recall_at_5": 0.56,
+        "grounding_iou": 0.34177533947552147,
+        "coverage": 1.0,
+        "selective_accuracy": 0.48,
+        "raw_accuracy": 0.48
+      },
+      "D12-3": {
+        "total_runs": 25,
+        "recall_at_5": 0.56,
+        "grounding_iou": 0.26050626804093724,
+        "coverage": 1.0,
+        "selective_accuracy": 0.56,
+        "raw_accuracy": 0.56
+      },
+      "D12-4": {
+        "total_runs": 25,
+        "recall_at_5": 0.36,
+        "grounding_iou": 0.2951714097221842,
+        "coverage": 1.0,
+        "selective_accuracy": 0.32,
+        "raw_accuracy": 0.32
+      },
+      "D12-5": {
+        "total_runs": 25,
+        "recall_at_5": 0.36,
+        "grounding_iou": 0.2673031924053507,
+        "coverage": 1.0,
+        "selective_accuracy": 0.24,
+        "raw_accuracy": 0.24
+      },
+      "D12-6": {
+        "total_runs": 50,
+        "recall_at_5": 0.28,
+        "grounding_iou": 0.22110263569865105,
+        "coverage": 1.0,
+        "selective_accuracy": 0.22,
+        "raw_accuracy": 0.22
+      }
+    }
+  },
+  "B12-1": {
+    "baseline_id": "B12-1",
+    "baseline_name": "dense_text_softmax",
+    "total_runs": 275,
+    "retrieval_recall_at_5": 0.6072727272727273,
+    "grounding_mean_iou": 0.40250001016179093,
+    "coverage": 1.0,
+    "selective_accuracy": 0.52,
+    "raw_accuracy": 0.52,
+    "safe_useful_coverage": 0.0,
+    "unsafe_recovery_rate": 0.0,
+    "expected_calibration_error": 0.23581407077858835,
+    "by_modality": {
+      "D12-0": {
+        "total_runs": 50,
+        "recall_at_5": 0.58,
+        "grounding_iou": 0.5175213622071488,
+        "coverage": 1.0,
+        "selective_accuracy": 0.56,
+        "raw_accuracy": 0.56
+      },
+      "D12-1": {
+        "total_runs": 50,
+        "recall_at_5": 0.64,
+        "grounding_iou": 0.43348127315729174,
+        "coverage": 1.0,
+        "selective_accuracy": 0.58,
+        "raw_accuracy": 0.58
+      },
+      "D12-2": {
+        "total_runs": 50,
+        "recall_at_5": 0.64,
+        "grounding_iou": 0.4480028146715395,
+        "coverage": 1.0,
+        "selective_accuracy": 0.58,
+        "raw_accuracy": 0.58
+      },
+      "D12-3": {
+        "total_runs": 25,
+        "recall_at_5": 0.6,
+        "grounding_iou": 0.3286013614570026,
+        "coverage": 1.0,
+        "selective_accuracy": 0.56,
+        "raw_accuracy": 0.56
+      },
+      "D12-4": {
+        "total_runs": 25,
+        "recall_at_5": 0.76,
+        "grounding_iou": 0.3690756407065195,
+        "coverage": 1.0,
+        "selective_accuracy": 0.48,
+        "raw_accuracy": 0.48
+      },
+      "D12-5": {
+        "total_runs": 25,
+        "recall_at_5": 0.72,
+        "grounding_iou": 0.3632134805103866,
+        "coverage": 1.0,
+        "selective_accuracy": 0.64,
+        "raw_accuracy": 0.64
+      },
+      "D12-6": {
+        "total_runs": 50,
+        "recall_at_5": 0.44,
+        "grounding_iou": 0.28429936451691534,
+        "coverage": 1.0,
+        "selective_accuracy": 0.3,
+        "raw_accuracy": 0.3
+      }
+    }
+  },
+  "B12-2": {
+    "baseline_id": "B12-2",
+    "baseline_name": "visual_retrieval_only",
+    "total_runs": 275,
+    "retrieval_recall_at_5": 0.509090909090909,
+    "grounding_mean_iou": 0.4727270586513404,
+    "coverage": 1.0,
+    "selective_accuracy": 0.4581818181818182,
+    "raw_accuracy": 0.4581818181818182,
+    "safe_useful_coverage": 0.0,
+    "unsafe_recovery_rate": 0.0,
+    "expected_calibration_error": 0.25573654574426385,
+    "by_modality": {
+      "D12-0": {
+        "total_runs": 50,
+        "recall_at_5": 0.66,
+        "grounding_iou": 0.6202132710833839,
+        "coverage": 1.0,
+        "selective_accuracy": 0.66,
+        "raw_accuracy": 0.66
+      },
+      "D12-1": {
+        "total_runs": 50,
+        "recall_at_5": 0.5,
+        "grounding_iou": 0.49872178601578526,
+        "coverage": 1.0,
+        "selective_accuracy": 0.44,
+        "raw_accuracy": 0.44
+      },
+      "D12-2": {
+        "total_runs": 50,
+        "recall_at_5": 0.56,
+        "grounding_iou": 0.5182907975582496,
+        "coverage": 1.0,
+        "selective_accuracy": 0.52,
+        "raw_accuracy": 0.52
+      },
+      "D12-3": {
+        "total_runs": 25,
+        "recall_at_5": 0.48,
+        "grounding_iou": 0.3738352458744915,
+        "coverage": 1.0,
+        "selective_accuracy": 0.4,
+        "raw_accuracy": 0.4
+      },
+      "D12-4": {
+        "total_runs": 25,
+        "recall_at_5": 0.4,
+        "grounding_iou": 0.4508455584161837,
+        "coverage": 1.0,
+        "selective_accuracy": 0.32,
+        "raw_accuracy": 0.32
+      },
+      "D12-5": {
+        "total_runs": 25,
+        "recall_at_5": 0.44,
+        "grounding_iou": 0.42246590597701983,
+        "coverage": 1.0,
+        "selective_accuracy": 0.32,
+        "raw_accuracy": 0.32
+      },
+      "D12-6": {
+        "total_runs": 50,
+        "recall_at_5": 0.42,
+        "grounding_iou": 0.3391996127911052,
+        "coverage": 1.0,
+        "selective_accuracy": 0.38,
+        "raw_accuracy": 0.38
+      }
+    }
+  },
+  "B12-3": {
+    "baseline_id": "B12-3",
+    "baseline_name": "multimodal_hybrid",
+    "total_runs": 275,
+    "retrieval_recall_at_5": 0.7672727272727272,
+    "grounding_mean_iou": 0.5180644328967391,
+    "coverage": 1.0,
+    "selective_accuracy": 0.7272727272727273,
+    "raw_accuracy": 0.7272727272727273,
+    "safe_useful_coverage": 0.0,
+    "unsafe_recovery_rate": 0.0,
+    "expected_calibration_error": 0.0826768726284227,
+    "by_modality": {
+      "D12-0": {
+        "total_runs": 50,
+        "recall_at_5": 0.86,
+        "grounding_iou": 0.6860441258799567,
+        "coverage": 1.0,
+        "selective_accuracy": 0.86,
+        "raw_accuracy": 0.86
+      },
+      "D12-1": {
+        "total_runs": 50,
+        "recall_at_5": 0.82,
+        "grounding_iou": 0.5434099546853874,
+        "coverage": 1.0,
+        "selective_accuracy": 0.8,
+        "raw_accuracy": 0.8
+      },
+      "D12-2": {
+        "total_runs": 50,
+        "recall_at_5": 0.84,
+        "grounding_iou": 0.5712641025869798,
+        "coverage": 1.0,
+        "selective_accuracy": 0.8,
+        "raw_accuracy": 0.8
+      },
+      "D12-3": {
+        "total_runs": 25,
+        "recall_at_5": 0.56,
+        "grounding_iou": 0.4043667851359439,
+        "coverage": 1.0,
+        "selective_accuracy": 0.52,
+        "raw_accuracy": 0.52
+      },
+      "D12-4": {
+        "total_runs": 25,
+        "recall_at_5": 0.6,
+        "grounding_iou": 0.47677336546824883,
+        "coverage": 1.0,
+        "selective_accuracy": 0.56,
+        "raw_accuracy": 0.56
+      },
+      "D12-5": {
+        "total_runs": 25,
+        "recall_at_5": 0.76,
+        "grounding_iou": 0.4705190593369489,
+        "coverage": 1.0,
+        "selective_accuracy": 0.64,
+        "raw_accuracy": 0.64
+      },
+      "D12-6": {
+        "total_runs": 50,
+        "recall_at_5": 0.74,
+        "grounding_iou": 0.3728065928091697,
+        "coverage": 1.0,
+        "selective_accuracy": 0.68,
+        "raw_accuracy": 0.68
+      }
+    }
+  },
+  "B12-4": {
+    "baseline_id": "B12-4",
+    "baseline_name": "grounding_gated",
+    "total_runs": 275,
+    "retrieval_recall_at_5": 0.730909090909091,
+    "grounding_mean_iou": 0.5551015318756596,
+    "coverage": 0.6509090909090909,
+    "selective_accuracy": 0.7318435754189944,
+    "raw_accuracy": 0.4763636363636364,
+    "safe_useful_coverage": 0.0,
+    "unsafe_recovery_rate": 0.0,
+    "expected_calibration_error": 0.34442941447979897,
+    "by_modality": {
+      "D12-0": {
+        "total_runs": 50,
+        "recall_at_5": 0.88,
+        "grounding_iou": 0.7214315813287198,
+        "coverage": 1.0,
+        "selective_accuracy": 0.86,
+        "raw_accuracy": 0.86
+      },
+      "D12-1": {
+        "total_runs": 50,
+        "recall_at_5": 0.74,
+        "grounding_iou": 0.5814443957808273,
+        "coverage": 0.98,
+        "selective_accuracy": 0.7142857142857143,
+        "raw_accuracy": 0.7
+      },
+      "D12-2": {
+        "total_runs": 50,
+        "recall_at_5": 0.74,
+        "grounding_iou": 0.6214454103845948,
+        "coverage": 1.0,
+        "selective_accuracy": 0.7,
+        "raw_accuracy": 0.7
+      },
+      "D12-3": {
+        "total_runs": 25,
+        "recall_at_5": 0.8,
+        "grounding_iou": 0.44794770031437997,
+        "coverage": 0.08,
+        "selective_accuracy": 0.5,
+        "raw_accuracy": 0.04
+      },
+      "D12-4": {
+        "total_runs": 25,
+        "recall_at_5": 0.68,
+        "grounding_iou": 0.5170912197058135,
+        "coverage": 0.6,
+        "selective_accuracy": 0.7333333333333333,
+        "raw_accuracy": 0.44
+      },
+      "D12-5": {
+        "total_runs": 25,
+        "recall_at_5": 0.6,
+        "grounding_iou": 0.5075299258128626,
+        "coverage": 0.52,
+        "selective_accuracy": 0.46153846153846156,
+        "raw_accuracy": 0.24
+      },
+      "D12-6": {
+        "total_runs": 50,
+        "recall_at_5": 0.62,
+        "grounding_iou": 0.3924526149054576,
+        "coverage": 0.0,
+        "selective_accuracy": 0.0,
+        "raw_accuracy": 0.0
+      }
+    }
+  },
+  "B12-5": {
+    "baseline_id": "B12-5",
+    "baseline_name": "proposed_hierarchical_multimodal_reliable",
+    "total_runs": 275,
+    "retrieval_recall_at_5": 0.8909090909090909,
+    "grounding_mean_iou": 0.6871231301300315,
+    "coverage": 1.0,
+    "selective_accuracy": 0.8690909090909091,
+    "raw_accuracy": 0.8690909090909091,
+    "safe_useful_coverage": 0.8690909090909091,
+    "unsafe_recovery_rate": 0.0,
+    "expected_calibration_error": 0.03716691004465691,
+    "by_modality": {
+      "D12-0": {
+        "total_runs": 50,
+        "recall_at_5": 0.96,
+        "grounding_iou": 0.7855993855579405,
+        "coverage": 1.0,
+        "selective_accuracy": 0.96,
+        "raw_accuracy": 0.96
+      },
+      "D12-1": {
+        "total_runs": 50,
+        "recall_at_5": 0.88,
+        "grounding_iou": 0.7143697183548566,
+        "coverage": 1.0,
+        "selective_accuracy": 0.86,
+        "raw_accuracy": 0.86
+      },
+      "D12-2": {
+        "total_runs": 50,
+        "recall_at_5": 0.88,
+        "grounding_iou": 0.7356291264676657,
+        "coverage": 1.0,
+        "selective_accuracy": 0.86,
+        "raw_accuracy": 0.86
+      },
+      "D12-3": {
+        "total_runs": 25,
+        "recall_at_5": 0.8,
+        "grounding_iou": 0.6081846580546381,
+        "coverage": 1.0,
+        "selective_accuracy": 0.8,
+        "raw_accuracy": 0.8
+      },
+      "D12-4": {
+        "total_runs": 25,
+        "recall_at_5": 0.92,
+        "grounding_iou": 0.6573342707234013,
+        "coverage": 1.0,
+        "selective_accuracy": 0.84,
+        "raw_accuracy": 0.84
+      },
+      "D12-5": {
+        "total_runs": 25,
+        "recall_at_5": 1.0,
+        "grounding_iou": 0.6428294902921345,
+        "coverage": 1.0,
+        "selective_accuracy": 0.96,
+        "raw_accuracy": 0.96
+      },
+      "D12-6": {
+        "total_runs": 50,
+        "recall_at_5": 0.82,
+        "grounding_iou": 0.5894047757996231,
+        "coverage": 1.0,
+        "selective_accuracy": 0.8,
+        "raw_accuracy": 0.8
+      }
+    }
+  }
+}

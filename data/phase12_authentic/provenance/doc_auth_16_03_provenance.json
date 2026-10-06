@@ -1,0 +1,14 @@
+{
+  "document_id": "doc_auth_16_03",
+  "family_id": "fam_auth_16",
+  "source_type": "authentic_benchmark_archive",
+  "domain": "shipping_logistics",
+  "acquisition_modality": "D12-1",
+  "degradation_type": "mobile_capture",
+  "page_count": 5,
+  "license_status": "open_access_research",
+  "source_reference": "Corpus_Auth_Family_16",
+  "collection_timestamp": "2026-10-06T15:00:00Z",
+  "annotation_status": "verified",
+  "checksum_sha256": "1bb8c3c6f23ffe9f636a859899fd4319de135e3ae32c2a85c589b3218149f8c3"
+}

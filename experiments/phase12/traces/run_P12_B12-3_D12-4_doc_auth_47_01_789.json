@@ -1,0 +1,16 @@
+{
+  "trace_id": "run_P12_B12-3_D12-4_doc_auth_47_01_789",
+  "baseline_id": "B12-3",
+  "baseline_name": "multimodal_hybrid",
+  "seed": 789,
+  "family_id": "fam_auth_47",
+  "document_id": "doc_auth_47_01",
+  "modality": "D12-4",
+  "retrieval_hit": false,
+  "grounding_iou": 0.35810173651959654,
+  "confidence": 0.817705214139165,
+  "abstained": false,
+  "is_correct": false,
+  "is_safe_useful": false,
+  "is_unsafe": false
+}

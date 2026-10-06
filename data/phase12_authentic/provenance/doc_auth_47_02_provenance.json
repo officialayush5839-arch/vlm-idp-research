@@ -1,0 +1,14 @@
+{
+  "document_id": "doc_auth_47_02",
+  "family_id": "fam_auth_47",
+  "source_type": "authentic_benchmark_archive",
+  "domain": "government_forms",
+  "acquisition_modality": "D12-4",
+  "degradation_type": "photocopy_multigen",
+  "page_count": 5,
+  "license_status": "open_access_research",
+  "source_reference": "Corpus_Auth_Family_47",
+  "collection_timestamp": "2026-10-06T15:00:00Z",
+  "annotation_status": "verified",
+  "checksum_sha256": "a8373159da3b7b39839764ed2376d9730d34553a7b418ee6e34bb55b3f9b549c"
+}

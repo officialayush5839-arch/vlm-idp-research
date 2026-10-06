@@ -1,0 +1,14 @@
+{
+  "document_id": "doc_auth_15_05",
+  "family_id": "fam_auth_15",
+  "source_type": "authentic_benchmark_archive",
+  "domain": "government_forms",
+  "acquisition_modality": "D12-0",
+  "degradation_type": "clean_reference",
+  "page_count": 5,
+  "license_status": "open_access_research",
+  "source_reference": "Corpus_Auth_Family_15",
+  "collection_timestamp": "2026-10-06T15:00:00Z",
+  "annotation_status": "verified",
+  "checksum_sha256": "8eb96c1d905b0785f5f38393ef354bf32bcb264b6e40b8de9be456eae1a0c8b2"
+}

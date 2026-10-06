@@ -1,0 +1,14 @@
+{
+  "document_id": "doc_auth_21_04",
+  "family_id": "fam_auth_21",
+  "source_type": "authentic_benchmark_archive",
+  "domain": "technical_manuals",
+  "acquisition_modality": "D12-6",
+  "degradation_type": "compound_real_world",
+  "page_count": 5,
+  "license_status": "open_access_research",
+  "source_reference": "Corpus_Auth_Family_21",
+  "collection_timestamp": "2026-10-06T15:00:00Z",
+  "annotation_status": "verified",
+  "checksum_sha256": "b23b24d018bcf992e4172ada2b51f4f14d02ea13e4d08e4e1d4a11f4a5b05956"
+}

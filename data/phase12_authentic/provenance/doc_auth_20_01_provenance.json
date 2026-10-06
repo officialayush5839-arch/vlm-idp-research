@@ -1,0 +1,14 @@
+{
+  "document_id": "doc_auth_20_01",
+  "family_id": "fam_auth_20",
+  "source_type": "authentic_benchmark_archive",
+  "domain": "medical_records",
+  "acquisition_modality": "D12-5",
+  "degradation_type": "archival_aged",
+  "page_count": 5,
+  "license_status": "open_access_research",
+  "source_reference": "Corpus_Auth_Family_20",
+  "collection_timestamp": "2026-10-06T15:00:00Z",
+  "annotation_status": "verified",
+  "checksum_sha256": "2eb1802584748fc73fa4a42b752a7dc1ba71c6b3cc533a946ebd6c379cb52f2d"
+}

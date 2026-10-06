@@ -1,0 +1,14 @@
+{
+  "document_id": "doc_auth_40_01",
+  "family_id": "fam_auth_40",
+  "source_type": "authentic_benchmark_archive",
+  "domain": "shipping_logistics",
+  "acquisition_modality": "D12-4",
+  "degradation_type": "photocopy_multigen",
+  "page_count": 5,
+  "license_status": "open_access_research",
+  "source_reference": "Corpus_Auth_Family_40",
+  "collection_timestamp": "2026-10-06T15:00:00Z",
+  "annotation_status": "verified",
+  "checksum_sha256": "81e1259bb8a5e1fc1c51b2fe14166c62381db37a58b100db74b4e5aba897ad72"
+}

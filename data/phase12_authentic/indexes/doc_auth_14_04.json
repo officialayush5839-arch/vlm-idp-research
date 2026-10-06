@@ -1,0 +1,264 @@
+{
+  "document_id": "doc_auth_14_04",
+  "family_id": "fam_auth_14",
+  "domain": "academic_papers",
+  "modality": "D12-6",
+  "page_count": 5,
+  "pages": [
+    {
+      "document_id": "doc_auth_14_04",
+      "page_number": 1,
+      "raw_text": "Authentic Document doc_auth_14_04 | Family: fam_auth_14 | Domain: academic_papers\nPage 1 of 5: Abstract & Intro\nAcquisition Modality: D12-6 (compound_real_world)\nRecorded Metrics: Nominal Value = $1485.00 USD.\nReference Stamp ID: STAMP-AUTH-014-01.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_14_04 | Family: fam_auth_14 | Domain: academic_papers\nPage 1 of 5: Abstract & Intro\nAcquisition Modality: D12-6 (compound_real_world)\nRecorded Metrics: Nominal Value = $1485.00 USD.\nReference Stamp ID: STAMP-AUTH-014-01.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_14_04_p1.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_14_04_p1_hdr",
+          "page_number": 1,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "ABSTRACT & INTRO - ACADEMIC_PAPERS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_14_04_p1_val",
+          "page_number": 1,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $1485.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_14_04_p1_stamp",
+          "page_number": 1,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-014-01",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.38,
+      "acquisition_modality": "D12-6",
+      "degradation_type": "compound_real_world"
+    },
+    {
+      "document_id": "doc_auth_14_04",
+      "page_number": 2,
+      "raw_text": "Authentic Document doc_auth_14_04 | Family: fam_auth_14 | Domain: academic_papers\nPage 2 of 5: Related Work\nAcquisition Modality: D12-6 (compound_real_world)\nRecorded Metrics: Nominal Value = $1495.00 USD.\nReference Stamp ID: STAMP-AUTH-014-02.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_14_04 | Family: fam_auth_14 | Domain: academic_papers\nPage 2 of 5: Related Work\nAcquisition Modality: D12-6 (compound_real_world)\nRecorded Metrics: Nominal Value = $1495.00 USD.\nReference Stamp ID: STAMP-AUTH-014-02.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_14_04_p2.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_14_04_p2_hdr",
+          "page_number": 2,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "RELATED WORK - ACADEMIC_PAPERS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_14_04_p2_val",
+          "page_number": 2,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $1495.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_14_04_p2_stamp",
+          "page_number": 2,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-014-02",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.38,
+      "acquisition_modality": "D12-6",
+      "degradation_type": "compound_real_world"
+    },
+    {
+      "document_id": "doc_auth_14_04",
+      "page_number": 3,
+      "raw_text": "Authentic Document doc_auth_14_04 | Family: fam_auth_14 | Domain: academic_papers\nPage 3 of 5: Methodology\nAcquisition Modality: D12-6 (compound_real_world)\nRecorded Metrics: Nominal Value = $1505.00 USD.\nReference Stamp ID: STAMP-AUTH-014-03.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_14_04 | Family: fam_auth_14 | Domain: academic_papers\nPage 3 of 5: Methodology\nAcquisition Modality: D12-6 (compound_real_world)\nRecorded Metrics: Nominal Value = $1505.00 USD.\nReference Stamp ID: STAMP-AUTH-014-03.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_14_04_p3.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_14_04_p3_hdr",
+          "page_number": 3,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "METHODOLOGY - ACADEMIC_PAPERS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_14_04_p3_val",
+          "page_number": 3,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $1505.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_14_04_p3_stamp",
+          "page_number": 3,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-014-03",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.38,
+      "acquisition_modality": "D12-6",
+      "degradation_type": "compound_real_world"
+    },
+    {
+      "document_id": "doc_auth_14_04",
+      "page_number": 4,
+      "raw_text": "Authentic Document doc_auth_14_04 | Family: fam_auth_14 | Domain: academic_papers\nPage 4 of 5: Empirical Results\nAcquisition Modality: D12-6 (compound_real_world)\nRecorded Metrics: Nominal Value = $1515.00 USD.\nReference Stamp ID: STAMP-AUTH-014-04.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_14_04 | Family: fam_auth_14 | Domain: academic_papers\nPage 4 of 5: Empirical Results\nAcquisition Modality: D12-6 (compound_real_world)\nRecorded Metrics: Nominal Value = $1515.00 USD.\nReference Stamp ID: STAMP-AUTH-014-04.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_14_04_p4.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_14_04_p4_hdr",
+          "page_number": 4,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "EMPIRICAL RESULTS - ACADEMIC_PAPERS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_14_04_p4_val",
+          "page_number": 4,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $1515.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_14_04_p4_stamp",
+          "page_number": 4,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-014-04",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.38,
+      "acquisition_modality": "D12-6",
+      "degradation_type": "compound_real_world"
+    },
+    {
+      "document_id": "doc_auth_14_04",
+      "page_number": 5,
+      "raw_text": "Authentic Document doc_auth_14_04 | Family: fam_auth_14 | Domain: academic_papers\nPage 5 of 5: References\nAcquisition Modality: D12-6 (compound_real_world)\nRecorded Metrics: Nominal Value = $1525.00 USD.\nReference Stamp ID: STAMP-AUTH-014-05.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_14_04 | Family: fam_auth_14 | Domain: academic_papers\nPage 5 of 5: References\nAcquisition Modality: D12-6 (compound_real_world)\nRecorded Metrics: Nominal Value = $1525.00 USD.\nReference Stamp ID: STAMP-AUTH-014-05.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_14_04_p5.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_14_04_p5_hdr",
+          "page_number": 5,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "REFERENCES - ACADEMIC_PAPERS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_14_04_p5_val",
+          "page_number": 5,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $1525.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_14_04_p5_stamp",
+          "page_number": 5,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-014-05",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.38,
+      "acquisition_modality": "D12-6",
+      "degradation_type": "compound_real_world"
+    }
+  ]
+}

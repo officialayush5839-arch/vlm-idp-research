@@ -1,0 +1,53 @@
+{
+  "H12-1": {
+    "hypothesis": "Hierarchical retrieval maintains superior performance over dense retrieval under authentic degradation",
+    "effect_mean": 0.2836621818181818,
+    "ci_95": [
+      0.22909090909090912,
+      0.3345454545454546
+    ],
+    "raw_p": 0.0,
+    "adjusted_p": 0.0,
+    "decision": "SUPPORTED"
+  },
+  "H12-2": {
+    "hypothesis": "Evidence grounding maintains reliable spatial IoU under authentic degradation",
+    "effect_mean": 0.28462280233306075,
+    "ci_95": [
+      0.2777813462650285,
+      0.29181616302969976
+    ],
+    "raw_p": 0.0,
+    "adjusted_p": 0.0,
+    "decision": "SUPPORTED"
+  },
+  "H12-3": {
+    "hypothesis": "Uncertainty-aware reliability achieves higher accuracy than uncalibrated direct answering",
+    "effect_mean": 0.42947127272727265,
+    "ci_95": [
+      0.3418181818181818,
+      0.52
+    ],
+    "raw_p": 0.0,
+    "adjusted_p": 0.0,
+    "decision": "SUPPORTED"
+  },
+  "H12-4": {
+    "hypothesis": "Observable recovery restores safe useful coverage while respecting safety constraint",
+    "effect_mean": 0.1392758224581421,
+    "ci_95": [
+      0.0746454248366014,
+      0.21660886290697295
+    ],
+    "raw_p": 0.0,
+    "adjusted_p": 0.0,
+    "decision": "SUPPORTED"
+  },
+  "H12-5": {
+    "hypothesis": "Performance measured under synthetic degradation differs systematically from authentic degradation",
+    "gap_recall": -0.051090909090909076,
+    "gap_grounding": -0.03287686986996852,
+    "gap_calibration": -0.0788330899553431,
+    "decision": "SUPPORTED"
+  }
+}

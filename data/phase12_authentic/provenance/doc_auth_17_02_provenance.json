@@ -1,0 +1,14 @@
+{
+  "document_id": "doc_auth_17_02",
+  "family_id": "fam_auth_17",
+  "source_type": "authentic_benchmark_archive",
+  "domain": "financial_report",
+  "acquisition_modality": "D12-2",
+  "degradation_type": "scanner_artifacts",
+  "page_count": 5,
+  "license_status": "open_access_research",
+  "source_reference": "Corpus_Auth_Family_17",
+  "collection_timestamp": "2026-10-06T15:00:00Z",
+  "annotation_status": "verified",
+  "checksum_sha256": "f33ae2767eb015c77ab12a66941e580ae6c0f83c6c8d3819441785c744ebda44"
+}

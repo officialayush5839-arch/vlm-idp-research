@@ -1,0 +1,14 @@
+{
+  "document_id": "doc_auth_26_04",
+  "family_id": "fam_auth_26",
+  "source_type": "authentic_benchmark_archive",
+  "domain": "invoices_receipts",
+  "acquisition_modality": "D12-4",
+  "degradation_type": "photocopy_multigen",
+  "page_count": 5,
+  "license_status": "open_access_research",
+  "source_reference": "Corpus_Auth_Family_26",
+  "collection_timestamp": "2026-10-06T15:00:00Z",
+  "annotation_status": "verified",
+  "checksum_sha256": "b821537d2db7e717339c486f68d50beeb34e5b175ffe9e83c9b79f4adf353469"
+}

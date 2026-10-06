@@ -1,0 +1,32 @@
+{
+  "retrieval_recall_at_5": {
+    "controlled_synthetic": 0.942,
+    "authentic_real_world": 0.8909090909090909,
+    "absolute_gap": -0.051090909090909076,
+    "relative_gap": 0.05423663385446824
+  },
+  "grounding_mean_iou": {
+    "controlled_synthetic": 0.72,
+    "authentic_real_world": 0.6871231301300315,
+    "absolute_gap": -0.03287686986996852,
+    "relative_gap": 0.04566231926384516
+  },
+  "expected_calibration_error": {
+    "controlled_synthetic": 0.116,
+    "authentic_real_world": 0.03716691004465691,
+    "absolute_gap": -0.0788330899553431,
+    "relative_gap": 0.6795956030633026
+  },
+  "selective_accuracy": {
+    "controlled_synthetic": 0.821,
+    "authentic_real_world": 0.8690909090909091,
+    "absolute_gap": 0.048090909090909184,
+    "relative_gap": -0.058576015945078184
+  },
+  "safe_useful_coverage": {
+    "controlled_synthetic": 0.72,
+    "authentic_real_world": 0.8690909090909091,
+    "absolute_gap": 0.14909090909090916,
+    "relative_gap": -0.20707070707070718
+  }
+}

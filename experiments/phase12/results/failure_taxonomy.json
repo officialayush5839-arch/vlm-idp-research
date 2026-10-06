@@ -1,0 +1,32 @@
+{
+  "low_dpi_character_fusion": {
+    "frequency": 38,
+    "modality": "D12-3",
+    "severity": "high",
+    "mitigation": "Binarization / super-resolution"
+  },
+  "perspective_coordinate_skew": {
+    "frequency": 24,
+    "modality": "D12-1",
+    "severity": "medium",
+    "mitigation": "4-point planar rectification"
+  },
+  "aged_paper_bleed_through": {
+    "frequency": 21,
+    "modality": "D12-5",
+    "severity": "medium",
+    "mitigation": "Illumination flattening"
+  },
+  "severe_toner_loss": {
+    "frequency": 16,
+    "modality": "D12-4",
+    "severity": "high",
+    "mitigation": "Dual-path OCR retry"
+  },
+  "scanner_glass_dust_streak": {
+    "frequency": 11,
+    "modality": "D12-2",
+    "severity": "low",
+    "mitigation": "Morphological stripe filter"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "trace_id": "run_P12_B12-1_D12-2_doc_auth_52_05_789",
+  "baseline_id": "B12-1",
+  "baseline_name": "dense_text_softmax",
+  "seed": 789,
+  "family_id": "fam_auth_52",
+  "document_id": "doc_auth_52_05",
+  "modality": "D12-2",
+  "retrieval_hit": true,
+  "grounding_iou": 0.49879359125925815,
+  "confidence": 0.7593485838969006,
+  "abstained": false,
+  "is_correct": true,
+  "is_safe_useful": false,
+  "is_unsafe": false
+}

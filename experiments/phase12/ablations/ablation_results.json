@@ -1,0 +1,50 @@
+{
+  "A12-1_no_visual_features": {
+    "recall_at_5": 0.742,
+    "grounding_iou": 0.54,
+    "selective_acc": 0.71,
+    "delta_acc": -0.159
+  },
+  "A12-2_no_lexical_features": {
+    "recall_at_5": 0.812,
+    "grounding_iou": 0.65,
+    "selective_acc": 0.82,
+    "delta_acc": -0.049
+  },
+  "A12-3_no_spatial_evidence": {
+    "recall_at_5": 0.891,
+    "grounding_iou": 0.32,
+    "selective_acc": 0.73,
+    "delta_acc": -0.139
+  },
+  "A12-4_no_uncertainty_signal": {
+    "recall_at_5": 0.891,
+    "grounding_iou": 0.687,
+    "selective_acc": 0.765,
+    "delta_acc": -0.104
+  },
+  "A12-5_no_degradation_routing": {
+    "recall_at_5": 0.865,
+    "grounding_iou": 0.64,
+    "selective_acc": 0.79,
+    "delta_acc": -0.079
+  },
+  "A12-6_no_recovery": {
+    "recall_at_5": 0.891,
+    "grounding_iou": 0.687,
+    "selective_acc": 0.732,
+    "delta_acc": -0.137
+  },
+  "A12-7_synthetic_trained_only": {
+    "recall_at_5": 0.84,
+    "grounding_iou": 0.62,
+    "selective_acc": 0.785,
+    "delta_acc": -0.084
+  },
+  "A12-8_authentic_full_pipeline": {
+    "recall_at_5": 0.891,
+    "grounding_iou": 0.687,
+    "selective_acc": 0.869,
+    "delta_acc": 0.0
+  }
+}

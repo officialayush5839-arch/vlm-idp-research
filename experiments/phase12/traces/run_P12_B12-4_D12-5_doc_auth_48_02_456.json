@@ -1,0 +1,16 @@
+{
+  "trace_id": "run_P12_B12-4_D12-5_doc_auth_48_02_456",
+  "baseline_id": "B12-4",
+  "baseline_name": "grounding_gated",
+  "seed": 456,
+  "family_id": "fam_auth_48",
+  "document_id": "doc_auth_48_02",
+  "modality": "D12-5",
+  "retrieval_hit": true,
+  "grounding_iou": 0.4647382857047528,
+  "confidence": 0.817703449936375,
+  "abstained": true,
+  "is_correct": false,
+  "is_safe_useful": false,
+  "is_unsafe": false
+}

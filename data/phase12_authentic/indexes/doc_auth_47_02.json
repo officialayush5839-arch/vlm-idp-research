@@ -1,0 +1,264 @@
+{
+  "document_id": "doc_auth_47_02",
+  "family_id": "fam_auth_47",
+  "domain": "government_forms",
+  "modality": "D12-4",
+  "page_count": 5,
+  "pages": [
+    {
+      "document_id": "doc_auth_47_02",
+      "page_number": 1,
+      "raw_text": "Authentic Document doc_auth_47_02 | Family: fam_auth_47 | Domain: government_forms\nPage 1 of 5: Applicant Details\nAcquisition Modality: D12-4 (photocopy_multigen)\nRecorded Metrics: Nominal Value = $4735.00 USD.\nReference Stamp ID: STAMP-AUTH-047-01.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_47_02 | Family: fam_auth_47 | Domain: government_forms\nPage 1 of 5: Applicant Details\nAcquisition Modality: D12-4 (photocopy_multigen)\nRecorded Metrics: Nominal Value = $4735.00 USD.\nReference Stamp ID: STAMP-AUTH-047-01.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_47_02_p1.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_47_02_p1_hdr",
+          "page_number": 1,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "APPLICANT DETAILS - GOVERNMENT_FORMS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_47_02_p1_val",
+          "page_number": 1,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $4735.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_47_02_p1_stamp",
+          "page_number": 1,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-047-01",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.58,
+      "acquisition_modality": "D12-4",
+      "degradation_type": "photocopy_multigen"
+    },
+    {
+      "document_id": "doc_auth_47_02",
+      "page_number": 2,
+      "raw_text": "Authentic Document doc_auth_47_02 | Family: fam_auth_47 | Domain: government_forms\nPage 2 of 5: Income Verification\nAcquisition Modality: D12-4 (photocopy_multigen)\nRecorded Metrics: Nominal Value = $4745.00 USD.\nReference Stamp ID: STAMP-AUTH-047-02.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_47_02 | Family: fam_auth_47 | Domain: government_forms\nPage 2 of 5: Income Verification\nAcquisition Modality: D12-4 (photocopy_multigen)\nRecorded Metrics: Nominal Value = $4745.00 USD.\nReference Stamp ID: STAMP-AUTH-047-02.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_47_02_p2.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_47_02_p2_hdr",
+          "page_number": 2,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "INCOME VERIFICATION - GOVERNMENT_FORMS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_47_02_p2_val",
+          "page_number": 2,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $4745.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_47_02_p2_stamp",
+          "page_number": 2,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-047-02",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.58,
+      "acquisition_modality": "D12-4",
+      "degradation_type": "photocopy_multigen"
+    },
+    {
+      "document_id": "doc_auth_47_02",
+      "page_number": 3,
+      "raw_text": "Authentic Document doc_auth_47_02 | Family: fam_auth_47 | Domain: government_forms\nPage 3 of 5: Affidavit\nAcquisition Modality: D12-4 (photocopy_multigen)\nRecorded Metrics: Nominal Value = $4755.00 USD.\nReference Stamp ID: STAMP-AUTH-047-03.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_47_02 | Family: fam_auth_47 | Domain: government_forms\nPage 3 of 5: Affidavit\nAcquisition Modality: D12-4 (photocopy_multigen)\nRecorded Metrics: Nominal Value = $4755.00 USD.\nReference Stamp ID: STAMP-AUTH-047-03.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_47_02_p3.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_47_02_p3_hdr",
+          "page_number": 3,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "AFFIDAVIT - GOVERNMENT_FORMS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_47_02_p3_val",
+          "page_number": 3,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $4755.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_47_02_p3_stamp",
+          "page_number": 3,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-047-03",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.58,
+      "acquisition_modality": "D12-4",
+      "degradation_type": "photocopy_multigen"
+    },
+    {
+      "document_id": "doc_auth_47_02",
+      "page_number": 4,
+      "raw_text": "Authentic Document doc_auth_47_02 | Family: fam_auth_47 | Domain: government_forms\nPage 4 of 5: Official Stamps\nAcquisition Modality: D12-4 (photocopy_multigen)\nRecorded Metrics: Nominal Value = $4765.00 USD.\nReference Stamp ID: STAMP-AUTH-047-04.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_47_02 | Family: fam_auth_47 | Domain: government_forms\nPage 4 of 5: Official Stamps\nAcquisition Modality: D12-4 (photocopy_multigen)\nRecorded Metrics: Nominal Value = $4765.00 USD.\nReference Stamp ID: STAMP-AUTH-047-04.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_47_02_p4.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_47_02_p4_hdr",
+          "page_number": 4,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "OFFICIAL STAMPS - GOVERNMENT_FORMS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_47_02_p4_val",
+          "page_number": 4,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $4765.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_47_02_p4_stamp",
+          "page_number": 4,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-047-04",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.58,
+      "acquisition_modality": "D12-4",
+      "degradation_type": "photocopy_multigen"
+    },
+    {
+      "document_id": "doc_auth_47_02",
+      "page_number": 5,
+      "raw_text": "Authentic Document doc_auth_47_02 | Family: fam_auth_47 | Domain: government_forms\nPage 5 of 5: Approval\nAcquisition Modality: D12-4 (photocopy_multigen)\nRecorded Metrics: Nominal Value = $4775.00 USD.\nReference Stamp ID: STAMP-AUTH-047-05.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "clean_text": "Authentic Document doc_auth_47_02 | Family: fam_auth_47 | Domain: government_forms\nPage 5 of 5: Approval\nAcquisition Modality: D12-4 (photocopy_multigen)\nRecorded Metrics: Nominal Value = $4775.00 USD.\nReference Stamp ID: STAMP-AUTH-047-05.\nSection Status: Approved by Chief Auditor under Protocol D12.\n",
+      "image_path": "data/phase12_authentic/images/doc_auth_47_02_p5.png",
+      "regions": [
+        {
+          "region_id": "doc_auth_47_02_p5_hdr",
+          "page_number": 5,
+          "bbox": [
+            50,
+            40,
+            950,
+            120
+          ],
+          "region_type": "header",
+          "text_content": "APPROVAL - GOVERNMENT_FORMS",
+          "confidence": 0.82
+        },
+        {
+          "region_id": "doc_auth_47_02_p5_val",
+          "page_number": 5,
+          "bbox": [
+            120,
+            350,
+            880,
+            520
+          ],
+          "region_type": "key_value",
+          "text_content": "Nominal Value: $4775.00 USD",
+          "confidence": 0.79
+        },
+        {
+          "region_id": "doc_auth_47_02_p5_stamp",
+          "page_number": 5,
+          "bbox": [
+            650,
+            780,
+            920,
+            940
+          ],
+          "region_type": "stamp_signature",
+          "text_content": "STAMP-AUTH-047-05",
+          "confidence": 0.74
+        }
+      ],
+      "quality_score": 0.58,
+      "acquisition_modality": "D12-4",
+      "degradation_type": "photocopy_multigen"
+    }
+  ]
+}
