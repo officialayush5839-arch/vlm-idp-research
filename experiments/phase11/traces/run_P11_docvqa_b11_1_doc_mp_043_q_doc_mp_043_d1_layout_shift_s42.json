@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_1_doc_mp_043_q_doc_mp_043_d1_layout_shift_s42",
+  "document_id": "doc_mp_043",
+  "query_id": "q_doc_mp_043",
+  "baseline": "B11-1",
+  "domain": "D1_layout_shift",
+  "condition": "moderate",
+  "seed": 42,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.7785,
+  "uncertainty_norm": 0.2357,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-1: Moderate confidence with minor uncertainty detected",
+  "sha256": "42015534c565f6579ba24853d3cb94366d2fbc352a00a6a93dbb9afb3b3006da"
+}

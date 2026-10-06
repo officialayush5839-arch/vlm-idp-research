@@ -1,0 +1,28 @@
+{
+  "trace_id": "run_P11_docvqa_b11_6_doc_mp_033_q_doc_mp_033_d0_in_domain_s123",
+  "document_id": "doc_mp_033",
+  "query_id": "q_doc_mp_033",
+  "baseline": "B11-6",
+  "domain": "D0_in_domain",
+  "condition": "clean",
+  "seed": 123,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.94,
+  "uncertainty_norm": 0.06,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": true,
+  "passed_layers": [
+    "layer1_evidence_existence",
+    "layer2_spatial_grounding",
+    "layer3_semantic_support",
+    "layer4_numeric_consistency",
+    "layer5_structural_consistency",
+    "layer6_cross_modal_agreement",
+    "layer7_calibrated_confidence"
+  ],
+  "failed_layers": [],
+  "reason": "All 7 verification layers successfully validated",
+  "sha256": "1b754fdd70ce7632f716aca73799f60e72aa84dc65f9fbefa2dcbc84b1f55d0b"
+}

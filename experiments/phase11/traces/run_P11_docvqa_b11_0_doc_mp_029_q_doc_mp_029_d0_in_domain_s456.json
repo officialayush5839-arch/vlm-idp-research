@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_0_doc_mp_029_q_doc_mp_029_d0_in_domain_s456",
+  "document_id": "doc_mp_029",
+  "query_id": "q_doc_mp_029",
+  "baseline": "B11-0",
+  "domain": "D0_in_domain",
+  "condition": "clean",
+  "seed": 456,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.9445,
+  "uncertainty_norm": 0.0603,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": true,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-0: Primary answer accepted",
+  "sha256": "34022a3fef01566474e59e9625e1e106cbd8bc2855d251abf5eefdd521e46d37"
+}

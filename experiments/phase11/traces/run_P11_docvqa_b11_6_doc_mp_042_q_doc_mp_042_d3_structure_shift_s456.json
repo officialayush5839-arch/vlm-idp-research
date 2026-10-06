@@ -1,0 +1,29 @@
+{
+  "trace_id": "run_P11_docvqa_b11_6_doc_mp_042_q_doc_mp_042_d3_structure_shift_s456",
+  "document_id": "doc_mp_042",
+  "query_id": "q_doc_mp_042",
+  "baseline": "B11-6",
+  "domain": "D3_structure_shift",
+  "condition": "mild",
+  "seed": 456,
+  "state": "SAFE_PARTIAL",
+  "action": "EMIT_PARTIAL",
+  "confidence": 0.76,
+  "uncertainty_norm": 0.24,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [
+    "layer1_evidence_existence",
+    "layer2_spatial_grounding",
+    "layer3_semantic_support",
+    "layer4_numeric_consistency",
+    "layer5_structural_consistency",
+    "layer6_cross_modal_agreement"
+  ],
+  "failed_layers": [
+    "layer7_calibrated_confidence"
+  ],
+  "reason": "Partial evidence certified under spatial and numeric constraints",
+  "sha256": "4fec702ccd9430f6700c80ce0c36fec68be0eb97d36635a729b2f9a8f87390c1"
+}

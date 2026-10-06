@@ -1,0 +1,33 @@
+# configs/phase11/threshold_config.yaml
+# Operating Point Thresholds Derived Exclusively from Validation Data (split == "val")
+
+validation_derived_thresholds:
+  conservative:
+    tau_safe_recovery: 0.88
+    tau_partial_recovery: 0.82
+    min_spatial_iou: 0.65
+    min_sufficiency: 0.70
+    max_numeric_discrepancy: 0.10
+    max_uncertainty_norm: 0.25
+    expected_urr: 0.015
+
+  safety_constrained_balanced:  # Default operating point
+    tau_safe_recovery: 0.82
+    tau_partial_recovery: 0.74
+    min_spatial_iou: 0.50
+    min_sufficiency: 0.60
+    max_numeric_discrepancy: 0.18
+    max_uncertainty_norm: 0.38
+    expected_urr: 0.032
+
+  permissive:
+    tau_safe_recovery: 0.75
+    tau_partial_recovery: 0.68
+    min_spatial_iou: 0.40
+    min_sufficiency: 0.50
+    max_numeric_discrepancy: 0.25
+    max_uncertainty_norm: 0.50
+    expected_urr: 0.048
+
+operating_point: "safety_constrained_balanced"
+frozen_validation_split: "val"

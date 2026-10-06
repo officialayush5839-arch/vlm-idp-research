@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_2_doc_mp_049_q_doc_mp_049_d4_combined_shift_s42",
+  "document_id": "doc_mp_049",
+  "query_id": "q_doc_mp_049",
+  "baseline": "B11-2",
+  "domain": "D4_combined_shift",
+  "condition": "clean",
+  "seed": 42,
+  "state": "ABSTAIN",
+  "action": "ABSTAIN_DEFENSIVE",
+  "confidence": 0.48,
+  "uncertainty_norm": 0.52,
+  "is_useful": false,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-2: Evidence threshold failed",
+  "sha256": "d0553916c3e5290e8e8731c583069b97fd264f24e51d4f42395e650fdf39b1f6"
+}

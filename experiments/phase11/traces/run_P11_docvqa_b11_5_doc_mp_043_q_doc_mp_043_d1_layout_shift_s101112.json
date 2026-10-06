@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_5_doc_mp_043_q_doc_mp_043_d1_layout_shift_s101112",
+  "document_id": "doc_mp_043",
+  "query_id": "q_doc_mp_043",
+  "baseline": "B11-5",
+  "domain": "D1_layout_shift",
+  "condition": "moderate",
+  "seed": 101112,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.82,
+  "uncertainty_norm": 0.18,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-5: Certified recovery emitted",
+  "sha256": "9a2b340043aaa3715d506438575a2c65e787ec79d94e8ef3390d39e8f881c19e"
+}

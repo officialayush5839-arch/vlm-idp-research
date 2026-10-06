@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_0_doc_mp_038_q_doc_mp_038_d3_structure_shift_s123",
+  "document_id": "doc_mp_038",
+  "query_id": "q_doc_mp_038",
+  "baseline": "B11-0",
+  "domain": "D3_structure_shift",
+  "condition": "mild",
+  "seed": 123,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.727,
+  "uncertainty_norm": 0.2822,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": true,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-0: Primary answer accepted",
+  "sha256": "907917a16e9588c3239be666eda58eb6693dd852422835cc16f646d22e3ba7e3"
+}

@@ -1,0 +1,30 @@
+# configs/phase11/experiment_matrix.yaml
+# Phase 11 Experiment Matrix Specification
+
+matrix:
+  phase: "11"
+  baselines:
+    - B11-0  # Phase 10 Reference Abstention
+    - B11-1  # Phase 10.5 Combined Recovery (B10.5-5)
+    - B11-2  # Strict Evidence-Only Recovery
+    - B11-3  # Confidence-Gated Recovery
+    - B11-4  # Confidence + Evidence + Numeric Verification
+    - B11-5  # Confidence + Evidence + Human Escalation
+    - B11-6  # Proposed Safety-Constrained Recovery System
+
+  domains:
+    - D0_in_domain
+    - D1_layout_shift
+    - D2_visual_style_shift
+    - D3_structure_shift
+    - D4_combined_shift
+
+  seeds:
+    - 42
+    - 123
+    - 456
+    - 789
+    - 101112
+
+  documents_per_domain: 5
+  total_evaluations: 875  # 7 baselines * 5 domains * 5 docs * 5 seeds = 875

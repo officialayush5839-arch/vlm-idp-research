@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_2_doc_mp_029_q_doc_mp_029_d0_in_domain_s789",
+  "document_id": "doc_mp_029",
+  "query_id": "q_doc_mp_029",
+  "baseline": "B11-2",
+  "domain": "D0_in_domain",
+  "condition": "clean",
+  "seed": 789,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.94,
+  "uncertainty_norm": 0.06,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": true,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-2: Strict evidence criteria met",
+  "sha256": "9f4ef00df7fc7458a9b3f3188984a9e88b52a83b7834b2a227fa2c788b3f13c0"
+}

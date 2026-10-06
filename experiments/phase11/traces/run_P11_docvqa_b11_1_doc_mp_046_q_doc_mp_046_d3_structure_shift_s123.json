@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_1_doc_mp_046_q_doc_mp_046_d3_structure_shift_s123",
+  "document_id": "doc_mp_046",
+  "query_id": "q_doc_mp_046",
+  "baseline": "B11-1",
+  "domain": "D3_structure_shift",
+  "condition": "mild",
+  "seed": 123,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.727,
+  "uncertainty_norm": 0.2822,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-1: Moderate confidence with minor uncertainty detected",
+  "sha256": "e072ecf33da17eec34395cd591a3984a248dfc19041a44aed2f6b4013a8e3b87"
+}

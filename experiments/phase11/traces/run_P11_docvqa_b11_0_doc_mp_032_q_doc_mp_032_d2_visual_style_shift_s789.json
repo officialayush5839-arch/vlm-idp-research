@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_0_doc_mp_032_q_doc_mp_032_d2_visual_style_shift_s789",
+  "document_id": "doc_mp_032",
+  "query_id": "q_doc_mp_032",
+  "baseline": "B11-0",
+  "domain": "D2_visual_style_shift",
+  "condition": "severe",
+  "seed": 789,
+  "state": "ABSTAIN",
+  "action": "ABSTAIN_DEFENSIVE",
+  "confidence": 0.464,
+  "uncertainty_norm": 0.5506,
+  "is_useful": false,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-0: Defensive abstention",
+  "sha256": "d96fe01fc871ad5bad8405823eccac1ff37f9a98fcf1d18a0dd809e09545527e"
+}

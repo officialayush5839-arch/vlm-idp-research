@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_5_doc_mp_049_q_doc_mp_049_d4_combined_shift_s42",
+  "document_id": "doc_mp_049",
+  "query_id": "q_doc_mp_049",
+  "baseline": "B11-5",
+  "domain": "D4_combined_shift",
+  "condition": "clean",
+  "seed": 42,
+  "state": "HUMAN_REVIEW_REQUIRED",
+  "action": "ESCALATE_TO_HUMAN",
+  "confidence": 0.48,
+  "uncertainty_norm": 0.52,
+  "is_useful": false,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-5: Escalated to human review",
+  "sha256": "9d42ea644862943c002218791ba6b0ab807412ab974523d4a271ae80854bf95f"
+}

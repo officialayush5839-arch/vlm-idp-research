@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_2_doc_mp_033_q_doc_mp_033_d0_in_domain_s789",
+  "document_id": "doc_mp_033",
+  "query_id": "q_doc_mp_033",
+  "baseline": "B11-2",
+  "domain": "D0_in_domain",
+  "condition": "clean",
+  "seed": 789,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.94,
+  "uncertainty_norm": 0.06,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": true,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-2: Strict evidence criteria met",
+  "sha256": "130195c2711e1008bc3bd473bdc56cd07882946eff560774160e5f203e7e3e65"
+}

@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_0_doc_mp_039_q_doc_mp_039_d1_layout_shift_s42",
+  "document_id": "doc_mp_039",
+  "query_id": "q_doc_mp_039",
+  "baseline": "B11-0",
+  "domain": "D1_layout_shift",
+  "condition": "moderate",
+  "seed": 42,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.7785,
+  "uncertainty_norm": 0.2357,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": true,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-0: Primary answer accepted",
+  "sha256": "f2da23286622f5fb8ebbecf6cdc236ef784226a31c9e8646343d946cfc1190f6"
+}

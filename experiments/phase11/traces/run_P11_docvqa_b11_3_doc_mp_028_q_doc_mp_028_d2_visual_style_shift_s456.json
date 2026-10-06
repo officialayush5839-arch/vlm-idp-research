@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_3_doc_mp_028_q_doc_mp_028_d2_visual_style_shift_s456",
+  "document_id": "doc_mp_028",
+  "query_id": "q_doc_mp_028",
+  "baseline": "B11-3",
+  "domain": "D2_visual_style_shift",
+  "condition": "severe",
+  "seed": 456,
+  "state": "ABSTAIN",
+  "action": "ABSTAIN_DEFENSIVE",
+  "confidence": 0.45,
+  "uncertainty_norm": 0.55,
+  "is_useful": false,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-3: Confidence below cutoff",
+  "sha256": "de1d0f5a9513fb96e56d1cece22b60b8c6db9d72bc7b874917c7282ecc01a324"
+}

@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_5_doc_mp_033_q_doc_mp_033_d0_in_domain_s123",
+  "document_id": "doc_mp_033",
+  "query_id": "q_doc_mp_033",
+  "baseline": "B11-5",
+  "domain": "D0_in_domain",
+  "condition": "clean",
+  "seed": 123,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.94,
+  "uncertainty_norm": 0.06,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": true,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-5: Certified recovery emitted",
+  "sha256": "2d0e33872e4dd9e607412ff70d9a0fbd65fb9195c1f55a6d041f274600aa5c9e"
+}

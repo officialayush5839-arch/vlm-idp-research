@@ -1,0 +1,17 @@
+{
+  "hypothesis": "H11",
+  "reference_baseline": "B11-0",
+  "proposed_baseline": "B11-6",
+  "mean_suc_reference": 0.488,
+  "mean_suc_proposed": 0.32,
+  "delta_suc": -0.168,
+  "ci_95_suc": [
+    -0.24,
+    -0.104
+  ],
+  "p_value": 1.0,
+  "overall_urr_proposed": 0.08,
+  "safety_tolerance_urr": 0.05,
+  "is_safe": false,
+  "conclusion": "NOT_SUPPORTED"
+}

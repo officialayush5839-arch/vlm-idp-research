@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_2_doc_mp_034_q_doc_mp_034_d3_structure_shift_s42",
+  "document_id": "doc_mp_034",
+  "query_id": "q_doc_mp_034",
+  "baseline": "B11-2",
+  "domain": "D3_structure_shift",
+  "condition": "mild",
+  "seed": 42,
+  "state": "ABSTAIN",
+  "action": "ABSTAIN_DEFENSIVE",
+  "confidence": 0.76,
+  "uncertainty_norm": 0.24,
+  "is_useful": false,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-2: Evidence threshold failed",
+  "sha256": "004a87e8f5de855d2829050b029cc0abd0516df198441683b80e2c90051916c1"
+}

@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_3_doc_mp_048_q_doc_mp_048_d4_combined_shift_s456",
+  "document_id": "doc_mp_048",
+  "query_id": "q_doc_mp_048",
+  "baseline": "B11-3",
+  "domain": "D4_combined_shift",
+  "condition": "severe",
+  "seed": 456,
+  "state": "ABSTAIN",
+  "action": "ABSTAIN_DEFENSIVE",
+  "confidence": 0.48,
+  "uncertainty_norm": 0.52,
+  "is_useful": false,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-3: Confidence below cutoff",
+  "sha256": "e1b5c57ae5e6ac9e3e5de1f08b3d69ad203a9d3658d4ad8f59b9d4e6e06ee395"
+}

@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_1_doc_mp_044_q_doc_mp_044_d2_visual_style_shift_s42",
+  "document_id": "doc_mp_044",
+  "query_id": "q_doc_mp_044",
+  "baseline": "B11-1",
+  "domain": "D2_visual_style_shift",
+  "condition": "severe",
+  "seed": 42,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.6,
+  "uncertainty_norm": 0.43,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-1: Combined system: visual restoration succeeded",
+  "sha256": "4bf4a1b4a63934f49a5b077f13abed242a6db924a0fa8b1788a25bc9c1c6670f"
+}

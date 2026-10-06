@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_1_doc_mp_029_q_doc_mp_029_d0_in_domain_s42",
+  "document_id": "doc_mp_029",
+  "query_id": "q_doc_mp_029",
+  "baseline": "B11-1",
+  "domain": "D0_in_domain",
+  "condition": "clean",
+  "seed": 42,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.9445,
+  "uncertainty_norm": 0.0603,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": true,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-1: High confidence and low multi-modal uncertainty",
+  "sha256": "b13823af12f70b29e5b8777f8583182da76bf0c39f5435923da107eace5f9ee2"
+}

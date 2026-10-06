@@ -69,18 +69,19 @@ All RQ1-RQ6 frozen for experimental investigation. Status: CONFIRMED.
 - PHASE 9: Uncertainty-Aware Reliability, Abstention & Failure-Safety Evaluation (Completed: 2026-10-06, Audited: 2026-10-06, 342/342 tests pass, B9-0 through B9-5 baselines, 750 benchmark traces across 5 seeds, paired bootstrap B=10,000, Hypothesis H9 evaluated as NOT_SUPPORTED at alpha=0.05 on AURC while selective accuracy improved from 72.8% to 82.11%, audit pass confirmed). Status: CONFIRMED.
 - PHASE 10: Robustness, Cross-Domain Generalization & Distribution-Shift Validation (Completed: 2026-10-06, 352/352 tests pass, B10-0 through B10-4 baselines, 625 benchmark traces across 5 domains and 5 seeds, paired bootstrap B=10,000, Hypothesis H10 evaluated as NOT_SUPPORTED on raw accuracy due to safe complete abstention in D2 and D4). Status: CONFIRMED.
 - PHASE 10.5: Safety-Preserving Recovery Under Severe Distribution Shift (Completed: 2026-10-06, 377/377 tests pass, B10.5-0 through B10.5-5 baselines, 750 benchmark traces across 5 domains and 5 seeds, paired bootstrap B=10,000, SUC improved by +0.1840, URR=0.0547, Hypothesis H10.5 evaluated as NOT_SUPPORTED due to URR > 0.05 safety bound). Status: CONFIRMED.
+- PHASE 11: Safety-Constrained Recovery Optimization & Human-in-the-Loop Verification (Completed: 2026-10-06, 396/396 tests pass, B11-0 through B11-6 baselines, 875 benchmark traces across 5 domains and 5 seeds, paired bootstrap B=10,000, 7-layer verification stack, 60% human escalation under severe ambiguity, URR=0.0800, Hypothesis H11 evaluated as NOT_SUPPORTED). Status: CONFIRMED.
 
 ## 20. Current Phase
-PHASE 10.5: Completed. Awaiting authorization to begin Phase 11. Status: CONFIRMED.
+PHASE 11: Completed. Awaiting authorization to begin Phase 12. Status: CONFIRMED.
 
 ## 21. Current Task
-Phase 10.5 Safety-Preserving Recovery Under Severe Distribution Shift completed. Evaluated 6 baselines (B10.5-0 to B10.5-5) across 5 domains (D0-D4) and 5 seeds. Persisted 750 cryptographic traces, benchmark summaries, ablations (A10.5-1 to A10.5-8), and publication figures. 377/377 tests passing. Status: PASS.
+Phase 11 Safety-Constrained Recovery Optimization & Human-in-the-Loop Verification completed. Evaluated 7 baselines (B11-0 to B11-6) across 5 domains (D0-D4) and 5 seeds. Persisted 875 cryptographic traces, benchmark summaries, ablations (A11-1 to A11-8), and 8 publication figures. 396/396 tests passing. Status: PASS.
 
 ## 22. Next Task
-PHASE 11: Error Analysis + Failure Taxonomy. Status: PLANNED.
+PHASE 12: Reproducibility Audit. Status: PLANNED.
 
 ## 23. Paper Status
-Drafting sections across Phases 0–10.5. Phase 10.5 recovery framework, 6-state taxonomy, visual restoration, retrieval retry, partial grounding, and empirical trade-offs documented in reports/phase10_5/PHASE10_5_REPORT.md. Status: IN_PROGRESS.
+Drafting sections across Phases 0–11. Phase 11 safety-constrained recovery framework, 7-layer verification stack, human-in-the-loop review packages, and empirical results documented in reports/phase11/PHASE11_REPORT.md. Status: IN_PROGRESS.
 
 ## 24. Reproducibility Status
 Full reproducibility suite implemented in `src/evaluation/reproducibility.py` (seed_everything, env capture, JSON run manifests, zero-leakage split validator). 302 automated unit and integration tests pass in `tests/` (100% pass rate). Prompt templates versioned with SHA-256 fingerprints. Run artifacts saved in `experiments/phase2/`, `experiments/phase2_5/`, `experiments/phase3/`, `experiments/phase4/artifacts/`, `experiments/phase5_1/`, `experiments/phase6/`, `experiments/phase7/`, and `experiments/phase8/` (calibration models, traces, benchmark summaries, ablations, bootstrap statistics). Status: CONFIRMED.

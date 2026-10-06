@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_0_doc_mp_047_q_doc_mp_047_d4_combined_shift_s456",
+  "document_id": "doc_mp_047",
+  "query_id": "q_doc_mp_047",
+  "baseline": "B11-0",
+  "domain": "D4_combined_shift",
+  "condition": "moderate",
+  "seed": 456,
+  "state": "ABSTAIN",
+  "action": "ABSTAIN_DEFENSIVE",
+  "confidence": 0.4865,
+  "uncertainty_norm": 0.5267,
+  "is_useful": false,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-0: Defensive abstention",
+  "sha256": "b9ca8d8f6c82203da285e88c76d16c9125cd11f2de909fe2c79076b2f31c7cb9"
+}

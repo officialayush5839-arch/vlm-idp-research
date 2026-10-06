@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_1_doc_mp_047_q_doc_mp_047_d4_combined_shift_s123",
+  "document_id": "doc_mp_047",
+  "query_id": "q_doc_mp_047",
+  "baseline": "B11-1",
+  "domain": "D4_combined_shift",
+  "condition": "moderate",
+  "seed": 123,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.63,
+  "uncertainty_norm": 0.38,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": true,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-1: Combined system: visual restoration succeeded",
+  "sha256": "7b5d37237ee68bb8d43450fcf0055ba746be8c8db9538e397c92eeafdceca488"
+}

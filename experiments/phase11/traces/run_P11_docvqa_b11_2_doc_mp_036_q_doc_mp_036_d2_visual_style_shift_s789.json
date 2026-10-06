@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_2_doc_mp_036_q_doc_mp_036_d2_visual_style_shift_s789",
+  "document_id": "doc_mp_036",
+  "query_id": "q_doc_mp_036",
+  "baseline": "B11-2",
+  "domain": "D2_visual_style_shift",
+  "condition": "severe",
+  "seed": 789,
+  "state": "ABSTAIN",
+  "action": "ABSTAIN_DEFENSIVE",
+  "confidence": 0.45,
+  "uncertainty_norm": 0.55,
+  "is_useful": false,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-2: Evidence threshold failed",
+  "sha256": "52eea21e1d7bc6a95540725194ac3273acf05aefc751d403aec17d781e8fb1c7"
+}

@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_3_doc_mp_043_q_doc_mp_043_d1_layout_shift_s789",
+  "document_id": "doc_mp_043",
+  "query_id": "q_doc_mp_043",
+  "baseline": "B11-3",
+  "domain": "D1_layout_shift",
+  "condition": "moderate",
+  "seed": 789,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.82,
+  "uncertainty_norm": 0.18,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": true,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-3: Confidence cutoff passed",
+  "sha256": "a848294994bb3d494980c91faa0be4103bf8bb2573c86c3c3b27f26fbc86c5ac"
+}

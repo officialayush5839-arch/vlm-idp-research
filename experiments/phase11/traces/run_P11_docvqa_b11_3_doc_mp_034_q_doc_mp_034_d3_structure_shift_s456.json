@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_3_doc_mp_034_q_doc_mp_034_d3_structure_shift_s456",
+  "document_id": "doc_mp_034",
+  "query_id": "q_doc_mp_034",
+  "baseline": "B11-3",
+  "domain": "D3_structure_shift",
+  "condition": "mild",
+  "seed": 456,
+  "state": "ABSTAIN",
+  "action": "ABSTAIN_DEFENSIVE",
+  "confidence": 0.76,
+  "uncertainty_norm": 0.24,
+  "is_useful": false,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-3: Confidence below cutoff",
+  "sha256": "57bb95a1607eb499c4f796bf5897ad86e9bbe9ecb997087be0ac31a27d7ee891"
+}

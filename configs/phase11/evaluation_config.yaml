@@ -1,0 +1,19 @@
+# configs/phase11/evaluation_config.yaml
+# Phase 11 Evaluation Protocol & Statistical Hypothesis Test Specification
+
+evaluation:
+  safety:
+    max_tolerated_urr: 0.0500
+    target_urr: 0.0350
+  coverage:
+    min_suc_gain_target: 0.0500
+  hypothesis_test:
+    name: "H11"
+    test_type: "paired_bootstrap"
+    bootstrap_samples: 10000
+    random_seed: 42
+    confidence_level: 0.95
+    reference_baseline: "B11-0"
+    proposed_baseline: "B11-6"
+    primary_criterion: "URR <= 0.0500"
+    secondary_criterion: "Delta_SUC > 0.0 with p < 0.05"

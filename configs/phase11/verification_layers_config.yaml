@@ -1,0 +1,30 @@
+# configs/phase11/verification_layers_config.yaml
+# Phase 11 7-Layer Verification Stack Specification
+
+verification_layers:
+  layer1_evidence_existence:
+    enabled: true
+    min_retrieval_margin: 0.25
+  layer2_spatial_grounding:
+    enabled: true
+    min_iou: 0.50
+    strict_iou: 0.75
+  layer3_semantic_support:
+    enabled: true
+    min_semantic_similarity: 0.65
+  layer4_numeric_consistency:
+    enabled: true
+    verify_digits: true
+    verify_units: true
+    verify_decimals: true
+    max_numeric_discrepancy: 0.18
+  layer5_structural_consistency:
+    enabled: true
+    verify_table_columns: true
+    min_alignment_score: 0.60
+  layer6_cross_modal_agreement:
+    enabled: true
+    min_agreement_score: 0.65
+  layer7_calibrated_confidence:
+    enabled: true
+    tau_safe: 0.82

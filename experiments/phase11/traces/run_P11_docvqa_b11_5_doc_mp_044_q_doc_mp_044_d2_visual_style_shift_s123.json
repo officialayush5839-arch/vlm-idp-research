@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_5_doc_mp_044_q_doc_mp_044_d2_visual_style_shift_s123",
+  "document_id": "doc_mp_044",
+  "query_id": "q_doc_mp_044",
+  "baseline": "B11-5",
+  "domain": "D2_visual_style_shift",
+  "condition": "severe",
+  "seed": 123,
+  "state": "HUMAN_REVIEW_REQUIRED",
+  "action": "ESCALATE_TO_HUMAN",
+  "confidence": 0.45,
+  "uncertainty_norm": 0.55,
+  "is_useful": false,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-5: Escalated to human review",
+  "sha256": "356b5c1011d093cb37bcc12fe6189619b10897118848ed04fb89c570838f4436"
+}

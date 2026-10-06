@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_4_doc_mp_048_q_doc_mp_048_d4_combined_shift_s456",
+  "document_id": "doc_mp_048",
+  "query_id": "q_doc_mp_048",
+  "baseline": "B11-4",
+  "domain": "D4_combined_shift",
+  "condition": "severe",
+  "seed": 456,
+  "state": "ABSTAIN",
+  "action": "ABSTAIN_DEFENSIVE",
+  "confidence": 0.48,
+  "uncertainty_norm": 0.52,
+  "is_useful": false,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-4: Numeric or evidence verification failed",
+  "sha256": "a9ba8b8c544fd9a87e786d3e217485028a12a7c21e805eca0f3afb22a3b863b3"
+}

@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_2_doc_mp_039_q_doc_mp_039_d1_layout_shift_s789",
+  "document_id": "doc_mp_039",
+  "query_id": "q_doc_mp_039",
+  "baseline": "B11-2",
+  "domain": "D1_layout_shift",
+  "condition": "moderate",
+  "seed": 789,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.82,
+  "uncertainty_norm": 0.18,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": true,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-2: Strict evidence criteria met",
+  "sha256": "56533437336b4d163d8b7005270b2f644172f837bddb43b2e859c7f89b69640f"
+}

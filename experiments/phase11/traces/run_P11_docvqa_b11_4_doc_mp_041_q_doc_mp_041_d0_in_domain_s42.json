@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_4_doc_mp_041_q_doc_mp_041_d0_in_domain_s42",
+  "document_id": "doc_mp_041",
+  "query_id": "q_doc_mp_041",
+  "baseline": "B11-4",
+  "domain": "D0_in_domain",
+  "condition": "clean",
+  "seed": 42,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.94,
+  "uncertainty_norm": 0.06,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": true,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-4: Confidence, evidence, and numeric checks passed",
+  "sha256": "f4b1f8c973a0e1c6ca22d8230f5a8bb696ae3ad51110343125d6e7c11b1b8b26"
+}

@@ -1,0 +1,24 @@
+# configs/phase11/human_escalation_config.yaml
+# Phase 11 Human-in-the-Loop Escalation Architecture
+
+human_escalation:
+  enabled: true
+  prioritization_policy: "safety_first"
+  inspection_box_margin: 15  # pixels / normalized margin
+  max_annotated_regions: 3
+  risk_levels:
+    - LOW
+    - MEDIUM
+    - HIGH
+    - CRITICAL
+  reasons:
+    - INSUFFICIENT_VISUAL_QUALITY
+    - SPATIAL_IOU_UNCERTAINTY
+    - NUMERIC_MISMATCH_SUSPECTED
+    - TABLE_ALIGNMENT_AMBIGUOUS
+    - CROSS_MODAL_DISCORDANCE
+    - HIGH_UNCERTAINTY_VECTOR_NORM
+  actions:
+    - VERIFY
+    - REJECT
+    - REQUEST_RESCAN

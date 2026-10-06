@@ -1,0 +1,27 @@
+# configs/phase11/safety_recovery_config.yaml
+# Phase 11 Master Safety-Constrained Recovery Configuration
+
+safety_recovery:
+  version: "1.0.0"
+  phase: "11"
+  safety_tolerance_urr: 0.0500
+  primary_operating_mode: "safety_constrained"
+  prefer_human_escalation_over_unsafe: true
+
+taxonomy:
+  states:
+    - S11_0_SAFE_RECOVERED
+    - S11_1_SAFE_PARTIAL
+    - S11_2_RECOVERY_WITH_RESTORATION
+    - S11_3_HUMAN_REVIEW_REQUIRED
+    - S11_4_ABSTAIN
+    - S11_5_UNSAFE_RECOVERY_REJECTED
+
+baselines:
+  - B11-0  # Phase 10 Reference Abstention
+  - B11-1  # Phase 10.5 B10.5-5 Combined Recovery
+  - B11-2  # Strict Evidence-Only Recovery
+  - B11-3  # Confidence-Gated Recovery
+  - B11-4  # Confidence + Evidence + Numeric Verification
+  - B11-5  # Confidence + Evidence + Human Escalation
+  - B11-6  # Proposed Safety-Constrained Recovery System

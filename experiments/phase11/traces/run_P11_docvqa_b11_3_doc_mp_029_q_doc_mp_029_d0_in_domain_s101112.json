@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_3_doc_mp_029_q_doc_mp_029_d0_in_domain_s101112",
+  "document_id": "doc_mp_029",
+  "query_id": "q_doc_mp_029",
+  "baseline": "B11-3",
+  "domain": "D0_in_domain",
+  "condition": "clean",
+  "seed": 101112,
+  "state": "SAFE_RECOVERED",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.94,
+  "uncertainty_norm": 0.06,
+  "is_useful": true,
+  "is_safe": true,
+  "is_correct": true,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-3: Confidence cutoff passed",
+  "sha256": "d452d1f264d26fa76672adb072fc5e15e65135a934b099fac1b5dbca75087c7d"
+}

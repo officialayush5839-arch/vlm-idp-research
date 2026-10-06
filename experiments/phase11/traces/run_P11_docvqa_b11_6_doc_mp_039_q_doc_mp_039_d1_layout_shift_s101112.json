@@ -1,0 +1,29 @@
+{
+  "trace_id": "run_P11_docvqa_b11_6_doc_mp_039_q_doc_mp_039_d1_layout_shift_s101112",
+  "document_id": "doc_mp_039",
+  "query_id": "q_doc_mp_039",
+  "baseline": "B11-6",
+  "domain": "D1_layout_shift",
+  "condition": "moderate",
+  "seed": 101112,
+  "state": "HUMAN_REVIEW_REQUIRED",
+  "action": "ESCALATE_TO_HUMAN",
+  "confidence": 0.82,
+  "uncertainty_norm": 0.18,
+  "is_useful": false,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [
+    "layer1_evidence_existence",
+    "layer2_spatial_grounding",
+    "layer3_semantic_support",
+    "layer5_structural_consistency",
+    "layer6_cross_modal_agreement",
+    "layer7_calibrated_confidence"
+  ],
+  "failed_layers": [
+    "layer4_numeric_consistency"
+  ],
+  "reason": "Verification failed on 1 layers; escalated to human review for zero-hallucination guarantee",
+  "sha256": "ea7e2e7067d4db3d879e135abee834920e829626bce811bb6e2414af17ed5b1b"
+}

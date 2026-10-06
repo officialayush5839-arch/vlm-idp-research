@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_5_doc_mp_030_q_doc_mp_030_d3_structure_shift_s101112",
+  "document_id": "doc_mp_030",
+  "query_id": "q_doc_mp_030",
+  "baseline": "B11-5",
+  "domain": "D3_structure_shift",
+  "condition": "mild",
+  "seed": 101112,
+  "state": "HUMAN_REVIEW_REQUIRED",
+  "action": "ESCALATE_TO_HUMAN",
+  "confidence": 0.76,
+  "uncertainty_norm": 0.24,
+  "is_useful": false,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-5: Escalated to human review",
+  "sha256": "fcf7d5d4f6d5f3a22649c606c0003395094d63942cf0dcd095c30cc382baacf2"
+}

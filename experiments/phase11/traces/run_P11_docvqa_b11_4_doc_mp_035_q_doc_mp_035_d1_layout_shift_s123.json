@@ -1,0 +1,20 @@
+{
+  "trace_id": "run_P11_docvqa_b11_4_doc_mp_035_q_doc_mp_035_d1_layout_shift_s123",
+  "document_id": "doc_mp_035",
+  "query_id": "q_doc_mp_035",
+  "baseline": "B11-4",
+  "domain": "D1_layout_shift",
+  "condition": "moderate",
+  "seed": 123,
+  "state": "ABSTAIN",
+  "action": "ABSTAIN_DEFENSIVE",
+  "confidence": 0.82,
+  "uncertainty_norm": 0.18,
+  "is_useful": false,
+  "is_safe": true,
+  "is_correct": false,
+  "passed_layers": [],
+  "failed_layers": [],
+  "reason": "B11-4: Numeric or evidence verification failed",
+  "sha256": "be4253d4c4a4de2a7b2f0b944068dd71f31204f0debcad01c50a96ee11cad538"
+}
