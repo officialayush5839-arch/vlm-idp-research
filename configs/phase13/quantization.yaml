@@ -1,0 +1,37 @@
+# Phase 13 Quantization Configuration
+quantization_levels:
+  Q0:
+    name: "FP16 / BF16 Reference"
+    precision: "float16"
+    bits: 16
+    weight_memory_gb: 15.2
+    target_device: "cuda:0"
+    load_in_8bit: false
+    load_in_4bit: false
+    feasibility_on_6gb_gpu: "INSUFFICIENT_VRAM (Requires >= 16GB VRAM)"
+  Q1:
+    name: "INT8 BitsAndBytes"
+    precision: "int8"
+    bits: 8
+    weight_memory_gb: 7.9
+    target_device: "cuda:0"
+    load_in_8bit: true
+    load_in_4bit: false
+    feasibility_on_6gb_gpu: "MARGINAL_VRAM (Requires >= 8GB VRAM with KV Cache)"
+  Q2:
+    name: "INT4 AWQ / BitsAndBytes NF4"
+    precision: "int4"
+    bits: 4
+    weight_memory_gb: 4.2
+    target_device: "cuda:0"
+    load_in_8bit: false
+    load_in_4bit: true
+    bnb_4bit_compute_dtype: "float16"
+    bnb_4bit_quant_type: "nf4"
+    feasibility_on_6gb_gpu: "FEASIBLE (Fits in 6GB VRAM with 1.8GB Headroom for KV Cache & Activations)"
+
+safety_degradation_limits:
+  max_allowed_accuracy_drop: 0.030 # Max 3 percentage points drop
+  max_allowed_iou_drop: 0.050      # Max 0.05 IoU degradation
+  max_allowed_urr_increase: 0.020  # Max 2 percentage points increase
+  safety_tolerance_urr_ceiling: 0.050 # Absolute 5% error ceiling

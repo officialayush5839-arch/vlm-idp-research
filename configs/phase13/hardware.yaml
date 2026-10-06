@@ -1,0 +1,14 @@
+# Phase 13 Hardware Environment Configuration
+hardware:
+  detected_os: "Windows-11-10.0.26200-SP0"
+  python_version: "3.14.6"
+  pytorch_version: "2.14.1+cpu"
+  cuda_available_in_python: false
+  physical_gpu_detected: true
+  gpu_vendor: "NVIDIA"
+  gpu_model: "NVIDIA GeForce RTX 3050 Laptop GPU"
+  total_physical_vram_mib: 6144
+  driver_version: "581.95"
+  driver_cuda_version: "13.0"
+  execution_mode: "CPU_VALIDATION_WITH_CUDA_GATED_TELEMETRY"
+  notes: "Python 3.14 runtime uses CPU-only PyTorch build. CUDA GPU runs gated as NOT_EXECUTED."

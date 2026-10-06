@@ -1,0 +1,21 @@
+# Phase 13 Model Architecture Configuration
+model:
+  name: "Qwen2.5-VL-7B-Instruct"
+  family: "qwen2.5_vl"
+  parameter_count: "7.61B"
+  architectural_type: "Vision-Language Autoregressive Transformer"
+  context_window_tokens: 32768
+  native_image_resolution: "Dynamic native resolution with 2D RoPE"
+  vision_encoder: "Qwen-VL Vision Transformer (ViT)"
+  license: "Apache-2.0"
+  huggingface_repo: "Qwen/Qwen2.5-VL-7B-Instruct"
+  revision: "main"
+  tokenizer_revision: "main"
+  processor_revision: "main"
+  system_prompt: "You are an expert document analysis system. Extract exact factual information and state bounding coordinates."
+  generation_defaults:
+    temperature: 0.0
+    top_p: 1.0
+    max_new_tokens: 128
+    repetition_penalty: 1.05
+    do_sample: false

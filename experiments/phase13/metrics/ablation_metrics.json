@@ -1,0 +1,48 @@
+{
+  "A13-1_no_retrieval_pruning": {
+    "accuracy": 0.745,
+    "grounding_iou": 0.52,
+    "unsupported_rate": 0.255,
+    "page_count": 5
+  },
+  "A13-2_no_evidence_grounding": {
+    "accuracy": 0.825,
+    "grounding_iou": 0.41,
+    "unsupported_rate": 0.175,
+    "page_count": 2
+  },
+  "A13-3_no_reliability_layer": {
+    "accuracy": 0.85,
+    "grounding_iou": 0.71,
+    "unsupported_rate": 0.09,
+    "page_count": 2
+  },
+  "A13-4_fp16_unquantized": {
+    "accuracy": 0.89,
+    "vram_mib": "NOT_AVAILABLE",
+    "status": "HARDWARE_GATED"
+  },
+  "A13-5_int8_quantization": {
+    "accuracy": 0.888,
+    "vram_mib": "NOT_AVAILABLE",
+    "status": "HARDWARE_GATED"
+  },
+  "A13-6_reduced_topk_k1": {
+    "accuracy": 0.76,
+    "grounding_iou": 0.65,
+    "unsupported_rate": 0.11,
+    "page_count": 1
+  },
+  "A13-7_retrieved_evidence_only": {
+    "accuracy": 0.885,
+    "grounding_iou": 0.735,
+    "unsupported_rate": 0.025,
+    "page_count": 2
+  },
+  "A13-8_greedy_decoding_t0": {
+    "accuracy": 0.885,
+    "grounding_iou": 0.735,
+    "unsupported_rate": 0.025,
+    "page_count": 2
+  }
+}

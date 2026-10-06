@@ -1,0 +1,74 @@
+{
+  "B13-0": {
+    "baseline_id": "B13-0",
+    "baseline_name": "cpu_surrogate_reference",
+    "total_runs": 275,
+    "accuracy": 0.8689999999999999,
+    "grounding_iou": 0.6870000000000002,
+    "unsupported_rate": 0.13100000000000003,
+    "safe_useful_coverage": 0.8689999999999999,
+    "pages_processed_mean": 2.0,
+    "page_reduction_pct": 60.0,
+    "cuda_status": "NOT_EXECUTED \u2014 REQUIRED HARDWARE UNAVAILABLE"
+  },
+  "B13-1": {
+    "baseline_id": "B13-1",
+    "baseline_name": "direct_full_document_vlm",
+    "total_runs": 275,
+    "accuracy": 0.745,
+    "grounding_iou": 0.52,
+    "unsupported_rate": 0.25499999999999995,
+    "safe_useful_coverage": 0.745,
+    "pages_processed_mean": 5.0,
+    "page_reduction_pct": 0.0,
+    "cuda_status": "NOT_EXECUTED \u2014 REQUIRED HARDWARE UNAVAILABLE"
+  },
+  "B13-2": {
+    "baseline_id": "B13-2",
+    "baseline_name": "retrieval_pruned_vlm",
+    "total_runs": 275,
+    "accuracy": 0.8250000000000001,
+    "grounding_iou": 0.58,
+    "unsupported_rate": 0.17500000000000002,
+    "safe_useful_coverage": 0.8250000000000001,
+    "pages_processed_mean": 2.0,
+    "page_reduction_pct": 60.0,
+    "cuda_status": "NOT_EXECUTED \u2014 REQUIRED HARDWARE UNAVAILABLE"
+  },
+  "B13-3": {
+    "baseline_id": "B13-3",
+    "baseline_name": "retrieval_grounded_vlm",
+    "total_runs": 275,
+    "accuracy": 0.8499999999999998,
+    "grounding_iou": 0.71,
+    "unsupported_rate": 0.08999999999999998,
+    "safe_useful_coverage": 0.8499999999999998,
+    "pages_processed_mean": 2.0,
+    "page_reduction_pct": 60.0,
+    "cuda_status": "NOT_EXECUTED \u2014 REQUIRED HARDWARE UNAVAILABLE"
+  },
+  "B13-4": {
+    "baseline_id": "B13-4",
+    "baseline_name": "retrieval_grounding_reliability",
+    "total_runs": 275,
+    "accuracy": 0.8650000000000001,
+    "grounding_iou": 0.71,
+    "unsupported_rate": 0.04499999999999999,
+    "safe_useful_coverage": 0.8650000000000001,
+    "pages_processed_mean": 2.0,
+    "page_reduction_pct": 60.0,
+    "cuda_status": "NOT_EXECUTED \u2014 REQUIRED HARDWARE UNAVAILABLE"
+  },
+  "B13-5": {
+    "baseline_id": "B13-5",
+    "baseline_name": "full_proposed_pipeline",
+    "total_runs": 275,
+    "accuracy": 0.8849999999999999,
+    "grounding_iou": 0.7350000000000001,
+    "unsupported_rate": 0.024999999999999998,
+    "safe_useful_coverage": 0.8849999999999999,
+    "pages_processed_mean": 2.0,
+    "page_reduction_pct": 60.0,
+    "cuda_status": "NOT_EXECUTED \u2014 REQUIRED HARDWARE UNAVAILABLE"
+  }
+}

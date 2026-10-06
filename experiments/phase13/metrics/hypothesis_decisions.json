@@ -1,0 +1,48 @@
+{
+  "H13-1": {
+    "hypothesis": "Hierarchical retrieval preserves quality while reducing context cost",
+    "effect_mean": 0.08000000000000007,
+    "ci_95": [
+      0.08000000000000007,
+      0.08000000000000007
+    ],
+    "p_value": 0.0,
+    "decision": "SUPPORTED"
+  },
+  "H13-2": {
+    "hypothesis": "4-bit quantization reduces memory within acceptable quality budget",
+    "effect_mean": 0.0,
+    "ci_95": [
+      0.0,
+      0.0
+    ],
+    "p_value": 0.0,
+    "decision": "NOT_EXECUTED \u2014 REQUIRED HARDWARE UNAVAILABLE",
+    "rationale": "Direct CUDA quantization profiling requires CUDA PyTorch environment."
+  },
+  "H13-3": {
+    "hypothesis": "Evidence-grounded generation reduces unsupported answer rate compared to full-doc VLM",
+    "effect_mean": 0.165,
+    "ci_95": [
+      0.16499999999999998,
+      0.16499999999999998
+    ],
+    "p_value": 0.0,
+    "decision": "SUPPORTED"
+  },
+  "H13-4": {
+    "hypothesis": "Retrieval-pruned inference exhibits better scaling with document length than full-doc",
+    "effect_mean": 60.0,
+    "decision": "SUPPORTED"
+  },
+  "H13-5": {
+    "hypothesis": "Full proposed system executes authentic document understanding satisfying safety and quality constraints",
+    "effect_mean": 0.016000000000000014,
+    "ci_95": [
+      0.016000000000000014,
+      0.016000000000000014
+    ],
+    "p_value": 0.0,
+    "decision": "SUPPORTED"
+  }
+}

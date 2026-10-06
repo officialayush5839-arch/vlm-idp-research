@@ -1,0 +1,9 @@
+Component,Specification,Status
+Host OS,Windows 11 64-bit,CONFIRMED
+Python,3.14.6,CONFIRMED
+PyTorch,2.14.1+cpu,CONFIRMED_CPU_ONLY
+Physical GPU,NVIDIA GeForce RTX 3050 Laptop GPU,DETECTED_WDDM
+VRAM Total,6144 MiB,DETECTED
+Driver,581.95,DETECTED
+CUDA Driver,13.0,DETECTED
+PyTorch CUDA,Unavailable,NOT_COMPILED_FOR_PY314

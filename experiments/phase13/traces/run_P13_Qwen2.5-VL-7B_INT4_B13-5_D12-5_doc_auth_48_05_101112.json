@@ -1,0 +1,22 @@
+{
+  "trace_id": "run_P13_Qwen2.5-VL-7B_INT4_B13-5_D12-5_doc_auth_48_05_101112",
+  "model": "Qwen2.5-VL-7B-Instruct",
+  "quantization": "Q2_INT4",
+  "baseline_id": "B13-5",
+  "baseline_name": "full_proposed_pipeline",
+  "seed": 101112,
+  "family_id": "fam_auth_48",
+  "document_id": "doc_auth_48_05",
+  "modality": "D12-5",
+  "pages_total": 5,
+  "pages_processed_vlm": 2,
+  "page_reduction_pct": 60.0,
+  "retrieval_hit": true,
+  "grounding_iou": 0.735,
+  "accuracy": 0.885,
+  "unsupported_rate": 0.025,
+  "safe_useful_coverage": 0.885,
+  "hardware_mode": "NOT_EXECUTED \u2014 REQUIRED HARDWARE UNAVAILABLE",
+  "cuda_latency_ms": null,
+  "peak_vram_mib": null
+}

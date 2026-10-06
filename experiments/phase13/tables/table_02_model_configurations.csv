@@ -1,0 +1,4 @@
+Model,Params,Context Window,Precision,Quantization Backend
+Qwen2.5-VL-7B-Instruct,7.61B,32768 tokens,FP16 (Q0),Native PyTorch
+Qwen2.5-VL-7B-Instruct,7.61B,32768 tokens,INT8 (Q1),BitsAndBytes
+Qwen2.5-VL-7B-Instruct,7.61B,32768 tokens,INT4 (Q2),AWQ / BitsAndBytes NF4

@@ -1,0 +1,7 @@
+Baseline,Unsupported Rate,Safe Useful Coverage,Safety Budget Compliance
+B13-0,0.131,0.869,FAIL (> 0.05)
+B13-1,0.255,0.745,FAIL (> 0.05)
+B13-2,0.175,0.825,FAIL (> 0.05)
+B13-3,0.090,0.850,FAIL (> 0.05)
+B13-4,0.045,0.865,PASS (<= 0.05)
+B13-5,0.025,0.885,PASS (<= 0.05)
