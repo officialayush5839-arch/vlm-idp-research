@@ -1,0 +1,13 @@
+{
+  "document_id": "doc_mp_040",
+  "query_id": "q_doc_mp_040",
+  "seed": 456,
+  "baseline": "B10-1",
+  "domain": "D2_visual_style_shift",
+  "condition": "severe",
+  "confidence": 0.45,
+  "action": "ABSTAIN",
+  "is_correct": false,
+  "trace_id": "run_P10_d2_visual_style_shift_B10_1_doc_mp_040_q_doc_mp_040_severe_s456",
+  "sha256": "178ea845ad18d74fa50a0cd4eb1f44ad6b79c308d64324d854b32f9a9362dbc0"
+}

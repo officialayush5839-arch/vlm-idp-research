@@ -1,0 +1,58 @@
+{
+  "A10-1_no_multimodal_retrieval": {
+    "description": "Omit multimodal retrieval evidence",
+    "sample_count": 25,
+    "coverage": 0.6,
+    "selective_accuracy": 1.0,
+    "unsupported_rate": 0.0
+  },
+  "A10-2_no_evidence_grounding": {
+    "description": "Omit evidence grounding verification",
+    "sample_count": 25,
+    "coverage": 0.6,
+    "selective_accuracy": 1.0,
+    "unsupported_rate": 0.0
+  },
+  "A10-3_no_uncertainty_signals": {
+    "description": "Omit calibrated uncertainty signals",
+    "sample_count": 25,
+    "coverage": 0.6,
+    "selective_accuracy": 1.0,
+    "unsupported_rate": 0.0
+  },
+  "A10-4_no_abstention": {
+    "description": "Unconditional prediction (zero abstention)",
+    "sample_count": 25,
+    "coverage": 1.0,
+    "selective_accuracy": 0.6,
+    "unsupported_rate": 0.4
+  },
+  "A10-5_no_visual_quality": {
+    "description": "Omit visual quality degradation scoring",
+    "sample_count": 25,
+    "coverage": 0.6,
+    "selective_accuracy": 1.0,
+    "unsupported_rate": 0.0
+  },
+  "A10-6_single_domain_only": {
+    "description": "In-domain D0 evaluation only",
+    "sample_count": 5,
+    "coverage": 1.0,
+    "selective_accuracy": 1.0,
+    "unsupported_rate": 0.0
+  },
+  "A10-7_cross_domain_only": {
+    "description": "Shifted domains D1-D4 only",
+    "sample_count": 20,
+    "coverage": 0.5,
+    "selective_accuracy": 1.0,
+    "unsupported_rate": 0.0
+  },
+  "A10-8_full_proposed": {
+    "description": "Full proposed system under all domains",
+    "sample_count": 25,
+    "coverage": 0.6,
+    "selective_accuracy": 1.0,
+    "unsupported_rate": 0.0
+  }
+}

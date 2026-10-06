@@ -1,0 +1,13 @@
+{
+  "document_id": "doc_mp_049",
+  "query_id": "q_doc_mp_049",
+  "seed": 101112,
+  "baseline": "B10-2",
+  "domain": "D4_combined_shift",
+  "condition": "clean",
+  "confidence": 0.48,
+  "action": "ABSTAIN",
+  "is_correct": false,
+  "trace_id": "run_P10_d4_combined_shift_B10_2_doc_mp_049_q_doc_mp_049_clean_s101112",
+  "sha256": "74da84601d45385085f9d1bf8a3103dc4195ac8f4182e7c321db2be68910e264"
+}

@@ -1,0 +1,21 @@
+{
+  "hypothesis": "H10",
+  "description": "The proposed multimodal document-intelligence pipeline retains statistically superior reliability over unimodal/non-adaptive baselines under controlled distribution shift.",
+  "primary_comparison": "B10-4 (Proposed) vs B10-0 (Fixed Unconditional)",
+  "domains_evaluated": [
+    "D1_layout_shift",
+    "D2_visual_style_shift",
+    "D3_structure_shift",
+    "D4_combined_shift"
+  ],
+  "mean_proposed_accuracy": 0.38,
+  "mean_baseline_accuracy": 0.61,
+  "observed_mean_diff": -0.23,
+  "ci_95": [
+    -0.46,
+    0.0
+  ],
+  "p_value": 1.0,
+  "effect_size_d": -0.8517,
+  "conclusion": "NOT_SUPPORTED"
+}

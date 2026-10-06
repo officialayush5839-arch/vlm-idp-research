@@ -1,0 +1,14 @@
+# configs/phase10/statistical_config.yaml
+# Phase 10 Statistical Hypothesis Testing Configuration
+
+statistical_testing:
+  hypothesis: "H10"
+  description: "The proposed multimodal document-intelligence pipeline retains statistically superior reliability over unimodal/non-adaptive baselines under controlled distribution shift."
+  primary_comparison:
+    system_a: "B10-4"  # Proposed
+    system_b: "B10-0"  # Fixed baseline
+  test_type: "paired_bootstrap"
+  replications: 10000
+  random_seed: 42
+  significance_level: 0.05
+  multiplicity_correction: "holm"

@@ -1,0 +1,18 @@
+# configs/phase10/evaluation_config.yaml
+# Phase 10 Evaluation Protocol and Robustness Metrics
+
+evaluation:
+  split: "test"
+  seeds: [42, 123, 456, 789, 101112]
+  primary_metric: "selective_accuracy"
+  secondary_metrics:
+    - "coverage"
+    - "selective_unsupported_rate"
+    - "aurc"
+    - "abstention_f1"
+    - "robustness_gap"
+    - "relative_degradation"
+    - "cross_domain_variance"
+
+robustness_gap_reference: "D0_in_domain"
+epsilon: 1e-6

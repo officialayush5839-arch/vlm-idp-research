@@ -1,0 +1,237 @@
+{
+  "B10-0": {
+    "D0_in_domain": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.92,
+      "unsupported_rate": 0.08,
+      "aurc": 0.0447,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.0,
+      "relative_degradation": 0.0
+    },
+    "D1_layout_shift": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.84,
+      "unsupported_rate": 0.16,
+      "aurc": 0.1613,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.08,
+      "relative_degradation": 0.087
+    },
+    "D2_visual_style_shift": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.4,
+      "unsupported_rate": 0.6,
+      "aurc": 0.403,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.52,
+      "relative_degradation": 0.5652
+    },
+    "D3_structure_shift": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.68,
+      "unsupported_rate": 0.32,
+      "aurc": 0.2271,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.24,
+      "relative_degradation": 0.2609
+    },
+    "D4_combined_shift": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.52,
+      "unsupported_rate": 0.48,
+      "aurc": 0.6594,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.4,
+      "relative_degradation": 0.4348
+    }
+  },
+  "B10-1": {
+    "D0_in_domain": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.92,
+      "unsupported_rate": 0.08,
+      "aurc": 0.0447,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.0,
+      "relative_degradation": 0.0
+    },
+    "D1_layout_shift": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.84,
+      "unsupported_rate": 0.16,
+      "aurc": 0.1613,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.08,
+      "relative_degradation": 0.087
+    },
+    "D2_visual_style_shift": {
+      "coverage": 0.0,
+      "selective_accuracy": 0.0,
+      "unsupported_rate": 0.0,
+      "aurc": 0.403,
+      "abstention_f1": 0.75,
+      "robustness_gap": 0.92,
+      "relative_degradation": 1.0
+    },
+    "D3_structure_shift": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.68,
+      "unsupported_rate": 0.32,
+      "aurc": 0.2271,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.24,
+      "relative_degradation": 0.2609
+    },
+    "D4_combined_shift": {
+      "coverage": 0.0,
+      "selective_accuracy": 0.0,
+      "unsupported_rate": 0.0,
+      "aurc": 0.6594,
+      "abstention_f1": 0.6486,
+      "robustness_gap": 0.92,
+      "relative_degradation": 1.0
+    }
+  },
+  "B10-2": {
+    "D0_in_domain": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.92,
+      "unsupported_rate": 0.08,
+      "aurc": 0.0447,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.0,
+      "relative_degradation": 0.0
+    },
+    "D1_layout_shift": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.84,
+      "unsupported_rate": 0.16,
+      "aurc": 0.1613,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.08,
+      "relative_degradation": 0.087
+    },
+    "D2_visual_style_shift": {
+      "coverage": 0.0,
+      "selective_accuracy": 0.0,
+      "unsupported_rate": 0.0,
+      "aurc": 0.403,
+      "abstention_f1": 0.75,
+      "robustness_gap": 0.92,
+      "relative_degradation": 1.0
+    },
+    "D3_structure_shift": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.68,
+      "unsupported_rate": 0.32,
+      "aurc": 0.2271,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.24,
+      "relative_degradation": 0.2609
+    },
+    "D4_combined_shift": {
+      "coverage": 0.0,
+      "selective_accuracy": 0.0,
+      "unsupported_rate": 0.0,
+      "aurc": 0.6594,
+      "abstention_f1": 0.6486,
+      "robustness_gap": 0.92,
+      "relative_degradation": 1.0
+    }
+  },
+  "B10-3": {
+    "D0_in_domain": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.92,
+      "unsupported_rate": 0.08,
+      "aurc": 0.0447,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.0,
+      "relative_degradation": 0.0
+    },
+    "D1_layout_shift": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.84,
+      "unsupported_rate": 0.16,
+      "aurc": 0.1613,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.08,
+      "relative_degradation": 0.087
+    },
+    "D2_visual_style_shift": {
+      "coverage": 0.0,
+      "selective_accuracy": 0.0,
+      "unsupported_rate": 0.0,
+      "aurc": 0.403,
+      "abstention_f1": 0.75,
+      "robustness_gap": 0.92,
+      "relative_degradation": 1.0
+    },
+    "D3_structure_shift": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.68,
+      "unsupported_rate": 0.32,
+      "aurc": 0.2271,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.24,
+      "relative_degradation": 0.2609
+    },
+    "D4_combined_shift": {
+      "coverage": 0.0,
+      "selective_accuracy": 0.0,
+      "unsupported_rate": 0.0,
+      "aurc": 0.6594,
+      "abstention_f1": 0.6486,
+      "robustness_gap": 0.92,
+      "relative_degradation": 1.0
+    }
+  },
+  "B10-4": {
+    "D0_in_domain": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.92,
+      "unsupported_rate": 0.08,
+      "aurc": 0.0447,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.0,
+      "relative_degradation": 0.0
+    },
+    "D1_layout_shift": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.84,
+      "unsupported_rate": 0.16,
+      "aurc": 0.1613,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.08,
+      "relative_degradation": 0.087
+    },
+    "D2_visual_style_shift": {
+      "coverage": 0.0,
+      "selective_accuracy": 0.0,
+      "unsupported_rate": 0.0,
+      "aurc": 0.403,
+      "abstention_f1": 0.75,
+      "robustness_gap": 0.92,
+      "relative_degradation": 1.0
+    },
+    "D3_structure_shift": {
+      "coverage": 1.0,
+      "selective_accuracy": 0.68,
+      "unsupported_rate": 0.32,
+      "aurc": 0.2271,
+      "abstention_f1": 0.0,
+      "robustness_gap": 0.24,
+      "relative_degradation": 0.2609
+    },
+    "D4_combined_shift": {
+      "coverage": 0.0,
+      "selective_accuracy": 0.0,
+      "unsupported_rate": 0.0,
+      "aurc": 0.6594,
+      "abstention_f1": 0.6486,
+      "robustness_gap": 0.92,
+      "relative_degradation": 1.0
+    }
+  }
+}

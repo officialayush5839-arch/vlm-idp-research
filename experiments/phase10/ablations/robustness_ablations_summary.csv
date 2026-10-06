@@ -1,0 +1,9 @@
+Ablation_ID,Description,Samples,Coverage,Selective_Accuracy,Unsupported_Rate
+A10-1_no_multimodal_retrieval,Omit multimodal retrieval evidence,25,0.6,1.0,0.0
+A10-2_no_evidence_grounding,Omit evidence grounding verification,25,0.6,1.0,0.0
+A10-3_no_uncertainty_signals,Omit calibrated uncertainty signals,25,0.6,1.0,0.0
+A10-4_no_abstention,Unconditional prediction (zero abstention),25,1.0,0.6,0.4
+A10-5_no_visual_quality,Omit visual quality degradation scoring,25,0.6,1.0,0.0
+A10-6_single_domain_only,In-domain D0 evaluation only,5,1.0,1.0,0.0
+A10-7_cross_domain_only,Shifted domains D1-D4 only,20,0.5,1.0,0.0
+A10-8_full_proposed,Full proposed system under all domains,25,0.6,1.0,0.0

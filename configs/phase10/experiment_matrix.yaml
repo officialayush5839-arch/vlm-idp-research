@@ -1,0 +1,31 @@
+# configs/phase10/experiment_matrix.yaml
+# Phase 10 Experiment Matrix Definition
+
+domains:
+  - "D0_in_domain"
+  - "D1_layout_shift"
+  - "D2_visual_style_shift"
+  - "D3_structure_shift"
+  - "D4_combined_shift"
+
+baselines:
+  - "B10-0"
+  - "B10-1"
+  - "B10-2"
+  - "B10-3"
+  - "B10-4"
+
+seeds:
+  - 42
+  - 123
+  - 456
+  - 789
+  - 101112
+
+documents_per_domain: 5
+queries_per_domain: 5
+total_documents: 25
+total_queries: 25
+
+expected_evaluations_per_baseline: 125
+expected_total_traces: 625  # 5 baselines x 125 evaluations

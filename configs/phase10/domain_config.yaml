@@ -1,0 +1,73 @@
+# configs/phase10/domain_config.yaml
+# Phase 10 Domain Registry and Distribution Definition
+
+domains:
+  - domain_id: "D0_in_domain"
+    name: "In-Domain Control"
+    description: "Standard multipage synthetic evaluation documents matching training/validation distribution"
+    characteristics:
+      layout: "standard_multipage"
+      table_density: "moderate"
+      visual_style: "clean_to_degraded_scanned"
+    document_ids:
+      - "doc_mp_026"
+      - "doc_mp_029"
+      - "doc_mp_033"
+      - "doc_mp_037"
+      - "doc_mp_041"
+
+  - domain_id: "D1_layout_shift"
+    name: "Dense Tabular / Multi-Column Shift"
+    description: "Documents with dense numerical tables, multi-column layouts, and high region density"
+    characteristics:
+      layout: "dense_tabular_multicol"
+      table_density: "high"
+      visual_style: "standard"
+    document_ids:
+      - "doc_mp_027"
+      - "doc_mp_031"
+      - "doc_mp_035"
+      - "doc_mp_039"
+      - "doc_mp_043"
+
+  - domain_id: "D2_visual_style_shift"
+    name: "Severe Visual Degradation Shift"
+    description: "Documents subjected to severe visual degradation (heavy blur, noise, scan artifacts)"
+    characteristics:
+      layout: "standard"
+      table_density: "low"
+      visual_style: "heavy_artifacts"
+    document_ids:
+      - "doc_mp_028"
+      - "doc_mp_032"
+      - "doc_mp_036"
+      - "doc_mp_040"
+      - "doc_mp_044"
+
+  - domain_id: "D3_structure_shift"
+    name: "Complex Form / Irregular Geometry Shift"
+    description: "Documents with irregular key-value hierarchies and variable whitespace distribution"
+    characteristics:
+      layout: "irregular_form"
+      table_density: "sparse"
+      visual_style: "moderate_degradation"
+    document_ids:
+      - "doc_mp_030"
+      - "doc_mp_034"
+      - "doc_mp_038"
+      - "doc_mp_042"
+      - "doc_mp_046"
+
+  - domain_id: "D4_combined_shift"
+    name: "Combined Multimodal Stress Shift"
+    description: "Long documents combining structural complexity, tabular density, and visual degradation"
+    characteristics:
+      layout: "hybrid_complex"
+      table_density: "variable"
+      visual_style: "mixed_stress"
+    document_ids:
+      - "doc_mp_045"
+      - "doc_mp_047"
+      - "doc_mp_048"
+      - "doc_mp_049"
+      - "doc_mp_050"

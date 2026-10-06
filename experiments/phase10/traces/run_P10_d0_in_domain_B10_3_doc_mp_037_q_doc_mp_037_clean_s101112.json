@@ -1,0 +1,13 @@
+{
+  "document_id": "doc_mp_037",
+  "query_id": "q_doc_mp_037",
+  "seed": 101112,
+  "baseline": "B10-3",
+  "domain": "D0_in_domain",
+  "condition": "clean",
+  "confidence": 0.94,
+  "action": "ACCEPT",
+  "is_correct": true,
+  "trace_id": "run_P10_d0_in_domain_B10_3_doc_mp_037_q_doc_mp_037_clean_s101112",
+  "sha256": "0122cab06c0b85863d9fc160061b08683d9f8654f8ea9669d4887ed5db834d0b"
+}

@@ -1,0 +1,21 @@
+# configs/phase10/distribution_shift_config.yaml
+# Phase 10 Distribution Shift Analysis Configuration
+
+shift_analysis:
+  reference_split: "val"  # Reference distribution is strictly validation partition
+  observable_features:
+    - "page_count"
+    - "token_count"
+    - "text_density"
+    - "region_density"
+    - "table_count"
+    - "whitespace_ratio"
+    - "visual_quality"
+  metrics:
+    - "standardized_mean_difference"
+    - "wasserstein_distance"
+    - "population_stability_index"
+  psi_thresholds:
+    stable: 0.10
+    moderate_shift: 0.25
+    significant_shift: 0.25

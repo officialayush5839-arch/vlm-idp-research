@@ -1,0 +1,28 @@
+# configs/phase10/baseline_config.yaml
+# Phase 10 Baseline Configurations for Robustness Evaluation
+
+baselines:
+  - id: "B10-0"
+    name: "Fixed VLM Baseline (Unconditional)"
+    description: "Fixed VLM pipeline without quality routing, retrieval adaptation, or abstention"
+    policy: "unconditional"
+
+  - id: "B10-1"
+    name: "Multimodal Retrieval Baseline"
+    description: "Multimodal retrieval with fixed VLM answering, without adaptive abstention"
+    policy: "retrieval_only"
+
+  - id: "B10-2"
+    name: "Evidence Grounding Baseline"
+    description: "Evidence grounding with rule-based verification filter"
+    policy: "grounding_filter"
+
+  - id: "B10-3"
+    name: "Calibrated Uncertainty Gate"
+    description: "Selective prediction gated solely by calibrated confidence"
+    policy: "confidence_gate"
+
+  - id: "B10-4"
+    name: "Proposed Integrated System"
+    description: "Full Phase 9-compatible pipeline: quality assessment + multimodal retrieval + evidence grounding + 8D calibrated reliability"
+    policy: "proposed_integrated"

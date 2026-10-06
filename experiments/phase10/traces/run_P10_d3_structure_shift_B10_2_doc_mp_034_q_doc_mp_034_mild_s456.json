@@ -1,0 +1,13 @@
+{
+  "document_id": "doc_mp_034",
+  "query_id": "q_doc_mp_034",
+  "seed": 456,
+  "baseline": "B10-2",
+  "domain": "D3_structure_shift",
+  "condition": "mild",
+  "confidence": 0.76,
+  "action": "ACCEPT",
+  "is_correct": false,
+  "trace_id": "run_P10_d3_structure_shift_B10_2_doc_mp_034_q_doc_mp_034_mild_s456",
+  "sha256": "08d7858eea8b58780fe427f6188bc44e1ead6f1ba3ab87b986b3b098f1a466be"
+}
