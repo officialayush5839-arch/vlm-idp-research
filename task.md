@@ -1,7 +1,7 @@
 # VLM-IDP Active Execution Queue
 
-CURRENT PHASE: PHASE 8 — Uncertainty Calibration + Abstention (COMPLETED)
-CURRENT OBJECTIVE: Phase 8 complete. Post-hoc uncertainty calibration (temperature scaling, isotonic regression, and evidence-aware multi-signal fusion) and selective abstention mechanism implemented, benchmarked (750 runs across 5 seeds), and scientifically validated on frozen test partition. Hypothesis H6 is SUPPORTED (p < 0.0001, Mean Diff = 0.1600, 95% CI: [0.0960, 0.2320], Brier score reduced by 29.4%, Excess AURC reduced by 32.3%, correctness AUROC = 0.8333). All 35 Phase 8 tests and full repository suite passing (302 tests passing, 100%). Ready for local commit.
+CURRENT PHASE: PHASE 9 — Uncertainty-Aware Reliability, Abstention & Failure-Safety Evaluation (SCIENTIFICALLY AUDITED)
+CURRENT OBJECTIVE: Phase 9 complete and independently audited. 8-dimensional observable uncertainty vector, calibrated composite confidence, 4-tier decision policy (ACCEPT, ACCEPT_WITH_WARNING, ESCALATE, ABSTAIN), and 8-class structured failure taxonomy implemented and benchmarked (750 runs across 5 seeds). Hypothesis H9 evaluated via paired bootstrap (B=10,000, seed=42) and confirmed NOT_SUPPORTED at alpha=0.05 on linear AURC (p=0.50080), while selective accuracy improved from 72.8% to 82.11% (34.2% relative error reduction). Independent scientific audit PASSED with zero data leakage, complete trace provenance, and 100% test reproducibility (342/342 tests passing). Phase 10 NOT STARTED.
 TASK STATUS: COMPLETE
 
 ---
