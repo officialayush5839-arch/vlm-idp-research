@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d4_combined_shift_b10_5_1_doc_mp_047_q_doc_mp_047_preprocessing_restoration_moderate_s789",
+  "document_id": "doc_mp_047",
+  "query_id": "q_doc_mp_047",
+  "baseline": "B10.5-1",
+  "domain": "D4_combined_shift",
+  "condition": "moderate",
+  "strategy": "preprocessing_restoration",
+  "seed": 789,
+  "state": "RECOVERABLE_WITH_RESTORATION",
+  "action": "RESTORE_AND_RETRY",
+  "confidence": 0.63,
+  "uncertainty_norm": 0.38,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "Restoration succeeded and satisfied safety gate",
+  "sha256": "7645eb23f6a72f488e5b41e056d5da41cb688b9654cfdaf491804372f2d8e007"
+}

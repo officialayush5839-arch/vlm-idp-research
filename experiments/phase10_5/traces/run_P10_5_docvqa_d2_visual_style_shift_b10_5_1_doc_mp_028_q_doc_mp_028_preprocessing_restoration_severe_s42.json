@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d2_visual_style_shift_b10_5_1_doc_mp_028_q_doc_mp_028_preprocessing_restoration_severe_s42",
+  "document_id": "doc_mp_028",
+  "query_id": "q_doc_mp_028",
+  "baseline": "B10.5-1",
+  "domain": "D2_visual_style_shift",
+  "condition": "severe",
+  "strategy": "preprocessing_restoration",
+  "seed": 42,
+  "state": "RECOVERABLE_WITH_RESTORATION",
+  "action": "RESTORE_AND_RETRY",
+  "confidence": 0.6,
+  "uncertainty_norm": 0.43,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "Restoration succeeded and satisfied safety gate",
+  "sha256": "b53a2a2a52cfce9f6d45d7701d0ff3b6cfb86e520877c7668ec6ad18a8d46653"
+}

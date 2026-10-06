@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d4_combined_shift_b10_5_2_doc_mp_045_q_doc_mp_045_retrieval_retry_clean_s123",
+  "document_id": "doc_mp_045",
+  "query_id": "q_doc_mp_045",
+  "baseline": "B10.5-2",
+  "domain": "D4_combined_shift",
+  "condition": "clean",
+  "strategy": "retrieval_retry",
+  "seed": 123,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.58,
+  "uncertainty_norm": 0.32,
+  "is_useful": true,
+  "is_correct": false,
+  "reason": "Retrieval retry succeeded and satisfied safety gate",
+  "sha256": "b05714c46675f085016b19c7d2e781e5d0c615c13ad2aab4b7ee6adeef40592f"
+}

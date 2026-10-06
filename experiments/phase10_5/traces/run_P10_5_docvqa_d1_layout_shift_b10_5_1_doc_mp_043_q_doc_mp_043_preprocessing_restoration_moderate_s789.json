@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d1_layout_shift_b10_5_1_doc_mp_043_q_doc_mp_043_preprocessing_restoration_moderate_s789",
+  "document_id": "doc_mp_043",
+  "query_id": "q_doc_mp_043",
+  "baseline": "B10.5-1",
+  "domain": "D1_layout_shift",
+  "condition": "moderate",
+  "strategy": "preprocessing_restoration",
+  "seed": 789,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.7785,
+  "uncertainty_norm": 0.2357,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "Moderate confidence with minor uncertainty detected",
+  "sha256": "62df81d5df308a37d83c4b7493abf2b7fe8bb81a6a20d3d4ad0abb7bd390b405"
+}

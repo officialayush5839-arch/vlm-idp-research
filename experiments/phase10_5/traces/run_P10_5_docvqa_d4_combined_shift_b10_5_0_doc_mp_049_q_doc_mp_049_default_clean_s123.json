@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d4_combined_shift_b10_5_0_doc_mp_049_q_doc_mp_049_default_clean_s123",
+  "document_id": "doc_mp_049",
+  "query_id": "q_doc_mp_049",
+  "baseline": "B10.5-0",
+  "domain": "D4_combined_shift",
+  "condition": "clean",
+  "strategy": "default",
+  "seed": 123,
+  "state": "UNSAFE_TO_ANSWER",
+  "action": "ABSTAIN_UNSAFE",
+  "confidence": 0.4865,
+  "uncertainty_norm": 0.5267,
+  "is_useful": false,
+  "is_correct": false,
+  "reason": "B10.5-0 Reference: Abstaining without recovery",
+  "sha256": "a8a3f064469a2dca35d6fde3d13bf96e5960097fea0564d6c9523fec9f7d90ac"
+}

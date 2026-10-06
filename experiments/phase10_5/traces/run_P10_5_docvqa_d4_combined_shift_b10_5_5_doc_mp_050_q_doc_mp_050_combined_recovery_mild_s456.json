@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d4_combined_shift_b10_5_5_doc_mp_050_q_doc_mp_050_combined_recovery_mild_s456",
+  "document_id": "doc_mp_050",
+  "query_id": "q_doc_mp_050",
+  "baseline": "B10.5-5",
+  "domain": "D4_combined_shift",
+  "condition": "mild",
+  "strategy": "combined_recovery",
+  "seed": 456,
+  "state": "RECOVERABLE_WITH_RESTORATION",
+  "action": "RESTORE_AND_RETRY",
+  "confidence": 0.63,
+  "uncertainty_norm": 0.38,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "Combined system: visual restoration succeeded",
+  "sha256": "1176c8e0c27b3e028cd43d85b4347dcc0f4592119810add860cb332181d16c3d"
+}

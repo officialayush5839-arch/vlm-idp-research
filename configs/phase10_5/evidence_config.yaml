@@ -1,0 +1,15 @@
+# configs/phase10_5/evidence_config.yaml
+# Strategy C & D: Partial Evidence Extraction and Grounding Verification
+
+evidence_recovery:
+  partial_extraction:
+    enabled: true
+    min_subspan_confidence: 0.80
+    max_unverified_span_ratio: 0.20
+    redaction_placeholder: "[REDACTED_UNVERIFIED]"
+  grounding_verification:
+    require_spatial_iou: true
+    min_spatial_iou: 0.40
+    min_semantic_similarity: 0.70
+    min_token_level_citation_score: 0.75
+  strict_zero_leakage: true

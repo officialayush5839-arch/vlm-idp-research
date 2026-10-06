@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d3_structure_shift_b10_5_5_doc_mp_046_q_doc_mp_046_combined_recovery_mild_s101112",
+  "document_id": "doc_mp_046",
+  "query_id": "q_doc_mp_046",
+  "baseline": "B10.5-5",
+  "domain": "D3_structure_shift",
+  "condition": "mild",
+  "strategy": "combined_recovery",
+  "seed": 101112,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.727,
+  "uncertainty_norm": 0.2822,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "Moderate confidence with minor uncertainty detected",
+  "sha256": "88bc98a47ec99c7fd1c6e3f70ed5d2c7ae89ef8856543b6a81e9196505b3759a"
+}

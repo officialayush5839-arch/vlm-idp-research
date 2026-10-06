@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d1_layout_shift_b10_5_2_doc_mp_039_q_doc_mp_039_retrieval_retry_moderate_s42",
+  "document_id": "doc_mp_039",
+  "query_id": "q_doc_mp_039",
+  "baseline": "B10.5-2",
+  "domain": "D1_layout_shift",
+  "condition": "moderate",
+  "strategy": "retrieval_retry",
+  "seed": 42,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.7785,
+  "uncertainty_norm": 0.2357,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "Moderate confidence with minor uncertainty detected",
+  "sha256": "09ceca10d8fdc8535afddcf3a35d46814723c471c9d74878b4cff02e424affad"
+}

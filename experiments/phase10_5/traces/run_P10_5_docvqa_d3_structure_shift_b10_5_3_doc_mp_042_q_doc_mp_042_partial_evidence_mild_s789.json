@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d3_structure_shift_b10_5_3_doc_mp_042_q_doc_mp_042_partial_evidence_mild_s789",
+  "document_id": "doc_mp_042",
+  "query_id": "q_doc_mp_042",
+  "baseline": "B10.5-3",
+  "domain": "D3_structure_shift",
+  "condition": "mild",
+  "strategy": "partial_evidence",
+  "seed": 789,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.727,
+  "uncertainty_norm": 0.2822,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "Moderate confidence with minor uncertainty detected",
+  "sha256": "455aea9ddffbfae5903e3c8899923b608c052b6c37b0b00bd65e05d51f95ac0b"
+}

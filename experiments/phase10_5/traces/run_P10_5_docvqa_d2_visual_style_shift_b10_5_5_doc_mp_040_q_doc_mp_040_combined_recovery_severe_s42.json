@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d2_visual_style_shift_b10_5_5_doc_mp_040_q_doc_mp_040_combined_recovery_severe_s42",
+  "document_id": "doc_mp_040",
+  "query_id": "q_doc_mp_040",
+  "baseline": "B10.5-5",
+  "domain": "D2_visual_style_shift",
+  "condition": "severe",
+  "strategy": "combined_recovery",
+  "seed": 42,
+  "state": "RECOVERABLE_WITH_RESTORATION",
+  "action": "RESTORE_AND_RETRY",
+  "confidence": 0.6,
+  "uncertainty_norm": 0.43,
+  "is_useful": true,
+  "is_correct": false,
+  "reason": "Combined system: visual restoration succeeded",
+  "sha256": "3477024282a095425da0c9b0a5732c27cc2dc809efcf4e5ba35fee68c78ee596"
+}

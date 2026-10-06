@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d1_layout_shift_b10_5_5_doc_mp_035_q_doc_mp_035_combined_recovery_moderate_s42",
+  "document_id": "doc_mp_035",
+  "query_id": "q_doc_mp_035",
+  "baseline": "B10.5-5",
+  "domain": "D1_layout_shift",
+  "condition": "moderate",
+  "strategy": "combined_recovery",
+  "seed": 42,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.7785,
+  "uncertainty_norm": 0.2357,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "Moderate confidence with minor uncertainty detected",
+  "sha256": "b35ca616f62ed64cad1f301a9dfc2b9dcd00b7fb6a258684b237361c64fa69cb"
+}

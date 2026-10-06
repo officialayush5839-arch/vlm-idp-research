@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d3_structure_shift_b10_5_1_doc_mp_046_q_doc_mp_046_preprocessing_restoration_mild_s789",
+  "document_id": "doc_mp_046",
+  "query_id": "q_doc_mp_046",
+  "baseline": "B10.5-1",
+  "domain": "D3_structure_shift",
+  "condition": "mild",
+  "strategy": "preprocessing_restoration",
+  "seed": 789,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.727,
+  "uncertainty_norm": 0.2822,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "Moderate confidence with minor uncertainty detected",
+  "sha256": "d6c59f6c829f2435c35920a23a182f5b2c9cb85219f0f664e163e531dd27d96b"
+}

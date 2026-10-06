@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d0_in_domain_b10_5_0_doc_mp_041_q_doc_mp_041_default_clean_s101112",
+  "document_id": "doc_mp_041",
+  "query_id": "q_doc_mp_041",
+  "baseline": "B10.5-0",
+  "domain": "D0_in_domain",
+  "condition": "clean",
+  "strategy": "default",
+  "seed": 101112,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.9445,
+  "uncertainty_norm": 0.0603,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "High confidence and low multi-modal uncertainty",
+  "sha256": "edd109192ed9350c090b8ee2e1e4e548aea7b105ff76ac1ab71424168cfd9596"
+}

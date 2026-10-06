@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d2_visual_style_shift_b10_5_3_doc_mp_036_q_doc_mp_036_partial_evidence_severe_s101112",
+  "document_id": "doc_mp_036",
+  "query_id": "q_doc_mp_036",
+  "baseline": "B10.5-3",
+  "domain": "D2_visual_style_shift",
+  "condition": "severe",
+  "strategy": "partial_evidence",
+  "seed": 101112,
+  "state": "SAFE_PARTIAL",
+  "action": "EMIT_PARTIAL",
+  "confidence": 0.45,
+  "uncertainty_norm": 0.6,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "Partial evidence verified and emitted",
+  "sha256": "8eb432514b4da3f3d38a6f57755ef70e7ab69121cb60d1d3eb4d91b602cd83cc"
+}

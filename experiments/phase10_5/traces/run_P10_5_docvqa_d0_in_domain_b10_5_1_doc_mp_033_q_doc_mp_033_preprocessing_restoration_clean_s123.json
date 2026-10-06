@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d0_in_domain_b10_5_1_doc_mp_033_q_doc_mp_033_preprocessing_restoration_clean_s123",
+  "document_id": "doc_mp_033",
+  "query_id": "q_doc_mp_033",
+  "baseline": "B10.5-1",
+  "domain": "D0_in_domain",
+  "condition": "clean",
+  "strategy": "preprocessing_restoration",
+  "seed": 123,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.9445,
+  "uncertainty_norm": 0.0603,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "High confidence and low multi-modal uncertainty",
+  "sha256": "018cc69aae05bdeab74ea1dc4e7aaeb38b37786132a8962cfd4e5832db1c808c"
+}

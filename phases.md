@@ -19,7 +19,8 @@
 | Phase 8 | Uncertainty Calibration + Abstention | COMPLETED | Phase 7 |
 | Phase 9 | Uncertainty-Aware Reliability & Failure-Safety | COMPLETED (AUDITED) | Phase 8 |
 | Phase 10 | Robustness & Distribution-Shift Validation | COMPLETED | Phase 9 |
-| Phase 11 | Error Analysis + Failure Taxonomy | NOT_STARTED | Phase 10 |
+| Phase 10.5 | Safety-Preserving Recovery Under Distribution Shift | COMPLETED | Phase 10 |
+| Phase 11 | Error Analysis + Failure Taxonomy | NOT_STARTED | Phase 10.5 |
 | Phase 12 | Reproducibility Audit | NOT_STARTED | Phase 11 |
 | Phase 13 | IEEE Manuscript | NOT_STARTED | Phase 9, 10, 11, 12 |
 

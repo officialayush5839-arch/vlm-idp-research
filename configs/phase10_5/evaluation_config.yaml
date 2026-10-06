@@ -1,0 +1,17 @@
+# configs/phase10_5/evaluation_config.yaml
+# Evaluation Metric Parameters and Statistical Test Protocols
+
+evaluation:
+  safety:
+    max_tolerated_urr: 0.05
+    target_urr: 0.03
+  coverage:
+    min_suc_gain_target: 0.20
+  hypothesis_test:
+    name: "H10.5"
+    test_type: "paired_bootstrap"
+    bootstrap_samples: 10000
+    random_seed: 42
+    confidence_level: 0.95
+    null_hypothesis: "Proposed recovery SUC is less than or equal to reference SUC or URR exceeds 0.05"
+    alternative_hypothesis: "Proposed recovery significantly increases SUC while maintaining URR <= 0.05"

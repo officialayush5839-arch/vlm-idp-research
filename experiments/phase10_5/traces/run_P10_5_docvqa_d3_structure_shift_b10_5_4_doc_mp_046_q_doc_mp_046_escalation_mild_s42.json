@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d3_structure_shift_b10_5_4_doc_mp_046_q_doc_mp_046_escalation_mild_s42",
+  "document_id": "doc_mp_046",
+  "query_id": "q_doc_mp_046",
+  "baseline": "B10.5-4",
+  "domain": "D3_structure_shift",
+  "condition": "mild",
+  "strategy": "escalation",
+  "seed": 42,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.727,
+  "uncertainty_norm": 0.2822,
+  "is_useful": true,
+  "is_correct": false,
+  "reason": "Moderate confidence with minor uncertainty detected",
+  "sha256": "7a68e316c5fd8018a6d17138d5f9170054ffa9cdc124dc3a0fc3dfb5f6aee299"
+}

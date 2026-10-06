@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d4_combined_shift_b10_5_5_doc_mp_049_q_doc_mp_049_combined_recovery_clean_s456",
+  "document_id": "doc_mp_049",
+  "query_id": "q_doc_mp_049",
+  "baseline": "B10.5-5",
+  "domain": "D4_combined_shift",
+  "condition": "clean",
+  "strategy": "combined_recovery",
+  "seed": 456,
+  "state": "RECOVERABLE_WITH_RESTORATION",
+  "action": "RESTORE_AND_RETRY",
+  "confidence": 0.63,
+  "uncertainty_norm": 0.38,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "Combined system: visual restoration succeeded",
+  "sha256": "6759f4182b26c1ef678de9adcde56fd46487b132e2a8ba6cdb94b79ab48ab492"
+}

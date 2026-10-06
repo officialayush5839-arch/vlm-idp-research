@@ -1,7 +1,7 @@
 # VLM-IDP Active Execution Queue
 
-CURRENT PHASE: PHASE 10 — Robustness, Cross-Domain Generalization & Distribution-Shift Validation (COMPLETED)
-CURRENT OBJECTIVE: Phase 10 complete. Robustness, cross-domain generalization, and distribution-shift analysis implemented across 5 domains (D0 in-domain, D1 layout shift, D2 visual style shift, D3 structure shift, D4 combined shift), 5 baselines (B10-0 through B10-4), and 5 random seeds (625 runs persisted with cryptographic traces). Hypothesis H10 evaluated via paired bootstrap (B=10,000, seed=42) and confirmed NOT_SUPPORTED at alpha=0.05 on raw cross-domain accuracy (Delta = -0.23, p = 1.0) due to safe complete abstention under severe degradation (100% abstention, 0% unsupported errors in D2 and D4). All 10 Phase 10 unit/integration tests and full repository suite passing (352/352 tests passing, 100%). Pre-implementation hash manifest verified with zero historical modifications (6,997 artifacts intact). Phase 11 NOT STARTED.
+CURRENT PHASE: PHASE 10.5 — Safety-Preserving Recovery Under Severe Distribution Shift (COMPLETED)
+CURRENT OBJECTIVE: Phase 10.5 complete. Evaluated 6 baselines (B10.5-0 to B10.5-5) across 5 domains (D0-D4) and 5 seeds. Persisted 750 cryptographic traces, benchmark summaries, ablations (A10.5-1 to A10.5-8), and publication figures. Hypothesis H10.5 evaluated via paired bootstrap (B=10,000, seed=42) yielding SUC gain Delta=+0.1840, p=0.000000, and URR=0.0547 (concluding NOT_SUPPORTED due to the strict URR <= 0.05 safety bound). Full test suite passing (377/377 tests, 100%). Pre-implementation hash manifest verified with zero historical modifications. Phase 11 NOT STARTED.
 TASK STATUS: COMPLETE
 
 ---

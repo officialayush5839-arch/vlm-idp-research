@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d0_in_domain_b10_5_2_doc_mp_033_q_doc_mp_033_retrieval_retry_clean_s101112",
+  "document_id": "doc_mp_033",
+  "query_id": "q_doc_mp_033",
+  "baseline": "B10.5-2",
+  "domain": "D0_in_domain",
+  "condition": "clean",
+  "strategy": "retrieval_retry",
+  "seed": 101112,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.9445,
+  "uncertainty_norm": 0.0603,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "High confidence and low multi-modal uncertainty",
+  "sha256": "1c28bc31d083127f3f14e4b38fe5da5f0d587f0498a3f83debd9c1cb52de1ccc"
+}

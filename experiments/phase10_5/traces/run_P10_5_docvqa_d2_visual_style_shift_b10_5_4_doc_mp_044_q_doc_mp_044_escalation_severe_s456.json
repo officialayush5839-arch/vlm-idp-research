@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d2_visual_style_shift_b10_5_4_doc_mp_044_q_doc_mp_044_escalation_severe_s456",
+  "document_id": "doc_mp_044",
+  "query_id": "q_doc_mp_044",
+  "baseline": "B10.5-4",
+  "domain": "D2_visual_style_shift",
+  "condition": "severe",
+  "strategy": "escalation",
+  "seed": 456,
+  "state": "HUMAN_ESCALATION",
+  "action": "ESCALATE_TO_HUMAN",
+  "confidence": 0.464,
+  "uncertainty_norm": 0.5506,
+  "is_useful": false,
+  "is_correct": false,
+  "reason": "B10.5-4 Escalation: Human inspection regions flagged",
+  "sha256": "d1d2062657a73f64b809249b2ef2ffac1d562a2f0f1532dbd110557b3b639f27"
+}

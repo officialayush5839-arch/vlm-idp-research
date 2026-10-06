@@ -1,0 +1,98 @@
+{
+  "A10.5-1_no_restoration": {
+    "safe_useful_coverage": 0.592,
+    "unsafe_recovery_rate": 0.208,
+    "coverage": 0.8,
+    "selective_accuracy": 0.74,
+    "total_samples": 125,
+    "num_useful": 100,
+    "num_safe_useful": 74,
+    "num_unsafe": 26,
+    "pct_SAFE_COMPLETE": 0.8,
+    "pct_UNSAFE_TO_ANSWER": 0.2
+  },
+  "A10.5-2_no_retrieval_retry": {
+    "safe_useful_coverage": 0.672,
+    "unsafe_recovery_rate": 0.328,
+    "coverage": 1.0,
+    "selective_accuracy": 0.672,
+    "total_samples": 125,
+    "num_useful": 125,
+    "num_safe_useful": 84,
+    "num_unsafe": 41,
+    "pct_SAFE_COMPLETE": 0.6,
+    "pct_RECOVERABLE_WITH_RESTORATION": 0.4
+  },
+  "A10.5-3_no_partial_evidence": {
+    "safe_useful_coverage": 0.672,
+    "unsafe_recovery_rate": 0.328,
+    "coverage": 1.0,
+    "selective_accuracy": 0.672,
+    "total_samples": 125,
+    "num_useful": 125,
+    "num_safe_useful": 84,
+    "num_unsafe": 41,
+    "pct_SAFE_COMPLETE": 0.6,
+    "pct_RECOVERABLE_WITH_RESTORATION": 0.4
+  },
+  "A10.5-4_no_safety_gate": {
+    "safe_useful_coverage": 0.672,
+    "unsafe_recovery_rate": 0.328,
+    "coverage": 1.0,
+    "selective_accuracy": 0.672,
+    "total_samples": 125,
+    "num_useful": 125,
+    "num_safe_useful": 84,
+    "num_unsafe": 41,
+    "pct_SAFE_COMPLETE": 0.6,
+    "pct_RECOVERABLE_WITH_RESTORATION": 0.4
+  },
+  "A10.5-5_no_escalation": {
+    "safe_useful_coverage": 0.672,
+    "unsafe_recovery_rate": 0.328,
+    "coverage": 1.0,
+    "selective_accuracy": 0.672,
+    "total_samples": 125,
+    "num_useful": 125,
+    "num_safe_useful": 84,
+    "num_unsafe": 41,
+    "pct_SAFE_COMPLETE": 0.6,
+    "pct_RECOVERABLE_WITH_RESTORATION": 0.4
+  },
+  "A10.5-6_conservative_threshold": {
+    "safe_useful_coverage": 0.672,
+    "unsafe_recovery_rate": 0.328,
+    "coverage": 1.0,
+    "selective_accuracy": 0.672,
+    "total_samples": 125,
+    "num_useful": 125,
+    "num_safe_useful": 84,
+    "num_unsafe": 41,
+    "pct_SAFE_COMPLETE": 0.6,
+    "pct_RECOVERABLE_WITH_RESTORATION": 0.4
+  },
+  "A10.5-7_permissive_threshold": {
+    "safe_useful_coverage": 0.672,
+    "unsafe_recovery_rate": 0.328,
+    "coverage": 1.0,
+    "selective_accuracy": 0.672,
+    "total_samples": 125,
+    "num_useful": 125,
+    "num_safe_useful": 84,
+    "num_unsafe": 41,
+    "pct_SAFE_COMPLETE": 0.6,
+    "pct_RECOVERABLE_WITH_RESTORATION": 0.4
+  },
+  "A10.5-8_no_eligibility_gate": {
+    "safe_useful_coverage": 0.672,
+    "unsafe_recovery_rate": 0.328,
+    "coverage": 1.0,
+    "selective_accuracy": 0.672,
+    "total_samples": 125,
+    "num_useful": 125,
+    "num_safe_useful": 84,
+    "num_unsafe": 41,
+    "pct_SAFE_COMPLETE": 0.6,
+    "pct_RECOVERABLE_WITH_RESTORATION": 0.4
+  }
+}

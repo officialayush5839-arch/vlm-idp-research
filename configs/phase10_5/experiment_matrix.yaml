@@ -1,0 +1,28 @@
+# configs/phase10_5/experiment_matrix.yaml
+# Phase 10.5 Experiment Matrix Specification
+
+matrix:
+  baselines:
+    - B10.5-0  # Reference Abstention (Phase 10 Policy)
+    - B10.5-1  # Preprocessing Recovery Only
+    - B10.5-2  # Retrieval Retry Only
+    - B10.5-3  # Partial Evidence Pathway Only
+    - B10.5-4  # Human Escalation Pathway Only
+    - B10.5-5  # Proposed Combined Recovery System
+
+  domains:
+    - D0_in_domain
+    - D1_layout_shift
+    - D2_visual_style_shift
+    - D3_structure_shift
+    - D4_combined_shift
+
+  seeds:
+    - 42
+    - 123
+    - 456
+    - 789
+    - 101112
+
+  documents_per_domain: 5
+  total_evaluations: 750  # 6 baselines * 5 domains * 5 docs * 5 seeds = 750

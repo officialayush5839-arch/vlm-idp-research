@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d3_structure_shift_b10_5_0_doc_mp_038_q_doc_mp_038_default_mild_s456",
+  "document_id": "doc_mp_038",
+  "query_id": "q_doc_mp_038",
+  "baseline": "B10.5-0",
+  "domain": "D3_structure_shift",
+  "condition": "mild",
+  "strategy": "default",
+  "seed": 456,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.727,
+  "uncertainty_norm": 0.2822,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "Moderate confidence with minor uncertainty detected",
+  "sha256": "4c64bf4610e1fa632be9b47111c5d26347dc5e2c8734f0e40811c6ed2b3fd1df"
+}

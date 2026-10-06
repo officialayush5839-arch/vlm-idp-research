@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d4_combined_shift_b10_5_3_doc_mp_049_q_doc_mp_049_partial_evidence_clean_s42",
+  "document_id": "doc_mp_049",
+  "query_id": "q_doc_mp_049",
+  "baseline": "B10.5-3",
+  "domain": "D4_combined_shift",
+  "condition": "clean",
+  "strategy": "partial_evidence",
+  "seed": 42,
+  "state": "SAFE_PARTIAL",
+  "action": "EMIT_PARTIAL",
+  "confidence": 0.48,
+  "uncertainty_norm": 0.55,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "Partial evidence verified and emitted",
+  "sha256": "57987cbb6b93a606bf7d0e4938e23e904787cc3d7461d7d022ba800535084972"
+}

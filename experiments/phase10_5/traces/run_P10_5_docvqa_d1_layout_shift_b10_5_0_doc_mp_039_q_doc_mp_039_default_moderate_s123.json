@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d1_layout_shift_b10_5_0_doc_mp_039_q_doc_mp_039_default_moderate_s123",
+  "document_id": "doc_mp_039",
+  "query_id": "q_doc_mp_039",
+  "baseline": "B10.5-0",
+  "domain": "D1_layout_shift",
+  "condition": "moderate",
+  "strategy": "default",
+  "seed": 123,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.7785,
+  "uncertainty_norm": 0.2357,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "Moderate confidence with minor uncertainty detected",
+  "sha256": "27f7a97cf10d9541e5a8f4c67e51a6eda9d4acedd3bed7f58f7d3cd10b57dc71"
+}

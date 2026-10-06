@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d0_in_domain_b10_5_3_doc_mp_026_q_doc_mp_026_partial_evidence_mild_s123",
+  "document_id": "doc_mp_026",
+  "query_id": "q_doc_mp_026",
+  "baseline": "B10.5-3",
+  "domain": "D0_in_domain",
+  "condition": "mild",
+  "strategy": "partial_evidence",
+  "seed": 123,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.9445,
+  "uncertainty_norm": 0.0603,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "High confidence and low multi-modal uncertainty",
+  "sha256": "5fe72c0c07ec21ba6807297acc05c8c7d4ff0469880945cd70588f393404998d"
+}

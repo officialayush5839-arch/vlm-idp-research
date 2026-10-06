@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d1_layout_shift_b10_5_4_doc_mp_039_q_doc_mp_039_escalation_moderate_s456",
+  "document_id": "doc_mp_039",
+  "query_id": "q_doc_mp_039",
+  "baseline": "B10.5-4",
+  "domain": "D1_layout_shift",
+  "condition": "moderate",
+  "strategy": "escalation",
+  "seed": 456,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.7785,
+  "uncertainty_norm": 0.2357,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "Moderate confidence with minor uncertainty detected",
+  "sha256": "3c634aef70d95a127c4a1caeaea3a2fdd5964ca45a723b105f6831dbd3259e39"
+}

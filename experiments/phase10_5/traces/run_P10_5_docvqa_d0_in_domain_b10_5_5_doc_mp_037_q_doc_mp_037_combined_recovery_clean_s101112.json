@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d0_in_domain_b10_5_5_doc_mp_037_q_doc_mp_037_combined_recovery_clean_s101112",
+  "document_id": "doc_mp_037",
+  "query_id": "q_doc_mp_037",
+  "baseline": "B10.5-5",
+  "domain": "D0_in_domain",
+  "condition": "clean",
+  "strategy": "combined_recovery",
+  "seed": 101112,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.9445,
+  "uncertainty_norm": 0.0603,
+  "is_useful": true,
+  "is_correct": true,
+  "reason": "High confidence and low multi-modal uncertainty",
+  "sha256": "2698d0d3cf844e1d61e6f08288a34b7865dd675412c138ca81203b3af4ed993d"
+}

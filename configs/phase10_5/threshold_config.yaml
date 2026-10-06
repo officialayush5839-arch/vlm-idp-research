@@ -1,0 +1,20 @@
+# configs/phase10_5/threshold_config.yaml
+# Operating Point Thresholds for Recovery Acceptance
+
+thresholds:
+  conservative:
+    tau_safe_complete: 0.90
+    tau_safe_partial: 0.85
+    max_uncertainty: 0.20
+    urr_target: 0.01
+  balanced:
+    tau_safe_complete: 0.82
+    tau_safe_partial: 0.75
+    max_uncertainty: 0.35
+    urr_target: 0.03
+  permissive:
+    tau_safe_complete: 0.75
+    tau_safe_partial: 0.68
+    max_uncertainty: 0.50
+    urr_target: 0.05
+  default_operating_point: "balanced"

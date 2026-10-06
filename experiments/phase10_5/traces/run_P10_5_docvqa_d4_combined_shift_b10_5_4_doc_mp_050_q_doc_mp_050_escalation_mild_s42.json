@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d4_combined_shift_b10_5_4_doc_mp_050_q_doc_mp_050_escalation_mild_s42",
+  "document_id": "doc_mp_050",
+  "query_id": "q_doc_mp_050",
+  "baseline": "B10.5-4",
+  "domain": "D4_combined_shift",
+  "condition": "mild",
+  "strategy": "escalation",
+  "seed": 42,
+  "state": "HUMAN_ESCALATION",
+  "action": "ESCALATE_TO_HUMAN",
+  "confidence": 0.4865,
+  "uncertainty_norm": 0.5267,
+  "is_useful": false,
+  "is_correct": false,
+  "reason": "B10.5-4 Escalation: Human inspection regions flagged",
+  "sha256": "5761584acbd36598c4fcd205bd97cc59fd0bd29da2d822c33ea0352f0eb4bd9a"
+}

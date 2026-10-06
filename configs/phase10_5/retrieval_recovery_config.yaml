@@ -1,0 +1,19 @@
+# configs/phase10_5/retrieval_recovery_config.yaml
+# Strategy B: Retrieval Retry and Window Expansion
+
+retrieval_recovery:
+  enabled: true
+  retry_strategies:
+    - window_expansion
+    - dense_bm25_reweighting
+    - multi_crop_querying
+  parameters:
+    expanded_window_k: 5
+    dense_weight_retry: 0.60
+    sparse_weight_retry: 0.40
+    crop_padding_ratio: 0.20
+  target_domains:
+    - D1_layout_shift
+    - D3_structure_shift
+    - D4_combined_shift
+  min_margin_improvement: 0.10

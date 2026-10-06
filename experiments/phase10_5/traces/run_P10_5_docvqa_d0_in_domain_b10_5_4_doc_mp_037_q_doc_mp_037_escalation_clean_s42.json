@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d0_in_domain_b10_5_4_doc_mp_037_q_doc_mp_037_escalation_clean_s42",
+  "document_id": "doc_mp_037",
+  "query_id": "q_doc_mp_037",
+  "baseline": "B10.5-4",
+  "domain": "D0_in_domain",
+  "condition": "clean",
+  "strategy": "escalation",
+  "seed": 42,
+  "state": "SAFE_COMPLETE",
+  "action": "EMIT_COMPLETE",
+  "confidence": 0.9445,
+  "uncertainty_norm": 0.0603,
+  "is_useful": true,
+  "is_correct": false,
+  "reason": "High confidence and low multi-modal uncertainty",
+  "sha256": "6e7e4321e2251ebbd1454a51b6bea34b6d6ac465c908e4564c02f4a849b81be5"
+}

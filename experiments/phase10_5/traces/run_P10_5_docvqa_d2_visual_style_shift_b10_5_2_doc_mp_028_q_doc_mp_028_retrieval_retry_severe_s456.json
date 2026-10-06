@@ -1,0 +1,18 @@
+{
+  "trace_id": "run_P10_5_docvqa_d2_visual_style_shift_b10_5_2_doc_mp_028_q_doc_mp_028_retrieval_retry_severe_s456",
+  "document_id": "doc_mp_028",
+  "query_id": "q_doc_mp_028",
+  "baseline": "B10.5-2",
+  "domain": "D2_visual_style_shift",
+  "condition": "severe",
+  "strategy": "retrieval_retry",
+  "seed": 456,
+  "state": "UNSAFE_TO_ANSWER",
+  "action": "ABSTAIN_UNSAFE",
+  "confidence": 0.55,
+  "uncertainty_norm": 0.34,
+  "is_useful": false,
+  "is_correct": false,
+  "reason": "Retrieval retry failed safety verification: Spatial score 0.380 < 0.4",
+  "sha256": "738e2e360017656d0c4014e2d593d4ad94f7b4ffb7fabf7239f45e601e8e9c57"
+}

@@ -1,0 +1,32 @@
+# configs/phase10_5/recovery_config.yaml
+# Master Configuration for Phase 10.5 Safety-Preserving Recovery Subsystem
+
+recovery:
+  version: "1.0.0"
+  phase: "10.5"
+  safety_tolerance_urr: 0.05
+  operating_mode: "safety_preserving"
+
+taxonomy:
+  states:
+    - R0_SAFE_COMPLETE
+    - R1_SAFE_PARTIAL
+    - R2_RECOVERABLE_WITH_RESTORATION
+    - R3_HUMAN_ESCALATION
+    - R4_UNSAFE_TO_ANSWER
+    - R5_IRRECOVERABLE
+
+eligibility_gate:
+  min_retrieval_margin: 0.20
+  min_ocr_confidence: 0.35
+  max_visual_entropy: 0.85
+  max_uncertainty_norm: 0.90
+  require_groundable_subspan: true
+
+baselines:
+  - B10.5-0  # Phase 10 Reference Abstention Policy
+  - B10.5-1  # Preprocessing Recovery Only
+  - B10.5-2  # Retrieval Retry Only
+  - B10.5-3  # Partial Evidence Pathway Only
+  - B10.5-4  # Human Escalation Pathway Only
+  - B10.5-5  # Proposed Combined Recovery System

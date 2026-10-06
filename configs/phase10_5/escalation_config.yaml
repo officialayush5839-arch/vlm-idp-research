@@ -1,0 +1,13 @@
+# configs/phase10_5/escalation_config.yaml
+# Strategy E: Deterministic Human Escalation Flagging
+
+escalation:
+  enabled: true
+  generate_inspection_regions: true
+  max_inspection_regions: 3
+  inspection_padding: 10
+  prioritization_weights:
+    uncertainty_weight: 0.50
+    quality_defect_weight: 0.30
+    retrieval_ambiguity_weight: 0.20
+  escalation_threshold: 0.40
