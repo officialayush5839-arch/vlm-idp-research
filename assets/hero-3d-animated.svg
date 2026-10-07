@@ -1,0 +1,284 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#07090e" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="1"/>
+    </radialGradient>
+
+    <radialGradient id="cyanOrb" cx="35%" cy="35%" r="45%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#0284c7" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="indigoOrb" cx="70%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#4f46e5" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Glass & Card Linear Gradients -->
+    <linearGradient id="glassGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="40%" stop-color="#38bdf8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.45"/>
+    </linearGradient>
+
+    <linearGradient id="glassGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.55"/>
+    </linearGradient>
+
+    <linearGradient id="glassGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="50%" stop-color="#34d399" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.65"/>
+    </linearGradient>
+
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="laserBeam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Filters for Glow and Shadow -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- CSS Keyframe Animations for Native 3D Floating, Parallax and Scanlines -->
+    <style>
+      @keyframes floatLayer1 {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-16px) rotate(0.8deg); }
+      }
+      @keyframes floatLayer2 {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-24px) rotate(-1.2deg); }
+      }
+      @keyframes floatLayer3 {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(0.5deg); }
+      }
+      @keyframes pulseBox {
+        0%, 100% { stroke-opacity: 0.9; stroke-width: 2px; }
+        50% { stroke-opacity: 0.4; stroke-width: 3.5px; }
+      }
+      @keyframes scanMotion {
+        0% { transform: translateY(0px); opacity: 0; }
+        15% { opacity: 0.8; }
+        85% { opacity: 0.8; }
+        100% { transform: translateY(180px); opacity: 0; }
+      }
+      @keyframes particleMove {
+        0% { transform: translate(0, 0); opacity: 0.3; }
+        50% { transform: translate(15px, -20px); opacity: 0.9; }
+        100% { transform: translate(0, 0); opacity: 0.3; }
+      }
+      @keyframes textShimmer {
+        0% { stop-color: #38bdf8; }
+        50% { stop-color: #c084fc; }
+        100% { stop-color: #38bdf8; }
+      }
+      @keyframes rayPulse {
+        0%, 100% { stroke-dashoffset: 0; opacity: 0.4; }
+        50% { stroke-dashoffset: 40; opacity: 0.9; }
+      }
+
+      .layer-1 { animation: floatLayer1 6s ease-in-out infinite; transform-origin: center; }
+      .layer-2 { animation: floatLayer2 7.5s ease-in-out infinite 0.5s; transform-origin: center; }
+      .layer-3 { animation: floatLayer3 5.5s ease-in-out infinite 1s; transform-origin: center; }
+      .pulse-bbox { animation: pulseBox 2.5s ease-in-out infinite; }
+      .scanner-beam { animation: scanMotion 3.2s linear infinite; }
+      .particle-dot { animation: particleMove 4s ease-in-out infinite; }
+      .attention-ray { animation: rayPulse 4s linear infinite; stroke-dasharray: 8 6; }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="420" fill="url(#bgGlow)" rx="16"/>
+
+  <!-- Glowing Atmospheric Background Orbs -->
+  <circle cx="380" cy="180" r="280" fill="url(#cyanOrb)"/>
+  <circle cx="850" cy="200" r="320" fill="url(#indigoOrb)"/>
+
+  <!-- 3D Perspective Grid Plane (Floor) -->
+  <g opacity="0.18" stroke="#38bdf8" stroke-width="0.8">
+    <line x1="100" y1="360" x2="1100" y2="360"/>
+    <line x1="160" y1="380" x2="1040" y2="380"/>
+    <line x1="240" y1="400" x2="960" y2="400"/>
+    <line x1="300" y1="418" x2="900" y2="418"/>
+    <!-- Vanishing perspective rays converging to center-top -->
+    <line x1="600" y1="260" x2="120" y2="420"/>
+    <line x1="600" y1="260" x2="280" y2="420"/>
+    <line x1="600" y1="260" x2="440" y2="420"/>
+    <line x1="600" y1="260" x2="600" y2="420"/>
+    <line x1="600" y1="260" x2="760" y2="420"/>
+    <line x1="600" y1="260" x2="920" y2="420"/>
+    <line x1="600" y1="260" x2="1080" y2="420"/>
+  </g>
+
+  <!-- Left Side: Title & Key Innovation Badges -->
+  <g transform="translate(60, 75)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="310" height="32" rx="16" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.2"/>
+    <circle cx="16" cy="16" r="4.5" fill="#38bdf8" filter="url(#neonGlow)"/>
+    <text x="30" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="1.5">IEEE RESEARCH · PHASES 0–14</text>
+
+    <!-- Main Title -->
+    <text x="0" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-size="38" font-weight="800" fill="#ffffff" letter-spacing="-0.8">
+      Adaptive VLM-IDP
+    </text>
+    <text x="0" y="118" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="700" fill="url(#neonCyan)" letter-spacing="-0.5">
+      Under Real-World Visual Degradation
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="152" font-family="'Plus Jakarta Sans', sans-serif" font-size="14.5" fill="#94a3b8" font-weight="400">
+      Unifying Quality-Aware Routing, Multimodal Context Pruning,
+    </text>
+    <text x="0" y="174" font-family="'Plus Jakarta Sans', sans-serif" font-size="14.5" fill="#94a3b8" font-weight="400">
+      Spatial Evidence Grounding, and Physical INT4 CUDA Inference.
+    </text>
+
+    <!-- Live Performance Pills -->
+    <g transform="translate(0, 205)">
+      <!-- Pill 1: Accuracy -->
+      <g transform="translate(0, 0)">
+        <rect width="135" height="54" rx="12" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(52, 211, 153, 0.4)" stroke-width="1.2"/>
+        <text x="14" y="24" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="800" fill="#34d399">89.1%</text>
+        <text x="14" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="600" fill="#94a3b8">Safe Coverage</text>
+      </g>
+      <!-- Pill 2: Speedup -->
+      <g transform="translate(145, 0)">
+        <rect width="135" height="54" rx="12" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.2"/>
+        <text x="14" y="24" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="800" fill="#38bdf8">2.0x</text>
+        <text x="14" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="600" fill="#94a3b8">Latency Speedup</text>
+      </g>
+      <!-- Pill 3: VRAM Footprint -->
+      <g transform="translate(290, 0)">
+        <rect width="135" height="54" rx="12" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(129, 140, 248, 0.4)" stroke-width="1.2"/>
+        <text x="14" y="24" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="800" fill="#818cf8">531 MB</text>
+        <text x="14" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="600" fill="#94a3b8">INT4 Peak VRAM</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Side: 3D Floating Isometric Multi-Page Document Pipeline -->
+  <g transform="translate(680, 40)">
+    
+    <!-- 3D Neural Attention Rays connecting layers -->
+    <path class="attention-ray" d="M120,240 L240,160 L360,90" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.6"/>
+    <path class="attention-ray" d="M160,280 L280,200 L400,130" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.5"/>
+
+    <!-- Layer 1: Background Base Document (Degraded Scan) -->
+    <g class="layer-1" transform="matrix(0.866 0.5 -0.866 0.5 280 60)">
+      <g filter="url(#cardShadow)">
+        <rect width="170" height="230" rx="12" fill="url(#glassGrad1)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+        <!-- Document header lines -->
+        <rect x="20" y="20" width="80" height="10" rx="4" fill="rgba(255,255,255,0.3)"/>
+        <rect x="20" y="40" width="130" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+        <rect x="20" y="55" width="115" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+        <rect x="20" y="70" width="125" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+        <!-- Motion Blur noise simulation dots -->
+        <circle cx="45" cy="110" r="3" fill="rgba(244,63,94,0.6)"/>
+        <circle cx="85" cy="120" r="2.5" fill="rgba(244,63,94,0.4)"/>
+        <circle cx="120" cy="115" r="3.5" fill="rgba(244,63,94,0.5)"/>
+        <!-- Badge -->
+        <rect x="20" y="190" width="90" height="20" rx="6" fill="rgba(244,63,94,0.2)" stroke="#f43f5e" stroke-width="1"/>
+        <text x="32" y="204" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#f43f5e">RAW SCAN: BLUR</text>
+      </g>
+    </g>
+
+    <!-- Layer 2: Midground Document (Multimodal Retrieval & Pruned Context) -->
+    <g class="layer-2" transform="matrix(0.866 0.5 -0.866 0.5 210 110)">
+      <g filter="url(#cardShadow)">
+        <rect width="170" height="230" rx="12" fill="url(#glassGrad2)" stroke="rgba(56,189,248,0.4)" stroke-width="1.8"/>
+        <!-- Document layout -->
+        <rect x="20" y="20" width="70" height="10" rx="4" fill="rgba(56,189,248,0.5)"/>
+        <rect x="20" y="40" width="130" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
+        <rect x="20" y="55" width="120" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
+        <rect x="20" y="70" width="100" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
+
+        <!-- Dense vector embeddings grid -->
+        <g opacity="0.7">
+          <circle cx="30" cy="110" r="4" fill="#38bdf8"/>
+          <circle cx="50" cy="110" r="4" fill="#818cf8"/>
+          <circle cx="70" cy="110" r="4" fill="#34d399"/>
+          <circle cx="90" cy="110" r="4" fill="#38bdf8"/>
+          <circle cx="110" cy="110" r="4" fill="#c084fc"/>
+        </g>
+        <!-- Badge -->
+        <rect x="20" y="190" width="105" height="20" rx="6" fill="rgba(56,189,248,0.2)" stroke="#38bdf8" stroke-width="1"/>
+        <text x="28" y="204" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#38bdf8">TOP-2 RETRIEVED</text>
+      </g>
+    </g>
+
+    <!-- Layer 3: Foreground Hero Document (Spatial Grounding & Verified Answer) -->
+    <g class="layer-3" transform="matrix(0.866 0.5 -0.866 0.5 140 160)">
+      <g filter="url(#cardShadow)">
+        <rect width="170" height="230" rx="12" fill="url(#glassGrad3)" stroke="rgba(52,211,153,0.6)" stroke-width="2"/>
+        <!-- Specular highlight rim -->
+        <line x1="12" y1="2" x2="158" y2="2" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+        <!-- Header -->
+        <rect x="20" y="20" width="85" height="10" rx="4" fill="rgba(52,211,153,0.7)"/>
+        <rect x="20" y="40" width="130" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
+        
+        <!-- Grounded Spatial Evidence Bounding Box -->
+        <g transform="translate(18, 65)">
+          <rect width="134" height="62" rx="6" fill="rgba(52,211,153,0.12)" stroke="#34d399" class="pulse-bbox" filter="url(#neonGlow)"/>
+          
+          <!-- Animated Laser Scanline inside Bounding Box -->
+          <g clip-path="url(#boxClip)">
+            <line x1="0" y1="0" x2="134" y2="0" stroke="#34d399" stroke-width="2" class="scanner-beam" filter="url(#intenseGlow)"/>
+          </g>
+          
+          <!-- Crosshair corners -->
+          <path d="M4,4 L12,4 M4,4 L4,12" stroke="#34d399" stroke-width="2"/>
+          <path d="M130,4 L122,4 M130,4 L130,12" stroke="#34d399" stroke-width="2"/>
+          <path d="M4,58 L12,58 M4,58 L4,50" stroke="#34d399" stroke-width="2"/>
+          <path d="M130,58 L122,58 M130,58 L130,50" stroke="#34d399" stroke-width="2"/>
+          
+          <text x="14" y="36" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#34d399">Total: $1,420.50</text>
+          <text x="14" y="52" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#86efac">IoU: 0.88 · VERIFIED</text>
+        </g>
+
+        <!-- Status Badge -->
+        <rect x="20" y="190" width="130" height="20" rx="6" fill="rgba(52,211,153,0.25)" stroke="#34d399" stroke-width="1.2"/>
+        <text x="28" y="204" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="800" fill="#34d399">STATUS: VERIFIED (0.98)</text>
+      </g>
+    </g>
+
+    <!-- Floating 3D Micro-Orbs (Neural Tokens in Orbit) -->
+    <circle cx="210" cy="80" r="4.5" fill="#38bdf8" class="particle-dot" filter="url(#neonGlow)"/>
+    <circle cx="420" cy="160" r="5" fill="#818cf8" class="particle-dot" filter="url(#neonGlow)"/>
+    <circle cx="160" cy="280" r="4" fill="#34d399" class="particle-dot" filter="url(#neonGlow)"/>
+    <circle cx="340" cy="340" r="3.5" fill="#c084fc" class="particle-dot" filter="url(#neonGlow)"/>
+
+  </g>
+</svg>

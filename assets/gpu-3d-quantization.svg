@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="100%" height="100%">
+  <defs>
+    <radialGradient id="gpuBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#070d18" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#020408" stop-opacity="1"/>
+    </radialGradient>
+
+    <linearGradient id="nvidiaGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#76b900"/>
+      <stop offset="100%" stop-color="#388e3c"/>
+    </linearGradient>
+
+    <linearGradient id="cyanNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+
+    <filter id="chipGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes barGrow {
+        0%, 100% { transform: scaleX(1); }
+        50% { transform: scaleX(0.97); }
+      }
+      @keyframes chipPulse {
+        0%, 100% { filter: drop-shadow(0 0 8px rgba(118, 185, 0, 0.4)); }
+        50% { filter: drop-shadow(0 0 24px rgba(118, 185, 0, 0.85)); }
+      }
+      @keyframes floatChip {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-10px) rotate(0.6deg); }
+      }
+      .anim-chip { animation: floatChip 5s ease-in-out infinite, chipPulse 3s ease-in-out infinite; transform-origin: center; }
+      .bar-pulse { animation: barGrow 3s ease-in-out infinite; transform-origin: left; }
+    </style>
+  </defs>
+
+  <rect width="1100" height="360" fill="url(#gpuBg)" rx="16" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Left: 3D Isometric Physical GPU Package -->
+  <g class="anim-chip" transform="translate(80, 50)">
+    <!-- PCB Board -->
+    <polygon points="120,40 280,40 220,240 60,240" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+    <!-- GPU Silicon Die -->
+    <polygon points="135,70 245,70 205,210 95,210" fill="#1e293b" stroke="#76b900" stroke-width="1.8" filter="url(#chipGlow)"/>
+    <!-- Core Heatspreader Mirror -->
+    <polygon points="145,90 225,90 195,190 115,190" fill="url(#nvidiaGreen)" opacity="0.85"/>
+    
+    <text x="170" y="135" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle">RTX 3050</text>
+    <text x="170" y="152" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#e2e8f0" text-anchor="middle">6GB GDDR6</text>
+    <text x="170" y="168" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="600" fill="#bbf7d0" text-anchor="middle">Ampere SM 8.6</text>
+
+    <!-- Pin traces -->
+    <line x1="95" y1="210" x2="80" y2="250" stroke="#fbbf24" stroke-width="1.2" opacity="0.6"/>
+    <line x1="125" y1="210" x2="110" y2="250" stroke="#fbbf24" stroke-width="1.2" opacity="0.6"/>
+    <line x1="165" y1="210" x2="150" y2="250" stroke="#fbbf24" stroke-width="1.2" opacity="0.6"/>
+    <line x1="205" y1="210" x2="190" y2="250" stroke="#fbbf24" stroke-width="1.2" opacity="0.6"/>
+  </g>
+
+  <!-- Right: Physical Quantization Metrics Comparison Bars -->
+  <g transform="translate(420, 45)">
+    <text x="0" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#ffffff" letter-spacing="-0.3">
+      Physical GPU Memory &amp; Quantization Benchmarking
+    </text>
+    <text x="0" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" fill="#94a3b8">
+      Measured directly on device with native PyTorch CUDA 12.6 APIs and BitsAndBytes kernels
+    </text>
+
+    <!-- Bar 1: FP16 (Baseline) -->
+    <g transform="translate(0, 75)">
+      <text x="0" y="16" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#94a3b8">Q0 (FP16 Baseline)</text>
+      <text x="560" y="16" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#38bdf8" text-anchor="end">1,111.6 MB · 27.8 tok/s</text>
+      <!-- Track -->
+      <rect x="0" y="26" width="560" height="20" rx="6" fill="rgba(255,255,255,0.05)"/>
+      <!-- Fill (1111/6144 = 18.1%) -->
+      <rect x="0" y="26" width="280" height="20" rx="6" fill="#38bdf8" opacity="0.85" class="bar-pulse"/>
+    </g>
+
+    <!-- Bar 2: INT8 (LLM.int8) -->
+    <g transform="translate(0, 135)">
+      <text x="0" y="16" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#94a3b8">Q1 (INT8 LLM.int8())</text>
+      <text x="560" y="16" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#fbbf24" text-anchor="end">702.0 MB (-36.8%) · 8.6 tok/s</text>
+      <!-- Track -->
+      <rect x="0" y="26" width="560" height="20" rx="6" fill="rgba(255,255,255,0.05)"/>
+      <!-- Fill (702/6144 = 11.4%) -->
+      <rect x="0" y="26" width="176" height="20" rx="6" fill="#fbbf24" opacity="0.85" class="bar-pulse"/>
+    </g>
+
+    <!-- Bar 3: INT4 (NF4 NormalFloat) -->
+    <g transform="translate(0, 195)">
+      <text x="0" y="16" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#34d399">Q2 (INT4 NF4 Optimal)</text>
+      <text x="560" y="16" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="800" fill="#34d399" text-anchor="end">530.9 MB (-52.2%) · 16.5 tok/s</text>
+      <!-- Track -->
+      <rect x="0" y="26" width="560" height="20" rx="6" fill="rgba(255,255,255,0.05)"/>
+      <!-- Fill (531/6144 = 8.6%) -->
+      <rect x="0" y="26" width="133" height="20" rx="6" fill="#34d399" filter="url(#chipGlow)" class="bar-pulse"/>
+    </g>
+
+    <!-- Hardware Memory Wall Reference Line -->
+    <g transform="translate(0, 260)">
+      <line x1="0" y1="8" x2="560" y2="8" stroke="rgba(244,63,94,0.5)" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#f43f5e">
+        ▲ 6,144 MB PHYSICAL VRAM LIMIT (Target 7B FP16 at 16 GB Triggers Authentic OOM Negative Control)
+      </text>
+    </g>
+  </g>
+</svg>

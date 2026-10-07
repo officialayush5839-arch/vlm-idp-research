@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 340" width="100%" height="100%">
+  <defs>
+    <radialGradient id="groundBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a121d" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#020509" stop-opacity="1"/>
+    </radialGradient>
+
+    <filter id="laserGlowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes radarSweepVertical {
+        0% { transform: translateY(0px); opacity: 0; }
+        20% { opacity: 0.9; }
+        80% { opacity: 0.9; }
+        100% { transform: translateY(110px); opacity: 0; }
+      }
+      @keyframes boxHover3D {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes targetPulse {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.1); opacity: 1; }
+      }
+      .laser-scan { animation: radarSweepVertical 2.8s ease-in-out infinite; }
+      .box-float { animation: boxHover3D 4s ease-in-out infinite; transform-origin: center; }
+      .reticle-pulse { animation: targetPulse 2s ease-in-out infinite; transform-origin: center; }
+    </style>
+  </defs>
+
+  <rect width="1100" height="340" fill="url(#groundBg)" rx="16" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Left: 3D Holographic Spatial Grounding Projection -->
+  <g transform="translate(100, 30)">
+    <!-- Base 3D Document Floor -->
+    <polygon points="120,30 360,30 260,250 20,250" fill="rgba(15,23,42,0.7)" stroke="rgba(56,189,248,0.3)" stroke-width="1.6"/>
+
+    <!-- Document Text Simulators -->
+    <g opacity="0.3" stroke="#f8fafc" stroke-width="2">
+      <line x1="80" y1="80" x2="220" y2="80"/>
+      <line x1="70" y1="110" x2="240" y2="110"/>
+      <line x1="60" y1="140" x2="200" y2="140"/>
+      <line x1="50" y1="170" x2="230" y2="170"/>
+      <line x1="40" y1="200" x2="180" y2="200"/>
+    </g>
+
+    <!-- Projecting Laser Cones (Connecting Document to Hovering 3D Bounding Box) -->
+    <line x1="90" y1="120" x2="110" y2="90" stroke="#34d399" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.6"/>
+    <line x1="210" y1="120" x2="230" y2="90" stroke="#34d399" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.6"/>
+    <line x1="180" y1="180" x2="200" y2="150" stroke="#34d399" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.6"/>
+    <line x1="60" y1="180" x2="80" y2="150" stroke="#34d399" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.6"/>
+
+    <!-- Hovering 3D Holographic Bounding Box -->
+    <g class="box-float">
+      <!-- 3D Projected Top Face -->
+      <polygon points="110,90 230,90 200,150 80,150" fill="rgba(52,211,153,0.18)" stroke="#34d399" stroke-width="2" filter="url(#laserGlowGreen)"/>
+
+      <!-- Animated Scan Line Sweeping Across Bounding Box -->
+      <line class="laser-scan" x1="95" y1="90" x2="215" y2="90" stroke="#86efac" stroke-width="2.5" filter="url(#laserGlowGreen)"/>
+
+      <!-- Targeting Reticle Crosshairs -->
+      <g class="reticle-pulse" transform="translate(145, 120)">
+        <circle cx="0" cy="0" r="16" fill="none" stroke="#34d399" stroke-width="1.8"/>
+        <circle cx="0" cy="0" r="4" fill="#34d399"/>
+        <line x1="-22" y1="0" x2="22" y2="0" stroke="#34d399" stroke-width="1.5"/>
+        <line x1="0" y1="-22" x2="0" y2="22" stroke="#34d399" stroke-width="1.5"/>
+      </g>
+
+      <text x="145" y="145" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="800" fill="#34d399" text-anchor="middle">
+        IoU: 0.88 · GROUNDED
+      </text>
+    </g>
+  </g>
+
+  <!-- Right: Evidence Verification & Hallucination Mitigation Data -->
+  <g transform="translate(480, 50)">
+    <text x="0" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#ffffff" letter-spacing="-0.3">
+      Spatial Evidence Grounding &amp; Hallucination Suppression
+    </text>
+    <text x="0" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" fill="#94a3b8">
+      Explicit coordinate regression and localized patch cross-attention suppress unsupported answers
+    </text>
+
+    <!-- Comparison Cards -->
+    <g transform="translate(0, 70)">
+      <!-- Unpruned Unverified Baseline (B14-A) -->
+      <g transform="translate(0, 0)">
+        <rect width="250" height="150" rx="12" fill="rgba(244,63,94,0.08)" stroke="rgba(244,63,94,0.35)" stroke-width="1.4"/>
+        <text x="16" y="26" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#f43f5e">BASELINE (B14-A)</text>
+        <text x="16" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#cbd5e1">Full-Document Unpruned</text>
+        <text x="16" y="80" font-family="'JetBrains Mono', monospace" font-size="24" font-weight="800" fill="#f43f5e">22.9%</text>
+        <text x="16" y="100" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#fca5a5">Unsupported Answers (UAR)</text>
+        <text x="16" y="126" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#94a3b8">IoU: 0.453 · Latency: 7.48s</text>
+      </g>
+
+      <!-- Grounded & Calibrated Architecture (B14-D) -->
+      <g transform="translate(270, 0)">
+        <rect width="250" height="150" rx="12" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.4)" stroke-width="1.6"/>
+        <text x="16" y="26" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#34d399">PROPOSED (B14-D)</text>
+        <text x="16" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#cbd5e1">Grounded + Abstention Gate</text>
+        <text x="16" y="80" font-family="'JetBrains Mono', monospace" font-size="24" font-weight="800" fill="#34d399">1.1%</text>
+        <text x="16" y="100" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#86efac">-92.1% Hallucination Collapse</text>
+        <text x="16" y="126" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#38bdf8">IoU: 0.799 · Latency: 3.75s (2x)</text>
+      </g>
+    </g>
+  </g>
+</svg>
