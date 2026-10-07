@@ -10,6 +10,18 @@
 [![License](https://img.shields.io/badge/License-MIT%20%2F%20Research-blue.svg)](LICENSE)
 [![Interactive 3D Showcase](https://img.shields.io/badge/Live%20Showcase-3D%20Interactive%20Web-brightgreen?logo=three.js&logoColor=white)](https://officialayush5839-arch.github.io/vlm-idp-research/)
 
+<br/>
+
+<!-- 3D Isometric Animated Hero Banner -->
+<img src="assets/hero-3d-animated.svg" alt="3D Isometric Animated Pipeline" width="100%" />
+
+<br/>
+
+<!-- Continuous Scrolling 3D Metrics Ticker -->
+<img src="assets/scrolling-3d-ticker.svg" alt="Real-Time Scrolling Research Metrics Ticker" width="100%" />
+
+<br/>
+
 **An IEEE-Grade Research Framework for Adaptive, Uncertainty-Aware, and Evidence-Grounded Document Intelligence**
 
 [🌟 **Interactive 3D Web Showcase**](https://officialayush5839-arch.github.io/vlm-idp-research/) · [📊 **Empirical Tables**](experiments/phase14/tables/) · [📈 **Publication Figures**](experiments/phase14/figures/) · [📑 **Phase 14 Report**](reports/phase14/PHASE14_REPORT.md) · [📝 **IEEE Integration**](reports/phase14/IEEE_INTEGRATION.md)
@@ -18,12 +30,12 @@
 
 ---
 
-## 🌟 Interactive 3D Web Showcase
+## 🌟 Interactive 3D Web Experience
 
 Explore the entire document intelligence architecture in real-time 3D powered by **Three.js**, **WebGL GLSL shaders**, and **Apple-style Liquid Glass UI components**:
 👉 **[Launch Live 3D Web Showcase](https://officialayush5839-arch.github.io/vlm-idp-research/)** *(Hosted via GitHub Pages from `docs/index.html`)*
 
-- **Scroll-Driven 3D Mechanics**: Multi-page translucent document stacks dynamically tilt, rotate, and transition across pipeline stages as you scroll.
+- **Scroll-Driven 3D Mechanics**: Multi-page translucent document stacks dynamically tilt, rotate, and zoom along an orbital camera trajectory as you scroll.
 - **Real-Time WebGL Shaders**: Procedural Simplex noise background with live chromatic aberration and fluid wavefront distortion.
 - **3D Spatial Evidence Grounding**: Holographic 3D bounding boxes lock onto verified visual target patches.
 - **Live HUD Controls**: Real-time degradation simulation slider and physical precision (INT4/INT8/FP16) VRAM meters.
@@ -44,6 +56,10 @@ This repository implements a **scientifically controlled, end-to-end research fr
 ---
 
 ## 🏛️ System Architecture
+
+<div align="center">
+  <img src="assets/architecture-3d-pipeline.svg" alt="3D Isometric Multimodal Pipeline Architecture" width="100%" />
+</div>
 
 ```
                           INPUT DOCUMENT
@@ -104,9 +120,13 @@ This repository implements a **scientifically controlled, end-to-end research fr
 
 ---
 
-## 📊 Key Empirical Findings
+## 📊 Physical GPU Quantization & Hardware Matrix
 
-### 1. Physical GPU Quantization Matrix (`table_04_quantization_matrix.csv`)
+<div align="center">
+  <img src="assets/gpu-3d-quantization.svg" alt="3D Isometric GPU Hardware & Quantization Benchmarks" width="100%" />
+</div>
+
+### Empirical Precision Benchmark (`table_04_quantization_matrix.csv`)
 *Hardware: NVIDIA GeForce RTX 3050 6GB Laptop GPU (Ampere SM 8.6, CUDA 12.6, Driver 581.95)*
 
 | Precision Mode | Model Weight Load Time | Peak CUDA VRAM | Forward Latency | Throughput | VRAM Delta | Physical Status |
@@ -120,7 +140,13 @@ This repository implements a **scientifically controlled, end-to-end research fr
 
 ---
 
-### 2. End-to-End Pipeline Evaluation (`table_12_end_to_end.csv`)
+## 🎯 Spatial Evidence Grounding & Safety Verification
+
+<div align="center">
+  <img src="assets/evidence-grounding-3d.svg" alt="3D Holographic Spatial Evidence Grounding" width="100%" />
+</div>
+
+### End-to-End Pipeline Evaluation (`table_12_end_to_end.csv`)
 *Evaluated across 5 independent seeds on authentic document families (1,100 traces).*
 
 | Condition ID | Architecture Configuration | Context Pages | Page Reduction | Mean Latency | Exact Match | Grounding IoU | Hallucination (UAR) | Safe Useful Coverage |
@@ -132,7 +158,7 @@ This repository implements a **scientifically controlled, end-to-end research fr
 
 ---
 
-### 3. Statistical Significance Testing (`table_13_statistical_tests.csv`)
+## 🔬 Statistical Significance Testing (`table_13_statistical_tests.csv`)
 *Family-Level Cluster Bootstrapping ($B=10,000$ resamples) with Holm-Bonferroni correction:*
 
 * **Hypothesis H14-3 (Retrieval Acceleration & Accuracy Gain)**:
@@ -166,6 +192,12 @@ All 12 publication figures were generated at **300 DPI** using empirical traces 
 
 ```
 vlm-idp-research/
+├── assets/                         # 3D Animated Isometric SVGs & Scrolling Tickers
+│   ├── hero-3d-animated.svg        # 3D floating glassmorphic document stack with lasers
+│   ├── scrolling-3d-ticker.svg     # Continuous animated horizontal metrics ticker
+│   ├── architecture-3d-pipeline.svg# 3D isometric pipeline with laser pulses
+│   ├── gpu-3d-quantization.svg     # 3D isometric GPU chip with live glowing meters
+│   └── evidence-grounding-3d.svg   # 3D holographic bounding box targeting projection
 ├── docs/                           # Interactive 3D Web Showcase (GitHub Pages)
 │   └── index.html                  # Three.js + WebGL GLSL + Liquid Glass frontend
 ├── src/                            # Source implementations
