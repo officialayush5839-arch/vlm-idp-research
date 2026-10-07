@@ -1,0 +1,2 @@
+Python,PyTorch,Transformers,BitsAndBytes,Accelerate,CUDA_Available
+3.14.6,2.14.1+cu126,4.48.3,0.50.2,1.15.0,True

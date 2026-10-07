@@ -1,0 +1,4 @@
+Precision,Throughput_tok_s
+Q0_FP16,27.81
+Q1_INT8,8.57
+Q2_INT4,16.49

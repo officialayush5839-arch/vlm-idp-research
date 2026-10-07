@@ -1,0 +1,3 @@
+Artifact,Files_Verified,Mismatches,Status,Records
+frozen_phase13_sha256_manifest.json,22162.0,0,PASS,
+physical_inference_traces.jsonl,,0,PASS,1100.0

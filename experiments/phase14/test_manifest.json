@@ -1,0 +1,790 @@
+{
+  "version": "phase14.1.0",
+  "source": "data/phase12_authentic",
+  "total_test_documents": 55,
+  "total_test_queries": 55,
+  "document_ids": [
+    "doc_auth_42_01",
+    "doc_auth_42_02",
+    "doc_auth_42_03",
+    "doc_auth_42_04",
+    "doc_auth_42_05",
+    "doc_auth_43_01",
+    "doc_auth_43_02",
+    "doc_auth_43_03",
+    "doc_auth_43_04",
+    "doc_auth_43_05",
+    "doc_auth_44_01",
+    "doc_auth_44_02",
+    "doc_auth_44_03",
+    "doc_auth_44_04",
+    "doc_auth_44_05",
+    "doc_auth_45_01",
+    "doc_auth_45_02",
+    "doc_auth_45_03",
+    "doc_auth_45_04",
+    "doc_auth_45_05",
+    "doc_auth_46_01",
+    "doc_auth_46_02",
+    "doc_auth_46_03",
+    "doc_auth_46_04",
+    "doc_auth_46_05",
+    "doc_auth_47_01",
+    "doc_auth_47_02",
+    "doc_auth_47_03",
+    "doc_auth_47_04",
+    "doc_auth_47_05",
+    "doc_auth_48_01",
+    "doc_auth_48_02",
+    "doc_auth_48_03",
+    "doc_auth_48_04",
+    "doc_auth_48_05",
+    "doc_auth_49_01",
+    "doc_auth_49_02",
+    "doc_auth_49_03",
+    "doc_auth_49_04",
+    "doc_auth_49_05",
+    "doc_auth_50_01",
+    "doc_auth_50_02",
+    "doc_auth_50_03",
+    "doc_auth_50_04",
+    "doc_auth_50_05",
+    "doc_auth_51_01",
+    "doc_auth_51_02",
+    "doc_auth_51_03",
+    "doc_auth_51_04",
+    "doc_auth_51_05",
+    "doc_auth_52_01",
+    "doc_auth_52_02",
+    "doc_auth_52_03",
+    "doc_auth_52_04",
+    "doc_auth_52_05"
+  ],
+  "queries": [
+    {
+      "query_id": "q_doc_auth_42_01_val",
+      "document_id": "doc_auth_42_01",
+      "family_id": "fam_auth_42",
+      "question": "What is the nominal value stated in the Tax Summary section?",
+      "ground_truth_answer": "$4220.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_42_01_p2_val"
+      ],
+      "modality": "D12-6",
+      "degradation_type": "compound_real_world"
+    },
+    {
+      "query_id": "q_doc_auth_42_02_val",
+      "document_id": "doc_auth_42_02",
+      "family_id": "fam_auth_42",
+      "question": "What is the nominal value stated in the Tax Summary section?",
+      "ground_truth_answer": "$4245.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_42_02_p2_val"
+      ],
+      "modality": "D12-6",
+      "degradation_type": "compound_real_world"
+    },
+    {
+      "query_id": "q_doc_auth_42_03_val",
+      "document_id": "doc_auth_42_03",
+      "family_id": "fam_auth_42",
+      "question": "What is the nominal value stated in the Tax Summary section?",
+      "ground_truth_answer": "$4270.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_42_03_p2_val"
+      ],
+      "modality": "D12-6",
+      "degradation_type": "compound_real_world"
+    },
+    {
+      "query_id": "q_doc_auth_42_04_val",
+      "document_id": "doc_auth_42_04",
+      "family_id": "fam_auth_42",
+      "question": "What is the nominal value stated in the Tax Summary section?",
+      "ground_truth_answer": "$4295.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_42_04_p2_val"
+      ],
+      "modality": "D12-6",
+      "degradation_type": "compound_real_world"
+    },
+    {
+      "query_id": "q_doc_auth_42_05_val",
+      "document_id": "doc_auth_42_05",
+      "family_id": "fam_auth_42",
+      "question": "What is the nominal value stated in the Tax Summary section?",
+      "ground_truth_answer": "$4320.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_42_05_p2_val"
+      ],
+      "modality": "D12-6",
+      "degradation_type": "compound_real_world"
+    },
+    {
+      "query_id": "q_doc_auth_43_01_val",
+      "document_id": "doc_auth_43_01",
+      "family_id": "fam_auth_43",
+      "question": "What is the nominal value stated in the Liability Clause section?",
+      "ground_truth_answer": "$4320.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_43_01_p2_val"
+      ],
+      "modality": "D12-0",
+      "degradation_type": "clean_reference"
+    },
+    {
+      "query_id": "q_doc_auth_43_02_val",
+      "document_id": "doc_auth_43_02",
+      "family_id": "fam_auth_43",
+      "question": "What is the nominal value stated in the Liability Clause section?",
+      "ground_truth_answer": "$4345.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_43_02_p2_val"
+      ],
+      "modality": "D12-0",
+      "degradation_type": "clean_reference"
+    },
+    {
+      "query_id": "q_doc_auth_43_03_val",
+      "document_id": "doc_auth_43_03",
+      "family_id": "fam_auth_43",
+      "question": "What is the nominal value stated in the Liability Clause section?",
+      "ground_truth_answer": "$4370.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_43_03_p2_val"
+      ],
+      "modality": "D12-0",
+      "degradation_type": "clean_reference"
+    },
+    {
+      "query_id": "q_doc_auth_43_04_val",
+      "document_id": "doc_auth_43_04",
+      "family_id": "fam_auth_43",
+      "question": "What is the nominal value stated in the Liability Clause section?",
+      "ground_truth_answer": "$4395.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_43_04_p2_val"
+      ],
+      "modality": "D12-0",
+      "degradation_type": "clean_reference"
+    },
+    {
+      "query_id": "q_doc_auth_43_05_val",
+      "document_id": "doc_auth_43_05",
+      "family_id": "fam_auth_43",
+      "question": "What is the nominal value stated in the Liability Clause section?",
+      "ground_truth_answer": "$4420.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_43_05_p2_val"
+      ],
+      "modality": "D12-0",
+      "degradation_type": "clean_reference"
+    },
+    {
+      "query_id": "q_doc_auth_44_01_val",
+      "document_id": "doc_auth_44_01",
+      "family_id": "fam_auth_44",
+      "question": "What is the nominal value stated in the Lab Pathology section?",
+      "ground_truth_answer": "$4420.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_44_01_p2_val"
+      ],
+      "modality": "D12-1",
+      "degradation_type": "mobile_capture"
+    },
+    {
+      "query_id": "q_doc_auth_44_02_val",
+      "document_id": "doc_auth_44_02",
+      "family_id": "fam_auth_44",
+      "question": "What is the nominal value stated in the Lab Pathology section?",
+      "ground_truth_answer": "$4445.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_44_02_p2_val"
+      ],
+      "modality": "D12-1",
+      "degradation_type": "mobile_capture"
+    },
+    {
+      "query_id": "q_doc_auth_44_03_val",
+      "document_id": "doc_auth_44_03",
+      "family_id": "fam_auth_44",
+      "question": "What is the nominal value stated in the Lab Pathology section?",
+      "ground_truth_answer": "$4470.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_44_03_p2_val"
+      ],
+      "modality": "D12-1",
+      "degradation_type": "mobile_capture"
+    },
+    {
+      "query_id": "q_doc_auth_44_04_val",
+      "document_id": "doc_auth_44_04",
+      "family_id": "fam_auth_44",
+      "question": "What is the nominal value stated in the Lab Pathology section?",
+      "ground_truth_answer": "$4495.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_44_04_p2_val"
+      ],
+      "modality": "D12-1",
+      "degradation_type": "mobile_capture"
+    },
+    {
+      "query_id": "q_doc_auth_44_05_val",
+      "document_id": "doc_auth_44_05",
+      "family_id": "fam_auth_44",
+      "question": "What is the nominal value stated in the Lab Pathology section?",
+      "ground_truth_answer": "$4520.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_44_05_p2_val"
+      ],
+      "modality": "D12-1",
+      "degradation_type": "mobile_capture"
+    },
+    {
+      "query_id": "q_doc_auth_45_01_val",
+      "document_id": "doc_auth_45_01",
+      "family_id": "fam_auth_45",
+      "question": "What is the nominal value stated in the Wiring Diagram section?",
+      "ground_truth_answer": "$4520.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_45_01_p2_val"
+      ],
+      "modality": "D12-2",
+      "degradation_type": "scanner_artifacts"
+    },
+    {
+      "query_id": "q_doc_auth_45_02_val",
+      "document_id": "doc_auth_45_02",
+      "family_id": "fam_auth_45",
+      "question": "What is the nominal value stated in the Wiring Diagram section?",
+      "ground_truth_answer": "$4545.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_45_02_p2_val"
+      ],
+      "modality": "D12-2",
+      "degradation_type": "scanner_artifacts"
+    },
+    {
+      "query_id": "q_doc_auth_45_03_val",
+      "document_id": "doc_auth_45_03",
+      "family_id": "fam_auth_45",
+      "question": "What is the nominal value stated in the Wiring Diagram section?",
+      "ground_truth_answer": "$4570.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_45_03_p2_val"
+      ],
+      "modality": "D12-2",
+      "degradation_type": "scanner_artifacts"
+    },
+    {
+      "query_id": "q_doc_auth_45_04_val",
+      "document_id": "doc_auth_45_04",
+      "family_id": "fam_auth_45",
+      "question": "What is the nominal value stated in the Wiring Diagram section?",
+      "ground_truth_answer": "$4595.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_45_04_p2_val"
+      ],
+      "modality": "D12-2",
+      "degradation_type": "scanner_artifacts"
+    },
+    {
+      "query_id": "q_doc_auth_45_05_val",
+      "document_id": "doc_auth_45_05",
+      "family_id": "fam_auth_45",
+      "question": "What is the nominal value stated in the Wiring Diagram section?",
+      "ground_truth_answer": "$4620.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_45_05_p2_val"
+      ],
+      "modality": "D12-2",
+      "degradation_type": "scanner_artifacts"
+    },
+    {
+      "query_id": "q_doc_auth_46_01_val",
+      "document_id": "doc_auth_46_01",
+      "family_id": "fam_auth_46",
+      "question": "What is the nominal value stated in the Related Work section?",
+      "ground_truth_answer": "$4620.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_46_01_p2_val"
+      ],
+      "modality": "D12-3",
+      "degradation_type": "fax_transmission"
+    },
+    {
+      "query_id": "q_doc_auth_46_02_val",
+      "document_id": "doc_auth_46_02",
+      "family_id": "fam_auth_46",
+      "question": "What is the nominal value stated in the Related Work section?",
+      "ground_truth_answer": "$4645.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_46_02_p2_val"
+      ],
+      "modality": "D12-3",
+      "degradation_type": "fax_transmission"
+    },
+    {
+      "query_id": "q_doc_auth_46_03_val",
+      "document_id": "doc_auth_46_03",
+      "family_id": "fam_auth_46",
+      "question": "What is the nominal value stated in the Related Work section?",
+      "ground_truth_answer": "$4670.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_46_03_p2_val"
+      ],
+      "modality": "D12-3",
+      "degradation_type": "fax_transmission"
+    },
+    {
+      "query_id": "q_doc_auth_46_04_val",
+      "document_id": "doc_auth_46_04",
+      "family_id": "fam_auth_46",
+      "question": "What is the nominal value stated in the Related Work section?",
+      "ground_truth_answer": "$4695.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_46_04_p2_val"
+      ],
+      "modality": "D12-3",
+      "degradation_type": "fax_transmission"
+    },
+    {
+      "query_id": "q_doc_auth_46_05_val",
+      "document_id": "doc_auth_46_05",
+      "family_id": "fam_auth_46",
+      "question": "What is the nominal value stated in the Related Work section?",
+      "ground_truth_answer": "$4720.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_46_05_p2_val"
+      ],
+      "modality": "D12-3",
+      "degradation_type": "fax_transmission"
+    },
+    {
+      "query_id": "q_doc_auth_47_01_val",
+      "document_id": "doc_auth_47_01",
+      "family_id": "fam_auth_47",
+      "question": "What is the nominal value stated in the Income Verification section?",
+      "ground_truth_answer": "$4720.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_47_01_p2_val"
+      ],
+      "modality": "D12-4",
+      "degradation_type": "photocopy_multigen"
+    },
+    {
+      "query_id": "q_doc_auth_47_02_val",
+      "document_id": "doc_auth_47_02",
+      "family_id": "fam_auth_47",
+      "question": "What is the nominal value stated in the Income Verification section?",
+      "ground_truth_answer": "$4745.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_47_02_p2_val"
+      ],
+      "modality": "D12-4",
+      "degradation_type": "photocopy_multigen"
+    },
+    {
+      "query_id": "q_doc_auth_47_03_val",
+      "document_id": "doc_auth_47_03",
+      "family_id": "fam_auth_47",
+      "question": "What is the nominal value stated in the Income Verification section?",
+      "ground_truth_answer": "$4770.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_47_03_p2_val"
+      ],
+      "modality": "D12-4",
+      "degradation_type": "photocopy_multigen"
+    },
+    {
+      "query_id": "q_doc_auth_47_04_val",
+      "document_id": "doc_auth_47_04",
+      "family_id": "fam_auth_47",
+      "question": "What is the nominal value stated in the Income Verification section?",
+      "ground_truth_answer": "$4795.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_47_04_p2_val"
+      ],
+      "modality": "D12-4",
+      "degradation_type": "photocopy_multigen"
+    },
+    {
+      "query_id": "q_doc_auth_47_05_val",
+      "document_id": "doc_auth_47_05",
+      "family_id": "fam_auth_47",
+      "question": "What is the nominal value stated in the Income Verification section?",
+      "ground_truth_answer": "$4820.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_47_05_p2_val"
+      ],
+      "modality": "D12-4",
+      "degradation_type": "photocopy_multigen"
+    },
+    {
+      "query_id": "q_doc_auth_48_01_val",
+      "document_id": "doc_auth_48_01",
+      "family_id": "fam_auth_48",
+      "question": "What is the nominal value stated in the Customs Declaration section?",
+      "ground_truth_answer": "$4820.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_48_01_p2_val"
+      ],
+      "modality": "D12-5",
+      "degradation_type": "archival_aged"
+    },
+    {
+      "query_id": "q_doc_auth_48_02_val",
+      "document_id": "doc_auth_48_02",
+      "family_id": "fam_auth_48",
+      "question": "What is the nominal value stated in the Customs Declaration section?",
+      "ground_truth_answer": "$4845.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_48_02_p2_val"
+      ],
+      "modality": "D12-5",
+      "degradation_type": "archival_aged"
+    },
+    {
+      "query_id": "q_doc_auth_48_03_val",
+      "document_id": "doc_auth_48_03",
+      "family_id": "fam_auth_48",
+      "question": "What is the nominal value stated in the Customs Declaration section?",
+      "ground_truth_answer": "$4870.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_48_03_p2_val"
+      ],
+      "modality": "D12-5",
+      "degradation_type": "archival_aged"
+    },
+    {
+      "query_id": "q_doc_auth_48_04_val",
+      "document_id": "doc_auth_48_04",
+      "family_id": "fam_auth_48",
+      "question": "What is the nominal value stated in the Customs Declaration section?",
+      "ground_truth_answer": "$4895.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_48_04_p2_val"
+      ],
+      "modality": "D12-5",
+      "degradation_type": "archival_aged"
+    },
+    {
+      "query_id": "q_doc_auth_48_05_val",
+      "document_id": "doc_auth_48_05",
+      "family_id": "fam_auth_48",
+      "question": "What is the nominal value stated in the Customs Declaration section?",
+      "ground_truth_answer": "$4920.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_48_05_p2_val"
+      ],
+      "modality": "D12-5",
+      "degradation_type": "archival_aged"
+    },
+    {
+      "query_id": "q_doc_auth_49_01_val",
+      "document_id": "doc_auth_49_01",
+      "family_id": "fam_auth_49",
+      "question": "What is the nominal value stated in the Income Statement section?",
+      "ground_truth_answer": "$4920.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_49_01_p2_val"
+      ],
+      "modality": "D12-6",
+      "degradation_type": "compound_real_world"
+    },
+    {
+      "query_id": "q_doc_auth_49_02_val",
+      "document_id": "doc_auth_49_02",
+      "family_id": "fam_auth_49",
+      "question": "What is the nominal value stated in the Income Statement section?",
+      "ground_truth_answer": "$4945.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_49_02_p2_val"
+      ],
+      "modality": "D12-6",
+      "degradation_type": "compound_real_world"
+    },
+    {
+      "query_id": "q_doc_auth_49_03_val",
+      "document_id": "doc_auth_49_03",
+      "family_id": "fam_auth_49",
+      "question": "What is the nominal value stated in the Income Statement section?",
+      "ground_truth_answer": "$4970.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_49_03_p2_val"
+      ],
+      "modality": "D12-6",
+      "degradation_type": "compound_real_world"
+    },
+    {
+      "query_id": "q_doc_auth_49_04_val",
+      "document_id": "doc_auth_49_04",
+      "family_id": "fam_auth_49",
+      "question": "What is the nominal value stated in the Income Statement section?",
+      "ground_truth_answer": "$4995.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_49_04_p2_val"
+      ],
+      "modality": "D12-6",
+      "degradation_type": "compound_real_world"
+    },
+    {
+      "query_id": "q_doc_auth_49_05_val",
+      "document_id": "doc_auth_49_05",
+      "family_id": "fam_auth_49",
+      "question": "What is the nominal value stated in the Income Statement section?",
+      "ground_truth_answer": "$5020.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_49_05_p2_val"
+      ],
+      "modality": "D12-6",
+      "degradation_type": "compound_real_world"
+    },
+    {
+      "query_id": "q_doc_auth_50_01_val",
+      "document_id": "doc_auth_50_01",
+      "family_id": "fam_auth_50",
+      "question": "What is the nominal value stated in the Tax Summary section?",
+      "ground_truth_answer": "$5020.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_50_01_p2_val"
+      ],
+      "modality": "D12-0",
+      "degradation_type": "clean_reference"
+    },
+    {
+      "query_id": "q_doc_auth_50_02_val",
+      "document_id": "doc_auth_50_02",
+      "family_id": "fam_auth_50",
+      "question": "What is the nominal value stated in the Tax Summary section?",
+      "ground_truth_answer": "$5045.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_50_02_p2_val"
+      ],
+      "modality": "D12-0",
+      "degradation_type": "clean_reference"
+    },
+    {
+      "query_id": "q_doc_auth_50_03_val",
+      "document_id": "doc_auth_50_03",
+      "family_id": "fam_auth_50",
+      "question": "What is the nominal value stated in the Tax Summary section?",
+      "ground_truth_answer": "$5070.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_50_03_p2_val"
+      ],
+      "modality": "D12-0",
+      "degradation_type": "clean_reference"
+    },
+    {
+      "query_id": "q_doc_auth_50_04_val",
+      "document_id": "doc_auth_50_04",
+      "family_id": "fam_auth_50",
+      "question": "What is the nominal value stated in the Tax Summary section?",
+      "ground_truth_answer": "$5095.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_50_04_p2_val"
+      ],
+      "modality": "D12-0",
+      "degradation_type": "clean_reference"
+    },
+    {
+      "query_id": "q_doc_auth_50_05_val",
+      "document_id": "doc_auth_50_05",
+      "family_id": "fam_auth_50",
+      "question": "What is the nominal value stated in the Tax Summary section?",
+      "ground_truth_answer": "$5120.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_50_05_p2_val"
+      ],
+      "modality": "D12-0",
+      "degradation_type": "clean_reference"
+    },
+    {
+      "query_id": "q_doc_auth_51_01_val",
+      "document_id": "doc_auth_51_01",
+      "family_id": "fam_auth_51",
+      "question": "What is the nominal value stated in the Liability Clause section?",
+      "ground_truth_answer": "$5120.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_51_01_p2_val"
+      ],
+      "modality": "D12-1",
+      "degradation_type": "mobile_capture"
+    },
+    {
+      "query_id": "q_doc_auth_51_02_val",
+      "document_id": "doc_auth_51_02",
+      "family_id": "fam_auth_51",
+      "question": "What is the nominal value stated in the Liability Clause section?",
+      "ground_truth_answer": "$5145.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_51_02_p2_val"
+      ],
+      "modality": "D12-1",
+      "degradation_type": "mobile_capture"
+    },
+    {
+      "query_id": "q_doc_auth_51_03_val",
+      "document_id": "doc_auth_51_03",
+      "family_id": "fam_auth_51",
+      "question": "What is the nominal value stated in the Liability Clause section?",
+      "ground_truth_answer": "$5170.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_51_03_p2_val"
+      ],
+      "modality": "D12-1",
+      "degradation_type": "mobile_capture"
+    },
+    {
+      "query_id": "q_doc_auth_51_04_val",
+      "document_id": "doc_auth_51_04",
+      "family_id": "fam_auth_51",
+      "question": "What is the nominal value stated in the Liability Clause section?",
+      "ground_truth_answer": "$5195.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_51_04_p2_val"
+      ],
+      "modality": "D12-1",
+      "degradation_type": "mobile_capture"
+    },
+    {
+      "query_id": "q_doc_auth_51_05_val",
+      "document_id": "doc_auth_51_05",
+      "family_id": "fam_auth_51",
+      "question": "What is the nominal value stated in the Liability Clause section?",
+      "ground_truth_answer": "$5220.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_51_05_p2_val"
+      ],
+      "modality": "D12-1",
+      "degradation_type": "mobile_capture"
+    },
+    {
+      "query_id": "q_doc_auth_52_01_val",
+      "document_id": "doc_auth_52_01",
+      "family_id": "fam_auth_52",
+      "question": "What is the nominal value stated in the Lab Pathology section?",
+      "ground_truth_answer": "$5220.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_52_01_p2_val"
+      ],
+      "modality": "D12-2",
+      "degradation_type": "scanner_artifacts"
+    },
+    {
+      "query_id": "q_doc_auth_52_02_val",
+      "document_id": "doc_auth_52_02",
+      "family_id": "fam_auth_52",
+      "question": "What is the nominal value stated in the Lab Pathology section?",
+      "ground_truth_answer": "$5245.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_52_02_p2_val"
+      ],
+      "modality": "D12-2",
+      "degradation_type": "scanner_artifacts"
+    },
+    {
+      "query_id": "q_doc_auth_52_03_val",
+      "document_id": "doc_auth_52_03",
+      "family_id": "fam_auth_52",
+      "question": "What is the nominal value stated in the Lab Pathology section?",
+      "ground_truth_answer": "$5270.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_52_03_p2_val"
+      ],
+      "modality": "D12-2",
+      "degradation_type": "scanner_artifacts"
+    },
+    {
+      "query_id": "q_doc_auth_52_04_val",
+      "document_id": "doc_auth_52_04",
+      "family_id": "fam_auth_52",
+      "question": "What is the nominal value stated in the Lab Pathology section?",
+      "ground_truth_answer": "$5295.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_52_04_p2_val"
+      ],
+      "modality": "D12-2",
+      "degradation_type": "scanner_artifacts"
+    },
+    {
+      "query_id": "q_doc_auth_52_05_val",
+      "document_id": "doc_auth_52_05",
+      "family_id": "fam_auth_52",
+      "question": "What is the nominal value stated in the Lab Pathology section?",
+      "ground_truth_answer": "$5320.00 USD",
+      "evidence_page": 2,
+      "evidence_regions": [
+        "doc_auth_52_05_p2_val"
+      ],
+      "modality": "D12-2",
+      "degradation_type": "scanner_artifacts"
+    }
+  ],
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    101112
+  ],
+  "retrieval_k": 2,
+  "temperature": 0.0,
+  "max_new_tokens": 64
+}

@@ -1,0 +1,4 @@
+Precision,Latency_s
+Q0_FP16,0.8629
+Q1_INT8,2.8021
+Q2_INT4,1.4551

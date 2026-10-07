@@ -1,7 +1,7 @@
 # VLM-IDP Active Execution Queue
 
-CURRENT PHASE: PHASE 11 — Safety-Constrained Recovery Optimization & Human-in-the-Loop Verification (COMPLETED)
-CURRENT OBJECTIVE: Phase 11 complete. Evaluated 7 baselines (B11-0 to B11-6) across 5 domains (D0-D4) and 5 seeds. Persisted 875 cryptographic traces, benchmark summaries, ablations (A11-1 to A11-8), and 8 publication figures. Hypothesis H11 evaluated via paired bootstrap (B=10,000, seed=42) yielding SUC Delta=-0.1680, p=1.000000, and URR=0.0800 (concluding NOT_SUPPORTED). Multi-layer verification safely routes 60% of ambiguous shifted queries to human review. Full test suite passing (396/396 tests, 100%). Pre-implementation hash manifest verified with zero historical modifications. Phase 12 NOT STARTED.
+CURRENT PHASE: PHASE 14 — Physical CUDA VLM Enablement, Real INT4 Inference & Quantization Benchmark (COMPLETED)
+CURRENT OBJECTIVE: Phase 14 complete. Established isolated CUDA 12.6 environment (.venv_phase14). Verified physical RTX 3050 6GB Laptop GPU execution (SM 8.6, CUDA 12.6). Tested target 7B FP16 allocation (OOM confirmed, legitimate negative control). Fallback SmolVLM-500M physically executed across FP16 (1,111 MB, 0.863s, 27.8 tok/s), INT8 (702 MB, 2.802s, 8.57 tok/s), and INT4 NF4 (531 MB, 1.455s, 16.49 tok/s). Evaluated 1,100 traces across conditions B14-A to B14-D and 5 seeds on authentic test documents. Context pruning (B14-B) demonstrated 60% page reduction and 2.0x latency speedup (3.75s vs 7.48s, p=0.0002). Evidence grounding and abstention (B14-D) suppressed unsupported answers from 22.9% to 1.1% while maintaining 89.1% Safe Useful Coverage. Generated 15 tables, 12 publication figures at 300 DPI, and 20 research reports. Full regression test suite passing (439/439 tests, 100%). Zero historical mutations verified across 22,157 files. Phase 15 NOT STARTED.
 TASK STATUS: COMPLETE
 
 ---
