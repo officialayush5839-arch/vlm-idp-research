@@ -1375,8 +1375,15 @@
           body: formData
         });
         if (!res.ok) {
-          const errData = await res.json();
-          throw new Error(errData.error || 'Upload failed');
+          let errMsg = `Server returned status ${res.status}`;
+          try {
+            const errData = await res.json();
+            if (errData && errData.error) errMsg = errData.error;
+          } catch(e) {
+            const txt = await res.text();
+            if (txt) errMsg = txt;
+          }
+          throw new Error(errMsg);
         }
         const data = await res.json();
         currentUpload = data;
@@ -1395,6 +1402,7 @@
         resultPanel.style.display = 'none';
         bboxContainer.innerHTML = '';
       } catch (err) {
+        console.error('Upload Error:', err);
         alert(`Upload error: ${err.message}`);
         dropPrompt.innerText = 'Drop PDF, PNG, JPG or JPEG here';
       }
