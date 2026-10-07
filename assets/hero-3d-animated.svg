@@ -196,81 +196,85 @@
     <path class="attention-ray" d="M160,280 L280,200 L400,130" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.5"/>
 
     <!-- Layer 1: Background Base Document (Degraded Scan) -->
-    <g class="layer-1" transform="matrix(0.866 0.5 -0.866 0.5 280 60)">
-      <g filter="url(#cardShadow)">
-        <rect width="170" height="230" rx="12" fill="url(#glassGrad1)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
-        <!-- Document header lines -->
-        <rect x="20" y="20" width="80" height="10" rx="4" fill="rgba(255,255,255,0.3)"/>
-        <rect x="20" y="40" width="130" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
-        <rect x="20" y="55" width="115" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
-        <rect x="20" y="70" width="125" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
-        <!-- Motion Blur noise simulation dots -->
-        <circle cx="45" cy="110" r="3" fill="rgba(244,63,94,0.6)"/>
-        <circle cx="85" cy="120" r="2.5" fill="rgba(244,63,94,0.4)"/>
-        <circle cx="120" cy="115" r="3.5" fill="rgba(244,63,94,0.5)"/>
-        <!-- Badge -->
-        <rect x="20" y="190" width="90" height="20" rx="6" fill="rgba(244,63,94,0.2)" stroke="#f43f5e" stroke-width="1"/>
-        <text x="32" y="204" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#f43f5e">RAW SCAN: BLUR</text>
+    <g transform="matrix(0.866 0.5 -0.866 0.5 280 60)">
+      <g class="layer-1">
+        <g filter="url(#cardShadow)">
+          <rect width="170" height="230" rx="12" fill="url(#glassGrad1)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+          <!-- Document header lines -->
+          <rect x="20" y="20" width="80" height="10" rx="4" fill="rgba(255,255,255,0.3)"/>
+          <rect x="20" y="40" width="130" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+          <rect x="20" y="55" width="115" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+          <rect x="20" y="70" width="125" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+          <!-- Motion Blur noise simulation dots -->
+          <circle cx="45" cy="110" r="3" fill="rgba(244,63,94,0.6)"/>
+          <circle cx="85" cy="120" r="2.5" fill="rgba(244,63,94,0.4)"/>
+          <circle cx="120" cy="115" r="3.5" fill="rgba(244,63,94,0.5)"/>
+          <!-- Badge -->
+          <rect x="20" y="190" width="90" height="20" rx="6" fill="rgba(244,63,94,0.2)" stroke="#f43f5e" stroke-width="1"/>
+          <text x="32" y="204" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#f43f5e">RAW SCAN: BLUR</text>
+        </g>
       </g>
     </g>
 
     <!-- Layer 2: Midground Document (Multimodal Retrieval & Pruned Context) -->
-    <g class="layer-2" transform="matrix(0.866 0.5 -0.866 0.5 210 110)">
-      <g filter="url(#cardShadow)">
-        <rect width="170" height="230" rx="12" fill="url(#glassGrad2)" stroke="rgba(56,189,248,0.4)" stroke-width="1.8"/>
-        <!-- Document layout -->
-        <rect x="20" y="20" width="70" height="10" rx="4" fill="rgba(56,189,248,0.5)"/>
-        <rect x="20" y="40" width="130" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
-        <rect x="20" y="55" width="120" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
-        <rect x="20" y="70" width="100" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
+    <g transform="matrix(0.866 0.5 -0.866 0.5 210 110)">
+      <g class="layer-2">
+        <g filter="url(#cardShadow)">
+          <rect width="170" height="230" rx="12" fill="url(#glassGrad2)" stroke="rgba(56,189,248,0.4)" stroke-width="1.8"/>
+          <!-- Document layout -->
+          <rect x="20" y="20" width="70" height="10" rx="4" fill="rgba(56,189,248,0.5)"/>
+          <rect x="20" y="40" width="130" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
+          <rect x="20" y="55" width="120" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
+          <rect x="20" y="70" width="100" height="6" rx="3" fill="rgba(255,255,255,0.25)"/>
 
-        <!-- Dense vector embeddings grid -->
-        <g opacity="0.7">
-          <circle cx="30" cy="110" r="4" fill="#38bdf8"/>
-          <circle cx="50" cy="110" r="4" fill="#818cf8"/>
-          <circle cx="70" cy="110" r="4" fill="#34d399"/>
-          <circle cx="90" cy="110" r="4" fill="#38bdf8"/>
-          <circle cx="110" cy="110" r="4" fill="#c084fc"/>
+          <!-- Dense vector embeddings grid -->
+          <g opacity="0.7">
+            <circle cx="30" cy="110" r="4" fill="#38bdf8"/>
+            <circle cx="50" cy="110" r="4" fill="#818cf8"/>
+            <circle cx="70" cy="110" r="4" fill="#34d399"/>
+            <circle cx="90" cy="110" r="4" fill="#38bdf8"/>
+            <circle cx="110" cy="110" r="4" fill="#c084fc"/>
+          </g>
+          <!-- Badge -->
+          <rect x="20" y="190" width="105" height="20" rx="6" fill="rgba(56,189,248,0.2)" stroke="#38bdf8" stroke-width="1"/>
+          <text x="28" y="204" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#38bdf8">TOP-2 RETRIEVED</text>
         </g>
-        <!-- Badge -->
-        <rect x="20" y="190" width="105" height="20" rx="6" fill="rgba(56,189,248,0.2)" stroke="#38bdf8" stroke-width="1"/>
-        <text x="28" y="204" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#38bdf8">TOP-2 RETRIEVED</text>
       </g>
     </g>
 
     <!-- Layer 3: Foreground Hero Document (Spatial Grounding & Verified Answer) -->
-    <g class="layer-3" transform="matrix(0.866 0.5 -0.866 0.5 140 160)">
-      <g filter="url(#cardShadow)">
-        <rect width="170" height="230" rx="12" fill="url(#glassGrad3)" stroke="rgba(52,211,153,0.6)" stroke-width="2"/>
-        <!-- Specular highlight rim -->
-        <line x1="12" y1="2" x2="158" y2="2" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <g transform="matrix(0.866 0.5 -0.866 0.5 140 160)">
+      <g class="layer-3">
+        <g filter="url(#cardShadow)">
+          <rect width="170" height="230" rx="12" fill="url(#glassGrad3)" stroke="rgba(52,211,153,0.6)" stroke-width="2"/>
+          <!-- Specular highlight rim -->
+          <line x1="12" y1="2" x2="158" y2="2" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
 
-        <!-- Header -->
-        <rect x="20" y="20" width="85" height="10" rx="4" fill="rgba(52,211,153,0.7)"/>
-        <rect x="20" y="40" width="130" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
-        
-        <!-- Grounded Spatial Evidence Bounding Box -->
-        <g transform="translate(18, 65)">
-          <rect width="134" height="62" rx="6" fill="rgba(52,211,153,0.12)" stroke="#34d399" class="pulse-bbox" filter="url(#neonGlow)"/>
+          <!-- Header -->
+          <rect x="20" y="20" width="85" height="10" rx="4" fill="rgba(52,211,153,0.7)"/>
+          <rect x="20" y="40" width="130" height="6" rx="3" fill="rgba(255,255,255,0.4)"/>
           
-          <!-- Animated Laser Scanline inside Bounding Box -->
-          <g clip-path="url(#boxClip)">
+          <!-- Grounded Spatial Evidence Bounding Box -->
+          <g transform="translate(18, 65)">
+            <rect width="134" height="62" rx="6" fill="rgba(52,211,153,0.12)" stroke="#34d399" class="pulse-bbox" filter="url(#neonGlow)"/>
+            
+            <!-- Animated Laser Scanline inside Bounding Box -->
             <line x1="0" y1="0" x2="134" y2="0" stroke="#34d399" stroke-width="2" class="scanner-beam" filter="url(#intenseGlow)"/>
+            
+            <!-- Crosshair corners -->
+            <path d="M4,4 L12,4 M4,4 L4,12" stroke="#34d399" stroke-width="2"/>
+            <path d="M130,4 L122,4 M130,4 L130,12" stroke="#34d399" stroke-width="2"/>
+            <path d="M4,58 L12,58 M4,58 L4,50" stroke="#34d399" stroke-width="2"/>
+            <path d="M130,58 L122,58 M130,58 L130,50" stroke="#34d399" stroke-width="2"/>
+            
+            <text x="14" y="36" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#34d399">Total: $1,420.50</text>
+            <text x="14" y="52" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#86efac">IoU: 0.88 · VERIFIED</text>
           </g>
-          
-          <!-- Crosshair corners -->
-          <path d="M4,4 L12,4 M4,4 L4,12" stroke="#34d399" stroke-width="2"/>
-          <path d="M130,4 L122,4 M130,4 L130,12" stroke="#34d399" stroke-width="2"/>
-          <path d="M4,58 L12,58 M4,58 L4,50" stroke="#34d399" stroke-width="2"/>
-          <path d="M130,58 L122,58 M130,58 L130,50" stroke="#34d399" stroke-width="2"/>
-          
-          <text x="14" y="36" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#34d399">Total: $1,420.50</text>
-          <text x="14" y="52" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#86efac">IoU: 0.88 · VERIFIED</text>
-        </g>
 
-        <!-- Status Badge -->
-        <rect x="20" y="190" width="130" height="20" rx="6" fill="rgba(52,211,153,0.25)" stroke="#34d399" stroke-width="1.2"/>
-        <text x="28" y="204" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="800" fill="#34d399">STATUS: VERIFIED (0.98)</text>
+          <!-- Status Badge -->
+          <rect x="20" y="190" width="130" height="20" rx="6" fill="rgba(52,211,153,0.25)" stroke="#34d399" stroke-width="1.2"/>
+          <text x="28" y="204" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="800" fill="#34d399">STATUS: VERIFIED (0.98)</text>
+        </g>
       </g>
     </g>
 

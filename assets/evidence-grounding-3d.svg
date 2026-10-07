@@ -65,11 +65,13 @@
       <line class="laser-scan" x1="95" y1="90" x2="215" y2="90" stroke="#86efac" stroke-width="2.5" filter="url(#laserGlowGreen)"/>
 
       <!-- Targeting Reticle Crosshairs -->
-      <g class="reticle-pulse" transform="translate(145, 120)">
-        <circle cx="0" cy="0" r="16" fill="none" stroke="#34d399" stroke-width="1.8"/>
-        <circle cx="0" cy="0" r="4" fill="#34d399"/>
-        <line x1="-22" y1="0" x2="22" y2="0" stroke="#34d399" stroke-width="1.5"/>
-        <line x1="0" y1="-22" x2="0" y2="22" stroke="#34d399" stroke-width="1.5"/>
+      <g transform="translate(145, 120)">
+        <g class="reticle-pulse">
+          <circle cx="0" cy="0" r="16" fill="none" stroke="#34d399" stroke-width="1.8"/>
+          <circle cx="0" cy="0" r="4" fill="#34d399"/>
+          <line x1="-22" y1="0" x2="22" y2="0" stroke="#34d399" stroke-width="1.5"/>
+          <line x1="0" y1="-22" x2="0" y2="22" stroke="#34d399" stroke-width="1.5"/>
+        </g>
       </g>
 
       <text x="145" y="145" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="800" fill="#34d399" text-anchor="middle">

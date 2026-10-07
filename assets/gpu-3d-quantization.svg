@@ -24,27 +24,23 @@
     </filter>
 
     <style>
-      @keyframes barGrow {
-        0%, 100% { transform: scaleX(1); }
-        50% { transform: scaleX(0.97); }
-      }
       @keyframes chipPulse {
-        0%, 100% { filter: drop-shadow(0 0 8px rgba(118, 185, 0, 0.4)); }
-        50% { filter: drop-shadow(0 0 24px rgba(118, 185, 0, 0.85)); }
+        0%, 100% { filter: drop-shadow(0 0 8px rgba(118, 185, 0, 0.4)); opacity: 0.95; }
+        50% { filter: drop-shadow(0 0 20px rgba(118, 185, 0, 0.85)); opacity: 1; }
       }
       @keyframes floatChip {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-10px) rotate(0.6deg); }
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
       }
-      .anim-chip { animation: floatChip 5s ease-in-out infinite, chipPulse 3s ease-in-out infinite; transform-origin: center; }
-      .bar-pulse { animation: barGrow 3s ease-in-out infinite; transform-origin: left; }
+      .anim-chip { animation: floatChip 5s ease-in-out infinite, chipPulse 3s ease-in-out infinite; }
     </style>
   </defs>
 
   <rect width="1100" height="360" fill="url(#gpuBg)" rx="16" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
 
   <!-- Left: 3D Isometric Physical GPU Package -->
-  <g class="anim-chip" transform="translate(80, 50)">
+  <g transform="translate(80, 50)">
+    <g class="anim-chip">
     <!-- PCB Board -->
     <polygon points="120,40 280,40 220,240 60,240" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
     <!-- GPU Silicon Die -->
@@ -61,6 +57,7 @@
     <line x1="125" y1="210" x2="110" y2="250" stroke="#fbbf24" stroke-width="1.2" opacity="0.6"/>
     <line x1="165" y1="210" x2="150" y2="250" stroke="#fbbf24" stroke-width="1.2" opacity="0.6"/>
     <line x1="205" y1="210" x2="190" y2="250" stroke="#fbbf24" stroke-width="1.2" opacity="0.6"/>
+    </g>
   </g>
 
   <!-- Right: Physical Quantization Metrics Comparison Bars -->
