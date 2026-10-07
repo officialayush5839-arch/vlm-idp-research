@@ -397,6 +397,10 @@
       VLM-IDP RESEARCH
     </div>
     <div class="nav-links">
+      <div id="server-status-pill" class="btn-pill" style="border-color: rgba(56, 189, 248, 0.4); font-size: 0.8rem;" title="VLM-IDP Backend Status">
+        <span id="server-status-dot" style="width: 8px; height: 8px; border-radius: 50%; background: #94a3b8; display: inline-block;"></span>
+        <span id="server-status-text">Backend: Polling...</span>
+      </div>
       <a href="#benchmarks" class="btn-pill">Benchmarks</a>
       <a href="#architecture" class="btn-pill">Architecture</a>
       <a href="#gpu-quant" class="btn-pill">Physical GPU</a>
@@ -901,6 +905,35 @@
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
     });
+
+    // Backend API Live Polling
+    async function checkBackendHealth() {
+      const pill = document.getElementById('server-status-pill');
+      const dot = document.getElementById('server-status-dot');
+      const text = document.getElementById('server-status-text');
+      if (!pill || !dot || !text) return;
+
+      try {
+        const res = await fetch('/api/health');
+        if (res.ok) {
+          const data = await res.json();
+          const gpuName = data.hardware && data.hardware.gpu_model && data.hardware.gpu_model !== 'None' ? data.hardware.gpu_model : 'CUDA Engine';
+          dot.style.background = '#34d399';
+          dot.style.boxShadow = '0 0 10px #34d399';
+          pill.style.borderColor = '#34d399';
+          text.innerHTML = `Live API: Port 8896 · ${gpuName}`;
+        } else {
+          throw new Error('Non-200 response');
+        }
+      } catch (e) {
+        dot.style.background = '#38bdf8';
+        dot.style.boxShadow = 'none';
+        pill.style.borderColor = 'rgba(56, 189, 248, 0.4)';
+        text.innerText = 'Static Showcase';
+      }
+    }
+    checkBackendHealth();
+    setInterval(checkBackendHealth, 15000);
   </script>
 </body>
 </html>
