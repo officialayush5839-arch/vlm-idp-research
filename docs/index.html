@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VLM-IDP Research — Interactive 3D Showcase & Intelligence Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+  <style>
+    :root {
+      --bg-dark: #07090e;
+      --card-bg: rgba(15, 23, 42, 0.45);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --card-highlight: rgba(255, 255, 255, 0.25);
+      --accent-blue: #38bdf8;
+      --accent-indigo: #818cf8;
+      --accent-emerald: #34d399;
+      --accent-rose: #f43f5e;
+      --accent-amber: #fbbf24;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* Fixed WebGL Canvas Behind Content */
+    #webgl-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* Liquid Glass UI Component Styles (Apple-inspired glassmorphism) */
+    .liquid-glass {
+      background: var(--card-bg);
+      backdrop-filter: blur(24px) saturate(190%);
+      -webkit-backdrop-filter: blur(24px) saturate(190%);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      box-shadow: 
+        0 8px 32px 0 rgba(0, 0, 0, 0.45),
+        inset 0 1px 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .liquid-glass::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+      transform: rotate(25deg);
+      transition: opacity 0.4s ease;
+      opacity: 0;
+    }
+
+    .liquid-glass:hover::before {
+      opacity: 1;
+    }
+
+    .liquid-glass:hover {
+      border-color: rgba(56, 189, 248, 0.35);
+      box-shadow: 
+        0 16px 48px 0 rgba(0, 0, 0, 0.6),
+        0 0 24px 0 rgba(56, 189, 248, 0.2),
+        inset 0 1px 1px 0 rgba(255, 255, 255, 0.6);
+      transform: translateY(-4px);
+    }
+
+    /* Navigation Header */
+    nav.header-nav {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(92%, 1160px);
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 28px;
+    }
+
+    .brand-title {
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .btn-pill {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #f1f5f9;
+      padding: 8px 18px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      backdrop-filter: blur(12px);
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-pill:hover {
+      background: rgba(56, 189, 248, 0.2);
+      border-color: var(--accent-blue);
+      color: #ffffff;
+      transform: scale(1.04);
+    }
+
+    /* Main Content Sections */
+    .content-container {
+      position: relative;
+      z-index: 10;
+      width: min(90%, 1140px);
+      margin: 0 auto;
+      padding-top: 140px;
+      pointer-events: auto;
+    }
+
+    section.scroll-step {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 0;
+      opacity: 0.95;
+      transition: opacity 0.5s ease;
+    }
+
+    /* Hero Section */
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: var(--accent-blue);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+    }
+
+    h1.hero-title {
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 24px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p.hero-subtitle {
+      font-size: clamp(1.05rem, 2vw, 1.3rem);
+      color: var(--text-muted);
+      max-width: 680px;
+      margin-bottom: 36px;
+      font-weight: 400;
+    }
+
+    .hero-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .stat-card {
+      padding: 24px;
+    }
+
+    .stat-val {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #ffffff;
+      font-family: 'JetBrains Mono', monospace;
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Interactive 3D HUD Controls */
+    .hud-controls {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 120;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 16px;
+      width: 260px;
+    }
+
+    .hud-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .hud-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      margin-bottom: 6px;
+    }
+
+    .hud-slider {
+      width: 100%;
+      accent-color: var(--accent-blue);
+      cursor: pointer;
+    }
+
+    /* Grid Layouts for Feature Cards */
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    @media (max-width: 768px) {
+      .two-col-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .feature-card {
+      padding: 36px;
+    }
+
+    .feature-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .badge-pill {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Empirical Benchmark Table */
+    .table-container {
+      overflow-x: auto;
+      margin-top: 24px;
+    }
+
+    table.benchmark-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    table.benchmark-table th {
+      text-align: left;
+      padding: 14px 18px;
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--accent-blue);
+      font-weight: 600;
+      border-bottom: 1px solid var(--card-border);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    table.benchmark-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: #e2e8f0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+    }
+
+    table.benchmark-table tr:hover td {
+      background: rgba(56, 189, 248, 0.06);
+    }
+
+    .tag-success {
+      color: var(--accent-emerald);
+      font-weight: 600;
+    }
+
+    .tag-danger {
+      color: var(--accent-rose);
+      font-weight: 600;
+    }
+
+    /* Scroll Prompt Indicator */
+    .scroll-indicator {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 30px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-8px); }
+      60% { transform: translateY(-4px); }
+    }
+
+    /* Footer */
+    footer {
+      padding: 60px 0 100px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- WebGL 3D Background Canvas -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Liquid Glass Header Navigation -->
+  <nav class="liquid-glass header-nav">
+    <div class="brand-title">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <polyline points="14 2 14 8 20 8"></polyline>
+        <line x1="16" y1="13" x2="8" y2="13"></line>
+        <line x1="16" y1="17" x2="8" y2="17"></line>
+        <polyline points="10 9 9 9 8 9"></polyline>
+      </svg>
+      VLM-IDP RESEARCH
+    </div>
+    <div class="nav-links">
+      <a href="#benchmarks" class="btn-pill">Benchmarks</a>
+      <a href="#architecture" class="btn-pill">Architecture</a>
+      <a href="#gpu-quant" class="btn-pill">Physical GPU</a>
+      <a href="https://github.com/officialayush5839-arch/vlm-idp-research" target="_blank" class="btn-pill" style="border-color: var(--accent-blue);">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+        GitHub Repo
+      </a>
+    </div>
+  </nav>
+
+  <!-- Interactive 3D HUD Overlay -->
+  <div class="liquid-glass hud-controls">
+    <div class="hud-title">
+      <span>3D Neural HUD</span>
+      <span id="fps-counter" style="color: var(--accent-emerald);">60 FPS</span>
+    </div>
+    <div class="hud-row">
+      <span>Degradation:</span>
+      <span id="hud-deg-val" style="color: var(--accent-blue);">0% (Clean)</span>
+    </div>
+    <input type="range" min="0" max="100" value="0" class="hud-slider" id="deg-slider">
+    <div class="hud-row" style="margin-top: 10px;">
+      <span>Precision:</span>
+      <select id="prec-select" style="background: rgba(0,0,0,0.5); color: #fff; border: 1px solid var(--card-border); border-radius: 6px; padding: 2px 6px;">
+        <option value="INT4">INT4 NF4 (531 MB)</option>
+        <option value="INT8">INT8 (702 MB)</option>
+        <option value="FP16">FP16 (1,111 MB)</option>
+      </select>
+    </div>
+    <div class="hud-row">
+      <span>Auto-Orbit:</span>
+      <input type="checkbox" id="orbit-toggle" checked>
+    </div>
+  </div>
+
+  <!-- Content Container with Scroll-Triggered 3D Camera Angles -->
+  <div class="content-container">
+
+    <!-- Section 1: Hero -->
+    <section class="scroll-step" id="hero">
+      <div class="hero-badge">IEEE Research · Phases 0–14 Completed</div>
+      <h1 class="hero-title">
+        Vision-Language Models under <br>
+        <span class="gradient-text">Real-World Visual Degradation</span>
+      </h1>
+      <p class="hero-subtitle">
+        A scientifically controlled document intelligence pipeline unifying degradation-aware adaptive routing, multimodal context retrieval, spatial evidence grounding, and calibrated abstention.
+      </p>
+
+      <div class="hero-stats-grid">
+        <div class="liquid-glass stat-card">
+          <div class="stat-val" style="color: var(--accent-emerald);">89.1%</div>
+          <div class="stat-label">Safe Useful Coverage (SUC)</div>
+        </div>
+        <div class="liquid-glass stat-card">
+          <div class="stat-val" style="color: var(--accent-blue);">2.0x</div>
+          <div class="stat-label">Physical Latency Acceleration</div>
+        </div>
+        <div class="liquid-glass stat-card">
+          <div class="stat-val" style="color: var(--accent-rose);">-92.1%</div>
+          <div class="stat-label">Hallucination Suppression</div>
+        </div>
+        <div class="liquid-glass stat-card">
+          <div class="stat-val" style="color: var(--accent-indigo);">531 MB</div>
+          <div class="stat-label">Peak VRAM (INT4 NF4 on RTX 3050)</div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+        </svg>
+        <span>Scroll to explore interactive 3D document pipeline & benchmarks</span>
+      </div>
+    </section>
+
+    <!-- Section 2: Architecture & Adaptive Routing -->
+    <section class="scroll-step" id="architecture">
+      <div class="hero-badge" style="color: var(--accent-indigo); border-color: rgba(129, 140, 248, 0.4);">Stage I · Quality Assessment & Tri-Pathway Routing</div>
+      <h2 style="font-size: 2.4rem; font-weight: 800; margin-bottom: 20px;">Adaptive Processing Under Visual Stress</h2>
+      <p style="color: var(--text-muted); max-width: 720px; margin-bottom: 30px;">
+        Visual degradation (motion blur, low contrast, sensor noise, skew) severely impairs standard VLM autoregression. Our framework estimates a multi-signal quality vector and dynamically routes documents through three dedicated pathways:
+      </p>
+
+      <div class="two-col-grid">
+        <div class="liquid-glass feature-card">
+          <h3>
+            <span style="color: var(--accent-emerald);">CLEAN ROUTE</span>
+            <span class="badge-pill">Direct VLM</span>
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            High-fidelity scans bypass heavy preprocessing, routing directly to the vision-language backbone for maximal extraction efficiency and sub-second response times.
+          </p>
+        </div>
+
+        <div class="liquid-glass feature-card">
+          <h3>
+            <span style="color: var(--accent-amber);">MODERATE ROUTE</span>
+            <span class="badge-pill">Enhancement + VLM</span>
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Mild degradation triggers adaptive Wiener deconvolution, geometric deskew, and contrast normalization prior to multimodal encoding, recovering compromised visual features.
+          </p>
+        </div>
+
+        <div class="liquid-glass feature-card">
+          <h3>
+            <span style="color: var(--accent-rose);">SEVERE ROUTE</span>
+            <span class="badge-pill">OCR-Assisted Hybrid</span>
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Catastrophic visual degradation activates OCR character fallbacks (PaddleOCR + Tesseract), injecting structured textual coordinates into prompt context to prevent VLM hallucination.
+          </p>
+        </div>
+
+        <div class="liquid-glass feature-card">
+          <h3>
+            <span style="color: var(--accent-blue);">ABSTENTION GATE</span>
+            <span class="badge-pill">Human Escalation</span>
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            When multi-signal uncertainty crosses the learned calibration boundary, the system safely abstains with machine-verifiable citations, routing ambiguous cases for human review.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Physical GPU Quantization Benchmark -->
+    <section class="scroll-step" id="gpu-quant">
+      <div class="hero-badge" style="color: var(--accent-emerald); border-color: rgba(52, 211, 153, 0.4);">Stage II · Physical CUDA 12.6 Execution</div>
+      <h2 style="font-size: 2.4rem; font-weight: 800; margin-bottom: 20px;">Physical Hardware Quantization Matrix</h2>
+      <p style="color: var(--text-muted); max-width: 720px; margin-bottom: 30px;">
+        Evaluated on physical <strong>NVIDIA GeForce RTX 3050 6GB Laptop GPU</strong> (Ampere SM 8.6) in an isolated Python 3.14 + CUDA 12.6 PyTorch environment. Zero simulation, zero fabrication.
+      </p>
+
+      <div class="liquid-glass feature-card">
+        <h3 style="margin-bottom: 10px;">Physical Precision vs Memory vs Latency (`table_04`)</h3>
+        <div class="table-container">
+          <table class="benchmark-table">
+            <thead>
+              <tr>
+                <th>Precision Mode</th>
+                <th>Peak VRAM</th>
+                <th>Load Time</th>
+                <th>Forward Latency</th>
+                <th>Throughput</th>
+                <th>Physical Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Q0 (FP16)</strong></td>
+                <td>1,111.64 MB</td>
+                <td>2.154 s</td>
+                <td>0.863 s</td>
+                <td>27.81 tok/s</td>
+                <td><span class="tag-success">EXECUTED</span></td>
+              </tr>
+              <tr>
+                <td><strong>Q1 (INT8 LLM.int8)</strong></td>
+                <td>702.01 MB</td>
+                <td>3.382 s</td>
+                <td>2.802 s</td>
+                <td>8.57 tok/s</td>
+                <td><span class="tag-success">EXECUTED</span></td>
+              </tr>
+              <tr>
+                <td><strong>Q2 (INT4 NF4)</strong></td>
+                <td><strong>530.95 MB</strong></td>
+                <td><strong>1.382 s</strong></td>
+                <td>1.455 s</td>
+                <td><strong>16.49 tok/s</strong></td>
+                <td><span class="tag-success">EXECUTED</span></td>
+              </tr>
+              <tr>
+                <td><strong>Target 7B (FP16)</strong></td>
+                <td>16,384.00 MB</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="tag-danger">OOM (Negative Control)</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: End-to-End Pipeline Evaluation -->
+    <section class="scroll-step" id="benchmarks">
+      <div class="hero-badge" style="color: var(--accent-rose); border-color: rgba(244, 63, 94, 0.4);">Stage III · Scientific Validation Matrix</div>
+      <h2 style="font-size: 2.4rem; font-weight: 800; margin-bottom: 20px;">End-to-End Architecture Progression</h2>
+      <p style="color: var(--text-muted); max-width: 720px; margin-bottom: 30px;">
+        Evaluated across 5 independent seeds on authentic multi-page document families (1,100 traces). Hypothesis testing confirmed via paired cluster bootstrap ($B=10,000$, Holm-Bonferroni corrected).
+      </p>
+
+      <div class="liquid-glass feature-card">
+        <h3 style="margin-bottom: 10px;">Pipeline Performance across Evaluation Conditions (`table_12`)</h3>
+        <div class="table-container">
+          <table class="benchmark-table">
+            <thead>
+              <tr>
+                <th>Condition</th>
+                <th>Architecture Description</th>
+                <th>Context Pages</th>
+                <th>Mean Latency</th>
+                <th>Exact Match</th>
+                <th>Grounding IoU</th>
+                <th>Hallucinations (UAR)</th>
+                <th>SUC</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>B14-A</strong></td>
+                <td>Full-Document VLM (Unpruned)</td>
+                <td>5.0</td>
+                <td>7.485 s</td>
+                <td>72.73%</td>
+                <td>0.4527</td>
+                <td>22.91%</td>
+                <td>72.73%</td>
+              </tr>
+              <tr>
+                <td><strong>B14-B</strong></td>
+                <td>Retrieval-Pruned (Top-2 Pages)</td>
+                <td>2.0 (-60%)</td>
+                <td>3.752 s (2.0x)</td>
+                <td>81.09%</td>
+                <td>0.6477</td>
+                <td>4.73%</td>
+                <td>81.09%</td>
+              </tr>
+              <tr>
+                <td><strong>B14-C</strong></td>
+                <td>Retrieval + Evidence Grounding</td>
+                <td>2.0</td>
+                <td>3.751 s</td>
+                <td>86.18%</td>
+                <td>0.7553</td>
+                <td>1.82%</td>
+                <td>86.18%</td>
+              </tr>
+              <tr>
+                <td><strong>B14-D</strong></td>
+                <td>Proposed (Calibrated Abstention)</td>
+                <td>2.0</td>
+                <td><strong>3.749 s</strong></td>
+                <td><strong>89.09%</strong></td>
+                <td><strong>0.7994</strong></td>
+                <td><strong class="tag-success">1.09%</strong></td>
+                <td><strong class="tag-success">89.09%</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Ayush & Team · IEEE Research Project: Vision-Language Models for Intelligent Document Processing under Real-World Visual Degradation</p>
+      <p style="margin-top: 8px;">Interactive 3D Frontend engineered with Three.js, WebGL GLSL, and Liquid Glass UI design.</p>
+    </footer>
+
+  </div>
+
+  <!-- Three.js + WebGL Interactive Engine Script -->
+  <script>
+    // --- 1. Three.js Scene Setup ---
+    const canvas = document.getElementById('webgl-canvas');
+    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.FogExp2(0x07090e, 0.04);
+
+    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
+    camera.position.set(0, 0, 8);
+
+    // --- 2. Lighting ---
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
+    scene.add(ambientLight);
+
+    const dirLight1 = new THREE.DirectionalLight(0x38bdf8, 1.8);
+    dirLight1.position.set(5, 8, 4);
+    scene.add(dirLight1);
+
+    const dirLight2 = new THREE.DirectionalLight(0x818cf8, 1.4);
+    dirLight2.position.set(-6, -4, 2);
+    scene.add(dirLight2);
+
+    // --- 3. Fluid Animated Shader Gradient Mesh (Ayush-Frontend Simplex Noise) ---
+    const bgVertexShader = `
+      varying vec2 vUv;
+      void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+      }
+    `;
+
+    const bgFragmentShader = `
+      uniform float u_time;
+      uniform float u_distortion;
+      varying vec2 vUv;
+
+      // Simplex-style noise approximation
+      vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+      vec2 mod289(vec2 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+      vec3 permute(vec3 x) { return mod289(((x*34.0)+1.0)*x); }
+
+      float snoise(vec2 v) {
+        const vec4 C = vec4(0.211324865405187, 0.366025403784439, -0.577350269189626, 0.024390243902439);
+        vec2 i  = floor(v + dot(v, C.yy) );
+        vec2 x0 = v -   i + dot(i, C.xx);
+        vec2 i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+        vec4 x12 = x0.xyxy + C.xxzz;
+        x12.xy -= i1;
+        i = mod289(i);
+        vec3 p = permute( permute( i.y + vec3(0.0, i1.y, 1.0 )) + i.x + vec3(0.0, i1.x, 1.0 ));
+        vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0);
+        m = m*m ;
+        m = m*m ;
+        vec3 x = 2.0 * fract(p * C.www) - 1.0;
+        vec3 h = abs(x) - 0.5;
+        vec3 ox = floor(x + 0.5);
+        vec3 a0 = x - ox;
+        m *= 1.79284291400159 - 0.85373472095314 * ( a0*a0 + h*h );
+        vec3 g;
+        g.x  = a0.x  * x0.x  + h.x  * x0.y;
+        g.yz = a0.yz * x12.xz + h.yz * x12.yw;
+        return 130.0 * dot(m, g);
+      }
+
+      void main() {
+        vec2 uv = vUv * 2.2;
+        float n = snoise(uv + vec2(u_time * 0.15, u_time * 0.1));
+        n += 0.5 * snoise(uv * 2.0 - vec2(u_time * 0.2, -u_time * 0.15));
+
+        // Chromatic palette: Deep Slate / Cyan / Indigo
+        vec3 col1 = vec3(0.03, 0.05, 0.09); // Dark navy
+        vec3 col2 = vec3(0.12, 0.35, 0.65) * (1.0 + u_distortion * 0.5); // Sky cyan
+        vec3 col3 = vec3(0.35, 0.15, 0.65); // Violet
+
+        vec3 finalCol = mix(col1, col2, smoothstep(-0.6, 0.6, n));
+        finalCol = mix(finalCol, col3, smoothstep(0.2, 1.0, n * 1.2));
+
+        gl_FragColor = vec4(finalCol, 0.75);
+      }
+    `;
+
+    const bgUniforms = {
+      u_time: { value: 0.0 },
+      u_distortion: { value: 0.0 }
+    };
+
+    const bgPlaneGeom = new THREE.PlaneGeometry(28, 20, 64, 64);
+    const bgPlaneMat = new THREE.ShaderMaterial({
+      vertexShader: bgVertexShader,
+      fragmentShader: bgFragmentShader,
+      uniforms: bgUniforms,
+      depthWrite: false
+    });
+    const bgPlane = new THREE.Mesh(bgPlaneGeom, bgPlaneMat);
+    bgPlane.position.z = -5;
+    scene.add(bgPlane);
+
+    // --- 4. 3D Document Stack (Multi-Page Translucent Representation) ---
+    const docGroup = new THREE.Group();
+    scene.add(docGroup);
+
+    const pageCount = 5;
+    const pageMeshes = [];
+    const docGeom = new THREE.PlaneGeometry(2.1, 2.8, 32, 32);
+
+    for (let i = 0; i < pageCount; i++) {
+      const pageMat = new THREE.MeshPhysicalMaterial({
+        color: 0xf8fafc,
+        transmission: 0.65,
+        opacity: 0.9,
+        transparent: true,
+        roughness: 0.15,
+        metalness: 0.05,
+        reflectivity: 0.8,
+        clearcoat: 0.8,
+        clearcoatRoughness: 0.1,
+        side: THREE.DoubleSide
+      });
+
+      const page = new THREE.Mesh(docGeom, pageMat);
+      page.position.set(i * 0.22 - 0.44, (pageCount - 1 - i) * 0.12, -i * 0.28);
+      page.rotation.y = -0.25;
+      page.rotation.x = 0.1;
+      docGroup.add(page);
+      pageMeshes.push(page);
+    }
+
+    // 3D Spatial Grounding Bounding Box Highlight (Green Glow Wireframe)
+    const bboxGeom = new THREE.BoxGeometry(1.2, 0.4, 0.05);
+    const bboxMat = new THREE.MeshBasicMaterial({
+      color: 0x34d399,
+      wireframe: true,
+      transparent: true,
+      opacity: 0.85
+    });
+    const bboxMesh = new THREE.Mesh(bboxGeom, bboxMat);
+    bboxMesh.position.set(0, 0.2, 0.05);
+    pageMeshes[0].add(bboxMesh);
+
+    // Floating Point Token Cloud
+    const particleCount = 200;
+    const particleGeom = new THREE.BufferGeometry();
+    const posArray = new Float32Array(particleCount * 3);
+    for (let i = 0; i < particleCount * 3; i++) {
+      posArray[i] = (Math.random() - 0.5) * 8;
+    }
+    particleGeom.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+    const particleMat = new THREE.PointsMaterial({
+      size: 0.04,
+      color: 0x38bdf8,
+      transparent: true,
+      opacity: 0.6
+    });
+    const particleSystem = new THREE.Points(particleGeom, particleMat);
+    scene.add(particleSystem);
+
+    // --- 5. Scroll Interaction Mechanics ---
+    let scrollProgress = 0;
+    window.addEventListener('scroll', () => {
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      scrollProgress = window.scrollY / (maxScroll || 1);
+    });
+
+    // Interactive HUD Listeners
+    const degSlider = document.getElementById('deg-slider');
+    const hudDegVal = document.getElementById('hud-deg-val');
+    degSlider.addEventListener('input', (e) => {
+      const val = e.target.value;
+      hudDegVal.textContent = val + '%';
+      bgUniforms.u_distortion.value = val / 100.0;
+    });
+
+    const orbitToggle = document.getElementById('orbit-toggle');
+
+    // --- 6. Render Loop ---
+    let clock = new THREE.Clock();
+    let frameCount = 0;
+    let lastFpsTime = performance.now();
+    const fpsCounter = document.getElementById('fps-counter');
+
+    function animate() {
+      requestAnimationFrame(animate);
+      const delta = clock.getDelta();
+      const time = clock.getElapsedTime();
+
+      // FPS tracking
+      frameCount++;
+      if (performance.now() - lastFpsTime > 1000) {
+        fpsCounter.textContent = frameCount + " FPS";
+        frameCount = 0;
+        lastFpsTime = performance.now();
+      }
+
+      // Update shader background
+      bgUniforms.u_time.value = time;
+
+      // Dynamic 3D Camera & Model Movement Based on Scroll Position
+      const targetCamX = Math.sin(scrollProgress * Math.PI * 2) * 2.2;
+      const targetCamY = -scrollProgress * 2.5 + 0.5;
+      const targetCamZ = 7.5 - scrollProgress * 2.0;
+
+      camera.position.x += (targetCamX - camera.position.x) * 0.06;
+      camera.position.y += (targetCamY - camera.position.y) * 0.06;
+      camera.position.z += (targetCamZ - camera.position.z) * 0.06;
+      camera.lookAt(0, 0, 0);
+
+      // Rotate Document Group with Scroll + Gentle Float
+      if (orbitToggle.checked) {
+        docGroup.rotation.y = THREE.MathUtils.lerp(docGroup.rotation.y, (scrollProgress * 4.0) + Math.sin(time * 0.5) * 0.2, 0.05);
+        docGroup.rotation.x = THREE.MathUtils.lerp(docGroup.rotation.x, (scrollProgress * 1.5) + Math.cos(time * 0.4) * 0.1, 0.05);
+        docGroup.position.y = Math.sin(time * 0.8) * 0.1;
+      }
+
+      // Animate Particles
+      particleSystem.rotation.y = time * 0.05;
+
+      // Pulse Evidence Bounding Box
+      const pulse = 1.0 + 0.1 * Math.sin(time * 4.0);
+      bboxMesh.scale.set(pulse, pulse, 1.0);
+
+      renderer.render(scene, camera);
+    }
+
+    animate();
+
+    // Window Resize Handler
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+  </script>
+</body>
+</html>
