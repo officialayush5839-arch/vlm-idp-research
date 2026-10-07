@@ -134,9 +134,9 @@ class UploadManager:
         )
 
     def get_upload(self, upload_id: str) -> Optional[UploadRecord]:
-        """Looks up an upload by ID."""
+        """Looks up an upload by ID, ignoring derivative enhanced artifacts."""
         for p in self.upload_dir.iterdir():
-            if p.is_file() and p.name.startswith(f"{upload_id}_"):
+            if p.is_file() and p.name.startswith(f"{upload_id}_") and not p.name.endswith("_enhanced.png"):
                 ext = p.suffix.lower()
                 mime = mimetypes.guess_type(p.name)[0] or "application/octet-stream"
                 orig_name = p.name[len(upload_id) + 1:]

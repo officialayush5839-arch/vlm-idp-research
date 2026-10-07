@@ -13,6 +13,12 @@ from PIL import Image, ImageDraw, ImageFont
 import mimetypes
 
 try:
+    import pymupdf
+    PYMUPDF_AVAILABLE = True
+except ImportError:
+    PYMUPDF_AVAILABLE = False
+
+try:
     from pypdf import PdfReader
     PYPDF_AVAILABLE = True
 except ImportError:
@@ -110,16 +116,28 @@ class DocumentAdapter:
         return self._render_pdf_page(file_path, page_num, meta)
 
     def _render_pdf_page(self, file_path: Path, page_num: int, meta: DocumentMetadata) -> Image.Image:
-        """Extracts embedded raster image or renders document page representation."""
+        """Renders document page as authentic RGB image."""
+        if PYMUPDF_AVAILABLE:
+            try:
+                doc = pymupdf.open(str(file_path))
+                page = doc[page_num - 1]
+                pix = page.get_pixmap(dpi=150)
+                img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+                doc.close()
+                return img
+            except Exception:
+                pass
+
         reader = PdfReader(str(file_path))
         page = reader.pages[page_num - 1]
 
-        # 1. Check if page contains an embedded raster scan image
+        # 1. Check if page contains an embedded raster scan image covering whole page
         if hasattr(page, "images") and len(page.images) > 0:
             try:
                 first_img = page.images[0]
                 pil_img = Image.open(io.BytesIO(first_img.data)).convert("RGB")
-                return pil_img
+                if pil_img.width >= 400 and pil_img.height >= 400:
+                    return pil_img
             except Exception:
                 pass
 
