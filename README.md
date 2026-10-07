@@ -258,11 +258,28 @@ python -m src.phase14.experiments
 # Emits 1,100 traces, regenerates Tables 01–15, and executes cluster bootstrapping
 ```
 
-### 5. Launch Interactive 3D Showcase Locally
-Open `docs/index.html` directly in any modern browser (Chrome, Edge, Firefox, Safari) or run:
-```bash
-npx serve docs
+### 5. Launch Interactive Document Extraction Studio
+You can run the full-stack system locally using the one-click startup script:
+```cmd
+run.bat
 ```
+This launches the FastAPI inference server on `http://localhost:8896` and automatically opens the interactive studio interface.
+
+---
+
+## 🖥️ Interactive Document Extraction Studio (Phase 15)
+
+The repository features an end-to-end interactive **Document Upload & Extraction Studio** accessible directly at `http://localhost:8896`:
+
+### Core Capabilities
+1. **Multi-Format Ingestion**: Drag-and-drop or upload PDF, PNG, JPG, and JPEG documents up to 50 MB with magic-byte validation, UUID sandboxing, and directory-traversal prevention.
+2. **Interactive Document Viewer & Canvas**: Multi-page pagination, canvas zoom/pan controls, and normalized spatial bounding box rendering.
+3. **Adaptive Tri-Pathway Routing**: Automatically assesses document quality (blur, contrast, noise, skew, glare) and routes documents across **Clean** (Direct VLM), **Moderate** (Enhancement + VLM), or **Severe** (Dual OCR Fallback).
+4. **Calibrated Uncertainty & Safe Abstention**: Multi-signal confidence modeling ensures that unanswerable, low-evidence, or catastrophically degraded queries trigger safe abstention (`ABSTAIN / REVIEW_REQUIRED`) rather than hallucinated answers.
+5. **Spatial Evidence Grounding**: Visual target regions are highlighted directly on the rendered document page with IoU-scored bounding boxes and extracted text snippets.
+6. **Hardware-Aware Model Policy**:
+   - **SmolVLM-500M INT4**: `PHYSICALLY_VALIDATED` on local NVIDIA GeForce RTX 3050 6GB GDDR6 laptop GPU (531 MB footprint, 16.5 tok/s).
+   - **Qwen2.5-VL-7B**: Explicitly marked `NOT_EXECUTABLE` on local 6 GB hardware (requires >14 GB VRAM for FP16 and >7 GB for INT8; rejected safely without silent OOM or simulated outputs).
 
 ---
 
