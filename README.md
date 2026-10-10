@@ -24,7 +24,7 @@
 
 **An IEEE-Grade Research Framework for Adaptive, Uncertainty-Aware, and Evidence-Grounded Document Intelligence**
 
-[🌟 **Interactive 3D Web Showcase**](https://officialayush5839-arch.github.io/vlm-idp-research/) · [📊 **Empirical Tables**](experiments/phase14/tables/) · [📈 **Publication Figures**](experiments/phase14/figures/) · [📑 **Phase 14 Report**](reports/phase14/PHASE14_REPORT.md) · [📝 **IEEE Integration**](reports/phase14/IEEE_INTEGRATION.md)
+[📑 **Document Classification Architecture**](CLASSIFICATION.md) · [🌟 **Interactive 3D Web Showcase**](https://officialayush5839-arch.github.io/vlm-idp-research/) · [📊 **Empirical Tables**](experiments/phase14/tables/) · [📈 **Publication Figures**](experiments/phase14/figures/) · [📑 **Phase 14 Report**](reports/phase14/PHASE14_REPORT.md) · [📝 **IEEE Integration**](reports/phase14/IEEE_INTEGRATION.md)
 
 </div>
 
@@ -267,21 +267,66 @@ This launches the FastAPI inference server on `http://localhost:8896` and automa
 
 ---
 
-## 🖥️ Interactive Document Extraction Studio (Phase 15)
+## 🏷️ Document Classification & Adaptive Routing Architecture
 
-The repository features an end-to-end interactive **Document Upload & Extraction Studio** accessible directly at `http://localhost:8896`:
+The repository implements a **Quality-Driven Document Classification & Adaptive Routing** paradigm to eliminate hallucination under real-world visual degradation. Rather than treating all documents identically, the system classifies each document's visual integrity and routes it through an optimized processing pathway.
 
-### Core Capabilities
-1. **Multi-Format Ingestion**: Drag-and-drop or upload PDF, PNG, JPG, and JPEG documents up to 50 MB with magic-byte validation, UUID sandboxing, and directory-traversal prevention.
-2. **Interactive Document Viewer & Canvas**: Multi-page pagination, canvas zoom/pan controls, and normalized spatial bounding box rendering.
-3. **Adaptive Tri-Pathway Routing**: Automatically assesses document quality (blur, contrast, noise, skew, glare) and routes documents across **Clean** (Direct VLM), **Moderate** (Enhancement + VLM), or **Severe** (Dual OCR Fallback).
-4. **Calibrated Uncertainty & Safe Abstention**: Multi-signal confidence modeling ensures that unanswerable, low-evidence, or catastrophically degraded queries trigger safe abstention (`ABSTAIN / REVIEW_REQUIRED`) rather than hallucinated answers.
-5. **Spatial Evidence Grounding**: Visual target regions are highlighted directly on the rendered document page with IoU-scored bounding boxes and extracted text snippets.
-6. **Hardware-Aware Model Policy**:
-   - **SmolVLM-500M INT4**: `PHYSICALLY_VALIDATED` on local NVIDIA GeForce RTX 3050 6GB GDDR6 laptop GPU (531 MB footprint, 16.5 tok/s).
-   - **Qwen2.5-VL-7B**: Explicitly marked `NOT_EXECUTABLE` on local 6 GB hardware (requires >14 GB VRAM for FP16 and >7 GB for INT8; rejected safely without silent OOM or simulated outputs).
+📖 **Detailed Specification**: See the full documentation in [**`CLASSIFICATION.md`**](CLASSIFICATION.md).
 
----
+```
+                      ┌──────────────────────────────────────┐
+                      │            INPUT DOCUMENT            │
+                      │       (PDF / Scanned Images)         │
+                      └──────────────────┬───────────────────┘
+                                         │
+                                         ▼
+                      ┌──────────────────────────────────────┐
+                      │ 1. 10-Feature Quality Extraction     │
+                      │    (Blur, Skew, Noise, Contrast,     │
+                      │     Glare, Illumination, etc.)       │
+                      └──────────────────┬───────────────────┘
+                                         │
+                                         ▼
+                      ┌──────────────────────────────────────┐
+                      │ 2. Degradation Severity              │
+                      │    Classification Engine             │
+                      │    (Laplacian, FFT, RMS Contrast)    │
+                      └──────────────────┬───────────────────┘
+                                         │
+                 ┌───────────────────────┼───────────────────────┐
+                 │                       │                       │
+                 ▼                       ▼                       ▼
+          [ CLEAN ROUTE ]        [ MODERATE ROUTE ]      [ SEVERE ROUTE ]
+          Overall Score ≥ 0.70    0.35 ≤ Score < 0.70     Overall Score < 0.35
+                 │                       │                       │
+                 ▼                       ▼                       ▼
+          Fast Direct VLM         Adaptive Restoration   Dual-OCR Fallback
+          (Sub-second)            (Unsharp mask /        (PaddleOCR / Tesseract
+                                   Wiener filter) + VLM   restoration) + VLM
+                 │                       │                       │
+                 └───────────────────────┼───────────────────────┘
+                                         │
+                                         ▼
+                      ┌──────────────────────────────────────┐
+                      │ 3. Calibrated Uncertainty & Gate     │
+                      │    (Grounding Score + Quality Score) │
+                      └──────────────────┬───────────────────┘
+                                         │
+                         ┌───────────────┴───────────────┐
+                         ▼                               ▼
+                 [ VERIFIED ANSWER ]            [ SAFE ABSTENTION ]
+                 Confidence ≥ 0.60              Confidence < 0.60
+                 Evidence BBox Locked           (REVIEW_REQUIRED)
+```
+
+### Core Classification Pillars
+1. **10-Feature Visual Quality Taxonomy**: Evaluates Blur (Laplacian variance), Noise, RMS Contrast, Radon Skew, Perspective, Illumination, Glare, Occlusion, Resolution, and DCT Compression.
+2. **Tri-Pathway Route Classification**:
+   - **CLEAN Route ($S \ge 0.70$)**: High-fidelity documents dispatched directly to `SmolVLM-500M INT4` for sub-second inference.
+   - **MODERATE Route ($0.35 \le S < 0.70$)**: Restores contrast and edges via Wiener filtering and unsharp masking prior to inference.
+   - **SEVERE Route ($S < 0.35$)**: Diverts severely degraded or corrupted scans to the Dual-OCR fallback pipeline (`PaddleOCR` + `Tesseract`).
+3. **Calibrated Uncertainty & Safe Abstention**: Combines visual quality with spatial bounding box grounding alignment $(0.35 \times \text{Quality} + 0.65 \times \text{Grounding})$. Triggers safe abstention (`ABSTAIN / REVIEW_REQUIRED`) on ambiguous or unanswerable queries rather than hallucinating.
+4. **Interactive Studio Integration**: Accessible locally via `run.bat` on `http://localhost:8896`, providing real-time quality classification diagnostics, route feedback, and visual bounding box overlays.
 
 ## 🛡️ Research Integrity & Zero-Fabrication Protocol
 
